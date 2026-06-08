@@ -40,7 +40,14 @@ export function Reader({
       {reading.thread ? <ThreadGloss text={reading.thread} /> : null}
 
       {reading.passages.map((passage, i) => (
-        <Passage key={passage.ref} passage={passage} first={i === 0} />
+        <Passage
+          key={passage.ref}
+          passage={passage}
+          first={i === 0}
+          bookId={reading.bookId}
+          readingId={reading.id}
+          readingTitle={reading.title}
+        />
       ))}
 
       {reading.closeEnd ? (

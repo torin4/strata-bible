@@ -32,9 +32,15 @@ export function AuthMenu() {
 
   return (
     <span className="flex items-center gap-3">
-      <span className="max-w-[160px] truncate font-body text-[12px] italic text-mist">
+      <span className="hidden max-w-[160px] truncate font-body text-[12px] italic text-mist sm:inline">
         {user.displayName || user.email || "Account"}
       </span>
+      <Link
+        href="/journal"
+        className="font-ui text-[10px] uppercase tracking-[.16em] text-gold transition-colors hover:text-gold-bright"
+      >
+        Journal
+      </Link>
       <button
         type="button"
         onClick={() => signOutUser()}

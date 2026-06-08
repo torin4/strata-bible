@@ -1,3 +1,4 @@
+import { AskResponse } from "@/components/journal/AskResponse";
 import { GROUND_LABEL, PASSAGE_KIND_LABEL } from "@/lib/labels";
 import type { Passage as PassageData } from "@/lib/types";
 import { Ask } from "./Ask";
@@ -18,7 +19,16 @@ import { TheTurn } from "./TheTurn";
 export function Passage({
   passage,
   first,
-}: { passage: PassageData; first: boolean }) {
+  bookId,
+  readingId,
+  readingTitle,
+}: {
+  passage: PassageData;
+  first: boolean;
+  bookId: string;
+  readingId: string;
+  readingTitle: string;
+}) {
   return (
     <div className={first ? "" : "mt-[30px] border-t border-line pt-[26px]"}>
       <div className="mb-1 flex flex-wrap items-baseline gap-[9px]">
@@ -73,7 +83,18 @@ export function Passage({
       {passage.tensions ? <Tensions tensions={passage.tensions} /> : null}
       {passage.addr ? <TheTurn addr={passage.addr} /> : null}
       {passage.soft ? <Soft text={passage.soft} /> : null}
-      {passage.ask ? <Ask text={passage.ask} /> : null}
+      {passage.ask ? (
+        <>
+          <Ask text={passage.ask} />
+          <AskResponse
+            prompt={passage.ask}
+            bookId={bookId}
+            readingId={readingId}
+            readingTitle={readingTitle}
+            passageRef={passage.ref}
+          />
+        </>
+      ) : null}
     </div>
   );
 }
