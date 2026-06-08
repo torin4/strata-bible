@@ -3664,6 +3664,7 @@ export const ABRAHAM_MOVEMENT: Movement = {
   situation: {
     skicker: 'The ground beneath the Abraham story',
     title: 'A family memory, told long after',
+    image: '/images/gen-abram.webp',
     paragraphs: [
       'The stories of Abraham are set in the Bronze Age but were written down much later, and they carry small anachronisms, domesticated camels, Philistines, that point to the hand of later tellers shaping an old memory.',
       'Much of the cycle works as a family origin story for a whole region: where Moab and Ammon came from, where the Ishmaelite tribes came from, why Israel and its neighbors are kin and rivals at once.',
