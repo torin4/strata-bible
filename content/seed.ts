@@ -60,7 +60,7 @@ export const SEED: Reading[] = [
           { n: 19, text: 'You are to keep My statutes. You shall not crossbreed two different kinds of livestock; you shall not sow your fields with two kinds of seed; and you shall not wear clothing made of two kinds of material.' },
         ],
         perItem: {
-          18: { addr: { mode: 'claims', text: 'This one has never stopped making its claim on you. It is the whole law in six words.' } },
+          18: { addr: { mode: 'claims', text: 'This one has never stopped making its claim on you. It is the whole law in five words.' } },
           19: { addr: { mode: 'none-but', text: 'This does not bind you. It is worth seeing anyway, because it shows you that to these writers the loom and the wage stood on the same ground.' } },
         },
         ground: { kind: 'historical', src: 'Milgrom · Douglas · Westermann', text: 'This is the Holiness Code, and its method is what trips a modern reader. Laws against fraud and slander and revenge sit in the same breath as a ban on mixed fabrics, with no seam between them. To the writers there was no seam. Holiness reached the whole of life, the field, the wage, the grudge, the loom, and the same refrain stamps all of it: I am the LORD. The gleaning laws are a welfare system written into agriculture. The mixed-kind rules are boundary markers, ways a small people stayed distinct.' },
