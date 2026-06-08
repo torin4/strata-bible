@@ -44,6 +44,14 @@ export function PanelView({ panel, accent }: { panel: Panel; accent: Accent }) {
         </span>
       </summary>
       <div className="px-4 pb-4">
+        {panel.image ? (
+          // Decorative banner inside the panel; the panel text carries the meaning.
+          <img
+            src={panel.image}
+            alt=""
+            className="mb-4 w-full rounded-[10px] border border-line"
+          />
+        ) : null}
         {panel.paragraphs.map((paragraph) => (
           <p
             key={paragraph}

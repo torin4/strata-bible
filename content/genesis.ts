@@ -3705,6 +3705,7 @@ export const PRIMEVAL_MOVEMENT: Movement = {
   situation: {
     skicker: 'The ground beneath the primeval history',
     title: 'The situation',
+    image: '/images/gen-prime.webp',
     paragraphs: [
       'The primeval history was given its shape by Judean priests and scribes in exile, after Babylon stormed Jerusalem and burned its temple in 586 BCE and marched its people east. They had lost the temple, the land, the king. Around them stood the greatest empire on earth, with its own towering myths: a world made through a war of gods, humanity formed to be the gods’ slaves, Babylon the navel of creation.',
       'These writers took older traditions of their own and edited them into a quiet answer. Not an argument shouted, but a story told. One God, who makes by speaking, who calls it good, who forms the human in his own image rather than as a slave. Two older sources run all through it, the vivid Yahwist and the ordered Priestly, woven together rather than smoothed into one.',

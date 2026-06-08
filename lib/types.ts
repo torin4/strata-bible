@@ -163,6 +163,7 @@ export interface Panel {
   paragraphs: string[];
   timeline?: TimelineRow[];
   sources?: string;
+  image?: string; // an optional banner image inside the panel (path under /public)
 }
 
 // The look-back at the end of a movement. For a composite book this is where the
