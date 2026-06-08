@@ -1,21 +1,64 @@
+"use client";
+
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import type { Movement, Reading } from "@/lib/types";
+import Link from "next/link";
+import { type ReactNode, useEffect, useState } from "react";
 import { Capstone } from "./Capstone";
 import { Passage } from "./Passage";
 import { SpanBanner } from "./SpanBanner";
 import { ThreadGloss } from "./ThreadGloss";
 
-// One Reading: the thing the user sits with. It can hold one passage or several. When
-// the reading closes a movement that has a capstone, that look-back renders at the end
-// (this is how a composite book like Job carries the meaning of the whole).
+interface Adjacent {
+  id: string;
+  title: string;
+}
+
+// One Reading, paginated a scene at a time. Each passage (a "scene") is its own screen
+// with the four layers; the bottom nav steps scene to scene, then flows into the
+// previous/next reading at the ends. The capstone and close land after the last scene.
 export function Reader({
   reading,
   closingMovement,
+  prev,
+  next,
 }: {
   reading: Reading;
   closingMovement?: Movement;
+  prev?: Adjacent;
+  next?: Adjacent;
 }) {
-  const genre = genreLabel(reading.passages.map((passage) => passage.kind));
+  const passages = reading.passages;
+  const last = passages.length - 1;
+  const [i, setI] = useState(0);
+
+  // Restore a deep-linked scene (?s=) on mount, and reflect the current scene in the URL
+  // without a navigation so a scene stays shareable.
+  useEffect(() => {
+    const s = Number.parseInt(
+      new URLSearchParams(window.location.search).get("s") ?? "",
+      10,
+    );
+    if (Number.isInteger(s) && s > 0 && s <= last) setI(s);
+    // run once on mount
+  }, [last]);
+
+  useEffect(() => {
+    const url =
+      i === 0 ? window.location.pathname : `${window.location.pathname}?s=${i}`;
+    window.history.replaceState(null, "", url);
+    window.scrollTo({ top: 0 });
+  }, [i]);
+
+  const passage = passages[i];
+  const isFirst = i === 0;
+  const isLast = i === last;
+  const genre = genreLabel(passages.map((p) => p.kind));
+
+  // Each side of the nav has content if it steps to another scene, or crosses into an
+  // adjacent reading. A lone reading with no neighbours shows no nav at all.
+  const hasBack = !isFirst || Boolean(prev);
+  const hasForward = !isLast || Boolean(next);
 
   return (
     <article>
@@ -31,34 +74,125 @@ export function Reader({
         </span>
       </div>
 
-      {reading.crossesChapters ? <SpanBanner span={reading.span} /> : null}
+      {reading.crossesChapters && isFirst ? (
+        <SpanBanner span={reading.span} />
+      ) : null}
 
       <h1 className="mt-[2px] font-display text-[26px] font-medium leading-[1.15] tracking-[.01em] text-parchment">
         {reading.title}
       </h1>
 
-      {reading.thread ? <ThreadGloss text={reading.thread} /> : null}
+      {passages.length > 1 ? (
+        <div className="mt-2 font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
+          Scene {i + 1} of {passages.length}
+        </div>
+      ) : null}
 
-      {reading.passages.map((passage, i) => (
-        <Passage
-          key={passage.ref}
-          passage={passage}
-          first={i === 0}
-          bookId={reading.bookId}
-          readingId={reading.id}
-          readingTitle={reading.title}
-        />
-      ))}
+      {reading.thread && isFirst ? <ThreadGloss text={reading.thread} /> : null}
 
-      {reading.closeEnd ? (
+      <Passage
+        key={passage.ref}
+        passage={passage}
+        first
+        bookId={reading.bookId}
+        readingId={reading.id}
+        readingTitle={reading.title}
+      />
+
+      {isLast && reading.closeEnd ? (
         <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
           {reading.closeEnd}
         </div>
       ) : null}
 
-      {closingMovement?.capstone ? (
+      {isLast && closingMovement?.capstone ? (
         <Capstone capstone={closingMovement.capstone} />
       ) : null}
+
+      {hasBack || hasForward ? (
+        <nav className="mt-9 flex items-stretch justify-between gap-3 border-t border-line pt-5">
+          <NavSlot
+            align="left"
+            label={
+              isFirst
+                ? prev?.title
+                : `${passages[i - 1].label ?? "Previous"} · ${passages[i - 1].title}`
+            }
+            href={
+              isFirst && prev ? `/read/${reading.bookId}/${prev.id}` : undefined
+            }
+            onClick={isFirst ? undefined : () => setI(i - 1)}
+          />
+          <NavSlot
+            align="right"
+            prominent
+            label={
+              isLast
+                ? next?.title
+                : `${passages[i + 1].label ?? "Next"} · ${passages[i + 1].title}`
+            }
+            href={
+              isLast && next ? `/read/${reading.bookId}/${next.id}` : undefined
+            }
+            onClick={isLast ? undefined : () => setI(i + 1)}
+          />
+        </nav>
+      ) : null}
     </article>
+  );
+}
+
+// A single nav button: a real button for in-reading scene steps, a Link for crossing
+// into the adjacent reading, or a disabled placeholder at the very ends.
+function NavSlot({
+  align,
+  label,
+  href,
+  onClick,
+  prominent,
+}: {
+  align: "left" | "right";
+  label?: string;
+  href?: string;
+  onClick?: () => void;
+  prominent?: boolean;
+}) {
+  if (!label) return <span className="max-w-[46%] flex-1" />;
+
+  const arrow = align === "left" ? "‹" : "›";
+  const body: ReactNode = (
+    <span className={`flex flex-col ${align === "right" ? "text-right" : ""}`}>
+      <span className="text-[9.5px] uppercase tracking-[.18em] text-mist-2">
+        {align === "left" ? "Back" : "Continue"}
+      </span>
+      <span
+        className={`mt-1 ${prominent ? "text-gold-bright group-hover:text-gold" : "text-parchment-2 group-hover:text-parchment"}`}
+      >
+        {align === "left" ? `${arrow} ${label}` : `${label} ${arrow}`}
+      </span>
+    </span>
+  );
+
+  const className =
+    "group flex max-w-[46%] flex-1 rounded-[11px] border border-line px-4 py-3 font-ui text-[12px] transition-colors hover:border-gold/40";
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={`${className} ${align === "right" ? "justify-end" : ""}`}
+      >
+        {body}
+      </Link>
+    );
+  }
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`${className} ${align === "right" ? "justify-end" : ""}`}
+    >
+      {body}
+    </button>
   );
 }
