@@ -34,6 +34,16 @@ export function BookCapstone({ capstone }: { capstone: CapstoneData }) {
             {capstone.sources}
           </div>
         ) : null}
+        {capstone.ask ? (
+          <div className="mt-4 border-t border-gold/30 pt-4">
+            <div className="mb-2 font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
+              One last question
+            </div>
+            <div className="font-scripture text-[17px] italic leading-[1.5] text-parchment">
+              {capstone.ask}
+            </div>
+          </div>
+        ) : null}
       </div>
     </details>
   );

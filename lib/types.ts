@@ -166,6 +166,7 @@ export interface Capstone {
   paragraphs: string[];
   tensions?: Tension[];
   sources?: string;
+  ask?: string; // an optional closing question, used by the book-level wrap-up
 }
 
 // The look-forward at the threshold between movements.

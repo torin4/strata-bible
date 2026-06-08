@@ -1,4 +1,4 @@
-import type { Capstone, Movement, Reading } from "@/lib/types";
+import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 
 // Genesis 1-15, migrated from the prototype's SITTINGS/GEN objects by migrate.js.
 // Content is reshaped, not rewritten. 15 readings.
@@ -3830,4 +3830,19 @@ export const GENESIS_CAPSTONE: Capstone = {
     { claim: 'The blessing always wins through; the promise survives every fracture and every betrayal.', counter: 'Genesis ends not in the promised land but in Egypt, in a coffin, the rescue still only a word, and the book holds its completion deliberately out of reach.', where: 'Genesis 1:1 against 50:26' },
   ],
   sources: 'von Rad · Westermann · Clines · Alter',
+  ask: 'Genesis ends in the middle, between a promise made and a promise not yet kept. Where in your own life are you being asked to live in that gap, and to trust the One who made the promise?',
+};
+
+// The introduction to the whole book: what Genesis is and how to read it, shown at the
+// head of the book page before the movements. Book-level grounding, the counterpart to
+// each movement's situation panel.
+export const GENESIS_INTRO: Panel = {
+  skicker: 'An introduction · Genesis 1–50',
+  title: 'A library, not a single book',
+  paragraphs: [
+    'Genesis is not one book by one hand. It is a library, gathered and edited over centuries and given its final shape, most scholars think, by Judean priests and scribes during and after the exile in Babylon, in the sixth and fifth centuries BCE. They wove together older traditions, the vivid Yahwist and the ordered Priestly among them, without smoothing the seams away. Those seams are part of what you are reading, not damage to it.',
+    'It moves in four movements. The world, made good and gone wrong, scattered at Babel. The family, one childless old man handed a promise and learning, slowly, to hold it open-handed. The wrestler, a deceiver chosen before he deserved it and broken of his grasping at a river in the dark. And the dreamer, a favored son sold into Egypt who comes to read even his own betrayal as a hidden providence. Creation to a coffin in Egypt, one long story about a blessing and what keeps happening to it.',
+    'STRATA reads it the way it was made: grounded in the history it grew out of, honest about where it argues with itself, refusing the tidy moral. Each reading opens with what the passage meant then, draws out what it carries, turns to address you, and leaves you a question. You do not have to read it in order. Begin where you are.',
+  ],
+  sources: 'Wellhausen · von Rad · Friedman · Alter',
 };
