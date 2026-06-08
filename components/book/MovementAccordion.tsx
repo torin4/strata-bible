@@ -5,9 +5,9 @@ import type { Movement } from "@/lib/types";
 import { ReadingRow } from "./ReadingRow";
 
 // The book's movements as an accordion. Each movement opens to its grounding situation,
-// the readings that fall inside it, and the doorway forward to the next movement. The
-// first movement is open by default. A doorway anchors to the next movement when it is
-// present on the page.
+// the readings that fall inside it, and the doorway forward to the next movement. All
+// movements start collapsed; the reader opens the one they want. A doorway anchors to
+// the next movement when it is present on the page.
 export function MovementAccordion({
   bookId,
   movements,
@@ -20,7 +20,7 @@ export function MovementAccordion({
 
   return (
     <div className="flex flex-col gap-3">
-      {sorted.map((movement, i) => {
+      {sorted.map((movement) => {
         const nextId = movement.doorway?.nextMovementId;
         const nextHref =
           nextId && present.has(nextId) ? `#movement-${nextId}` : undefined;
@@ -28,7 +28,6 @@ export function MovementAccordion({
           <details
             key={movement.id}
             id={`movement-${movement.id}`}
-            open={i === 0}
             className="group/movement scroll-mt-4 overflow-hidden rounded-[14px] border border-line bg-deep"
           >
             <summary className="flex cursor-pointer items-start gap-3 px-5 py-4">
