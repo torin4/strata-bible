@@ -29,7 +29,7 @@ export function MovementAccordion({
             key={movement.id}
             id={`movement-${movement.id}`}
             open={i === 0}
-            className="group scroll-mt-4 overflow-hidden rounded-[14px] border border-line bg-deep"
+            className="group/movement scroll-mt-4 overflow-hidden rounded-[14px] border border-line bg-deep"
           >
             <summary className="flex cursor-pointer items-start gap-3 px-5 py-4">
               <span className="flex flex-col gap-1">
@@ -44,7 +44,7 @@ export function MovementAccordion({
                   {movement.throughline}
                 </span>
               </span>
-              <span className="ml-auto pt-1 text-[15px] text-mist-2 transition-transform group-open:rotate-45 group-open:text-gold">
+              <span className="ml-auto pt-1 text-[15px] text-mist-2 transition-transform group-open/movement:rotate-45 group-open/movement:text-gold">
                 +
               </span>
             </summary>

@@ -26,7 +26,7 @@ export function PanelView({ panel, accent }: { panel: Panel; accent: Accent }) {
   const c = ACCENT[accent];
   return (
     <details
-      className={`group overflow-hidden rounded-[12px] border ${c.border} ${c.openBg}`}
+      className={`group/panel overflow-hidden rounded-[12px] border ${c.border} ${c.openBg}`}
     >
       <summary className="flex cursor-pointer items-center gap-3 px-4 py-3">
         <span className="flex flex-col">
@@ -39,7 +39,7 @@ export function PanelView({ panel, accent }: { panel: Panel; accent: Accent }) {
             {panel.title}
           </span>
         </span>
-        <span className="ml-auto text-[15px] text-mist-2 transition-transform group-open:rotate-45 group-open:text-gold">
+        <span className="ml-auto text-[15px] text-mist-2 transition-transform group-open/panel:rotate-45 group-open/panel:text-gold">
           +
         </span>
       </summary>
