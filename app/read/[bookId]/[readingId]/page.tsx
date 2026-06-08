@@ -1,3 +1,4 @@
+import { LastReadTracker } from "@/components/reader/LastReadTracker";
 import { Reader } from "@/components/reader/Reader";
 import { BOOKS } from "@/content";
 import {
@@ -34,6 +35,12 @@ export default async function ReadingPage({
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
+      <LastReadTracker
+        bookId={bookId}
+        readingId={readingId}
+        title={reading.title}
+        span={reading.span}
+      />
       <div className="mx-auto max-w-[40rem]">
         <header className="mb-5 flex flex-col items-center gap-2">
           <Link

@@ -1,4 +1,6 @@
 import { AuthProvider } from "@/components/auth/AuthProvider";
+import { MenuDrawer } from "@/components/nav/MenuDrawer";
+import { SettingsProvider } from "@/components/settings/SettingsProvider";
 import type { Metadata } from "next";
 import "@/styles/tokens.css";
 import "@/styles/globals.css";
@@ -28,7 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          <SettingsProvider>
+            <MenuDrawer />
+            {children}
+          </SettingsProvider>
+        </AuthProvider>
       </body>
     </html>
   );

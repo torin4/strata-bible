@@ -6,6 +6,7 @@ import { Ask } from "@/components/reader/Ask";
 import { Layer } from "@/components/reader/Layer";
 import { Lenses } from "@/components/reader/Lenses";
 import { TheTurn } from "@/components/reader/TheTurn";
+import { useSettings } from "@/components/settings/SettingsProvider";
 import {
   type CompanionLayer,
   generateMiddle,
@@ -33,11 +34,12 @@ export function CompanionMiddle({
   passage: Passage;
 }) {
   const { user, configured, loading } = useAuth();
+  const { settings } = useSettings();
   const [phase, setPhase] = useState<Phase>("checking");
   const [layer, setLayer] = useState<CompanionLayer | null>(null);
 
   useEffect(() => {
-    if (!user) return;
+    if (!user || !settings.companionEnabled) return;
     let active = true;
     setPhase("checking");
     loadCachedMiddle(readingId, passage)
@@ -54,7 +56,7 @@ export function CompanionMiddle({
     return () => {
       active = false;
     };
-  }, [user, readingId, passage]);
+  }, [user, readingId, passage, settings.companionEnabled]);
 
   if (!configured || loading) return null;
 
@@ -71,6 +73,9 @@ export function CompanionMiddle({
       </div>
     );
   }
+
+  // Companion turned off in settings: the passage stays its authored self, nothing more.
+  if (!settings.companionEnabled) return null;
 
   const draft = () => {
     setPhase("drafting");
