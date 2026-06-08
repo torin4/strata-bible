@@ -16,22 +16,28 @@ interface Adjacent {
 
 // One Reading, paginated a scene at a time. Each passage (a "scene") is its own screen
 // with the four layers; the bottom nav steps scene to scene, then flows into the
-// previous/next reading at the ends. The capstone and close land after the last scene.
+// previous/next reading at the ends. When this is the last reading in the book, one more
+// step past the final scene reaches the book's wrap-up, its own screen behind the nav.
 export function Reader({
   reading,
   closingMovement,
   closingBookCapstone,
+  bookTitle,
   prev,
   next,
 }: {
   reading: Reading;
   closingMovement?: Movement;
   closingBookCapstone?: CapstoneData;
+  bookTitle?: string;
   prev?: Adjacent;
   next?: Adjacent;
 }) {
   const passages = reading.passages;
   const last = passages.length - 1;
+  const hasWrapup = Boolean(closingBookCapstone);
+  const wrapupIndex = passages.length; // one scene past the last passage
+  const maxScene = hasWrapup ? wrapupIndex : last;
   const [i, setI] = useState(0);
 
   // Restore a deep-linked scene (?s=) on mount, and reflect the current scene in the URL
@@ -41,9 +47,9 @@ export function Reader({
       new URLSearchParams(window.location.search).get("s") ?? "",
       10,
     );
-    if (Number.isInteger(s) && s > 0 && s <= last) setI(s);
+    if (Number.isInteger(s) && s > 0 && s <= maxScene) setI(s);
     // run once on mount
-  }, [last]);
+  }, [maxScene]);
 
   useEffect(() => {
     const url =
@@ -52,98 +58,126 @@ export function Reader({
     window.scrollTo({ top: 0 });
   }, [i]);
 
+  const onWrapup = hasWrapup && i === wrapupIndex;
   const passage = passages[i];
   const isFirst = i === 0;
-  const isLast = i === last;
+  const isLastPassage = i === last;
   const genre = genreLabel(passages.map((p) => p.kind));
 
-  // Each side of the nav has content if it steps to another scene, or crosses into an
-  // adjacent reading. A lone reading with no neighbours shows no nav at all.
-  const hasBack = !isFirst || Boolean(prev);
-  const hasForward = !isLast || Boolean(next);
+  // Back steps to the previous scene, or crosses into the previous reading at the start,
+  // or returns from the wrap-up to the final scene. Forward steps to the next scene, then
+  // to the wrap-up (last reading) or the next reading, and stops at the wrap-up.
+  const back = onWrapup
+    ? { label: reading.title, onClick: () => setI(last) }
+    : isFirst
+      ? prev
+        ? { label: prev.title, href: `/read/${reading.bookId}/${prev.id}` }
+        : null
+      : {
+          label: `${passages[i - 1].label ?? "Previous"} · ${passages[i - 1].title}`,
+          onClick: () => setI(i - 1),
+        };
+
+  const forward = onWrapup
+    ? null
+    : isLastPassage
+      ? hasWrapup
+        ? {
+            label: `Look back over ${bookTitle ?? "the book"}`,
+            onClick: () => setI(wrapupIndex),
+          }
+        : next
+          ? { label: next.title, href: `/read/${reading.bookId}/${next.id}` }
+          : null
+      : {
+          label: `${passages[i + 1].label ?? "Next"} · ${passages[i + 1].title}`,
+          onClick: () => setI(i + 1),
+        };
 
   return (
     <article>
-      <div className="mb-[14px] flex flex-wrap items-center gap-2">
-        <span className="rounded-full border border-gold/50 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
-          {TIER_LABEL[reading.tier]}
-        </span>
-        <span className="rounded-full border border-lapis/40 bg-lapis/[0.08] px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-lapis">
-          {genre}
-        </span>
-        <span className="font-body text-[11px] italic tracking-[.06em] text-mist-2">
-          {reading.span}
-        </span>
-      </div>
-
-      {reading.crossesChapters && isFirst ? (
-        <SpanBanner span={reading.span} />
-      ) : null}
-
-      <h1 className="mt-[2px] font-display text-[26px] font-medium leading-[1.15] tracking-[.01em] text-parchment">
-        {reading.title}
-      </h1>
-
-      {passages.length > 1 ? (
-        <div className="mt-2 font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
-          Scene {i + 1} of {passages.length}
-        </div>
-      ) : null}
-
-      {reading.thread && isFirst ? <ThreadGloss text={reading.thread} /> : null}
-
-      {/* Keyed on the scene index so each forward/back step rises in, not just the
-          first paint. Crossing into an adjacent reading remounts the whole page. */}
-      <div key={i} className="stagger">
-        <Passage
-          passage={passage}
-          first
-          bookId={reading.bookId}
-          readingId={reading.id}
-          readingTitle={reading.title}
-        />
-
-        {isLast && reading.closeEnd ? (
-          <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
-            {reading.closeEnd}
+      {onWrapup ? null : (
+        <>
+          <div className="mb-[14px] flex flex-wrap items-center gap-2">
+            <span className="rounded-full border border-gold/50 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
+              {TIER_LABEL[reading.tier]}
+            </span>
+            <span className="rounded-full border border-lapis/40 bg-lapis/[0.08] px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-lapis">
+              {genre}
+            </span>
+            <span className="font-body text-[11px] italic tracking-[.06em] text-mist-2">
+              {reading.span}
+            </span>
           </div>
-        ) : null}
 
-        {isLast && closingMovement?.capstone ? (
-          <Capstone capstone={closingMovement.capstone} />
-        ) : null}
+          {reading.crossesChapters && isFirst ? (
+            <SpanBanner span={reading.span} />
+          ) : null}
 
-        {isLast && closingBookCapstone ? (
-          <Capstone capstone={closingBookCapstone} />
-        ) : null}
+          <h1 className="mt-[2px] font-display text-[26px] font-medium leading-[1.15] tracking-[.01em] text-parchment">
+            {reading.title}
+          </h1>
+
+          {passages.length > 1 ? (
+            <div className="mt-2 font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
+              Scene {i + 1} of {passages.length}
+            </div>
+          ) : null}
+
+          {reading.thread && isFirst ? (
+            <ThreadGloss text={reading.thread} />
+          ) : null}
+        </>
+      )}
+
+      {/* Keyed on the scene so each forward/back step rises in; "wrapup" is its own key. */}
+      <div key={onWrapup ? "wrapup" : i} className="stagger">
+        {onWrapup ? (
+          <>
+            <div className="mb-4 font-ui text-[10px] uppercase tracking-[.22em] text-mist-2">
+              {bookTitle ? `${bookTitle} · the wrap-up` : "The wrap-up"}
+            </div>
+            {closingBookCapstone ? (
+              <Capstone capstone={closingBookCapstone} />
+            ) : null}
+          </>
+        ) : (
+          <>
+            <Passage
+              passage={passage}
+              first
+              bookId={reading.bookId}
+              readingId={reading.id}
+              readingTitle={reading.title}
+            />
+
+            {isLastPassage && reading.closeEnd ? (
+              <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
+                {reading.closeEnd}
+              </div>
+            ) : null}
+
+            {isLastPassage && closingMovement?.capstone ? (
+              <Capstone capstone={closingMovement.capstone} />
+            ) : null}
+          </>
+        )}
       </div>
 
-      {hasBack || hasForward ? (
+      {back || forward ? (
         <nav className="mt-9 flex items-stretch justify-between gap-3 border-t border-line pt-5">
           <NavSlot
             align="left"
-            label={
-              isFirst
-                ? prev?.title
-                : `${passages[i - 1].label ?? "Previous"} · ${passages[i - 1].title}`
-            }
-            href={
-              isFirst && prev ? `/read/${reading.bookId}/${prev.id}` : undefined
-            }
-            onClick={isFirst ? undefined : () => setI(i - 1)}
+            label={back?.label}
+            href={back?.href}
+            onClick={back?.onClick}
           />
           <NavSlot
             align="right"
             prominent
-            label={
-              isLast
-                ? next?.title
-                : `${passages[i + 1].label ?? "Next"} · ${passages[i + 1].title}`
-            }
-            href={
-              isLast && next ? `/read/${reading.bookId}/${next.id}` : undefined
-            }
-            onClick={isLast ? undefined : () => setI(i + 1)}
+            label={forward?.label}
+            href={forward?.href}
+            onClick={forward?.onClick}
           />
         </nav>
       ) : null}

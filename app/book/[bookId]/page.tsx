@@ -1,4 +1,3 @@
-import { BookCapstone } from "@/components/book/BookCapstone";
 import { MovementAccordion } from "@/components/book/MovementAccordion";
 import { ReadingRow } from "@/components/book/ReadingRow";
 import { PageTransition } from "@/components/nav/PageTransition";
@@ -59,7 +58,11 @@ export default async function BookPage({
         ) : null}
 
         {movementCount > 0 ? (
-          <MovementAccordion bookId={book.id} movements={book.movements} />
+          <MovementAccordion
+            bookId={book.id}
+            movements={book.movements}
+            bookCapstone={book.capstone}
+          />
         ) : null}
 
         {orphans.length > 0 ? (
@@ -69,8 +72,6 @@ export default async function BookPage({
             ))}
           </ul>
         ) : null}
-
-        {book.capstone ? <BookCapstone capstone={book.capstone} /> : null}
 
         <div className="mt-6 text-center">
           <Link

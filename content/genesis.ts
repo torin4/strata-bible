@@ -3838,11 +3838,10 @@ export const GENESIS_CAPSTONE: Capstone = {
 // each movement's situation panel.
 export const GENESIS_INTRO: Panel = {
   skicker: 'An introduction · Genesis 1–50',
-  title: 'A library, not a single book',
+  title: 'The book of beginnings',
   paragraphs: [
-    'Genesis is not one book by one hand. It is a library, gathered and edited over centuries and given its final shape, most scholars think, by Judean priests and scribes during and after the exile in Babylon, in the sixth and fifth centuries BCE. They wove together older traditions, the vivid Yahwist and the ordered Priestly among them, without smoothing the seams away. Those seams are part of what you are reading, not damage to it.',
-    'It moves in four movements. The world, made good and gone wrong, scattered at Babel. The family, one childless old man handed a promise and learning, slowly, to hold it open-handed. The wrestler, a deceiver chosen before he deserved it and broken of his grasping at a river in the dark. And the dreamer, a favored son sold into Egypt who comes to read even his own betrayal as a hidden providence. Creation to a coffin in Egypt, one long story about a blessing and what keeps happening to it.',
-    'STRATA reads it the way it was made: grounded in the history it grew out of, honest about where it argues with itself, refusing the tidy moral. Each reading opens with what the passage meant then, draws out what it carries, turns to address you, and leaves you a question. You do not have to read it in order. Begin where you are.',
+    'Genesis is the first book of the Bible, and the word means beginning. It is the book of origins: of the world and the sky and the sea, of humanity, of work and rest, of the first wrong and the first death, and of the family through whom the rest of the story will come. Almost everything the Bible says later starts somewhere in here.',
+    'It comes in two parts. Chapters 1 to 11 are about everyone, the whole human story painted in broad, deep-time strokes: creation, the garden, Cain and Abel, the flood, the tower of Babel. Then from chapter 12 the lens narrows to one family across four generations, Abraham, Isaac, Jacob, and Joseph, and follows them all the way down to the end.',
+    'The story runs from the first light over the waters to a coffin in Egypt: a world made and broken, a promise made to one old man, and a family carried through famine and betrayal toward a homecoming that has still not arrived when the book closes. From beginning to end it is one long story about a blessing, and what keeps happening to it.',
   ],
-  sources: 'Wellhausen · von Rad · Friedman · Alter',
 };

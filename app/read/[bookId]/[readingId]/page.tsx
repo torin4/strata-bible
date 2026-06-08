@@ -67,6 +67,7 @@ export default async function ReadingPage({
             reading={reading}
             closingMovement={closingMovement}
             closingBookCapstone={closingBookCapstone}
+            bookTitle={book?.title}
             prev={prev ? { id: prev.id, title: prev.title } : undefined}
             next={next ? { id: next.id, title: next.title } : undefined}
           />

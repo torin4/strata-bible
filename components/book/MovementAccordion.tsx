@@ -1,7 +1,8 @@
 import { Doorway } from "@/components/overlays/Doorway";
 import { SituationPanel } from "@/components/overlays/SituationPanel";
 import { readingsInMovement } from "@/lib/content";
-import type { Movement } from "@/lib/types";
+import type { Capstone, Movement } from "@/lib/types";
+import { BookCapstone } from "./BookCapstone";
 import { ReadingRow } from "./ReadingRow";
 
 // The book's movements as an accordion. Each movement opens to its grounding situation,
@@ -11,12 +12,17 @@ import { ReadingRow } from "./ReadingRow";
 export function MovementAccordion({
   bookId,
   movements,
+  bookCapstone,
 }: {
   bookId: string;
   movements: Movement[];
+  bookCapstone?: Capstone;
 }) {
   const sorted = [...movements].sort((a, b) => a.index - b.index);
   const present = new Set(sorted.map((movement) => movement.id));
+  // The book-level wrap-up lands at the end of the last movement: read the final
+  // stretch, then look back over the whole book.
+  const lastId = sorted[sorted.length - 1]?.id;
 
   return (
     <div className="flex flex-col gap-3">
@@ -60,6 +66,9 @@ export function MovementAccordion({
               </ul>
               {movement.doorway ? (
                 <Doorway doorway={movement.doorway} nextHref={nextHref} />
+              ) : null}
+              {movement.id === lastId && bookCapstone ? (
+                <BookCapstone capstone={bookCapstone} />
               ) : null}
             </div>
           </details>
