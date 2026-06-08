@@ -116,6 +116,12 @@ export function MenuDrawer() {
 
         <nav className="flex flex-col">
           <DrawerLink href="/" label="Home" onNavigate={close} />
+          <DrawerLink
+            href="/find"
+            label="Find a reading"
+            sub="By what you’re carrying"
+            onNavigate={close}
+          />
           <DrawerLink href="/journal" label="Journal" onNavigate={close} />
           <DrawerLink
             href={continueHref}

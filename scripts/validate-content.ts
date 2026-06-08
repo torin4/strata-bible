@@ -2,6 +2,7 @@
 // `tsc` (content is strongly typed against lib/types.ts); this guards the relationships
 // between readings, passages, and movements that the reader relies on.
 import { BOOKS } from "@/content";
+import { READING_THEMES } from "@/content/themes";
 import type { Passage } from "@/lib/types";
 
 const errors: string[] = [];
@@ -49,6 +50,15 @@ for (const book of BOOKS) {
       );
     }
   }
+}
+
+// The find index (content/themes.ts) must point at sittings that actually exist; theme
+// keys themselves are already enforced by the ThemeKey union at compile time.
+for (const id of Object.keys(READING_THEMES)) {
+  const reading = allReadings.find((r) => r.id === id);
+  if (!reading) fail(`READING_THEMES: unknown reading id "${id}"`);
+  else if (reading.tier !== "sitting")
+    fail(`READING_THEMES: "${id}" is tier ${reading.tier}, expected a sitting`);
 }
 
 // Genesis is the book that ships first: it must read end to end.
