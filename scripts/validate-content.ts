@@ -61,6 +61,12 @@ for (const id of Object.keys(READING_THEMES)) {
     fail(`READING_THEMES: "${id}" is tier ${reading.tier}, expected a sitting`);
 }
 
+// A sitting with no theme entry is invisible to /find. Warn (do not fail) so a content
+// pass notices without being blocked from authoring before tagging.
+const untaggedSittings = allReadings
+  .filter((r) => r.tier === "sitting" && !READING_THEMES[r.id])
+  .map((r) => r.id);
+
 // Genesis is the book that ships first: it must read end to end.
 const genesis = BOOKS.find((b) => b.id === "genesis");
 if (!genesis) fail("genesis book missing");
@@ -71,6 +77,11 @@ if (errors.length) {
   console.error(`validate-content: ${errors.length} problem(s):\n`);
   for (const e of errors) console.error(`  ${e}`);
   process.exit(1);
+}
+if (untaggedSittings.length) {
+  console.warn(
+    `validate-content: ${untaggedSittings.length} sitting(s) not tagged in content/themes.ts, so absent from /find: ${untaggedSittings.join(", ")}`,
+  );
 }
 console.log(
   `validate-content: ${allReadings.length} readings across ${BOOKS.length} books, all valid.`,
