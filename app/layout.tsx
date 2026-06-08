@@ -1,5 +1,6 @@
 import { AuthProvider } from "@/components/auth/AuthProvider";
 import { MenuDrawer } from "@/components/nav/MenuDrawer";
+import { HighlightProvider } from "@/components/reader/HighlightProvider";
 import { SettingsProvider } from "@/components/settings/SettingsProvider";
 import type { Metadata } from "next";
 import "@/styles/tokens.css";
@@ -32,8 +33,10 @@ export default function RootLayout({
       <body>
         <AuthProvider>
           <SettingsProvider>
-            <MenuDrawer />
-            {children}
+            <HighlightProvider>
+              <MenuDrawer />
+              {children}
+            </HighlightProvider>
           </SettingsProvider>
         </AuthProvider>
       </body>

@@ -1,17 +1,24 @@
+import { highlightKey } from "@/lib/highlights";
 import type { Verse } from "@/lib/types";
 import { Fragment } from "react";
+import { HighlightableVerse } from "./HighlightableVerse";
 
 // Scripture rendering, kind-aware via `form`. Prose flows the verses into one block
 // with superscript verse numbers; poetry breaks each verse into its own stanza, one
 // line per "\n", and marks the single verse where the poem turns (inTextTurn).
+// `readingId`/`passageRef` key each verse so a signed-in reader can highlight it.
 export function Scripture({
   form,
   verses,
   inTextTurn,
+  readingId,
+  passageRef,
 }: {
   form: "prose" | "poetry";
   verses: Verse[];
   inTextTurn?: number;
+  readingId: string;
+  passageRef: string;
 }) {
   if (form === "poetry") {
     return (
@@ -35,9 +42,18 @@ export function Scripture({
                     : ""
                 }`}
               >
-                {verse.text.split("\n").map((line) => (
-                  <div key={line}>{line}</div>
-                ))}
+                {/* One inline highlight target per verse; lines break with <br> so the
+                    wash can flow across them (a span cannot wrap block-level divs). */}
+                <HighlightableVerse
+                  vkey={highlightKey(readingId, passageRef, verse.n)}
+                >
+                  {verse.text.split("\n").map((line, li) => (
+                    <Fragment key={line}>
+                      {li > 0 ? <br /> : null}
+                      {line}
+                    </Fragment>
+                  ))}
+                </HighlightableVerse>
               </div>
             </div>
           );
@@ -54,7 +70,11 @@ export function Scripture({
           <span className="mr-[5px] align-super font-ui text-[9.5px] tracking-[.04em] text-gold">
             {verse.n}
           </span>
-          {verse.text}
+          <HighlightableVerse
+            vkey={highlightKey(readingId, passageRef, verse.n)}
+          >
+            {verse.text}
+          </HighlightableVerse>
         </Fragment>
       ))}
     </p>

@@ -64,14 +64,23 @@ export function Passage({
           form="poetry"
           verses={passage.verses ?? []}
           inTextTurn={passage.inTextTurn}
+          readingId={readingId}
+          passageRef={passage.ref}
         />
       ) : passage.form === "list" ? (
         <ClusterList
           items={passage.statutes ?? passage.sayings ?? []}
           perItem={passage.perItem}
+          readingId={readingId}
+          passageRef={passage.ref}
         />
       ) : (
-        <Scripture form="prose" verses={passage.verses ?? []} />
+        <Scripture
+          form="prose"
+          verses={passage.verses ?? []}
+          readingId={readingId}
+          passageRef={passage.ref}
+        />
       )}
 
       {passage.symbols ? <Symbols symbols={passage.symbols} /> : null}

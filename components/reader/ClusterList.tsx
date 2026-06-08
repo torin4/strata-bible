@@ -1,14 +1,21 @@
+import { highlightKey } from "@/lib/highlights";
 import type { ItemNote, Verse } from "@/lib/types";
+import { HighlightableVerse } from "./HighlightableVerse";
 import { ModeChip } from "./ModeChip";
 
 // A statute-cluster or saying-cluster: numbered items, each optionally carrying a
 // per-item address callout (a mode-chip + its claim on you) and/or a faint gloss note.
+// `readingId`/`passageRef` key each item so a signed-in reader can highlight it.
 export function ClusterList({
   items,
   perItem,
+  readingId,
+  passageRef,
 }: {
   items: Verse[];
   perItem?: Record<number, ItemNote>;
+  readingId: string;
+  passageRef: string;
 }) {
   return (
     <div className="mt-[6px]">
@@ -21,7 +28,11 @@ export function ClusterList({
                 {item.n}
               </div>
               <div className="font-scripture text-[18px] leading-[1.55] text-parchment">
-                {item.text}
+                <HighlightableVerse
+                  vkey={highlightKey(readingId, passageRef, item.n)}
+                >
+                  {item.text}
+                </HighlightableVerse>
               </div>
             </div>
             {annotation?.addr ? (
