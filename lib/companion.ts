@@ -1,0 +1,98 @@
+import { auth, db, isFirebaseConfigured } from "@/lib/firebase";
+import type { AddrMode, Passage } from "@/lib/types";
+import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
+
+// The companion's draft-middle output, merged over an authored passage at render time.
+// Matches the output contract in companion-spec.md. Any missing piece falls back to the
+// authored (here: blank) content; the reader never breaks without it.
+export interface CompanionLayer {
+  meaning: string;
+  lenses?: { theo?: string; arch?: string };
+  addr: { mode: AddrMode; text: string };
+  ask: string;
+}
+
+export const companionEnabled = isFirebaseConfigured;
+
+// A cheap stable hash of the authored passage. If the scripture or ground changes, the
+// hash changes and any cached draft is treated as stale (regenerated on next ask).
+function hashAuthored(passage: Passage): string {
+  const items = passage.verses ?? passage.statutes ?? passage.sayings ?? [];
+  const basis = [
+    passage.ref,
+    passage.ground?.text ?? "",
+    ...items.map((v) => `${v.n}:${v.text}`),
+  ].join("|");
+  let h = 5381;
+  for (let i = 0; i < basis.length; i++)
+    h = (Math.imul(33, h) + basis.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+}
+
+function cacheKey(readingId: string, passageRef: string): string {
+  return `${readingId}__${passageRef}__draft-middle`
+    .replace(/[^a-zA-Z0-9_-]+/g, "_")
+    .slice(0, 240);
+}
+
+// A previously generated draft for this user, if one exists and is still current.
+export async function loadCachedMiddle(
+  readingId: string,
+  passage: Passage,
+): Promise<CompanionLayer | null> {
+  const user = auth?.currentUser;
+  if (!auth || !db || !user) return null;
+  const snap = await getDoc(
+    doc(db, "users", user.uid, "companion", cacheKey(readingId, passage.ref)),
+  );
+  if (!snap.exists()) return null;
+  const data = snap.data();
+  if (data.authoredHash !== hashAuthored(passage)) return null;
+  return data.payload as CompanionLayer;
+}
+
+// Ask the companion to draft the middle for this passage, then cache it. The API key
+// lives only on the server route; this call carries the user's Firebase ID token so the
+// route can confirm a real signed-in reader before spending a model call.
+export async function generateMiddle(
+  readingId: string,
+  passage: Passage,
+): Promise<CompanionLayer> {
+  const user = auth?.currentUser;
+  if (!auth || !db || !user) throw new Error("Sign in to use the companion.");
+
+  const idToken = await user.getIdToken();
+  const res = await fetch("/api/companion", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${idToken}`,
+    },
+    body: JSON.stringify({ task: "draft-middle", passage }),
+  });
+  if (!res.ok) {
+    throw new Error(
+      res.status === 503
+        ? "The companion is not configured yet."
+        : "The companion could not draft this.",
+    );
+  }
+  const layer = (await res.json()) as CompanionLayer;
+
+  // Caching is best-effort: a failed write (e.g. rules not yet broadened) must not lose
+  // the draft the reader just paid for.
+  try {
+    await setDoc(
+      doc(db, "users", user.uid, "companion", cacheKey(readingId, passage.ref)),
+      {
+        payload: layer,
+        authoredHash: hashAuthored(passage),
+        task: "draft-middle",
+        createdAt: serverTimestamp(),
+      },
+    );
+  } catch {
+    // ignore; the draft still renders, it just will not be cached for next time
+  }
+  return layer;
+}

@@ -1,3 +1,4 @@
+import { CompanionMiddle } from "@/components/companion/CompanionMiddle";
 import { AskResponse } from "@/components/journal/AskResponse";
 import { GROUND_LABEL, PASSAGE_KIND_LABEL } from "@/lib/labels";
 import type { Passage as PassageData } from "@/lib/types";
@@ -78,7 +79,15 @@ export function Passage({
       ) : null}
       {passage.meaning ? (
         <Layer variant="meaning" label="Meaning" text={passage.meaning} />
-      ) : null}
+      ) : (
+        // Grounded/plain tier: the middle is empty. The companion fills it when asked.
+        <CompanionMiddle
+          bookId={bookId}
+          readingId={readingId}
+          readingTitle={readingTitle}
+          passage={passage}
+        />
+      )}
       {passage.lenses ? <Lenses lenses={passage.lenses} /> : null}
       {passage.tensions ? <Tensions tensions={passage.tensions} /> : null}
       {passage.addr ? <TheTurn addr={passage.addr} /> : null}
