@@ -3796,6 +3796,7 @@ export const JOSEPH_MOVEMENT: Movement = {
   situation: {
     skicker: 'The ground beneath the Joseph story',
     title: 'A different kind of story, told to exiles',
+    image: '/images/gen-joseph.webp',
     paragraphs: [
       'The Joseph narrative reads unlike anything before it in Genesis. It is one long, artfully built novella rather than a chain of episodes, a single plot running unbroken from the pit to the deathbed, its foreshadowing and reversals and recognitions all worked out with a novelist’s control.',
       'And God acts in it differently. There are no more night visions or voices from the fire, no walking in the garden in the cool of the day. For chapters at a stretch heaven is silent, and the providence is hidden inside ordinary events, a sold slave, a false charge, a forgotten promise, a famine, until at the very end a single character names what was going on underneath all along.',
