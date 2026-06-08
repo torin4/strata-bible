@@ -25,39 +25,40 @@ export default async function BookPage({
   const movementCount = book.movements.length;
 
   return (
-    <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
-      <PageTransition className="mx-auto max-w-[42rem]">
-        <header className="mb-6 text-center">
-          <Link
-            href="/"
-            className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
-          >
-            STRATA
-          </Link>
-        </header>
-
-        {book.heroImage ? (
-          <div className="relative aspect-[688/384] w-full overflow-hidden rounded-[18px] border border-line">
-            {/* Decorative banner; the title is text below. */}
-            <img
-              src={book.heroImage}
-              alt=""
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-deep via-deep/25 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 px-5 pb-5 text-center">
-              <h1 className="font-display text-[34px] font-medium leading-none text-parchment sm:text-[40px]">
-                {book.title}
-              </h1>
-              {book.subtitle ? (
-                <p className="mx-auto mt-2 max-w-[34rem] font-body text-[14px] italic leading-[1.45] text-mist">
-                  {book.subtitle}
-                </p>
-              ) : null}
-            </div>
+    <main className="min-h-screen bg-shell pb-8 sm:pb-12">
+      {book.heroImage ? (
+        <div className="relative aspect-[688/384] max-h-[400px] w-full overflow-hidden">
+          {/* Full-bleed decorative banner; the title is text over it. */}
+          <img
+            src={book.heroImage}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-shell via-shell/30 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 px-4 pb-6 text-center">
+            <h1 className="font-display text-[34px] font-medium leading-none text-parchment sm:text-[42px]">
+              {book.title}
+            </h1>
+            {book.subtitle ? (
+              <p className="mx-auto mt-2 max-w-[34rem] font-body text-[14px] italic leading-[1.45] text-mist">
+                {book.subtitle}
+              </p>
+            ) : null}
           </div>
-        ) : (
+        </div>
+      ) : null}
+
+      <PageTransition className="mx-auto max-w-[42rem] px-4 pt-7 sm:pt-9">
+        {book.heroImage ? null : (
           <>
+            <header className="mb-6 text-center">
+              <Link
+                href="/"
+                className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
+              >
+                STRATA
+              </Link>
+            </header>
             <h1 className="text-center font-display text-[30px] font-medium text-parchment">
               {book.title}
             </h1>
@@ -68,7 +69,7 @@ export default async function BookPage({
             ) : null}
           </>
         )}
-        <div className="mb-8 mt-3 text-center font-ui text-[11px] uppercase tracking-[.16em] text-mist-2">
+        <div className="mb-8 mt-2 text-center font-ui text-[11px] uppercase tracking-[.16em] text-mist-2">
           {readingCount} {readingCount === 1 ? "reading" : "readings"}
           {movementCount > 0
             ? ` · ${movementCount} ${movementCount === 1 ? "movement" : "movements"}`
