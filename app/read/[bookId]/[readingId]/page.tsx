@@ -5,6 +5,7 @@ import { BOOKS } from "@/content";
 import {
   getAdjacent,
   getBook,
+  getClosingBookCapstone,
   getClosingMovement,
   getReading,
 } from "@/lib/content";
@@ -32,6 +33,7 @@ export default async function ReadingPage({
 
   const { prev, next } = getAdjacent(bookId, readingId);
   const closingMovement = getClosingMovement(bookId, reading);
+  const closingBookCapstone = getClosingBookCapstone(bookId, reading);
   const book = getBook(bookId);
 
   return (
@@ -64,6 +66,7 @@ export default async function ReadingPage({
           <Reader
             reading={reading}
             closingMovement={closingMovement}
+            closingBookCapstone={closingBookCapstone}
             prev={prev ? { id: prev.id, title: prev.title } : undefined}
             next={next ? { id: next.id, title: next.title } : undefined}
           />

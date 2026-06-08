@@ -1,7 +1,7 @@
 "use client";
 
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
-import type { Movement, Reading } from "@/lib/types";
+import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
 import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { Capstone } from "./Capstone";
@@ -20,11 +20,13 @@ interface Adjacent {
 export function Reader({
   reading,
   closingMovement,
+  closingBookCapstone,
   prev,
   next,
 }: {
   reading: Reading;
   closingMovement?: Movement;
+  closingBookCapstone?: CapstoneData;
   prev?: Adjacent;
   next?: Adjacent;
 }) {
@@ -109,6 +111,10 @@ export function Reader({
 
         {isLast && closingMovement?.capstone ? (
           <Capstone capstone={closingMovement.capstone} />
+        ) : null}
+
+        {isLast && closingBookCapstone ? (
+          <Capstone capstone={closingBookCapstone} />
         ) : null}
       </div>
 

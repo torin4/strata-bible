@@ -1,7 +1,8 @@
-import type { Movement, Panel, Reading } from "@/lib/types";
+import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 import {
   ABRAHAM_MOVEMENT,
   GENESIS,
+  GENESIS_CAPSTONE,
   JACOB_MOVEMENT,
   JOSEPH_MOVEMENT,
   PRIMEVAL_MOVEMENT,
@@ -16,9 +17,11 @@ import { JOB_MOVEMENT, SEED } from "./seed";
 export interface BookEntry {
   id: string;
   title: string;
+  subtitle?: string; // the book's one-line intro, shown under the title
   readings: Reading[];
   movements: Movement[];
   composition?: Panel;
+  capstone?: Capstone; // the book-level look-back over the whole arc
 }
 
 // Genesis ships first as the real book. The seed fixtures are one reading per genre,
@@ -58,6 +61,8 @@ export const BOOKS: BookEntry[] = [
   {
     id: "genesis",
     title: "Genesis",
+    subtitle:
+      "Four movements: the world, the family, the wrestler, the dreamer.",
     readings: GENESIS,
     movements: [
       PRIMEVAL_MOVEMENT,
@@ -65,6 +70,7 @@ export const BOOKS: BookEntry[] = [
       JACOB_MOVEMENT,
       JOSEPH_MOVEMENT,
     ],
+    capstone: GENESIS_CAPSTONE,
   },
   ...seedBooks(),
 ];

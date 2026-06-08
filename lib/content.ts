@@ -1,5 +1,5 @@
 import { BOOKS, type BookEntry } from "@/content";
-import type { Movement, Reading } from "@/lib/types";
+import type { Capstone, Movement, Reading } from "@/lib/types";
 
 const BOOK_BY_ID = new Map(BOOKS.map((book) => [book.id, book]));
 
@@ -84,4 +84,18 @@ export function getClosingMovement(
   );
   const last = inMovement[inMovement.length - 1];
   return last?.id === reading.id ? movement : undefined;
+}
+
+// The book-level look-back, returned only when a reading is the very last in its book and
+// the book carries a capstone. One level above the movement capstone: the whole arc.
+export function getClosingBookCapstone(
+  bookId: string,
+  reading: Reading,
+): Capstone | undefined {
+  const book = getBook(bookId);
+  if (!book?.capstone) return undefined;
+  const readings = book.readings;
+  return readings[readings.length - 1]?.id === reading.id
+    ? book.capstone
+    : undefined;
 }

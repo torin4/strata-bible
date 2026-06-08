@@ -1,4 +1,4 @@
-import type { Movement, Reading } from "@/lib/types";
+import type { Capstone, Movement, Reading } from "@/lib/types";
 
 // Genesis 1-15, migrated from the prototype's SITTINGS/GEN objects by migrate.js.
 // Content is reshaped, not rewritten. 15 readings.
@@ -3813,4 +3813,21 @@ export const JOSEPH_MOVEMENT: Movement = {
     ],
     sources: 'von Rad · Westermann · Alter',
   },
+};
+
+// The book-level look-back, one step above the movement capstones: what the whole of
+// Genesis is, read as a single arc. Rendered at the foot of the book page and after the
+// final reading.
+export const GENESIS_CAPSTONE: Capstone = {
+  skicker: 'The whole book · Genesis 1–50',
+  title: 'Blessing given, broken, and carried through',
+  paragraphs: [
+    'Genesis is one long story about a blessing, and what keeps happening to it. It opens with a world spoken into being and called good, a blessing poured out over everything, and almost at once the blessing fractures: trust broken in a garden, a brother killed, a tower raised in pride, until the whole world is scattered and the page goes quiet. The first eleven chapters diagnose the entire human condition, and then narrow, hard, to a single cure.',
+    'From there the blessing travels through one crooked family. It is promised to a childless old man and held against every impossibility, and learned, slowly, to be carried open-handed rather than grasped. It falls on a heel-grabber who has to be wrestled down and lamed before he can bear it. And it survives a betrayal that should have ended it, when a favored son is sold by his brothers and rises, in silence, to keep them all alive. Four movements, one promise, handed down through liars and rivals and the wronged, never because the people were good, only because grace would not let go.',
+    'And it does not end in arrival. The book that began with God’s breath over the waters closes with a body in a coffin in Egypt and a promise not yet kept: God will surely visit you, and bring you up. The people who assembled Genesis were themselves in exile, far from home, holding the same kind of unfinished promise, and they built a book that ends exactly where they were standing, in the middle, between the promise and its keeping, and told to trust the One who made it.',
+  ],
+  tensions: [
+    { claim: 'The blessing always wins through; the promise survives every fracture and every betrayal.', counter: 'Genesis ends not in the promised land but in Egypt, in a coffin, the rescue still only a word, and the book holds its completion deliberately out of reach.', where: 'Genesis 1:1 against 50:26' },
+  ],
+  sources: 'von Rad · Westermann · Clines · Alter',
 };
