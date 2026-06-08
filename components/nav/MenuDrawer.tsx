@@ -124,6 +124,12 @@ export function MenuDrawer() {
           />
           <DrawerLink href="/journal" label="Journal" onNavigate={close} />
           <DrawerLink
+            href="/highlights"
+            label="Your highlights"
+            sub="Verses you’ve marked"
+            onNavigate={close}
+          />
+          <DrawerLink
             href={continueHref}
             label="Continue reading"
             sub={continueSub}

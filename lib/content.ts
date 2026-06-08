@@ -25,6 +25,19 @@ export function getReading(
   return getBook(bookId)?.readings.find((reading) => reading.id === readingId);
 }
 
+// Locate a reading by id alone, returning its book too. Highlights store only the
+// reading id (the book is implicit in the reader URL), so the highlights view needs to
+// recover the book to build a jump-back link.
+export function findReadingAnywhere(
+  readingId: string,
+): { book: BookEntry; reading: Reading } | undefined {
+  for (const book of BOOKS) {
+    const reading = book.readings.find((r) => r.id === readingId);
+    if (reading) return { book, reading };
+  }
+  return undefined;
+}
+
 // Adjacency is the position in the book's authored reading list — its span order —
 // never chapter arithmetic, because a span may cross chapter lines. Navigation stays
 // inside one book.

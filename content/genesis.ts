@@ -3754,6 +3754,7 @@ export const JACOB_MOVEMENT: Movement = {
   situation: {
     skicker: 'The ground beneath the Jacob story',
     title: 'How two nations remember a shared womb',
+    image: '/images/gen-jacob.webp',
     paragraphs: [
       'The Jacob cycle is, among other things, a family explanation of a map. Jacob is Israel; his twin Esau is Edom, the rival just to the southeast; Laban and his daughters stand for the Aramean kin to the northeast. The quarrels in the tents are the quarrels between peoples, told as one fractious household.',
       'It is also the most morally tangled stretch of Genesis. The hero is a deceiver who grasps from the womb, and the story never tidies him up. It lets grace fall on a man who has done nothing to deserve it, then spends the whole cycle wearing him down, deceived in turn by Laban, until the trickster is finally broken open in the dark by a river.',
