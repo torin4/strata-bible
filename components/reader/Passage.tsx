@@ -7,6 +7,7 @@ import { ClusterList } from "./ClusterList";
 import { Layer } from "./Layer";
 import { Lenses } from "./Lenses";
 import { Misreading } from "./Misreading";
+import { Prayer } from "./Prayer";
 import { Scripture } from "./Scripture";
 import { Soft } from "./Soft";
 import { Symbols } from "./Symbols";
@@ -104,6 +105,7 @@ export function Passage({
           />
         </>
       ) : null}
+      {passage.prayer ? <Prayer prayer={passage.prayer} /> : null}
     </div>
   );
 }

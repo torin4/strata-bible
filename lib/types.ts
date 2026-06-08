@@ -49,6 +49,14 @@ export interface Address {
   text: string;
 }
 
+// The contemplative side of the turn: something to carry rather than answer. Where the
+// ask invites the reader to write a response, this invites them to pray it, sit with it,
+// or repeat it. `mode` picks the form and its label.
+export interface Prayer {
+  mode: 'pray' | 'meditate' | 'mantra';
+  text: string;
+}
+
 // One load-bearing misreading per passage. Deliberately singular: name the one that
 // does the most damage, do not bury the reader in caveats.
 export interface Misreading {
@@ -105,6 +113,7 @@ export interface Passage {
   addr?: Address;                    // the turn
   soft?: string;
   ask?: string;
+  prayer?: Prayer;                   // a meditation, mantra, or prayer to close the turn
 
   inTextTurn?: number;               // verse where the text itself turns (Ps 13:5)
   label?: string;                    // narrative scene label: "One", "Two"
