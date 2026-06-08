@@ -3436,6 +3436,222 @@ export const GENESIS: Reading[] = [
         }
       }
     ]
+  },
+  {
+    id: 'gen-41', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 41 (selected)', chapterIndex: 41,
+    title: 'From the pit to the palace',
+    thread: 'Two years late, the cupbearer finally remembers, and the forgotten prisoner is rushed from the dungeon to stand before Pharaoh, reads the dream no one else can, and is set over all Egypt in a single day.',
+    closeEnd: 'The dreamer they threw in a pit now stands second only to Pharaoh, and names his sons not for being healed but for being made fruitful in the very land of his affliction.',
+    passages: [
+      {
+        ref: '41:15–52', kind: 'scene', form: 'prose', title: 'Pharaoh’s dreams',
+        verses: [
+          { n: 15, text: 'Pharaoh said to Joseph, “I had a dream, and no one can interpret it. But I have heard it said of you that when you hear a dream you can interpret it.”' },
+          { n: 16, text: '“I myself cannot do it,” Joseph replied, “but God will give Pharaoh a sound answer.”' },
+          { n: 39, text: 'Then Pharaoh said to Joseph, “Since God has made all this known to you, there is no one as discerning and wise as you.' },
+          { n: 40, text: 'You shall be in charge of my house, and all my people are to obey your commands. Only with regard to the throne will I be greater than you.”' },
+          { n: 51, text: 'Joseph named the firstborn Manasseh, saying, “God has made me forget all my hardship and all my father’s household.”' },
+          { n: 52, text: 'And the second son he named Ephraim, saying, “God has made me fruitful in the land of my affliction.”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The rise from dungeon to vizier in a single day is the old rags-to-power court tale, with one difference: Joseph deflects the credit to God in his first breath before the throne, I cannot, but God will. The two son-names are a quiet autobiography. Manasseh means God made me forget, and Ephraim, fruitful in the land of my affliction. He does not say healed. He says he bore fruit in the place that hurt him.',
+          src: 'Sarna · Alter · Westermann'
+        },
+        meaning: 'The forgotten man is remembered and rises in a day, and the first thing he does with the gift is refuse the credit for it: I cannot, but God will. Then he names his children, which is how this book lets a person say what a season meant. Not Manasseh, God undid the harm, but God made me forget, the harm is still real, it has only loosened its grip. And not Ephraim, God took me out of the affliction, but God made me fruitful in the land of my affliction. He bore fruit in the very place that wounded him, not after it, in it. That is the whole theology of suffering in two baby names.',
+        lenses: {
+          theo: 'The rise is not the reward for the suffering; it is simply the next thing after it, and Joseph reads God in both. He never gets an explanation for the pit and the prison. He gets a vantage, late, from which he can finally see that he was being carried even through the silence. Fruitful in the land of affliction is not the same as rescued from it, and the book means the difference.',
+          arch: 'This is the return from the underworld. The one who went down into the pit comes back up carrying what he found in the dark, and the descent turns out to have been the making of him. You do not get this height without first being lowered into the empty cistern.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the difference between being healed of a hard season and being made, somehow, fruitful inside it.'
+        },
+        soft: 'Some things are not taken away. They are made to bear fruit where they hurt.',
+        ask: 'Where might you be asked not to be rescued from a hard place, but to grow something in it?'
+      }
+    ]
+  },
+  {
+    id: 'gen-42', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 42–44', chapterIndex: 42, crossesChapters: true,
+    title: 'The brothers come',
+    unitLabel: 'Scene',
+    thread: 'Famine drives the brothers to Egypt to beg for grain, and they bow, without knowing it, to the brother they sold. He tests them to the breaking point, until Judah, who once proposed the sale, offers his own life in the place of Benjamin.',
+    closeEnd: 'The brother who said “let us sell him” now says “let me be the slave in his place.” The family’s deceit has finally turned into its opposite, and the disguise cannot hold.',
+    passages: [
+      {
+        label: 'One', ref: '42:6–24', kind: 'scene', form: 'prose', title: 'The dream comes true',
+        verses: [
+          { n: 6, text: 'Now Joseph was the ruler of the land; he was the one who sold grain to all its people. So when his brothers arrived, they bowed down before him with their faces to the ground.' },
+          { n: 8, text: 'Although Joseph recognized his brothers, they did not recognize him.' },
+          { n: 21, text: 'Then they said to one another, “Surely we are being punished because of our brother. We saw his anguish when he pleaded with us, but we would not listen. That is why this distress has come upon us.”' },
+          { n: 24, text: 'And he turned away from them and wept. When he turned back and spoke to them, he took Simeon from them and had him bound before their eyes.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The boy’s old dream of the sheaves bowing comes literally true, and Joseph alone in the room knows it. He tests the brothers harshly, partly to learn whether they have changed, partly because the wound is still real and the power is suddenly all his. And not knowing he understands their language, he overhears them confess, after twenty years, the guilt they have carried: we saw his anguish and would not listen. He turns away and weeps where they cannot see.',
+          src: 'Alter · Sarna'
+        },
+        meaning: 'The brothers stand before the one man who can feed them or starve them, and they do not know he is the boy they threw in a pit. The test Joseph runs is not only cruelty; it is the real question of whether they are the same men. And he hears them, at last, say out loud the thing they buried, the anguish they would not listen to, and he has to leave the room to weep. The reckoning this family needs is not revenge. It is whether the men who sold one brother would now protect another.',
+        addr: {
+          mode: 'names',
+          text: 'You know the strange position of suddenly holding power over people who once held it over you, and the question of what you will do with it.'
+        },
+        soft: 'Old guilt has a way of surfacing in the one season you cannot afford it.',
+        ask: 'What buried guilt of yours still surfaces under pressure, and what is it asking you to finally face?'
+      },
+      {
+        label: 'Two', ref: '44:18–34', kind: 'scene', form: 'prose', title: 'Judah offers himself',
+        verses: [
+          { n: 18, text: 'Then Judah approached Joseph and said, “Sir, please let your servant speak personally to my lord. Do not be angry with your servant, for you are equal to Pharaoh himself.' },
+          { n: 33, text: 'Now please let your servant stay here as my lord’s slave in place of the boy. Let him return with his brothers.' },
+          { n: 34, text: 'For how can I go back to my father without the boy? I could not bear to see the misery that would overwhelm him.”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'This is the climax the whole novella has been built toward. Joseph has framed Benjamin, the other son of Rachel, to see what the brothers will do: will they abandon him the way they abandoned Joseph? And Judah, the very brother who first proposed selling Joseph for profit, steps forward and offers to become a slave himself rather than let his father lose another son. The man is not who he was.',
+          src: 'Alter · von Rad'
+        },
+        meaning: 'The hinge of the whole story belongs to Judah, not Joseph. The brother who once said let us sell him now says let me be the slave in his place. He cannot bear to watch his father grieve a second lost son, so he offers up his own freedom for the boy’s. The deceit that has run through four generations of this family finally turns into its opposite: a man laying himself down for his brother. That is the change Joseph has been testing for, and the moment it appears in front of him, the disguise breaks.',
+        lenses: {
+          theo: 'The family is not healed by Joseph’s power; it is healed by Judah’s repentance, by one brother willing to take the place of the brother in danger. The book has quietly carried Judah from the man who sold a brother to the man who would be enslaved for one, and it is through Judah, not through the favored Joseph, that the royal line and the Messiah will run. Repentance, not power, is what mends this house.',
+          arch: 'This is substitution, one stepping bodily into the place of another, and it is the integration of the shadow: the brother who did the worst thing becomes the brother who offers the most. The part of the self that committed the betrayal is exactly the part that, transformed, redeems it.'
+        },
+        misreading: {
+          named: 'Joseph’s testing is just him toying with his brothers to savor his revenge.',
+          why: 'He keeps leaving the room to weep, and the testing is the only way to learn whether the brothers have actually changed. The instant Judah proves they have, by offering himself, Joseph can no longer hold the disguise and breaks down. It is discernment, and it costs him to do it, not cruelty.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the weight of stepping into the gap for someone, taking the loss onto yourself so the person you love does not have to bear it.'
+        },
+        soft: 'The one who did the worst thing is sometimes the one who can finally undo it.',
+        ask: 'Where could you step into the gap for someone, and what would it cost you to do it?'
+      }
+    ]
+  },
+  {
+    id: 'gen-45', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 45', chapterIndex: 45,
+    title: 'I am Joseph',
+    thread: 'Joseph can no longer hold it. He sends the Egyptians out, weeps so loudly they hear it through the walls, and tells his terrified brothers the thing that reframes the whole story without excusing any of it.',
+    closeEnd: 'He does not deny what they did, he names it plainly, you sold me, and in the same breath refuses to let it be the last word. God sent me ahead of you, to save lives.',
+    passages: [
+      {
+        ref: '45:3–8', kind: 'scene', form: 'prose', title: 'It was not you, but God',
+        verses: [
+          { n: 3, text: 'Joseph said to his brothers, “I am Joseph! Is my father still alive?” But they were unable to answer him, because they were terrified in his presence.' },
+          { n: 4, text: 'Then Joseph said to his brothers, “Please come near me.” And they did so. “I am Joseph, your brother,” he said, “the one you sold into Egypt!' },
+          { n: 5, text: 'And now, do not be distressed or angry with yourselves that you sold me into this place, because it was to save lives that God sent me before you.' },
+          { n: 8, text: 'Therefore it was not you who sent me here, but God, who has made me a father to Pharaoh—lord of all his household and ruler over all the land of Egypt.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'This is the recognition scene the whole novella has been climbing toward. Joseph does not minimize the crime; he names it twice, the one you sold into Egypt. But he sets it inside a larger frame, God sent me ahead to preserve life. This is the theological heart of the Joseph story, and of the book: a providence that does not cancel human evil but works through it toward life, holding both at once.',
+          src: 'von Rad · Westermann · Alter'
+        },
+        meaning: 'The first thing Joseph says is I am Joseph, and the second is the one you sold. He does not pretend it did not happen; he says the betrayal to their faces. And then he does the thing that can take a lifetime to learn: he refuses to let the betrayal be the whole truth. It was not you who sent me here, but God. He does not say what they did was good, it was evil. He says God was at work inside it anyway, bending even their crime toward the saving of lives. That is not denial and it is not excuse. It is a man who has found a frame large enough to hold the worst thing that ever happened to him without being destroyed by it.',
+        lenses: {
+          theo: 'This is providence as Genesis understands it: not a God who prevents the evil, and not a God who pulls the strings so that no one is really guilty, but a God who is not defeated by the evil, who works through the wreckage toward life without ever once calling the wreckage good. They sold him, and God sent him. The book refuses to drop either half of that sentence.',
+          arch: 'This is the reframe that heals, the hard-won capacity to hold your own story so that the wound stays real and stops being final. The betrayal is taken up into a self that has grown larger than it, neither denied nor allowed to define the whole.'
+        },
+        misreading: {
+          named: 'So it was all God’s plan, which means the brothers did nothing really wrong.',
+          why: 'Joseph names their evil twice and never softens it, and at the very end of the book he says it again to their faces: you meant evil. Providence here does not erase guilt; it overrules the outcome. To use the line to excuse the harm is to miss the whole point the story is making.'
+        },
+        addr: {
+          mode: 'reframes',
+          text: 'You may be holding a real betrayal, and the question is whether you can name it honestly and still refuse to let it be the only thing your life is allowed to mean.'
+        },
+        soft: 'Naming the wrong and refusing its last word are not opposites. They are the same act of freedom.',
+        ask: 'What wound are you being asked to name honestly and, at the same time, to stop letting define you?'
+      }
+    ]
+  },
+  {
+    id: 'gen-46', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 46–47 (selected)', chapterIndex: 46, crossesChapters: true,
+    title: 'Down to Egypt',
+    passages: [
+      {
+        ref: 'Genesis 46–47 (selected)', kind: 'scene', form: 'prose', title: 'Down to Egypt',
+        verses: [
+          { n: 3, text: '“I am God,” He said, “the God of your father. Do not be afraid to go down to Egypt, for I will make you into a great nation there.' },
+          { n: 4, text: 'I will go down with you to Egypt, and I will surely bring you back. And Joseph’s own hands will close your eyes.”' },
+          { n: 29, text: 'Joseph prepared his chariot and went there to meet his father Israel. Joseph presented himself to him, embraced him, and wept profusely.' },
+          { n: 30, text: 'Then Israel said to Joseph, “Finally I can die, now that I have seen your face and know that you are still alive!”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'God meets Jacob at the border with the promise given to all the fathers, do not be afraid, I am with you, I will bring you back. The reunion of father and son after twenty-two years of grief is one of the tenderest scenes in the book. But a long shadow lies across it. The family goes down to Egypt to survive a famine, and the descent that saves them is the very one that becomes, in the next book, four hundred years of slavery. The going-down that rescues is also the bondage that will have to be redeemed.',
+          src: 'Sarna · Alter'
+        }
+      }
+    ]
+  },
+  {
+    id: 'gen-48', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 48–49 (selected)', chapterIndex: 48, crossesChapters: true,
+    title: 'The deathbed blessings',
+    passages: [
+      {
+        ref: 'Genesis 48–49 (selected)', kind: 'scene', form: 'prose', title: 'The deathbed blessings',
+        verses: [
+          { n: 14, text: 'But Israel stretched out his right hand and put it on the head of Ephraim, the younger; and crossing his hands, he put his left on Manasseh’s head, although Manasseh was the firstborn.' },
+          { n: 7, text: 'Cursed be their anger, for it is strong, and their wrath, for it is cruel! I will disperse them in Jacob and scatter them in Israel.' },
+          { n: 10, text: 'The scepter will not depart from Judah, nor the staff from between his feet, until Shiloh comes and the allegiance of the nations is his.' },
+          { n: 33, text: 'When Jacob had finished instructing his sons, he pulled his feet into the bed and breathed his last, and he was gathered to his people.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'Blind old Jacob, like his blind old father before him, blesses the next generation, and crosses his hands to set the younger ahead of the elder one final time, the pattern the whole book has run on. He curses the cruelty of Simeon and Levi, still remembering Dinah decades later, and he hands the scepter not to the favored Joseph but to Judah, the brother who offered himself. Then he gathers his feet into the bed and dies, and is carried back to the cave of Machpelah, to lie with Abraham and Sarah, Isaac and Rebekah, and Leah, the wife he did not choose.',
+          src: 'Sarna · Westermann · Alter'
+        }
+      }
+    ]
+  },
+  {
+    id: 'gen-50', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 50', chapterIndex: 50,
+    title: 'You meant it for evil',
+    thread: 'With their father dead, the brothers are certain Joseph has only been waiting to take his revenge. And Joseph weeps, and says the line the whole book has been walking toward.',
+    closeEnd: 'Genesis ends in Egypt, with a coffin and a promise: God will surely visit you, and bring you up. The book that opened with God’s breath over the waters closes far from home, waiting for a rescue that has not yet come.',
+    passages: [
+      {
+        ref: '50:15–26', kind: 'scene', form: 'prose', title: 'Am I in the place of God?',
+        verses: [
+          { n: 15, text: 'When Joseph’s brothers saw that their father was dead, they said, “What if Joseph bears a grudge? Then he will surely repay us for all the evil that we did to him.”' },
+          { n: 17, text: 'So now, Joseph, please forgive the transgression of the servants of the God of your father.” When their message came to him, Joseph wept.' },
+          { n: 19, text: 'But Joseph replied, “Do not be afraid. Am I in the place of God?' },
+          { n: 20, text: 'As for you, what you intended against me for evil, God intended for good, in order to accomplish a day like this—to preserve the lives of many people.' },
+          { n: 21, text: 'Therefore do not be afraid. I will provide for you and your little ones.” So Joseph reassured his brothers and spoke kindly to them.' },
+          { n: 24, text: 'Then Joseph said to his brothers, “I am about to die, but God will surely visit you and bring you up from this land to the land He promised on oath to Abraham, Isaac, and Jacob.”' },
+          { n: 26, text: 'So Joseph died at the age of 110. And they embalmed his body and placed it in a coffin in Egypt.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'Even now, the brothers cannot trust the grace they have been shown, and they invent a deathbed wish from their father to shield themselves. Joseph weeps that they still fear him, and gives the book its last and largest word on providence: you meant it for evil, God meant it for good. He refuses the role of judge, am I in the place of God, and chooses, one more time, to feed the very men who tried to destroy him. Then he dies, and Genesis ends not in the promised land but in a coffin in Egypt, with a promise that God will one day carry the bones home.',
+          src: 'von Rad · Westermann · Alter'
+        },
+        meaning: 'After everything, the brothers still cannot believe they are forgiven, and they reach one last time for a lie to protect themselves. And Joseph weeps, because they still do not trust the grace. Then he says it as plainly as the book ever says anything: you meant it for evil, but God meant it for good. Not the evil was secretly good, it was evil, you meant it. But God meant something through it that you never did, and the proof is the bread in your children’s mouths. He will not take the place of God and settle the score. He forgives the unforgivable and feeds them. And then Genesis closes the way exile itself feels, far from home, in a coffin, holding a promise that has not yet come true.',
+        lenses: {
+          theo: 'This is the whole book’s last word, and it holds the two halves to the very end: you meant evil, God meant good, human guilt and divine providence in a single sentence, neither one cancelling the other. And it ends unresolved on purpose, with a body in Egypt and a promise of return, because the people who assembled Genesis were themselves in exile, holding exactly that kind of promise, and the open ending was the faith they were reaching for.',
+          arch: 'Forgiveness here is the refusal to take the place of God, to be the one who settles the score. It is the release of the debt you are genuinely owed. And the book ends not in arrival but in trust, a bone waiting in a coffin to be carried home, the deepest image of a hope held past the end of a life.'
+        },
+        misreading: {
+          named: '“You meant evil but God meant good” means the suffering was worth it, or that God caused it.',
+          why: 'Joseph says they meant the evil, the guilt stays theirs, and God worked through it, not that God authored it or that the pain was secretly a good thing. The line refuses both bitterness and cheap comfort at once. It names the evil as evil and trusts God past it, and that balance, held to the end, is the book’s whole achievement.'
+        },
+        addr: {
+          mode: 'reframes',
+          text: 'You may be carrying something someone meant for your harm, and the slow, unfinished work of trusting that it is not the last word, without ever pretending it was not real.'
+        },
+        soft: 'He meant it for evil. God meant it for good. The book makes you hold both, and so will a life.',
+        ask: 'What harm done to you are you being asked to name honestly and still entrust to a good you cannot yet see?'
+      }
+    ]
   }
 ];
 
@@ -3583,5 +3799,18 @@ export const JOSEPH_MOVEMENT: Movement = {
       'For a people who had themselves been carried off to Egypt and Babylon, a story about an Israelite enslaved in Egypt, who rises in a foreign court, keeps his family alive through catastrophe, and insists that God was at work in the disaster the whole time, was not a tale about the distant past. It was a way to read their own exile, and to dare to trust it.',
     ],
     sources: 'von Rad · Alter · Westermann',
+  },
+  capstone: {
+    skicker: 'The shape of the Joseph story',
+    title: 'You meant it for evil, God meant it for good',
+    paragraphs: [
+      'The favored son is stripped, pitted, and sold by his own brothers, and for the length of the story heaven says nothing. No voice, no rescue, no explanation. God works, if he works at all, hidden inside a string of ordinary disasters: a slave sold, a woman’s lie, a forgotten promise, a famine. The whole movement is a study in a providence that never once announces itself.',
+      'And it asks to be read forward and backward at the same time. Lived forward, it is a chain of catastrophes a man simply has to survive. Read backward, from the top of Egypt, the very same events line up into a road that kept a whole family alive through famine. Joseph names it twice and never softens the crime: you meant evil against me; God meant it for good. Both halves stand. The brothers are guilty and God is not defeated, and the book will not release either one.',
+      'It is the hardest and most grown-up thing Genesis says. Not that the evil was secretly fine, and not that the suffering meant nothing, but that a real wound and a real providence can occupy the same history. And it ends, on purpose, unresolved: not in the promised land but in a coffin in Egypt, the family fed but far from home, holding a promise that God will one day carry them up. The people who assembled this were in exile, reading their own story in Joseph’s, and the open ending, a bone waiting to be brought home, was exactly the faith they were reaching toward.',
+    ],
+    tensions: [
+      { claim: 'God meant it for good; the whole ordeal was a providence working toward the saving of many lives.', counter: 'You meant it for evil; the brothers are never excused, the crime is named to their faces, and Genesis ends not in rescue but in a coffin and a promise not yet kept.', where: 'Genesis 50:20, and the book ending in Egypt' },
+    ],
+    sources: 'von Rad · Westermann · Alter',
   },
 };

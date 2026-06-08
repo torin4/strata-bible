@@ -222,6 +222,26 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For doing the right thing and being punished for it, and the question of whether God is with you when integrity costs you everything.",
   },
+  "gen-41": {
+    themes: ["waiting", "starting-over"],
+    speaksTo:
+      "For the difference between being healed of a hard season and being made, somehow, fruitful inside it.",
+  },
+  "gen-42": {
+    themes: ["guilt", "fear-of-loss"],
+    speaksTo:
+      "For old guilt resurfacing under pressure, and the cost of stepping into the gap for someone you love.",
+  },
+  "gen-45": {
+    themes: ["grief", "faith-and-fairness"],
+    speaksTo:
+      "For holding a real betrayal honestly and still refusing to let it be the only thing your life is allowed to mean.",
+  },
+  "gen-50": {
+    themes: ["faith-and-fairness", "injustice"],
+    speaksTo:
+      "For something someone meant for your harm, and the slow work of trusting it is not the last word without pretending it was not real.",
+  },
   "gen-2": {
     themes: ["limits", "loneliness"],
     speaksTo:
