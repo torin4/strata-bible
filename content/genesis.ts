@@ -3002,6 +3002,190 @@ export const GENESIS: Reading[] = [
         ask: 'Where is a bleak place you are only trying to get through, and what would change if you looked for God to be already in it?'
       }
     ]
+  },
+  {
+    id: 'gen-29', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 29', chapterIndex: 29,
+    title: 'Leah and Rachel',
+    unitLabel: 'Scene',
+    thread: 'The deceiver meets his match. Jacob, who put the younger before the elder, is handed the elder sister in the dark and made to honor the very rule he once broke. And Leah, the unwanted one, names her ache into her sons.',
+    closeEnd: 'The chosen line will run through Leah, the wife nobody chose. Judah, her fourth son, is the one it goes through.',
+    passages: [
+      {
+        label: 'One', ref: '29:18–30', kind: 'scene', form: 'prose', title: 'The wrong sister',
+        verses: [
+          { n: 18, text: 'Since Jacob loved Rachel, he answered, “I will serve you seven years for your younger daughter Rachel.”' },
+          { n: 20, text: 'So Jacob served seven years for Rachel, yet it seemed but a few days because of his love for her.' },
+          { n: 23, text: 'But when evening came, Laban took his daughter Leah and gave her to Jacob, and he slept with her.' },
+          { n: 25, text: 'When morning came, there was Leah! “What have you done to me?” Jacob said to Laban. “Wasn’t it for Rachel that I served you? Why have you deceived me?”' },
+          { n: 26, text: 'Laban replied, “It is not our custom here to give the younger daughter in marriage before the older.' },
+          { n: 30, text: 'Jacob slept with Rachel as well, and indeed, he loved Rachel more than Leah. So he worked for Laban another seven years.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The trick turns on the same hinge Jacob once used. He stole the rights of the firstborn; now Laban hands him the firstborn daughter under cover of dark and a wedding veil, and answers his outrage with a line that lands like a verdict: it is not our custom to put the younger before the older. The man who put the younger before the older hears his own crime read back to him as law. A bride was bought with years of labor, and Jacob pays twice.',
+          src: 'Alter · Sarna'
+        },
+        meaning: 'The trickster is tricked, and the story savors the symmetry. Jacob, who exploited his father’s blindness and his brother’s hunger, wakes in the morning to find that he is the one who was fooled in the dark. Why have you deceived me, he demands, which is almost word for word the charge his own father and brother could have laid on him. What you do to other people has a way of coming back to you wearing a different face, and being on the receiving end is the first thing that ever slows Jacob down.',
+        lenses: {
+          theo: 'There is a kind of moral physics running under the Jacob story. The deceiver has to be deceived before he can be changed. It is not so much God punishing him as God letting the consequence circle back, holding a mirror up to him until the man who only ever took begins, slowly, to be undone and remade.',
+          arch: 'The shadow returns wearing the face you gave it. What Jacob did to others is now done to him, and the cunning that always worked is turned against him by a craftier man. This is how a self begins to grow up, not by winning, but by finally losing at its own game.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the strange justice of having done to you the exact thing you once did to someone else, and the way it can stop you cold.'
+        },
+        soft: 'The mirror is rarely flattering, but it is usually fair.',
+        ask: 'Where has something you did to someone come back around to you, and what is it trying to teach you?'
+      },
+      {
+        label: 'Two', ref: '29:31–35', kind: 'scene', form: 'prose', title: 'Leah’s sons',
+        verses: [
+          { n: 31, text: 'When the LORD saw that Leah was unloved, He opened her womb; but Rachel was barren.' },
+          { n: 32, text: 'And Leah conceived and gave birth to a son, and she named him Reuben, for she said, “The LORD has seen my affliction. Surely my husband will love me now.”' },
+          { n: 33, text: 'Again she conceived and gave birth to a son, and she said, “Because the LORD has heard that I am unloved, He has given me this son as well.” So she named him Simeon.' },
+          { n: 34, text: 'Once again Leah conceived and gave birth to a son, and she said, “Now at last my husband will become attached to me, because I have borne him three sons.” So he was named Levi.' },
+          { n: 35, text: 'And once more she conceived and gave birth to a son and said, “This time I will praise the LORD.” So she named him Judah. Then Leah stopped having children.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'In a world where a woman’s standing hung on the sons she bore, Leah names hers like diary entries. The first three reach toward the husband who will not turn: see my pain, now he will love me, now he will stay. The fourth lets go of him entirely, this time I will praise the LORD, and that one is Judah, the son the royal line and, far down the road, the Messiah will run through. The unwanted wife mothers the chosen tribe.',
+          src: 'Alter · Sarna · Westermann'
+        },
+        meaning: 'You can read Leah’s whole inner life in the names she gives her children. The first three are pleas aimed at her husband: look at my affliction, surely now he will love me, now at last he will be attached to me. And then, with the fourth, something quietly breaks open. This time I will praise the LORD. She stops naming her sons after a love that is not coming and names one after God instead. And it is that son, born the moment she stops bargaining, through whom the whole promise goes. The line does not run through the loved wife. It runs through the one nobody chose.',
+        lenses: {
+          theo: 'God’s attention in this chapter is fixed on the unloved one. He saw that Leah was unloved, the text says plainly, and opened her womb. The story’s sympathy, and its future, belong to the overlooked sister, not the favored one, which is the pattern the whole Bible keeps repeating: the last become first, the rejected stone becomes the cornerstone.',
+          arch: 'The release in the fourth name is the move from grasping to letting go, from defining yourself by a love you cannot command to standing on ground of your own. It is the same wound at the heart of the cycle, the ache to be chosen, met at last not by getting the love but by ceasing to need it in order to live.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know what it is to keep performing for a love that does not arrive, and you may know the quieter freedom of finally stopping and being held by something else.'
+        },
+        soft: 'The ache to be chosen is real. So is the day you stop auditioning for it.',
+        ask: 'Whose love have you been performing for, and what would it free in you to stop?'
+      }
+    ]
+  },
+  {
+    id: 'gen-30', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 30 (selected)', chapterIndex: 30,
+    title: 'The rival wives',
+    passages: [
+      {
+        ref: 'Genesis 30 (selected)', kind: 'scene', form: 'prose', title: 'The rival wives',
+        verses: [
+          { n: 1, text: 'When Rachel saw that she was not bearing any children for Jacob, she envied her sister. “Give me children, or I will die!” she said to Jacob.' },
+          { n: 22, text: 'Then God remembered Rachel. He listened to her and opened her womb,' },
+          { n: 24, text: 'She named him Joseph, and said, “May the LORD add to me another son.”' },
+          { n: 43, text: 'Thus Jacob became exceedingly prosperous. He owned large flocks, maidservants and menservants, and camels and donkeys.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The chapter is a baby war between two sisters, fought through their maidservants and bargained over with mandrakes, until twelve children, the future tribes of Israel, are born out of envy and longing and competition. Then Jacob out-schemes Laban over the breeding of the flocks and leaves rich. It is worth seeing how unsentimental the text is about its own founding family. The tribes of Israel are born into a bitter, scheming, loveless rivalry, and the book lets that stand without a word of tidying.',
+          src: 'Sarna · Westermann'
+        }
+      }
+    ]
+  },
+  {
+    id: 'gen-31', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 31 (selected)', chapterIndex: 31,
+    title: 'Leaving Laban',
+    passages: [
+      {
+        ref: 'Genesis 31 (selected)', kind: 'scene', form: 'prose', title: 'Leaving Laban',
+        verses: [
+          { n: 7, text: 'And although he has cheated me and changed my wages ten times, God has not allowed him to harm me.' },
+          { n: 19, text: 'Now while Laban was out shearing his sheep, Rachel stole her father’s household idols.' },
+          { n: 42, text: 'If the God of my father, the God of Abraham and the Fear of Isaac, had not been with me, surely by now you would have sent me away empty-handed. But God has seen my affliction and the toil of my hands, and last night He rendered judgment.”' },
+          { n: 49, text: 'It was also called Mizpah, because Laban said, “May the LORD keep watch between you and me when we are absent from each other.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'After twenty years Jacob runs, with his wives, his children, and the flocks he has bred away from Laban. Rachel steals her father’s household gods on the way out, and Laban gives chase. What they finally build at Mizpah is not a reconciliation but a boundary, a heap of stones and the famous line, may the LORD watch between you and me, which sounds like a blessing and is really a fence: two men who do not trust each other agreeing on where the line is. Jacob leaves the long school of Laban changed, his cunning worn down, on his way to a harder appointment at the river.',
+          src: 'Sarna · Alter'
+        }
+      }
+    ]
+  },
+  {
+    id: 'gen-32', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 32:22–32', chapterIndex: 32,
+    title: 'Wrestling at the Jabbok',
+    thread: 'On the night before he must face the brother he cheated, Jacob is left utterly alone, and a man wrestles him until dawn. He comes out of it renamed, blessed, and limping for the rest of his life.',
+    closeEnd: 'He crosses the river as Israel, the one who strives with God, walking into the dreaded reunion wounded and, for the first time, unable to run.',
+    passages: [
+      {
+        ref: '32:22–32', kind: 'scene', form: 'prose', title: 'The night at the river',
+        verses: [
+          { n: 24, text: 'So Jacob was left all alone, and there a man wrestled with him until daybreak.' },
+          { n: 25, text: 'When the man saw that he could not overpower Jacob, he struck the socket of Jacob’s hip and dislocated it as they wrestled.' },
+          { n: 26, text: 'Then the man said, “Let me go, for it is daybreak.” But Jacob replied, “I will not let you go unless you bless me.”' },
+          { n: 27, text: '“What is your name?” the man asked. “Jacob,” he replied.' },
+          { n: 28, text: 'Then the man said, “Your name will no longer be Jacob, but Israel, because you have struggled with God and with men, and you have prevailed.”' },
+          { n: 30, text: 'So Jacob named the place Peniel, saying, “Indeed, I have seen God face to face, and yet my life was spared.”' },
+          { n: 31, text: 'The sun rose above him as he passed by Penuel, and he was limping because of his hip.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'It is the night before the reunion he has dreaded for twenty years, and Jacob, having sent everyone he loves across the ford ahead of him, is left alone in the dark. The text is deliberately strange about the assailant: it calls him only a man, and then Jacob names the place for having seen God face to face. The new name Israel means something like he strives with God, or God strives. The wound to the hip and the blessing come from the same hands, and the people who carry that name will not eat the hip’s tendon ever after, a scar woven into a nation.',
+          src: 'von Rad · Westermann · Alter'
+        },
+        meaning: 'The man who always won by cunning finally meets someone he cannot trick, only hold. He wrestles all night, and even after his hip is wrenched he will not let go, until he is blessed, and the blessing he wins is a new name and a permanent limp. This is the hinge of the whole cycle. The one who stole a blessing in the dark, in disguise, now wins one in the dark, in the open, by refusing to release his grip. He walks away blessed and damaged in the same motion. You do not come through a real encounter with God unmarked.',
+        lenses: {
+          theo: 'The blessing and the wound arrive together, from the same grip. God does not bless Jacob by making him stronger; he blesses him by laming him, ending the long career of grasping so that Israel limps ever after on a leg that remembers the night. The name is new and the swagger is gone. That is what being blessed by this God can cost, and what it can heal.',
+          arch: 'This is the night-sea crossing, the struggle with the figure at the threshold who must be held through the dark before the dawn will give anything up. The wound is the initiation; you are marked by what you wrestle. And the deepest adversary turns out to wear, by morning, the face of God. (Holding on through the dark until it blesses you, and being changed by the grip.)'
+        },
+        misreading: {
+          named: 'Jacob beats God in a fair fight and wins by being the stronger man.',
+          why: 'He prevails only because he will not let go, not because he overpowers anyone, and the moment the man touches his hip the contest is plainly not about strength. The victory is his refusal to face tomorrow unblessed, and its price is a wound he carries for life. It is not a triumph over God. It is a refusal to be left without him.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the night before the thing you dread, alone in the dark, holding on to something you will not release until it blesses you, and the way the holding can leave its mark on you.'
+        },
+        soft: 'The blessing and the limp came out of the same grip. Most real ones do.',
+        ask: 'What are you refusing to let go of until it blesses you, and what might holding on cost you?'
+      }
+    ]
+  },
+  {
+    id: 'gen-33', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 33', chapterIndex: 33,
+    title: 'The reunion',
+    thread: 'Jacob braces for the brother who once swore to kill him, dividing his family in case of slaughter. And Esau runs to meet him, not with an army but with open arms.',
+    closeEnd: 'The dread of twenty years dissolves in an embrace, and then the brothers part and never live together again. A real peace, and a limited one.',
+    passages: [
+      {
+        ref: '33:1–11', kind: 'scene', form: 'prose', title: 'Esau runs',
+        verses: [
+          { n: 1, text: 'Now Jacob looked up and saw Esau coming toward him with four hundred men. So he divided the children among Leah, Rachel, and the two maidservants.' },
+          { n: 4, text: 'Esau, however, ran to him and embraced him, threw his arms around his neck, and kissed him. And they both wept.' },
+          { n: 10, text: 'But Jacob insisted, “No, please! If I have found favor in your sight, then receive this gift from my hand. For indeed, I have seen your face, and it is like seeing the face of God, since you have received me favorably.' },
+          { n: 11, text: 'Please accept my gift that was brought to you, because God has been gracious to me and I have all I need.” So Jacob pressed him until he accepted.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'Jacob has spent the night wrestling and the dawn arranging his family by how much he can bear to lose, bracing for a brother coming with four hundred men. Esau, who two decades earlier swore to kill him, runs, throws his arms around his neck, and weeps. Jacob’s words for it deliberately echo the night before, to see your face is like seeing the face of God: he has just survived seeing God’s face at Peniel, and now survives his brother’s. And the gift he presses on Esau he calls, in the Hebrew, a blessing, the very word for what he stole, as if to hand it back.',
+          src: 'Alter · Sarna · Westermann'
+        },
+        meaning: 'The thing Jacob dreaded most for twenty years comes undone the instant it arrives. The brother he cheated does not want revenge; he wants his brother, and he runs. And Jacob, fresh from seeing God’s face at the river, says he sees it again in Esau’s, because the face of the person you wronged, choosing to forgive you, can look an awful lot like the face of God. He even tries to give back the blessing, calling his gift by its name, as though the theft could be undone by a return. The forgiveness he has no right to expect is exactly what meets him.',
+        lenses: {
+          theo: 'Grace wears a human face here. After the vertical encounter at Peniel comes the horizontal one, and the text rhymes them on purpose: you meet God, and then you meet the brother you wronged, and they can look strangely alike. To be forgiven by someone who had every right to ruin you is one of the nearest things there is to standing in front of God and being received.',
+          arch: 'The shadow-brother, fled and feared for twenty years, turns out at the meeting not to be the monster the dread had painted. What you run from grows teeth in the imagination; faced, it is often a weeping man with his arms open. The reckoning you brace for is rarely the reckoning you get.'
+        },
+        misreading: {
+          named: 'They are fully reconciled and the family is healed for good.',
+          why: 'They embrace and weep, and then immediately go separate ways, and Jacob even slips back into half-truth about following Esau. The text gives a peace that is real and incomplete, the dread broken but the brothers still apart. It refuses the fairy-tale ending, and means the refusal.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the dread of facing someone you wronged, the bracing for the blow, and you may know the stranger grace of being met instead with open arms.'
+        },
+        soft: 'What you flee grows teeth in the dark. Faced, it is often smaller, and sometimes weeping.',
+        ask: 'Who are you bracing to face, and what would it change to imagine being met with open arms?'
+      }
+    ]
   }
 ];
 

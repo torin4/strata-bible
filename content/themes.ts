@@ -187,6 +187,21 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the night you are running from what you did, bedded down in the bleakest place, and find you were not as alone as you were sure.",
   },
+  "gen-29": {
+    themes: ["overlooked", "loneliness", "guilt"],
+    speaksTo:
+      "For the ache of performing for a love that will not come, and the strange justice of being deceived the way you once deceived.",
+  },
+  "gen-32": {
+    themes: ["doubt", "fear", "starting-over"],
+    speaksTo:
+      "For the night before the thing you dread, holding on to God in the dark and refusing to let go unblessed, even if it leaves you marked.",
+  },
+  "gen-33": {
+    themes: ["guilt", "fear"],
+    speaksTo:
+      "For the dread of facing someone you wronged, and the grace of being met with open arms when you braced for the blow.",
+  },
   "gen-2": {
     themes: ["limits", "loneliness"],
     speaksTo:

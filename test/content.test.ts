@@ -1,4 +1,9 @@
-import { getAdjacent, getClosingMovement, getReading } from "@/lib/content";
+import {
+  getAdjacent,
+  getBook,
+  getClosingMovement,
+  getReading,
+} from "@/lib/content";
 import { describe, expect, it } from "vitest";
 
 describe("content lib", () => {
@@ -17,8 +22,12 @@ describe("content lib", () => {
   });
 
   it("does not navigate across book boundaries", () => {
-    // gen-25a is the last Genesis reading; there is no next inside the book.
-    expect(getAdjacent("genesis", "gen-25a").next).toBeUndefined();
+    // The genuinely last reading in the book has no next, whatever it is as the
+    // content grows; navigation never spills into another book.
+    const readings = getBook("genesis")?.readings ?? [];
+    const last = readings[readings.length - 1];
+    expect(last).toBeDefined();
+    expect(getAdjacent("genesis", last.id).next).toBeUndefined();
   });
 
   it("exposes one reading per genre fixture", () => {
