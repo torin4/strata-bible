@@ -3186,6 +3186,89 @@ export const GENESIS: Reading[] = [
         ask: 'Who are you bracing to face, and what would it change to imagine being met with open arms?'
       }
     ]
+  },
+  {
+    id: 'gen-34', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 34', chapterIndex: 34,
+    title: 'Dinah',
+    thread: 'A daughter is violated, and from that moment the story is about everyone but her. The men negotiate, deceive, and kill in her name, and Dinah herself never speaks a single word.',
+    closeEnd: 'No one in this chapter is clean, and the one it is supposedly about is never heard from. The Bible records the whole thing and blesses none of it.',
+    passages: [
+      {
+        ref: '34 (selected)', kind: 'scene', form: 'prose', title: 'Spoken for',
+        verses: [
+          { n: 1, text: 'Now Dinah, the daughter Leah had borne to Jacob, went out to visit the daughters of the land.' },
+          { n: 2, text: 'When Shechem son of Hamor the Hivite, the prince of the region, saw her, he took her and lay with her by force.' },
+          { n: 7, text: 'When Jacob’s sons heard what had happened, they returned from the field. They were filled with grief and fury, because Shechem had committed an outrage in Israel by lying with Jacob’s daughter—a thing that should not be done.' },
+          { n: 13, text: 'But because Shechem had defiled their sister Dinah, Jacob’s sons answered him and his father Hamor deceitfully.' },
+          { n: 25, text: 'Three days later, while they were still in pain, two of Jacob’s sons (Dinah’s brothers Simeon and Levi) took their swords, went into the unsuspecting city, and slaughtered every male.' },
+          { n: 30, text: 'Then Jacob said to Simeon and Levi, “You have brought trouble upon me by making me a stench to the Canaanites and Perizzites, the people of this land. We are few in number; if they unite against me and attack me, I and my household will be destroyed.”' },
+          { n: 31, text: 'But they replied, “Should he have treated our sister like a prostitute?”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The chapter is built out of deceit, the same weapon that has run through the whole cycle, now turned to butchery. The brothers answer deceitfully, talk the men of the city into circumcision, and fall on them while they are still in pain. And notice who never speaks. Dinah is named in the first verse and then vanishes into the third person, acted upon, argued over, avenged, but never once heard. Jacob, for his part, reacts not to her suffering but to the danger the killing has put him in.',
+          src: 'Alter · Westermann · Trible'
+        },
+        meaning: 'This is a story about how a woman’s violation becomes everyone else’s narrative. Dinah is raped, and from that moment every man around her takes up her cause and erases her in the same motion. The brothers turn her pain into a license for slaughter; Jacob turns the slaughter into a worry about his own reputation; the chapter ends with men still arguing over her honor while she has not said a word since the first verse. The text holds two horrors side by side, the assault and the revenge, and refuses to let either one stand as the clean answer to the other.',
+        lenses: {
+          theo: 'Scripture does not look away from this, and it does not tidy it. There is no verdict from heaven in the chapter, no rescue, no neat justice, and that silence is its own kind of testimony. The Bible is willing to record the world exactly as brutal as it is, including inside the chosen family, and to let the reader feel the wrongness without being handed a moral that makes it sit easier. Jacob does not forget it; on his deathbed he curses the violence of Simeon and Levi by name.',
+          arch: 'Watch how fast a person’s real wound is conscripted into other people’s causes. Everyone claims to act for Dinah; no one asks her. It is one of the oldest ways of silencing someone, to speak so loudly on their behalf that they disappear, and to call it honor.'
+        },
+        misreading: {
+          named: 'The brothers are the heroes here, righteously avenging their sister.',
+          why: 'The text flags their answer as deceit, ends on their self-justifying question rather than any word of approval, and has Jacob condemn them on the spot and curse them again at the end of his life. The chapter stages the revenge as one more atrocity, not a triumph, and keeps its sympathy with the girl who is never allowed to speak, not with the men killing in her name.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You may know what it is to have your own pain taken up as someone else’s cause, spoken for so loudly that you disappear from your own story.'
+        },
+        soft: 'Being avenged is not the same as being heard, and the two are easily confused.',
+        ask: 'Where has pain, yours or someone else’s, been turned into a banner for a fight that stopped being about the person who was hurt?'
+      }
+    ]
+  },
+  {
+    id: 'gen-35', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 35 (selected)', chapterIndex: 35,
+    title: 'Back to Bethel',
+    passages: [
+      {
+        ref: 'Genesis 35 (selected)', kind: 'scene', form: 'prose', title: 'Back to Bethel',
+        verses: [
+          { n: 1, text: 'Then God said to Jacob, “Arise, go up to Bethel, and settle there. Build an altar there to the God who appeared to you when you fled from your brother Esau.”' },
+          { n: 10, text: 'And God said to him, “Though your name is Jacob, you will no longer be called Jacob. Instead, your name will be Israel.” So God named him Israel.' },
+          { n: 18, text: 'And with her last breath—for she was dying—she named him Ben-oni. But his father called him Benjamin.' },
+          { n: 19, text: 'So Rachel died and was buried on the way to Ephrath (that is, Bethlehem).' },
+          { n: 29, text: 'Then he breathed his last and died and was gathered to his people, old and full of years. And his sons Esau and Jacob buried him.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'Jacob comes back to Bethel, the place of the stairway, decades older, and God confirms the new name there in plain daylight, the blessing the river gave him in the dark now spoken openly. But the homecoming is laced with graves. Rachel dies bearing Benjamin and names him Ben-oni, son of my sorrow, with her last breath; his father quietly renames him son of my right hand. And Isaac dies, buried by both his sons, Esau and Jacob standing together at the grave the way Isaac and Ishmael once stood at Abraham’s. The cycle closes the way it opened, with estranged brothers meeting again over their father’s body.',
+          src: 'Sarna · Alter'
+        }
+      }
+    ]
+  },
+  {
+    id: 'gen-36', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 36 (selected)', chapterIndex: 36,
+    title: 'The line of Esau',
+    passages: [
+      {
+        ref: 'Genesis 36 (selected)', kind: 'scene', form: 'prose', title: 'The line of Esau',
+        verses: [
+          { n: 1, text: 'This is the account of Esau (that is, Edom).' },
+          { n: 8, text: 'So Esau (that is, Edom) settled in the area of Mount Seir.' },
+          { n: 9, text: 'This is the account of Esau, the father of the Edomites, in the area of Mount Seir.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'Before the story leaves Esau for good, it gives him a whole chapter, a long roll of his descendants, the chiefs and kings of Edom. It is the book’s quiet way of honoring the brother who was passed over. The rejected son is not erased; he becomes a nation in his own right, with kings of its own long before Israel had any. The promise ran through Jacob, but Esau was not nothing. The text closes his account with dignity, and then turns, for the rest of Genesis, to the sons of Israel.',
+          src: 'Sarna · Westermann'
+        }
+      }
+    ]
   }
 ];
 
@@ -3292,5 +3375,28 @@ export const JACOB_MOVEMENT: Movement = {
       'For the exiles who shaped it, the shape would have been familiar to the bone: a man driven from home, made to serve a hard master in a far country for long years, and brought back at last to the land he was promised. Jacob’s road out and home is Israel’s own road, read backward.',
     ],
     sources: 'Sarna · Westermann · Alter',
+  },
+  capstone: {
+    skicker: 'The shape of the Jacob story',
+    title: 'The grasper who had to be lamed',
+    paragraphs: [
+      'Grace falls on Jacob before he has earned a thing, a heel-grabber chosen in the womb, and then the whole cycle is the long work of making him into someone who can carry it. He takes the birthright by leverage and the blessing by fraud, and spends the next twenty years being paid back in his own coin: deceived by Laban in the dark, handed the wrong sister, cheated of his wages, slowly worn down.',
+      'The turn comes at a river, alone, the night before the reckoning he dreads. He wrestles a stranger who is somehow God, refuses to let go until he is blessed, and is given two things in the same grip: a new name and a permanent limp. The man who always won by grasping is finally blessed by being broken of it. He crosses over as Israel, the one who strives with God, and he crosses over walking wounded.',
+      'Then the dreaded brother runs to embrace him, and the face Jacob braced to meet as an enemy looks to him like the face of God. But the story will not round itself off sweet. The same family carries a daughter’s violation answered by massacre, and Rachel’s grave by the roadside, and an old blind father buried by the two sons he set against each other. The promise goes forward through all of it, not because the people are good, but because grace, once given, does not let go, even of a cheat, even after it has had to lame him to keep him.',
+    ],
+    tensions: [
+      { claim: 'Jacob is the blessed one, chosen by God and carried by grace.', counter: 'Jacob is a liar who steals, is justly deceived in return, and fathers a household that deceives and slaughters. The chosen line is the crooked line.', where: 'Genesis 27 and 34 against 28 and 32' },
+    ],
+    sources: 'von Rad · Westermann · Alter',
+  },
+  doorway: {
+    skicker: 'The threshold into the next movement',
+    title: 'From the cheat to the dreamer',
+    paragraphs: [
+      'Jacob is Israel now, and the camera, which has followed one man, widens to take in his twelve sons, the tribes to be. But it narrows again almost at once, onto one boy: Joseph, the favored son, the dreamer in the coat his father should have known better than to give him.',
+      'The question shifts once more. With Abraham it was, will the promise ever come? With Jacob, what kind of person can carry it? With Joseph it becomes, what is God doing in the wreckage, when the brothers who hated their father’s favoritism throw the favored son into a pit and sell him into Egypt, and no voice from heaven says a word for thirteen years.',
+      'The deceit that has run through three generations is about to be done to Jacob one last time, by his own sons, with the same prop, a brother’s bloodied coat. And the answer the next movement gives is the strangest in Genesis: not a rescue, but a long, hidden providence that works through the betrayal rather than around it.',
+    ],
+    nextMovementId: 'joseph',
   },
 };

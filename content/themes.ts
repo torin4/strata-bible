@@ -202,6 +202,11 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the dread of facing someone you wronged, and the grace of being met with open arms when you braced for the blow.",
   },
+  "gen-34": {
+    themes: ["injustice", "overlooked", "anger"],
+    speaksTo:
+      "For when your pain is taken up as everyone else’s cause, spoken for so loudly that you vanish from your own story.",
+  },
   "gen-2": {
     themes: ["limits", "loneliness"],
     speaksTo:
