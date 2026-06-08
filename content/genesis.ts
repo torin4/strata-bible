@@ -129,7 +129,7 @@ export const GENESIS: Reading[] = [
           text: 'Notice the design: days one to three build the realms (light, sky, land), days four to six fill them. It’s structured like a poem, not a lab report.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Wenham'
         },
-        meaning: 'God says, “let the earth put forth.” He doesn’t make the plants directly. He <b>invites the ground to bring them out</b>. Creation is handed the power to keep creating.',
+        meaning: 'God says, “Let the earth bring forth.” He doesn’t make the plants directly. He <b>invites the ground to bring them out</b>. Creation is handed the power to keep creating.',
         addr: {
           mode: 'names',
           text: 'Some things can’t be forced into being. You can only make the conditions and let them grow.'
@@ -171,7 +171,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In Babylon the sun and moon were gods, Shamash and Sin. Genesis refuses to name them. It calls them only “the greater” and “the lesser light,” demoted to lamps and clocks. The stars, the heart of Babylonian astrology, get three words: “and the stars.” A deliberate snub.',
+          text: 'In Babylon the sun and moon were gods, Shamash and Sin. Genesis refuses to name them. It calls them only “the greater” and “the lesser light,” demoted to lamps and clocks. The stars, the heart of Babylonian astrology, get an afterthought: “And He made the stars as well.” A deliberate snub.',
           src: 'Smith, The Origins of Biblical Monotheism · The Priestly Vision of Genesis 1'
         },
         meaning: 'The sky is <b>switched off as a set of powers</b>. The lights don’t rule your fate. They keep time. You are not at the mercy of the heavens.',
@@ -406,7 +406,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The man is placed in the garden “to work it and watch over it,” the same pair of verbs later used for serving and guarding the temple. Eden is a sanctuary and the human is its gardener-priest, given real work, not idle ease. The rivers, the Tigris and Euphrates among them, root the garden in the actual map of the ancient world. And the command is mostly permission: eat from any tree, with one exception.',
+          text: 'The man is placed in the garden “to cultivate and keep it,” the same pair of verbs later used for serving and guarding the temple. Eden is a sanctuary and the human is its gardener-priest, given real work, not idle ease. The rivers, the Tigris and Euphrates among them, root the garden in the actual map of the ancient world. And the command is mostly permission: eat from any tree, with one exception.',
           src: 'Walton · Wenham'
         },
         meaning: 'Freedom and a limit arrive together. He is handed a whole garden and one “no.” That single boundary is what makes him free rather than a kept animal, there is something he could do and chooses not to. A world with no limit at all isn’t paradise. It’s a place where nothing you do can mean anything.',
@@ -441,7 +441,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Here is the first thing in the Bible called “not good.” In chapter 1 everything was good; the lone exception in this whole telling is solitude. The word for “helper” carries no hint of inferiority, it is used elsewhere of God himself helping Israel, and “fit for him” means a counterpart, his match. Watch him name every animal and find that none of them answer back.',
+          text: 'Here is the first thing in the Bible called “not good.” In chapter 1 everything was good; the lone exception in this whole telling is solitude. The word for “helper” carries no hint of inferiority, it is used elsewhere of God himself helping Israel, and “suitable” means a counterpart, his match. Watch him name every animal and find that none of them answer back.',
           src: 'Westermann'
         },
         meaning: 'Loneliness is the first flaw in a finished world. Not sin, not danger, just being unaccompanied. He has authority over every creature and an equal among none of them. You can be surrounded, and in charge, and still alone.',
@@ -545,7 +545,7 @@ export const GENESIS: Reading[] = [
           text: 'The serpent is not Satan. That reading comes centuries later. Here it is simply the most cunning of the animals, a talking creature in an old folk register. And the bait is not “do something evil.” It is “you will be like God, knowing good and evil,” which in Hebrew points at deciding good and evil for yourself.',
           src: 'Smith · Westermann'
         },
-        meaning: 'The lie is subtle. Not a flat “you won’t die,” but the suggestion that God is holding out on you, that the limit exists to keep you small. Temptation almost always works by reframing a boundary as a deprivation.',
+        meaning: 'The lie is subtle. Not a flat “You will not surely die,” but the suggestion that God is holding out on you, that the limit exists to keep you small. Temptation almost always works by reframing a boundary as a deprivation.',
         lenses: {
           theo: 'In the older reading, the root of the trouble is distrust. The first move away from God is not lust or violence but the quiet thought that his goodness can’t be trusted and the rule is a cage. Everything else follows from that.',
           arch: 'Read with Jung, the serpent is the necessary disturber, the voice that breaks the perfect, sleeping unity of the garden. Becoming truly awake may require eating the fruit, even though it costs you Eden. The loss of innocence is the price of consciousness. (Edinger, Ego and Archetype.)'
@@ -622,7 +622,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the older Yahwist’s God, who walks in a garden in the cool of the day and asks questions out loud. “Where are you?” is not a request for information. He knows. It is an opening, a chance to come out. Watch the blame travel: the man points at the woman and at God in one breath, “the woman you put here,” and the woman points at the serpent.'
+          text: 'This is the older Yahwist’s God, who walks in a garden in the cool of the day and asks questions out loud. “Where are you?” is not a request for information. He knows. It is an opening, a chance to come out. Watch the blame travel: the man points at the woman and at God in one breath, “The woman whom You gave me,” and the woman points at the serpent.'
         },
         meaning: 'After shame comes hiding, and after hiding comes blame. Notice God asks rather than accuses, and leaves room for them to own it. And notice no one does.',
         lenses: {
@@ -797,7 +797,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'God speaks to Cain before the murder, not after, a warning rather than a verdict. “Sin is crouching at the door” pictures sin as a predator at the threshold, an image that echoes a Mesopotamian word for a demon that waited at doorways. And “its desire is for you, but you must rule over it” are almost exactly the words spoken to the woman one chapter earlier, now turned on sin itself.',
+          text: 'God speaks to Cain before the murder, not after, a warning rather than a verdict. “Sin is crouching at your door” pictures sin as a predator at the threshold, an image that echoes a Mesopotamian word for a demon that waited at doorways. And “it desires you, but you must master it” are almost exactly the words spoken to the woman one chapter earlier, now turned on sin itself.',
           src: 'Smith · Walton'
         },
         meaning: 'There is a gap between the anger and the act, and God meets Cain inside it. Sin is drawn as an animal at the threshold, wanting in. The feeling is not yet the sin. What you do with the door is.',
@@ -1123,7 +1123,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the strangest fragment in the primeval history, and the editors kept it almost raw. Divine beings, “sons of God”, take human women, and the children are the Nephilim, the “fallen ones”, giants, “the mighty ones of old”. It is a shard of older myth, the kind of demigod-hero story told all across the ancient Near East, where Gilgamesh himself is two-thirds god. The hundred-and-twenty-year limit is God drawing a hard line between the divine and the human after that line had been crossed.',
+          text: 'This is the strangest fragment in the primeval history, and the editors kept it almost raw. Divine beings, “sons of God”, take human women, and the children are the Nephilim, the “fallen ones”, giants, “the mighty men of old”. It is a shard of older myth, the kind of demigod-hero story told all across the ancient Near East, where Gilgamesh himself is two-thirds god. The hundred-and-twenty-year limit is God drawing a hard line between the divine and the human after that line had been crossed.',
           src: 'Westermann · Smith'
         },
         meaning: 'The scene is about a boundary blurring, heaven and earth bleeding into each other, and God answering by setting a limit. Right before the flood the text shows a world where the categories are coming undone. There is not much to moralize here. Mostly it sets a tone: things have gotten strange, and out of bounds.',
@@ -1162,7 +1162,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the Yahwist’s voice, raw and unguarded. God “regrets”; his heart is “filled with pain”. This is not the untroubled, impassive deity of later philosophy. It is a God who can be wounded by what the world becomes. The bleakest verdict in Genesis, that the human heart inclines only to evil, sits right beside God’s grief, not his rage.',
+          text: 'This is the Yahwist’s voice, raw and unguarded. God “regrets”; his heart is “grieved”. This is not the untroubled, impassive deity of later philosophy. It is a God who can be wounded by what the world becomes. The bleakest verdict in Genesis, that the human heart inclines only to evil, sits right beside God’s grief, not his rage.',
           src: 'Friedman'
         },
         meaning: 'Notice what God feels first. Not anger. Grief. Regret. The maker is heartbroken over the made. And in the very same breath, a single exception: Noah found favor. Even at the darkest verdict in the book, the story leaves one door open.',
@@ -2035,7 +2035,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“So Abram went.” He is seventy-five. He reaches Canaan, and the text drops a quiet, loaded line: the Canaanites were already in the land. The promised land is full of other people from the first day. Promise and fact are in tension immediately. Abram answers by building altars at Shechem and Bethel, marking with worship a land he has been promised but does not own.',
+          text: '“So Abram departed.” He is seventy-five. He reaches Canaan, and the text drops a quiet, loaded line: the Canaanites were already in the land. The promised land is full of other people from the first day. Promise and fact are in tension immediately. Abram answers by building altars at Shechem and Bethel, marking with worship a land he has been promised but does not own.',
           src: 'Westermann · Alter'
         },
         meaning: 'He obeyed, and the reward was not arrival. It was a land that was not yet his, among people already there. The promise did not erase the difficulty; it sent him into it. And his response was to build altars, to stake worship in ground he held only by a word.',
@@ -2203,7 +2203,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This quiet chapter sets up a disaster four chapters away. The narrator pauses to tell us the Jordan plain was lush “before the LORD destroyed Sodom and Gomorrah,” and that its people were already wicked, so Lot’s choice, made entirely by the eye, is visibly aimed at ruin, while Abram keeps living by a promise he cannot see. The detail that the land “could not support them both” reflects the real strain of large herding clans competing for limited grazing and water in the Canaanite hill country.',
+          text: 'This quiet chapter sets up a disaster four chapters away. The narrator pauses to tell us the Jordan plain was lush “before the LORD destroyed Sodom and Gomorrah,” and that its people were already wicked, so Lot’s choice, made entirely by the eye, is visibly aimed at ruin, while Abram keeps living by a promise he cannot see. The detail that the land was “unable to support both of them” reflects the real strain of large herding clans competing for limited grazing and water in the Canaanite hill country.',
           src: 'Alter · Westermann'
         }
       }
@@ -2447,7 +2447,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Abram asks for certainty, and what he gets is a covenant where he carries none of the risk. He sleeps; God walks the bloody path alone. The promise is fastened entirely to God’s own life, not to Abram’s performance, and that is the only reason it can survive everything Abram and his children are about to do to it. And the certainty comes wrapped in darkness: the road to the promise runs straight through four centuries of slavery. Being sure of the end is not the same as being spared the middle.',
         lenses: {
           theo: 'A covenant where only one party passes through the pieces is a one-sided oath. God stakes his own existence on keeping a promise to a man who is asleep. This is grace at its most extreme, a commitment that does not hang on the other side holding up its end, which is exactly why it cannot finally fail.',
-          arch: 'The deep sleep and the “thick and dreadful darkness” are the night the waking self cannot enter on its own terms. The decisive thing is sworn while the ego sleeps, in the dark, by a fire that moves on its own. What binds a life most deeply is often sealed below the level of conscious choice. (The covenant sworn in the dark, beneath the waking self.)'
+          arch: 'The deep sleep and the “great terror and darkness” are the night the waking self cannot enter on its own terms. The decisive thing is sworn while the ego sleeps, in the dark, by a fire that moves on its own. What binds a life most deeply is often sealed below the level of conscious choice. (The covenant sworn in the dark, beneath the waking self.)'
         },
         addr: {
           mode: 'names',
