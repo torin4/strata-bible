@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div className="mx-auto mt-7 mb-2 h-px w-[46px] bg-gradient-to-r from-transparent via-gold to-transparent" />
         </div>
 
-        <article className="mt-8 flex flex-col gap-9">
+        <article className="stagger-children mt-8 flex flex-col gap-9">
           <p className="font-body text-[17px] leading-[1.8] text-parchment-2">
             The Bible is a beautiful story as it is. STRATA does not set out to
             improve it, or to defend it, or to argue it away. It sets out to

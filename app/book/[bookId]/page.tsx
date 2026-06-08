@@ -25,7 +25,7 @@ export default async function BookPage({
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
-      <div className="mx-auto max-w-[42rem]">
+      <div className="stagger-children mx-auto max-w-[42rem]">
         <header className="mb-6 text-center">
           <Link
             href="/"

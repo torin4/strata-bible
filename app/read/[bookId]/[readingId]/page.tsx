@@ -41,7 +41,7 @@ export default async function ReadingPage({
         title={reading.title}
         span={reading.span}
       />
-      <div className="mx-auto max-w-[40rem]">
+      <div className="stagger-children mx-auto max-w-[40rem]">
         <header className="mb-5 flex flex-col items-center gap-2">
           <Link
             href="/"

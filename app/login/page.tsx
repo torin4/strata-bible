@@ -73,7 +73,7 @@ export default function LoginPage() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-shell px-4 py-12">
-      <div className="w-full max-w-[24rem]">
+      <div className="stagger-children w-full max-w-[24rem]">
         <header className="mb-6 text-center">
           <Link
             href="/"

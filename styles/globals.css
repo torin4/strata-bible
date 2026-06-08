@@ -24,9 +24,11 @@
   }
 }
 
-/* Landing screen: a staggered rise-in for the wordmark, hero card, and links,
- * mirroring the proof's riseIn. Each element sets its own animation-delay inline.
- * Honors reduced-motion by showing everything at rest. */
+/* Page entrance: a soft rise-in, mirroring the proof's riseIn. Used two ways. `.stagger`
+ * animates a single element that sets its own animation-delay inline (the landing, the
+ * About header). `.stagger-children` cascades a container's direct children, each rising
+ * just after the one before it, so any page can fade in by adding one class. Both honor
+ * reduced-motion by showing everything at rest. */
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -43,8 +45,35 @@
   animation: rise-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
 }
 
+.stagger-children > * {
+  opacity: 0;
+  animation: rise-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.stagger-children > *:nth-child(1) {
+  animation-delay: 0.04s;
+}
+.stagger-children > *:nth-child(2) {
+  animation-delay: 0.11s;
+}
+.stagger-children > *:nth-child(3) {
+  animation-delay: 0.18s;
+}
+.stagger-children > *:nth-child(4) {
+  animation-delay: 0.25s;
+}
+.stagger-children > *:nth-child(5) {
+  animation-delay: 0.32s;
+}
+.stagger-children > *:nth-child(6) {
+  animation-delay: 0.39s;
+}
+.stagger-children > *:nth-child(n + 7) {
+  animation-delay: 0.45s;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .stagger {
+  .stagger,
+  .stagger-children > * {
     animation: none;
     opacity: 1;
   }

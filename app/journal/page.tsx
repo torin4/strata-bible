@@ -10,7 +10,7 @@ export default function JournalPage() {
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
-      <div className="mx-auto max-w-[40rem]">
+      <div className="stagger-children mx-auto max-w-[40rem]">
         <header className="mb-6 text-center">
           <Link
             href="/"
