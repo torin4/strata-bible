@@ -40,5 +40,9 @@ yarn-error.log*
 # playwright mcp scratch (screenshots, snapshots)
 .playwright-mcp/
 
+# macOS / iCloud sync duplicates, e.g. "foo 2.ts", "bar 3.webp" (this project uses
+# kebab-case, so no real file matches "<name> <digit>.<ext>")
+* [0-9].*
+
 # typescript
 *.tsbuildinfo
