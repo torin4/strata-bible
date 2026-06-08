@@ -5,15 +5,18 @@ import { PageTransition } from "@/components/nav/PageTransition";
 import {
   type HighlightGroup,
   groupHighlights,
+  removeNote,
   setHighlight,
+  setNote,
   subscribeHighlights,
 } from "@/lib/highlights";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 // Every verse the reader has highlighted, grouped by reading, each a jump-back link to
-// the scene it lives in. A signed-in, Firestore-backed view; signed out it invites a
-// sign-in, and the reader itself never depends on any of this.
+// the scene it lives in, with its note shown and editable inline. A signed-in,
+// Firestore-backed view; signed out it invites a sign-in, and the reader itself never
+// depends on any of this.
 export default function HighlightsPage() {
   const { user, loading, configured } = useAuth();
   const [groups, setGroups] = useState<HighlightGroup[] | null>(null);
@@ -23,10 +26,10 @@ export default function HighlightsPage() {
       setGroups(null);
       return;
     }
-    return subscribeHighlights(user.uid, (keys) => {
+    return subscribeHighlights(user.uid, ({ verses, notes }) => {
       // Newest reading first: groupHighlights preserves first-highlighted order, reverse
       // it so the reader's most recent marks sit at the top.
-      setGroups(groupHighlights(keys).reverse());
+      setGroups(groupHighlights(verses, notes).reverse());
     });
   }, [user]);
 
@@ -57,8 +60,8 @@ export default function HighlightsPage() {
         ) : !user ? (
           <div className="rounded-[14px] border border-line bg-deep px-6 py-8 text-center">
             <p className="font-body text-[15px] leading-[1.7] text-parchment-2">
-              Sign in to keep highlights. Tap any verse as you read to mark it.
-              The reader stays open to everyone.
+              Sign in to keep highlights. Tap any verse as you read to mark it,
+              and add a note. The reader stays open to everyone.
             </p>
             <Link
               href="/login"
@@ -112,9 +115,7 @@ export default function HighlightsPage() {
                         <button
                           type="button"
                           aria-label="Remove highlight"
-                          onClick={() => {
-                            if (user) setHighlight(user.uid, v.key, false);
-                          }}
+                          onClick={() => setHighlight(user.uid, v.key, false)}
                           className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
                         >
                           Remove
@@ -125,6 +126,7 @@ export default function HighlightsPage() {
                           {v.text}
                         </p>
                       </Link>
+                      <NoteBlock uid={user.uid} vkey={v.key} note={v.note} />
                     </li>
                   ))}
                 </ul>
@@ -143,5 +145,101 @@ export default function HighlightsPage() {
         </div>
       </PageTransition>
     </main>
+  );
+}
+
+// The note under a highlighted verse: shown when present, with inline edit, or an
+// "Add note" affordance when absent. Writes straight to Firestore; the live subscription
+// reflects the change back into the list.
+function NoteBlock({
+  uid,
+  vkey,
+  note,
+}: {
+  uid: string;
+  vkey: string;
+  note?: string;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [text, setText] = useState(note ?? "");
+
+  if (!editing) {
+    return note ? (
+      <div className="mt-2 border-t border-line pt-2">
+        <p className="whitespace-pre-line font-body text-[13.5px] italic leading-[1.6] text-mist">
+          {note}
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            setText(note);
+            setEditing(true);
+          }}
+          className="mt-1 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+        >
+          Edit note
+        </button>
+      </div>
+    ) : (
+      <button
+        type="button"
+        onClick={() => {
+          setText("");
+          setEditing(true);
+        }}
+        className="mt-2 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+      >
+        ✎ Add note
+      </button>
+    );
+  }
+
+  return (
+    <div className="mt-2 border-t border-line pt-2">
+      <textarea
+        // biome-ignore lint/a11y/noAutofocus: revealed by a deliberate edit tap
+        autoFocus
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Write a note on this verse."
+        rows={3}
+        className="w-full resize-none rounded-[8px] border border-line bg-shell px-3 py-2 font-body text-[14px] leading-[1.5] text-parchment placeholder:text-mist-2 focus:border-gold/50 focus:outline-none"
+      />
+      <div className="mt-2 flex items-center justify-between">
+        {note ? (
+          <button
+            type="button"
+            onClick={() => {
+              removeNote(uid, vkey);
+              setEditing(false);
+            }}
+            className="font-ui text-[9.5px] uppercase tracking-[.14em] text-mist-2 transition-colors hover:text-gold-bright"
+          >
+            Delete note
+          </button>
+        ) : (
+          <span />
+        )}
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setEditing(false)}
+            className="font-ui text-[10px] uppercase tracking-[.12em] text-parchment-2 transition-colors hover:text-parchment"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setNote(uid, vkey, text);
+              setEditing(false);
+            }}
+            className="rounded-[8px] bg-gold px-3 py-1.5 font-ui text-[10px] uppercase tracking-[.12em] text-deep transition-colors hover:bg-gold-bright"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -5,20 +5,29 @@ import {
   type Unsubscribe,
   arrayRemove,
   arrayUnion,
+  deleteField,
   doc,
   onSnapshot,
   setDoc,
 } from "firebase/firestore";
 
-// Verse highlights: a set of "readingId|passageRef|verse" keys the reader has marked.
-// Persisted in Firestore under the signing user (per the storage rule, not localStorage).
-// Signed out, nothing is stored or shown and the reader stays fully usable.
+// Verse highlights: "readingId|passageRef|verse" keys the reader has marked, plus an
+// optional note per key. Both live in one Firestore doc under the signing user (per the
+// storage rule, not localStorage): `verses` is the array that paints the wash, `notes`
+// is a map of key -> note text. Signed out, nothing is stored or shown and the reader
+// stays fully usable. A note never exists without its highlight.
 export function highlightKey(
   readingId: string,
   passageRef: string,
   n: number,
 ): string {
   return `${readingId}|${passageRef}|${n}`;
+}
+
+// The live state of a reader's highlights: which verses are washed, and the note on each.
+export interface HighlightState {
+  verses: Set<string>;
+  notes: Map<string, string>;
 }
 
 function highlightsDoc(database: Firestore, uid: string) {
@@ -31,33 +40,77 @@ export async function setHighlight(
   on: boolean,
 ): Promise<void> {
   if (!db) return;
+  if (on) {
+    await setDoc(
+      highlightsDoc(db, uid),
+      { verses: arrayUnion(key) },
+      { merge: true },
+    );
+    return;
+  }
+  // Removing a highlight drops its note too: a note has no home without its highlight.
   await setDoc(
     highlightsDoc(db, uid),
-    { verses: on ? arrayUnion(key) : arrayRemove(key) },
+    { verses: arrayRemove(key), notes: { [key]: deleteField() } },
+    { merge: true },
+  );
+}
+
+// Write (or clear) the note on a verse. Saving a note always highlights the verse, so a
+// reader can note a plain verse in one step; saving empty text clears the note.
+export async function setNote(
+  uid: string,
+  key: string,
+  text: string,
+): Promise<void> {
+  if (!db) return;
+  const trimmed = text.trim();
+  if (!trimmed) {
+    await removeNote(uid, key);
+    return;
+  }
+  await setDoc(
+    highlightsDoc(db, uid),
+    { verses: arrayUnion(key), notes: { [key]: trimmed } },
+    { merge: true },
+  );
+}
+
+// Clear just the note, leaving the highlight in place.
+export async function removeNote(uid: string, key: string): Promise<void> {
+  if (!db) return;
+  await setDoc(
+    highlightsDoc(db, uid),
+    { notes: { [key]: deleteField() } },
     { merge: true },
   );
 }
 
 export function subscribeHighlights(
   uid: string,
-  onChange: (keys: Set<string>) => void,
+  onChange: (state: HighlightState) => void,
 ): Unsubscribe {
   if (!db) {
-    onChange(new Set());
+    onChange({ verses: new Set(), notes: new Map() });
     return () => {};
   }
   return onSnapshot(
     highlightsDoc(db, uid),
     (snap) => {
       const data = snap.exists() ? snap.data() : null;
-      const verses = Array.isArray(data?.verses) ? data.verses : [];
-      onChange(
-        new Set(
-          verses.filter((x: unknown): x is string => typeof x === "string"),
-        ),
+      const rawVerses = Array.isArray(data?.verses) ? data.verses : [];
+      const verses = new Set(
+        rawVerses.filter((x: unknown): x is string => typeof x === "string"),
       );
+      const notes = new Map<string, string>();
+      const rawNotes =
+        data && typeof data.notes === "object" && data.notes ? data.notes : {};
+      for (const [k, v] of Object.entries(rawNotes)) {
+        if (typeof v === "string") notes.set(k, v);
+      }
+      onChange({ verses, notes });
     },
-    () => onChange(new Set()),
+    () => onChange({ verses: new Set(), notes: new Map() }),
   );
 }
 
@@ -71,6 +124,7 @@ export interface ResolvedHighlight {
   passageTitle: string;
   n: number;
   text: string;
+  note?: string;
   sceneIndex: number;
   href: string;
 }
@@ -90,7 +144,10 @@ function parseHighlightKey(
 // Recover the verse a key points at. Returns null for a key whose reading, passage, or
 // verse no longer exists (content can be re-authored under a reader's saved highlights),
 // so a stale highlight is silently dropped from the view rather than crashing it.
-export function resolveHighlight(key: string): ResolvedHighlight | null {
+export function resolveHighlight(
+  key: string,
+  note?: string,
+): ResolvedHighlight | null {
   const parsed = parseHighlightKey(key);
   if (!parsed) return null;
   const found = findReadingAnywhere(parsed.readingId);
@@ -113,6 +170,7 @@ export function resolveHighlight(key: string): ResolvedHighlight | null {
     passageTitle: passage.title,
     n: parsed.n,
     text: verse.text,
+    note,
     sceneIndex,
     href:
       sceneIndex === 0
@@ -130,10 +188,13 @@ export interface HighlightGroup {
   verses: ResolvedHighlight[];
 }
 
-export function groupHighlights(keys: Iterable<string>): HighlightGroup[] {
+export function groupHighlights(
+  keys: Iterable<string>,
+  notes?: Map<string, string>,
+): HighlightGroup[] {
   const groups = new Map<string, HighlightGroup>();
   for (const key of keys) {
-    const r = resolveHighlight(key);
+    const r = resolveHighlight(key, notes?.get(key));
     if (!r) continue;
     const group = groups.get(r.readingId);
     if (group) group.verses.push(r);
