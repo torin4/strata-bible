@@ -26,8 +26,14 @@ the lower-tier middles and personalizes the turn per reader. It is NOT a chat si
 
 ## Stack (decided, do not relitigate)
 
-Next.js (App Router) + TypeScript + Tailwind + shadcn/ui + Supabase. Server components for content,
-a server route for the companion, Supabase for journal and companion cache. PWA manifest in phase 3.
+Next.js (App Router) + TypeScript + Tailwind + shadcn/ui + Firebase (Auth + Firestore). Server
+components for content, a server route for the companion, Firestore for journal and companion cache.
+PWA manifest in phase 3.
+
+Note: the data/auth layer was changed from Supabase to Firebase by the owner (2026-06-08). Auth is
+Firebase Auth (Google + email/password), client side; the reader stays server rendered and is fully
+usable signed out. Firebase web config lives in `NEXT_PUBLIC_FIREBASE_*` env vars (public by design);
+per-user access is enforced by Firestore security rules.
 
 ## Hard rules
 
@@ -42,7 +48,7 @@ a server route for the companion, Supabase for journal and companion cache. PWA 
 4. **No em dashes in authored or UI copy.** Commas and periods. This is the author's voice.
 5. **The app must be fully usable with the companion OFF.** Companion output is an additive layer
    that always falls back to authored content. Never block a render on a companion call.
-6. **Browser storage:** journal and state persist in Supabase, not localStorage.
+6. **Browser storage:** journal and state persist in Firestore, not localStorage.
 
 ## Design tokens
 
@@ -144,7 +150,7 @@ runnable reader you can move through.
 Phase 2 — shell: home, MovementAccordion, routing, `getAdjacent`, overlays (composition, situation,
 doorway), the demo mode toggle.
 
-Phase 3 — journal in Supabase, auth, then PWA manifest.
+Phase 3 — auth (Firebase Auth: Google + email/password), then journal in Firestore, then PWA manifest.
 
 Phase 4 — the companion. Read `companion-spec.md` first. Grounded-middle drafting is the first
 companion feature, the personalized turn comes second.

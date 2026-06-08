@@ -1,3 +1,4 @@
+import { AuthMenu } from "@/components/auth/AuthMenu";
 import { BOOKS } from "@/content";
 import Link from "next/link";
 
@@ -8,6 +9,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-shell px-4 py-10 sm:py-16">
       <div className="mx-auto max-w-[42rem]">
+        <div className="mb-6 flex min-h-[16px] justify-end">
+          <AuthMenu />
+        </div>
         <header className="mb-10 text-center">
           <div className="font-display text-[18px] font-semibold tracking-[.32em] text-gold-bright">
             STRATA
