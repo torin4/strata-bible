@@ -37,14 +37,14 @@ export default async function BookPage({
         </header>
 
         {book.heroImage ? (
-          <div className="relative overflow-hidden rounded-[18px] border border-line">
+          <div className="relative aspect-[688/384] w-full overflow-hidden rounded-[18px] border border-line">
             {/* Decorative banner; the title is text below. */}
             <img
               src={book.heroImage}
               alt=""
-              className="h-[190px] w-full object-cover object-center sm:h-[230px]"
+              className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-deep via-deep/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep via-deep/25 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 px-5 pb-5 text-center">
               <h1 className="font-display text-[34px] font-medium leading-none text-parchment sm:text-[40px]">
                 {book.title}
