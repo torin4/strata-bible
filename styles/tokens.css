@@ -1,0 +1,28 @@
+/*
+ * STRATA design tokens. The single source of color truth; tailwind.config.ts mirrors
+ * these names. Solid colors are stored as space-separated RGB channels so Tailwind can
+ * apply alpha modifiers (border-gold/40, bg-lapis/8, ...) — that is how the proof's many
+ * one-off translucent surfaces are reproduced without a literal color in any component.
+ * The four already-translucent tokens from the brief stay as whole rgba() values.
+ *
+ * Hex equivalents (from the build brief), for reference:
+ *   --deep #0d1015  --parchment #f4ead4  --parchment-2 #ece0c4  --parchment-edge #d9c9a3
+ *   --gold #c79a3e  --gold-bright #e8c062  --lapis #6f9bce  --psyche #bda1df  --ink #211c14
+ */
+:root {
+  --shell: 5 6 10; /* page backdrop, darker than the deep panel (proof body #05060a) */
+  --deep: 13 16 21;
+  --parchment: 244 234 212;
+  --parchment-2: 236 224 196;
+  --parchment-edge: 217 201 163;
+  --gold: 199 154 62;
+  --gold-bright: 232 192 98;
+  --lapis: 111 155 206;
+  --psyche: 189 161 223;
+  --ink: 33 28 20;
+
+  --gold-soft: rgba(199, 154, 62, 0.16);
+  --mist: rgba(244, 234, 212, 0.66);
+  --mist-2: rgba(244, 234, 212, 0.4);
+  --line: rgba(217, 201, 163, 0.16);
+}

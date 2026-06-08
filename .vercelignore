@@ -1,0 +1,6 @@
+.next
+*.tsbuildinfo
+*.png
+strata-reader.html
+strata-genre-proof.html
+.playwright-mcp

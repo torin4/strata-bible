@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STRATA · genre proof</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep:#0d1015; --parchment:#f4ead4; --parchment-2:#ece0c4; --parchment-edge:#d9c9a3;
+    --gold:#c79a3e; --gold-bright:#e8c062; --gold-soft:rgba(199,154,62,.16);
+    --lapis:#6f9bce; --psyche:#bda1df; --ink:#211c14;
+    --mist:rgba(244,234,212,.66); --mist-2:rgba(244,234,212,.4);
+    --line:rgba(217,201,163,.16);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#05060a;color:var(--parchment);font-family:'Hanken Grotesk',system-ui,sans-serif}
+  body{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:22px 12px 40px}
+  .masthead{text-align:center;margin-bottom:14px}
+  .masthead .mk{font-family:'Cinzel',serif;letter-spacing:.32em;font-size:15px;color:var(--gold-bright);font-weight:600}
+  .masthead .sub{color:var(--mist-2);font-size:11.5px;letter-spacing:.08em;margin-top:4px}
+
+  .tabs{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:430px;margin-bottom:16px}
+  .tab{border:1px solid var(--line);background:rgba(244,234,212,.03);color:var(--mist);
+       font-family:'Hanken Grotesk';font-size:11.5px;letter-spacing:.04em;padding:7px 12px;border-radius:999px;cursor:pointer;transition:.18s}
+  .tab .g{display:block;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist-2);margin-top:2px}
+  .tab:hover{border-color:rgba(199,154,62,.4)}
+  .tab.on{background:var(--gold-soft);border-color:var(--gold);color:var(--parchment)}
+  .tab.on .g{color:var(--gold-bright)}
+
+  .frame{width:392px;max-width:96vw;height:760px;max-height:82vh;background:var(--deep);
+         border:1px solid var(--line);border-radius:30px;overflow:hidden;position:relative;
+         box-shadow:0 30px 80px rgba(0,0,0,.6), inset 0 0 0 1px rgba(244,234,212,.02)}
+  .scroll{position:absolute;inset:0;overflow-y:auto;padding:30px 26px 60px}
+  .scroll::-webkit-scrollbar{width:0}
+
+  .rkind{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+  .chip{font-family:'Hanken Grotesk';font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+        padding:4px 9px;border-radius:999px;border:1px solid;font-weight:600}
+  .chip.tier{color:var(--gold-bright);border-color:rgba(199,154,62,.5);background:var(--gold-soft)}
+  .chip.kind{color:var(--lapis);border-color:rgba(111,155,206,.4);background:rgba(111,155,206,.08)}
+  .span{color:var(--mist-2);font-size:11px;letter-spacing:.06em;font-style:italic;font-family:'EB Garamond',serif}
+
+  .cross{display:flex;gap:9px;align-items:flex-start;margin:0 0 18px;padding:11px 13px;
+         border:1px solid rgba(111,155,206,.3);border-radius:11px;background:rgba(111,155,206,.06)}
+  .cross .ic{color:var(--lapis);font-size:13px;line-height:1.2}
+  .cross .tx{color:var(--mist);font-size:12.5px;line-height:1.5}
+  .cross b{color:var(--lapis);font-weight:600}
+
+  .rtitle{font-family:'Cinzel',serif;font-size:26px;font-weight:500;letter-spacing:.01em;line-height:1.15;margin:2px 0 0}
+  .thread{margin:14px 0 4px;padding-left:13px;border-left:1px solid rgba(111,155,206,.4);
+          color:var(--mist);font-family:'EB Garamond',serif;font-style:italic;font-size:13.5px;line-height:1.6}
+
+  .passage{margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
+  .passage:first-of-type{border-top:0}
+  .phead{display:flex;align-items:baseline;gap:9px;margin-bottom:4px;flex-wrap:wrap}
+  .plabel{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .pref{color:var(--mist-2);font-size:11.5px;font-style:italic;font-family:'EB Garamond',serif}
+  .ptitle{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:500;margin:0 0 16px;color:var(--parchment-2)}
+  .pkind{font-family:'Hanken Grotesk';font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+         color:var(--mist-2);border:1px solid var(--line);border-radius:999px;padding:2px 8px}
+
+  .capstone{margin:30px 0 0;padding:22px 20px;border-radius:16px;border:1px solid rgba(199,154,62,.4);
+            background:linear-gradient(180deg, rgba(199,154,62,.10), rgba(199,154,62,.03))}
+  .csk{font-family:'Hanken Grotesk';font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-bottom:8px}
+  .cst{font-family:'Cinzel',serif;font-size:21px;font-weight:500;color:var(--gold-bright);line-height:1.2;margin-bottom:14px}
+  .csp{font-family:'EB Garamond',serif;font-size:14.5px;line-height:1.7;color:var(--parchment-2);margin-bottom:12px}
+
+  /* scripture */
+  .scripture{font-family:'Cormorant Garamond',serif;font-size:18.5px;line-height:1.74;color:var(--parchment);margin:6px 0 4px}
+  .scripture .vn{font-family:'Hanken Grotesk';font-size:9.5px;color:var(--gold);vertical-align:super;margin-right:5px;letter-spacing:.04em}
+  .poem .stz{margin:0 0 14px;display:flex;gap:10px}
+  .poem .stz .vn{font-family:'Hanken Grotesk';font-size:9.5px;color:var(--gold);letter-spacing:.04em;padding-top:7px;min-width:14px}
+  .poem .lines{font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.62;color:var(--parchment)}
+  .poem .turn{position:relative}
+  .poem .turn::before{content:'the turn';position:absolute;left:-2px;top:-15px;font-family:'Hanken Grotesk';
+        font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-bright)}
+  .poem .turn .lines{box-shadow:inset 3px 0 0 var(--gold-soft);padding-left:11px;margin-left:-11px}
+
+  .statute{margin:0 0 13px;display:flex;gap:11px}
+  .statute .vn{font-family:'Hanken Grotesk';font-size:10px;color:var(--gold);min-width:18px;padding-top:5px;letter-spacing:.03em}
+  .statute .stx{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.55;color:var(--parchment)}
+  .perst{margin:7px 0 0;padding:9px 12px;border-radius:9px;font-family:'Hanken Grotesk';font-size:12px;line-height:1.5}
+  .perst.claims{background:var(--gold-soft);border:1px solid rgba(199,154,62,.4);color:var(--parchment)}
+  .perst.none-but{background:rgba(189,161,223,.08);border:1px solid rgba(189,161,223,.35);color:var(--mist)}
+
+  /* layers */
+  .layer{margin:20px 0 0}
+  .llabel{font-family:'Hanken Grotesk';font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .llabel .dot{width:5px;height:5px;border-radius:50%}
+  .ltext{font-family:'EB Garamond',serif;font-size:14.5px;line-height:1.66;color:var(--parchment-2)}
+  .lsrc{margin-top:7px;font-size:11px;font-style:italic;color:var(--mist-2);font-family:'EB Garamond',serif}
+
+  .l-ground .llabel{color:var(--lapis)} .l-ground .dot{background:var(--lapis)}
+  .l-mean .llabel{color:var(--parchment-2)} .l-mean .dot{background:var(--parchment-edge)}
+  .l-addr .llabel{color:var(--gold-bright)} .l-addr .dot{background:var(--gold-bright)}
+  .l-ask .llabel{color:var(--mist)} .l-ask .dot{background:var(--mist-2)}
+
+  .lenses{margin:14px 0 0;display:flex;flex-direction:column;gap:10px}
+  details.lens{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:rgba(244,234,212,.02);transition:background .2s,border-color .2s}
+  details.lens.theo[open]{background:var(--gold-soft);border-color:rgba(199,154,62,.28)}
+  details.lens.arch[open]{background:rgba(189,161,223,.07);border-color:rgba(189,161,223,.28)}
+  details.lens summary{list-style:none;cursor:pointer;padding:11px 14px;display:flex;align-items:center;gap:9px}
+  details.lens summary::-webkit-details-marker{display:none}
+  .lchip{font-family:'Hanken Grotesk';font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:4px 11px;border-radius:999px;border:1px solid}
+  .lchip.theo{color:var(--gold-bright);border-color:rgba(199,154,62,.5);background:var(--gold-soft)}
+  .lchip.arch{color:var(--psyche);border-color:rgba(189,161,223,.4);background:rgba(189,161,223,.08)}
+  details.lens .plus{margin-left:auto;color:var(--mist-2);font-size:15px;transition:transform .25s}
+  details.lens[open] .plus{transform:rotate(45deg);color:var(--gold)}
+  details.lens .lt{font-family:'EB Garamond',serif;font-size:13.5px;line-height:1.62;color:var(--parchment-2);padding:0 14px 14px}
+  .cav{display:block;margin-top:8px;font-size:10.5px;font-style:italic;color:var(--mist-2);font-family:'EB Garamond',serif}
+
+  .misread{margin:18px 0 0;padding:13px 15px;border-radius:11px;border:1px dashed rgba(217,201,163,.3);background:rgba(244,234,212,.02)}
+  .misread .ml{font-family:'Hanken Grotesk';font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--parchment-edge);margin-bottom:7px}
+  .misread .named{font-family:'EB Garamond',serif;font-style:italic;font-size:14px;color:var(--mist);line-height:1.5}
+  .misread .arrow{color:var(--gold);margin:0 6px}
+  .misread .why{font-family:'EB Garamond',serif;font-size:13.5px;color:var(--parchment-2);line-height:1.6;margin-top:7px}
+
+  .itemnote{margin:5px 0 0;padding-left:11px;border-left:1px solid rgba(111,155,206,.4);
+            font-family:'EB Garamond',serif;font-style:italic;font-size:12.5px;color:var(--mist);line-height:1.5}
+
+  .symbols{margin:18px 0 0;padding:14px 16px;border-radius:12px;border:1px solid rgba(111,155,206,.25);background:rgba(111,155,206,.05)}
+  .syl{font-family:'Hanken Grotesk';font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--lapis);margin-bottom:11px}
+  .sym{margin:0 0 11px}
+  .sym:last-child{margin-bottom:0}
+  .sym-img{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--gold-bright);line-height:1.2}
+  .sym-meant{font-family:'EB Garamond',serif;font-size:13.5px;color:var(--parchment-2);line-height:1.55;margin-top:2px}
+  .sym-note{color:var(--mist-2);font-style:italic}
+
+  .tensions{margin:18px 0 0;padding:14px 16px;border-radius:12px;border:1px solid rgba(189,161,223,.28);background:rgba(189,161,223,.06)}
+  .tnl{font-family:'Hanken Grotesk';font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--psyche);margin-bottom:11px}
+  .tn{margin:0 0 12px}
+  .tn:last-child{margin-bottom:0}
+  .tn-claim{font-family:'Cormorant Garamond',serif;font-size:16.5px;color:var(--parchment);line-height:1.4}
+  .tn-counter{font-family:'EB Garamond',serif;font-size:13.5px;color:var(--parchment-2);line-height:1.55;margin-top:3px}
+  .tn-but{color:var(--psyche);font-style:italic;font-weight:500}
+  .tn-where{display:inline-block;margin-left:4px;font-style:italic;color:var(--mist-2);font-size:12px}
+
+  .modechip{font-family:'Hanken Grotesk';font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+            padding:3px 8px;border-radius:999px;border:1px solid rgba(199,154,62,.5);color:var(--gold-bright);background:var(--gold-soft)}
+  .soft{margin:12px 0 0;font-family:'EB Garamond',serif;font-style:italic;font-size:13.5px;color:var(--mist);line-height:1.6}
+  .ask{margin:18px 0 0;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:rgba(244,234,212,.025)}
+  .ask .at{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.5;color:var(--parchment)}
+
+  .close{margin:30px 0 0;padding-top:22px;border-top:1px solid var(--line);
+         font-family:'EB Garamond',serif;font-style:italic;font-size:14px;line-height:1.66;color:var(--mist)}
+
+  .note{max-width:430px;margin:16px auto 0;color:var(--mist-2);font-size:11.5px;line-height:1.6;text-align:center}
+  .note b{color:var(--gold-bright);font-weight:600}
+</style>
+</head>
+<body>
+  <div class="masthead">
+    <div class="mk">STRATA</div>
+    <div class="sub">genre proof · one schema, four genres</div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="frame"><div class="scroll" id="scroll"></div></div>
+  <div class="note">Each tab is the <b>same data shape</b>. Only <b>kind</b>, <b>form</b>, <b>ground.kind</b>, and <b>addr.mode</b> differ. The four layers never change.</div>
+
+<script>
+const SEED = [
+  {
+    id:'gen-15', tier:'sitting', span:'Genesis 15', title:'The covenant', unitLabel:'Scene', genreLabel:'Narrative',
+    thread:'The promise was made three chapters ago, and Abram is still childless and still landless. Here God answers the two doubts head on: a sky full of stars for the children, and a covenant cut in the dark for the land.',
+    closeEnd:'God has fastened the whole promise to his own life, sworn it while Abram slept. What that costs, and how badly the waiting will be handled, is still ahead.',
+    passages:[
+      { label:'One', ref:'15:1–6', kind:'scene', form:'prose', title:'Count the stars',
+        verses:[
+          {n:1,text:'After this, the word of the LORD came to Abram in a vision: “Do not be afraid, Abram. I am your shield, and your reward will be very great.”'},
+          {n:2,text:'But Abram said, “Sovereign LORD, what can you give me, since I remain childless and the one who will inherit my house is Eliezer of Damascus?”'},
+          {n:4,text:'Then the word of the LORD came to him: “This man will not be your heir; a son who is your own flesh and blood will be your heir.”'},
+          {n:5,text:'He took him outside and said, “Look up at the sky and count the stars, if you can count them.” Then he said, “So shall your offspring be.”'},
+          {n:6,text:'Abram believed the LORD, and he credited it to him as righteousness.'} ],
+        ground:{kind:'historical',src:'von Rad · Alter',text:'Verse 6 is one of the most argued-over sentences in the Bible. Abram, old and childless, is taken out under the night sky, told his descendants will outnumber the stars, and he believes, and that trust is “credited to him as righteousness.” Centuries later Paul built a whole theology of faith on this one line (Romans 4, Galatians 3); James pushed back (James 2); the Reformation was fought partly over what it means. In its own setting it is simpler and stranger: a relationship set right not by anything Abram achieves, but by his willingness to trust a promise every visible fact contradicts.'},
+        meaning:'Abram does the most honest thing in the chapter first: he argues. He tells God the promise is empty as long as he has no child. God does not rebuke the complaint, he answers it, walks him outside, and hands him the stars. And Abram believes, not because the evidence changed, he is still old and Sarai still barren, but because he decides to trust the one making the promise. That decision, the text says, is what sets him right.',
+        lenses:{ theo:'This is the seedbed of grace. Abram is counted righteous before he has done one thing to deserve it, on the strength of trust alone. Everything Paul will later say about faith is already folded into this single line.',
+                 arch:'The night sky is the oldest screen we cast the future onto. Led out of his tent to stand under the immensity overhead, the small frightened man is asked to read his own descendants in the stars. (Trusting the promise against the evidence of the senses.)' },
+        addr:{mode:'names',text:'You know what it is to be handed a promise that every fact in front of you flatly contradicts, and to have to decide whether to trust it anyway.'},
+        ask:'Where are you being asked to trust something you can see no evidence for yet, and what would actually believing it change about how you live now?' },
+      { label:'Two', ref:'15:7–21', kind:'scene', form:'prose', title:'The covenant in the dark',
+        verses:[
+          {n:8,text:'But Abram said, “Sovereign LORD, how can I know that I will possess it?”'},
+          {n:10,text:'Abram brought all these, cut them in two, and arranged the halves opposite each other; the birds, however, he did not cut.'},
+          {n:12,text:'As the sun was setting, Abram fell into a deep sleep, and a thick and dreadful darkness came over him.'},
+          {n:13,text:'Then the LORD said to him, “Know for certain that your descendants will be strangers in a land not their own, and there they will be enslaved and mistreated four hundred years.'},
+          {n:17,text:'When the sun had set and darkness had fallen, a smoking firepot with a blazing torch appeared and passed between the pieces.'},
+          {n:18,text:'On that day the LORD made a covenant with Abram and said, “To your descendants I give this land, from the river of Egypt to the great river, the Euphrates.”'} ],
+        ground:{kind:'historical',src:'von Rad · Westermann · Alter',text:'When Abram asks how he can be sure of the land, God answers not with proof but with a ritual older than Israel. Animals are cut in half and laid in two facing rows, and the parties to an agreement would walk between the pieces, as if to say, “let me be torn apart like these if I break my word.” This is where the Hebrew idiom comes from: a covenant is literally “cut.” But the rite breaks its own rules. Abram falls into a deep, dreadful sleep, and only God, as a smoking firepot and a blazing torch, passes between the pieces. The oath is one-sided.'},
+        meaning:'Abram asks for certainty, and what he gets is a covenant where he carries none of the risk. He sleeps; God walks the bloody path alone. The promise is fastened entirely to God’s own life, not to Abram’s performance, and that is the only reason it can survive everything Abram and his children are about to do to it. And the certainty comes wrapped in darkness: the road to the promise runs straight through four centuries of slavery. Being sure of the end is not the same as being spared the middle.',
+        lenses:{ theo:'A covenant where only one party passes through the pieces is a one-sided oath. God stakes his own existence on keeping a promise to a man who is asleep. This is grace at its most extreme, a commitment that does not hang on the other side holding up its end, which is exactly why it cannot finally fail.',
+                 arch:'The deep sleep and the thick, dreadful darkness are the night the waking self cannot enter on its own terms. The decisive thing is sworn while the ego sleeps, by a fire that moves on its own. (The covenant sworn beneath the waking self.)' },
+        addr:{mode:'names',text:'You may have wanted a guarantee and been handed instead a darkness to walk into, with the word that someone has bound themselves to you on the far side of it.'},
+        soft:'The oath did not rest on Abram. He slept through the part that mattered most, and it held.',
+        ask:'Where did you ask for certainty and get only a promise, and whose keeping of it would you have to trust to walk into the dark?' }
+    ] },
+
+  {
+    id:'ps-13', tier:'sitting', span:'Psalm 13', title:'How long', genreLabel:'Poetry',
+    thread:'A lament with no story behind it. What grounds it is the form: four times “how long,” then a turn.',
+    closeEnd:'The complaint is kept in the prayer book, teeth and all. That is the point.',
+    passages:[
+      { ref:'Psalm 13', kind:'poem', form:'poetry', title:'How long', inTextTurn:5,
+        verses:[
+          {n:1,text:'How long, LORD? Will you forget me forever?\nHow long will you hide your face from me?'},
+          {n:2,text:'How long must I wrestle with my thoughts,\nday after day with grief in my heart?\nHow long will my enemy stand over me?'},
+          {n:3,text:'Look at me, answer me, LORD my God.\nLight up my eyes, or I will sleep in death.'},
+          {n:4,text:'My enemy will say, “I have beaten him,”\nand my foes will celebrate when I fall.'},
+          {n:5,text:'But I have trusted in your unfailing love;\nmy heart will rejoice in your rescue.'},
+          {n:6,text:'I will sing to the LORD,\nfor he has been good to me.'} ],
+        ground:{kind:'genre',src:'Westermann · Alter',text:'A lament, the most common kind of psalm. It has no story behind it. The heading tying it to David was added later and tells us nothing about a setting. What grounds it is the form itself: four times “how long,” then a turn. Israel kept these as scripts for the worst days, and the striking thing is that a prayer this accusing was not edited out. The complaint is holy too.'},
+        meaning:'The psalm does the thing religion usually forbids. It accuses God to his face, four times, and calls it prayer. Then in verse 5 it turns, not because anything changed, the enemy is still there, the face is still hidden, but because the one praying decides to trust anyway. Lament is not the opposite of faith. It is faith with its teeth bared.',
+        lenses:{ theo:'You are allowed to say this. The Bible hands you the words to accuse God and keeps them in the prayer book. Trust here is not a feeling that the trouble lifted. It is a decision made inside the trouble, with the face still hidden.',
+                 arch:'The cry into a silence that will not answer is the oldest human sound. To name the silence and keep speaking into it anyway is how a self holds together when nothing outside confirms it. (Speaking into the silence as the act that keeps the self whole.)' },
+        addr:{mode:'pray',text:'When you are in the worst of it, these are words you can take on your own lips. You do not have to pretend you are fine to pray it.'},
+        ask:'What would you say to God if you were allowed to accuse, and could you still get to verse 5?' }
+    ] },
+
+  {
+    id:'lev-19', tier:'sitting', span:'Leviticus 19:9–19', title:'Holy in the ordinary', genreLabel:'Law',
+    thread:'Laws against fraud and revenge sit in the same breath as a ban on mixed fabrics. To the writers there was no seam.',
+    closeEnd:'Some of these still have their hand on you. Some are a window into someone else’s world. Telling them apart is the work.',
+    passages:[
+      { ref:'Leviticus 19:9–19', kind:'statute-cluster', form:'list', title:'Holy in the ordinary',
+        statutes:[
+          {n:9,text:'When you reap the harvest of your land, do not reap to the very edges or gather the gleanings.'},
+          {n:10,text:'Do not strip your vineyard bare or pick up the fallen grapes. Leave them for the poor and the foreigner. I am the LORD your God.'},
+          {n:11,text:'Do not steal. Do not lie. Do not deceive one another.'},
+          {n:13,text:'Do not defraud your neighbor or rob him. Do not hold back a worker’s wages overnight.'},
+          {n:14,text:'Do not curse the deaf or put a stumbling block in front of the blind, but fear your God.'},
+          {n:15,text:'Do not pervert justice; show neither favor to the poor nor deference to the great, but judge fairly.'},
+          {n:17,text:'Do not hate your brother in your heart. Rebuke him honestly, so you do not share in his guilt.'},
+          {n:18,text:'Do not seek revenge or hold a grudge, but love your neighbor as yourself. I am the LORD.'},
+          {n:19,text:'Keep my decrees. Do not mate different kinds of animals. Do not plant two kinds of seed. Do not wear cloth woven of two kinds of material.'} ],
+        perItem:{ 18:{addr:{mode:'claims',text:'This one has never stopped making its claim on you. It is the whole law in six words.'}},
+                     19:{addr:{mode:'none-but',text:'This does not bind you. It is worth seeing anyway, because it shows you that to these writers the loom and the wage stood on the same ground.'}} },
+        ground:{kind:'historical',src:'Milgrom · Douglas · Westermann',text:'This is the Holiness Code, and its method is what trips a modern reader. Laws against fraud and slander and revenge sit in the same breath as a ban on mixed fabrics, with no seam between them. To the writers there was no seam. Holiness reached the whole of life, the field, the wage, the grudge, the loom, and the same refrain stamps all of it: I am the LORD. The gleaning laws are a welfare system written into agriculture. The mixed-kind rules are boundary markers, ways a small people stayed distinct.'},
+        misreading:{named:'These are arbitrary rules from a primitive God.',why:'The cluster is mostly justice and mercy, with a few identity markers folded in. Reading the whole list, not one cherry-picked verse, shows a sustained ethic of how the strong treat the weak.'},
+        meaning:'Two kinds of command are braided here on purpose. Some are timeless and burn straight through: do not hold back a worker’s wages, do not curse the deaf, love your neighbor as yourself. Some marked Israel off from the nations around it and do not bind you: the fabrics, the seed. The flattening is the teaching. To these writers, how you pay a laborer and what you weave were both answers to the same question, what does it look like to belong to this God in ordinary life.',
+        addr:{mode:'claims',text:'The luminous ones in this list are not ancient history. They are a standing demand about how you treat the people with the least power to make you.'},
+        ask:'Which of these still has its hand on you, and which are you reading as a window into someone else’s world?' }
+    ] },
+
+  {
+    id:'rom-7', tier:'sitting', span:'Romans 7:1–8:4', crossesChapters:true, title:'The thing I do not want', genreLabel:'Letter',
+    thread:'Read 7 alone and you get despair. Read the unit and you get despair broken. The chapter break here is in the wrong place.',
+    closeEnd:'The cry of verse 24 only makes sense because of the answer that lands in 8:1. Do not stop at the wretched line.',
+    passages:[
+      { ref:'Romans 7:14–25', kind:'argument', form:'prose', title:'The thing I do not want',
+        verses:[
+          {n:14,text:'We know the law is spiritual; but I am unspiritual, sold as a slave to sin.'},
+          {n:15,text:'I do not understand what I do. What I want to do, I do not do, and what I hate, I do.'},
+          {n:18,text:'I know that nothing good lives in me, that is, in my flesh. I have the desire to do good, but I cannot carry it out.'},
+          {n:19,text:'The good I want, I do not do; the evil I do not want, this I keep on doing.'},
+          {n:22,text:'In my inner being I delight in God’s law,'},
+          {n:23,text:'but I see another law at work in me, fighting the law of my mind and making me a prisoner of the law of sin.'},
+          {n:24,text:'What a wretched man I am. Who will rescue me from this body of death?'},
+          {n:25,text:'Thanks be to God, through Jesus Christ our Lord. So then, in my mind I am a slave to God’s law, but in my flesh to the law of sin.'} ],
+        ground:{kind:'occasion',src:'Dunn · Wright · Cranfield',text:'Paul is writing to a church in Rome he did not found, working out how Jew and Gentile stand together before God, and he is mid-argument. The chapter break before verse 1 and after verse 25 are both later additions, both in the wrong place. Romans 7 and 8 are one breath, and the wretched cry of verse 24 only makes sense because of the answer that lands in 8:1.'},
+        misreading:{named:'This is Paul confessing his own daily defeat as a Christian.',why:'The “I” is fought over. Many read it as humanity under the law before rescue, a rhetorical “I,” not Paul’s diary. Reading it as private failure misses that the passage is an argument about the law’s limits, and that it resolves, the very next sentence, into no condemnation.'},
+        meaning:'This is the most honest description of the divided will ever written: wanting the good and watching yourself do the opposite, as if hijacked from inside. Paul’s point is not “try harder.” It is that the law can name the good and cannot produce it. Knowing the right thing has never been the same as being able to do it. The cry is real, and it is not the end of the sentence.',
+        lenses:{ theo:'The law diagnoses, it does not cure. It can show you the gap between what you want and what you do, and it is powerless to close it. That gap is exactly where grace has to enter, which is why the passage ends not in resolve but in rescue: thanks be to God.',
+                 arch:'The self at war with itself, the “I” that wants one thing and a deeper current that does another, is the oldest map of the divided psyche. Naming the split is the first honest step; pretending to a unity you do not have is the lie. (The divided will brought into the light.)' },
+        addr:{mode:'names',text:'You know the exact experience: wanting to do the good and watching yourself not do it, as if something in you overrode the choice.'},
+        soft:'The passage does not leave you in the cry. The next line is rescue.',
+        ask:'Where do you most do the thing you do not want, and what would it change to stop reading that as proof you are bad and start reading it as the gap grace is for?' }
+    ] },
+
+  {
+    id:'prov-10', tier:'sitting', span:'Proverbs 10 (selected)', title:'Coaching, not contract', genreLabel:'Wisdom',
+    thread:'A run of sharp couplets from the schoolroom. Some of them make promises the rest of the canon refuses to keep.',
+    closeEnd:'Proverbs tells you how life usually tilts. Job and Ecclesiastes are in the same scroll-family to remind you it is a tilt, not a guarantee.',
+    passages:[
+      { ref:'Proverbs 10 (selected)', kind:'saying-cluster', form:'list', title:'Coaching, not contract',
+        sayings:[
+          {n:1,text:'A wise son brings joy to his father, but a foolish son grief to his mother.'},
+          {n:2,text:'Ill-gotten wealth is worth nothing, but righteousness rescues from death.'},
+          {n:3,text:'The LORD does not let the righteous go hungry, but he thwarts the craving of the wicked.'},
+          {n:4,text:'Lazy hands make for poverty, but diligent hands bring wealth.'},
+          {n:9,text:'Whoever walks in integrity walks securely, but whoever takes crooked paths will be found out.'},
+          {n:22,text:'The blessing of the LORD brings wealth, and he adds no painful toil to it.'},
+          {n:27,text:'The fear of the LORD adds length to life, but the years of the wicked are cut short.'} ],
+        perItem:{ 3:{note:'Job will break this verse in half.'},
+                  22:{note:'Read as a promise, this is the seed of every prosperity gospel.'} },
+        ground:{kind:'genre',src:'Fox · von Rad · The Wisdom of Amenemope',text:'Proverbs collects the wisdom of the ancient schoolroom, sayings polished for memory and aimed at the young. One stretch of the book runs close behind an older Egyptian instruction, the Wisdom of Amenemope. These are not laws or prophecies. They are distilled observation, how the world usually goes, and the antithetical form, this but that, is a teaching device, not a logical proof.'},
+        misreading:{named:'Do right and you are guaranteed to be safe, fed, and prosperous.',why:'A proverb is a general truth, not a contract. It tells you the way life mostly tilts. The book sits in a canon that kept Job and Ecclesiastes alongside it precisely to argue with anyone who reads a proverb as a promise.'},
+        meaning:'Proverbs is coaching, not contract. It tells you that diligence and integrity usually serve you better than sloth and crookedness, and it says so in couplets built to lodge in a young memory. The danger is the small step from “this is how life generally goes” to “this is how God guarantees life will go for me.” The book knows the shape of a good life. It does not promise the outcome.',
+        tensions:[
+          {claim:'The righteous never go hungry (10:3).',counter:'Job is blameless and loses everything. The righteous do starve.',where:'Job 1–2'},
+          {claim:'The God-fearer is rewarded with long life (10:27).',counter:'The same fate, death, meets the wise and the fool alike, and who can say it is just?',where:'Ecclesiastes 2:14–16'} ],
+        addr:{mode:'claims',text:'Take these as a posture to live by, not a deal to hold God to. They shape you. They do not insure you.'},
+        ask:'Which of these have you been reading as a promise God owes you, and what happens to your faith when the promise does not pay out?' }
+    ] },
+
+  {
+    id:'rev-13', tier:'sitting', span:'Revelation 13', title:'The beast and the number', genreLabel:'Apocalyptic',
+    thread:'The most decoded chapter in the Bible, and the one that most resists decoding. It was a code its first readers could crack and its rulers could not.',
+    closeEnd:'The beast is not a riddle about the distant future. It is the empire of the moment, drawn as a monster, so a crushed community could be told the thing devouring them is already doomed.',
+    passages:[
+      { ref:'Revelation 13:1–18 (selected)', kind:'vision', form:'prose', title:'The beast and the number',
+        verses:[
+          {n:1,text:'And I saw a beast coming up out of the sea. It had ten horns and seven heads, with ten crowns on its horns, and on each head a blasphemous name.'},
+          {n:2,text:'The beast resembled a leopard, with feet like a bear and a mouth like a lion. The dragon gave it his power, his throne, and great authority.'},
+          {n:3,text:'One of its heads seemed wounded to death, but the fatal wound had healed. The whole world was astonished and followed the beast.'},
+          {n:4,text:'They worshiped the dragon for giving authority to the beast, and they worshiped the beast, saying, “Who is like the beast? Who can wage war against it?”'},
+          {n:7,text:'It was given power to wage war against God’s people and to conquer them, and authority over every tribe and people and language and nation.'},
+          {n:10,text:'If anyone is to go into captivity, into captivity they will go. If anyone is to be killed with the sword, with the sword they will be killed. This calls for the endurance and faith of God’s people.'},
+          {n:17,text:'so that no one could buy or sell unless they had the mark, which is the name of the beast or the number of its name.'},
+          {n:18,text:'This calls for wisdom. Let the one who has insight calculate the number of the beast, for it is the number of a man. That number is 666.'} ],
+        ground:{kind:'occasion',src:'Bauckham · Koester · Collins',text:'Revelation is resistance literature, written to churches under the weight of Rome near the end of the first century, in a code its first readers could crack and its rulers could not. Apocalyptic was already a genre. Daniel had done the same against an earlier empire, speaking of present tyranny in cosmic images so the powerless could see their moment from above.'},
+        symbols:[
+          {image:'The beast from the sea',meant:'Rome and the emperor cult.',note:'The sea is the west, where Rome lay, and the place of chaos in Hebrew imagination.'},
+          {image:'The dragon behind it',meant:'The satanic power standing behind the empire.',note:'Named in chapter 12 as the ancient serpent.'},
+          {image:'The head wounded and healed',meant:'The Nero redivivus legend, the rumor that the dead emperor would return.'},
+          {image:'The number 666',meant:'Most likely Nero Caesar, by gematria.',note:'Hebrew letters double as numbers, and the consonants of “Nero Caesar” sum to 666. Some manuscripts read 616, which fits a variant spelling, strong evidence the target was a specific man.'},
+          {image:'The mark for buying and selling',meant:'The economic pressure to take part in emperor worship.',note:'Trade-guild life was saturated with the imperial cult.'} ],
+        misreading:{named:'The beast and 666 are a cipher for a figure or technology in our own time.',why:'The text says the number is “the number of a man” and asks first-century readers to calculate it. They could; it pointed at Nero. Treating it as a timeless code for microchips or modern politicians is exactly the decoding the genre was never built for.'},
+        meaning:'To people being killed for refusing to call Caesar lord, John says the empire that looks unbeatable is a beast wearing borrowed authority, and its wound is already mortal. The grotesque imagery is not there to frighten you about the end of the world. It is there to shrink the empire to scale. Seen from the throne room, Rome is not eternal and not in charge, and the call is not to decode the future but to endure the present without bowing.',
+        lenses:{ theo:'The vision relativizes every empire. Whatever claims total allegiance and the power to feed you or starve you is, seen truly, a beast on a short leash. That is the whole consolation: the thing crushing you is not the thing in charge.',
+                 arch:'The monster rising from the sea is the oldest image of chaos heaving up against order. To name the devouring power as a beast is to strip it of its claim to be a god. (Naming the monster as the first refusal of its power.)' },
+        addr:{mode:'reframes',text:'If something in your world presents itself as the only power that matters, with the reach to ruin you for not bowing, this was written to let you see it from above, where it is smaller than it says.'},
+        ask:'What in your life presents itself as the final power, the thing you cannot cross without being ruined, and what would change if you saw it as already on a short leash?' }
+    ] },
+
+  {
+    id:'job-1', tier:'sitting', span:'Job (the shape of the book)', crossesChapters:true, title:'The man who would not lie to be comforted', genreLabel:'Composite', unitLabel:'Scene',
+    thread:'A book in two materials. Prose at the edges, poetry in the vast middle, and the seam between them is the argument.',
+    closeEnd:'God never answers why. He answers with the size of the world, and then says the friends were wrong and the man who accused him spoke rightly.',
+    synthesis:{
+      skicker:'The shape of the whole book', title:'No answer, and somehow enough',
+      paragraphs:[
+        'The friends gave the clean answer: you suffer because you sinned, so confess and be restored. The book lets them say it for thirty-five chapters, then God says to their faces that they were wrong, and that Job, who spent those chapters accusing heaven, spoke rightly. Honest complaint is vindicated over false comfort.',
+        'And God never explains the suffering. He answers the question with the size of creation and the wildness of a world not built to human scale. Job wanted a verdict and got a horizon, and the book’s most unsettling claim is that the horizon was enough.',
+        'Then the frame pays him back double, which the poetry never asked for. The restoration does not resolve the book. It sits on top of it, a folk tale’s happy ending stretched over a poem that refused the whole logic of endings like that.' ],
+      tensions:[ {claim:'The frame restores Job double; in the end, virtue is repaid.',counter:'The poetry spends thirty-nine chapters dismantling exactly that principle, and the voice from the storm never invokes it.',where:'Job 3–41 vs 42:10–17'} ],
+      sources:'Newsom · Clines · Alter' },
+    passages:[
+      { label:'Frame', ref:'Job 1–2', kind:'scene', form:'prose', title:'The wager',
+        verses:[
+          {n:8,text:'The LORD said to the Accuser, “Have you considered my servant Job? There is no one like him on earth, blameless and upright, a man who fears God and shuns evil.”'},
+          {n:9,text:'The Accuser replied, “Does Job fear God for nothing?”'},
+          {n:11,text:'“Stretch out your hand and strike everything he has, and he will surely curse you to your face.”'},
+          {n:12,text:'The LORD said, “Very well, everything he has is in your power, but on the man himself do not lay a finger.”'},
+          {n:21,text:'Job said, “Naked I came from my mother’s womb, and naked I will return. The LORD gave and the LORD has taken away; may the name of the LORD be praised.”'} ],
+        ground:{kind:'genre',src:'Newsom · Greenberg · Alter',text:'The book opens like a folk tale: there once was a man. The frame, the heavenly wager and the tidy restoration at the very end, is old and probably circulated long before the poetry was written into the middle of it. Its God makes a bet with a figure called the Accuser, ha-satan, a title and a courtroom role, not yet the devil of later tradition, over whether a man only loves God for the payout.'},
+        meaning:'The whole book is set in motion by a question about motive: will a person hold on to God when there is nothing in it for them. The frame’s Job passes with a famous line of acceptance. But the frame is only the setup. The man who says “may the name of the LORD be praised” here is about to spend thirty-nine chapters refusing to pretend.',
+        addr:{mode:'names',text:'You know the suspicion buried in the wager: that your faith might only be gratitude for good weather, and you do not fully know what it is until the weather turns.'},
+        ask:'Would your trust survive losing the things that currently make it easy?' },
+      { label:'Dispute', ref:'Job 4–5', kind:'argument', form:'prose', title:'Eliphaz: the clean answer',
+        verses:[
+          {n:7,text:'Eliphaz said, “Consider: who, being innocent, has ever perished? Where were the upright ever destroyed?”'},
+          {n:8,text:'“As I have seen, those who plow evil and sow trouble reap it.”'},
+          {n:17,text:'“Blessed is the one whom God corrects; so do not despise the discipline of the Almighty.”'} ],
+        ground:{kind:'occasion',src:'Newsom · Clines',text:'Three friends come to sit with Job, and for seven days they say nothing, which is the one thing they do well. Then they start to explain. Eliphaz goes first, and he speaks the most reasonable, most pious theology in the ancient world: suffering is the wage of sin, so confess and be restored. It is the same retribution logic Proverbs trades in. The book lets the friends say it at enormous length.'},
+        misreading:{named:'If you are suffering, you must have done something to deserve it. The innocent do not perish.',why:'This is the friends’ entire case, and it is the most natural religious explanation of pain. The book stages it for thirty-five chapters in order to demolish it. In 42:7 God says to Eliphaz, plainly, that he and his friends did not speak rightly. Their tidy theology is the thing Job exists to refute.'},
+        meaning:'Eliphaz is not a villain. He is everyone who has ever told a sufferer that they must have brought it on themselves, usually meaning well, always to protect the belief that the world is fair and so they themselves are safe. The friends defend God’s justice by sacrificing Job’s innocence. The book treats that trade as the real blasphemy.',
+        addr:{mode:'claims',text:'You have been Eliphaz. When someone’s pain threatened your sense that the world is fair, you reached for a reason it was their fault.'},
+        ask:'Whose suffering have you quietly explained away to keep your own world feeling safe?' },
+      { label:'Refusal', ref:'Job 27', kind:'poem', form:'poetry', title:'Job will not confess a lie',
+        verses:[
+          {n:4,text:'as long as I have breath in me,\nmy lips will not speak falsehood,\nand my tongue will utter no deceit.'},
+          {n:5,text:'I will never admit that you are right;\ntill I die I will not deny my integrity.'},
+          {n:6,text:'I will hold fast my innocence and never let go;\nmy conscience will not reproach me as long as I live.'} ],
+        ground:{kind:'genre',src:'Alter',text:'Job’s answer to the friends is not an argument that he is sinless in general. It is a refusal to confess sins he did not commit just to make the theology come out even. The poetry here is some of the fiercest in the Bible: a man insisting, against every comforter, that he will not buy peace with a lie about himself or about God.'},
+        meaning:'This is the hinge of the book’s integrity. Job could end his suffering, in the friends’ system, by confessing. He refuses. He would rather hold an honest complaint against heaven than a dishonest peace with it. The book sides with him. Honest accusation, it turns out, is closer to faith than false confession.',
+        lenses:{ theo:'Job’s refusal to lie about himself is treated as righteousness, not rebellion. The God of this book would rather be argued with honestly than flattered falsely. That alone breaks most of what religion usually rewards.',
+                 arch:'To refuse the explanation everyone is pressing on you, and to hold your own experience as true against the crowd, is the costly work of staying a self under pressure to dissolve into the group’s story. (Holding the truth of your own experience against every comforter.)' },
+        addr:{mode:'names',text:'You know the pull to confess to something you did not do, just to end the pressure and be allowed back into comfort.'},
+        ask:'Where are you being asked to call yourself the problem so that someone else’s view of the world can stay intact?' },
+      { label:'Whirlwind', ref:'Job 38–42', kind:'vision', form:'prose', title:'Out of the storm',
+        verses:[
+          {n:2,text:'Then the LORD answered Job out of the storm: “Who is this that obscures my plans with words without knowledge?”'},
+          {n:4,text:'“Where were you when I laid the earth’s foundation? Tell me, if you understand.”'},
+          {n:31,text:'“Can you bind the chains of the Pleiades? Can you loosen the cords of Orion?”'},
+          {n:8,text:'“Would you discredit my justice? Would you condemn me to justify yourself?”'},
+          {n:3,text:'Job replied, “Surely I spoke of things I did not understand, things too wonderful for me to know.”'} ],
+        ground:{kind:'genre',src:'Newsom · Brown',text:'After all the speeches, God finally shows up, and does the most unexpected thing in the book: he never answers the question. He does not explain the suffering, does not mention the wager, does not defend himself in the friends’ terms. He asks Job some seventy questions about the workings of creation, the sea, the stars, the wild animals, the storm. Then Job, who demanded an answer, falls silent, not crushed but somehow satisfied.'},
+        meaning:'The book’s strangest move is that the non-answer works. God does not tell Job why. He shows Job the size and wildness of a world that was never built to his scale, full of creatures with nothing to do with human usefulness, and somehow that is enough. The comfort is not an explanation. It is a presence, and a sense of proportion. Job wanted a verdict and got a horizon.',
+        lenses:{ theo:'God answers the problem of suffering by refusing the question’s terms. He does not justify the pain. He widens the frame until the demand for a tidy reason looks too small for the world it is asking about. That is either the deepest answer or the honest admission that there is none, and the book lets it be both.',
+                 arch:'The voice from the storm is the self confronted by the vastness it did not make and cannot control. Standing in that and not being destroyed, ceasing to need the world to be explicable on your terms, is its own kind of healing. (The ego quieted by the immensity it did not author.)' },
+        misreading:{named:'God bullies Job into submission with a display of power.',why:'Read as intimidation, the speech is ugly. But God then says Job spoke rightly and the friends did not. The one who accused him is vindicated; the ones who defended him are rebuked. That is not the behavior of a God who just wanted Job to shut up.'},
+        tensions:[ {claim:'The frame restores Job double; virtue is repaid in the end.',counter:'The thirty-nine chapters of poetry spend their whole length refusing exactly that logic, and the voice from the storm never once invokes it.',where:'Job 3–41 vs 42:10–17'} ],
+        addr:{mode:'reframes',text:'When you are demanding a reason for your pain and none comes, this is the book that says the absence of an answer is not the absence of God, and that a wider horizon can do what an explanation cannot.'},
+        ask:'What would change if you stopped requiring your suffering to mean something and let it simply be witnessed?' }
+    ] }
+];
+
+const KINDLABEL = {scene:'Sitting · narrative', poem:'Sitting · poem', 'statute-cluster':'Sitting · law', argument:'Sitting · letter'};
+const GROUNDLABEL = {historical:'The history', setting:'The setting', occasion:'The occasion', genre:'The kind of thing this is'};
+const MODELABEL = {names:'names you', pray:'pray it', claims:'claims you', 'none-but':'not yours · worth seeing', reframes:'reframes your now'};
+const PKIND = {scene:'narrative', poem:'poem', 'statute-cluster':'law', 'saying-cluster':'wisdom', argument:'argument', vision:'vision'};
+
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function versesProse(vs){
+  return '<div class="scripture">'+ vs.map(v=>'<span class="vn">'+v.n+'</span>'+esc(v.text)).join(' ') +'</div>';
+}
+function versesPoem(p){
+  return '<div class="poem">'+ p.verses.map(v=>{
+    const lines = esc(v.text).split('\n').map(l=>'<div>'+l+'</div>').join('');
+    const turn = (p.inTextTurn===v.n)?' turn':'';
+    return '<div class="stz'+turn+'"><div class="vn">'+v.n+'</div><div class="lines">'+lines+'</div></div>';
+  }).join('') +'</div>';
+}
+function listUnits(p){
+  const items = p.statutes || p.sayings || [];
+  return items.map(s=>{
+    let html = '<div class="statute"><div class="vn">'+s.n+'</div><div class="stx">'+esc(s.text)+'</div></div>';
+    const note = p.perItem && p.perItem[s.n];
+    if(note && note.addr){
+      html += '<div class="perst '+note.addr.mode+'"><span class="modechip">'+MODELABEL[note.addr.mode]+'</span>&nbsp; '+esc(note.addr.text)+'</div>';
+    }
+    if(note && note.note){
+      html += '<div class="itemnote">'+esc(note.note)+'</div>';
+    }
+    return html;
+  }).join('');
+}
+function symbolBlock(syms){
+  return '<div class="symbols"><div class="syl">What the images meant</div>'
+    + syms.map(s=>'<div class="sym"><div class="sym-img">'+esc(s.image)+'</div><div class="sym-meant">'+esc(s.meant)
+      + (s.note?' <span class="sym-note">'+esc(s.note)+'</span>':'')+'</div></div>').join('')
+    + '</div>';
+}
+function tensionBlock(ts){
+  return '<div class="tensions"><div class="tnl">Where the canon argues back</div>'
+    + ts.map(t=>'<div class="tn"><div class="tn-claim">'+esc(t.claim)+'</div>'
+      + '<div class="tn-counter"><span class="tn-but">but</span> '+esc(t.counter)+' <span class="tn-where">'+esc(t.where)+'</span></div></div>').join('')
+    + '</div>';
+}
+function capstoneBlock(c){
+  return '<div class="capstone"><div class="csk">'+esc(c.skicker)+'</div><div class="cst">'+esc(c.title)+'</div>'
+    + c.paragraphs.map(p=>'<div class="csp">'+esc(p)+'</div>').join('')
+    + (c.tensions?tensionBlock(c.tensions):'')
+    + (c.sources?'<div class="lsrc" style="margin-top:12px">'+esc(c.sources)+'</div>':'')
+    + '</div>';
+}
+function layer(cls,label,text,src){
+  return '<div class="layer '+cls+'"><div class="llabel"><span class="dot"></span>'+label+'</div><div class="ltext">'+esc(text)+'</div>'+(src?'<div class="lsrc">'+esc(src)+'</div>':'')+'</div>';
+}
+function lensBlock(l){
+  let h='<div class="lenses">';
+  if(l.theo) h+='<details class="lens theo"><summary><span class="lchip theo">Theological</span><span class="plus">+</span></summary><div class="lt">'+esc(l.theo)+'</div></details>';
+  if(l.arch) h+='<details class="lens arch"><summary><span class="lchip arch">Archetypal</span><span class="plus">+</span></summary><div class="lt">'+esc(l.arch)+'<span class="cav">One way to hear it, not the final word.</span></div></details>';
+  h+='</div>'; return h;
+}
+function misread(m){
+  return '<div class="misread"><div class="ml">A common misreading</div><div class="named">“'+esc(m.named)+'”</div><div class="why"><span class="arrow">→</span>'+esc(m.why)+'</div></div>';
+}
+
+function renderPassage(p){
+  let h='<div class="passage"><div class="phead">'
+    + (p.label?'<span class="plabel">'+esc(p.label)+'</span>':'')
+    + '<span class="pref">'+esc(p.ref)+'</span>'
+    + '<span class="pkind">'+(PKIND[p.kind]||p.kind)+'</span></div>'
+    + '<div class="ptitle">'+esc(p.title)+'</div>';
+
+  if(p.ground) h+=layer('l-ground', GROUNDLABEL[p.ground.kind], p.ground.text, p.ground.src);
+
+  if(p.form==='poetry') h+=versesPoem(p);
+  else if(p.form==='list') h+=listUnits(p);
+  else h+=versesProse(p.verses);
+
+  if(p.symbols) h+=symbolBlock(p.symbols);
+  if(p.misreading) h+=misread(p.misreading);
+  if(p.meaning) h+=layer('l-mean','Meaning', p.meaning);
+  if(p.lenses) h+=lensBlock(p.lenses);
+  if(p.tensions) h+=tensionBlock(p.tensions);
+  if(p.addr) h+='<div class="layer l-addr"><div class="llabel"><span class="dot"></span>The turn &nbsp;<span class="modechip">'+MODELABEL[p.addr.mode]+'</span></div><div class="ltext">'+esc(p.addr.text)+'</div></div>';
+  if(p.soft) h+='<div class="soft">'+esc(p.soft)+'</div>';
+  if(p.ask) h+='<div class="ask"><div class="at">'+esc(p.ask)+'</div></div>';
+  h+='</div>';
+  return h;
+}
+
+function renderReading(r){
+  const kindOfFirst = r.passages[0].kind;
+  let h='<div class="rkind"><span class="chip tier">Sitting</span><span class="chip kind">'+esc(r.genreLabel)+'</span><span class="span">'+esc(r.span)+'</span></div>';
+  if(r.crossesChapters){
+    h+='<div class="cross"><div class="ic">⟷</div><div class="tx">One reading, <b>'+esc(r.span)+'</b>. It crosses the chapter line on purpose. The chapter numbers are a later overlay; the argument is the unit.</div></div>';
+  }
+  h+='<div class="rtitle">'+esc(r.title)+'</div>';
+  if(r.thread) h+='<div class="thread">'+esc(r.thread)+'</div>';
+  h+= r.passages.map(renderPassage).join('');
+  if(r.closeEnd) h+='<div class="close">'+esc(r.closeEnd)+'</div>';
+  if(r.synthesis) h+=capstoneBlock(r.synthesis);
+  return h;
+}
+
+let active = 0;
+function show(i){
+  active=i;
+  document.querySelectorAll('.tab').forEach((t,k)=>t.classList.toggle('on',k===i));
+  const sc=document.getElementById('scroll');
+  sc.innerHTML=renderReading(SEED[i]);
+  sc.scrollTop=0;
+}
+function buildTabs(){
+  document.getElementById('tabs').innerHTML = SEED.map((r,i)=>
+    '<div class="tab" onclick="show('+i+')">'+esc(r.title)+'<span class="g">'+esc(r.genreLabel)+'</span></div>').join('');
+}
+buildTabs(); show(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Read CLAUDE.md first. It is the canonical agent contract for this repo.
+
+Also read, in order, before any non-trivial change:
+- PLAN.md (product vision)
+- STYLE_GUIDE.md (visual rules — UI changes)
+- EDITORIAL.md (voice + source rules — content changes)
+- lib/schemas.ts (data shapes — content/component data changes)
+
+Hard rules (full list in CLAUDE.md):
+1. Tailwind tokens only — no arbitrary values like bg-[#xxx].
+2. Every content file must parse against lib/schemas.ts. CI gates this.
+3. Every Event/FunFact cites at least one Source.
+4. No new dependency without a one-line justification in the PR.
+5. No comments that explain WHAT — only non-obvious WHY.
+6. Single accent color. No status colors. No badges for confidence.
+7. No emoji anywhere.
+8. Real artifacts use museum images, never AI.
+
+Anti-patterns: don't keep dead code, don't refactor outside scope, don't add abstractions for one use site, don't add error handling for impossible cases, don't write planning docs unless asked.
