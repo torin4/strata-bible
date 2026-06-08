@@ -1,0 +1,13 @@
+[    1167ms] [ERROR] ERROR Error: ExpressionChangedAfterItHasBeenCheckedError: Expression has changed after it was checked. Previous value: 'ui-state-active: undefined'. Current value: 'ui-state-active: true'.
+    at viewDebugError (https://diachronics.micahparker.com/vendor.js:44396:15)
+    at expressionChangedAfterItHasBeenCheckedError (https://diachronics.micahparker.com/vendor.js:44384:12)
+    at checkBindingNoChanges (https://diachronics.micahparker.com/vendor.js:44486:15)
+    at checkNoChangesNodeInline (https://diachronics.micahparker.com/vendor.js:47347:9)
+    at checkNoChangesNode (https://diachronics.micahparker.com/vendor.js:47336:9)
+    at debugCheckNoChangesNode (https://diachronics.micahparker.com/vendor.js:47939:24)
+    at debugCheckDirectivesFn (https://diachronics.micahparker.com/vendor.js:47867:13)
+    at Object.eval [as updateDirectives] (ng:///AccordionModule/AccordionTab.ngfactory.js:75:21)
+    at Object.debugUpdateDirectives [as updateDirectives] (https://diachronics.micahparker.com/vendor.js:47856:21)
+    at checkNoChangesView (https://diachronics.micahparker.com/vendor.js:47235:14) @ ng:///AccordionModule/AccordionTab.ngfactory.js:28
+[    1168ms] [ERROR] ERROR CONTEXT DebugContext_ @ ng:///AccordionModule/AccordionTab.ngfactory.js:28
+[    1168ms] [LOG] Angular is running in the development mode. Call enableProdMode() to enable the production mode. @ https://diachronics.micahparker.com/vendor.js:39917

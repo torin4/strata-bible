@@ -1,7 +1,5 @@
 import { CompanionMiddle } from "@/components/companion/CompanionMiddle";
-import { DiachronicLens } from "@/components/diachronic/DiachronicLens";
 import { AskResponse } from "@/components/journal/AskResponse";
-import { getDiachronic } from "@/content/diachronic";
 import { GROUND_LABEL, PASSAGE_KIND_LABEL } from "@/lib/labels";
 import type { Passage as PassageData } from "@/lib/types";
 import { Ask } from "./Ask";
@@ -74,15 +72,6 @@ export function Passage({
       ) : (
         <Scripture form="prose" verses={passage.verses ?? []} />
       )}
-
-      {(() => {
-        const layer = passage.verses
-          ? getDiachronic(readingId, passage.ref)
-          : undefined;
-        return layer ? (
-          <DiachronicLens verses={passage.verses ?? []} layer={layer} />
-        ) : null;
-      })()}
 
       {passage.symbols ? <Symbols symbols={passage.symbols} /> : null}
       {passage.misreading ? (

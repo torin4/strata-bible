@@ -27,23 +27,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'In the beginning, when God began to create the heavens and the earth—'
+            text: 'In the beginning God created the heavens and the earth.'
           },
           {
             n: 2,
-            text: 'the earth was wild and waste, darkness over the face of the deep, and the breath of God sweeping over the waters—'
+            text: 'Now the earth was formless and void, and darkness was over the surface of the deep. And the Spirit of God was hovering over the surface of the waters.'
           },
           {
             n: 3,
-            text: 'God said, “Let there be light.” And there was light.'
+            text: 'And God said, “Let there be light,” and there was light.'
           },
           {
             n: 4,
-            text: 'God saw that the light was good, and God separated the light from the darkness.'
+            text: 'And God saw that the light was good, and He separated the light from the darkness.'
           },
           {
             n: 5,
-            text: 'God called the light Day, and the darkness he called Night. There was evening and there was morning: the first day.'
+            text: 'God called the light “day,” and the darkness He called “night.” And there was evening, and there was morning—the first day.'
           }
         ],
         ground: {
@@ -72,15 +72,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 6,
-            text: 'God said, “Let there be a dome in the midst of the waters, to divide water from water.”'
+            text: 'And God said, “Let there be an expanse between the waters, to separate the waters from the waters.”'
           },
           {
             n: 7,
-            text: 'So God made the dome and separated the waters below it from the waters above it. And it was so.'
+            text: 'So God made the expanse and separated the waters beneath it from the waters above. And it was so.'
           },
           {
             n: 8,
-            text: 'God called the dome Sky. There was evening and there was morning: the second day.'
+            text: 'God called the expanse “sky.” And there was evening, and there was morning—the second day.'
           }
         ],
         ground: {
@@ -105,23 +105,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 9,
-            text: 'God said, “Let the waters under the sky gather to one place, and let dry land appear.” And it was so.'
+            text: 'And God said, “Let the waters under the sky be gathered into one place, so that the dry land may appear.” And it was so.'
           },
           {
             n: 10,
-            text: 'God called the dry land Earth, and the gathered waters Seas. And God saw that it was good.'
+            text: 'God called the dry land “earth,” and the gathering of waters He called “seas.” And God saw that it was good.'
           },
           {
             n: 11,
-            text: 'God said, “Let the earth put forth growing things—plants seeding, trees bearing fruit.” And it was so.'
+            text: 'Then God said, “Let the earth bring forth vegetation: seed-bearing plants and fruit trees, each bearing fruit with seed according to its kind.” And it was so.'
           },
           {
             n: 12,
-            text: 'The earth brought forth vegetation, each kind seeding after itself. And God saw that it was good.'
+            text: 'The earth produced vegetation: seed-bearing plants according to their kinds and trees bearing fruit with seed according to their kinds. And God saw that it was good.'
           },
           {
             n: 13,
-            text: 'There was evening and there was morning: the third day.'
+            text: 'And there was evening, and there was morning—the third day.'
           }
         ],
         ground: {
@@ -146,27 +146,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 14,
-            text: 'God said, “Let there be lights in the dome of the sky to divide day from night, and to mark the seasons, the days, and the years,'
+            text: 'And God said, “Let there be lights in the expanse of the sky to distinguish between the day and the night, and let them be signs to mark the seasons and days and years.'
           },
           {
             n: 15,
-            text: 'and to be lamps in the dome of the sky to shine on the earth.” And it was so.'
+            text: 'And let them serve as lights in the expanse of the sky to shine upon the earth.” And it was so.'
           },
           {
             n: 16,
-            text: 'God made the two great lights—the greater to govern the day, the lesser to govern the night—and the stars.'
+            text: 'God made two great lights: the greater light to rule the day and the lesser light to rule the night. And He made the stars as well.'
           },
           {
             n: 17,
-            text: 'God set them in the dome of the sky to shine on the earth,'
+            text: 'God set these lights in the expanse of the sky to shine upon the earth,'
           },
           {
             n: 18,
-            text: 'to govern day and night and to divide light from darkness. And God saw that it was good.'
+            text: 'to preside over the day and the night, and to separate the light from the darkness. And God saw that it was good.'
           },
           {
             n: 19,
-            text: 'There was evening and there was morning: the fourth day.'
+            text: 'And there was evening, and there was morning—the fourth day.'
           }
         ],
         ground: {
@@ -194,19 +194,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 20,
-            text: 'God said, “Let the waters swarm with living creatures, and let birds fly above the earth across the dome of the sky.”'
+            text: 'And God said, “Let the waters teem with living creatures, and let birds fly above the earth in the open expanse of the sky.”'
           },
           {
             n: 21,
-            text: 'So God created the great sea creatures and every living thing that moves, and every winged bird. And God saw that it was good.'
+            text: 'So God created the great sea creatures and every living thing that moves, with which the waters teemed according to their kinds, and every winged bird after its kind. And God saw that it was good.'
           },
           {
             n: 22,
-            text: 'God blessed them: “Be fruitful and multiply, and fill the waters and the skies.”'
+            text: 'Then God blessed them and said, “Be fruitful and multiply and fill the waters of the seas, and let birds multiply on the earth.”'
           },
           {
             n: 23,
-            text: 'There was evening and there was morning: the fifth day.'
+            text: 'And there was evening, and there was morning—the fifth day.'
           }
         ],
         ground: {
@@ -231,27 +231,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 24,
-            text: 'God said, “Let the earth bring forth living creatures of every kind.” And it was so.'
+            text: 'And God said, “Let the earth bring forth living creatures according to their kinds: livestock, land crawlers, and beasts of the earth according to their kinds.” And it was so.'
           },
           {
             n: 25,
-            text: 'God made the wild animals and the livestock and everything that creeps. And God saw that it was good.'
+            text: 'God made the beasts of the earth according to their kinds, the livestock according to their kinds, and everything that crawls upon the earth according to its kind. And God saw that it was good.'
           },
           {
             n: 26,
-            text: 'Then God said, “Let us make humankind in our image, after our likeness, to have charge over the fish, the birds, and every living thing.”'
+            text: 'Then God said, “Let Us make man in Our image, after Our likeness, to rule over the fish of the sea and the birds of the air, over the livestock, and over all the earth itself and every creature that crawls upon it.”'
           },
           {
             n: 27,
-            text: 'So God created humankind in his image; in the image of God he created them; male and female he created them.'
+            text: 'So God created man in His own image; in the image of God He created him; male and female He created them.'
           },
           {
             n: 28,
-            text: 'God blessed them and said, “Be fruitful and multiply, fill the earth and care for it.”'
+            text: 'God blessed them and said to them, “Be fruitful and multiply, and fill the earth and subdue it; rule over the fish of the sea and the birds of the air and every creature that crawls upon the earth.”'
           },
           {
             n: 31,
-            text: 'God saw everything he had made, and it was very good. There was evening and there was morning: the sixth day.'
+            text: 'And God looked upon all that He had made, and indeed, it was very good. And there was evening, and there was morning—the sixth day.'
           }
         ],
         ground: {
@@ -279,15 +279,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'The heavens and the earth were finished, and all their vast array.'
+            text: 'Thus the heavens and the earth were completed in all their vast array.'
           },
           {
             n: 2,
-            text: 'On the seventh day God finished his work, and he rested on the seventh day from all his work.'
+            text: 'And by the seventh day God had finished the work He had been doing; so on that day He rested from all His work.'
           },
           {
             n: 3,
-            text: 'God blessed the seventh day and made it holy, because on it he rested from all the work of creation.'
+            text: 'Then God blessed the seventh day and sanctified it, because on that day He rested from all the work of creation that He had accomplished.'
           }
         ],
         ground: {
@@ -325,19 +325,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 4,
-            text: 'This is the account of the heavens and the earth when they were created, in the day the LORD God made earth and sky.'
+            text: 'This is the account of the heavens and the earth when they were created, in the day that the LORD God made them.'
           },
           {
             n: 5,
-            text: 'No shrub had yet appeared and no plant had sprung up, for the LORD God had not sent rain, and there was no one to work the ground.'
+            text: 'Now no shrub of the field had yet appeared on the earth, nor had any plant of the field sprouted, for the LORD God had not yet sent rain upon the earth, and there was no man to cultivate the ground.'
           },
           {
             n: 6,
-            text: 'But streams rose up from the earth and watered the whole surface of the ground.'
+            text: 'But springs welled up from the earth and watered the whole surface of the ground.'
           },
           {
             n: 7,
-            text: 'Then the LORD God formed the man from the dust of the ground and breathed into his nostrils the breath of life, and the man became a living being.'
+            text: 'Then the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being.'
           }
         ],
         ground: {
@@ -365,43 +365,43 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 8,
-            text: 'The LORD God planted a garden in the east, in Eden, and there he placed the man he had formed.'
+            text: 'And the LORD God planted a garden in Eden, in the east, where He placed the man He had formed.'
           },
           {
             n: 9,
-            text: 'Out of the ground he made every tree grow that was pleasing to the eye and good for food. In the middle of the garden stood the tree of life and the tree of the knowledge of good and evil.'
+            text: 'Out of the ground the LORD God gave growth to every tree that is pleasing to the eye and good for food. And in the middle of the garden were the tree of life and the tree of the knowledge of good and evil.'
           },
           {
             n: 10,
-            text: 'A river flowed out of Eden to water the garden, and from there it divided into four headwaters.'
+            text: 'Now a river flowed out of Eden to water the garden, and from there it branched into four headwaters:'
           },
           {
             n: 11,
-            text: 'The first is the Pishon; it winds through the land of Havilah, where there is gold.'
+            text: 'The name of the first river is the Pishon; it winds through the whole land of Havilah, where there is gold.'
           },
           {
             n: 12,
-            text: 'The gold of that land is good; aromatic resin and onyx are there as well.'
+            text: 'And the gold of that land is pure, and bdellium and onyx are found there.'
           },
           {
             n: 13,
-            text: 'The second river is the Gihon; it winds through the whole land of Cush.'
+            text: 'The name of the second river is the Gihon; it winds through the whole land of Cush.'
           },
           {
             n: 14,
-            text: 'The third is the Tigris, running east of Ashur. And the fourth is the Euphrates.'
+            text: 'The name of the third river is the Tigris; it runs along the east side of Assyria. And the fourth river is the Euphrates.'
           },
           {
             n: 15,
-            text: 'The LORD God took the man and placed him in the garden of Eden to work it and watch over it.'
+            text: 'Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it.'
           },
           {
             n: 16,
-            text: 'And he commanded the man, “You are free to eat from any tree in the garden,'
+            text: 'And the LORD God commanded him, “You may eat freely from every tree of the garden,'
           },
           {
             n: 17,
-            text: 'but you must not eat from the tree of the knowledge of good and evil, for on the day you eat from it you will surely die.”'
+            text: 'but you must not eat from the tree of the knowledge of good and evil; for in the day that you eat of it, you will surely die.”'
           }
         ],
         ground: {
@@ -428,15 +428,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 18,
-            text: 'The LORD God said, “It is not good for the man to be alone. I will make a helper fit for him.”'
+            text: 'The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.”'
           },
           {
             n: 19,
-            text: 'So out of the ground he formed every animal of the field and every bird of the sky, and brought them to the man to see what he would call them; and whatever the man called each one, that was its name.'
+            text: 'And out of the ground the LORD God formed every beast of the field and every bird of the air, and He brought them to the man to see what he would name each one. And whatever the man called each living creature, that was its name.'
           },
           {
             n: 20,
-            text: 'The man named all the livestock, the birds, and the wild animals. But for the man himself no fitting helper was found.'
+            text: 'The man gave names to all the livestock, to the birds of the air, and to every beast of the field. But for Adam no suitable helper was found.'
           }
         ],
         ground: {
@@ -463,23 +463,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 21,
-            text: 'So the LORD God brought a deep sleep over the man, and while he slept he took one of his sides and closed up the place with flesh.'
+            text: 'So the LORD God caused the man to fall into a deep sleep, and while he slept, He took one of the man’s ribs and closed up the area with flesh.'
           },
           {
             n: 22,
-            text: 'Then he built the side he had taken into a woman, and brought her to the man.'
+            text: 'And from the rib that the LORD God had taken from the man, He made a woman and brought her to him.'
           },
           {
             n: 23,
-            text: 'The man said, “This one at last is bone of my bones and flesh of my flesh; she shall be called woman, for she was taken out of man.”'
+            text: 'And the man said: “This is now bone of my bones and flesh of my flesh; she shall be called ‘woman,’ for out of man she was taken.”'
           },
           {
             n: 24,
-            text: 'This is why a man leaves his father and mother and is joined to his wife, and they become one flesh.'
+            text: 'For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh.'
           },
           {
             n: 25,
-            text: 'The man and his wife were both naked, and they felt no shame.'
+            text: 'And the man and his wife were both naked, and they were not ashamed.'
           }
         ],
         ground: {
@@ -521,23 +521,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'Now the serpent was more cunning than any animal the LORD God had made. He said to the woman, “Did God really say you must not eat from any tree in the garden?”'
+            text: 'Now the serpent was more crafty than any beast of the field that the LORD God had made. And he said to the woman, “Did God really say, ‘You must not eat from any tree in the garden?’”'
           },
           {
             n: 2,
-            text: 'The woman answered, “We may eat from the trees of the garden,'
+            text: 'The woman answered the serpent, “We may eat the fruit of the trees of the garden,'
           },
           {
             n: 3,
-            text: 'but God said we must not eat from the tree in the middle of the garden, or even touch it, or we will die.”'
+            text: 'but about the fruit of the tree in the middle of the garden, God has said, ‘You must not eat of it or touch it, or you will die.’”'
           },
           {
             n: 4,
-            text: '“You will not surely die,” the serpent said.'
+            text: '“You will not surely die,” the serpent told the woman.'
           },
           {
             n: 5,
-            text: '“For God knows that on the day you eat from it your eyes will be opened, and you will be like God, knowing good and evil.”'
+            text: '“For God knows that in the day you eat of it, your eyes will be opened and you will be like God, knowing good and evil.”'
           }
         ],
         ground: {
@@ -566,11 +566,11 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 6,
-            text: 'When the woman saw that the tree was good for food and pleasing to the eye, and desirable for the wisdom it could give, she took some of its fruit and ate. She gave some to her husband, who was with her, and he ate.'
+            text: 'When the woman saw that the tree was good for food and pleasing to the eyes, and that it was desirable for obtaining wisdom, she took the fruit and ate it. She also gave some to her husband who was with her, and he ate it.'
           },
           {
             n: 7,
-            text: 'Then the eyes of both were opened, and they knew they were naked; so they sewed fig leaves together and made coverings.'
+            text: 'And the eyes of both of them were opened, and they knew that they were naked; so they sewed together fig leaves and made coverings for themselves.'
           }
         ],
         ground: {
@@ -597,27 +597,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 8,
-            text: 'They heard the sound of the LORD God walking in the garden in the cool of the day, and they hid among the trees.'
+            text: 'Then the man and his wife heard the voice of the LORD God walking in the garden in the breeze of the day, and they hid themselves from the presence of the LORD God among the trees of the garden.'
           },
           {
             n: 9,
-            text: 'But the LORD God called to the man, “Where are you?”'
+            text: 'But the LORD God called out to the man, “Where are you?”'
           },
           {
             n: 10,
-            text: 'He answered, “I heard you in the garden, and I was afraid because I was naked, so I hid.”'
+            text: '“I heard Your voice in the garden,” he replied, “and I was afraid because I was naked; so I hid myself.”'
           },
           {
             n: 11,
-            text: 'God said, “Who told you that you were naked? Have you eaten from the tree I commanded you not to eat from?”'
+            text: '“Who told you that you were naked?” asked the LORD God. “Have you eaten from the tree of which I commanded you not to eat?”'
           },
           {
             n: 12,
-            text: 'The man said, “The woman you put here with me, she gave me fruit from the tree, and I ate.”'
+            text: 'And the man answered, “The woman whom You gave me, she gave me fruit from the tree, and I ate it.”'
           },
           {
             n: 13,
-            text: 'Then the LORD God said to the woman, “What is this you have done?” She said, “The serpent deceived me, and I ate.”'
+            text: 'Then the LORD God said to the woman, “What is this you have done?” “The serpent deceived me,” she replied, “and I ate.”'
           }
         ],
         ground: {
@@ -644,27 +644,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 14,
-            text: 'So the LORD God said to the serpent, “Because you have done this, you are cursed above all the animals. You will crawl on your belly and eat dust all the days of your life.'
+            text: 'So the LORD God said to the serpent: “Because you have done this, cursed are you above all livestock and every beast of the field! On your belly will you go, and dust you will eat, all the days of your life.'
           },
           {
             n: 15,
-            text: 'I will put enmity between you and the woman, and between your offspring and hers; he will crush your head, and you will strike his heel.”'
+            text: 'And I will put enmity between you and the woman, and between your seed and her seed. He will crush your head, and you will strike his heel.”'
           },
           {
             n: 16,
-            text: 'To the woman he said, “I will sharpen the pain of your childbearing; in pain you will give birth. Your desire will be for your husband, and he will rule over you.”'
+            text: 'To the woman He said: “I will sharply increase your pain in childbirth; in pain you will bring forth children. Your desire will be for your husband, and he will rule over you.”'
           },
           {
             n: 17,
-            text: 'To the man he said, “Because you listened to your wife and ate from the tree I forbade you, the ground is cursed because of you; through painful toil you will eat of it all the days of your life.'
+            text: 'And to Adam He said: “Because you have listened to the voice of your wife and have eaten from the tree of which I commanded you not to eat, cursed is the ground because of you; through toil you will eat of it all the days of your life.'
           },
           {
             n: 18,
-            text: 'It will yield thorns and thistles for you, and you will eat the plants of the field.'
+            text: 'Both thorns and thistles it will yield for you, and you will eat the plants of the field.'
           },
           {
             n: 19,
-            text: 'By the sweat of your brow you will eat your bread, until you return to the ground, since from it you were taken; for dust you are, and to dust you will return.”'
+            text: 'By the sweat of your brow you will eat your bread, until you return to the ground—because out of it were you taken. For dust you are, and to dust you shall return.”'
           }
         ],
         ground: {
@@ -691,23 +691,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 20,
-            text: 'The man named his wife Eve, because she would become the mother of all the living.'
+            text: 'And Adam named his wife Eve, because she would be the mother of all the living.'
           },
           {
             n: 21,
-            text: 'The LORD God made garments of skin for the man and his wife and clothed them.'
+            text: 'And the LORD God made garments of skin for Adam and his wife, and He clothed them.'
           },
           {
             n: 22,
-            text: 'And the LORD God said, “The man has now become like one of us, knowing good and evil. He must not reach out and take also from the tree of life and eat, and live forever.”'
+            text: 'Then the LORD God said, “Behold, the man has become like one of Us, knowing good and evil. And now, lest he reach out his hand and take also from the tree of life, and eat, and live forever...”'
           },
           {
             n: 23,
-            text: 'So the LORD God sent him out of the garden of Eden to work the ground from which he was taken.'
+            text: 'Therefore the LORD God banished him from the Garden of Eden to work the ground from which he had been taken.'
           },
           {
             n: 24,
-            text: 'After driving the man out, he placed cherubim east of the garden, and a flaming sword flashing back and forth, to guard the way to the tree of life.'
+            text: 'So He drove out the man and stationed cherubim on the east side of the Garden of Eden, along with a whirling sword of flame to guard the way to the tree of life.'
           }
         ],
         ground: {
@@ -748,23 +748,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'Now the man knew his wife Eve, and she conceived and gave birth to Cain. She said, “With the LORD’s help I have brought forth a man.”'
+            text: 'And Adam had relations with his wife Eve, and she conceived and gave birth to Cain. “With the help of the LORD I have brought forth a man,” she said.'
           },
           {
             n: 2,
-            text: 'Later she gave birth to his brother Abel. Abel kept flocks, and Cain worked the ground.'
+            text: 'Later she gave birth to Cain’s brother Abel. Now Abel was a keeper of sheep, while Cain was a tiller of the soil.'
           },
           {
             n: 3,
-            text: 'In the course of time Cain brought the LORD an offering from the fruit of the ground,'
+            text: 'So in the course of time, Cain brought some of the fruit of the soil as an offering to the LORD,'
           },
           {
             n: 4,
-            text: 'and Abel brought the choicest firstborn of his flock. The LORD looked with favor on Abel and his offering,'
+            text: 'while Abel brought the best portions of the firstborn of his flock. And the LORD looked with favor on Abel and his offering,'
           },
           {
             n: 5,
-            text: 'but on Cain and his offering he did not look with favor. So Cain burned with anger, and his face fell.'
+            text: 'but He had no regard for Cain and his offering. So Cain became very angry, and his countenance fell.'
           }
         ],
         ground: {
@@ -788,11 +788,11 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 6,
-            text: 'The LORD said to Cain, “Why are you angry? Why has your face fallen?'
+            text: '“Why are you angry,” said the LORD to Cain, “and why has your countenance fallen?'
           },
           {
             n: 7,
-            text: 'If you do what is right, will you not be lifted up? But if you do not, sin is crouching at the door; its desire is for you, but you must rule over it.”'
+            text: 'If you do what is right, will you not be accepted? But if you refuse to do what is right, sin is crouching at your door; it desires you, but you must master it.”'
           }
         ],
         ground: {
@@ -821,15 +821,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 8,
-            text: 'Cain said to his brother Abel, “Let us go out to the field.” And while they were in the field, Cain rose up against his brother Abel and killed him.'
+            text: 'Then Cain said to his brother Abel, “Let us go out to the field.” And while they were in the field, Cain rose up against his brother Abel and killed him.'
           },
           {
             n: 9,
-            text: 'Then the LORD said to Cain, “Where is your brother Abel?” “I do not know,” he said. “Am I my brother’s keeper?”'
+            text: 'And the LORD said to Cain, “Where is your brother Abel?” “I do not know!” he answered. “Am I my brother’s keeper?”'
           },
           {
             n: 10,
-            text: 'The LORD said, “What have you done? Listen, your brother’s blood is crying out to me from the ground.”'
+            text: '“What have you done?” replied the LORD. “The voice of your brother’s blood cries out to Me from the ground.'
           }
         ],
         ground: {
@@ -856,27 +856,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 11,
-            text: '“Now you are cursed from the ground, which opened its mouth to take your brother’s blood from your hand.'
+            text: 'Now you are cursed and banished from the ground, which has opened its mouth to receive your brother’s blood from your hand.'
           },
           {
             n: 12,
-            text: 'When you work the ground, it will no longer yield its strength to you. You will be a restless wanderer on the earth.”'
+            text: 'When you till the ground, it will no longer yield its produce to you. You will be a fugitive and a wanderer on the earth.”'
           },
           {
             n: 13,
-            text: 'Cain said to the LORD, “My punishment is more than I can bear.'
+            text: 'But Cain said to the LORD, “My punishment is greater than I can bear.'
           },
           {
             n: 14,
-            text: 'Today you drive me from the land, and I will be hidden from your face; I will be a restless wanderer, and whoever finds me will kill me.”'
+            text: 'Behold, this day You have driven me from the face of the earth, and from Your face I will be hidden; I will be a fugitive and a wanderer on the earth, and whoever finds me will kill me.”'
           },
           {
             n: 15,
-            text: 'But the LORD said to him, “Not so; whoever kills Cain will suffer vengeance seven times over.” And the LORD put a mark on Cain, so that no one who found him would kill him.'
+            text: '“Not so!” replied the LORD. “If anyone slays Cain, then Cain will be avenged sevenfold.” And the LORD placed a mark on Cain, so that no one who found him would kill him.'
           },
           {
             n: 16,
-            text: 'So Cain went out from the LORD’s presence and settled in the land of Nod, east of Eden.'
+            text: 'So Cain went out from the presence of the LORD and settled in the land of Nod, east of Eden.'
           }
         ],
         ground: {
@@ -902,19 +902,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 23,
-            text: 'Lamech said to his wives, “Adah and Zillah, hear my voice; wives of Lamech, listen to my words. I have killed a man for wounding me, a young man for striking me.'
+            text: 'Then Lamech said to his wives: “Adah and Zillah, hear my voice; wives of Lamech, listen to my speech. For I have slain a man for wounding me, a young man for striking me.'
           },
           {
             n: 24,
-            text: 'If Cain is avenged seven times, then Lamech seventy-seven times.”'
+            text: 'If Cain is avenged sevenfold, then Lamech seventy-sevenfold.”'
           },
           {
             n: 25,
-            text: 'Adam knew his wife again, and she bore a son and named him Seth, saying, “God has granted me another child in place of Abel, since Cain killed him.”'
+            text: 'And Adam again had relations with his wife, and she gave birth to a son and named him Seth, saying, “God has granted me another seed in place of Abel, since Cain killed him.”'
           },
           {
             n: 26,
-            text: 'Seth too had a son, and named him Enosh. At that time people began to call on the name of the LORD.'
+            text: 'And to Seth also a son was born, and he called him Enosh. At that time men began to call upon the name of the LORD.'
           }
         ],
         ground: {
@@ -951,127 +951,127 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'This is the written account of Adam’s family line. When God created humankind, he made them in the likeness of God.'
+            text: 'This is the book of the generations of Adam. In the day that God created man, He made him in His own likeness.'
           },
           {
             n: 2,
-            text: 'He created them male and female, blessed them, and called them “humankind” when they were created.'
+            text: 'Male and female He created them, and He blessed them. And in the day they were created, He called them “man.”'
           },
           {
             n: 3,
-            text: 'When Adam had lived 130 years, he had a son in his own likeness, after his image, and named him Seth.'
+            text: 'When Adam was 130 years old, he had a son in his own likeness, after his own image; and he named him Seth.'
           },
           {
             n: 4,
-            text: 'After Seth was born, Adam lived 800 years and had other sons and daughters.'
+            text: 'And after he had become the father of Seth, Adam lived 800 years and had other sons and daughters.'
           },
           {
             n: 5,
-            text: 'Altogether Adam lived 930 years, and then he died.'
+            text: 'So Adam lived a total of 930 years, and then he died.'
           },
           {
             n: 6,
-            text: 'When Seth had lived 105 years, he became the father of Enosh,'
+            text: 'When Seth was 105 years old, he became the father of Enosh.'
           },
           {
             n: 7,
-            text: 'and afterward lived 807 years and had other sons and daughters.'
+            text: 'And after he had become the father of Enosh, Seth lived 807 years and had other sons and daughters.'
           },
           {
             n: 8,
-            text: 'Altogether Seth lived 912 years, and then he died.'
+            text: 'So Seth lived a total of 912 years, and then he died.'
           },
           {
             n: 9,
-            text: 'When Enosh had lived 90 years, he became the father of Kenan,'
+            text: 'When Enosh was 90 years old, he became the father of Kenan.'
           },
           {
             n: 10,
-            text: 'and afterward lived 815 years and had other sons and daughters.'
+            text: 'And after he had become the father of Kenan, Enosh lived 815 years and had other sons and daughters.'
           },
           {
             n: 11,
-            text: 'Altogether Enosh lived 905 years, and then he died.'
+            text: 'So Enosh lived a total of 905 years, and then he died.'
           },
           {
             n: 12,
-            text: 'When Kenan had lived 70 years, he became the father of Mahalalel,'
+            text: 'When Kenan was 70 years old, he became the father of Mahalalel.'
           },
           {
             n: 13,
-            text: 'and afterward lived 840 years and had other sons and daughters.'
+            text: 'And after he had become the father of Mahalalel, Kenan lived 840 years and had other sons and daughters.'
           },
           {
             n: 14,
-            text: 'Altogether Kenan lived 910 years, and then he died.'
+            text: 'So Kenan lived a total of 910 years, and then he died.'
           },
           {
             n: 15,
-            text: 'When Mahalalel had lived 65 years, he became the father of Jared,'
+            text: 'When Mahalalel was 65 years old, he became the father of Jared.'
           },
           {
             n: 16,
-            text: 'and afterward lived 830 years and had other sons and daughters.'
+            text: 'And after he had become the father of Jared, Mahalalel lived 830 years and had other sons and daughters.'
           },
           {
             n: 17,
-            text: 'Altogether Mahalalel lived 895 years, and then he died.'
+            text: 'So Mahalalel lived a total of 895 years, and then he died.'
           },
           {
             n: 18,
-            text: 'When Jared had lived 162 years, he became the father of Enoch,'
+            text: 'When Jared was 162 years old, he became the father of Enoch.'
           },
           {
             n: 19,
-            text: 'and afterward lived 800 years and had other sons and daughters.'
+            text: 'And after he had become the father of Enoch, Jared lived 800 years and had other sons and daughters.'
           },
           {
             n: 20,
-            text: 'Altogether Jared lived 962 years, and then he died.'
+            text: 'So Jared lived a total of 962 years, and then he died.'
           },
           {
             n: 21,
-            text: 'When Enoch had lived 65 years, he became the father of Methuselah.'
+            text: 'When Enoch was 65 years old, he became the father of Methuselah.'
           },
           {
             n: 22,
-            text: 'After that, Enoch walked faithfully with God 300 years and had other sons and daughters.'
+            text: 'And after he had become the father of Methuselah, Enoch walked with God 300 years and had other sons and daughters.'
           },
           {
             n: 23,
-            text: 'Altogether Enoch lived 365 years.'
+            text: 'So Enoch lived a total of 365 years.'
           },
           {
             n: 24,
-            text: 'Enoch walked faithfully with God; then he was no more, because God took him away.'
+            text: 'Enoch walked with God, and then he was no more, because God had taken him away.'
           },
           {
             n: 25,
-            text: 'When Methuselah had lived 187 years, he became the father of Lamech,'
+            text: 'When Methuselah was 187 years old, he became the father of Lamech.'
           },
           {
             n: 26,
-            text: 'and afterward lived 782 years and had other sons and daughters.'
+            text: 'And after he had become the father of Lamech, Methuselah lived 782 years and had other sons and daughters.'
           },
           {
             n: 27,
-            text: 'Altogether Methuselah lived 969 years, and then he died.'
+            text: 'So Methuselah lived a total of 969 years, and then he died.'
           },
           {
             n: 28,
-            text: 'When Lamech had lived 182 years, he had a son.'
+            text: 'When Lamech was 182 years old, he had a son.'
           },
           {
             n: 29,
-            text: 'He named him Noah, saying, “He will comfort us in the labor and the painful toil of our hands, on the ground the LORD has cursed.”'
+            text: 'And he named him Noah, saying, “May this one comfort us in the labor and toil of our hands caused by the ground that the LORD has cursed.”'
           },
           {
             n: 30,
-            text: 'After Noah was born, Lamech lived 595 years and had other sons and daughters.'
+            text: 'And after he had become the father of Noah, Lamech lived 595 years and had other sons and daughters.'
           },
           {
             n: 31,
-            text: 'Altogether Lamech lived 777 years, and then he died.'
+            text: 'So Lamech lived a total of 777 years, and then he died.'
           },
           {
             n: 32,
@@ -1106,19 +1106,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'When humankind began to multiply on the face of the earth and daughters were born to them,'
+            text: 'Now when men began to multiply on the face of the earth and daughters were born to them,'
           },
           {
             n: 2,
-            text: 'the sons of God saw that the daughters of men were beautiful, and they took as wives any they chose.'
+            text: 'the sons of God saw that the daughters of men were beautiful, and they took as wives whomever they chose.'
           },
           {
             n: 3,
-            text: 'Then the LORD said, “My spirit will not contend with humankind forever, for they are flesh; their days will be a hundred and twenty years.”'
+            text: 'So the LORD said, “My Spirit will not contend with man forever, for he is mortal; his days shall be 120 years.”'
           },
           {
             n: 4,
-            text: 'The Nephilim were on the earth in those days, and afterward as well, when the sons of God went to the daughters of men and they bore them children. These were the mighty ones of old, the men of renown.'
+            text: 'The Nephilim were on the earth in those days—and afterward as well—when the sons of God had relations with the daughters of men. And they bore them children who became the mighty men of old, men of renown.'
           }
         ],
         ground: {
@@ -1145,19 +1145,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 5,
-            text: 'The LORD saw how great the wickedness of humankind had become on the earth, and that every inclination of the thoughts of their heart was only evil all the time.'
+            text: 'Then the LORD saw that the wickedness of man was great upon the earth, and that every inclination of the thoughts of his heart was altogether evil all the time.'
           },
           {
             n: 6,
-            text: 'And the LORD regretted that he had made humankind on the earth, and his heart was filled with pain.'
+            text: 'And the LORD regretted that He had made man on the earth, and He was grieved in His heart.'
           },
           {
             n: 7,
-            text: 'So the LORD said, “I will blot out humankind, whom I have created, from the face of the earth, people and animals and creatures that move along the ground and birds of the sky, for I regret that I have made them.”'
+            text: 'So the LORD said, “I will blot out man, whom I have created, from the face of the earth—every man and beast and crawling creature and bird of the air—for I am grieved that I have made them.”'
           },
           {
             n: 8,
-            text: 'But Noah found favor in the eyes of the LORD.'
+            text: 'Noah, however, found favor in the eyes of the LORD.'
           }
         ],
         ground: {
@@ -1184,19 +1184,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 9,
-            text: 'This is the account of Noah. Noah was a righteous man, blameless among the people of his time, and Noah walked with God.'
+            text: 'This is the account of Noah. Noah was a righteous man, blameless in his generation; Noah walked with God.'
           },
           {
             n: 10,
-            text: 'Noah had three sons: Shem, Ham, and Japheth.'
+            text: 'And Noah had three sons: Shem, Ham, and Japheth.'
           },
           {
             n: 11,
-            text: 'Now the earth was corrupt in God’s sight and full of violence.'
+            text: 'Now the earth was corrupt in the sight of God, and full of violence.'
           },
           {
             n: 12,
-            text: 'God saw how corrupt the earth had become, for all flesh had corrupted its way on the earth.'
+            text: 'And God looked upon the earth and saw that it was corrupt; for all living creatures on the earth had corrupted their ways.'
           }
         ],
         ground: {
@@ -1223,35 +1223,35 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 13,
-            text: 'So God said to Noah, “I am going to put an end to all flesh, for the earth is full of violence because of them. I am going to destroy them along with the earth.'
+            text: 'Then God said to Noah, “The end of all living creatures has come before Me, because through them the earth is full of violence. Now behold, I will destroy both them and the earth.'
           },
           {
             n: 14,
-            text: 'Make yourself an ark of cypress wood; make rooms in it and coat it with pitch inside and out.'
+            text: 'Make for yourself an ark of gopher wood; make rooms in the ark and coat it with pitch inside and out.'
           },
           {
             n: 15,
-            text: 'This is how you are to build it: the ark is to be three hundred cubits long, fifty wide, and thirty high.'
+            text: 'And this is how you are to build it: The ark is to be 300 cubits long, 50 cubits wide, and 30 cubits high.'
           },
           {
             n: 16,
-            text: 'Make a roof for it, and finish the ark a cubit from the top. Put a door in its side, and make lower, middle, and upper decks.'
+            text: 'You are to make a roof for the ark, finish its walls a cubit from the top, place a door in the side of the ark, and build lower, middle, and upper decks.'
           },
           {
             n: 17,
-            text: 'I am going to bring floodwaters on the earth to destroy all flesh that has the breath of life in it; everything on the earth will perish.'
+            text: 'And behold, I will bring floodwaters upon the earth to destroy every creature under the heavens that has the breath of life. Everything on the earth will perish.'
           },
           {
             n: 18,
-            text: 'But I will establish my covenant with you, and you will enter the ark, you and your sons and your wife and your sons’ wives with you.'
+            text: 'But I will establish My covenant with you, and you will enter the ark—you and your sons and your wife and your sons’ wives with you.'
           },
           {
             n: 19,
-            text: 'You are to bring into the ark two of every living thing, male and female, to keep them alive with you.”'
+            text: 'And you are to bring two of every living creature into the ark—male and female—to keep them alive with you.'
           },
           {
             n: 22,
-            text: 'Noah did everything just as God commanded him.'
+            text: 'So Noah did everything precisely as God had commanded him.'
           }
         ],
         ground: {
@@ -1287,99 +1287,99 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'The LORD said to Noah, “Go into the ark, you and your whole household, for I have found you righteous in this generation.'
+            text: 'Then the LORD said to Noah, “Go into the ark, you and all your family, because I have found you righteous in this generation.'
           },
           {
             n: 2,
-            text: 'Take with you seven pairs of every clean animal, a male and its mate, and one pair of every unclean animal,'
+            text: 'You are to take with you seven pairs of every kind of clean animal, a male and its mate; a pair of every kind of unclean animal, a male and its mate;'
           },
           {
             n: 3,
-            text: 'and seven pairs of every kind of bird, to keep their offspring alive over all the earth.'
+            text: 'and seven pairs of every kind of bird of the air, male and female, to preserve their offspring on the face of all the earth.'
           },
           {
             n: 4,
-            text: 'Seven days from now I will send rain on the earth for forty days and forty nights, and I will wipe from the land every living thing I have made.”'
+            text: 'For seven days from now I will send rain on the earth for forty days and forty nights, and I will wipe from the face of the earth every living thing I have made.”'
           },
           {
             n: 5,
-            text: 'And Noah did everything the LORD commanded him.'
+            text: 'And Noah did all that the LORD had commanded him.'
           },
           {
             n: 6,
-            text: 'Noah was six hundred years old when the floodwaters came on the earth.'
+            text: 'Now Noah was 600 years old when the floodwaters came upon the earth.'
           },
           {
             n: 7,
-            text: 'He and his sons and his wife and his sons’ wives went into the ark to escape the waters.'
+            text: 'And Noah and his wife, with his sons and their wives, entered the ark to escape the waters of the flood.'
           },
           {
             n: 8,
-            text: 'Of the clean and the unclean animals, of the birds and of everything that moves along the ground,'
+            text: 'The clean and unclean animals, the birds, and everything that crawls along the ground'
           },
           {
             n: 9,
-            text: 'pairs came to Noah and entered the ark, male and female, as God had commanded him.'
+            text: 'came to Noah to enter the ark, two by two, male and female, as God had commanded Noah.'
           },
           {
             n: 10,
-            text: 'And after the seven days the floodwaters came on the earth.'
+            text: 'And after seven days the floodwaters came upon the earth.'
           },
           {
             n: 11,
-            text: 'In the six hundredth year of Noah’s life, on the seventeenth day of the second month, all the springs of the great deep burst open, and the windows of the heavens were opened.'
+            text: 'In the six hundredth year of Noah’s life, on the seventeenth day of the second month, all the fountains of the great deep burst forth, and the floodgates of the heavens were opened.'
           },
           {
             n: 12,
-            text: 'Rain fell on the earth forty days and forty nights.'
+            text: 'And the rain fell upon the earth for forty days and forty nights.'
           },
           {
             n: 13,
-            text: 'On that very day Noah, with his sons Shem, Ham, and Japheth, and his wife and his three sons’ wives, entered the ark.'
+            text: 'On that very day Noah entered the ark, along with his sons Shem, Ham, and Japheth, and his wife, and the three wives of his sons—'
           },
           {
             n: 14,
-            text: 'They had with them every kind of wild animal, livestock, creeping thing, and bird.'
+            text: 'they and every kind of wild animal, livestock, crawling creature, bird, and winged creature.'
           },
           {
             n: 15,
-            text: 'Pairs of every creature with the breath of life in it came to Noah and entered the ark.'
+            text: 'They came to Noah to enter the ark, two by two of every creature with the breath of life.'
           },
           {
             n: 16,
-            text: 'The ones that went in were male and female of every living thing, as God had commanded. Then the LORD shut him in.'
+            text: 'And they entered, the male and female of every living thing, as God had commanded Noah. Then the LORD shut him in.'
           },
           {
             n: 17,
-            text: 'For forty days the flood kept rising, and the waters lifted the ark high above the earth.'
+            text: 'For forty days the flood kept coming on the earth, and the waters rose and lifted the ark high above the earth.'
           },
           {
             n: 18,
-            text: 'They rose and increased, and the ark floated on the surface of the water.'
+            text: 'So the waters continued to surge and rise greatly on the earth, and the ark floated on the surface of the waters.'
           },
           {
             n: 19,
-            text: 'They rose higher and higher until every high mountain under the heavens was covered.'
+            text: 'Finally, the waters completely prevailed upon the earth, so that all the high mountains under all the heavens were covered.'
           },
           {
             n: 20,
-            text: 'The waters rose and covered the mountains to a depth of more than twenty feet.'
+            text: 'The waters rose and covered the mountaintops to a depth of fifteen cubits.'
           },
           {
             n: 21,
-            text: 'Every living thing that moved on land perished: the birds, the livestock, the wild animals, all that swarmed over the earth, and all humankind.'
+            text: 'And every living thing that moved upon the earth perished—birds, livestock, animals, every creature that swarms upon the earth, and all mankind.'
           },
           {
             n: 22,
-            text: 'Everything on dry land with the breath of life in its nostrils died.'
+            text: 'Of all that was on dry land, everything that had the breath of life in its nostrils died.'
           },
           {
             n: 23,
-            text: 'Every living thing on the face of the earth was wiped away; only Noah was left, and those with him in the ark.'
+            text: 'And every living thing on the face of the earth was destroyed—man and livestock, crawling creatures and birds of the air; they were blotted out from the earth, and only Noah and those with him in the ark remained.'
           },
           {
             n: 24,
-            text: 'And the waters covered the earth a hundred and fifty days.'
+            text: 'And the waters prevailed upon the earth for 150 days.'
           }
         ],
         ground: {
@@ -1406,23 +1406,23 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'But God remembered Noah and all the animals with him in the ark, and he sent a wind over the earth, and the waters began to subside.'
+            text: 'But God remembered Noah and all the animals and livestock that were with him in the ark. And God sent a wind over the earth, and the waters began to subside.'
           },
           {
             n: 2,
-            text: 'The springs of the deep and the windows of the heavens were closed, and the rain stopped.'
+            text: 'The springs of the deep and the floodgates of the heavens were closed, and the rain from the sky was restrained.'
           },
           {
             n: 3,
-            text: 'The water receded steadily from the earth, and at the end of a hundred and fifty days it had gone down.'
+            text: 'The waters receded steadily from the earth, and after 150 days the waters had gone down.'
           },
           {
             n: 4,
-            text: 'On the seventeenth day of the seventh month the ark came to rest on the mountains of Ararat.'
+            text: 'On the seventeenth day of the seventh month, the ark came to rest on the mountains of Ararat.'
           },
           {
             n: 5,
-            text: 'The waters kept receding until the tenth month, and on its first day the tops of the mountains appeared.'
+            text: 'And the waters continued to recede until the tenth month, and on the first day of the tenth month the tops of the mountains became visible.'
           },
           {
             n: 6,
@@ -1430,35 +1430,35 @@ export const GENESIS: Reading[] = [
           },
           {
             n: 7,
-            text: 'and sent out a raven, which kept flying back and forth until the waters had dried up.'
+            text: 'and sent out a raven. It kept flying back and forth until the waters had dried up from the earth.'
           },
           {
             n: 8,
-            text: 'Then he sent out a dove to see whether the water had receded from the surface of the ground.'
+            text: 'Then Noah sent out a dove to see if the waters had receded from the surface of the ground.'
           },
           {
             n: 9,
-            text: 'But the dove found no place to set its foot and returned to him, for water still covered the whole earth. So he reached out and took it back into the ark.'
+            text: 'But the dove found no place to rest her foot, and she returned to him in the ark, because the waters were still covering the surface of all the earth. So he reached out his hand and brought her back inside the ark.'
           },
           {
             n: 10,
-            text: 'He waited seven more days and again sent the dove out from the ark.'
+            text: 'Noah waited seven more days and again sent out the dove from the ark.'
           },
           {
             n: 11,
-            text: 'When it returned to him toward evening, there in its beak was a freshly plucked olive leaf. Then Noah knew the water had receded from the earth.'
+            text: 'And behold, the dove returned to him in the evening with a freshly plucked olive leaf in her beak. So Noah knew that the waters had receded from the earth.'
           },
           {
             n: 12,
-            text: 'He waited seven more days and sent the dove out once more, and this time it did not return to him.'
+            text: 'And Noah waited seven more days and sent out the dove again, but this time she did not return to him.'
           },
           {
             n: 13,
-            text: 'By the first day of the first month of Noah’s six hundred and first year, the water had dried up. Noah removed the covering of the ark and saw that the ground was dry.'
+            text: 'In Noah’s six hundred and first year, on the first day of the first month, the waters had dried up from the earth. So Noah removed the covering from the ark and saw that the surface of the ground was dry.'
           },
           {
             n: 14,
-            text: 'By the twenty-seventh day of the second month the earth was fully dry.'
+            text: 'By the twenty-seventh day of the second month, the earth was fully dry.'
           },
           {
             n: 15,
@@ -1466,31 +1466,31 @@ export const GENESIS: Reading[] = [
           },
           {
             n: 16,
-            text: '“Come out of the ark, you and your wife and your sons and their wives.'
+            text: '“Come out of the ark, you and your wife, along with your sons and their wives.'
           },
           {
             n: 17,
-            text: 'Bring out every living thing that is with you, so they may spread over the earth and be fruitful and increase.”'
+            text: 'Bring out all the living creatures that are with you—birds, livestock, and everything that crawls upon the ground—so that they can spread out over the earth and be fruitful and multiply upon it.”'
           },
           {
             n: 18,
-            text: 'So Noah came out, with his sons and his wife and his sons’ wives.'
+            text: 'So Noah came out, along with his sons and his wife and his sons’ wives.'
           },
           {
             n: 19,
-            text: 'Every animal, every creeping thing, and every bird came out of the ark, kind by kind.'
+            text: 'Every living creature, every creeping thing, and every bird—everything that moves upon the earth—came out of the ark, kind by kind.'
           },
           {
             n: 20,
-            text: 'Then Noah built an altar to the LORD and offered burnt offerings on it.'
+            text: 'Then Noah built an altar to the LORD. And taking from every kind of clean animal and clean bird, he offered burnt offerings on the altar.'
           },
           {
             n: 21,
-            text: 'The LORD smelled the pleasing aroma and said in his heart, “Never again will I curse the ground because of humankind, even though the bent of the human heart is toward evil from youth. Never again will I strike down all the living, as I have done.'
+            text: 'When the LORD smelled the pleasing aroma, He said in His heart, “Never again will I curse the ground because of man, even though every inclination of his heart is evil from his youth. And never again will I destroy all living creatures as I have done.'
           },
           {
             n: 22,
-            text: 'As long as the earth endures, seedtime and harvest, cold and heat, summer and winter, day and night will never cease.”'
+            text: 'As long as the earth endures, seedtime and harvest, cold and heat, summer and winter, day and night shall never cease.”'
           }
         ],
         ground: {
@@ -1521,19 +1521,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'Then God blessed Noah and his sons and said to them, “Be fruitful and multiply and fill the earth.'
+            text: 'And God blessed Noah and his sons and said to them, “Be fruitful and multiply and fill the earth.'
           },
           {
             n: 2,
-            text: 'The fear and dread of you will fall on every beast of the earth and every bird of the sky, on everything that moves along the ground and all the fish of the sea; they are given into your hands.'
+            text: 'The fear and dread of you will fall on every living creature on the earth, every bird of the air, every creature that crawls on the ground, and all the fish of the sea. They are delivered into your hand.'
           },
           {
             n: 3,
-            text: 'Everything that lives and moves will be food for you. Just as I gave you the green plants, I now give you all of it.'
+            text: 'Everything that lives and moves will be food for you; just as I gave you the green plants, I now give you all things.'
           },
           {
             n: 4,
-            text: 'But you must not eat meat that still has its lifeblood in it.”'
+            text: 'But you must not eat meat with its lifeblood still in it.'
           }
         ],
         ground: {
@@ -1560,15 +1560,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 5,
-            text: 'And for your lifeblood I will surely demand a reckoning. From every animal I will demand it, and from every human being I will demand a reckoning for the life of another.'
+            text: 'And surely I will require the life of any man or beast by whose hand your lifeblood is shed. I will demand an accounting from anyone who takes the life of his fellow man:'
           },
           {
             n: 6,
-            text: 'Whoever sheds human blood, by humans shall their blood be shed; for in the image of God has God made humankind.'
+            text: 'Whoever sheds the blood of man, by man his blood will be shed; for in His own image God has made mankind.'
           },
           {
             n: 7,
-            text: 'As for you, be fruitful and multiply; spread out over the earth and multiply on it.”'
+            text: 'But as for you, be fruitful and multiply; spread out across the earth and multiply upon it.”'
           }
         ],
         ground: {
@@ -1595,27 +1595,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 9,
-            text: '“I now establish my covenant with you and with your descendants after you,'
+            text: '“Behold, I now establish My covenant with you and your descendants after you,'
           },
           {
             n: 10,
-            text: 'and with every living creature that was with you, the birds, the livestock, and all the wild animals, all that came out of the ark, every living thing on earth.'
+            text: 'and with every living creature that was with you—the birds, the livestock, and every beast of the earth—every living thing that came out of the ark.'
           },
           {
             n: 11,
-            text: 'I establish my covenant with you: never again will all life be cut off by floodwaters; never again will a flood destroy the earth.”'
+            text: 'And I establish My covenant with you: Never again will all life be cut off by the waters of a flood; never again will there be a flood to destroy the earth.”'
           },
           {
             n: 12,
-            text: 'And God said, “This is the sign of the covenant I am making between me and you and every living creature with you, for all generations to come:'
+            text: 'And God said, “This is the sign of the covenant I am making between Me and you and every living creature with you, a covenant for all generations to come:'
           },
           {
             n: 13,
-            text: 'I have set my bow in the clouds, and it will be the sign of the covenant between me and the earth.'
+            text: 'I have set My rainbow in the clouds, and it will be a sign of the covenant between Me and the earth.'
           },
           {
             n: 16,
-            text: 'When the bow is in the clouds, I will see it and remember the everlasting covenant between God and every living creature on the earth.”'
+            text: 'And whenever the rainbow appears in the clouds, I will see it and remember the everlasting covenant between God and every living creature of every kind that is on the earth.”'
           }
         ],
         ground: {
@@ -1642,27 +1642,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 20,
-            text: 'Noah, a man of the soil, was the first to plant a vineyard.'
+            text: 'Now Noah, a man of the soil, proceeded to plant a vineyard.'
           },
           {
             n: 21,
-            text: 'He drank some of its wine, became drunk, and lay uncovered inside his tent.'
+            text: 'But when he drank some of its wine, he became drunk and uncovered himself inside his tent.'
           },
           {
             n: 22,
-            text: 'Ham, the father of Canaan, saw his father naked and told his two brothers outside.'
+            text: 'And Ham, the father of Canaan, saw his father’s nakedness and told his two brothers outside.'
           },
           {
             n: 23,
-            text: 'But Shem and Japheth took a garment, laid it across their shoulders, and walking backward they covered their father’s nakedness. Their faces were turned away, so they would not see him.'
+            text: 'Then Shem and Japheth took a garment and placed it across their shoulders, and walking backward, they covered their father’s nakedness. Their faces were turned away so that they did not see their father’s nakedness.'
           },
           {
             n: 24,
-            text: 'When Noah awoke from his wine and learned what his youngest son had done to him,'
+            text: 'When Noah awoke from his drunkenness and learned what his youngest son had done to him,'
           },
           {
             n: 25,
-            text: 'he said, “Cursed be Canaan. The lowest of slaves will he be to his brothers.”'
+            text: 'he said, “Cursed be Canaan! A servant of servants shall he be to his brothers.”'
           }
         ],
         ground: {
@@ -1700,11 +1700,11 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'This is the account of Shem, Ham, and Japheth, Noah’s sons, who had sons of their own after the flood.'
+            text: 'This is the account of Noah’s sons Shem, Ham, and Japheth, who also had sons after the flood.'
           },
           {
             n: 2,
-            text: 'The sons of Japheth: Gomer, Magog, Madai, Javan, Tubal, Meshek, and Tiras.'
+            text: 'The sons of Japheth: Gomer, Magog, Madai, Javan, Tubal, Meshech, and Tiras.'
           },
           {
             n: 3,
@@ -1712,95 +1712,95 @@ export const GENESIS: Reading[] = [
           },
           {
             n: 4,
-            text: 'The sons of Javan: Elishah, Tarshish, the Kittites, and the Rodanites.'
+            text: 'And the sons of Javan: Elishah, Tarshish, the Kittites, and the Rodanites.'
           },
           {
             n: 5,
-            text: 'From these the coastland peoples spread into their lands, each by its clan, within its nation, with its own language.'
+            text: 'From these, the maritime peoples separated into their territories, according to their languages, by clans within their nations.'
           },
           {
             n: 6,
-            text: 'The sons of Ham: Cush, Egypt, Put, and Canaan.'
+            text: 'The sons of Ham: Cush, Mizraim, Put, and Canaan.'
           },
           {
             n: 7,
-            text: 'The sons of Cush: Seba, Havilah, Sabtah, Raamah, and Sabteka. The sons of Raamah: Sheba and Dedan.'
+            text: 'The sons of Cush: Seba, Havilah, Sabtah, Raamah, and Sabteca. And the sons of Raamah: Sheba and Dedan.'
           },
           {
             n: 8,
-            text: 'Cush was the father of Nimrod, who grew to be a mighty warrior on the earth.'
+            text: 'Cush was the father of Nimrod, who began to be a mighty one on the earth.'
           },
           {
             n: 9,
-            text: 'He was a mighty hunter before the LORD; so people say, “Like Nimrod, a mighty hunter before the LORD.”'
+            text: 'He was a mighty hunter before the LORD; so it is said, “Like Nimrod, a mighty hunter before the LORD.”'
           },
           {
             n: 10,
-            text: 'The first centers of his kingdom were Babylon, Uruk, Akkad, and Kalneh, in the land of Shinar.'
+            text: 'His kingdom began in Babylon, Erech, Accad, and Calneh, in the land of Shinar.'
           },
           {
             n: 11,
-            text: 'From that land he went out to Assyria, where he built Nineveh, Rehoboth Ir, Calah,'
+            text: 'From that land he went forth into Assyria, where he built Nineveh, Rehoboth-Ir, Calah,'
           },
           {
             n: 12,
-            text: 'and Resen, between Nineveh and Calah; that is the great city.'
+            text: 'and Resen, which is between Nineveh and the great city of Calah.'
           },
           {
             n: 13,
-            text: 'Egypt was the father of the Ludites, Anamites, Lehabites, Naphtuhites,'
+            text: 'Mizraim was the father of the Ludites, the Anamites, the Lehabites, the Naphtuhites,'
           },
           {
             n: 14,
-            text: 'Pathrusites, Kasluhites (from whom the Philistines came), and Caphtorites.'
+            text: 'the Pathrusites, the Casluhites (from whom the Philistines came), and the Caphtorites.'
           },
           {
             n: 15,
-            text: 'Canaan was the father of Sidon his firstborn, and of the Hittites,'
+            text: 'And Canaan was the father of Sidon his firstborn, and of the Hittites,'
           },
           {
             n: 16,
-            text: 'Jebusites, Amorites, Girgashites,'
+            text: 'the Jebusites, the Amorites, the Girgashites,'
           },
           {
             n: 17,
-            text: 'Hivites, Arkites, Sinites,'
+            text: 'the Hivites, the Arkites, the Sinites,'
           },
           {
             n: 18,
-            text: 'Arvadites, Zemarites, and Hamathites. Later the Canaanite clans scattered,'
+            text: 'the Arvadites, the Zemarites, and the Hamathites. Later the Canaanite clans were scattered,'
           },
           {
             n: 19,
-            text: 'and the borders of Canaan reached from Sidon toward Gerar as far as Gaza, then toward Sodom, Gomorrah, Admah, and Zeboyim, as far as Lasha.'
+            text: 'and the borders of Canaan extended from Sidon toward Gerar as far as Gaza, and then toward Sodom, Gomorrah, Admah, and Zeboiim, as far as Lasha.'
           },
           {
             n: 20,
-            text: 'These are the sons of Ham by their clans and languages, in their lands and nations.'
+            text: 'These are the sons of Ham according to their clans, languages, lands, and nations.'
           },
           {
             n: 21,
-            text: 'Sons were also born to Shem, the older brother of Japheth; Shem was the ancestor of all the sons of Eber.'
+            text: 'And sons were also born to Shem, the older brother of Japheth; Shem was the forefather of all the sons of Eber.'
           },
           {
             n: 22,
-            text: 'The sons of Shem: Elam, Ashur, Arphaxad, Lud, and Aram.'
+            text: 'The sons of Shem: Elam, Asshur, Arphaxad, Lud, and Aram.'
           },
           {
             n: 23,
-            text: 'The sons of Aram: Uz, Hul, Gether, and Meshek.'
+            text: 'The sons of Aram: Uz, Hul, Gether, and Mash.'
           },
           {
             n: 24,
-            text: 'Arphaxad was the father of Shelah, and Shelah the father of Eber.'
+            text: 'Arphaxad was the father of Shelah, and Shelah was the father of Eber.'
           },
           {
             n: 25,
-            text: 'Two sons were born to Eber: one was named Peleg, because in his days the earth was divided; his brother was named Joktan.'
+            text: 'Two sons were born to Eber: One was named Peleg, because in his days the earth was divided, and his brother was named Joktan.'
           },
           {
             n: 26,
-            text: 'Joktan was the father of Almodad, Sheleph, Hazarmaveth, Jerah,'
+            text: 'And Joktan was the father of Almodad, Sheleph, Hazarmaveth, Jerah,'
           },
           {
             n: 27,
@@ -1816,15 +1816,15 @@ export const GENESIS: Reading[] = [
           },
           {
             n: 30,
-            text: 'The region where they lived stretched from Mesha toward Sephar, in the eastern hill country.'
+            text: 'Their territory extended from Mesha to Sephar, in the eastern hill country.'
           },
           {
             n: 31,
-            text: 'These are the sons of Shem by their clans and languages, in their lands and nations.'
+            text: 'These are the sons of Shem, according to their clans, languages, lands, and nations.'
           },
           {
             n: 32,
-            text: 'These are the clans of Noah’s sons, by their lines of descent, within their nations. From these the nations spread out over the earth after the flood.'
+            text: 'All these are the clans of Noah’s sons, according to their generations and nations. From these the nations of the earth spread out after the flood.'
           }
         ],
         ground: {
@@ -1855,19 +1855,19 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'Now the whole earth had one language and a common speech.'
+            text: 'Now the whole world had one language and a common form of speech.'
           },
           {
             n: 2,
-            text: 'As people moved eastward, they found a plain in the land of Shinar and settled there.'
+            text: 'And as people journeyed eastward, they found a plain in the land of Shinar and settled there.'
           },
           {
             n: 3,
-            text: 'They said to one another, “Come, let us make bricks and bake them hard.” They had brick for stone, and tar for mortar.'
+            text: 'And they said to one another, “Come, let us make bricks and bake them thoroughly.” So they used brick instead of stone, and tar instead of mortar.'
           },
           {
             n: 4,
-            text: 'Then they said, “Come, let us build ourselves a city, with a tower that reaches to the heavens, so that we may make a name for ourselves; otherwise we will be scattered over the face of the whole earth.”'
+            text: '“Come,” they said, “let us build for ourselves a city with a tower that reaches to the heavens, that we may make a name for ourselves and not be scattered over the face of all the earth.”'
           }
         ],
         ground: {
@@ -1894,15 +1894,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 5,
-            text: 'But the LORD came down to see the city and the tower the people were building.'
+            text: 'Then the LORD came down to see the city and the tower that the sons of men were building.'
           },
           {
             n: 6,
-            text: 'The LORD said, “If as one people speaking the same language they have begun to do this, then nothing they plan to do will be beyond them.'
+            text: 'And the LORD said, “If they have begun to do this as one people speaking the same language, then nothing they devise will be beyond them.'
           },
           {
             n: 7,
-            text: 'Come, let us go down and confuse their language, so they will not understand one another.”'
+            text: 'Come, let Us go down and confuse their language, so that they will not understand one another’s speech.”'
           }
         ],
         ground: {
@@ -1929,11 +1929,11 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 8,
-            text: 'So the LORD scattered them from there over the whole earth, and they stopped building the city.'
+            text: 'So the LORD scattered them from there over the face of all the earth, and they stopped building the city.'
           },
           {
             n: 9,
-            text: 'That is why it was called Babel, because there the LORD confused the language of the whole earth. From there the LORD scattered them over the face of all the earth.'
+            text: 'That is why it is called Babel, for there the LORD confused the language of the whole world, and from that place the LORD scattered them over the face of all the earth.'
           }
         ],
         ground: {
@@ -1974,15 +1974,15 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'The LORD had said to Abram, “Go from your country, your people, and your father’s household to the land I will show you.'
+            text: 'Then the LORD said to Abram, “Leave your country, your kindred, and your father’s household, and go to the land I will show you.'
           },
           {
             n: 2,
-            text: 'I will make you into a great nation, and I will bless you; I will make your name great, and you will be a blessing.'
+            text: 'I will make you into a great nation, and I will bless you; I will make your name great, so that you will be a blessing.'
           },
           {
             n: 3,
-            text: 'I will bless those who bless you, and whoever curses you I will curse; and all the families of the earth will be blessed through you.”'
+            text: 'I will bless those who bless you and curse those who curse you; and all the families of the earth will be blessed through you.”'
           }
         ],
         ground: {
@@ -2010,27 +2010,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 4,
-            text: 'So Abram went, as the LORD had told him, and Lot went with him. Abram was seventy-five years old when he set out from Harran.'
+            text: 'So Abram departed, as the LORD had directed him, and Lot went with him. Abram was seventy-five years old when he left Haran.'
           },
           {
             n: 5,
-            text: 'He took his wife Sarai, his nephew Lot, all the possessions they had gathered and the people they had acquired in Harran, and they set out for the land of Canaan, and they arrived there.'
+            text: 'And Abram took his wife Sarai, his nephew Lot, and all the possessions and people they had acquired in Haran, and set out for the land of Canaan. When they came to the land of Canaan,'
           },
           {
             n: 6,
-            text: 'Abram traveled through the land as far as the site of the great tree of Moreh at Shechem. At that time the Canaanites were in the land.'
+            text: 'Abram traveled through the land as far as the site of the Oak of Moreh at Shechem. And at that time the Canaanites were in the land.'
           },
           {
             n: 7,
-            text: 'The LORD appeared to Abram and said, “To your offspring I will give this land.” So he built an altar there to the LORD, who had appeared to him.'
+            text: 'Then the LORD appeared to Abram and said, “I will give this land to your offspring.” So Abram built an altar there to the LORD, who had appeared to him.'
           },
           {
             n: 8,
-            text: 'From there he went on toward the hills east of Bethel and pitched his tent, and he built an altar to the LORD and called on the name of the LORD.'
+            text: 'From there Abram moved on to the hill country east of Bethel and pitched his tent, with Bethel to the west and Ai to the east. There he built an altar to the LORD, and he called on the name of the LORD.'
           },
           {
             n: 9,
-            text: 'Then Abram set out and continued toward the Negev.'
+            text: 'And Abram journeyed on toward the Negev.'
           }
         ],
         ground: {
@@ -2057,43 +2057,43 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 10,
-            text: 'Now there was a famine in the land, and Abram went down to Egypt to stay there a while, for the famine was severe.'
+            text: 'Now there was a famine in the land. So Abram went down to Egypt to live there for a while because the famine was severe.'
           },
           {
             n: 11,
-            text: 'As he was about to enter Egypt, he said to his wife Sarai, “I know what a beautiful woman you are.'
+            text: 'As he was about to enter Egypt, he said to his wife Sarai, “Look, I know that you are a beautiful woman,'
           },
           {
             n: 12,
-            text: 'When the Egyptians see you, they will say, ‘This is his wife.’ Then they will kill me but let you live.'
+            text: 'and when the Egyptians see you, they will say, ‘This is his wife.’ Then they will kill me but will let you live.'
           },
           {
             n: 13,
-            text: 'Say you are my sister, so that I will be treated well for your sake and my life will be spared because of you.”'
+            text: 'Please say you are my sister, so that I will be treated well for your sake, and on account of you my life will be spared.”'
           },
           {
             n: 15,
-            text: 'And when Pharaoh’s officials saw her, they praised her to Pharaoh, and she was taken into his palace.'
+            text: 'When Pharaoh’s officials saw Sarai, they commended her to him, and she was taken into the palace of Pharaoh.'
           },
           {
             n: 16,
-            text: 'He treated Abram well for her sake, and Abram acquired sheep and cattle, donkeys and servants.'
+            text: 'He treated Abram well on her account, and Abram acquired sheep and cattle, male and female donkeys, menservants and maidservants, and camels.'
           },
           {
             n: 17,
-            text: 'But the LORD inflicted serious diseases on Pharaoh and his household because of Abram’s wife Sarai.'
+            text: 'The LORD, however, afflicted Pharaoh and his household with severe plagues because of Abram’s wife Sarai.'
           },
           {
             n: 18,
-            text: 'So Pharaoh summoned Abram. “What have you done to me?” he said. “Why didn’t you tell me she was your wife?'
+            text: 'So Pharaoh summoned Abram and asked, “What have you done to me? Why didn’t you tell me she was your wife?'
           },
           {
             n: 19,
-            text: 'Why did you say, ‘She is my sister,’ so that I took her to be my wife? Now then, here is your wife. Take her and go.”'
+            text: 'Why did you say, ‘She is my sister,’ so that I took her as my wife? Now then, here is your wife. Take her and go!”'
           },
           {
             n: 20,
-            text: 'Then Pharaoh gave orders, and they sent Abram on his way, with his wife and everything he had.'
+            text: 'Then Pharaoh gave his men orders concerning Abram, and they sent him away with his wife and all his possessions.'
           }
         ],
         ground: {
@@ -2130,75 +2130,75 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'So Abram went up from Egypt to the Negev, he and his wife and everything he had, and Lot went with him.'
+            text: 'So Abram went up out of Egypt into the Negev—he and his wife and all his possessions—and Lot was with him.'
           },
           {
             n: 2,
-            text: 'Abram had become very wealthy in livestock and in silver and gold.'
+            text: 'And Abram had become extremely wealthy in livestock and silver and gold.'
           },
           {
             n: 3,
-            text: 'From the Negev he journeyed by stages toward Bethel, to the place between Bethel and Ai where his tent had stood at the first,'
+            text: 'From the Negev he journeyed from place to place toward Bethel, until he came to the place between Bethel and Ai where his tent had formerly been pitched,'
           },
           {
             n: 4,
-            text: 'to the place of the altar he had built there earlier; and there Abram called on the name of the LORD.'
+            text: 'to the site where he had built the altar. And there Abram called on the name of the LORD.'
           },
           {
             n: 5,
-            text: 'Now Lot, who was traveling with Abram, also had flocks and herds and tents,'
+            text: 'Now Lot, who was traveling with Abram, also had flocks and herds and tents.'
           },
           {
             n: 6,
-            text: 'and the land could not support them both living side by side, for their possessions were so great that they could not stay together.'
+            text: 'But the land was unable to support both of them while they stayed together, for they had so many possessions that they were unable to coexist.'
           },
           {
             n: 7,
-            text: 'Quarreling broke out between Abram’s herders and Lot’s. The Canaanites and the Perizzites were living in the land at that time.'
+            text: 'And there was discord between the herdsmen of Abram and the herdsmen of Lot. At that time the Canaanites and the Perizzites were also living in the land.'
           },
           {
             n: 8,
-            text: 'So Abram said to Lot, “Let there be no quarrel between you and me, or between your herders and mine, for we are family.'
+            text: 'So Abram said to Lot, “Please let there be no contention between you and me, or between your herdsmen and my herdsmen. After all, we are kinsmen.'
           },
           {
             n: 9,
-            text: 'Is not the whole land before you? Let us part. If you go to the left, I will go to the right; if you go to the right, I will go to the left.”'
+            text: 'Is not the whole land before you? Now separate yourself from me. If you go to the left, I will go to the right; if you go to the right, I will go to the left.”'
           },
           {
             n: 10,
-            text: 'Lot looked up and saw that the whole Jordan plain was well watered, like the garden of the LORD, like the land of Egypt, all the way to Zoar. (This was before the LORD destroyed Sodom and Gomorrah.)'
+            text: 'And Lot looked out and saw that the whole plain of the Jordan, all the way to Zoar, was well watered like the garden of the LORD, like the land of Egypt. (This was before the LORD destroyed Sodom and Gomorrah.)'
           },
           {
             n: 11,
-            text: 'So Lot chose for himself the whole Jordan plain and set out toward the east. The two men parted company:'
+            text: 'So Lot chose the whole plain of the Jordan for himself and set out toward the east. And Abram and Lot parted company.'
           },
           {
             n: 12,
-            text: 'Abram lived in the land of Canaan, while Lot settled among the cities of the plain and pitched his tents near Sodom.'
+            text: 'Abram lived in the land of Canaan, but Lot settled in the cities of the plain and pitched his tent toward Sodom.'
           },
           {
             n: 13,
-            text: 'Now the people of Sodom were wicked, sinning greatly against the LORD.'
+            text: 'But the men of Sodom were wicked, sinning greatly against the LORD.'
           },
           {
             n: 14,
-            text: 'After Lot had parted from him, the LORD said to Abram, “Look around from where you are, to the north and south, to the east and west.'
+            text: 'After Lot had departed, the LORD said to Abram, “Now lift up your eyes from the place where you are, and look to the north and south and east and west,'
           },
           {
             n: 15,
-            text: 'All the land you see I will give to you and your offspring forever.'
+            text: 'for all the land that you see, I will give to you and your offspring forever.'
           },
           {
             n: 16,
-            text: 'I will make your offspring like the dust of the earth, so that if anyone could count the dust, then your offspring could be counted.'
+            text: 'I will make your offspring like the dust of the earth, so that if one could count the dust of the earth, then your offspring could be counted.'
           },
           {
             n: 17,
-            text: 'Go, walk through the length and breadth of the land, for I am giving it to you.”'
+            text: 'Get up and walk around the land, through its length and breadth, for I will give it to you.”'
           },
           {
             n: 18,
-            text: 'So Abram moved his tents and went to live near the great trees of Mamre at Hebron, where he built an altar to the LORD.'
+            text: 'So Abram moved his tent and went to live near the Oaks of Mamre at Hebron, where he built an altar to the LORD.'
           }
         ],
         ground: {
@@ -2225,99 +2225,99 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'In the days of Amraphel king of Shinar, Arioch king of Ellasar, Kedorlaomer king of Elam, and Tidal king of Goiim,'
+            text: 'In those days Amraphel king of Shinar, Arioch king of Ellasar, Chedorlaomer king of Elam, and Tidal king of Goiim'
           },
           {
             n: 2,
-            text: 'these kings made war on Bera king of Sodom, Birsha king of Gomorrah, Shinab king of Admah, Shemeber king of Zeboiim, and the king of Bela (that is, Zoar).'
+            text: 'went to war against Bera king of Sodom, Birsha king of Gomorrah, Shinab king of Admah, Shemeber king of Zeboiim, and the king of Bela (that is, Zoar).'
           },
           {
             n: 3,
-            text: 'All these latter kings joined forces in the Valley of Siddim (that is, the Dead Sea).'
+            text: 'The latter five came as allies to the Valley of Siddim (that is, the Salt Sea).'
           },
           {
             n: 4,
-            text: 'For twelve years they had been subject to Kedorlaomer, but in the thirteenth year they rebelled.'
+            text: 'For twelve years they had been subject to Chedorlaomer, but in the thirteenth year they rebelled.'
           },
           {
             n: 5,
-            text: 'In the fourteenth year Kedorlaomer and the kings allied with him went out and defeated the Rephaim in Ashteroth Karnaim, the Zuzim in Ham, the Emim in Shaveh Kiriathaim,'
+            text: 'In the fourteenth year, Chedorlaomer and the kings allied with him went out and defeated the Rephaites in Ashteroth-karnaim, the Zuzites in Ham, the Emites in Shaveh-kiriathaim,'
           },
           {
             n: 6,
-            text: 'and the Horites in the hill country of Seir, as far as El Paran near the desert.'
+            text: 'and the Horites in the area of Mount Seir, as far as El-paran, which is near the desert.'
           },
           {
             n: 7,
-            text: 'Then they turned back to En Mishpat (that is, Kadesh), and they conquered the whole territory of the Amalekites, and also the Amorites living in Hazezon Tamar.'
+            text: 'Then they turned back to invade En-mishpat (that is, Kadesh), and they conquered the whole territory of the Amalekites, as well as the Amorites who lived in Hazazon-tamar.'
           },
           {
             n: 8,
-            text: 'Then the kings of Sodom, Gomorrah, Admah, Zeboiim, and Bela (that is, Zoar) marched out and drew up their lines in the Valley of Siddim'
+            text: 'Then the king of Sodom, the king of Gomorrah, the king of Admah, the king of Zeboiim, and the king of Bela (that is, Zoar) marched out and arrayed themselves for battle in the Valley of Siddim'
           },
           {
             n: 9,
-            text: 'against the four kings, Kedorlaomer, Tidal, Amraphel, and Arioch, four kings against five.'
+            text: 'against Chedorlaomer king of Elam, Tidal king of Goiim, Amraphel king of Shinar, and Arioch king of Ellasar—four kings against five.'
           },
           {
             n: 10,
-            text: 'Now the Valley of Siddim was full of tar pits, and when the kings of Sodom and Gomorrah fled, some fell into them, and the rest fled to the hills.'
+            text: 'Now the Valley of Siddim was full of tar pits, and as the kings of Sodom and Gomorrah fled, some men fell into the pits, but the survivors fled to the hill country.'
           },
           {
             n: 11,
-            text: 'The victors seized all the goods of Sodom and Gomorrah and all their food, and went on their way.'
+            text: 'The four kings seized all the goods of Sodom and Gomorrah and all their food, and they went on their way.'
           },
           {
             n: 12,
-            text: 'They also carried off Abram’s nephew Lot and his possessions, since he was living in Sodom.'
+            text: 'They also carried off Abram’s nephew Lot and his possessions, since Lot was living in Sodom.'
           },
           {
             n: 13,
-            text: 'A man who had escaped came and reported it to Abram the Hebrew, who was living near the great trees of Mamre the Amorite, a brother of Eshkol and Aner, all of them allied with Abram.'
+            text: 'Then an escapee came and reported this to Abram the Hebrew. Now Abram was living near the Oaks of Mamre the Amorite, a brother of Eshcol and Aner, all of whom were bound by treaty to Abram.'
           },
           {
             n: 14,
-            text: 'When Abram heard that his relative had been taken captive, he called out the 318 trained men born in his household and pursued the raiders as far as Dan.'
+            text: 'And when Abram heard that his relative had been captured, he mobilized the 318 trained men born in his household, and they set out in pursuit as far as Dan.'
           },
           {
             n: 15,
-            text: 'During the night he divided his forces against them, struck them, and chased them as far as Hobah, north of Damascus.'
+            text: 'During the night, Abram divided his forces and routed Chedorlaomer’s army, pursuing them as far as Hobah, north of Damascus.'
           },
           {
             n: 16,
-            text: 'He recovered all the goods and brought back his relative Lot and his possessions, together with the women and the other people.'
+            text: 'He retrieved all the goods, as well as his relative Lot and his possessions, together with the women and the rest of the people.'
           },
           {
             n: 17,
-            text: 'After Abram returned from defeating Kedorlaomer and the kings with him, the king of Sodom came out to meet him in the Valley of Shaveh (that is, the King’s Valley).'
+            text: 'After Abram returned from defeating Chedorlaomer and the kings allied with him, the king of Sodom went out to meet him in the Valley of Shaveh (that is, the King’s Valley).'
           },
           {
             n: 18,
-            text: 'Then Melchizedek king of Salem brought out bread and wine. He was priest of God Most High,'
+            text: 'Then Melchizedek king of Salem brought out bread and wine—since he was priest of God Most High—'
           },
           {
             n: 19,
-            text: 'and he blessed Abram, saying, “Blessed be Abram by God Most High, Maker of heaven and earth.'
+            text: 'and he blessed Abram and said: “Blessed be Abram by God Most High, Creator of heaven and earth,'
           },
           {
             n: 20,
-            text: 'And blessed be God Most High, who delivered your enemies into your hand.” Then Abram gave him a tenth of everything.'
+            text: 'and blessed be God Most High, who has delivered your enemies into your hand.” Then Abram gave Melchizedek a tenth of everything.'
           },
           {
             n: 21,
-            text: 'The king of Sodom said to Abram, “Give me the people and keep the goods for yourself.”'
+            text: 'The king of Sodom said to Abram, “Give me the people, but take the goods for yourself.”'
           },
           {
             n: 22,
-            text: 'But Abram said to him, “With my hand raised I have sworn to the LORD, God Most High, Maker of heaven and earth,'
+            text: 'But Abram replied to the king of Sodom, “I have raised my hand to the LORD God Most High, Creator of heaven and earth,'
           },
           {
             n: 23,
-            text: 'that I will accept nothing belonging to you, not a thread or the strap of a sandal, so you can never say, ‘I made Abram rich.’'
+            text: 'that I will not accept even a thread, or a strap of a sandal, or anything that belongs to you, lest you should say, ‘I have made Abram rich.’'
           },
           {
             n: 24,
-            text: 'I will take nothing but what my men have eaten and the share of Aner, Eshkol, and Mamre, who went with me. Let them have their share.”'
+            text: 'I will accept nothing but what my men have eaten and the share for the men who went with me—Aner, Eshcol, and Mamre. They may take their portion.”'
           }
         ],
         ground: {
@@ -2348,27 +2348,27 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 1,
-            text: 'After this, the word of the LORD came to Abram in a vision: “Do not be afraid, Abram. I am your shield, and your reward will be very great.”'
+            text: 'After these events, the word of the LORD came to Abram in a vision: “Do not be afraid, Abram. I am your shield, your very great reward.”'
           },
           {
             n: 2,
-            text: 'But Abram said, “Sovereign LORD, what can you give me, since I remain childless and the one who will inherit my house is Eliezer of Damascus?”'
+            text: 'But Abram replied, “O Lord GOD, what can You give me, since I remain childless, and the heir of my house is Eliezer of Damascus?”'
           },
           {
             n: 3,
-            text: 'And Abram said, “You have given me no children, so a servant born in my household will be my heir.”'
+            text: 'Abram continued, “Behold, You have given me no offspring, so a servant in my household will be my heir.”'
           },
           {
             n: 4,
-            text: 'Then the word of the LORD came to him: “This man will not be your heir; a son who is your own flesh and blood will be your heir.”'
+            text: 'Then the word of the LORD came to Abram, saying, “This one will not be your heir, but one who comes from your own body will be your heir.”'
           },
           {
             n: 5,
-            text: 'He took him outside and said, “Look up at the sky and count the stars, if you can count them.” Then he said, “So shall your offspring be.”'
+            text: 'And the LORD took him outside and said, “Now look to the heavens and count the stars, if you are able.” Then He told him, “So shall your offspring be.”'
           },
           {
             n: 6,
-            text: 'Abram believed the LORD, and he credited it to him as righteousness.'
+            text: 'Abram believed the LORD, and it was credited to him as righteousness.'
           }
         ],
         ground: {
@@ -2396,47 +2396,47 @@ export const GENESIS: Reading[] = [
         verses: [
           {
             n: 7,
-            text: 'He also said to him, “I am the LORD, who brought you out of Ur of the Chaldeans to give you this land to take possession of it.”'
+            text: 'The LORD also told him, “I am the LORD, who brought you out of Ur of the Chaldeans to give you this land to possess.”'
           },
           {
             n: 8,
-            text: 'But Abram said, “Sovereign LORD, how can I know that I will possess it?”'
+            text: 'But Abram replied, “Lord GOD, how can I know that I will possess it?”'
           },
           {
             n: 9,
-            text: 'So the LORD said, “Bring me a heifer, a goat, and a ram, each three years old, along with a dove and a young pigeon.”'
+            text: 'And the LORD said to him, “Bring Me a heifer, a goat, and a ram, each three years old, along with a turtledove and a young pigeon.”'
           },
           {
             n: 10,
-            text: 'Abram brought all these, cut them in two, and arranged the halves opposite each other; the birds, however, he did not cut.'
+            text: 'So Abram brought all these to Him, split each of them down the middle, and laid the halves opposite each other. The birds, however, he did not cut in half.'
           },
           {
             n: 11,
-            text: 'Then birds of prey came down on the carcasses, but Abram drove them away.'
+            text: 'And the birds of prey descended on the carcasses, but Abram drove them away.'
           },
           {
             n: 12,
-            text: 'As the sun was setting, Abram fell into a deep sleep, and a thick and dreadful darkness came over him.'
+            text: 'As the sun was setting, Abram fell into a deep sleep, and suddenly great terror and darkness overwhelmed him.'
           },
           {
             n: 13,
-            text: 'Then the LORD said to him, “Know for certain that your descendants will be strangers in a land not their own, and there they will be enslaved and mistreated four hundred years.'
+            text: 'Then the LORD said to Abram, “Know for certain that your descendants will be strangers in a land that is not their own, and they will be enslaved and mistreated four hundred years.'
           },
           {
             n: 14,
-            text: 'But I will judge the nation they serve as slaves, and afterward they will come out with great possessions.'
+            text: 'But I will judge the nation they serve as slaves, and afterward they will depart with many possessions.'
           },
           {
             n: 16,
-            text: 'In the fourth generation your descendants will return here, for the sin of the Amorites has not yet run its full course.”'
+            text: 'In the fourth generation your descendants will return here, for the iniquity of the Amorites is not yet complete.”'
           },
           {
             n: 17,
-            text: 'When the sun had set and darkness had fallen, a smoking firepot with a blazing torch appeared and passed between the pieces.'
+            text: 'When the sun had set and darkness had fallen, behold, a smoking firepot and a flaming torch appeared and passed between the halves of the carcasses.'
           },
           {
             n: 18,
-            text: 'On that day the LORD made a covenant with Abram and said, “To your descendants I give this land, from the river of Egypt to the great river, the Euphrates.”'
+            text: 'On that day the LORD made a covenant with Abram, saying, “To your descendants I have given this land—from the river of Egypt to the great River Euphrates—'
           }
         ],
         ground: {
@@ -2468,11 +2468,11 @@ export const GENESIS: Reading[] = [
       {
         label: 'One', ref: '16:1–6', kind: 'scene', form: 'prose', title: 'The scheme',
         verses: [
-          { n: 1, text: 'Now Sarai, Abram’s wife, had borne him no children. She had an Egyptian slave named Hagar,' },
-          { n: 2, text: 'so she said to Abram, “The LORD has kept me from having children. Go to my slave; perhaps I can build a family through her.” Abram agreed to what Sarai said.' },
-          { n: 4, text: 'He slept with Hagar, and she conceived. When she knew she was pregnant, she began to despise her mistress.' },
-          { n: 5, text: 'Then Sarai said to Abram, “You are responsible for the wrong I am suffering. I put my slave in your arms, and now that she knows she is pregnant, she despises me. May the LORD judge between you and me.”' },
-          { n: 6, text: '“Your slave is in your hands,” Abram said. “Do with her whatever you think best.” Then Sarai mistreated Hagar, and she fled.' }
+          { n: 1, text: 'Now Abram’s wife Sarai had borne him no children, but she had an Egyptian maidservant named Hagar.' },
+          { n: 2, text: 'So Sarai said to Abram, “Look now, the LORD has prevented me from bearing children. Please go to my maidservant; perhaps I can build a family by her.” And Abram listened to the voice of Sarai.' },
+          { n: 4, text: 'And he slept with Hagar, and she conceived. But when Hagar realized that she was pregnant, she began to despise her mistress.' },
+          { n: 5, text: 'Then Sarai said to Abram, “May the wrong done to me be upon you! I delivered my servant into your arms, and ever since she saw that she was pregnant, she has treated me with contempt. May the LORD judge between you and me.”' },
+          { n: 6, text: '“Here,” said Abram, “your servant is in your hands. Do whatever you want with her.” Then Sarai treated Hagar so harshly that she fled from her.' }
         ],
         ground: { kind: 'historical', text: 'Using a slave as a surrogate was a recognized legal arrangement in the ancient Near East, spelled out in the law codes of the time. The text records the custom without endorsing the cruelty that follows. It is the same pattern as the lie in Egypt: the promise stalls, impatience takes over, and the people with the least power get hurt.', src: 'Speiser · Westermann' },
         meaning: 'The covenant was sworn one chapter ago, and already the waiting is unbearable, so they reach for the ordinary human fix. Sarai’s plan is legal, reasonable, and a disaster. The promise grasped instead of trusted turns three people against each other, and the one with no power in the arrangement is the one driven into the desert.',
@@ -2486,12 +2486,12 @@ export const GENESIS: Reading[] = [
       {
         label: 'Two', ref: '16:7–16', kind: 'scene', form: 'prose', title: 'The God who sees',
         verses: [
-          { n: 7, text: 'The angel of the LORD found Hagar near a spring in the desert, the spring beside the road to Shur.' },
-          { n: 8, text: 'And he said, “Hagar, slave of Sarai, where have you come from, and where are you going?” “I am running away from my mistress Sarai,” she answered.' },
-          { n: 10, text: 'The angel added, “I will increase your descendants so much that they will be too many to count.”' },
-          { n: 11, text: '“You are now pregnant and you will have a son. You shall name him Ishmael, for the LORD has heard your misery.”' },
-          { n: 13, text: 'She gave this name to the LORD who spoke to her: “You are the God who sees me,” for she said, “I have now seen the One who sees me.”' },
-          { n: 14, text: 'That is why the well was called Beer Lahai Roi; it is still there, between Kadesh and Bered.' }
+          { n: 7, text: 'Now the angel of the LORD found Hagar by a spring of water in the desert—the spring along the road to Shur.' },
+          { n: 8, text: '“Hagar, servant of Sarai,” he said, “where have you come from, and where are you going?” “I am running away from my mistress Sarai,” she replied.' },
+          { n: 10, text: 'Then the angel added, “I will greatly multiply your offspring so that they will be too numerous to count.”' },
+          { n: 11, text: 'The angel of the LORD proceeded: “Behold, you have conceived and will bear a son. And you shall name him Ishmael, for the LORD has heard your cry of affliction.' },
+          { n: 13, text: 'So Hagar gave this name to the LORD who had spoken to her: “You are the God who sees me,” for she said, “Here I have seen the One who sees me!”' },
+          { n: 14, text: 'Therefore the well was called Beer-lahai-roi. It is located between Kadesh and Bered.' }
         ],
         ground: { kind: 'historical', text: 'This is the first time in the Bible anyone gives God a name, and it is not a patriarch who does it. It is a pregnant, runaway, foreign slave woman, alone in the desert. The promise of descendants too many to count, language used until now only for Abram, is spoken over her son.', src: 'Trible · Westermann' },
         meaning: 'God goes after the one who was thrown away, not the one who holds the promise. He finds Hagar in the wilderness, calls her by name, and hears her misery. The instruction to return is hard, almost unbearable, but she does not go back the same. She goes back having been seen by God when no one else saw her at all, and she, the slave, is the one who gets to name him.',
@@ -2513,17 +2513,17 @@ export const GENESIS: Reading[] = [
       {
         ref: 'Genesis 17 (selected)', kind: 'scene', form: 'prose', title: 'Circumcision',
         verses: [
-          { n: 1, text: 'When Abram was ninety-nine years old, the LORD appeared to him and said, “I am God Almighty; walk before me faithfully and be blameless.' },
-          { n: 4, text: 'As for me, this is my covenant with you: you will be the father of many nations.' },
-          { n: 5, text: 'No longer will you be called Abram; your name will be Abraham, for I have made you a father of many nations.' },
-          { n: 7, text: 'I will establish my covenant as an everlasting covenant between me and you and your descendants after you, to be your God and the God of your descendants.' },
-          { n: 10, text: 'This is my covenant, which you are to keep: every male among you shall be circumcised.' },
-          { n: 11, text: 'You are to undergo circumcision, and it will be the sign of the covenant between me and you.' },
-          { n: 15, text: 'God also said, “As for Sarai your wife, you are no longer to call her Sarai; her name will be Sarah.' },
-          { n: 16, text: 'I will bless her and surely give you a son by her. She will be the mother of nations; kings of peoples will come from her.”' },
-          { n: 17, text: 'Abraham fell facedown; he laughed and said to himself, “Will a son be born to a man a hundred years old? Will Sarah bear a child at ninety?”' },
-          { n: 19, text: 'Then God said, “Yes, but your wife Sarah will bear you a son, and you will call him Isaac. I will establish my covenant with him as an everlasting covenant for his descendants after him.”' },
-          { n: 23, text: 'On that very day Abraham took his son Ishmael and all those born in his household, and circumcised them, as God had told him.' }
+          { n: 1, text: 'When Abram was ninety-nine years old, the LORD appeared to him and said, “I am God Almighty. Walk before Me and be blameless.' },
+          { n: 4, text: '“As for Me, this is My covenant with you: You will be the father of many nations.' },
+          { n: 5, text: 'No longer will you be called Abram, but your name will be Abraham, for I have made you a father of many nations.' },
+          { n: 7, text: 'I will establish My covenant as an everlasting covenant between Me and you and your descendants after you, to be your God and the God of your descendants after you.' },
+          { n: 10, text: 'This is My covenant with you and your descendants after you, which you are to keep: Every male among you must be circumcised.' },
+          { n: 11, text: 'You are to circumcise the flesh of your foreskin, and this will be a sign of the covenant between Me and you.' },
+          { n: 15, text: 'Then God said to Abraham, “As for Sarai your wife, do not call her Sarai, for her name is to be Sarah.' },
+          { n: 16, text: 'And I will bless her and will surely give you a son by her. I will bless her, and she will be the mother of nations; kings of peoples will descend from her.”' },
+          { n: 17, text: 'Abraham fell facedown. Then he laughed and said to himself, “Can a child be born to a man who is a hundred years old? Can Sarah give birth at the age of ninety?”' },
+          { n: 19, text: 'But God replied, “Your wife Sarah will indeed bear you a son, and you are to name him Isaac. I will establish My covenant with him as an everlasting covenant for his descendants after him.' },
+          { n: 23, text: 'On that very day Abraham took his son Ishmael and all those born in his household or purchased with his money—every male among the members of Abraham’s household—and he circumcised them, just as God had told him.' }
         ],
         ground: { kind: 'historical', text: 'This is the priestly counterpart to chapter 15’s covenant: the same promise sealed a second time, in a different voice, now with a sign cut into the body. Abram becomes Abraham and Sarai becomes Sarah, new names for a remade identity. Circumcision becomes the mark that says whose you are, and it mattered most much later, in exile, when a people with no land and no temple still carried the covenant on their bodies. Notice too that Abraham laughs at the promise here, one chapter before Sarah does; the son’s name, Isaac, means “he laughs.”', src: 'Friedman · Smith' }
       }
@@ -2539,14 +2539,14 @@ export const GENESIS: Reading[] = [
       {
         label: 'One', ref: '18:1–15', kind: 'scene', form: 'prose', title: 'Sarah laughs',
         verses: [
-          { n: 1, text: 'The LORD appeared to Abraham near the great trees of Mamre while he was sitting at the entrance to his tent in the heat of the day.' },
-          { n: 2, text: 'He looked up and saw three men standing nearby. He hurried to meet them and bowed low to the ground.' },
-          { n: 6, text: 'So Abraham hurried into the tent and said to Sarah, “Quick, get three measures of the finest flour and bake some bread.”' },
-          { n: 10, text: 'Then one of them said, “I will surely return to you about this time next year, and Sarah your wife will have a son.” Now Sarah was listening at the entrance to the tent, behind him.' },
-          { n: 11, text: 'Abraham and Sarah were already very old, and Sarah was past the age of childbearing.' },
-          { n: 12, text: 'So Sarah laughed to herself as she thought, “After I am worn out and my lord is old, will I now have this joy?”' },
-          { n: 14, text: '“Is anything too hard for the LORD? I will return to you at the appointed time next year, and Sarah will have a son.”' },
-          { n: 15, text: 'Sarah was afraid, so she lied and said, “I did not laugh.” But he said, “Yes, you did laugh.”' }
+          { n: 1, text: 'Then the LORD appeared to Abraham by the Oaks of Mamre in the heat of the day, while he was sitting at the entrance of his tent.' },
+          { n: 2, text: 'And Abraham looked up and saw three men standing nearby. When he saw them, he ran from the entrance of his tent to meet them and bowed low to the ground.' },
+          { n: 6, text: 'So Abraham hurried into the tent and said to Sarah, “Quick! Prepare three seahs of fine flour, knead it, and bake some bread.”' },
+          { n: 10, text: 'Then the LORD said, “I will surely return to you at this time next year, and your wife Sarah will have a son!” Now Sarah was behind him, listening at the entrance to the tent.' },
+          { n: 11, text: 'And Abraham and Sarah were already old and well along in years; Sarah had passed the age of childbearing.' },
+          { n: 12, text: 'So she laughed to herself, saying, “After I am worn out and my master is old, will I now have this pleasure?”' },
+          { n: 14, text: 'Is anything too difficult for the LORD? At the appointed time I will return to you—in about a year—and Sarah will have a son.”' },
+          { n: 15, text: 'But Sarah was afraid, so she denied it and said, “I did not laugh.” “No,” replied the LORD, “but you did laugh.”' }
         ],
         ground: { kind: 'setting', text: 'The scene runs on the iron law of desert hospitality: a stranger at your tent must be fed and protected, and Abraham’s frantic generosity is exactly what the code demanded. The promise that has hung in the air for chapters finally gets a date, by this time next year. The son’s name, Isaac, means “he laughs,” and nearly everyone in these chapters laughs at the promise before it arrives.', src: 'Alter · Westermann' },
         meaning: 'The promise has been spoken so many times, to a couple now far too old, that the only honest response left is a tired laugh behind the tent flap. And God does not punish the laugh. He names it, gently, and asks the question the whole book turns on: is anything too hard for the LORD? The son will be called Laughter, as if to keep the disbelief and the joy in the same word forever.',
@@ -2560,15 +2560,15 @@ export const GENESIS: Reading[] = [
       {
         label: 'Two', ref: '18:16–33', kind: 'scene', form: 'prose', title: 'Abraham bargains',
         verses: [
-          { n: 17, text: 'Then the LORD said, “Shall I hide from Abraham what I am about to do?”' },
-          { n: 20, text: 'So the LORD said, “The outcry against Sodom and Gomorrah is so great and their sin so grievous' },
-          { n: 23, text: 'Then Abraham approached him and said, “Will you sweep away the righteous with the wicked?' },
-          { n: 24, text: 'What if there are fifty righteous people in the city? Will you really sweep it away and not spare it for the fifty?' },
-          { n: 25, text: 'Far be it from you to kill the righteous with the wicked, treating them alike. Will not the Judge of all the earth do right?”' },
-          { n: 26, text: 'The LORD said, “If I find fifty righteous people in Sodom, I will spare the whole place for their sake.”' },
-          { n: 27, text: 'Then Abraham spoke again: “Now that I have been so bold, though I am nothing but dust and ashes,' },
-          { n: 32, text: 'may I speak just once more. What if only ten can be found there?” He answered, “For the sake of ten, I will not destroy it.”' },
-          { n: 33, text: 'When the LORD had finished speaking with Abraham, he left, and Abraham returned home.' }
+          { n: 17, text: 'And the LORD said, “Shall I hide from Abraham what I am about to do?' },
+          { n: 20, text: 'Then the LORD said, “The outcry against Sodom and Gomorrah is great. Because their sin is so grievous,' },
+          { n: 23, text: 'Abraham stepped forward and said, “Will You really sweep away the righteous with the wicked?' },
+          { n: 24, text: 'What if there are fifty righteous ones in the city? Will You really sweep it away and not spare the place for the sake of the fifty righteous ones who are there?' },
+          { n: 25, text: 'Far be it from You to do such a thing—to kill the righteous with the wicked, so that the righteous and the wicked are treated alike. Far be it from You! Will not the Judge of all the earth do what is right?”' },
+          { n: 26, text: 'So the LORD replied, “If I find fifty righteous ones within the city of Sodom, on their account I will spare the whole place.”' },
+          { n: 27, text: 'Then Abraham answered, “Now that I have ventured to speak to the Lord—though I am but dust and ashes—' },
+          { n: 32, text: 'Finally, Abraham said, “May the Lord not be angry, but let me speak once more. Suppose ten are found there?” And He answered, “On account of the ten, I will not destroy it.”' },
+          { n: 33, text: 'When the LORD had finished speaking with Abraham, He departed, and Abraham returned home.' }
         ],
         ground: { kind: 'historical', text: 'Abraham haggles with God like a man bargaining in a market, and God lets him, all the way down from fifty to ten. The argument assumes something radical: that the fate of a city is a real question of justice God can be held to, and that a human being may press him on it.', src: 'von Rad · Brueggemann' },
         meaning: 'A man stands in front of God and argues, on behalf of strangers, that mercy should outweigh judgment, and God does not strike him down for it. He welcomes the bargaining. The same book that praised Abram’s silent trust now honors his loud objection, because both are ways of taking God seriously. Abraham pleads for a wicked city, and the floor keeps dropping, because the question he asks, will the Judge of all the earth do right, is one God seems glad to be asked.',
@@ -2591,14 +2591,14 @@ export const GENESIS: Reading[] = [
       {
         label: 'One', ref: '19:1–11', kind: 'scene', form: 'prose', title: 'The city at the door',
         verses: [
-          { n: 1, text: 'The two angels arrived at Sodom in the evening, and Lot was sitting in the gateway of the city. When he saw them, he got up to meet them and bowed down with his face to the ground.' },
-          { n: 2, text: '“My lords,” he said, “please turn aside to your servant’s house. You can wash your feet and spend the night.”' },
-          { n: 4, text: 'Before they had gone to bed, all the men of the city, from every quarter, young and old, surrounded the house.' },
-          { n: 5, text: 'They called to Lot, “Where are the men who came to you tonight? Bring them out to us so that we can have our way with them.”' },
-          { n: 6, text: 'Lot went outside to meet them and shut the door behind him' },
-          { n: 8, text: 'and said, “Look, I have two daughters. Let me bring them out to you, and do with them as you like. But do nothing to these men, for they have come under the protection of my roof.”' },
-          { n: 9, text: '“Get out of our way,” they said. “This fellow came here as a foreigner, and now he wants to play the judge. We will treat you worse than them.”' },
-          { n: 11, text: 'Then they struck the men at the door with blindness, so that they could not find the door.' }
+          { n: 1, text: 'Now the two angels arrived at Sodom in the evening, and Lot was sitting in the gateway of the city. When Lot saw them, he got up to meet them, bowed facedown,' },
+          { n: 2, text: 'and said, “My lords, please turn aside into the house of your servant; wash your feet and spend the night. Then you can rise early and go on your way.” “No,” they answered, “we will spend the night in the square.”' },
+          { n: 4, text: 'Before they had gone to bed, all the men of the city of Sodom, both young and old, surrounded the house.' },
+          { n: 5, text: 'They called out to Lot, saying, “Where are the men who came to you tonight? Send them out to us so we can have relations with them!”' },
+          { n: 6, text: 'Lot went outside to meet them, shutting the door behind him.' },
+          { n: 8, text: 'Look, I have two daughters who have never slept with a man. Let me bring them to you, and you can do to them as you please. But do not do anything to these men, for they have come under the protection of my roof.”' },
+          { n: 9, text: '“Get out of the way!” they replied. And they declared, “This one came here as a foreigner, and he is already acting like a judge! Now we will treat you worse than them.” And they pressed in on Lot and moved in to break down the door.' },
+          { n: 11, text: 'And they struck the men at the entrance, young and old, with blindness, so that they wearied themselves trying to find the door.' }
         ],
         ground: { kind: 'historical', text: 'The chapter is built as the dark mirror of the one before it. Abraham met three strangers with frantic generosity; the men of Sodom meet two strangers with a mob at the door demanding to violate them. In the ancient world, protecting the vulnerable traveler was close to sacred, and assault on a guest was its absolute violation. Lot’s own offer of his daughters is monstrous, and the text reports it without a word of approval; it shows a man whose sense of honor has rotted along with his city.', src: 'Westermann · Alter' },
         misreading: { named: 'Sodom was destroyed for homosexuality, and the story is God’s verdict on gay people.', why: 'The narrative stages a mob attempting gang rape, an act of violent domination set as the opposite of the hospitality Abraham just showed. When the Bible itself later names Sodom’s sin, it points elsewhere: Ezekiel says Sodom was arrogant, overfed, and unconcerned for the poor and needy. The chapter judges cruelty, injustice, and the violation of the vulnerable. Reading it as a verdict on whom a person loves both misses the text and turns it into the very harm to the vulnerable that the text condemns.' },
@@ -2613,13 +2613,13 @@ export const GENESIS: Reading[] = [
       {
         label: 'Two', ref: '19:15–29', kind: 'scene', form: 'prose', title: 'Don’t look back',
         verses: [
-          { n: 15, text: 'With the coming of dawn, the angels urged Lot, “Hurry, take your wife and your two daughters, or you will be swept away when the city is punished.”' },
-          { n: 16, text: 'When he hesitated, the men grasped his hand and the hands of his wife and daughters and led them safely out, for the LORD was merciful to them.' },
-          { n: 17, text: '“Flee for your lives. Do not look back, and do not stop anywhere in the plain. Flee to the hills, or you will be swept away.”' },
-          { n: 24, text: 'Then the LORD rained down burning sulfur on Sodom and Gomorrah.' },
-          { n: 25, text: 'He overthrew those cities and the entire plain, and all those living in the cities, and the vegetation in the land.' },
+          { n: 15, text: 'At daybreak the angels hurried Lot along, saying, “Get up! Take your wife and your two daughters who are here, or you will be swept away in the punishment of the city.”' },
+          { n: 16, text: 'But when Lot hesitated, the men grabbed his hand and the hands of his wife and his two daughters. And they led them safely out of the city, because of the LORD’s compassion for them.' },
+          { n: 17, text: 'As soon as the men had brought them out, one of them said, “Run for your lives! Do not look back, and do not stop anywhere on the plain! Flee to the mountains, or you will be swept away!”' },
+          { n: 24, text: 'Then the LORD rained down sulfur and fire on Sodom and Gomorrah—from the LORD out of the heavens.' },
+          { n: 25, text: 'Thus He destroyed these cities and the entire plain, including all the inhabitants of the cities and everything that grew on the ground.' },
           { n: 26, text: 'But Lot’s wife looked back, and she became a pillar of salt.' },
-          { n: 29, text: 'So when God destroyed the cities of the plain, he remembered Abraham, and he brought Lot out of the catastrophe.' }
+          { n: 29, text: 'So when God destroyed the cities of the plain, He remembered Abraham, and He brought Lot out of the catastrophe that destroyed the cities where he had lived.' }
         ],
         ground: { kind: 'historical', text: 'The destruction reads like the strange, lifeless landscape around the Dead Sea, a place of sulfur, salt, and tar pits, and the pillar of salt is the kind of story told to explain the salt formations that still stand there. The chapter even says the rescue had nothing to do with Lot’s merit: God remembered Abraham. The disturbing coda that follows, Lot’s daughters and the origin of Moab and Ammon, is a pointed origin story for two of Israel’s rival neighbors.', src: 'Alter · Westermann' },
         meaning: 'Even the rescue is not about the one rescued. Lot is dragged out by the hand because God remembered Abraham, the man who stood on the ridge and bargained for the city. The bargain held: there were not even ten righteous, and Sodom fell. But the one connection to a praying friend was enough to pull a flawed family out by force. And Lot’s wife, looking back at the only world she knew, becomes a monument to the cost of being unable to leave what is already lost.',
@@ -2641,16 +2641,16 @@ export const GENESIS: Reading[] = [
       {
         ref: 'Genesis 20 (selected)', kind: 'scene', form: 'prose', title: 'Sarah and Abimelech',
         verses: [
-          { n: 1, text: 'Abraham moved on to the region of the Negev and stayed in Gerar.' },
-          { n: 2, text: 'There Abraham said of his wife Sarah, “She is my sister.” So Abimelech king of Gerar sent for her and took her.' },
-          { n: 3, text: 'But God came to Abimelech in a dream one night and said, “You are as good as dead because of the woman you have taken; she is a married woman.”' },
-          { n: 4, text: 'Now Abimelech had not gone near her, so he said, “Lord, will you destroy an innocent nation?' },
-          { n: 5, text: 'Did he not say to me, ‘She is my sister,’ and did she not also say, ‘He is my brother’? I have done this with a clear conscience and clean hands.”' },
-          { n: 6, text: 'Then God said to him in the dream, “Yes, I know you did this with a clear conscience, and so I kept you from sinning against me.' },
-          { n: 7, text: 'Now return the man’s wife, for he is a prophet, and he will pray for you and you will live.”' },
-          { n: 11, text: 'Abraham replied, “I said to myself, ‘There is surely no fear of God in this place, and they will kill me because of my wife.’”' },
-          { n: 14, text: 'Then Abimelech brought sheep and cattle and male and female slaves and gave them to Abraham, and he returned Sarah his wife to him.' },
-          { n: 17, text: 'Then Abraham prayed to God, and God healed Abimelech, his wife and his slaves so they could have children again.' }
+          { n: 1, text: 'Now Abraham journeyed from there to the region of the Negev and settled between Kadesh and Shur. While he was staying in Gerar,' },
+          { n: 2, text: 'Abraham said of his wife Sarah, “She is my sister.” So Abimelech king of Gerar had Sarah brought to him.' },
+          { n: 3, text: 'One night, however, God came to Abimelech in a dream and told him, “You are as good as dead because of the woman you have taken, for she is a married woman.”' },
+          { n: 4, text: 'Now Abimelech had not gone near her, so he replied, “Lord, would You destroy a nation even though it is innocent?' },
+          { n: 5, text: 'Didn’t Abraham tell me, ‘She is my sister’? And she herself said, ‘He is my brother.’ I have done this in the integrity of my heart and the innocence of my hands.”' },
+          { n: 6, text: 'Then God said to Abimelech in the dream, “Yes, I know that you did this with a clear conscience, and so I have kept you from sinning against Me. That is why I did not let you touch her.' },
+          { n: 7, text: 'Now return the man’s wife, for he is a prophet; he will pray for you and you will live. But if you do not restore her, be aware that you will surely die—you and all who belong to you.”' },
+          { n: 11, text: 'Abraham replied, “I thought to myself, ‘Surely there is no fear of God in this place. They will kill me on account of my wife.’' },
+          { n: 14, text: 'So Abimelech brought sheep and cattle, menservants and maidservants, and he gave them to Abraham and restored his wife Sarah to him.' },
+          { n: 17, text: 'Then Abraham prayed to God, and God healed Abimelech and his wife and his maidservants, so that they could again bear children—' }
         ],
         ground: { kind: 'historical', text: 'This is the third time a patriarch passes his wife off as his sister to a foreign king, after Genesis 12 and before Genesis 26. Three versions of one story is strong evidence that the traditions behind Genesis circulated in variant forms the editors kept side by side rather than smoothing into one. The sharpest detail here is that Abimelech, the pagan king, behaves more honorably than Abraham, the man of the promise, and God still calls Abraham a prophet.', src: 'Friedman · Westermann' }
       }
@@ -2666,11 +2666,11 @@ export const GENESIS: Reading[] = [
       {
         label: 'One', ref: '21:1–7', kind: 'scene', form: 'prose', title: 'Laughter',
         verses: [
-          { n: 1, text: 'Now the LORD was gracious to Sarah as he had said, and the LORD did for Sarah what he had promised.' },
-          { n: 2, text: 'Sarah became pregnant and bore a son to Abraham in his old age, at the very time God had promised him.' },
-          { n: 3, text: 'Abraham gave the name Isaac to the son Sarah bore him.' },
-          { n: 6, text: 'Sarah said, “God has brought me laughter, and everyone who hears about this will laugh with me.”' },
-          { n: 7, text: 'And she added, “Who would have said to Abraham that Sarah would nurse children? Yet I have borne him a son in his old age.”' }
+          { n: 1, text: 'Now the LORD attended to Sarah as He had said, and the LORD did for Sarah what He had promised.' },
+          { n: 2, text: 'So Sarah conceived and bore a son to Abraham in his old age, at the very time God had promised.' },
+          { n: 3, text: 'And Abraham gave the name Isaac to the son Sarah bore to him.' },
+          { n: 6, text: 'Then Sarah said, “God has made me laugh, and everyone who hears of this will laugh with me.”' },
+          { n: 7, text: 'She added, “Who would have told Abraham that Sarah would nurse children? Yet I have borne him a son in his old age.”' }
         ],
         ground: { kind: 'historical', text: 'Isaac means “he laughs.” Across these chapters the name gathers up every laugh aimed at the promise: Abraham’s in chapter 17, Sarah’s behind the tent in chapter 18, and now Sarah’s again, only this time it is joy instead of disbelief. The same word held the doubt and now holds the delight.', src: 'Alter' },
         meaning: 'The promise that was sworn, signed, dated, and laughed at finally arrives, and it arrives as a baby and a laugh. Sarah’s bitter laugh from behind the tent flap comes back transformed: God has brought me laughter. The thing held against every impossibility for twenty-five years is here, ordinary and astonishing, nursing at an old woman’s breast.',
@@ -2684,16 +2684,16 @@ export const GENESIS: Reading[] = [
       {
         label: 'Two', ref: '21:8–21', kind: 'scene', form: 'prose', title: 'Cast out',
         verses: [
-          { n: 9, text: 'But Sarah saw that the son Hagar the Egyptian had borne to Abraham was mocking,' },
-          { n: 10, text: 'and she said to Abraham, “Get rid of that slave woman and her son, for he will never share in the inheritance with my son Isaac.”' },
-          { n: 11, text: 'The matter distressed Abraham greatly because it concerned his son.' },
-          { n: 12, text: 'But God said to him, “Do not be distressed about the boy and your slave. Listen to whatever Sarah tells you, for it is through Isaac that your offspring will be reckoned.' },
-          { n: 13, text: 'I will make the son of the slave into a nation also, because he is your offspring.”' },
-          { n: 14, text: 'Early the next morning Abraham gave Hagar food and a skin of water, set them on her shoulders, and sent her off with the boy. She wandered in the Desert of Beersheba.' },
-          { n: 16, text: 'She sat down a little way off, about a bowshot away, for she thought, “I cannot watch the boy die.” And as she sat there, she began to sob.' },
-          { n: 17, text: 'God heard the boy crying, and the angel of God called to Hagar from heaven, “What is the matter, Hagar? Do not be afraid; God has heard the boy crying as he lies there.”' },
-          { n: 19, text: 'Then God opened her eyes and she saw a well of water. So she filled the skin and gave the boy a drink.' },
-          { n: 20, text: 'God was with the boy as he grew up.' }
+          { n: 9, text: 'But Sarah saw that the son whom Hagar the Egyptian had borne to Abraham was mocking her son,' },
+          { n: 10, text: 'and she said to Abraham, “Expel the slave woman and her son, for the slave woman’s son will never share in the inheritance with my son Isaac!”' },
+          { n: 11, text: 'Now this matter distressed Abraham greatly because it concerned his son Ishmael.' },
+          { n: 12, text: 'But God said to Abraham, “Do not be distressed about the boy and your maidservant. Listen to everything that Sarah tells you, for through Isaac your offspring will be reckoned.' },
+          { n: 13, text: 'But I will also make a nation of the slave woman’s son, because he is your offspring.”' },
+          { n: 14, text: 'Early in the morning, Abraham got up, took bread and a skin of water, put them on Hagar’s shoulders, and sent her away with the boy. She left and wandered in the Wilderness of Beersheba.' },
+          { n: 16, text: 'Then she went off and sat down nearby, about a bowshot away, for she said, “I cannot bear to watch the boy die!” And as she sat nearby, she lifted up her voice and wept.' },
+          { n: 17, text: 'Then God heard the voice of the boy, and the angel of God called to Hagar from heaven, “What is wrong, Hagar? Do not be afraid, for God has heard the voice of the boy where he lies.' },
+          { n: 19, text: 'Then God opened her eyes, and she saw a well of water. So she went and filled the skin with water and gave the boy a drink.' },
+          { n: 20, text: 'And God was with the boy, and he grew up and settled in the wilderness and became a great archer.' }
         ],
         ground: { kind: 'historical', text: 'This is Hagar’s second exile, and it is harder than the first. Last time she ran; this time she is sent, with a child and a single skin of water, into a desert where she expects to bury her son. The text does not soften Abraham’s act or Sarah’s demand. It simply records that God hears the boy and does not let him die.', src: 'Trible · Westermann' },
         meaning: 'The arrival of the promised son and the casting out of the other son happen on the same page, and the book refuses to pretend the second is clean. A child is sent toward death by thirst so an inheritance can stay whole. And again, as in chapter 16, the God of the covenant turns toward the discarded ones: he hears the boy, opens the mother’s eyes to water already there, and keeps a promise to a child who was never the chosen one. The chosen line has a shadow, and God does not abandon the shadow.',
@@ -2717,13 +2717,13 @@ export const GENESIS: Reading[] = [
       {
         label: 'One', ref: '22:1–8', kind: 'scene', form: 'prose', title: 'Take your son',
         verses: [
-          { n: 1, text: 'Some time later God tested Abraham. He said to him, “Abraham!” “Here I am,” he replied.' },
-          { n: 2, text: 'Then God said, “Take your son, your only son, whom you love, Isaac, and go to the region of Moriah. Offer him there as a burnt offering on a mountain I will show you.”' },
-          { n: 3, text: 'Early the next morning Abraham got up and saddled his donkey. He took two of his servants and his son Isaac, and he set out for the place God had told him about.' },
+          { n: 1, text: 'Some time later God tested Abraham and said to him, “Abraham!” “Here I am,” he answered.' },
+          { n: 2, text: '“Take your son,” God said, “your only son Isaac, whom you love, and go to the land of Moriah. Offer him there as a burnt offering on one of the mountains, which I will show you.”' },
+          { n: 3, text: 'So Abraham got up early the next morning, saddled his donkey, and took along two of his servants and his son Isaac. He split the wood for a burnt offering and set out for the place God had designated.' },
           { n: 4, text: 'On the third day Abraham looked up and saw the place in the distance.' },
-          { n: 6, text: 'Abraham took the wood for the burnt offering and placed it on his son Isaac, and he himself carried the fire and the knife. As the two of them went on together,' },
-          { n: 7, text: 'Isaac spoke up: “Father? The fire and the wood are here, but where is the lamb for the burnt offering?”' },
-          { n: 8, text: 'Abraham answered, “God himself will provide the lamb, my son.” And the two of them went on together.' }
+          { n: 6, text: 'Abraham took the wood for the burnt offering and placed it on his son Isaac. He himself carried the fire and the sacrificial knife, and the two of them walked on together.' },
+          { n: 7, text: 'Then Isaac said to his father Abraham, “My father!” “Here I am, my son,” he replied. “The fire and the wood are here,” said Isaac, “but where is the lamb for the burnt offering?”' },
+          { n: 8, text: 'Abraham answered, “God Himself will provide the lamb for the burnt offering, my son.” And the two walked on together.' }
         ],
         ground: { kind: 'historical', text: 'The command is monstrous by the book’s own standards. Child sacrifice is something the Bible elsewhere condemns with horror, and God has just spent chapters insisting Isaac is the one through whom everything comes. The Hebrew piles on the knife: your son, your only son, whom you love. And the man who argued God down over Sodom, who haggled for strangers, says nothing. He gets up early and goes, and the narrator gives us not one word of his inner life across a three-day walk.', src: 'von Rad · Alter · Spiegel' },
         meaning: 'This is the chapter the whole movement has climbed toward, and it refuses to be comfortable. The line that breaks you is the small one, repeated twice: the two of them went on together. A father walks his son to an altar, the boy carrying the wood, and they talk. There is no clean lesson here. There is a command no one should obey, a silence where a protest should be, and a question from a child, where is the lamb, that the father cannot answer straight.',
@@ -2737,13 +2737,13 @@ export const GENESIS: Reading[] = [
       {
         label: 'Two', ref: '22:9–19', kind: 'scene', form: 'prose', title: 'The knife',
         verses: [
-          { n: 9, text: 'When they reached the place, Abraham built an altar and arranged the wood on it. He bound his son Isaac and laid him on the altar, on top of the wood.' },
-          { n: 10, text: 'Then he reached out his hand and took the knife to slay his son.' },
-          { n: 11, text: 'But the angel of the LORD called out to him from heaven, “Abraham! Abraham!” “Here I am,” he replied.' },
-          { n: 12, text: '“Do not lay a hand on the boy. Do not do anything to him. Now I know that you fear God, because you have not withheld from me your son, your only son.”' },
-          { n: 13, text: 'Abraham looked up and there in a thicket he saw a ram caught by its horns. He took the ram and sacrificed it as a burnt offering instead of his son.' },
-          { n: 14, text: 'So Abraham called that place The LORD Will Provide.' },
-          { n: 19, text: 'Then Abraham returned to his servants, and they set off together for Beersheba.' }
+          { n: 9, text: 'When they arrived at the place God had designated, Abraham built the altar there and arranged the wood. He bound his son Isaac and placed him on the altar, atop the wood.' },
+          { n: 10, text: 'Then Abraham reached out his hand and took the knife to slaughter his son.' },
+          { n: 11, text: 'Just then the angel of the LORD called out to him from heaven, “Abraham, Abraham!” “Here I am,” he replied.' },
+          { n: 12, text: '“Do not lay a hand on the boy or do anything to him,” said the angel, “for now I know that you fear God, since you have not withheld your only son from me.”' },
+          { n: 13, text: 'Then Abraham looked up and saw behind him a ram in a thicket, caught by its horns. So he went and took the ram and offered it as a burnt offering in place of his son.' },
+          { n: 14, text: 'And Abraham called that place The LORD Will Provide. So to this day it is said, “On the mountain of the LORD it will be provided.”' },
+          { n: 19, text: 'Abraham went back to his servants, and they got up and set out together for Beersheba. And Abraham settled in Beersheba.' }
         ],
         ground: { kind: 'historical', text: 'The knife is raised, and a voice stops it, and a ram is caught in the thicket. Many read the whole episode as the moment Israel’s God breaks with the surrounding practice of sacrificing children: the animal replaces the son, and never again. Notice what the text says and does not say at the end. Abraham returns to his servants. Isaac is not mentioned coming down the mountain with him. The two who walked up together are not said to walk down together.', src: 'Spiegel · Levenson · Alter' },
         meaning: 'The hand stops. A ram dies instead of a boy, the place is named The LORD Will Provide, and the promise is sworn one more time, stars and sand. And still the story will not let you exhale all the way. Abraham passes the test, but something is spent. He and God never speak again in the book. He comes down the mountain alone in the text. Sarah dies at the start of the next chapter, and the old readers, unable to bear the gap, told stories that she died of the news. The promise survives. The cost is left unmeasured.',
@@ -2765,14 +2765,14 @@ export const GENESIS: Reading[] = [
       {
         ref: 'Genesis 23 (selected)', kind: 'scene', form: 'prose', title: 'Sarah’s death',
         verses: [
-          { n: 1, text: 'Sarah lived to be a hundred and twenty-seven years old.' },
-          { n: 2, text: 'She died at Kiriath Arba (that is, Hebron) in Canaan, and Abraham went to mourn for her and to weep over her.' },
-          { n: 4, text: 'Abraham said to the Hittites, “I am a foreigner and stranger among you. Sell me some property for a burial site here so I can bury my dead.”' },
-          { n: 9, text: '“Ask Ephron son of Zohar to sell me the cave of Machpelah, at the end of his field. Let him sell it to me for the full price, as a burial site among you.”' },
-          { n: 17, text: 'So Ephron’s field in Machpelah was deeded' },
-          { n: 18, text: 'to Abraham as his property in the presence of the Hittites who had come to the gate of the city.' },
-          { n: 19, text: 'Afterward Abraham buried his wife Sarah in the cave in the field of Machpelah.' },
-          { n: 20, text: 'So the field and the cave in it were deeded to Abraham as a burial site.' }
+          { n: 1, text: 'Now Sarah lived to be 127 years old.' },
+          { n: 2, text: 'She died in Kiriath-arba (that is, Hebron) in the land of Canaan, and Abraham went out to mourn and to weep for her.' },
+          { n: 4, text: '“I am a foreigner and an outsider among you. Give me a burial site among you so that I can bury my dead.”' },
+          { n: 9, text: 'to sell me the cave of Machpelah that belongs to him; it is at the end of his field. Let him sell it to me in your presence for full price, so that I may have a burial site.”' },
+          { n: 17, text: 'So Ephron’s field at Machpelah near Mamre, the cave that was in it, and all the trees within the boundaries of the field were deeded over' },
+          { n: 18, text: 'to Abraham’s possession in the presence of all the Hittites who had come to the gate of his city.' },
+          { n: 19, text: 'After this, Abraham buried his wife Sarah in the cave of the field at Machpelah near Mamre (that is, Hebron) in the land of Canaan.' },
+          { n: 20, text: 'So the field and its cave were deeded by the Hittites to Abraham as a burial site.' }
         ],
         ground: { kind: 'historical', text: 'Abraham buys a cave at Machpelah from Ephron the Hittite to bury Sarah, and the long, formal haggling over the price is exactly how property changed hands in the ancient Near East, witnesses at the city gate and all. The quiet point is the chapter’s heart: the man promised the whole land dies owning none of it except a grave. The first piece of the promise he can actually hold is a tomb.', src: 'Sarna · Westermann' }
       }
@@ -2786,14 +2786,14 @@ export const GENESIS: Reading[] = [
       {
         ref: 'Genesis 24 (selected)', kind: 'scene', form: 'prose', title: 'A wife for Isaac',
         verses: [
-          { n: 2, text: 'Abraham said to the senior servant in his household, “Put your hand under my thigh.' },
-          { n: 3, text: 'I want you to swear that you will not get a wife for my son from the daughters of the Canaanites, among whom I live,' },
-          { n: 4, text: 'but will go to my own country and my own relatives and get a wife for my son Isaac.”' },
-          { n: 12, text: 'Then the servant prayed, “LORD, God of my master Abraham, make me successful today, and show kindness to my master Abraham.' },
-          { n: 14, text: 'May it be that when I say to a young woman, ‘Please let down your jar that I may drink,’ and she says, ‘Drink, and I will water your camels too,’ let her be the one you have chosen for Isaac.”' },
-          { n: 15, text: 'Before he had finished praying, Rebekah came out with her jar on her shoulder.' },
-          { n: 19, text: 'After she had given him a drink, she said, “I will draw water for your camels too, until they have finished drinking.”' },
-          { n: 67, text: 'Isaac brought her into the tent of his mother Sarah, and he married Rebekah. So she became his wife, and he loved her; and Isaac was comforted after his mother’s death.' }
+          { n: 2, text: 'So Abraham instructed the chief servant of his household, who managed all he owned, “Place your hand under my thigh,' },
+          { n: 3, text: 'and I will have you swear by the LORD, the God of heaven and the God of earth, that you will not take a wife for my son from the daughters of the Canaanites among whom I am dwelling,' },
+          { n: 4, text: 'but will go to my country and my kindred to take a wife for my son Isaac.”' },
+          { n: 12, text: '“O LORD, God of my master Abraham,” he prayed, “please grant me success today, and show kindness to my master Abraham.' },
+          { n: 14, text: 'Now may it happen that the girl to whom I say, ‘Please let down your jar that I may drink,’ and who responds, ‘Drink, and I will water your camels as well’—let her be the one You have appointed for Your servant Isaac. By this I will know that You have shown kindness to my master.”' },
+          { n: 15, text: 'Before the servant had finished praying, Rebekah came out with her jar on her shoulder. She was the daughter of Bethuel son of Milcah, the wife of Abraham’s brother Nahor.' },
+          { n: 19, text: 'After she had given him a drink, she said, “I will also draw water for your camels, until they have had enough to drink.”' },
+          { n: 67, text: 'And Isaac brought her into the tent of his mother Sarah and took Rebekah as his wife. And Isaac loved her and was comforted after his mother’s death.' }
         ],
         ground: { kind: 'historical', text: 'This is the longest single scene in Genesis, told with a leisure the book usually denies itself, and it is built on a pattern you will see again: a man meets his future bride at a well (Jacob will, and Moses will too). Abraham sends his servant back to the family in Mesopotamia, since marriage was meant to stay within the kin, and the chapter watches providence work not through miracles but through ordinary hospitality, a girl who offers to water the camels.', src: 'Alter · Sarna' }
       }
@@ -2807,13 +2807,13 @@ export const GENESIS: Reading[] = [
       {
         ref: 'Genesis 25:1–18 (selected)', kind: 'scene', form: 'prose', title: 'Abraham’s death',
         verses: [
-          { n: 1, text: 'Abraham had taken another wife, whose name was Keturah.' },
+          { n: 1, text: 'Now Abraham had taken another wife, named Keturah,' },
           { n: 5, text: 'Abraham left everything he owned to Isaac.' },
-          { n: 7, text: 'Abraham lived a hundred and seventy-five years.' },
-          { n: 8, text: 'Then Abraham breathed his last and died at a good old age, an old man and full of years, and he was gathered to his people.' },
-          { n: 9, text: 'His sons Isaac and Ishmael buried him in the cave of Machpelah, near Mamre, in the field he had bought from the Hittites.' },
-          { n: 10, text: 'There Abraham was buried with his wife Sarah.' },
-          { n: 17, text: 'Ishmael lived a hundred and thirty-seven years; then he breathed his last and was gathered to his people.' }
+          { n: 7, text: 'Abraham lived a total of 175 years.' },
+          { n: 8, text: 'And at a ripe old age he breathed his last and died, old and contented, and was gathered to his people.' },
+          { n: 9, text: 'His sons Isaac and Ishmael buried him in the cave of Machpelah near Mamre, in the field of Ephron son of Zohar the Hittite.' },
+          { n: 10, text: 'This was the field that Abraham had bought from the Hittites. Abraham was buried there with his wife Sarah.' },
+          { n: 17, text: 'Ishmael lived a total of 137 years. Then he breathed his last and died, and was gathered to his people.' }
         ],
         ground: { kind: 'historical', text: 'The Abraham story ends mid-chapter. Verses 1 to 18 close his life: his other sons by Keturah, his death at a hundred and seventy-five, and the quiet, remarkable detail that Isaac and Ishmael, the chosen son and the cast-out son, stand together to bury their father. Then at verse 19 the camera shifts to Isaac’s sons and the Jacob story begins. The book does not break at the chapter line; the seam runs through the middle of chapter 25.', src: 'Sarna · Westermann' }
       }

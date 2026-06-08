@@ -37,10 +37,13 @@ per-user access is enforced by Firestore security rules.
 
 ## Hard rules
 
-1. **All scripture is the author's own translation.** It lives in `seed.ts` and future content
-   files. You must NEVER fetch, paste, or "fill in" from NIV, ESV, NRSV, NASB, or any licensed
-   translation, not even to complete a passage the seed abbreviated. If a passage is partial, leave
-   it partial or ask. Pulling a licensed version creates copyright liability. This rule is absolute.
+1. **Scripture is the Berean Standard Bible (BSB), public domain / CC0.** Changed by the owner
+   (2026-06-08) from "the author's own translation" to a real, freely licensed text, to avoid
+   copyright risk. The content files (`content/genesis.ts`, `content/seed.ts`) were re-based on the
+   BSB from `bereanbible.com/bsb.txt` (see `scripts/migrate-bsb.mjs` in git history). You must STILL
+   NEVER fetch, paste, or "fill in" from a copyrighted/licensed translation (NIV, ESV, NRSV, NASB,
+   Alter, Friedman's rendering, etc.); only BSB or another public-domain/CC0 text. Pulling a licensed
+   version creates copyright liability. That part is absolute.
 2. **Scholars are paraphrased and cited, never quoted.** The `src` fields are attribution, not
    permission to reproduce. No block quotes from any source.
 3. **Design tokens only.** Use the CSS custom properties below. No literal hex anywhere in
