@@ -2,6 +2,7 @@
 
 import { useAuth } from "@/components/auth/AuthProvider";
 import { setLastRead } from "@/lib/lastRead";
+import { markRead } from "@/lib/progress";
 import { useEffect } from "react";
 
 // A render-less island on the reader page: when a signed-in reader opens a reading, it
@@ -23,6 +24,7 @@ export function LastReadTracker({
   useEffect(() => {
     if (!user) return;
     setLastRead(user.uid, { bookId, readingId, title, span }).catch(() => {});
+    markRead(user.uid, readingId).catch(() => {});
   }, [user, bookId, readingId, title, span]);
 
   return null;

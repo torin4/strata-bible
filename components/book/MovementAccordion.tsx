@@ -3,6 +3,7 @@ import { SituationPanel } from "@/components/overlays/SituationPanel";
 import { readingsInMovement } from "@/lib/content";
 import type { Capstone, Movement } from "@/lib/types";
 import { BookCapstone } from "./BookCapstone";
+import { MovementProgress } from "./MovementProgress";
 import { ReadingRow } from "./ReadingRow";
 
 // The book's movements as an accordion. Each movement opens to its grounding situation,
@@ -30,33 +31,37 @@ export function MovementAccordion({
         const nextId = movement.doorway?.nextMovementId;
         const nextHref =
           nextId && present.has(nextId) ? `#movement-${nextId}` : undefined;
+        const readings = readingsInMovement(bookId, movement);
         return (
           <details
             key={movement.id}
             id={`movement-${movement.id}`}
             className="group/movement scroll-mt-4 overflow-hidden rounded-[14px] border border-line bg-deep"
           >
-            <summary className="flex cursor-pointer items-start gap-3 px-5 py-4">
-              <span className="flex flex-col gap-1">
-                <span className="font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
-                  Movement {movement.index} &middot; {movement.range}
-                  {movement.composite ? " · composite" : ""}
+            <summary className="cursor-pointer px-5 py-4">
+              <div className="flex items-start gap-3">
+                <span className="flex flex-col gap-1">
+                  <span className="font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
+                    Movement {movement.index} &middot; {movement.range}
+                    {movement.composite ? " · composite" : ""}
+                  </span>
+                  <span className="font-display text-[20px] font-medium leading-[1.2] text-parchment">
+                    {movement.title}
+                  </span>
+                  <span className="font-body text-[13.5px] italic leading-[1.55] text-mist">
+                    {movement.throughline}
+                  </span>
                 </span>
-                <span className="font-display text-[20px] font-medium leading-[1.2] text-parchment">
-                  {movement.title}
+                <span className="ml-auto pt-1 text-[15px] text-mist-2 transition-transform group-open/movement:rotate-45 group-open/movement:text-gold">
+                  +
                 </span>
-                <span className="font-body text-[13.5px] italic leading-[1.55] text-mist">
-                  {movement.throughline}
-                </span>
-              </span>
-              <span className="ml-auto pt-1 text-[15px] text-mist-2 transition-transform group-open/movement:rotate-45 group-open/movement:text-gold">
-                +
-              </span>
+              </div>
+              <MovementProgress readingIds={readings.map((r) => r.id)} />
             </summary>
             <div className="flex flex-col gap-4 px-5 pb-5">
               <SituationPanel panel={movement.situation} />
               <ul className="flex flex-col divide-y divide-line overflow-hidden rounded-[12px] border border-line">
-                {readingsInMovement(bookId, movement).map((reading) => (
+                {readings.map((reading) => (
                   <ReadingRow
                     key={reading.id}
                     bookId={bookId}
