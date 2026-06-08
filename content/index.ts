@@ -3,6 +3,7 @@ import {
   ABRAHAM_MOVEMENT,
   GENESIS,
   JACOB_MOVEMENT,
+  JOSEPH_MOVEMENT,
   PRIMEVAL_MOVEMENT,
 } from "./genesis";
 import { JOB_MOVEMENT, SEED } from "./seed";
@@ -58,7 +59,12 @@ export const BOOKS: BookEntry[] = [
     id: "genesis",
     title: "Genesis",
     readings: GENESIS,
-    movements: [PRIMEVAL_MOVEMENT, ABRAHAM_MOVEMENT, JACOB_MOVEMENT],
+    movements: [
+      PRIMEVAL_MOVEMENT,
+      ABRAHAM_MOVEMENT,
+      JACOB_MOVEMENT,
+      JOSEPH_MOVEMENT,
+    ],
   },
   ...seedBooks(),
 ];

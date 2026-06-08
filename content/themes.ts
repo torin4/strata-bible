@@ -207,6 +207,21 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For when your pain is taken up as everyone else’s cause, spoken for so loudly that you vanish from your own story.",
   },
+  "gen-37": {
+    themes: ["god-feels-absent", "injustice", "grief"],
+    speaksTo:
+      "For betrayal by your own people, and the silence of heaven in the worst stretch, when the thing you dreaded happens and no voice explains it.",
+  },
+  "gen-38": {
+    themes: ["injustice", "overlooked"],
+    speaksTo:
+      "For being owed something by someone with power over you, with no clean way to claim it, and the vindication of the one written out of the story.",
+  },
+  "gen-39": {
+    themes: ["temptation", "injustice", "faith-and-fairness"],
+    speaksTo:
+      "For doing the right thing and being punished for it, and the question of whether God is with you when integrity costs you everything.",
+  },
   "gen-2": {
     themes: ["limits", "loneliness"],
     speaksTo:

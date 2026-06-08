@@ -3269,6 +3269,173 @@ export const GENESIS: Reading[] = [
         }
       }
     ]
+  },
+  {
+    id: 'gen-37', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 37', chapterIndex: 37,
+    title: 'Joseph sold',
+    unitLabel: 'Scene',
+    thread: 'A father’s favoritism, a boy’s dreams, and brothers who hate him enough to throw him in a pit and sell him. The deceit that ran through this family comes back on Jacob through his own sons, with a bloodied coat.',
+    closeEnd: 'Jacob, who fooled his blind father with a goat and a garment, is now fooled by his sons with a goat and a garment. The favored son is gone, and heaven says nothing.',
+    passages: [
+      {
+        label: 'One', ref: '37:3–11', kind: 'scene', form: 'prose', title: 'The dreamer',
+        verses: [
+          { n: 3, text: 'Now Israel loved Joseph more than his other sons, because Joseph had been born to him in his old age; so he made him a robe of many colors.' },
+          { n: 4, text: 'When Joseph’s brothers saw that their father loved him more than any of them, they hated him and could not speak a kind word to him.' },
+          { n: 5, text: 'Then Joseph had a dream, and when he told it to his brothers, they hated him even more.' },
+          { n: 8, text: '“Do you intend to reign over us?” his brothers asked. “Will you actually rule us?” So they hated him even more because of his dream and his statements.' },
+          { n: 11, text: 'And his brothers were jealous of him, but his father kept in mind what he had said.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The famous coat marks Joseph as the favored heir, a provocation in a house already split down the middle, Jacob loving Rachel’s son the way his own father once loved Esau, the family wound repeating to a third generation. The dreams of sheaves and stars bowing down only pour oil on it. And the brothers cannot speak a kind word to him, a small, devastating line about a family where love has curdled into something that cannot even be civil.',
+          src: 'Alter · Sarna · Westermann'
+        },
+        meaning: 'Favoritism is this family’s inherited disease, and Jacob, of all people, should know what it does. He was the favored son who tore his own family in half. And here he is dressing one boy in a coat that says, out loud, that he matters more than his brothers. The text does not make Joseph innocent either: he is gifted and insufferable, dreaming aloud of the others bowing to him. What it shows is a wound handed down a third time, and a household that has forgotten how to be kind.',
+        lenses: {
+          theo: 'The patterns we hated in our parents we tend to repeat on our children, unless something costly breaks them. Jacob’s favoritism is Isaac’s favoritism is the same poison passed down the line, and it will take the near-destruction of this family to begin to drain it. Grace, in this story, works slowly, through generations, and through wreckage.',
+          arch: 'Joseph is the marked child, the one singled out as special, carrying a real gift and the inflation that makes him unbearable to everyone around him. The favored one becomes the family’s lightning rod, and the gift that sets him apart is the very thing that gets him thrown down.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know a family pattern you swore you would never repeat, and the way it can show up in your own hands anyway.'
+        },
+        soft: 'The wounds we carry have a way of becoming the wounds we hand on, unless we catch them.',
+        ask: 'What pattern from the family that made you are you most afraid of repeating, and where do you already see it?'
+      },
+      {
+        label: 'Two', ref: '37:18–34', kind: 'scene', form: 'prose', title: 'The pit',
+        verses: [
+          { n: 19, text: '“Here comes that dreamer!” they said to one another.' },
+          { n: 20, text: '“Come now, let us kill him and throw him into one of the pits. We can say that a vicious animal has devoured him. Then we shall see what becomes of his dreams!”' },
+          { n: 23, text: 'So when Joseph came to his brothers, they stripped him of his robe—the robe of many colors he was wearing—' },
+          { n: 24, text: 'and they took him and threw him into the pit. Now the pit was empty, with no water in it.' },
+          { n: 27, text: 'Come, let us sell him to the Ishmaelites and not lay a hand on him; for he is our brother, our own flesh.” And they agreed.' },
+          { n: 28, text: 'So when the Midianite traders passed by, his brothers pulled Joseph out of the pit and sold him for twenty shekels of silver to the Ishmaelites, who took him to Egypt.' },
+          { n: 31, text: 'Then they took Joseph’s robe, slaughtered a young goat, and dipped the robe in its blood.' },
+          { n: 33, text: 'His father recognized it and said, “It is my son’s robe! A vicious animal has devoured him. Joseph has surely been torn to pieces!”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'They strip him of the coat first, the symbol of the favor they hate, then pit him, then sell him; Judah is the one who turns fratricide into a profit. And then comes the cruelest echo in Genesis: the brothers kill a young goat, dip the coat in its blood, and use a goat and a garment to deceive their father, the exact two props Jacob once used to deceive his. The deceiver is deceived by his own children, in his own currency.',
+          src: 'Alter · Sarna'
+        },
+        meaning: 'The family’s signature move comes all the way home. Jacob fooled his blind father with a goat and a borrowed garment; now his sons fool him with a goat and Joseph’s garment, and it costs him the son he loved most. The lie he built his life on is handed back to him whole. And over the entire catastrophe, for the first time in the cycle, heaven is silent. No dream, no voice, no angel, no rescue. Joseph goes down into Egypt and God does not say a word, for years.',
+        lenses: {
+          theo: 'This is the start of the strangest providence in Genesis. There is no miracle in this chapter, no intervention, only a vicious human crime and a long silence. The God who walked and spoke openly with Abraham and Jacob goes quiet here, and works, if he is working at all, hidden inside the wreckage, in a direction no one in the scene can see.',
+          arch: 'The pit is the descent every real story requires, the going-under before any rising. The gifted self, too full of itself, is stripped and thrown down into the dark, sold, carried off. You do not get the heights in this story without first being lowered into the empty cistern.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the silence of heaven in the worst stretch, when the very thing you dreaded happens and no voice arrives to explain it.'
+        },
+        soft: 'God said nothing here, and was not absent. Those are not the same thing.',
+        ask: 'Where has heaven gone quiet on you, and what would it change to trust that silence is not the same as absence?'
+      }
+    ]
+  },
+  {
+    id: 'gen-38', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 38', chapterIndex: 38,
+    title: 'Judah and Tamar',
+    thread: 'The story leaves Joseph for a chapter to follow Judah, who fails a widow named Tamar, until the wronged woman with no power left takes justice into her own hands and is called more righteous than he is.',
+    closeEnd: 'She is more righteous than I. The man who sold his brother learns what righteousness is from a woman he tried to burn, and the line of David runs straight through her gamble.',
+    passages: [
+      {
+        ref: '38:6–26', kind: 'scene', form: 'prose', title: 'She is more righteous than I',
+        verses: [
+          { n: 7, text: 'But Er, Judah’s firstborn, was wicked in the sight of the LORD; so the LORD put him to death.' },
+          { n: 11, text: 'Then Judah said to his daughter-in-law Tamar, “Live as a widow in your father’s house until my son Shelah grows up.” For he thought, “He may die too, like his brothers.” So Tamar went to live in her father’s house.' },
+          { n: 14, text: 'she removed her widow’s garments, covered her face with a veil to disguise herself, and sat at the entrance to Enaim, which is on the way to Timnah. For she saw that although Shelah had grown up, she had not been given to him as a wife.' },
+          { n: 18, text: '“What pledge should I give you?” he asked. She answered, “Your seal and your cord, and the staff in your hand.” So he gave them to her and slept with her, and she became pregnant by him.' },
+          { n: 24, text: 'About three months later, Judah was told, “Your daughter-in-law Tamar has prostituted herself, and now she is pregnant.” “Bring her out!” Judah replied. “Let her be burned to death!”' },
+          { n: 25, text: 'As she was being brought out, Tamar sent a message to her father-in-law: “I am pregnant by the man to whom these items belong.” And she added, “Please examine them. Whose seal and cord and staff are these?”' },
+          { n: 26, text: 'Judah recognized the items and said, “She is more righteous than I, since I did not give her to my son Shelah.” And he did not have relations with her again.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'Levirate custom obliged a dead man’s brother to give his widow a son to carry on the dead man’s line and secure her future. Judah fails Tamar at it twice over and then strands her, a childless widow with no standing, no protector, and no legal move. So she takes the only path left: she disguises herself, secures Judah’s own seal as proof, and waits. When he condemns her to be burned for exactly the thing he did, she produces the seal. And from this scandalous union comes Perez, an ancestor of David, and far down the line, of Jesus.',
+          src: 'Alter · Sarna · Westermann'
+        },
+        meaning: 'Tamar is wronged by a powerful man who owes her a future and quietly withholds it, and the law hands her nothing. So she takes justice the only way left to her, by cunning and at the risk of her life, and when Judah moves to have her killed for immorality, she holds up his own seal and stops him cold. She is more righteous than I, he says, and it is the first true thing he has said in the whole story. The woman with no power schools the man with all of it, and the chosen line runs not through the respectable man but through the widow he tried to destroy.',
+        lenses: {
+          theo: 'The Bible keeps putting its full weight on the powerless one who refuses to vanish quietly. Tamar has no standing and is the righteous one; Judah has everything and is in the wrong, and he is honest enough, finally, to say so. The promise does not run through the strong and proper here. It runs through a wronged woman’s desperate, righteous gamble.',
+          arch: 'This is cunning turned to its rightful use, not grasping at what is not yours, like Jacob, but forcing your way back into a story you were quietly written out of, and claiming what you are owed. The one cast to the margins refuses the margins.'
+        },
+        misreading: {
+          named: 'This chapter is a sordid detour that interrupts the real Joseph story.',
+          why: 'It is set here on purpose. Judah, who just engineered the sale of his brother, is the man who learns righteousness from Tamar, and it is the beginning of his turning. The same Judah will later step forward and offer his own life in place of Benjamin’s. The interruption is where his change starts.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know what it is to be owed something by someone with power over you, and to have no clean or easy way to claim it.'
+        },
+        soft: 'The one everyone wrote off is often the one telling the truth.',
+        ask: 'Where have you been quietly written out of something you were owed, and what would claiming it honestly require of you?'
+      }
+    ]
+  },
+  {
+    id: 'gen-39', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 39', chapterIndex: 39,
+    title: 'Potiphar’s wife',
+    thread: 'A slave in Egypt, Joseph rises by his integrity and is brought down by it. He refuses his master’s wife, she lies, and he goes to prison for doing the right thing, with the LORD still, somehow, with him.',
+    closeEnd: 'He does the right thing and it costs him his freedom. And the one line that frames the whole disaster does not change: the LORD was with him, in the fine house and in the prison alike.',
+    passages: [
+      {
+        ref: '39:2–21', kind: 'scene', form: 'prose', title: 'The cloak left behind',
+        verses: [
+          { n: 2, text: 'And the LORD was with Joseph, and he became a successful man, serving in the household of his Egyptian master.' },
+          { n: 6, text: 'So Potiphar left all that he owned in Joseph’s care; he did not concern himself with anything except the food he ate. Now Joseph was well-built and handsome,' },
+          { n: 7, text: 'and after some time his master’s wife cast her eyes upon Joseph and said, “Sleep with me.”' },
+          { n: 9, text: 'No one in this house is greater than I am. He has withheld nothing from me except you, because you are his wife. So how could I do such a great evil and sin against God?”' },
+          { n: 12, text: 'She grabbed Joseph by his cloak and said, “Sleep with me!” But leaving his cloak in her hand, he escaped and ran outside.' },
+          { n: 20, text: 'So Joseph’s master took him and had him thrown into the prison where the king’s prisoners were confined. While Joseph was there in the prison,' },
+          { n: 21, text: 'the LORD was with him and extended kindness to him, granting him favor in the eyes of the prison warden.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The chapter is framed at both ends by a single refrain, the LORD was with him, said as plainly over the prison as over the master’s house. In between, Joseph rises to run Potiphar’s entire estate, refuses the master’s wife on the grounds not of getting caught but of sinning against God, and is destroyed by her lie when she is spurned. The cloak left in her hand becomes the false evidence, the second time a garment of Joseph’s is used to tell a lie about him.',
+          src: 'Sarna · Alter · Westermann'
+        },
+        meaning: 'Joseph does exactly the right thing and is punished for it. He refuses, not out of fear of discovery but because it would be a sin against God, and his integrity costs him the cloak off his back and lands him in a cell on a lie. The story flatly refuses the bargain we keep wanting, that doing right will keep you safe. It does not. And yet the sentence that brackets the whole disaster never wavers: the LORD was with him, in the house where he rose and in the prison where he fell. God’s presence, the text insists, is not the same as God’s protection, and it will not pretend otherwise.',
+        lenses: {
+          theo: 'The LORD was with him is said as loudly over the prison as over the palace, and that is the book quietly redefining what it means to be blessed: not exempt from injustice, but accompanied through it. Joseph’s faithfulness is real and it is not rewarded with safety. It is met with company in the dark, which turns out to be a different and harder kind of grace.',
+          arch: 'The cloak is torn from him a second time and turned into a lie about him, the garment-betrayal of his life repeating. The descent is not over; the gifted one is stripped again and sent lower still, because in this kind of story you go down twice before you come up.'
+        },
+        misreading: {
+          named: 'If Joseph had really been faithful, God would have kept him out of prison.',
+          why: 'The text says the opposite in the very same breath: the LORD was with him, and he went to prison. The faithfulness and the suffering are both true at once. The story is built specifically to deny that doing the right thing buys you safety, and to claim something stranger and sturdier instead.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the bitter version of doing the right thing, the kind that costs you and is not rewarded, and the question of whether God is really with you when it does.'
+        },
+        soft: 'Being accompanied is not the same as being spared. It may be the better promise.',
+        ask: 'Where has doing the right thing cost you, and what would change if presence, not protection, were what God was offering in it?'
+      }
+    ]
+  },
+  {
+    id: 'gen-40', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 40 (selected)', chapterIndex: 40,
+    title: 'The cupbearer and the baker',
+    passages: [
+      {
+        ref: 'Genesis 40 (selected)', kind: 'scene', form: 'prose', title: 'The cupbearer and the baker',
+        verses: [
+          { n: 8, text: '“We both had dreams,” they replied, “but there is no one to interpret them.” Then Joseph said to them, “Don’t interpretations belong to God? Tell me your dreams.”' },
+          { n: 14, text: 'But when it goes well for you, please remember me and show me kindness by mentioning me to Pharaoh, that he might bring me out of this prison.' },
+          { n: 23, text: 'The chief cupbearer, however, did not remember Joseph; he forgot all about him.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'In prison Joseph reads the dreams of two of Pharaoh’s officials, the cupbearer and the baker, and reads them truly: one restored, one hanged. He asks for one thing in return, to be remembered. And the cupbearer walks out free and forgets him for two more years. It is the floor of the whole story. Joseph does the one thing he can, accurately and generously, and is forgotten, the gift that will one day save a nation sitting useless in a cell while the one man who could free him puts him out of his mind.',
+          src: 'Sarna · Alter'
+        }
+      }
+    ]
   }
 ];
 
@@ -3398,5 +3565,23 @@ export const JACOB_MOVEMENT: Movement = {
       'The deceit that has run through three generations is about to be done to Jacob one last time, by his own sons, with the same prop, a brother’s bloodied coat. And the answer the next movement gives is the strangest in Genesis: not a rescue, but a long, hidden providence that works through the betrayal rather than around it.',
     ],
     nextMovementId: 'joseph',
+  },
+};
+
+// The Joseph movement (37-50): the dreamer. The last movement of Genesis, so it carries
+// a capstone but no doorway out; the capstone lands once the novella is fully authored.
+export const JOSEPH_MOVEMENT: Movement = {
+  id: 'joseph', index: 4, title: 'Joseph', range: 'Genesis 37–50',
+  throughline: 'The favored son is thrown in a pit and sold into Egypt, rises and falls and rises again by reading dreams, and at last faces the brothers who betrayed him and chooses to read the whole wreckage as a providence that meant it for good.',
+  chapterStart: 37, chapterEnd: 50,
+  situation: {
+    skicker: 'The ground beneath the Joseph story',
+    title: 'A different kind of story, told to exiles',
+    paragraphs: [
+      'The Joseph narrative reads unlike anything before it in Genesis. It is one long, artfully built novella rather than a chain of episodes, a single plot running unbroken from the pit to the deathbed, its foreshadowing and reversals and recognitions all worked out with a novelist’s control.',
+      'And God acts in it differently. There are no more night visions or voices from the fire, no walking in the garden in the cool of the day. For chapters at a stretch heaven is silent, and the providence is hidden inside ordinary events, a sold slave, a false charge, a forgotten promise, a famine, until at the very end a single character names what was going on underneath all along.',
+      'For a people who had themselves been carried off to Egypt and Babylon, a story about an Israelite enslaved in Egypt, who rises in a foreign court, keeps his family alive through catastrophe, and insists that God was at work in the disaster the whole time, was not a tale about the distant past. It was a way to read their own exile, and to dare to trust it.',
+    ],
+    sources: 'von Rad · Alter · Westermann',
   },
 };
