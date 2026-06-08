@@ -123,6 +123,7 @@ export function MenuDrawer() {
             sub={continueSub}
             onNavigate={close}
           />
+          <DrawerLink href="/about" label="About STRATA" onNavigate={close} />
           <div className="my-3 border-t border-line" />
           <DrawerLink
             href="/settings"
