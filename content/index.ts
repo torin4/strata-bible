@@ -19,6 +19,7 @@ export interface BookEntry {
   id: string;
   title: string;
   subtitle?: string; // the book's one-line intro, shown under the title
+  heroImage?: string; // a top-of-page hero image (path under /public)
   readings: Reading[];
   movements: Movement[];
   composition?: Panel;
@@ -64,6 +65,7 @@ export const BOOKS: BookEntry[] = [
     title: "Genesis",
     subtitle:
       "Four movements: the world, the family, the wrestler, the dreamer.",
+    heroImage: "/images/genesis-intro.webp",
     readings: GENESIS,
     movements: [
       PRIMEVAL_MOVEMENT,
