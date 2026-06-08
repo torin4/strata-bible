@@ -23,3 +23,29 @@
     display: none;
   }
 }
+
+/* Landing screen: a staggered rise-in for the wordmark, hero card, and links,
+ * mirroring the proof's riseIn. Each element sets its own animation-delay inline.
+ * Honors reduced-motion by showing everything at rest. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.stagger {
+  opacity: 0;
+  animation: rise-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stagger {
+    animation: none;
+    opacity: 1;
+  }
+}

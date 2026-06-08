@@ -2,47 +2,99 @@ import { AuthMenu } from "@/components/auth/AuthMenu";
 import { BOOKS } from "@/content";
 import Link from "next/link";
 
-// The home: the books STRATA holds. Genesis ships first as a real book with movements;
-// the six genre fixtures sit below it, each a single reading that proves the kind-aware
-// renderer. Each book links to its movement view.
+// The intro / landing, ported from the proof's viewLanding: a centered veil with the
+// STRATA wordmark, a thin gold rule, the tagline, and Genesis as the featured "Book I"
+// card. The six genre fixtures stay reachable in a de-emphasized block below, since the
+// reader still needs them to prove the kind-aware renderer across genres.
+const GENESIS_BLURB =
+  "In the beginning, and everything that breaks and is held after.";
+const TAGLINE =
+  "An illuminated reading of scripture, grounded in the history it grew out of.";
+
 export default function Home() {
+  const genesis = BOOKS.find((book) => book.id === "genesis");
+  const genres = BOOKS.filter((book) => book.id !== "genesis");
+
   return (
-    <main className="min-h-screen bg-shell px-4 py-10 sm:py-16">
-      <div className="mx-auto max-w-[42rem]">
-        <div className="mb-6 flex min-h-[16px] justify-end">
+    <main className="min-h-screen bg-shell px-5 py-8">
+      <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-[26rem] flex-col">
+        <div className="flex min-h-[16px] justify-end">
           <AuthMenu />
         </div>
-        <header className="mb-10 text-center">
-          <div className="font-display text-[18px] font-semibold tracking-[.32em] text-gold-bright">
-            STRATA
-          </div>
-          <div className="mt-2 font-ui text-[11.5px] tracking-[.08em] text-mist-2">
-            history · meaning · the turn · response
-          </div>
-        </header>
 
-        <ul className="flex flex-col divide-y divide-line overflow-hidden rounded-[14px] border border-line bg-deep">
-          {BOOKS.map((book) => {
-            const readingCount = book.readings.length;
-            const movementCount = book.movements.length;
-            return (
-              <li key={book.id}>
-                <Link
-                  href={`/book/${book.id}`}
-                  className="group flex items-baseline justify-between gap-3 px-5 py-4 transition-colors hover:bg-parchment/[0.02]"
-                >
-                  <span className="font-display text-[19px] tracking-[.04em] text-parchment-2 group-hover:text-parchment">
-                    {book.title}
-                  </span>
-                  <span className="shrink-0 font-ui text-[10px] uppercase tracking-[.14em] text-mist-2">
-                    {readingCount} {readingCount === 1 ? "reading" : "readings"}
-                    {movementCount > 0 ? ` · ${movementCount} mvt` : ""}
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="flex flex-1 flex-col justify-center py-10 text-center">
+          <div className="stagger" style={{ animationDelay: ".05s" }}>
+            <div className="ml-[.42em] font-display text-[24px] font-semibold tracking-[.42em] text-gold-bright">
+              STRATA
+            </div>
+            <div className="mx-auto mb-4 mt-[18px] h-px w-[46px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+            <p className="mx-auto max-w-[280px] font-body text-[15px] italic leading-[1.6] text-mist">
+              {TAGLINE}
+            </p>
+          </div>
+
+          {genesis ? (
+            <Link
+              href={`/book/${genesis.id}`}
+              className="stagger group relative mt-[46px] block rounded-[18px] border border-line bg-gradient-to-b from-parchment/[0.035] to-parchment/[0.01] px-[22px] py-6 text-left transition duration-200 hover:-translate-y-0.5 hover:border-gold/45"
+              style={{ animationDelay: ".18s" }}
+            >
+              <span className="absolute right-[14px] top-3 font-display text-[10px] uppercase tracking-[.2em] text-gold">
+                Book I
+              </span>
+              <div className="font-display text-[30px] font-medium leading-none text-gold-bright">
+                {genesis.title}
+              </div>
+              <div className="mb-4 mt-3 font-scripture text-[18px] italic leading-[1.4] text-parchment-2">
+                {GENESIS_BLURB}
+              </div>
+              <div className="font-ui text-[12px] tracking-[.06em] text-lapis group-hover:text-parchment">
+                Begin reading ›
+              </div>
+            </Link>
+          ) : null}
+
+          <div
+            className="stagger mt-6 text-center"
+            style={{ animationDelay: ".32s" }}
+          >
+            <Link
+              href="/journal"
+              className="font-ui text-[12px] tracking-[.06em] text-lapis transition-colors hover:text-parchment"
+            >
+              Your notes ›
+            </Link>
+          </div>
+        </div>
+
+        {genres.length > 0 ? (
+          <div className="stagger pb-2" style={{ animationDelay: ".46s" }}>
+            <div className="mb-3 text-center font-ui text-[9.5px] uppercase tracking-[.22em] text-mist-2">
+              Genre proofs · one reading each
+            </div>
+            <ul className="flex flex-col divide-y divide-line overflow-hidden rounded-[14px] border border-line bg-deep">
+              {genres.map((book) => {
+                const readingCount = book.readings.length;
+                return (
+                  <li key={book.id}>
+                    <Link
+                      href={`/book/${book.id}`}
+                      className="group flex items-baseline justify-between gap-3 px-5 py-3 transition-colors hover:bg-parchment/[0.02]"
+                    >
+                      <span className="font-display text-[15px] tracking-[.04em] text-parchment-2 group-hover:text-parchment">
+                        {book.title}
+                      </span>
+                      <span className="shrink-0 font-ui text-[9.5px] uppercase tracking-[.14em] text-mist-2">
+                        {readingCount}{" "}
+                        {readingCount === 1 ? "reading" : "readings"}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ) : null}
       </div>
     </main>
   );
