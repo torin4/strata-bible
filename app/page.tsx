@@ -24,6 +24,14 @@ export default function Home() {
 
         <div className="flex flex-1 flex-col justify-center py-10 text-center">
           <div className="stagger" style={{ animationDelay: ".05s" }}>
+            {/* Decorative mark; the STRATA wordmark below names it. */}
+            <img
+              src="/strata-logo.svg"
+              alt=""
+              width={58}
+              height={72}
+              className="mx-auto mb-6 h-[72px] w-auto"
+            />
             <div className="ml-[.42em] font-display text-[24px] font-semibold tracking-[.42em] text-gold-bright">
               STRATA
             </div>
