@@ -27,7 +27,7 @@ export default async function BookPage({
   return (
     <main className="min-h-screen bg-shell pb-8 sm:pb-12">
       {book.heroImage ? (
-        <div className="relative aspect-[2752/1000] max-h-[400px] w-full overflow-hidden">
+        <div className="relative aspect-[688/384] max-h-[400px] w-full overflow-hidden">
           {/* Full-bleed decorative banner; the title is text over it. */}
           <img
             src={book.heroImage}
