@@ -2818,6 +2818,190 @@ export const GENESIS: Reading[] = [
         ground: { kind: 'historical', text: 'The Abraham story ends mid-chapter. Verses 1 to 18 close his life: his other sons by Keturah, his death at a hundred and seventy-five, and the quiet, remarkable detail that Isaac and Ishmael, the chosen son and the cast-out son, stand together to bury their father. Then at verse 19 the camera shifts to Isaac’s sons and the Jacob story begins. The book does not break at the chapter line; the seam runs through the middle of chapter 25.', src: 'Sarna · Westermann' }
       }
     ]
+  },
+  {
+    id: 'gen-25b', bookId: 'genesis', tier: 'sitting', movementId: 'jacob',
+    span: 'Genesis 25:19–34', chapterIndex: 25,
+    title: 'Jacob and Esau',
+    unitLabel: 'Scene',
+    thread: 'The struggle starts in the womb. Before either twin has done a thing, an oracle reverses the order of the world, and the younger, the heel-grabber, is the one the promise will run through.',
+    closeEnd: 'The birthright has changed hands, and not one hand is clean. The chosen son is a schemer, and the story knows it.',
+    passages: [
+      {
+        label: 'One', ref: '25:19–26', kind: 'scene', form: 'prose', title: 'Two nations',
+        verses: [
+          { n: 21, text: 'Later, Isaac prayed to the LORD on behalf of his wife, because she was barren. And the LORD heard his prayer, and his wife Rebekah conceived.' },
+          { n: 22, text: 'But the children inside her struggled with each other, and she said, “Why is this happening to me?” So Rebekah went to inquire of the LORD,' },
+          { n: 23, text: 'and He declared to her: “Two nations are in your womb, and two peoples from within you will be separated; one people will be stronger than the other, and the older will serve the younger.”' },
+          { n: 25, text: 'The first one came out red, covered with hair like a fur coat; so they named him Esau.' },
+          { n: 26, text: 'After this, his brother came out grasping Esau’s heel; so he was named Jacob. And Isaac was sixty years old when the twins were born.' }
+        ],
+        ground: {
+          kind: 'genre',
+          text: 'The oracle says the quiet thing out loud: the older will serve the younger, which turns the whole ancient world upside down, where everything went to the firstborn. The twins are also two nations, Israel and Edom, and the writers are reading their own long rivalry back into a shared womb. Jacob means something close to he grasps the heel, which is also an idiom for a cheat. He is named for what he does before he can even speak.',
+          src: 'Sarna · Alter · Westermann'
+        },
+        meaning: 'The choice lands before either child has done anything, good or bad. Jacob is not picked because he is better, he is the grasping one, and Esau is not rejected for some crime. The promise simply runs through the younger, against the rule that says it should not. Election here is not a reward for merit. It is a freedom that owes the favored nothing and the passed-over an answer it never gives.',
+        lenses: {
+          theo: 'Grace that comes before merit is the hardest kind to accept, because it cannot be earned and it cannot be explained. God chooses the younger, the weaker, the one with no claim, and the only honest response is not pride but bewilderment. If it could be deserved it would not be grace.',
+          arch: 'The twins struggling in the dark are an old picture of a self at war with itself, two drives born together and fighting for the upper hand before the light. What rules a life is often decided early, below the level of choice. (The warring brothers as the divided psyche.)'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know the sense of being set inside a struggle you did not start, a rivalry or a role handed to you from before you could choose it.'
+        },
+        soft: 'Some things about your life were decided before you had a say. The question is what you do with them now.',
+        ask: 'What part of your story was set before you could choose it, and how have you been carrying it?'
+      },
+      {
+        label: 'Two', ref: '25:27–34', kind: 'scene', form: 'prose', title: 'The red stew',
+        verses: [
+          { n: 27, text: 'When the boys grew up, Esau became a skillful hunter, a man of the field, while Jacob was a quiet man who stayed at home.' },
+          { n: 29, text: 'One day, while Jacob was cooking some stew, Esau came in from the field and was famished.' },
+          { n: 30, text: 'He said to Jacob, “Let me eat some of that red stew, for I am famished.” (That is why he was also called Edom.)' },
+          { n: 31, text: '“First sell me your birthright,” Jacob replied.' },
+          { n: 32, text: '“Look,” said Esau, “I am about to die, so what good is a birthright to me?”' },
+          { n: 34, text: 'Then Jacob gave some bread and lentil stew to Esau, who ate and drank and then got up and went away. Thus Esau despised his birthright.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The birthright was the double share and the headship of the family, the future itself. Esau trades it for a bowl of red stew while his appetite is loud, and the narrator drily notes that this is why his nation was called Edom, the red. Jacob, for his part, does not share food with a starving brother, he charges him everything he has for it. The scene flatters no one.',
+          src: 'Sarna · Alter'
+        },
+        meaning: 'Watch what each brother is willing to lose. Esau hands over the long future for the thing his body wants in this exact minute, and the text says he despised the birthright, treated the lasting thing as worthless next to a craving. And Jacob will not feed his own brother without a deed of sale. The promise moves, but it moves through a cold transaction between a man who sells his future and a man who exploits a hunger.',
+        misreading: {
+          named: 'Jacob is the hero here and Esau is the fool who got what he deserved.',
+          why: 'The story is harder than that. Esau is reckless, but Jacob is a manipulator who corners a starving man, and the book never pretends otherwise. Being chosen is not the same as being good. The whole point of the Jacob cycle is that grace falls on someone who keeps having to be changed.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know both moves in this scene: trading something that lasts for something you wanted right now, and the colder one, using another person’s need as your leverage.'
+        },
+        soft: 'Appetite is loud and the future is quiet. The trade rarely feels like a trade while you are making it.',
+        ask: 'What lasting thing have you been tempted to spend on an immediate hunger, and what is the hunger really?'
+      }
+    ]
+  },
+  {
+    id: 'gen-26', bookId: 'genesis', tier: 'grounded',
+    span: 'Genesis 26', chapterIndex: 26,
+    title: 'Isaac and the wells',
+    passages: [
+      {
+        ref: 'Genesis 26 (selected)', kind: 'scene', form: 'prose', title: 'Isaac and the wells',
+        verses: [
+          { n: 3, text: 'Stay in this land as a foreigner, and I will be with you and bless you. For I will give all these lands to you and your offspring, and I will confirm the oath that I swore to your father Abraham.' },
+          { n: 7, text: 'But when the men of that place asked about his wife, he said, “She is my sister.” For he was afraid to say, “She is my wife,” since he thought to himself, “The men of this place will kill me on account of Rebekah, because she is so beautiful.”' },
+          { n: 18, text: 'Isaac reopened the wells that had been dug in the days of his father Abraham, which the Philistines had stopped up after Abraham died. And he gave these wells the same names his father had given them.' },
+          { n: 22, text: 'He moved on from there and dug another well, and they did not quarrel over it. He named it Rehoboth and said, “At last the LORD has made room for us, and we will be fruitful in the land.”' },
+          { n: 24, text: 'and that night the LORD appeared to him and said, “I am the God of your father Abraham. Do not be afraid, for I am with you. I will bless you and multiply your descendants for the sake of My servant Abraham.”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'This is the one chapter that is Isaac’s own, and it is built almost entirely from his father’s material: the same famine, the same lie that his wife is his sister, the same wells, re-dug and given back their old names. Isaac is the quiet patriarch, the heir who mostly re-walks the road already walked, holding the promise in place rather than advancing it. Even the reassurance he gets, do not be afraid, comes for the sake of Abraham. The promise passes through a passive man, and passes through intact.',
+          src: 'Sarna · Westermann'
+        }
+      }
+    ]
+  },
+  {
+    id: 'gen-27', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 27', chapterIndex: 27,
+    title: 'The stolen blessing',
+    unitLabel: 'Scene',
+    thread: 'The oracle said the older would serve the younger. Rebekah and Jacob decide not to wait for God to arrange it, and steal the blessing from a blind old man with their own hands.',
+    closeEnd: 'Jacob has the blessing and has lost his home. He leaves with everything promised and nothing he can stay for.',
+    passages: [
+      {
+        label: 'One', ref: '27:11–29', kind: 'scene', form: 'prose', title: 'The disguise',
+        verses: [
+          { n: 11, text: 'Jacob answered his mother Rebekah, “Look, my brother Esau is a hairy man, but I am smooth-skinned.' },
+          { n: 12, text: 'What if my father touches me? Then I would be revealed to him as a deceiver, and I would bring upon myself a curse rather than a blessing.”' },
+          { n: 19, text: 'Jacob said to his father, “I am Esau, your firstborn. I have done as you told me. Please sit up and eat some of my game, so that you may bless me.”' },
+          { n: 22, text: 'So Jacob came close to his father Isaac, who touched him and said, “The voice is the voice of Jacob, but the hands are the hands of Esau.”' },
+          { n: 27, text: 'So he came near and kissed him. When Isaac smelled his clothing, he blessed him and said: “Ah, the smell of my son is like the smell of a field that the LORD has blessed.' },
+          { n: 29, text: 'May peoples serve you and nations bow down to you. May you be the master of your brothers, and may the sons of your mother bow down to you. May those who curse you be cursed, and those who bless you be blessed.”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'A father’s deathbed blessing was treated as a binding act, a word that, once spoken, set the future and could not be recalled. Jacob’s own worry is not that the deceit is wrong but that it might be caught, what if my father touches me. Rebekah engineers the whole thing, perhaps holding the old oracle that the older would serve the younger and steering it home by fraud. Isaac, blind and old, hears the seam in it, the voice is the voice of Jacob, and blesses him anyway.',
+          src: 'von Rad · Alter · Sarna'
+        },
+        meaning: 'The blessing was God’s to give, and the family grabs it by fraud. Jacob gets exactly what was promised in the womb, and gets it by lying to his blind father with his brother’s clothes on his back. The story will not let the chosen line be the clean line. What was meant to come as gift is taken as theft, and the taking will cost Jacob the next twenty years of his life.',
+        lenses: {
+          theo: 'God’s purpose moves forward here through a deception God never blesses. The text holds together two things we like to keep apart: the promise is real, and the people carrying it are liars. Grace is not a reward for good behavior. It is the thing that keeps working on people who have not earned it and will spend years being humbled into it.',
+          arch: 'Jacob is the trickster, the figure in a hundred old stories who wins by cunning what he could not win by strength, and who must eventually be broken of it. The blessing stolen in disguise has to be re-earned in the open, on a riverbank, in the dark, years later. (The trickster who must lose the mask.)'
+        },
+        misreading: {
+          named: 'It worked out in the end, so Rebekah and Jacob were right to deceive Isaac.',
+          why: 'The chapter ends in wreckage: a father betrayed, a brother who wants to kill, a mother who will never see her favorite son again, and a fugitive on the run. The text records the cost in full. It shows the promise advancing and the deceit costing everything in the same breath, and refuses to call the means good because the end arrived.'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know what it is to want a blessing badly enough to take it by a means you would rather not say out loud, and to tell yourself the outcome will settle the question of how you got it.'
+        },
+        soft: 'The thing taken by force still has to be lived with afterward, and it rarely sits quiet.',
+        ask: 'Where have you reached to grab something you could not wait to be given, and what did the grabbing cost?'
+      },
+      {
+        label: 'Two', ref: '27:30–38', kind: 'scene', form: 'prose', title: 'The cry',
+        verses: [
+          { n: 30, text: 'As soon as Isaac had finished blessing him and Jacob had left his father’s presence, his brother Esau returned from the hunt.' },
+          { n: 34, text: 'When Esau heard his father’s words, he let out a loud and bitter cry and said to his father, “Bless me too, O my father!”' },
+          { n: 35, text: 'But Isaac replied, “Your brother came deceitfully and took your blessing.”' },
+          { n: 36, text: 'So Esau declared, “Is he not rightly named Jacob? For he has cheated me twice. He took my birthright, and now he has taken my blessing.” Then he asked, “Haven’t you saved a blessing for me?”' },
+          { n: 38, text: 'Esau said to his father, “Do you have only one blessing, my father? Bless me too, O my father!” Then Esau wept aloud.' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'In the logic of the story a blessing once spoken is spent. It cannot be taken back and re-given, and so Esau, who did nothing wrong this time, is simply too late. His name for his brother is the truest line in the chapter, is he not rightly named Jacob, the cheat. The blessing Esau is finally given is a thinner thing, a life by the sword, away from the richness.',
+          src: 'Westermann · Alter'
+        },
+        meaning: 'The chapter’s most human moment belongs to the brother who lost. Esau, who is no innocent himself, lets out a loud and bitter cry and begs, bless me too, my father, as though surely there had to be more than one. The story does not look away from him. It lets the cost of the chosen line be a real person standing in the doorway, weeping, asking for something that has already been given to someone else.',
+        addr: {
+          mode: 'names',
+          text: 'You know the cry of arriving too late, of asking for the blessing only to be told, gently or not, that it has already gone to someone else.'
+        },
+        soft: 'Being passed over is its own grief, and the one who lost is not always the one who was wrong.',
+        ask: 'Where have you been the one in the doorway, too late, and what would it mean to grieve it honestly instead of pretending it did not land?'
+      }
+    ]
+  },
+  {
+    id: 'gen-28', bookId: 'genesis', tier: 'sitting',
+    span: 'Genesis 28:10–22', chapterIndex: 28,
+    title: 'The ladder at Bethel',
+    thread: 'A fugitive runs from a brother who wants him dead, lies down in open country with a stone for a pillow, and meets God in the last place he expected, before he has said one word of sorry.',
+    closeEnd: 'Grace finds Jacob on the run, undeserving, and renews the whole promise to him in the dark. He wakes changed, and his road is still long.',
+    passages: [
+      {
+        ref: '28:10–22', kind: 'scene', form: 'prose', title: 'The stairway',
+        verses: [
+          { n: 11, text: 'On reaching a certain place, he spent the night there because the sun had set. And taking one of the stones from that place, he put it under his head and lay down to sleep.' },
+          { n: 12, text: 'And Jacob had a dream about a ladder that rested on the earth with its top reaching up to heaven, and God’s angels were going up and down the ladder.' },
+          { n: 13, text: 'And there at the top the LORD was standing and saying, “I am the LORD, the God of your father Abraham and the God of Isaac. I will give you and your descendants the land on which you now lie.' },
+          { n: 15, text: 'Look, I am with you, and I will watch over you wherever you go, and I will bring you back to this land. For I will not leave you until I have done what I have promised you.”' },
+          { n: 16, text: 'When Jacob woke up, he said, “Surely the LORD is in this place, and I was unaware of it.”' },
+          { n: 17, text: 'And he was afraid and said, “How awesome is this place! This is none other than the house of God; this is the gate of heaven!”' }
+        ],
+        ground: {
+          kind: 'historical',
+          text: 'The dream is set at Bethel, a real and ancient holy place, and the picture is not a household ladder but a great stairway, the kind that climbed the side of a Mesopotamian temple-tower to join earth and heaven. The traffic on it runs both ways, heaven busy with the earth. And the promise spoken from the top is unconditional: I am with you, I will watch over you, I will bring you back. Not if you behave. Just, I will.',
+          src: 'Sarna · Walton · Westermann'
+        },
+        meaning: 'God meets Jacob at his lowest and least deserving. He is a fugitive who has just cheated his father and robbed his brother, sleeping rough on a stone in the middle of nowhere, and this is the moment heaven opens over him. There is no repentance first, no apology, no deal struck. The promise is simply renewed to the man on the run, before he has done one thing to earn it back. Surely the LORD is in this place, he says, and I did not know it, which may be the truest thing anyone says in the whole cycle.',
+        lenses: {
+          theo: 'This is grace that arrives before the turning, not after it. We tend to assume God meets us once we have cleaned ourselves up, on the far side of our sorrow. Here he comes to the deceiver mid-flight, in the dark, and binds himself to him anyway. The repentance, when it finally comes, will be the response to the grace, not its price.',
+          arch: 'The stone, the head laid down, the dream opening: this is the descent into the unconscious where the deeper self speaks while the waking will is asleep. The stairway is the axis between the world above and the world below, and what it tells the exhausted ego is that the place it thought was empty was the gate of heaven all along. (The holy found in the wilderness you were only passing through.)'
+        },
+        addr: {
+          mode: 'names',
+          text: 'You know what it is to be running from something you did, bedded down in the bleakest stretch of the road, and to find you were not as alone there as you were certain you were.'
+        },
+        soft: 'God was in the place, and he did not know it. The not-knowing did not make it any less true.',
+        ask: 'Where is a bleak place you are only trying to get through, and what would change if you looked for God to be already in it?'
+      }
+    ]
   }
 ];
 
@@ -2906,5 +3090,23 @@ export const PRIMEVAL_MOVEMENT: Movement = {
       'Where Babel grasped at a name, Abram is given one. The cure for the broken world begins here, with a single act of trust and a long, imperfect walk toward something he will never fully see.',
     ],
     nextMovementId: 'abraham',
+  },
+};
+
+// The Jacob movement (25:19 onward): the wrestler. Authored in batches; its look-back
+// capstone and the doorway into Joseph land once the cycle is fully written.
+export const JACOB_MOVEMENT: Movement = {
+  id: 'jacob', index: 3, title: 'Jacob', range: 'Genesis 25–36',
+  throughline: 'A grasper takes the blessing by fraud and spends twenty years being humbled into it, until a night of wrestling leaves him renamed and limping, and the brother he cheated runs to embrace him.',
+  chapterStart: 26, chapterEnd: 36,
+  situation: {
+    skicker: 'The ground beneath the Jacob story',
+    title: 'How two nations remember a shared womb',
+    paragraphs: [
+      'The Jacob cycle is, among other things, a family explanation of a map. Jacob is Israel; his twin Esau is Edom, the rival just to the southeast; Laban and his daughters stand for the Aramean kin to the northeast. The quarrels in the tents are the quarrels between peoples, told as one fractious household.',
+      'It is also the most morally tangled stretch of Genesis. The hero is a deceiver who grasps from the womb, and the story never tidies him up. It lets grace fall on a man who has done nothing to deserve it, then spends the whole cycle wearing him down, deceived in turn by Laban, until the trickster is finally broken open in the dark by a river.',
+      'For the exiles who shaped it, the shape would have been familiar to the bone: a man driven from home, made to serve a hard master in a far country for long years, and brought back at last to the land he was promised. Jacob’s road out and home is Israel’s own road, read backward.',
+    ],
+    sources: 'Sarna · Westermann · Alter',
   },
 };

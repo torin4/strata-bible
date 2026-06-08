@@ -3,6 +3,17 @@ import type { Movement, Reading } from "@/lib/types";
 
 const BOOK_BY_ID = new Map(BOOKS.map((book) => [book.id, book]));
 
+// A reading belongs to a movement by chapterIndex range, unless it sets movementId to
+// claim a movement explicitly — the override that splits a chapter shared by two
+// movements (the Genesis 25 seam between Abraham and Jacob).
+function belongsTo(reading: Reading, movement: Movement): boolean {
+  if (reading.movementId) return reading.movementId === movement.id;
+  return (
+    reading.chapterIndex >= movement.chapterStart &&
+    reading.chapterIndex <= movement.chapterEnd
+  );
+}
+
 export function getBook(bookId: string): BookEntry | undefined {
   return BOOK_BY_ID.get(bookId);
 }
@@ -33,22 +44,18 @@ export function getMovement(
   bookId: string,
   reading: Reading,
 ): Movement | undefined {
-  return getBook(bookId)?.movements.find(
-    (movement) =>
-      reading.chapterIndex >= movement.chapterStart &&
-      reading.chapterIndex <= movement.chapterEnd,
+  return getBook(bookId)?.movements.find((movement) =>
+    belongsTo(reading, movement),
   );
 }
 
-// The readings that fall inside a movement's chapter range, in span order.
+// The readings that fall inside a movement, in span order.
 export function readingsInMovement(
   bookId: string,
   movement: Movement,
 ): Reading[] {
-  return (getBook(bookId)?.readings ?? []).filter(
-    (reading) =>
-      reading.chapterIndex >= movement.chapterStart &&
-      reading.chapterIndex <= movement.chapterEnd,
+  return (getBook(bookId)?.readings ?? []).filter((reading) =>
+    belongsTo(reading, movement),
   );
 }
 
@@ -59,11 +66,7 @@ export function readingsOutsideMovements(bookId: string): Reading[] {
   if (!book) return [];
   return book.readings.filter(
     (reading) =>
-      !book.movements.some(
-        (movement) =>
-          reading.chapterIndex >= movement.chapterStart &&
-          reading.chapterIndex <= movement.chapterEnd,
-      ),
+      !book.movements.some((movement) => belongsTo(reading, movement)),
   );
 }
 
@@ -76,10 +79,8 @@ export function getClosingMovement(
 ): Movement | undefined {
   const movement = getMovement(bookId, reading);
   if (!movement?.capstone) return undefined;
-  const inMovement = (getBook(bookId)?.readings ?? []).filter(
-    (r) =>
-      r.chapterIndex >= movement.chapterStart &&
-      r.chapterIndex <= movement.chapterEnd,
+  const inMovement = (getBook(bookId)?.readings ?? []).filter((r) =>
+    belongsTo(r, movement),
   );
   const last = inMovement[inMovement.length - 1];
   return last?.id === reading.id ? movement : undefined;

@@ -1,5 +1,10 @@
 import type { Movement, Panel, Reading } from "@/lib/types";
-import { ABRAHAM_MOVEMENT, GENESIS, PRIMEVAL_MOVEMENT } from "./genesis";
+import {
+  ABRAHAM_MOVEMENT,
+  GENESIS,
+  JACOB_MOVEMENT,
+  PRIMEVAL_MOVEMENT,
+} from "./genesis";
 import { JOB_MOVEMENT, SEED } from "./seed";
 
 // A book as the shell needs it: its readings (resolved by span), its movements, and
@@ -53,7 +58,7 @@ export const BOOKS: BookEntry[] = [
     id: "genesis",
     title: "Genesis",
     readings: GENESIS,
-    movements: [PRIMEVAL_MOVEMENT, ABRAHAM_MOVEMENT],
+    movements: [PRIMEVAL_MOVEMENT, ABRAHAM_MOVEMENT, JACOB_MOVEMENT],
   },
   ...seedBooks(),
 ];

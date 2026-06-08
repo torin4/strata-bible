@@ -172,6 +172,21 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For when something in your life feels unformed and stuck, waiting on you to speak it into being.",
   },
+  "gen-25b": {
+    themes: ["anger", "temptation", "control"],
+    speaksTo:
+      "For the rivalry you were born into, and the cold trade of something lasting for something you wanted right now.",
+  },
+  "gen-27": {
+    themes: ["guilt", "control", "overlooked"],
+    speaksTo:
+      "For wanting a blessing badly enough to take it by a means you would rather not name, and for the cry of the one who arrived too late.",
+  },
+  "gen-28": {
+    themes: ["loneliness", "guilt", "fear"],
+    speaksTo:
+      "For the night you are running from what you did, bedded down in the bleakest place, and find you were not as alone as you were sure.",
+  },
   "gen-2": {
     themes: ["limits", "loneliness"],
     speaksTo:

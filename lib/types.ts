@@ -127,6 +127,11 @@ export interface Reading {
   closeMid?: string;
   closeEnd?: string;
   passages: Passage[];
+  // Usually a reading's movement is found by chapterIndex range. When a chapter holds a
+  // seam between two movements (Genesis 25: Abraham's death, then Jacob's birth), the
+  // readings on the far side of the seam set movementId to be assigned explicitly,
+  // overriding the range so neither movement bleeds into the other.
+  movementId?: string;
 }
 
 // ---------------------------------------------------------------------------
