@@ -1,3 +1,4 @@
+import { PageTransition } from "@/components/nav/PageTransition";
 import { LastReadTracker } from "@/components/reader/LastReadTracker";
 import { Reader } from "@/components/reader/Reader";
 import { BOOKS } from "@/content";
@@ -41,7 +42,7 @@ export default async function ReadingPage({
         title={reading.title}
         span={reading.span}
       />
-      <div className="stagger-children mx-auto max-w-[40rem]">
+      <PageTransition className="mx-auto max-w-[40rem]">
         <header className="mb-5 flex flex-col items-center gap-2">
           <Link
             href="/"
@@ -76,7 +77,7 @@ export default async function ReadingPage({
             {book ? `All of ${book.title}` : "All readings"}
           </Link>
         </div>
-      </div>
+      </PageTransition>
     </main>
   );
 }

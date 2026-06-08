@@ -90,24 +90,27 @@ export function Reader({
 
       {reading.thread && isFirst ? <ThreadGloss text={reading.thread} /> : null}
 
-      <Passage
-        key={passage.ref}
-        passage={passage}
-        first
-        bookId={reading.bookId}
-        readingId={reading.id}
-        readingTitle={reading.title}
-      />
+      {/* Keyed on the scene index so each forward/back step rises in, not just the
+          first paint. Crossing into an adjacent reading remounts the whole page. */}
+      <div key={i} className="stagger">
+        <Passage
+          passage={passage}
+          first
+          bookId={reading.bookId}
+          readingId={reading.id}
+          readingTitle={reading.title}
+        />
 
-      {isLast && reading.closeEnd ? (
-        <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
-          {reading.closeEnd}
-        </div>
-      ) : null}
+        {isLast && reading.closeEnd ? (
+          <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
+            {reading.closeEnd}
+          </div>
+        ) : null}
 
-      {isLast && closingMovement?.capstone ? (
-        <Capstone capstone={closingMovement.capstone} />
-      ) : null}
+        {isLast && closingMovement?.capstone ? (
+          <Capstone capstone={closingMovement.capstone} />
+        ) : null}
+      </div>
 
       {hasBack || hasForward ? (
         <nav className="mt-9 flex items-stretch justify-between gap-3 border-t border-line pt-5">

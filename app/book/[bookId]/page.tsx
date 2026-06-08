@@ -1,5 +1,6 @@
 import { MovementAccordion } from "@/components/book/MovementAccordion";
 import { ReadingRow } from "@/components/book/ReadingRow";
+import { PageTransition } from "@/components/nav/PageTransition";
 import { CompositionPanel } from "@/components/overlays/CompositionPanel";
 import { BOOKS } from "@/content";
 import { getBook, readingsOutsideMovements } from "@/lib/content";
@@ -25,7 +26,7 @@ export default async function BookPage({
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
-      <div className="stagger-children mx-auto max-w-[42rem]">
+      <PageTransition className="mx-auto max-w-[42rem]">
         <header className="mb-6 text-center">
           <Link
             href="/"
@@ -71,7 +72,7 @@ export default async function BookPage({
             All books
           </Link>
         </div>
-      </div>
+      </PageTransition>
     </main>
   );
 }
