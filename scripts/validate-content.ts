@@ -50,6 +50,18 @@ for (const book of BOOKS) {
       );
     }
   }
+
+  // A doorway must lead somewhere real: nextMovementId resolves to a movement in the same
+  // book (the next-movement overlay links off it, so a dangling id is a dead doorway).
+  const movementIds = new Set(book.movements.map((m) => m.id));
+  for (const movement of book.movements) {
+    const next = movement.doorway?.nextMovementId;
+    if (next && !movementIds.has(next)) {
+      fail(
+        `${book.id}/${movement.id}: doorway points at unknown movement "${next}"`,
+      );
+    }
+  }
 }
 
 // The find index (content/themes.ts) must point at sittings that actually exist; theme

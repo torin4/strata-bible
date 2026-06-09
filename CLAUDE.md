@@ -13,11 +13,13 @@ the lower-tier middles and personalizes the turn per reader. It is NOT a chat si
 
 ## Source-of-truth files
 
-- `types.ts` — the canonical schema. Typechecks under `--strict`. Do not redesign it.
-- `genesis.ts` — the real content: Genesis 1–25 as `Reading[]` (export `GENESIS`), plus two movements
-  (exports `PRIMEVAL_MOVEMENT` and `ABRAHAM_MOVEMENT`), each with situation, capstone, and doorway.
-  This is the book the app ships first. Typechecked. Genesis content comes from here, nowhere else.
-- `seed.ts` — genre fixtures for the OTHER genres only (Psalm, Leviticus, Romans, Proverbs,
+- `lib/types.ts` — the canonical schema. Typechecks under `--strict`. Do not redesign it.
+- `content/genesis.ts` — the real content: Genesis 1–50 as `Reading[]` (export `GENESIS`), plus four
+  movements (exports `PRIMEVAL_MOVEMENT`, `ABRAHAM_MOVEMENT`, `JACOB_MOVEMENT`, `JOSEPH_MOVEMENT`),
+  each with situation and capstone (and a doorway on all but the last), plus `GENESIS_INTRO` and
+  `GENESIS_CAPSTONE`. This is the book the app ships first. Typechecked. Genesis content comes from
+  here, nowhere else.
+- `content/seed.ts` — genre fixtures for the OTHER genres only (Psalm, Leviticus, Romans, Proverbs,
   Revelation, Job), plus `JOB_MOVEMENT`. Use these to build and test the kind-aware renderer against
   every genre. Do NOT pull Genesis content from here.
 - `strata-genre-proof.html` — a WORKING reference renderer. Its render functions are your
