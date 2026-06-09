@@ -268,7 +268,7 @@ export const GENESIS: Reading[] = [
           text: 'The hardest place to believe this is usually a specific face. Someone you can’t stand, or your own in the mirror.'
         },
         soft: 'The text says the image is in them too. No exceptions.',
-        ask: 'Who is one person—maybe yourself—you struggle to see as carrying it? Sit with that today.'
+        ask: 'Who is one person, maybe yourself, you struggle to see as carrying it? Sit with that today.'
       },
       {
         label: 'Seven',

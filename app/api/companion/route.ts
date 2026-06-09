@@ -2,6 +2,7 @@ import {
   CompanionUnconfiguredError,
   draftMiddle,
 } from "@/lib/companion-server";
+import { findReadingAnywhere } from "@/lib/content";
 import { type NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
@@ -44,7 +45,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  let body: { task?: string; passage?: unknown };
+  let body: { task?: string; readingId?: unknown; passageRef?: unknown };
   try {
     body = await req.json();
   } catch {
@@ -52,18 +53,25 @@ export async function POST(req: NextRequest) {
   }
   if (
     body.task !== "draft-middle" ||
-    !body.passage ||
-    typeof body.passage !== "object"
+    typeof body.readingId !== "string" ||
+    typeof body.passageRef !== "string"
   ) {
     return NextResponse.json({ error: "bad-request" }, { status: 400 });
   }
 
+  // Resolve the passage from authored content by id, ignoring any client-supplied text:
+  // the model only ever sees canonical, bounded scripture, never an arbitrary payload.
+  const found = findReadingAnywhere(body.readingId);
+  const passage = found?.reading.passages.find(
+    (p) => p.ref === body.passageRef,
+  );
+  if (!passage) {
+    return NextResponse.json({ error: "unknown-passage" }, { status: 404 });
+  }
+
   try {
-    // The passage shape is validated structurally by the model schema; the draft falls
-    // back to authored content on the client if anything here fails.
-    const layer = await draftMiddle(
-      body.passage as Parameters<typeof draftMiddle>[0],
-    );
+    // The draft falls back to authored content on the client if anything here fails.
+    const layer = await draftMiddle(passage);
     return NextResponse.json(layer);
   } catch (err) {
     if (err instanceof CompanionUnconfiguredError) {

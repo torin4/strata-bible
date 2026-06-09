@@ -5,7 +5,7 @@ import { type FindEntry, normalize } from "@/lib/find";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Find a reading — STRATA",
+  title: "Find a reading, STRATA",
 };
 
 // Build the compact search index on the server from the full content, so the heavy

@@ -78,7 +78,7 @@ function buildUserMessage(passage: Passage): string {
     `Passage: ${passage.title} (${passage.ref})`,
     `Kind: ${passage.kind}`,
     "",
-    "Scripture (the author's own translation; use only this text):",
+    "Scripture (Berean Standard Bible, public domain; use only this text):",
     scripture,
     "",
     "History:",

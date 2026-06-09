@@ -62,13 +62,20 @@ export async function generateMiddle(
   if (!auth || !db || !user) throw new Error("Sign in to use the companion.");
 
   const idToken = await user.getIdToken();
+  // Send only the identifiers, never the passage text. The route resolves the canonical
+  // passage from authored content server-side, so no client-supplied text ever reaches
+  // the model (closes a prompt-injection / payload-size vector).
   const res = await fetch("/api/companion", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${idToken}`,
     },
-    body: JSON.stringify({ task: "draft-middle", passage }),
+    body: JSON.stringify({
+      task: "draft-middle",
+      readingId,
+      passageRef: passage.ref,
+    }),
   });
   if (!res.ok) {
     throw new Error(
