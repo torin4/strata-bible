@@ -7,6 +7,7 @@ import { ClusterList } from "./ClusterList";
 import { Layer } from "./Layer";
 import { Lenses } from "./Lenses";
 import { Misreading } from "./Misreading";
+import { PassageNotes } from "./PassageNotes";
 import { Prayer } from "./Prayer";
 import { Scripture } from "./Scripture";
 import { Soft } from "./Soft";
@@ -29,6 +30,13 @@ export function Passage({
   readingId: string;
   readingTitle: string;
 }) {
+  const verseNumbers = (
+    passage.verses ??
+    passage.statutes ??
+    passage.sayings ??
+    []
+  ).map((v) => v.n);
+
   return (
     <>
       <div className="mb-1 flex flex-wrap items-baseline gap-[9px]">
@@ -113,6 +121,11 @@ export function Passage({
         </>
       ) : null}
       {passage.prayer ? <Prayer prayer={passage.prayer} /> : null}
+      <PassageNotes
+        readingId={readingId}
+        passageRef={passage.ref}
+        verseNumbers={verseNumbers}
+      />
     </>
   );
 }

@@ -32,16 +32,20 @@ export function HighlightPopover({
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
-    const onScroll = () => onClose();
+    // Close when the verse scrolls away, but only while showing the toolbar. Once the
+    // composer is open, the on-screen keyboard fires scroll/resize, and closing then
+    // would make it impossible to write a note on a phone. (No resize listener for the
+    // same reason: the keyboard's resize must not dismiss the composer.)
+    const onScroll = () => {
+      if (!composing) onClose();
+    };
     window.addEventListener("keydown", onKey);
     window.addEventListener("scroll", onScroll, true);
-    window.addEventListener("resize", onScroll);
     return () => {
       window.removeEventListener("keydown", onKey);
       window.removeEventListener("scroll", onScroll, true);
-      window.removeEventListener("resize", onScroll);
     };
-  }, [onClose]);
+  }, [onClose, composing]);
 
   // Move focus into the dialog on open so a keyboard user lands on the controls, not on
   // the obscured page behind. The composer's textarea takes focus itself via autoFocus.
