@@ -1,5 +1,6 @@
 import { MovementAccordion } from "@/components/book/MovementAccordion";
 import { ReadingRow } from "@/components/book/ReadingRow";
+import { FadeImage } from "@/components/media/FadeImage";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { CompositionPanel } from "@/components/overlays/CompositionPanel";
 import { BOOKS } from "@/content";
@@ -29,7 +30,7 @@ export default async function BookPage({
       {book.heroImage ? (
         <div className="relative aspect-[688/384] max-h-[400px] w-full overflow-hidden">
           {/* Full-bleed decorative banner; the title is text over it. */}
-          <img
+          <FadeImage
             src={book.heroImage}
             alt=""
             fetchPriority="high"
