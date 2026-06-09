@@ -98,14 +98,26 @@ export default function PricingPage() {
             Read the whole strata
           </h1>
           <p className="mx-auto mt-3 max-w-[34rem] font-body text-[15px] leading-[1.7] text-mist">
-            The primeval history, Genesis 1 to 11, is free to everyone. STRATA
-            Plus opens the rest of the book, every book to come, and the
-            companion that draws out the meaning, the turn, and a question for
-            each reading.
+            {billingEnabled
+              ? "The primeval history, Genesis 1 to 11, is free to everyone. STRATA Plus opens the rest of the book, every book to come, and the companion that draws out the meaning, the turn, and a question for each reading."
+              : "Right now the whole of Genesis and the companion are open to every reader, free, while the book finds its first readers. Subscriptions will come later, and the primeval history will always stay free."}
           </p>
         </div>
 
-        {subscribed || isPlus ? (
+        {!billingEnabled ? (
+          <div className="mx-auto mt-8 max-w-[28rem] rounded-[16px] border border-gold/40 bg-gold-soft px-6 py-6 text-center">
+            <p className="font-body text-[15px] leading-[1.7] text-parchment-2">
+              Everything is free right now. Read every chapter, keep your
+              highlights and notes, and let the companion open each reading.
+            </p>
+            <Link
+              href="/book/genesis"
+              className="mt-4 inline-block font-ui text-[11px] uppercase tracking-[.16em] text-gold-bright transition-colors hover:text-gold"
+            >
+              Start reading ›
+            </Link>
+          </div>
+        ) : subscribed || isPlus ? (
           <div className="mx-auto mt-8 max-w-[26rem] rounded-[16px] border border-gold/40 bg-gold-soft px-6 py-6 text-center">
             <p className="font-body text-[15px] leading-[1.7] text-parchment-2">
               You have STRATA Plus. Thank you for reading.
@@ -188,10 +200,12 @@ export default function PricingPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-5 text-center font-body text-[12.5px] italic leading-[1.6] text-mist-2">
-            Billed in US dollars through Stripe. Cancel anytime, and keep access
-            through the period you have paid for.
-          </p>
+          {billingEnabled ? (
+            <p className="mt-5 text-center font-body text-[12.5px] italic leading-[1.6] text-mist-2">
+              Billed in US dollars through Stripe. Cancel anytime, and keep
+              access through the period you have paid for.
+            </p>
+          ) : null}
         </div>
 
         {billingEnabled && !isPlus && books.length > 0 ? (
