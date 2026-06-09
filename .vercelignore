@@ -1,6 +1,12 @@
 .next
 *.tsbuildinfo
+# Keep bulky source PNGs (the 3001px logo, the icon master) out of the deploy, but the
+# PWA and Apple touch icons MUST ship or Chrome cannot install the app and the manifest
+# icons 404. Re-include exactly those three.
 *.png
+!app/apple-icon.png
+!public/icons/icon-192.png
+!public/icons/icon-512.png
 strata-reader.html
 strata-genre-proof.html
 .playwright-mcp
