@@ -17,3 +17,12 @@ export function isFreeReading(reading: Reading): boolean {
 export function isFreeMovement(bookId: string, movementId: string): boolean {
   return bookId === FREE_BOOK_ID && movementId === FREE_MOVEMENT_ID;
 }
+
+// Comped accounts: always treated as STRATA Plus, with no subscription (the owner, and
+// any reviewers). Matched by email, case-insensitive. Kept here (no Firebase import) so
+// both the client provider and the server companion route can check it.
+const COMP_EMAILS = new Set(["torin2582@gmail.com"]);
+
+export function isComped(email: string | null | undefined): boolean {
+  return Boolean(email && COMP_EMAILS.has(email.toLowerCase()));
+}

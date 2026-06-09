@@ -1,3 +1,4 @@
+import { isComped, isFreeReading } from "@/lib/access";
 import {
   CompanionUnconfiguredError,
   draftMiddle,
@@ -9,12 +10,18 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
-// Confirm the caller is a real signed-in reader of this Firebase project before spending
-// a model call. The public web API key is enough to verify an ID token via Identity
-// Toolkit, so no service-account secret is needed.
-async function verifyIdToken(idToken: string): Promise<boolean> {
+interface CallerInfo {
+  email?: string;
+  stripeRole?: string;
+}
+
+// Confirm the caller is a real signed-in reader and recover what we need to authorize the
+// draft: their email (for comped accounts) and their stripeRole custom claim (set by the
+// Stripe extension for STRATA Plus). The public web API key verifies the ID token via
+// Identity Toolkit, so no service-account secret is needed.
+async function lookupCaller(idToken: string): Promise<CallerInfo | null> {
   const apiKey = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
-  if (!apiKey) return false;
+  if (!apiKey) return null;
   try {
     const res = await fetch(
       `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${apiKey}`,
@@ -24,11 +31,23 @@ async function verifyIdToken(idToken: string): Promise<boolean> {
         body: JSON.stringify({ idToken }),
       },
     );
-    if (!res.ok) return false;
-    const data = (await res.json()) as { users?: unknown[] };
-    return Array.isArray(data.users) && data.users.length > 0;
+    if (!res.ok) return null;
+    const data = (await res.json()) as {
+      users?: Array<{ email?: string; customAttributes?: string }>;
+    };
+    const user = data.users?.[0];
+    if (!user) return null;
+    let stripeRole: string | undefined;
+    try {
+      stripeRole = (
+        JSON.parse(user.customAttributes ?? "{}") as { stripeRole?: string }
+      ).stripeRole;
+    } catch {
+      // no/invalid custom claims; treat as no role
+    }
+    return { email: user.email, stripeRole };
   } catch {
-    return false;
+    return null;
   }
 }
 
@@ -41,7 +60,8 @@ export async function POST(req: NextRequest) {
   }
 
   const idToken = req.headers.get("authorization")?.replace(/^Bearer\s+/i, "");
-  if (!idToken || !(await verifyIdToken(idToken))) {
+  const caller = idToken ? await lookupCaller(idToken) : null;
+  if (!caller) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
@@ -65,8 +85,21 @@ export async function POST(req: NextRequest) {
   const passage = found?.reading.passages.find(
     (p) => p.ref === body.passageRef,
   );
-  if (!passage) {
+  if (!found || !passage) {
     return NextResponse.json({ error: "unknown-passage" }, { status: 404 });
+  }
+
+  // With billing on, the companion is STRATA Plus, except on a free reading (the primeval
+  // sample) which any signed-in reader may draw. Plus is proven by the stripeRole claim
+  // (set by the Stripe extension) or a comped account.
+  const billingOn = Boolean(process.env.NEXT_PUBLIC_STRIPE_PRICE_ID);
+  const entitled =
+    !billingOn ||
+    caller.stripeRole === "plus" ||
+    isComped(caller.email) ||
+    isFreeReading(found.reading);
+  if (!entitled) {
+    return NextResponse.json({ error: "plus-required" }, { status: 402 });
   }
 
   try {

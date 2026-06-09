@@ -1,4 +1,5 @@
 import { db } from "@/lib/firebase";
+import { getApp } from "firebase/app";
 import {
   type Unsubscribe,
   addDoc,
@@ -7,6 +8,7 @@ import {
   query,
   where,
 } from "firebase/firestore";
+import { getFunctions, httpsCallable } from "firebase/functions";
 
 // STRATA Plus billing. It is "on" only when a Stripe price is configured; until then the
 // app stays fully open (nothing gated), so the reader and the owner can use everything
@@ -66,4 +68,21 @@ export async function startCheckout(uid: string): Promise<void> {
       }
     });
   });
+}
+
+// Region the Stripe extension's Cloud Functions are deployed to (its install default is
+// us-central1); override if the extension was installed elsewhere.
+const FUNCTIONS_REGION =
+  process.env.NEXT_PUBLIC_STRIPE_FUNCTIONS_REGION ?? "us-central1";
+
+// Open the Stripe Customer Portal (manage or cancel a subscription) via the extension's
+// callable function, then redirect. Only meaningful for an actual subscriber.
+export async function openPortal(): Promise<void> {
+  if (!db) throw new Error("Billing is not configured.");
+  const fn = httpsCallable<{ returnUrl: string }, { url: string }>(
+    getFunctions(getApp(), FUNCTIONS_REGION),
+    "ext-firestore-stripe-payments-createPortalLink",
+  );
+  const { data } = await fn({ returnUrl: window.location.href });
+  window.location.assign(data.url);
 }

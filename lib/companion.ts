@@ -1,6 +1,14 @@
 import { auth, db, isFirebaseConfigured } from "@/lib/firebase";
 import type { AddrMode, Passage } from "@/lib/types";
-import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
+import {
+  type Unsubscribe,
+  doc,
+  getDoc,
+  increment,
+  onSnapshot,
+  serverTimestamp,
+  setDoc,
+} from "firebase/firestore";
 
 // The companion's draft-middle output, merged over an authored passage at render time.
 // Matches the output contract in companion-spec.md. Any missing piece falls back to the
@@ -13,6 +21,38 @@ export interface CompanionLayer {
 }
 
 export const companionEnabled = isFirebaseConfigured;
+
+// The taste: a reader without STRATA Plus gets this many companion draws inside the free
+// primeval sample before the upgrade. Tracked per user; the server still enforces that
+// non-Plus draws only happen on free readings.
+export const FREE_DRAW_LIMIT = 1;
+
+export function subscribeFreeDraws(
+  uid: string,
+  onChange: (used: number) => void,
+): Unsubscribe {
+  if (!db) {
+    onChange(0);
+    return () => {};
+  }
+  return onSnapshot(
+    doc(db, "users", uid, "state", "companionUsage"),
+    (snap) => {
+      const n = snap.exists() ? snap.data().freeDraws : 0;
+      onChange(typeof n === "number" ? n : 0);
+    },
+    () => onChange(0),
+  );
+}
+
+export async function recordFreeDraw(uid: string): Promise<void> {
+  if (!db) return;
+  await setDoc(
+    doc(db, "users", uid, "state", "companionUsage"),
+    { freeDraws: increment(1) },
+    { merge: true },
+  );
+}
 
 // A cheap stable hash of the authored passage. If the scripture or ground changes, the
 // hash changes and any cached draft is treated as stale (regenerated on next ask).

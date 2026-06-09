@@ -1,9 +1,12 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { useSettings } from "@/components/settings/SettingsProvider";
+import { openPortal, startCheckout } from "@/lib/subscription";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SettingsPage() {
   const { user, loading, configured, signOutUser } = useAuth();
@@ -63,6 +66,8 @@ export default function SettingsPage() {
           )}
         </section>
 
+        <PlusSection />
+
         <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
           <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
             The companion
@@ -102,6 +107,74 @@ export default function SettingsPage() {
         </div>
       </PageTransition>
     </main>
+  );
+}
+
+// The STRATA Plus section: manage an active subscription, or unlock it. Hidden entirely
+// until billing is configured.
+function PlusSection() {
+  const { user } = useAuth();
+  const { isPlus, subscribed, billingEnabled } = useSubscription();
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  if (!billingEnabled) return null;
+
+  const run = (fn: () => Promise<void>) => {
+    setBusy(true);
+    setError(null);
+    fn().catch(() => {
+      setError("Something went wrong. Please try again.");
+      setBusy(false);
+    });
+  };
+
+  return (
+    <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
+      <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
+        STRATA Plus
+      </h2>
+      {!user ? (
+        <p className="font-body text-[14px] leading-[1.7] text-mist">
+          Sign in to unlock STRATA Plus.
+        </p>
+      ) : subscribed ? (
+        <div className="flex items-center justify-between gap-4">
+          <span className="font-body text-[15px] italic text-parchment-2">
+            Active. Thank you for reading.
+          </span>
+          <button
+            type="button"
+            onClick={() => run(openPortal)}
+            disabled={busy}
+            className="shrink-0 rounded-[10px] border border-gold/40 px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
+          >
+            {busy ? "Opening" : "Manage"}
+          </button>
+        </div>
+      ) : isPlus ? (
+        <p className="font-body text-[14px] leading-[1.7] text-mist">
+          You have full access.
+        </p>
+      ) : (
+        <div className="flex items-center justify-between gap-4">
+          <span className="font-body text-[14px] leading-[1.6] text-mist">
+            Open all of Genesis and the companion. $49 a year.
+          </span>
+          <button
+            type="button"
+            onClick={() => user && run(() => startCheckout(user.uid))}
+            disabled={busy}
+            className="shrink-0 rounded-[10px] bg-gold px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright disabled:opacity-50"
+          >
+            {busy ? "Opening" : "Unlock"}
+          </button>
+        </div>
+      )}
+      {error ? (
+        <p className="mt-3 font-body text-[13px] italic text-psyche">{error}</p>
+      ) : null}
+    </section>
   );
 }
 

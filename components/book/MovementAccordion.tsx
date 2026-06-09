@@ -1,3 +1,4 @@
+import { LockBadge } from "@/components/billing/LockBadge";
 import { Doorway } from "@/components/overlays/Doorway";
 import { SituationPanel } from "@/components/overlays/SituationPanel";
 import { readingsInMovement } from "@/lib/content";
@@ -52,8 +53,11 @@ export function MovementAccordion({
                     {movement.throughline}
                   </span>
                 </span>
-                <span className="ml-auto pt-1 text-[15px] text-mist-2 transition-transform group-open/movement:rotate-45 group-open/movement:text-gold">
-                  +
+                <span className="ml-auto flex items-center gap-2 pt-1">
+                  <LockBadge bookId={bookId} movementId={movement.id} />
+                  <span className="text-[15px] text-mist-2 transition-transform group-open/movement:rotate-45 group-open/movement:text-gold">
+                    +
+                  </span>
                 </span>
               </div>
               <MovementProgress readingIds={readings.map((r) => r.id)} />

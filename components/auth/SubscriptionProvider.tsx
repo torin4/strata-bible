@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import { isComped } from "@/lib/access";
 import { billingEnabled, subscribePlus } from "@/lib/subscription";
 import {
   type ReactNode,
@@ -14,8 +15,11 @@ import {
 interface SubscriptionContextValue {
   loading: boolean;
   // True when the reader may open paid content: either billing is not configured yet
-  // (pre-launch, nothing is gated) or the reader has an active STRATA Plus subscription.
+  // (pre-launch, nothing is gated) or the reader has Plus (active sub or comped).
   isPlus: boolean;
+  // True only for an actual paid Stripe subscription (not comped), so the UI can show a
+  // "manage subscription" link to subscribers but not to comped accounts.
+  subscribed: boolean;
   billingEnabled: boolean;
 }
 
@@ -26,6 +30,7 @@ const SubscriptionContext = createContext<SubscriptionContextValue | null>(
 const inert = (): SubscriptionContextValue => ({
   loading: false,
   isPlus: !billingEnabled,
+  subscribed: false,
   billingEnabled,
 });
 
@@ -51,8 +56,14 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
   }, [user]);
 
   const value = useMemo<SubscriptionContextValue>(
-    () => ({ loading, isPlus: !billingEnabled || active, billingEnabled }),
-    [loading, active],
+    () => ({
+      loading,
+      // Billing off, an active subscription, or a comped account all count as Plus.
+      isPlus: !billingEnabled || active || isComped(user?.email),
+      subscribed: active,
+      billingEnabled,
+    }),
+    [loading, active, user],
   );
 
   return (
