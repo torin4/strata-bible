@@ -26,6 +26,12 @@ import "@fontsource/hanken-grotesk/600.css";
 export const metadata: Metadata = {
   title: "STRATA",
   description: "A Bible reading app that grounds every passage in four layers.",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "STRATA",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export default function RootLayout({
