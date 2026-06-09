@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
 
   const idToken = req.headers.get("authorization")?.replace(/^Bearer\s+/i, "");
   const caller = idToken ? await lookupCaller(idToken) : null;
-  if (!caller) {
+  if (!idToken || !caller) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
 
   // The companion is STRATA Plus only (owning a single book does not unlock it), except on a
   // free reading, which any signed-in reader may draw. Same Plus gate as the content route.
-  if (!isPlusEntitled(caller, found.reading)) {
+  if (!(await isPlusEntitled(idToken, caller, found.reading))) {
     return NextResponse.json({ error: "plus-required" }, { status: 402 });
   }
 

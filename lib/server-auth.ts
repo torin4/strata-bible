@@ -64,14 +64,19 @@ export async function lookupCaller(
 
 // Plus-level entitlement: an active STRATA Plus subscription, a comped account, or a free
 // reading. Owning a single book does NOT count here, because the companion is Plus-only.
-// (When billing is off, everything is open.)
-export function isPlusEntitled(caller: CallerInfo, reading: Reading): boolean {
+// (When billing is off, everything is open.) The stripeRole claim is the fast path; for a
+// reader who just subscribed and whose ID token has not refreshed to carry the claim yet, we
+// fall back to reading their synced subscription doc, so paid content works immediately after
+// checkout with no forced re-login.
+export async function isPlusEntitled(
+  idToken: string,
+  caller: CallerInfo,
+  reading: Reading,
+): Promise<boolean> {
   if (!billingOn()) return true;
-  return (
-    caller.stripeRole === "plus" ||
-    isComped(caller.email) ||
-    isFreeReading(reading)
-  );
+  if (isComped(caller.email) || isFreeReading(reading)) return true;
+  if (caller.stripeRole === "plus") return true;
+  return hasActiveSubscription(idToken, caller.uid);
 }
 
 // Whether the caller may read this reading's authored content: Plus-level, OR they own the
@@ -81,10 +86,40 @@ export async function isReadingEntitled(
   caller: CallerInfo,
   reading: Reading,
 ): Promise<boolean> {
-  if (isPlusEntitled(caller, reading)) return true;
+  if (await isPlusEntitled(idToken, caller, reading)) return true;
   // Not sold per-book, so ownership is impossible; skip the network read.
   if (!bookOffer(reading.bookId)) return false;
   return ownsBook(idToken, caller.uid, reading.bookId);
+}
+
+// True if the caller has an active or trialing STRATA Plus subscription, read from the docs
+// the Stripe extension syncs into Firestore. Read under the caller's own token (own-read only
+// by the rules), so it cannot be forged. The timing-independent backstop to the token claim.
+async function hasActiveSubscription(
+  idToken: string,
+  uid: string,
+): Promise<boolean> {
+  if (!FIREBASE_PROJECT_ID) return false;
+  try {
+    const res = await fetch(
+      `https://firestore.googleapis.com/v1/projects/${FIREBASE_PROJECT_ID}/databases/(default)/documents/customers/${uid}/subscriptions`,
+      {
+        headers: { Authorization: `Bearer ${idToken}` },
+        signal: AbortSignal.timeout(5000),
+      },
+    );
+    if (!res.ok) return false;
+    const data = (await res.json()) as {
+      documents?: Array<{ fields?: Record<string, FsValue> }>;
+    };
+    for (const doc of data.documents ?? []) {
+      const status = doc.fields?.status?.stringValue;
+      if (status === "active" || status === "trialing") return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
 }
 
 // A minimal slice of the Firestore REST typed-value shape, enough to read a payment's status
