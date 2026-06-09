@@ -24,7 +24,23 @@ export interface BookEntry {
   movements: Movement[];
   composition?: Panel;
   capstone?: Capstone; // the book-level look-back over the whole arc
+  published?: boolean; // surfaced on the landing and in /find; the genre proofs stay off
 }
+
+// A book announced but not yet authored: display-only, with no readings and no route.
+export interface ComingSoon {
+  id: string;
+  title: string;
+  blurb: string;
+}
+
+export const COMING_SOON: ComingSoon[] = [
+  {
+    id: "exodus",
+    title: "Exodus",
+    blurb: "Out of Egypt, through the sea, to the mountain of fire.",
+  },
+];
 
 // Genesis ships first as the real book. The seed fixtures are one reading per genre,
 // grouped by their own bookId, purely to prove the kind-aware renderer end to end.
@@ -75,6 +91,15 @@ export const BOOKS: BookEntry[] = [
     ],
     composition: GENESIS_INTRO,
     capstone: GENESIS_CAPSTONE,
+    published: true,
   },
+  // The genre fixtures stay in the catalog (their routes still prove the kind-aware
+  // renderer) but are unpublished, so they do not surface on the landing or in /find.
   ...seedBooks(),
 ];
+
+// Books shown to readers: the published ones. The genre proofs remain reachable by direct
+// URL for development, just not advertised.
+export const PUBLISHED_BOOKS: BookEntry[] = BOOKS.filter(
+  (book) => book.published,
+);

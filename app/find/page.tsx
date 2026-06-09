@@ -1,5 +1,5 @@
 import { FindClient } from "@/components/find/FindClient";
-import { BOOKS } from "@/content";
+import { PUBLISHED_BOOKS } from "@/content";
 import { READING_THEMES, THEMES } from "@/content/themes";
 import { type FindEntry, normalize } from "@/lib/find";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export const metadata = {
 function buildIndex(): FindEntry[] {
   const label = new Map(THEMES.map((t) => [t.key, t.label]));
   const entries: FindEntry[] = [];
-  for (const book of BOOKS) {
+  for (const book of PUBLISHED_BOOKS) {
     for (const reading of book.readings) {
       const tagged = READING_THEMES[reading.id];
       if (!tagged) continue;

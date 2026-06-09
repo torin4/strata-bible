@@ -1,20 +1,20 @@
 import { AuthMenu } from "@/components/auth/AuthMenu";
 import { Footer } from "@/components/nav/Footer";
-import { BOOKS } from "@/content";
+import { BOOKS, COMING_SOON, PUBLISHED_BOOKS } from "@/content";
 import Link from "next/link";
 
 // The intro / landing, ported from the proof's viewLanding: a centered veil with the
-// STRATA wordmark, a thin gold rule, the tagline, and Genesis as the featured "Book I"
-// card. The six genre fixtures stay reachable in a de-emphasized block below, since the
-// reader still needs them to prove the kind-aware renderer across genres.
+// STRATA wordmark, a thin gold rule, the tagline, Genesis as the featured "Book I" card,
+// and the next book announced as coming soon. (The genre fixtures stay reachable by direct
+// URL for the renderer proof, but are no longer advertised here.)
 const GENESIS_BLURB =
   "In the beginning, and everything that breaks and is held after.";
 const TAGLINE =
   "An illuminated reading of scripture, grounded in the history it grew out of.";
+const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 
 export default function Home() {
   const genesis = BOOKS.find((book) => book.id === "genesis");
-  const genres = BOOKS.filter((book) => book.id !== "genesis");
 
   return (
     <main className="min-h-screen bg-shell px-5 py-8">
@@ -63,6 +63,27 @@ export default function Home() {
             </Link>
           ) : null}
 
+          {COMING_SOON.map((book, i) => (
+            <div
+              key={book.id}
+              className="stagger relative mt-4 rounded-[18px] border border-line bg-parchment/[0.012] px-[22px] py-5 text-left"
+              style={{ animationDelay: ".26s" }}
+            >
+              <span className="absolute right-[14px] top-3 font-display text-[10px] uppercase tracking-[.2em] text-mist-2">
+                Book {ROMAN[PUBLISHED_BOOKS.length + i] ?? ""}
+              </span>
+              <div className="font-display text-[24px] font-medium leading-none text-parchment-2">
+                {book.title}
+              </div>
+              <div className="mb-3 mt-2.5 font-scripture text-[16px] italic leading-[1.4] text-mist">
+                {book.blurb}
+              </div>
+              <div className="font-ui text-[11px] uppercase tracking-[.18em] text-gold/70">
+                Coming soon
+              </div>
+            </div>
+          ))}
+
           <div
             className="stagger mt-6 text-center"
             style={{ animationDelay: ".32s" }}
@@ -75,35 +96,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-
-        {genres.length > 0 ? (
-          <div className="stagger pb-2" style={{ animationDelay: ".46s" }}>
-            <div className="mb-3 text-center font-ui text-[9.5px] uppercase tracking-[.22em] text-mist-2">
-              Genre proofs · one reading each
-            </div>
-            <ul className="flex flex-col divide-y divide-line overflow-hidden rounded-[14px] border border-line bg-deep">
-              {genres.map((book) => {
-                const readingCount = book.readings.length;
-                return (
-                  <li key={book.id}>
-                    <Link
-                      href={`/book/${book.id}`}
-                      className="group flex items-baseline justify-between gap-3 px-5 py-3 transition-colors hover:bg-parchment/[0.02]"
-                    >
-                      <span className="font-display text-[15px] tracking-[.04em] text-parchment-2 group-hover:text-parchment">
-                        {book.title}
-                      </span>
-                      <span className="shrink-0 font-ui text-[9.5px] uppercase tracking-[.14em] text-mist-2">
-                        {readingCount}{" "}
-                        {readingCount === 1 ? "reading" : "readings"}
-                      </span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ) : null}
 
         <Footer />
       </div>
