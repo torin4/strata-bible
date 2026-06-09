@@ -71,11 +71,17 @@ The companion writes in STRATA's voice and under STRATA's constraints. The syste
   reader now, the response is a real question. Match the authored examples in `seed.ts` for tone.
 - **Voice.** Short sentences. No em dashes. No tidy morals. End on something that lands. Plain words.
 - **Honesty.** Name a misreading before dismantling it. Never flatten a hard text into a comfort.
-  The archetypal lens, if used, always closes with: "One way to hear it, not the final word."
 - **Translation rule.** Use only the scripture text provided in the passage. Never quote or invent
   verses, never reach for a licensed translation.
-- **Lens discipline.** Theological lens is default-eligible; archetypal is optional and never the
-  primary reading.
+- **Lens discipline.** The theological lens (`lenses.theo`) is default-eligible. The archetypal lens
+  (`lenses.arch`) is optional, never primary, and is the **recurring-image** lens, not psychology:
+  how the passage's central image echoes across other cultures and ages and keeps speaking, kept
+  distinct from the history note. It avoids Jungian vocabulary (shadow, ego, the unconscious,
+  individuation) and never reads the reader's psyche. It closes with a short gnomic parenthetical
+  naming the pattern, names no scholars (the author adds a comparative citation, e.g. Eliade or
+  Campbell, by hand when promoting a draft to authored content), and writes no caveat line: the app
+  appends "One way to hear it, not the final word." See the `arch` lenses across `content/genesis.ts`
+  for the register.
 
 ## Safety (job 2 is the sensitive one)
 
