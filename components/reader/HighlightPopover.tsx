@@ -145,43 +145,52 @@ export function HighlightPopover({
             </div>
           </div>
         ) : (
-          <div className="flex items-center gap-1">
-            <PopButton
-              label={existing ? "Edit note" : "Note"}
-              onClick={() => setComposing(true)}
-            />
-            <PopButton
-              label={on ? "Remove" : "Highlight"}
-              onClick={() => {
-                if (on) {
-                  toggle(vkey);
-                  onClose();
-                } else {
-                  toggle(vkey); // stay open so a note can follow the highlight
-                }
-              }}
-            />
-            <button
-              type="button"
-              aria-label="Close"
-              onClick={onClose}
-              className="ml-auto flex h-7 w-7 items-center justify-center rounded-[8px] text-mist transition-colors hover:text-gold-bright"
-            >
-              <svg
-                width="11"
-                height="11"
-                viewBox="0 0 14 14"
-                aria-hidden="true"
+          <div className="flex flex-col gap-2">
+            {/* A saved note shows here on a plain tap, so the reader sees it without
+                opening the editor. */}
+            {existing ? (
+              <p className="whitespace-pre-line px-1 pt-1 font-body text-[13.5px] italic leading-[1.6] text-parchment-2">
+                {existing}
+              </p>
+            ) : null}
+            <div className="flex items-center gap-1">
+              <PopButton
+                label={existing ? "Edit note" : "Note"}
+                onClick={() => setComposing(true)}
+              />
+              <PopButton
+                label={on ? "Remove" : "Highlight"}
+                onClick={() => {
+                  if (on) {
+                    toggle(vkey);
+                    onClose();
+                  } else {
+                    toggle(vkey); // stay open so a note can follow the highlight
+                  }
+                }}
+              />
+              <button
+                type="button"
+                aria-label="Close"
+                onClick={onClose}
+                className="ml-auto flex h-7 w-7 items-center justify-center rounded-[8px] text-mist transition-colors hover:text-gold-bright"
               >
-                <path
-                  d="M2 2l10 10M12 2L2 12"
-                  stroke="currentColor"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-              </svg>
-            </button>
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 14 14"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 2l10 10M12 2L2 12"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    fill="none"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         )}
       </dialog>
