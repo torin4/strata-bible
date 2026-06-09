@@ -146,22 +146,44 @@ export function MenuDrawer() {
             </span>
           </Link>
 
-          <DrawerLink href="/" label="Home" onNavigate={close} />
-          <DrawerLink href="/find" label="Find a reading" onNavigate={close} />
-          <DrawerLink href="/journal" label="Journal" onNavigate={close} />
+          <DrawerLink href="/" label="Home" icon="home" onNavigate={close} />
+          <DrawerLink
+            href="/find"
+            label="Find a reading"
+            icon="find"
+            onNavigate={close}
+          />
+          <DrawerLink
+            href="/journal"
+            label="Journal"
+            icon="journal"
+            onNavigate={close}
+          />
           <DrawerLink
             href="/highlights"
             label="Your highlights"
+            icon="highlights"
             onNavigate={close}
           />
 
           <div className="my-3 border-t border-line" />
 
-          <DrawerLink href="/pricing" label="STRATA Plus" onNavigate={close} />
-          <DrawerLink href="/about" label="About STRATA" onNavigate={close} />
+          <DrawerLink
+            href="/pricing"
+            label="STRATA Plus"
+            icon="plus"
+            onNavigate={close}
+          />
+          <DrawerLink
+            href="/about"
+            label="About STRATA"
+            icon="about"
+            onNavigate={close}
+          />
           <DrawerLink
             href="/settings"
             label="Profile & settings"
+            icon="settings"
             onNavigate={close}
           />
         </nav>
@@ -201,28 +223,101 @@ export function MenuDrawer() {
 function DrawerLink({
   href,
   label,
-  sub,
+  icon,
   onNavigate,
 }: {
   href: string;
   label: string;
-  sub?: string;
+  icon: IconName;
   onNavigate: () => void;
 }) {
   return (
     <Link
       href={href}
       onClick={onNavigate}
-      className="group -mx-2 rounded-[10px] px-2 py-2.5 transition-colors hover:bg-parchment/[0.03]"
+      className="group -mx-2 flex items-center gap-3 rounded-[10px] px-2 py-2.5 transition-colors hover:bg-parchment/[0.03]"
     >
-      <span className="block font-display text-[16px] tracking-[.04em] text-parchment-2 group-hover:text-parchment">
+      <span className="shrink-0 text-mist-2 transition-colors group-hover:text-gold">
+        <NavIcon name={icon} />
+      </span>
+      <span className="font-display text-[16px] tracking-[.04em] text-parchment-2 group-hover:text-parchment">
         {label}
       </span>
-      {sub ? (
-        <span className="mt-0.5 block truncate font-body text-[12px] italic text-mist-2">
-          {sub}
-        </span>
-      ) : null}
     </Link>
   );
+}
+
+type IconName =
+  | "home"
+  | "find"
+  | "journal"
+  | "highlights"
+  | "plus"
+  | "about"
+  | "settings";
+
+// Small line icons in the menu's stroke style (round caps, currentColor).
+function NavIcon({ name }: { name: IconName }) {
+  const props = {
+    width: 17,
+    height: 17,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.4,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": true,
+  } as const;
+  switch (name) {
+    case "home":
+      return (
+        <svg {...props}>
+          <path d="M2.5 8 8 3l5.5 5" />
+          <path d="M4 7.5V13h8V7.5" />
+        </svg>
+      );
+    case "find":
+      return (
+        <svg {...props}>
+          <circle cx="7" cy="7" r="4.25" />
+          <path d="M10.2 10.2 13.5 13.5" />
+        </svg>
+      );
+    case "journal":
+      return (
+        <svg {...props}>
+          <path d="M8 4.6C6.5 3.7 4 3.7 2.5 4.2v8c1.5-.5 4-.5 5.5.4" />
+          <path d="M8 4.6c1.5-.9 4-.9 5.5-.4v8c-1.5-.5-4-.5-5.5.4" />
+          <path d="M8 4.6v8" />
+        </svg>
+      );
+    case "highlights":
+      return (
+        <svg {...props}>
+          <path d="M4.5 2.75h7v10.5L8 10.9 4.5 13.25z" />
+        </svg>
+      );
+    case "plus":
+      return (
+        <svg {...props}>
+          <path d="M8 2.4l1.4 4.2 4.2 1.4-4.2 1.4L8 13.6l-1.4-4.2L2.4 8l4.2-1.4z" />
+        </svg>
+      );
+    case "about":
+      return (
+        <svg {...props}>
+          <circle cx="8" cy="8" r="5.75" />
+          <path d="M8 7.3v3.4" />
+          <path d="M8 5.1h.01" />
+        </svg>
+      );
+    case "settings":
+      return (
+        <svg {...props}>
+          <circle cx="8" cy="5.5" r="2.4" />
+          <path d="M3.6 13c.4-2.4 2.3-3.7 4.4-3.7s4 1.3 4.4 3.7" />
+        </svg>
+      );
+  }
 }
