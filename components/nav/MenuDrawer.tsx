@@ -3,15 +3,17 @@
 import { useAuth } from "@/components/auth/AuthProvider";
 import { type LastRead, subscribeLastRead } from "@/lib/lastRead";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // The app's primary navigation: a slide-out drawer opened from a fixed menu button on
 // every page. Home, Journal, Continue reading (resumes a signed-in reader's last spot),
 // and Profile & settings, with the account control pinned to the bottom.
 export function MenuDrawer() {
-  const { user, configured, signOutUser } = useAuth();
+  const { user, loading, configured, signOutUser } = useAuth();
   const [open, setOpen] = useState(false);
   const [lastRead, setLast] = useState<LastRead | null>(null);
+  const openButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!user) {
@@ -21,22 +23,31 @@ export function MenuDrawer() {
     return subscribeLastRead(user.uid, setLast);
   }, [user]);
 
-  // While open: close on Escape and lock the page behind the drawer from scrolling.
+  // While open: close on Escape, lock the page behind the drawer from scrolling, and move
+  // focus to the close button so a keyboard user lands inside the drawer.
   useEffect(() => {
     if (!open) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        openButtonRef.current?.focus();
+      }
     };
     document.addEventListener("keydown", onKey);
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = previous;
     };
   }, [open]);
 
-  const close = () => setOpen(false);
+  // Closing returns focus to the menu button it opened from.
+  const close = () => {
+    setOpen(false);
+    openButtonRef.current?.focus();
+  };
 
   const continueHref = lastRead
     ? `/read/${lastRead.bookId}/${lastRead.readingId}`
@@ -48,6 +59,7 @@ export function MenuDrawer() {
   return (
     <>
       <button
+        ref={openButtonRef}
         type="button"
         aria-label="Open menu"
         aria-expanded={open}
@@ -92,6 +104,7 @@ export function MenuDrawer() {
             STRATA
           </span>
           <button
+            ref={closeButtonRef}
             type="button"
             aria-label="Close menu"
             onClick={close}
@@ -145,7 +158,7 @@ export function MenuDrawer() {
         </nav>
 
         <div className="mt-auto border-t border-line pt-5">
-          {!configured ? null : user ? (
+          {!configured || loading ? null : user ? (
             <div className="flex flex-col gap-2">
               <span className="truncate font-body text-[13px] italic text-mist">
                 {user.displayName || user.email || "Account"}

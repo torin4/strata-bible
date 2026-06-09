@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useState } from "react";
+import { type ReactNode, useRef, useState } from "react";
 import { HighlightPopover } from "./HighlightPopover";
 import { useHighlights } from "./HighlightProvider";
 
@@ -18,15 +18,23 @@ export function HighlightableVerse({
 }) {
   const { enabled, has, getNote, activeKey, setActiveKey } = useHighlights();
   const [anchor, setAnchor] = useState<DOMRect | null>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   if (!enabled) return <>{children}</>;
 
   const on = has(vkey);
   const noted = Boolean(getNote(vkey));
   const open = activeKey === vkey;
 
+  // Closing returns focus to the verse so a keyboard user lands back where they were.
+  const close = () => {
+    setActiveKey(null);
+    buttonRef.current?.focus();
+  };
+
   return (
     <>
       <button
+        ref={buttonRef}
         type="button"
         aria-haspopup="dialog"
         aria-expanded={open}
@@ -52,11 +60,7 @@ export function HighlightableVerse({
         ) : null}
       </button>
       {open && anchor ? (
-        <HighlightPopover
-          vkey={vkey}
-          anchor={anchor}
-          onClose={() => setActiveKey(null)}
-        />
+        <HighlightPopover vkey={vkey} anchor={anchor} onClose={close} />
       ) : null}
     </>
   );
