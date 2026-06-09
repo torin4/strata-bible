@@ -10,12 +10,17 @@ type Context = Omit<NewEntry, "text" | "prompt">;
 // inline under a passage's ask (where `prompt` and `context` tag the response).
 export function JournalComposer({
   prompt,
+  showPrompt = true,
   context,
   placeholder,
   autoFocus,
   onSaved,
 }: {
   prompt?: string;
+  // The prompt is always saved with the entry. `showPrompt` controls only whether the
+  // composer also renders it; the inline ask responder turns it off because the ask is
+  // already shown right above the composer.
+  showPrompt?: boolean;
   context?: Context;
   placeholder?: string;
   autoFocus?: boolean;
@@ -46,7 +51,7 @@ export function JournalComposer({
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col gap-3">
-      {prompt ? (
+      {prompt && showPrompt ? (
         <p className="font-scripture text-[15px] leading-[1.5] text-parchment-2">
           {prompt}
         </p>

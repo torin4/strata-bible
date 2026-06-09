@@ -59,11 +59,18 @@ export function subscribePlus(
   return onSnapshot(
     q,
     (snap) => {
-      const doc = snap.docs[0];
-      if (!doc) {
+      if (snap.empty) {
         onChange(null);
         return;
       }
+      // A reader can briefly hold more than one active subscription (e.g. a monthly then an
+      // annual upgrade mid-period). Show the one that runs latest, not whichever Firestore
+      // happened to return first, so the settings page reports the real renewal date.
+      const doc = snap.docs.reduce((latest, candidate) => {
+        const a = toMillis(candidate.data().current_period_end) ?? 0;
+        const b = toMillis(latest.data().current_period_end) ?? 0;
+        return a > b ? candidate : latest;
+      });
       const data = doc.data() as Record<string, unknown>;
       const items = Array.isArray(data.items) ? data.items : [];
       const interval = (items[0] as { price?: { interval?: string } })?.price
@@ -91,19 +98,38 @@ async function runCheckout(
     payload,
   );
   await new Promise<void>((resolve, reject) => {
-    const unsub = onSnapshot(ref, (snap) => {
-      const data = snap.data() as
-        | { url?: string; error?: { message: string } }
-        | undefined;
-      if (data?.error) {
+    // The extension attaches `url` (or `error`) asynchronously. If it is misconfigured or
+    // slow, that write may never arrive, so bound the wait instead of hanging the UI on
+    // "Opening checkout" forever.
+    const timer = setTimeout(() => {
+      unsub();
+      reject(
+        new Error("Checkout is taking too long to open. Please try again."),
+      );
+    }, 30000);
+    const unsub = onSnapshot(
+      ref,
+      (snap) => {
+        const data = snap.data() as
+          | { url?: string; error?: { message: string } }
+          | undefined;
+        if (data?.error) {
+          clearTimeout(timer);
+          unsub();
+          reject(new Error(data.error.message));
+        } else if (data?.url) {
+          clearTimeout(timer);
+          unsub();
+          window.location.assign(data.url);
+          resolve();
+        }
+      },
+      (err) => {
+        clearTimeout(timer);
         unsub();
-        reject(new Error(data.error.message));
-      } else if (data?.url) {
-        unsub();
-        window.location.assign(data.url);
-        resolve();
-      }
-    });
+        reject(err);
+      },
+    );
   });
 }
 
@@ -141,8 +167,10 @@ export async function buyBook(uid: string, bookId: string): Promise<void> {
   });
 }
 
-// The books a reader owns outright, from their succeeded one-time payments. A book is owned
-// if a payment carries its bookId metadata or its one-time price.
+// The books a reader owns outright, from their succeeded one-time payments. Ownership is
+// matched on the price actually charged, never on client-supplied metadata: the bookId in
+// metadata is written by the browser and could be forged to claim a pricier book for a
+// cheaper charge, so it is display-only and not trusted here.
 export function subscribeOwnedBooks(
   uid: string,
   onChange: (books: Set<string>) => void,
@@ -161,8 +189,6 @@ export function subscribeOwnedBooks(
       const owned = new Set<string>();
       for (const doc of snap.docs) {
         const data = doc.data() as Record<string, unknown>;
-        const meta = data.metadata as { bookId?: string } | undefined;
-        if (typeof meta?.bookId === "string") owned.add(meta.bookId);
         const prices = Array.isArray(data.prices) ? data.prices : [];
         for (const p of prices) {
           const priceId = (p as { price?: string })?.price;

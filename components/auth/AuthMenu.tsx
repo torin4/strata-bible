@@ -44,7 +44,7 @@ export function AuthMenu() {
       <button
         type="button"
         onClick={() => signOutUser()}
-        className="font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+        className="inline-flex min-h-[44px] items-center font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
         Sign out
       </button>

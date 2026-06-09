@@ -92,9 +92,7 @@ export function getClosingMovement(
 ): Movement | undefined {
   const movement = getMovement(bookId, reading);
   if (!movement?.capstone) return undefined;
-  const inMovement = (getBook(bookId)?.readings ?? []).filter((r) =>
-    belongsTo(r, movement),
-  );
+  const inMovement = readingsInMovement(bookId, movement);
   const last = inMovement[inMovement.length - 1];
   return last?.id === reading.id ? movement : undefined;
 }

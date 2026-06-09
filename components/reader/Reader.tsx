@@ -42,20 +42,21 @@ export function Reader({
   const hasWrapup = Boolean(closingBookCapstone);
   const wrapupIndex = passages.length; // one scene past the last passage
   const maxScene = hasWrapup ? wrapupIndex : last;
-  const [i, setI] = useState(0);
-  const { isPlus, owns } = useSubscription();
 
-  // Restore a deep-linked scene (?s=) on mount, and reflect the current scene in the URL
-  // without a navigation so a scene stays shareable.
-  useEffect(() => {
+  // Restore a deep-linked scene (?s=) on first render via a lazy initializer so the
+  // component never flickers at scene 0. The typeof guard is required because Next
+  // server-renders this component before window is available.
+  const [i, setI] = useState(() => {
+    if (typeof window === "undefined") return 0;
     const s = Number.parseInt(
       new URLSearchParams(window.location.search).get("s") ?? "",
       10,
     );
-    if (Number.isInteger(s) && s > 0 && s <= maxScene) setI(s);
-    // run once on mount
-  }, [maxScene]);
+    return Number.isInteger(s) && s > 0 && s <= maxScene ? s : 0;
+  });
+  const { isPlus, owns } = useSubscription();
 
+  // Reflect the current scene in the URL without a navigation so a scene stays shareable.
   useEffect(() => {
     const url =
       i === 0 ? window.location.pathname : `${window.location.pathname}?s=${i}`;
@@ -114,6 +115,14 @@ export function Reader({
 
   return (
     <article>
+      {/* Visually hidden live region: announces scene changes to screen readers. */}
+      <span aria-live="polite" aria-atomic="true" className="sr-only">
+        {onWrapup
+          ? `${bookTitle ?? "Book"} wrap-up`
+          : passages.length > 1
+            ? `${reading.unitLabel ?? "Scene"} ${i + 1} of ${passages.length}, ${passage?.title ?? reading.title}`
+            : reading.title}
+      </span>
       {onWrapup ? null : (
         <>
           <div className="mb-[14px] flex flex-wrap items-center gap-2">

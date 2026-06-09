@@ -1,4 +1,4 @@
-import { auth, db, isFirebaseConfigured } from "@/lib/firebase";
+import { auth, db } from "@/lib/firebase";
 import type { AddrMode, Passage } from "@/lib/types";
 import {
   type Unsubscribe,
@@ -19,8 +19,6 @@ export interface CompanionLayer {
   addr: { mode: AddrMode; text: string };
   ask: string;
 }
-
-export const companionEnabled = isFirebaseConfigured;
 
 // The taste: a reader without STRATA Plus gets this many companion draws inside the free
 // primeval sample before the upgrade. Tracked per user; the server still enforces that
@@ -121,7 +119,9 @@ export async function generateMiddle(
     throw new Error(
       res.status === 503
         ? "The companion is not configured yet."
-        : "The companion could not draft this.",
+        : res.status === 429
+          ? "You have drawn a lot in a short time. Give it a minute."
+          : "The companion could not draft this.",
     );
   }
   const layer = (await res.json()) as CompanionLayer;

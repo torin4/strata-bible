@@ -4,6 +4,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { useSettings } from "@/components/settings/SettingsProvider";
+import { PLUS_PRICE } from "@/lib/pricing";
 import { openPortal, startCheckout } from "@/lib/subscription";
 import Link from "next/link";
 import { useState } from "react";
@@ -194,7 +195,7 @@ function PlusSection() {
       ) : (
         <div className="flex items-center justify-between gap-4">
           <span className="font-body text-[14px] leading-[1.6] text-mist">
-            Open all of Genesis and the companion. $49 a year.
+            Open all of Genesis and the companion. {PLUS_PRICE.annual} a year.
           </span>
           <button
             type="button"
@@ -207,7 +208,12 @@ function PlusSection() {
         </div>
       )}
       {error ? (
-        <p className="mt-3 font-body text-[13px] italic text-psyche">{error}</p>
+        <p
+          role="alert"
+          className="mt-3 font-body text-[13px] italic text-psyche"
+        >
+          {error}
+        </p>
       ) : null}
     </section>
   );

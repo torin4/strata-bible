@@ -12,6 +12,14 @@ export const TIER_PRICE: Record<BookTier, string> = {
   short: "$4.99",
 };
 
+// STRATA Plus display prices. The single source for the subscription prices shown across
+// the paywall, pricing page, and settings; the actual charge is the Stripe price. Change a
+// price here and it changes everywhere.
+export const PLUS_PRICE = {
+  annual: "$49",
+  monthly: "$6.99",
+} as const;
+
 export interface BookOffer {
   title: string;
   tier: BookTier;

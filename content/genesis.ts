@@ -3660,7 +3660,7 @@ export const ABRAHAM_MOVEMENT: Movement = {
   throughline: 'A promise made to a childless old man, held against every impossibility and every attempt to force it, until it arrives as laughter and is then asked back on a mountain.',
   chapterStart: 12, chapterEnd: 25,
   situation: {
-    skicker: 'The ground beneath the Abraham story',
+    kicker: 'The ground beneath the Abraham story',
     title: 'A family memory, told long after',
     image: '/images/gen-abram.webp',
     paragraphs: [
@@ -3671,7 +3671,7 @@ export const ABRAHAM_MOVEMENT: Movement = {
     sources: 'Speiser · Westermann · Friedman',
   },
   capstone: {
-    skicker: 'The shape of the Abraham story',
+    kicker: 'The shape of the Abraham story',
     title: 'Learning to hold the promise open-handed',
     paragraphs: [
       'It begins with a command to leave everything on the strength of a promise, and a childless old man who goes. The whole arc is the slow, failing, relearned lesson of how to carry a promise you cannot make come true: by waiting, not grasping. Every time Abraham reaches to force it, a lie in Egypt, a slave woman, a lie again to Abimelech, it costs someone, usually the one with the least power.',
@@ -3684,7 +3684,7 @@ export const ABRAHAM_MOVEMENT: Movement = {
     sources: 'von Rad · Levenson · Alter',
   },
   doorway: {
-    skicker: 'The threshold into the next movement',
+    kicker: 'The threshold into the next movement',
     title: 'A promise for a heel-grabber',
     paragraphs: [
       'Abraham is buried, and the promise passes down: to Isaac, quiet and almost passive, and then to his sons, where it gets interesting again.',
@@ -3702,7 +3702,7 @@ export const PRIMEVAL_MOVEMENT: Movement = {
   throughline: 'The whole world: made good, gone wrong, the wrong spreading outward, until one grasped name at Babel is answered by one given name in Abraham.',
   chapterStart: 1, chapterEnd: 11,
   situation: {
-    skicker: 'The ground beneath the primeval history',
+    kicker: 'The ground beneath the primeval history',
     title: 'The situation',
     image: '/images/gen-prime.webp',
     paragraphs: [
@@ -3721,7 +3721,7 @@ export const PRIMEVAL_MOVEMENT: Movement = {
     sources: 'Wellhausen · Friedman · Westermann',
   },
   capstone: {
-    skicker: 'The first movement · Genesis 1–11',
+    kicker: 'The first movement · Genesis 1–11',
     title: 'The primeval history',
     paragraphs: [
       'This is the only part of the Bible about everyone. Before the story narrows to one family, it tells the story of the whole world: made good, gone wrong, and the wrong spreading outward. Read together, the eleven chapters move in one rhythm. A break, then a mercy. Again. And again.',
@@ -3733,7 +3733,7 @@ export const PRIMEVAL_MOVEMENT: Movement = {
     sources: 'von Rad · Clines',
   },
   doorway: {
-    skicker: 'The second movement',
+    kicker: 'The second movement',
     title: 'Abraham',
     paragraphs: [
       'The flood had already narrowed to one family, Noah’s, but that was still a story about all humanity, with Noah only the thread it survived on. Here the change runs deeper. The story stops being about everyone and settles on one man, and it will stay with his family from now on. God calls Abram out of everything that defined him, country, kin, and father’s house, and makes him a promise with no collateral but his own word.',
@@ -3750,7 +3750,7 @@ export const JACOB_MOVEMENT: Movement = {
   throughline: 'A grasper takes the blessing by fraud and spends twenty years being humbled into it, until a night of wrestling leaves him renamed and limping, and the brother he cheated runs to embrace him.',
   chapterStart: 26, chapterEnd: 36,
   situation: {
-    skicker: 'The ground beneath the Jacob story',
+    kicker: 'The ground beneath the Jacob story',
     title: 'How two nations remember a shared womb',
     image: '/images/gen-jacob.webp',
     paragraphs: [
@@ -3761,7 +3761,7 @@ export const JACOB_MOVEMENT: Movement = {
     sources: 'Sarna · Westermann · Alter',
   },
   capstone: {
-    skicker: 'The shape of the Jacob story',
+    kicker: 'The shape of the Jacob story',
     title: 'The grasper who had to be lamed',
     paragraphs: [
       'Grace falls on Jacob before he has earned a thing, a heel-grabber chosen in the womb, and then the whole cycle is the long work of making him into someone who can carry it. He takes the birthright by leverage and the blessing by fraud, and spends the next twenty years being paid back in his own coin: deceived by Laban in the dark, handed the wrong sister, cheated of his wages, slowly worn down.',
@@ -3774,7 +3774,7 @@ export const JACOB_MOVEMENT: Movement = {
     sources: 'von Rad · Westermann · Alter',
   },
   doorway: {
-    skicker: 'The threshold into the next movement',
+    kicker: 'The threshold into the next movement',
     title: 'From the cheat to the dreamer',
     paragraphs: [
       'Jacob is Israel now, and the camera, which has followed one man, widens to take in his twelve sons, the tribes to be. But it narrows again almost at once, onto one boy: Joseph, the favored son, the dreamer in the coat his father should have known better than to give him.',
@@ -3792,7 +3792,7 @@ export const JOSEPH_MOVEMENT: Movement = {
   throughline: 'The favored son is thrown in a pit and sold into Egypt, rises and falls and rises again by reading dreams, and at last faces the brothers who betrayed him and chooses to read the whole wreckage as a providence that meant it for good.',
   chapterStart: 37, chapterEnd: 50,
   situation: {
-    skicker: 'The ground beneath the Joseph story',
+    kicker: 'The ground beneath the Joseph story',
     title: 'A different kind of story, told to exiles',
     image: '/images/gen-joseph.webp',
     paragraphs: [
@@ -3803,7 +3803,7 @@ export const JOSEPH_MOVEMENT: Movement = {
     sources: 'von Rad · Alter · Westermann',
   },
   capstone: {
-    skicker: 'The shape of the Joseph story',
+    kicker: 'The shape of the Joseph story',
     title: 'You meant it for evil, God meant it for good',
     paragraphs: [
       'The favored son is stripped, pitted, and sold by his own brothers, and for the length of the story heaven says nothing. No voice, no rescue, no explanation. God works, if he works at all, hidden inside a string of ordinary disasters: a slave sold, a woman’s lie, a forgotten promise, a famine. The whole movement is a study in a providence that never once announces itself.',
@@ -3821,7 +3821,7 @@ export const JOSEPH_MOVEMENT: Movement = {
 // Genesis is, read as a single arc. Rendered at the foot of the book page and after the
 // final reading.
 export const GENESIS_CAPSTONE: Capstone = {
-  skicker: 'The whole book · Genesis 1–50',
+  kicker: 'The whole book · Genesis 1–50',
   title: 'Blessing given, broken, and carried through',
   paragraphs: [
     'Genesis is one long story about a blessing, and what keeps happening to it. It opens with a world spoken into being and called good, a blessing poured out over everything, and almost at once the blessing fractures: trust broken in a garden, a brother killed, a tower raised in pride, until the whole world is scattered and the page goes quiet. The first eleven chapters diagnose the entire human condition, and then narrow, hard, to a single cure.',
@@ -3839,7 +3839,7 @@ export const GENESIS_CAPSTONE: Capstone = {
 // head of the book page before the movements. Book-level grounding, the counterpart to
 // each movement's situation panel.
 export const GENESIS_INTRO: Panel = {
-  skicker: 'An introduction · Genesis 1–50',
+  kicker: 'An introduction · Genesis 1–50',
   title: 'The book of beginnings',
   paragraphs: [
     'Genesis is the first book of the Bible, and the word means beginning. It is the book of origins: of the world and the sky and the sea, of humanity, of work and rest, of the first wrong and the first death, and of the family through whom the rest of the story will come. Almost everything the Bible says later starts somewhere in here.',

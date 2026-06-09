@@ -8,7 +8,7 @@ export function Capstone({ capstone }: { capstone: CapstoneData }) {
   return (
     <div className="mt-[30px] rounded-2xl border border-gold/40 bg-gradient-to-b from-gold/10 to-gold/[0.03] px-5 py-[22px]">
       <div className="mb-2 font-ui text-[9.5px] font-semibold uppercase tracking-[.22em] text-gold">
-        {capstone.skicker}
+        {capstone.kicker}
       </div>
       <div className="mb-[14px] font-display text-[21px] font-medium leading-[1.2] text-gold-bright">
         {capstone.title}

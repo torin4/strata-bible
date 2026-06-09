@@ -10,8 +10,10 @@ import {
 import {
   type ReactNode,
   createContext,
+  useCallback,
   useContext,
   useEffect,
+  useMemo,
   useState,
 } from "react";
 
@@ -45,16 +47,24 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
 
   // Optimistic local update, then persist for the signed-in user. A failed write leaves
   // the toggle where the reader put it rather than snapping back mid-interaction.
-  const setCompanionEnabled = (enabled: boolean) => {
-    setSettings((prev) => ({ ...prev, companionEnabled: enabled }));
-    if (user)
-      saveSettings(user.uid, { companionEnabled: enabled }).catch(() => {});
-  };
+  const setCompanionEnabled = useCallback(
+    (enabled: boolean) => {
+      setSettings((prev) => ({ ...prev, companionEnabled: enabled }));
+      if (user)
+        saveSettings(user.uid, { companionEnabled: enabled }).catch(() => {});
+    },
+    [user],
+  );
+
+  // Memoized so consumers do not re-render on every provider render (e.g. each auth change)
+  // unless the settings or loading state actually changed.
+  const value = useMemo(
+    () => ({ settings, loading, setCompanionEnabled }),
+    [settings, loading, setCompanionEnabled],
+  );
 
   return (
-    <SettingsContext.Provider
-      value={{ settings, loading, setCompanionEnabled }}
-    >
+    <SettingsContext.Provider value={value}>
       {children}
     </SettingsContext.Provider>
   );

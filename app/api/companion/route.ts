@@ -11,14 +11,57 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 interface CallerInfo {
+  uid: string;
   email?: string;
   stripeRole?: string;
 }
 
+// A best-effort in-memory rate limiter. It lives per serverless instance, so it is a
+// backstop against the realistic abuse (a script hammering the endpoint to burn model
+// tokens), not a distributed quota. A shared store (Upstash / Vercel KV) would make it
+// authoritative across instances; that is the upgrade when traffic grows. Keyed by uid,
+// and more loosely by client IP so many throwaway accounts behind one address still hit a
+// ceiling.
+const WINDOW_MS = 60_000;
+const MAX_PER_UID = 6; // generous for a human drawing middles one at a time
+const MAX_PER_IP = 30; // several readers can share an IP (school, office, NAT)
+interface Hits {
+  count: number;
+  resetAt: number;
+}
+const uidHits = new Map<string, Hits>();
+const ipHits = new Map<string, Hits>();
+
+function rateLimited(
+  map: Map<string, Hits>,
+  key: string,
+  max: number,
+): boolean {
+  const now = Date.now();
+  // Opportunistically drop expired buckets so the maps cannot grow without bound.
+  if (map.size > 5000) {
+    for (const [k, h] of map) if (now > h.resetAt) map.delete(k);
+  }
+  const hit = map.get(key);
+  if (!hit || now > hit.resetAt) {
+    map.set(key, { count: 1, resetAt: now + WINDOW_MS });
+    return false;
+  }
+  if (hit.count >= max) return true;
+  hit.count++;
+  return false;
+}
+
+function clientIp(req: NextRequest): string {
+  const forwarded = req.headers.get("x-forwarded-for");
+  if (forwarded) return forwarded.split(",")[0].trim();
+  return req.headers.get("x-real-ip") ?? "unknown";
+}
+
 // Confirm the caller is a real signed-in reader and recover what we need to authorize the
-// draft: their email (for comped accounts) and their stripeRole custom claim (set by the
-// Stripe extension for STRATA Plus). The public web API key verifies the ID token via
-// Identity Toolkit, so no service-account secret is needed.
+// draft: their uid (rate-limit key), email (for comped accounts) and their stripeRole
+// custom claim (set by the Stripe extension for STRATA Plus). The public web API key
+// verifies the ID token via Identity Toolkit, so no service-account secret is needed.
 async function lookupCaller(idToken: string): Promise<CallerInfo | null> {
   const apiKey = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
   if (!apiKey) return null;
@@ -29,14 +72,20 @@ async function lookupCaller(idToken: string): Promise<CallerInfo | null> {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idToken }),
+        // Do not let a hung Identity Toolkit call ride the full maxDuration.
+        signal: AbortSignal.timeout(5000),
       },
     );
     if (!res.ok) return null;
     const data = (await res.json()) as {
-      users?: Array<{ email?: string; customAttributes?: string }>;
+      users?: Array<{
+        localId?: string;
+        email?: string;
+        customAttributes?: string;
+      }>;
     };
     const user = data.users?.[0];
-    if (!user) return null;
+    if (!user?.localId) return null;
     let stripeRole: string | undefined;
     try {
       stripeRole = (
@@ -45,7 +94,7 @@ async function lookupCaller(idToken: string): Promise<CallerInfo | null> {
     } catch {
       // no/invalid custom claims; treat as no role
     }
-    return { email: user.email, stripeRole };
+    return { uid: user.localId, email: user.email, stripeRole };
   } catch {
     return null;
   }
@@ -100,6 +149,20 @@ export async function POST(req: NextRequest) {
     isFreeReading(found.reading);
   if (!entitled) {
     return NextResponse.json({ error: "plus-required" }, { status: 402 });
+  }
+
+  // Cap how fast a single reader (or IP) can spend model calls. The client already limits
+  // free draws, but that gate is cosmetic; this is the server-side backstop against a
+  // script looping the endpoint. Checked only now, so unauthorized/unknown requests never
+  // consume a reader's budget.
+  if (
+    rateLimited(uidHits, caller.uid, MAX_PER_UID) ||
+    rateLimited(ipHits, clientIp(req), MAX_PER_IP)
+  ) {
+    return NextResponse.json(
+      { error: "rate-limited" },
+      { status: 429, headers: { "Retry-After": "60" } },
+    );
   }
 
   try {

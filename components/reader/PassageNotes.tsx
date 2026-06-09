@@ -67,14 +67,17 @@ function NoteRow({ vkey, n, note }: { vkey: string; n: number; note: string }) {
                 setText(note);
                 setEditing(true);
               }}
-              className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+              className="inline-flex min-h-[44px] items-center font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
             >
               Edit
             </button>
             <button
               type="button"
-              onClick={() => removeNote(vkey)}
-              className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+              onClick={() => {
+                if (!window.confirm("Delete this note?")) return;
+                removeNote(vkey);
+              }}
+              className="inline-flex min-h-[44px] items-center font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
             >
               Delete
             </button>
@@ -103,7 +106,7 @@ function NoteRow({ vkey, n, note }: { vkey: string; n: number; note: string }) {
           <button
             type="button"
             onClick={() => setEditing(false)}
-            className="font-ui text-[10px] uppercase tracking-[.12em] text-parchment-2 transition-colors hover:text-parchment"
+            className="inline-flex min-h-[44px] items-center font-ui text-[10px] uppercase tracking-[.12em] text-parchment-2 transition-colors hover:text-parchment"
           >
             Cancel
           </button>
@@ -113,7 +116,7 @@ function NoteRow({ vkey, n, note }: { vkey: string; n: number; note: string }) {
               saveNote(vkey, text);
               setEditing(false);
             }}
-            className="rounded-[8px] bg-gold px-3 py-1.5 font-ui text-[10px] uppercase tracking-[.12em] text-deep transition-colors hover:bg-gold-bright"
+            className="inline-flex min-h-[44px] items-center rounded-[8px] bg-gold px-3 font-ui text-[10px] uppercase tracking-[.12em] text-deep transition-colors hover:bg-gold-bright"
           >
             Save
           </button>

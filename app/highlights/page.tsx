@@ -115,10 +115,14 @@ export default function HighlightsPage() {
                         <button
                           type="button"
                           aria-label="Remove highlight"
-                          onClick={() =>
-                            setHighlight(user.uid, v.key, false).catch(() => {})
-                          }
-                          className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+                          onClick={() => {
+                            if (!window.confirm("Remove this highlight?"))
+                              return;
+                            setHighlight(user.uid, v.key, false).catch(
+                              () => {},
+                            );
+                          }}
+                          className="inline-flex min-h-[44px] items-center font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
                         >
                           Remove
                         </button>
@@ -177,7 +181,7 @@ function NoteBlock({
             setText(note);
             setEditing(true);
           }}
-          className="mt-1 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+          className="mt-1 inline-flex min-h-[44px] items-center font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
         >
           Edit note
         </button>
@@ -189,9 +193,9 @@ function NoteBlock({
           setText("");
           setEditing(true);
         }}
-        className="mt-2 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+        className="mt-2 inline-flex min-h-[44px] items-center gap-1 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
-        ✎ Add note
+        <span aria-hidden="true">✎</span> Add note
       </button>
     );
   }
@@ -212,10 +216,11 @@ function NoteBlock({
           <button
             type="button"
             onClick={() => {
+              if (!window.confirm("Delete this note?")) return;
               removeNote(uid, vkey).catch(() => {});
               setEditing(false);
             }}
-            className="font-ui text-[9.5px] uppercase tracking-[.14em] text-mist transition-colors hover:text-gold-bright"
+            className="inline-flex min-h-[44px] items-center font-ui text-[9.5px] uppercase tracking-[.14em] text-mist transition-colors hover:text-gold-bright"
           >
             Delete note
           </button>
@@ -226,7 +231,7 @@ function NoteBlock({
           <button
             type="button"
             onClick={() => setEditing(false)}
-            className="font-ui text-[10px] uppercase tracking-[.12em] text-parchment-2 transition-colors hover:text-parchment"
+            className="inline-flex min-h-[44px] items-center font-ui text-[10px] uppercase tracking-[.12em] text-parchment-2 transition-colors hover:text-parchment"
           >
             Cancel
           </button>
@@ -236,7 +241,7 @@ function NoteBlock({
               setNote(uid, vkey, text).catch(() => {});
               setEditing(false);
             }}
-            className="rounded-[8px] bg-gold px-3 py-1.5 font-ui text-[10px] uppercase tracking-[.12em] text-deep transition-colors hover:bg-gold-bright"
+            className="inline-flex min-h-[44px] items-center rounded-[8px] bg-gold px-3 font-ui text-[10px] uppercase tracking-[.12em] text-deep transition-colors hover:bg-gold-bright"
           >
             Save
           </button>

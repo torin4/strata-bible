@@ -13,7 +13,7 @@ export function Doorway({
   return (
     <div className="mt-6 border-t border-line pt-5">
       <div className="font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-mist-2">
-        {doorway.skicker}
+        {doorway.kicker}
       </div>
       <div className="mb-2 mt-1 font-display text-[18px] font-medium leading-[1.2] text-gold-bright">
         {nextHref ? (

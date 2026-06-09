@@ -269,7 +269,7 @@ export const JOB_MOVEMENT: Movement = {
   throughline: 'A blameless man loses everything, refuses the explanation everyone offers, and is answered not with a reason but with the size of the world.',
   chapterStart: 1, chapterEnd: 42,
   situation: {
-    skicker: 'The ground beneath the book', title: 'A folk tale with a furnace inside it',
+    kicker: 'The ground beneath the book', title: 'A folk tale with a furnace inside it',
     paragraphs: [
       'Job is built from two materials by, almost certainly, two hands. An old prose folk tale about a patient man who loses everything and gets it back wraps a long, savage poem in which the same man is anything but patient, and refuses every easy comfort.',
       'The seam is not a flaw to explain away. It is the argument. The frame believes in the fair exchange of virtue for reward. The poetry does not, and will not, and the book keeps both, daring you to notice.',
@@ -277,7 +277,7 @@ export const JOB_MOVEMENT: Movement = {
     sources: 'Newsom · Greenberg · Alter',
   },
   capstone: {
-    skicker: 'The shape of the whole book', title: 'No answer, and somehow enough',
+    kicker: 'The shape of the whole book', title: 'No answer, and somehow enough',
     paragraphs: [
       'The friends gave the clean answer: you suffer because you sinned, so confess and be restored. The book lets them say it for thirty-five chapters, then God says to their faces that they were wrong, and that Job, who spent those chapters accusing heaven, spoke rightly. Honest complaint is vindicated over false comfort.',
       'And God never explains the suffering. He answers the question with the size of creation and the wildness of a world not built to human scale. Job wanted a verdict and got a horizon, and the book’s most unsettling claim is that the horizon was enough.',

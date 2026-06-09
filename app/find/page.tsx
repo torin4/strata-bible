@@ -27,7 +27,6 @@ function buildIndex(): FindEntry[] {
         bookTitle: book.title,
         title: reading.title,
         span: reading.span,
-        tier: reading.tier,
         themes: tagged.themes,
         speaksTo: tagged.speaksTo,
         haystack: normalize(

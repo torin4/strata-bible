@@ -8,7 +8,6 @@ export interface FindEntry {
   bookTitle: string;
   title: string;
   span: string;
-  tier: string;
   themes: ThemeKey[];
   speaksTo: string;
   haystack: string; // normalized title + speaksTo + theme labels + thread/meaning/turn
@@ -208,7 +207,6 @@ const STOPWORDS = new Set([
 export function normalize(text: string): string {
   return text
     .toLowerCase()
-    .replace(/[“”]/g, '"')
     .replace(/[‘’]/g, "'")
     .replace(/[^a-z0-9'\s-]/g, " ")
     .replace(/\s+/g, " ")

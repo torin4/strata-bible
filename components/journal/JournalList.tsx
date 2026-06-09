@@ -29,7 +29,7 @@ export function JournalList() {
     setError(null);
     return subscribeEntries(user.uid, setEntries, (e) =>
       setError(
-        e.message.includes("permission")
+        (e as { code?: string }).code === "permission-denied"
           ? "Cannot read entries yet. The Firestore security rules may not be published."
           : "Could not load your journal.",
       ),
@@ -38,7 +38,10 @@ export function JournalList() {
 
   if (error) {
     return (
-      <p className="font-body text-[14px] italic leading-[1.6] text-psyche">
+      <p
+        role="alert"
+        className="font-body text-[14px] italic leading-[1.6] text-psyche"
+      >
         {error}
       </p>
     );
@@ -86,9 +89,11 @@ export function JournalList() {
             <button
               type="button"
               onClick={() => {
-                if (user) deleteEntry(user.uid, entry.id).catch(() => {});
+                if (!user) return;
+                if (!window.confirm("Delete this entry?")) return;
+                deleteEntry(user.uid, entry.id).catch(() => {});
               }}
-              className="font-ui text-[10px] uppercase tracking-[.14em] text-mist transition-colors hover:text-psyche"
+              className="inline-flex min-h-[44px] items-center font-ui text-[10px] uppercase tracking-[.14em] text-mist transition-colors hover:text-psyche"
             >
               Delete
             </button>

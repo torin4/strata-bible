@@ -24,14 +24,19 @@ export function MovementProgress({ readingIds }: { readingIds: string[] }) {
   const pct = Math.round((done / readingIds.length) * 100);
 
   return (
-    <div
-      className="mt-3 h-[2px] w-full overflow-hidden rounded-full bg-parchment/[0.08]"
-      aria-hidden="true"
-    >
+    <>
       <div
-        className="h-full rounded-full bg-gold/70 transition-[width] duration-500"
-        style={{ width: `${pct}%` }}
-      />
-    </div>
+        aria-hidden="true"
+        className="mt-3 h-[2px] w-full overflow-hidden rounded-full bg-parchment/[0.08]"
+      >
+        <div
+          className="h-full rounded-full bg-gold/70 transition-[width] duration-500"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+      <span className="sr-only">
+        {done} of {readingIds.length} readings read
+      </span>
+    </>
   );
 }

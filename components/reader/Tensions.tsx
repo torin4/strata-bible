@@ -9,8 +9,9 @@ export function Tensions({ tensions }: { tensions: Tension[] }) {
       <div className="mb-[11px] font-ui text-[9.5px] font-semibold uppercase tracking-[.18em] text-psyche">
         Where the canon argues back
       </div>
-      {tensions.map((tension) => (
-        <div key={tension.claim} className="mb-[12px] last:mb-0">
+      {tensions.map((tension, idx) => (
+        // biome-ignore lint/suspicious/noArrayIndexKey: static authored list, no reordering
+        <div key={idx} className="mb-[12px] last:mb-0">
           <div className="font-scripture text-[16.5px] leading-[1.4] text-parchment">
             {tension.claim}
           </div>

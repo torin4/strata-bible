@@ -18,6 +18,27 @@ export function PlusWelcome() {
   const [open, setOpen] = useState(false);
   const [book, setBook] = useState<{ id: string; title: string } | null>(null);
   const primaryRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+
+  // Keep Tab within the dialog while it is open, so focus cannot wander to the page behind
+  // the backdrop.
+  const trapTab = (e: React.KeyboardEvent) => {
+    if (e.key !== "Tab") return;
+    const els = dialogRef.current?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), textarea, [href], [tabindex]:not([tabindex="-1"])',
+    );
+    if (!els || els.length === 0) return;
+    const first = els[0];
+    const last = els[els.length - 1];
+    const active = document.activeElement;
+    if (e.shiftKey && active === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  };
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -66,9 +87,11 @@ export function PlusWelcome() {
         className="absolute inset-0 cursor-default bg-shell/75 backdrop-blur-sm"
       />
       <dialog
+        ref={dialogRef}
         open
         aria-modal="true"
         aria-labelledby="plus-welcome-title"
+        onKeyDown={trapTab}
         className="stagger relative m-0 w-full max-w-[24rem] rounded-[18px] border border-gold/40 bg-deep px-7 py-8 text-center text-parchment shadow-2xl"
       >
         <button

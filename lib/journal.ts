@@ -86,14 +86,16 @@ export function subscribeEntries(
         snapshot.docs.map((entryDoc) => {
           const data = entryDoc.data({ serverTimestamps: "estimate" });
           const ts = data.createdAt;
+          const str = (v: unknown): string | undefined =>
+            typeof v === "string" ? v : undefined;
           return {
             id: entryDoc.id,
             text: typeof data.text === "string" ? data.text : "",
-            prompt: data.prompt,
-            bookId: data.bookId,
-            readingId: data.readingId,
-            readingTitle: data.readingTitle,
-            passageRef: data.passageRef,
+            prompt: str(data.prompt),
+            bookId: str(data.bookId),
+            readingId: str(data.readingId),
+            readingTitle: str(data.readingTitle),
+            passageRef: str(data.passageRef),
             createdAt:
               ts && typeof ts.toDate === "function" ? ts.toDate() : null,
           };

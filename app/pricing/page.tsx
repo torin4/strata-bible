@@ -4,7 +4,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { Footer } from "@/components/nav/Footer";
 import { PageTransition } from "@/components/nav/PageTransition";
-import { purchasableBooks } from "@/lib/pricing";
+import { PLUS_PRICE, purchasableBooks } from "@/lib/pricing";
 import {
   STRIPE_PRICE_ID,
   STRIPE_PRICE_ID_MONTHLY,
@@ -15,11 +15,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+// Only plans with a configured Stripe price are offered, so a half-configured billing
+// setup (annual live, monthly not yet) never shows a button that throws at checkout.
 const PLANS = [
   {
     key: "annual",
     name: "Annual",
-    price: "$49",
+    price: PLUS_PRICE.annual,
     period: "/year",
     note: "Best value, about $4 a month.",
     priceId: STRIPE_PRICE_ID,
@@ -28,13 +30,13 @@ const PLANS = [
   {
     key: "monthly",
     name: "Monthly",
-    price: "$6.99",
+    price: PLUS_PRICE.monthly,
     period: "/month",
     note: "Flexible, cancel anytime.",
     priceId: STRIPE_PRICE_ID_MONTHLY,
     primary: false,
   },
-];
+].filter((plan) => plan.priceId);
 
 const INCLUDED = [
   "All of Genesis, beyond the free primeval history",
@@ -180,7 +182,10 @@ export default function PricingPage() {
         )}
 
         {error ? (
-          <p className="mt-4 text-center font-body text-[13px] italic text-psyche">
+          <p
+            role="alert"
+            className="mt-4 text-center font-body text-[13px] italic text-psyche"
+          >
             {error}
           </p>
         ) : null}

@@ -9,7 +9,7 @@ export function BookCapstone({ capstone }: { capstone: CapstoneData }) {
       <summary className="flex cursor-pointer items-start gap-3 px-5 py-4">
         <span className="flex flex-col gap-1">
           <span className="font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
-            {capstone.skicker}
+            {capstone.kicker}
           </span>
           <span className="font-display text-[20px] font-medium leading-[1.2] text-gold-bright">
             {capstone.title}

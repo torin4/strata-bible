@@ -48,7 +48,8 @@ export function Scripture({
                   vkey={highlightKey(readingId, passageRef, verse.n)}
                 >
                   {verse.text.split("\n").map((line, li) => (
-                    <Fragment key={line}>
+                    // biome-ignore lint/suspicious/noArrayIndexKey: static list of lines within a verse
+                    <Fragment key={li}>
                       {li > 0 ? <br /> : null}
                       {line}
                     </Fragment>

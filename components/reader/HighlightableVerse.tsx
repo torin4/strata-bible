@@ -49,13 +49,7 @@ export function HighlightableVerse({
         aria-haspopup="dialog"
         aria-expanded={open}
         aria-pressed={on}
-        aria-label={
-          noted
-            ? "Highlighted verse with a note, open actions"
-            : on
-              ? "Highlighted verse, open actions"
-              : "Highlight verse"
-        }
+        aria-roledescription="highlightable verse"
         onClick={(e) => toggle(e.currentTarget.getBoundingClientRect())}
         onKeyDown={(e: KeyboardEvent<HTMLSpanElement>) => {
           if (e.key === "Enter" || e.key === " ") {

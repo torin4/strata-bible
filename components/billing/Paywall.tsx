@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
-import { bookPrice } from "@/lib/pricing";
+import { PLUS_PRICE, bookPrice } from "@/lib/pricing";
 import { buyBook, startCheckout } from "@/lib/subscription";
 import Link from "next/link";
 import { useState } from "react";
@@ -75,7 +75,9 @@ export function Paywall({
             disabled={busy !== null}
             className="rounded-[10px] border border-gold/45 px-5 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
           >
-            {busy === "plus" ? "Opening checkout" : "STRATA Plus, $49 a year"}
+            {busy === "plus"
+              ? "Opening checkout"
+              : `STRATA Plus, ${PLUS_PRICE.annual} a year`}
           </button>
           <p className="font-body text-[12px] italic leading-[1.5] text-mist-2">
             {buyBookId
@@ -86,7 +88,12 @@ export function Paywall({
       )}
 
       {error ? (
-        <p className="mt-4 font-body text-[13px] italic text-psyche">{error}</p>
+        <p
+          role="alert"
+          className="mt-4 font-body text-[13px] italic text-psyche"
+        >
+          {error}
+        </p>
       ) : null}
 
       <div className="mt-6 flex justify-center gap-5">

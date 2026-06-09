@@ -14,6 +14,8 @@ export function MenuDrawer() {
   const [lastRead, setLast] = useState<LastRead | null>(null);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const drawerRef = useRef<HTMLElement>(null);
+  const DRAWER_ID = "nav-drawer";
 
   useEffect(() => {
     if (!user) {
@@ -43,6 +45,25 @@ export function MenuDrawer() {
     };
   }, [open]);
 
+  // Keep Tab within the drawer while it is open (same pattern as HighlightPopover).
+  const trapTab = (e: React.KeyboardEvent) => {
+    if (e.key !== "Tab") return;
+    const els = drawerRef.current?.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), textarea, input, [tabindex]:not([tabindex="-1"])',
+    );
+    if (!els || els.length === 0) return;
+    const first = els[0];
+    const last = els[els.length - 1];
+    const active = document.activeElement;
+    if (e.shiftKey && active === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  };
+
   // Closing returns focus to the menu button it opened from.
   const close = () => {
     setOpen(false);
@@ -64,6 +85,7 @@ export function MenuDrawer() {
         type="button"
         aria-label="Open menu"
         aria-expanded={open}
+        aria-controls={DRAWER_ID}
         onClick={() => setOpen(true)}
         className="fixed left-4 top-4 z-30 flex h-9 w-9 items-center justify-center rounded-full border border-line bg-deep/70 text-mist backdrop-blur transition-colors hover:text-gold-bright"
       >
@@ -94,9 +116,12 @@ export function MenuDrawer() {
       />
 
       <aside
+        ref={drawerRef}
+        id={DRAWER_ID}
         aria-label="Menu"
         inert={!open}
-        className={`fixed inset-y-0 left-0 z-50 flex w-[272px] max-w-[82vw] flex-col border-r border-line bg-deep px-6 py-7 transition-transform duration-300 ease-out ${
+        onKeyDown={trapTab}
+        className={`fixed inset-y-0 left-0 z-50 flex w-[272px] max-w-[82vw] flex-col border-r border-line bg-deep px-6 py-7 transition-transform duration-300 ease-out motion-reduce:transition-none ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >

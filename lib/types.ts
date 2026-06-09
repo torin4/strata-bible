@@ -158,7 +158,7 @@ export interface TimelineRow {
 // A grounding overlay. Book-level (composition: "how it was written") or
 // movement-level (situation: "the ground beneath this stretch").
 export interface Panel {
-  skicker: string;
+  kicker: string;
   title: string;
   paragraphs: string[];
   timeline?: TimelineRow[];
@@ -171,7 +171,7 @@ export interface Panel {
 // internal tensions that only resolve (or pointedly refuse to resolve) at the level
 // of the whole, e.g. Job's restored-double frame against its uncompromising poetry.
 export interface Capstone {
-  skicker: string;
+  kicker: string;
   title: string;
   paragraphs: string[];
   tensions?: Tension[];
@@ -181,7 +181,7 @@ export interface Capstone {
 
 // The look-forward at the threshold between movements.
 export interface Doorway {
-  skicker: string;
+  kicker: string;
   title: string;
   paragraphs: string[];
   nextMovementId: string;

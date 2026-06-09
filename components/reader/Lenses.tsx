@@ -13,7 +13,10 @@ export function Lenses({ lenses }: { lenses: LensesData }) {
             <span className="rounded-full border border-gold/50 bg-gold-soft px-[11px] py-1 font-ui text-[9px] font-semibold uppercase tracking-[.18em] text-gold-bright">
               Theological
             </span>
-            <span className="ml-auto text-[15px] text-mist-2 transition-transform group-open:rotate-45 group-open:text-gold">
+            <span
+              aria-hidden="true"
+              className="ml-auto text-[15px] text-mist-2 transition-transform group-open:rotate-45 group-open:text-gold"
+            >
               +
             </span>
           </summary>
@@ -28,7 +31,10 @@ export function Lenses({ lenses }: { lenses: LensesData }) {
             <span className="rounded-full border border-psyche/40 bg-psyche/[0.08] px-[11px] py-1 font-ui text-[9px] font-semibold uppercase tracking-[.18em] text-psyche">
               Archetypal
             </span>
-            <span className="ml-auto text-[15px] text-mist-2 transition-transform group-open:rotate-45 group-open:text-gold">
+            <span
+              aria-hidden="true"
+              className="ml-auto text-[15px] text-mist-2 transition-transform group-open:rotate-45 group-open:text-gold"
+            >
               +
             </span>
           </summary>

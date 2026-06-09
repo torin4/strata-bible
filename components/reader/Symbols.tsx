@@ -8,8 +8,9 @@ export function Symbols({ symbols }: { symbols: SymbolGloss[] }) {
       <div className="mb-[11px] font-ui text-[9.5px] font-semibold uppercase tracking-[.18em] text-lapis">
         What the images meant
       </div>
-      {symbols.map((symbol) => (
-        <div key={symbol.image} className="mb-[11px] last:mb-0">
+      {symbols.map((symbol, idx) => (
+        // biome-ignore lint/suspicious/noArrayIndexKey: static authored list, no reordering
+        <div key={idx} className="mb-[11px] last:mb-0">
           <div className="font-scripture text-[17px] leading-[1.2] text-gold-bright">
             {symbol.image}
           </div>

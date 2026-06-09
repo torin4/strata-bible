@@ -4,18 +4,18 @@ type Accent = "lapis" | "gold";
 
 const ACCENT: Record<
   Accent,
-  { border: string; openBg: string; skicker: string; tag: string }
+  { border: string; openBg: string; kicker: string; tag: string }
 > = {
   lapis: {
     border: "border-lapis/30 open:border-lapis/40",
     openBg: "open:bg-lapis/[0.05]",
-    skicker: "text-lapis",
+    kicker: "text-lapis",
     tag: "text-lapis",
   },
   gold: {
     border: "border-gold/40 open:border-gold/[0.5]",
     openBg: "open:bg-gold-soft",
-    skicker: "text-gold",
+    kicker: "text-gold",
     tag: "text-gold",
   },
 };
@@ -31,9 +31,9 @@ export function PanelView({ panel, accent }: { panel: Panel; accent: Accent }) {
       <summary className="flex cursor-pointer items-center gap-3 px-4 py-3">
         <span className="flex flex-col">
           <span
-            className={`font-ui text-[9px] font-semibold uppercase tracking-[.2em] ${c.skicker}`}
+            className={`font-ui text-[9px] font-semibold uppercase tracking-[.2em] ${c.kicker}`}
           >
-            {panel.skicker}
+            {panel.kicker}
           </span>
           <span className="mt-1 font-display text-[16px] font-medium leading-[1.2] text-parchment-2">
             {panel.title}

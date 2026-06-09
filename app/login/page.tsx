@@ -164,7 +164,11 @@ export default function LoginPage() {
               </form>
 
               {error ? (
-                <p className="mt-4 text-center font-body text-[13px] italic text-psyche">
+                <p
+                  role="alert"
+                  aria-live="assertive"
+                  className="mt-4 text-center font-body text-[13px] italic text-psyche"
+                >
                   {error}
                 </p>
               ) : null}

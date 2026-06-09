@@ -94,6 +94,7 @@ export function FindClient({
               key={t.key}
               type="button"
               title={t.blurb}
+              aria-pressed={on}
               onClick={() => onChip(t.key)}
               className={`rounded-full border px-3 py-1.5 font-ui text-[11px] tracking-[.04em] transition-colors ${
                 on
@@ -108,6 +109,14 @@ export function FindClient({
       </div>
 
       <div className="mt-8">
+        {/* Visually hidden live region: announces filtered result count to screen readers. */}
+        <span aria-live="polite" aria-atomic="true" className="sr-only">
+          {browsing
+            ? `${results.length} readings`
+            : results.length === 0
+              ? "No readings matched"
+              : `${results.length} ${results.length === 1 ? "reading" : "readings"}`}
+        </span>
         <div className="mb-4 text-center font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
           {browsing
             ? `All ${results.length} sittings`
@@ -129,7 +138,7 @@ export function FindClient({
                   href={`/read/${entry.bookId}/${entry.id}`}
                   className="group block rounded-[14px] border border-line bg-deep px-5 py-5 transition-colors hover:border-gold/40"
                 >
-                  <p className="font-scripture text-[18px] italic leading-[1.45] text-parchment-2 group-hover:text-parchment">
+                  <p className="font-body text-[18px] italic leading-[1.45] text-parchment-2 group-hover:text-parchment">
                     {entry.speaksTo}
                   </p>
                   <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">

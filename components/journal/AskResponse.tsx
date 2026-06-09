@@ -65,6 +65,8 @@ export function AskResponse({
     <div className="mt-3">
       <JournalComposer
         autoFocus
+        prompt={prompt}
+        showPrompt={false}
         context={{ bookId, readingId, readingTitle, passageRef }}
         placeholder="Your response."
         onSaved={() => setSaved(true)}

@@ -6,7 +6,8 @@ import { ServiceWorker } from "@/components/pwa/ServiceWorker";
 import { HighlightProvider } from "@/components/reader/HighlightProvider";
 import { SettingsProvider } from "@/components/settings/SettingsProvider";
 import { COMPANY } from "@/lib/company";
-import type { Metadata } from "next";
+import { THEME_COLOR } from "@/lib/theme";
+import type { Metadata, Viewport } from "next";
 import "@/styles/tokens.css";
 import "@/styles/globals.css";
 // Self-hosted fonts. Cinzel (display), Cormorant Garamond (scripture + passage titles),
@@ -27,6 +28,10 @@ import "@fontsource/hanken-grotesk/600.css";
 
 const DESCRIPTION =
   "An illuminated reading of scripture, grounded in the history it grew out of.";
+
+export const viewport: Viewport = {
+  themeColor: THEME_COLOR,
+};
 
 export const metadata: Metadata = {
   // The canonical home; makes every relative OG/canonical URL absolute.
