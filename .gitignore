@@ -40,6 +40,13 @@ yarn-error.log*
 # playwright mcp scratch (screenshots, snapshots)
 .playwright-mcp/
 
+# agent tooling (skills installer + per-tool config); local, not app code
+.agents/
+.claude/
+.goose/
+.windsurf/
+skills-lock.json
+
 # macOS / iCloud sync duplicates, e.g. "foo 2.ts", "bar 3.webp" (this project uses
 # kebab-case, so no real file matches "<name> <digit>.<ext>")
 * [0-9].*
