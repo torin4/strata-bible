@@ -108,7 +108,7 @@ export function MenuDrawer() {
             type="button"
             aria-label="Close menu"
             onClick={close}
-            className="flex h-8 w-8 items-center justify-center rounded-full text-mist-2 transition-colors hover:text-gold-bright"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-mist transition-colors hover:text-gold-bright"
           >
             <svg
               width="14"
@@ -169,7 +169,7 @@ export function MenuDrawer() {
                   signOutUser();
                   close();
                 }}
-                className="self-start font-ui text-[10px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+                className="self-start font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
               >
                 Sign out
               </button>

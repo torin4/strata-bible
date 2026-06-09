@@ -98,7 +98,7 @@ export default function HighlightsPage() {
                   <span className="font-display text-[17px] tracking-[.02em] text-parchment-2 transition-colors group-hover:text-parchment">
                     {group.readingTitle}
                   </span>
-                  <span className="font-ui text-[10px] uppercase tracking-[.16em] text-mist-2 transition-colors group-hover:text-gold-bright">
+                  <span className="font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors group-hover:text-gold-bright">
                     Open ›
                   </span>
                 </Link>
@@ -118,7 +118,7 @@ export default function HighlightsPage() {
                           onClick={() =>
                             setHighlight(user.uid, v.key, false).catch(() => {})
                           }
-                          className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+                          className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
                         >
                           Remove
                         </button>
@@ -140,7 +140,7 @@ export default function HighlightsPage() {
         <div className="mt-8 text-center">
           <Link
             href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
           >
             Back to the reader
           </Link>
@@ -177,7 +177,7 @@ function NoteBlock({
             setText(note);
             setEditing(true);
           }}
-          className="mt-1 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+          className="mt-1 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
         >
           Edit note
         </button>
@@ -189,7 +189,7 @@ function NoteBlock({
           setText("");
           setEditing(true);
         }}
-        className="mt-2 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+        className="mt-2 font-ui text-[9.5px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
         ✎ Add note
       </button>

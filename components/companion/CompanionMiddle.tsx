@@ -116,7 +116,7 @@ export function CompanionMiddle({
   }
 
   return (
-    <div className="mt-5 border-t border-line pt-4">
+    <div aria-live="polite" className="mt-5 border-t border-line pt-4">
       {phase === "error" ? (
         <p className="mb-2 font-body text-[13px] italic text-psyche">
           The companion could not draft this just now.

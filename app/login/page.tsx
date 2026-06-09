@@ -135,6 +135,7 @@ export default function LoginPage() {
                 <input
                   type="email"
                   required
+                  aria-label="Email"
                   autoComplete="email"
                   placeholder="Email"
                   value={email}
@@ -144,6 +145,7 @@ export default function LoginPage() {
                 <input
                   type="password"
                   required
+                  aria-label="Password"
                   autoComplete={
                     mode === "signin" ? "current-password" : "new-password"
                   }
@@ -173,7 +175,7 @@ export default function LoginPage() {
                   setMode(mode === "signin" ? "signup" : "signin");
                   setError(null);
                 }}
-                className="mt-5 w-full text-center font-ui text-[11px] tracking-[.06em] text-mist-2 transition-colors hover:text-gold-bright"
+                className="mt-5 w-full text-center font-ui text-[11px] tracking-[.06em] text-mist transition-colors hover:text-gold-bright"
               >
                 {mode === "signin"
                   ? "New here? Create an account"
@@ -186,7 +188,7 @@ export default function LoginPage() {
         <div className="mt-5 text-center">
           <Link
             href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
           >
             Back to the reader
           </Link>

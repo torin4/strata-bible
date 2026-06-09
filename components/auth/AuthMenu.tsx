@@ -23,7 +23,7 @@ export function AuthMenu() {
     return (
       <Link
         href="/login"
-        className="font-ui text-[10px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+        className="font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
         Sign in
       </Link>
@@ -44,7 +44,7 @@ export function AuthMenu() {
       <button
         type="button"
         onClick={() => signOutUser()}
-        className="font-ui text-[10px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+        className="font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
         Sign out
       </button>

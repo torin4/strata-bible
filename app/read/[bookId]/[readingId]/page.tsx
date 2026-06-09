@@ -55,7 +55,7 @@ export default async function ReadingPage({
           {book ? (
             <Link
               href={`/book/${bookId}`}
-              className="font-ui text-[10px] uppercase tracking-[.18em] text-mist-2 transition-colors hover:text-gold-bright"
+              className="font-ui text-[10px] uppercase tracking-[.18em] text-mist transition-colors hover:text-gold-bright"
             >
               &larr; {book.title}
             </Link>
@@ -76,7 +76,7 @@ export default async function ReadingPage({
         <div className="mt-6 text-center">
           <Link
             href={`/book/${bookId}`}
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
           >
             {book ? `All of ${book.title}` : "All readings"}
           </Link>

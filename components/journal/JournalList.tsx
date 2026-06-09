@@ -88,7 +88,7 @@ export function JournalList() {
               onClick={() => {
                 if (user) deleteEntry(user.uid, entry.id).catch(() => {});
               }}
-              className="font-ui text-[10px] uppercase tracking-[.14em] text-mist-2 transition-colors hover:text-psyche"
+              className="font-ui text-[10px] uppercase tracking-[.14em] text-mist transition-colors hover:text-psyche"
             >
               Delete
             </button>

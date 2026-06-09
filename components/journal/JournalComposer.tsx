@@ -54,6 +54,7 @@ export function JournalComposer({
       <textarea
         // biome-ignore lint/a11y/noAutofocus: opt-in only for the inline ask responder
         autoFocus={autoFocus}
+        aria-label={prompt ? "Your response" : "Journal entry"}
         rows={4}
         value={text}
         onChange={(e) => setText(e.target.value)}

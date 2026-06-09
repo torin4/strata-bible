@@ -32,6 +32,7 @@ export default async function BookPage({
           <img
             src={book.heroImage}
             alt=""
+            fetchPriority="high"
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-shell via-shell/30 to-transparent" />
@@ -101,7 +102,7 @@ export default async function BookPage({
         <div className="mt-6 text-center">
           <Link
             href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
           >
             All books
           </Link>

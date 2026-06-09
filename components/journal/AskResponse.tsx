@@ -31,7 +31,7 @@ export function AskResponse({
     return (
       <Link
         href="/login"
-        className="mt-3 inline-block font-ui text-[10px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+        className="mt-3 inline-block font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
         Sign in to respond
       </Link>

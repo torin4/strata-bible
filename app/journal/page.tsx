@@ -57,7 +57,7 @@ export default function JournalPage() {
         <div className="mt-6 text-center">
           <Link
             href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
+            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
           >
             Back to the reader
           </Link>

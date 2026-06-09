@@ -49,6 +49,8 @@ export function PanelView({ panel, accent }: { panel: Panel; accent: Accent }) {
           <img
             src={panel.image}
             alt=""
+            loading="lazy"
+            decoding="async"
             className="mb-4 w-full rounded-[10px] border border-line"
           />
         ) : null}

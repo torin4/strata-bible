@@ -75,7 +75,7 @@ export function FindClient({
               type="button"
               aria-label="Clear"
               onClick={() => setQuery("")}
-              className="-translate-y-1/2 absolute top-1/2 right-3 font-ui text-[11px] uppercase tracking-[.14em] text-mist-2 transition-colors hover:text-gold-bright"
+              className="-translate-y-1/2 absolute top-1/2 right-3 font-ui text-[11px] uppercase tracking-[.14em] text-mist transition-colors hover:text-gold-bright"
             >
               Clear
             </button>
