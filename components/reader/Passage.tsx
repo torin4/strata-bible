@@ -20,19 +20,17 @@ import { TheTurn } from "./TheTurn";
 // layers blank; each block is conditional, so the blanks render as nothing.
 export function Passage({
   passage,
-  first,
   bookId,
   readingId,
   readingTitle,
 }: {
   passage: PassageData;
-  first: boolean;
   bookId: string;
   readingId: string;
   readingTitle: string;
 }) {
   return (
-    <div className={first ? "" : "mt-[30px] border-t border-line pt-[26px]"}>
+    <>
       <div className="mb-1 flex flex-wrap items-baseline gap-[9px]">
         {passage.label ? (
           <span className="font-display text-[11px] uppercase tracking-[.22em] text-gold">
@@ -115,6 +113,6 @@ export function Passage({
         </>
       ) : null}
       {passage.prayer ? <Prayer prayer={passage.prayer} /> : null}
-    </div>
+    </>
   );
 }

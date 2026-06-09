@@ -145,7 +145,6 @@ export function Reader({
           <>
             <Passage
               passage={passage}
-              first
               bookId={reading.bookId}
               readingId={reading.id}
               readingTitle={reading.title}
