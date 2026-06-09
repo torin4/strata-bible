@@ -79,6 +79,31 @@ export default function AboutPage() {
 
           <section>
             <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
+              The recurring image
+            </h2>
+            <p className="font-body text-[15.5px] leading-[1.85] text-mist">
+              There is a second way the history reaches forward. Some of these
+              images do not stay in their own century. A world drawn out of
+              chaos, a garden lost, a flood that unmakes and remakes, a brother
+              wronged and a brother restored, a descent into a pit and the long
+              climb out of it, these recur across the stories of many peoples,
+              and they keep their hold long after the world that first told them
+              is gone. Where a reading opens a second lens, it is following one
+              of those patterns, not to reduce the text to psychology, but to
+              show how an old image goes on speaking, and why it can still find
+              you. It is offered quietly, alongside the history and never in
+              place of it.
+            </p>
+            <p className="mt-4 font-body text-[15.5px] leading-[1.85] text-mist">
+              Readers like Mircea Eliade, Joseph Campbell, and Northrop Frye
+              spent their lives tracing these returns, and the Bible does the
+              same from the inside, reading its own images forward as types that
+              come back.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
               Why now
             </h2>
             <p className="font-body text-[15.5px] leading-[1.85] text-mist">

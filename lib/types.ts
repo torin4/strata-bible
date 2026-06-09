@@ -30,7 +30,7 @@ export type AddrMode =
 
 export interface Verse {
   n: number;
-  text: string; // your own translation, always
+  text: string; // the Berean Standard Bible (BSB), public domain; never a licensed translation
 }
 
 export interface Ground {

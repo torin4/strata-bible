@@ -31,7 +31,7 @@ export const SEED: Reading[] = [
         meaning: 'The psalm does the thing religion usually forbids. It accuses God to his face, four times, and calls it prayer. Then in verse 5 it turns, not because anything changed, the enemy is still there, the face is still hidden, but because the one praying decides to trust anyway. Lament is not the opposite of faith. It is faith with its teeth bared.',
         lenses: {
           theo: 'You are allowed to say this. The Bible hands you the words to accuse God and keeps them in the prayer book. Trust here is not a feeling that the trouble lifted. It is a decision made inside the trouble, with the face still hidden.',
-          arch: 'The cry into a silence that will not answer is the oldest human sound. To name the silence and keep speaking into it anyway is how a self holds together when nothing outside confirms it. (Speaking into the silence as the act that keeps the self whole.)',
+          arch: 'The cry into a silence that will not answer is among the oldest human sounds, carved into the laments of every people. To name the silence and keep speaking into it anyway, refusing both the lie that all is well and the despair that no one hears, is how a person holds together when nothing outside confirms them. (The lament, the oldest prayer there is.)',
         },
         addr: { mode: 'pray', text: 'When you are in the worst of it, these are words you can take on your own lips. You do not have to pretend you are fine to pray it.' },
         ask: 'What would you say to God if you were allowed to accuse, and could you still get to verse 5?',
@@ -98,7 +98,7 @@ export const SEED: Reading[] = [
         meaning: 'This is the most honest description of the divided will ever written: wanting the good and watching yourself do the opposite, as if hijacked from inside. Paul’s point is not “try harder.” It is that the law can name the good and cannot produce it. Knowing the right thing has never been the same as being able to do it. The cry is real, and it is not the end of the sentence.',
         lenses: {
           theo: 'The law diagnoses, it does not cure. It can show you the gap between what you want and what you do, and it is powerless to close it. That gap is exactly where grace has to enter, which is why the passage ends not in resolve but in rescue: thanks be to God.',
-          arch: 'The self at war with itself, the “I” that wants one thing and a deeper current that does another, is the oldest map of the divided psyche. Naming the split is the first honest step; pretending to a unity you do not have is the lie. (The divided will brought into the light.)',
+          arch: 'The self at war with itself, wanting one thing and doing another as if overridden from within, is one of the oldest and most honest descriptions of being human, named by Paul here and by the poets and philosophers before and since. To see the split clearly is the first truthful step; pretending to a wholeness you do not have is the lie. (The divided will, named down the ages.)',
         },
         addr: { mode: 'names', text: 'You know the exact experience: wanting to do the good and watching yourself not do it, as if something in you overrode the choice.' },
         soft: 'The passage does not leave you in the cry. The next line is rescue.',
@@ -175,7 +175,7 @@ export const SEED: Reading[] = [
         meaning: 'To people being killed for refusing to call Caesar lord, John says the empire that looks unbeatable is a beast wearing borrowed authority, and its wound is already mortal. The grotesque imagery is not there to frighten you about the end of the world. It is there to shrink the empire to scale. Seen from the throne room, Rome is not eternal and not in charge, and the call is not to decode the future but to endure the present without bowing.',
         lenses: {
           theo: 'The vision relativizes every empire. Whatever claims total allegiance and the power to feed you or starve you is, seen truly, a beast on a short leash. That is the whole consolation: the thing crushing you is not the thing in charge.',
-          arch: 'The monster rising from the sea is the oldest image of chaos heaving up against order. To name the devouring power as a beast is to strip it of its claim to be a god. (Naming the monster as the first refusal of its power.)',
+          arch: 'The monster heaving up out of the sea is the oldest image of chaos against order, Leviathan and Tiamat and Rahab long before this beast. To name a devouring power a monster is to strip it of its claim to be a god, and to see it, from above, as already doomed. (The chaos-beast from the sea, named the world over.)',
         },
         addr: { mode: 'reframes', text: 'If something in your world presents itself as the only power that matters, with the reach to ruin you for not bowing, this was written to let you see it from above, where it is smaller than it says.' },
         ask: 'What in your life presents itself as the final power, the thing you cannot cross without being ruined, and what would change if you saw it as already on a short leash?',
@@ -230,7 +230,7 @@ export const SEED: Reading[] = [
         meaning: 'This is the hinge of the book’s integrity. Job could end his suffering, in the friends’ system, by confessing. He refuses. He would rather hold an honest complaint against heaven than a dishonest peace with it. The book sides with him. Honest accusation, it turns out, is closer to faith than false confession.',
         lenses: {
           theo: 'Job’s refusal to lie about himself is treated as righteousness, not rebellion. The God of this book would rather be argued with honestly than flattered falsely. That alone breaks most of what religion usually rewards.',
-          arch: 'To refuse the explanation everyone is pressing on you, and to hold your own experience as true against the crowd, is the costly work of staying a self under pressure to dissolve into the group’s story. (Holding the truth of your own experience against every comforter.)',
+          arch: 'To refuse the explanation everyone is pressing on you, and to hold your own experience as true against the crowd, is the costly work of remaining yourself under pressure to dissolve into the group’s story. It is one of the oldest tests of integrity there is, and Job passes it by refusing to lie even to be comforted. (Holding your own truth against every comforter.)',
         },
         addr: { mode: 'names', text: 'You know the pull to confess to something you did not do, just to end the pressure and be allowed back into comfort.' },
         ask: 'Where are you being asked to call yourself the problem so that someone else’s view of the world can stay intact?',
@@ -248,7 +248,7 @@ export const SEED: Reading[] = [
         meaning: 'The book’s strangest move is that the non-answer works. God does not tell Job why. He shows Job the size and wildness of a world that was never built to his scale, full of creatures that have nothing to do with human usefulness, and somehow that is enough. The comfort is not an explanation. It is a presence, and a sense of proportion. Job wanted a verdict and got a horizon.',
         lenses: {
           theo: 'God answers the problem of suffering by refusing the question’s terms. He does not justify the pain. He widens the frame until the demand for a tidy reason looks too small for the world it is asking about. That is either the deepest answer or the honest admission that there is none, and the book lets it be both.',
-          arch: 'The voice from the storm is the self confronted by the vastness it did not make and cannot control. Standing in that and not being destroyed, ceasing to need the world to be explicable on your terms, is its own kind of healing. (The ego quieted by the immensity it did not author.)',
+          arch: 'The voice out of the storm is the human confronted with the vastness it did not make and cannot master, the oldest experience of the sublime and the holy. To stand inside that and not be destroyed, to stop needing the world explained on your own scale, is a kind of healing no answer could give. (Otto, the holy as overwhelming mystery.)',
         },
         misreading: { named: 'God bullies Job into submission with a display of power.', why: 'Read as intimidation, the speech is ugly. But God then says Job spoke rightly and the friends did not. The one who accused him is vindicated; the ones who defended him are rebuked. That is not the behavior of a God who just wanted Job to shut up.' },
         tensions: [

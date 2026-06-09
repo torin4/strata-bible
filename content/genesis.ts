@@ -1,7 +1,6 @@
 import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 
-// Genesis 1-15, migrated from the prototype's SITTINGS/GEN objects by migrate.js.
-// Content is reshaped, not rewritten. 15 readings.
+// Genesis 1-50, the full book across four movements (primeval, Abraham, Jacob, Joseph).
 // Sittings carry full four-layer passages; grounded chapters carry clean text + ground
 // note, with meaning/turn/ask intentionally empty for the companion to draft.
 
@@ -51,10 +50,10 @@ export const GENESIS: Reading[] = [
           text: 'Priests wrote this during the Babylonian exile, around the 500s BCE. Their conquerors had a creation story in which the world was made through a war between gods. Genesis answers it: one God makes everything by speaking. No battle, no rival.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Wellhausen · the Enuma Elish'
         },
-        meaning: 'God creates by <b>speaking</b>, not by force. And light is made on day one, before the sun on day four, so this "light" is really the first act of separating one thing from another. God calls it <b>good</b> before any human exists to use it. Creation is good in itself.',
+        meaning: 'God creates by <b>speaking</b>, not by force. And light is made on day one, before the sun on day four, so this “light” is really the first act of separating one thing from another. God calls it <b>good</b> before any human exists to use it. Creation is good in itself.',
         lenses: {
           theo: 'In the traditional reading the key word is <b>good</b>, said before any human exists or anything is useful. So the world is good in itself, a gift, not something earned. That is the floor the rest of the Bible stands on. (Heschel, God in Search of Man.)',
-          arch: 'Following Carl Jung, some readers hear creation stories as describing the human mind. The claim: becoming self-aware means learning to tell things apart, so awareness is the act of making distinctions. Genesis 1 matches that, formless dark, then light, then a run of separating. (Neumann, Origins and History of Consciousness.)'
+          arch: 'Older than Genesis, and far more widespread, is the image of a world drawn out of formless water by separation, chaos parted into an ordered cosmos. It surfaces in the myths of many peoples, and it keeps surfacing because it names something no one stops doing: every act of making begins by dividing, this from that, the kept from the let go, until a shapeless thing takes form. The chapter speaks that ancient grammar in its own key, and the pattern it traces is one any maker still walks. (Eliade, The Sacred and the Profane.)'
         },
         addr: {
           mode: 'names',
@@ -176,7 +175,7 @@ export const GENESIS: Reading[] = [
         },
         meaning: 'The sky is <b>switched off as a set of powers</b>. The lights don’t rule your fate. They keep time. You are not at the mercy of the heavens.',
         lenses: {
-          arch: 'Read as psychology, this is awareness bringing even the sky to order: the heavens become something measured and known rather than feared. (Neumann, Origins and History of Consciousness.)'
+          arch: 'Across the ancient world the lights overhead were powers to be feared and read for fate. To turn them into a calendar, lamps that keep time rather than gods that govern it, is one of the oldest demotions humans have performed, and one they keep performing on whatever they once let rule them. (The sky brought down from ruler to instrument.)'
         },
         addr: {
           mode: 'names',
@@ -348,7 +347,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The human being is dust and breath in the same instant. Mortal, earthy stuff, and the breath of God, held together. Not a soul trapped in a body, not merely an animal, but both at once: ground that God breathed into.',
         lenses: {
           theo: 'The two halves are a built-in humility and a built-in dignity. You are dust, so you can’t take yourself too seriously or imagine you are your own source. And you are God-breathed, so you can’t despise yourself either. Lose track of either half and something goes wrong.',
-          arch: 'Read more widely, the human is the meeting point of matter and mind, the place where the earth becomes aware of itself. Spirit doesn’t arrive instead of the body. It arrives in it, by breath. (Edinger, Ego and Archetype.)'
+          arch: 'The forming of a human from clay or dust, then quickened by a god’s breath, is one of the most widespread images in the ancient world, from the potter-gods of Egypt to the clay and divine blood of Mesopotamia. What recurs is the double nature it insists on: the creature is earth and more than earth, matter that has been breathed into. You are being told, in the oldest terms there are, what kind of thing you are. (The dust quickened by breath, told the world over.)'
         },
         addr: {
           mode: 'names',
@@ -490,7 +489,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The partner is not shaped from dust a second time but taken from the man’s own side, his equal and his like. His first words are a cry of recognition: at last, one of my own kind. And the two stand fully exposed to each other and feel no shame, the last clear glimpse of the world before the hiding begins.',
         lenses: {
           theo: 'Made from his side, she stands beside him, not beneath. “One flesh” is the language of a new kinship, a bond reckoned as strong as blood. The chapter ends with two people wholly seen and wholly unafraid, which is exactly what the next chapter takes from them.',
-          arch: '“Naked and unashamed” is the original wholeness, the self before it learned to watch itself. The longing to be met by your own kind, and the dread of being that exposed, both begin here, in the memory of a nakedness that cost nothing. (Neumann, Origins and History of Consciousness.)'
+          arch: 'The memory of a first wholeness, a time before shame when the human stood unhidden, runs through the world’s oldest stories as the lost golden age, the paradise before the breaking. What recurs is the ache it leaves behind, the sense of living east of some earlier ease, and the longing to be met again by your own kind without having to cover. (Eliade, on the nostalgia for paradise.)'
         },
         addr: {
           mode: 'names',
@@ -548,7 +547,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The lie is subtle. Not a flat “You will not surely die,” but the suggestion that God is holding out on you, that the limit exists to keep you small. Temptation almost always works by reframing a boundary as a deprivation.',
         lenses: {
           theo: 'In the older reading, the root of the trouble is distrust. The first move away from God is not lust or violence but the quiet thought that his goodness can’t be trusted and the rule is a cage. Everything else follows from that.',
-          arch: 'Read with Jung, the serpent is the necessary disturber, the voice that breaks the perfect, sleeping unity of the garden. Becoming truly awake may require eating the fruit, even though it costs you Eden. The loss of innocence is the price of consciousness. (Edinger, Ego and Archetype.)'
+          arch: 'The forbidden act that ends the timeless garden and starts human history is a pattern the old stories keep telling, Prometheus stealing fire, Pandora opening the jar, the one threshold crossed that cannot be uncrossed. The serpent is the disturber every such tale needs, the voice that breaks a sleeping perfection. Whether the crossing is a fall or a beginning the stories rarely agree, and Genesis holds the ambivalence too. (The transgression that ends the garden and starts the story.)'
         },
         addr: {
           mode: 'names',
@@ -579,7 +578,7 @@ export const GENESIS: Reading[] = [
         },
         meaning: 'They get exactly what was promised. Their eyes open. And the very first thing the new knowledge shows them is their own exposure. Awareness arrives, and shame arrives with it.',
         lenses: {
-          arch: 'This is the birth of self-consciousness, the moment the self steps back and sees itself from the outside. The fig leaves are the first mask, the covering we put between who we are and whoever is watching. (Neumann, Origins and History of Consciousness.)'
+          arch: 'The first covering, the leaves sewn the moment the eyes open, is the oldest image of shame entering the world, the discovery that one can be seen and judged. From it descends every mask and garment a person puts between themselves and watching eyes. The story marks a threshold everyone crosses, the day you first knew you were being looked at. (The first mask, and the birth of being seen.)'
         },
         addr: {
           mode: 'names',
@@ -717,7 +716,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Exile, but not abandonment. They leave the garden clothed, named, and alive. The story that opened with “it is good” ends “east of Eden,” yet God walks them to the door rather than ending them. Even the locked gate is partly mercy, so they don’t live forever inside the break.',
         lenses: {
           theo: 'The clothing is the hinge. The first instinct of the humans was to cover their own shame and hide. God’s response is to cover it better, with his own hands. The God of this chapter judges, and then dresses the ones he judges for the road ahead.',
-          arch: 'The expulsion begins the human story, it isn’t only its wound. You cannot stay in the sleeping garden once you are awake. The way back is barred on purpose, so the only direction left is forward, into a real life that has to be built. (Edinger, The Bible and the Psyche.)'
+          arch: 'Every paradise story ends with a gate that shuts behind you, and the human story proper begins on the far side of it. The way back is barred on purpose; what is left is forward, into a world that has to be built rather than received. The expulsion from the garden is the door through which history, and the rest of the book, walks. (The shut gate that leaves only the road forward.)'
         },
         addr: {
           mode: 'names',
@@ -803,7 +802,7 @@ export const GENESIS: Reading[] = [
         meaning: 'There is a gap between the anger and the act, and God meets Cain inside it. Sin is drawn as an animal at the threshold, wanting in. The feeling is not yet the sin. What you do with the door is.',
         lenses: {
           theo: 'This is the chapter’s mercy, and it’s easy to miss. Before Cain lifts a hand, God comes to him, names the danger, and tells him plainly that he can still master it. The warning is grace. The freedom is real.',
-          arch: 'Read as psychology, the thing crouching is the disowned rage, the shadow. Jung’s warning fits the verse exactly: what you refuse to make conscious will come to rule you from outside, as if it were fate. Cain is being told to turn and face it while he still can. (Jung, Aion.)'
+          arch: 'What a person refuses to face does not stay outside them; it comes back to rule them as if it were fate. The appetite crouching like a beast at the threshold, waiting to be either mastered or fed, is an image drawn in every age, and it names a permanent fork: the thing turned toward and ruled, or turned from and obeyed. Cain is told to face it while he still can. (Jung, on the shadow that rules you until you turn and face it.)'
         },
         addr: {
           mode: 'names',
@@ -925,7 +924,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Two trajectories fork here. One line builds and makes and grows a louder and louder hunger for revenge. The other simply starts to call on the name of God. The primeval history is asking, this early, which line a person is standing in.',
         lenses: {
           theo: 'The Bible keeps drawing this line: violence that escalates on one side, and on the other a people who, having little else, call on the name of the LORD. Both descend from the same wounded family. The difference is not bloodline. It is which way you turn.',
-          arch: 'One line hands its wound down as more harm, generation after generation, the shadow inherited and amplified. The other breaks the chain by turning outward and upward for help. The story sets the two paths side by side and lets you watch where each one leads. (Edinger, The Bible and the Psyche.)'
+          arch: 'A wound passed down as more harm, vengeance compounding generation on generation, is among the oldest engines of human history, and Lamech’s boast is its anthem: wound me and I answer sevenfold, then seventy-sevenfold. Against it the story sets the other line, the chain broken by turning outward for help instead of striking back. Whole cultures run on one current or the other. (Girard, on the escalation of vengeance.)'
         },
         addr: {
           mode: 'names',
@@ -1673,7 +1672,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Here is the devastation hidden in the flood story. God washed the whole earth, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and fall into shame, and a grandson is cursed. The water cleaned the world. It did not clean the human heart. The exact trouble named before the flood, the inclination of the heart, walks straight off the ark. You cannot drown your way to a better person.',
         lenses: {
           theo: 'The flood was the most total fresh start imaginable, and at the level that matters it did not work, and the story is honest enough to say so. The trouble was never only out there in a wicked generation. It came through the ark in the heart of the best man aboard. That admission is what sets up everything after: a problem this deep will not be solved by washing the world. It will take something else.',
-          arch: 'The deluge as a return to the formless waters, dissolution before rebirth, is among the oldest patterns there is. But the story refuses the clean version of the myth. The remade world carries the old wound through intact; the shadow was not left on the far shore. (Neumann, on the flood as regression and an incomplete renewal.)'
+          arch: 'The flood that dissolves the world back into the chaos-waters and lets it be remade is among the most widespread of all myths, a periodic washing-clean that many peoples imagined. But Genesis refuses the tidy version. The waters recede and the same fracture walks off the ark in the heart of the rescued man. The deepest thing the story says about renewal is that washing the world does not wash the one who survives it. (Eliade, on the deluge and cosmic renewal.)'
         },
         addr: {
           mode: 'names',
@@ -1944,7 +1943,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The opening movement of the Bible ends with humanity scattered, its great project abandoned, its proud city renamed for confusion. It is a bleak close, and for the exiles it was also a strange comfort: the empire that conquered you is, in God’s longer telling, just Babel, just confusion, not permanent, not the last word. The tower never gets finished. The name they reached for is the one thing they lose.',
         lenses: {
           theo: 'The whole arc opened with creation quietly answering Babylon’s myths, and it closes by naming Babylon for what the exiles believed it truly was: impressive, unfinished, and not eternal. The God of this story is the one who outlasts empires. That is the hope folded inside the bleakness. The conquering city is not the end of the world.',
-          arch: 'The drive to ascend, to storm heaven and seize a name by force, meets its limit. The heaven-reaching tower is the inflation of the collective ego, and the scattering is its necessary deflation, the return to multiplicity and limit after grandiose overreach. (In the line of Jung on inflation: the self that tries to become god is broken back down to human size.)'
+          arch: 'The tower that storms heaven is one of the images humanity keeps retelling: the ascent that overreaches and is brought down, Babel and Icarus and Prometheus and every empire that called itself eternal. The pattern returns because the temptation does, the reach for a name and a permanence that belong to no one who builds in brick. Each age raises its tower and learns again that the height it grasped was never its to keep. (The overreaching ascent, brought back down to human size.)'
         },
         addr: {
           mode: 'names',
@@ -1993,7 +1992,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Everything begins with a leaving. Abram is told to cut loose from country, people, and father’s house, the three things that told an ancient person who they were, and walk toward a land he cannot see, on nothing but a promise. Faith here is not agreeing to a doctrine. It is leaving on a word.',
         lenses: {
           theo: 'The call is pure initiative. Abram does nothing to earn it, and the blessing is not for him alone, he is blessed in order to be a blessing, a channel for the whole scattered world. The answer to Babel is not another flood or another scattering. It is one chosen man through whom everyone is meant to be reached.',
-          arch: 'It is the summons that opens every road: leave the father’s house, the safety of the known and the collective, and walk out alone toward a destiny you cannot yet picture. The break with the origin is the first step of becoming a self. (The departure as the start of individuation.)'
+          arch: 'This is the call that opens every hero’s road: leave the country, the kin, the father’s house, all that told you who you were, and walk out toward a destiny you cannot yet see. Storytellers in a hundred cultures begin the same way, with a summons that breaks the old life open. What recurs is the shape of beginning itself, the threshold crossed with nothing in hand but a promise. (Campbell, The Hero with a Thousand Faces.)'
         },
         addr: {
           mode: 'names',
@@ -2379,7 +2378,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Abram does the most honest thing in the chapter first: he argues. He tells God the promise is empty as long as he has no child. God does not rebuke the complaint, he answers it, walks him outside, and hands him the stars. And Abram believes, not because the evidence changed, he is still old and Sarai still barren, but because he decides to trust the one making the promise. That decision, the text says, is what sets him right.',
         lenses: {
           theo: 'This is the seedbed of grace. Abram is counted righteous before he has done one thing to deserve it, on the strength of trust alone. The relationship is set right by God’s promise and Abram’s yes to it, not by Abram’s record. Everything Paul will later say about faith is already folded into this single line.',
-          arch: 'The night sky is the oldest screen we cast the future onto. Led out of his tent to stand under the immensity overhead, the small frightened man is asked to read his own descendants in the stars, to trust a self far larger than the daylight facts allow. (Trusting the promise against the evidence of the senses.)'
+          arch: 'The night sky is the oldest screen humans have cast their longing and their fate upon. Led out under it and told to count the uncountable, the childless man is asked to read his own future in the stars, to credit a promise the daylight facts deny. The image returns wherever someone is asked to trust what cannot yet be seen against everything that can. (Believing the promise against the evidence of the eyes.)'
         },
         addr: {
           mode: 'names',
@@ -2447,7 +2446,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Abram asks for certainty, and what he gets is a covenant where he carries none of the risk. He sleeps; God walks the bloody path alone. The promise is fastened entirely to God’s own life, not to Abram’s performance, and that is the only reason it can survive everything Abram and his children are about to do to it. And the certainty comes wrapped in darkness: the road to the promise runs straight through four centuries of slavery. Being sure of the end is not the same as being spared the middle.',
         lenses: {
           theo: 'A covenant where only one party passes through the pieces is a one-sided oath. God stakes his own existence on keeping a promise to a man who is asleep. This is grace at its most extreme, a commitment that does not hang on the other side holding up its end, which is exactly why it cannot finally fail.',
-          arch: 'The deep sleep and the “great terror and darkness” are the night the waking self cannot enter on its own terms. The decisive thing is sworn while the ego sleeps, in the dark, by a fire that moves on its own. What binds a life most deeply is often sealed below the level of conscious choice. (The covenant sworn in the dark, beneath the waking self.)'
+          arch: 'The deep sleep and the “great terror and darkness” are the threshold the daylight self cannot cross on its own. The binding oath is sworn in the dark, by a fire that moves untended, the human passive while the sacred acts. The oldest stories know that what holds a life most deeply is sealed at the dread edge of the holy, below the level of waking choice. (Otto, on the holy as terror and fascination.)'
         },
         addr: {
           mode: 'names',
@@ -2478,7 +2477,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The covenant was sworn one chapter ago, and already the waiting is unbearable, so they reach for the ordinary human fix. Sarai’s plan is legal, reasonable, and a disaster. The promise grasped instead of trusted turns three people against each other, and the one with no power in the arrangement is the one driven into the desert.',
         lenses: {
           theo: 'The promise does not need to be helped along by a scheme, and every time someone tries, it costs. Grace keeps its own clock, and the attempt to force its hand here produces not the son of the promise but a wound that will run for generations.',
-          arch: 'The impatience that cannot bear the gap between a promise and its fulfillment, and grabs for control to close it, is the oldest sabotage of the thing most wanted. (Forcing the outcome you were asked to wait for.)'
+          arch: 'The impatience that cannot bear the gap between a promise and its keeping, and grabs to close it by force, is among the oldest ways the thing most wanted is sabotaged. Hurry the harvest and you trample the field. (Forcing the outcome you were asked to wait for.)'
         },
         addr: { mode: 'names', text: 'You know the pull to force a thing you were told to wait for, and the way the shortcut tends to hurt whoever is standing closest with the least say.' },
         ask: 'Where are you reaching for control because the waiting has become unbearable, and who pays for the shortcut?'
@@ -2497,7 +2496,7 @@ export const GENESIS: Reading[] = [
         meaning: 'God goes after the one who was thrown away, not the one who holds the promise. He finds Hagar in the wilderness, calls her by name, and hears her misery. The instruction to return is hard, almost unbearable, but she does not go back the same. She goes back having been seen by God when no one else saw her at all, and she, the slave, is the one who gets to name him.',
         lenses: {
           theo: 'The God of this story is not only the God of the chosen line. He is the God who sees the discarded, hears the powerless, and meets them where they ran to. The covenant has a center, but its God keeps showing up at the margins.',
-          arch: 'The flight into the wilderness, the place stripped of every familiar support, is where the encounter that names God becomes possible. Sometimes you only meet what sees you after you have run out of everywhere else to go. (Being found in the place you fled to.)'
+          arch: 'The wilderness, the place stripped of every familiar support, is where the old stories set the meeting that changes everything. Hagar, a slave with nowhere left to run, is the first person in the Bible to give God a name, and she does it in the desert she fled to. What recurs is the pattern that you often meet what truly sees you only after you have run out of everywhere else. (Found in the place you fled to.)'
         },
         addr: { mode: 'names', text: 'You may know what it is to be the one overlooked in someone else’s arrangement, and to be seen, really seen, only after you had run as far as you could.' },
         soft: 'She was seen. In the one place she thought she was most alone, she was the one who got to name God.',
@@ -2552,7 +2551,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The promise has been spoken so many times, to a couple now far too old, that the only honest response left is a tired laugh behind the tent flap. And God does not punish the laugh. He names it, gently, and asks the question the whole book turns on: is anything too hard for the LORD? The son will be called Laughter, as if to keep the disbelief and the joy in the same word forever.',
         lenses: {
           theo: 'God meets the laugh of exhausted hope not with anger but with a date. The promise does not depend on Sarah believing it; it depends on the One who made it, and it will arrive on his calendar, carrying her laughter in its name.',
-          arch: 'The laugh is the sound of the part of us that has quietly given up, hearing the old hope named out loud again. To be caught laughing, and not condemned for it, is its own kind of mercy. (The disbelief that hope has to pass through.)'
+          arch: 'The laugh is the sound of the part of a person that has quietly given up, hearing the old hope named out loud again. To be caught in that disbelief and not condemned for it is its own kind of mercy, and the child, when he comes, will carry the laugh as his name. (The disbelief that hope has to pass through.)'
         },
         addr: { mode: 'names', text: 'You know the tired, private laugh at a hope you stopped letting yourself believe, and maybe the fear of being caught still wanting it.' },
         ask: 'What promise have you quietly laughed off because the waiting wore you out, and what if it were still coming?'
@@ -2574,7 +2573,7 @@ export const GENESIS: Reading[] = [
         meaning: 'A man stands in front of God and argues, on behalf of strangers, that mercy should outweigh judgment, and God does not strike him down for it. He welcomes the bargaining. The same book that praised Abram’s silent trust now honors his loud objection, because both are ways of taking God seriously. Abraham pleads for a wicked city, and the floor keeps dropping, because the question he asks, will the Judge of all the earth do right, is one God seems glad to be asked.',
         lenses: {
           theo: 'Intercession is treated here as something God invites, not endures. To argue with God for mercy on others is not irreverence; it is one of the truest things a person can do, and the book stages it as a kind of friendship.',
-          arch: 'To stand before the overwhelming and plead for the undeserving, refusing to let power simply be power, is the conscience grown large enough to argue with its own God. (Pleading for mercy against the logic of judgment.)'
+          arch: 'To stand before overwhelming power and plead for the undeserving, refusing to let might be the last word, is a role the tradition keeps casting and recasting, Abraham here, Moses at Sinai, Job before the storm. It is conscience grown large enough to argue with its own God. (Pleading for mercy against the logic of judgment.)'
         },
         addr: { mode: 'claims', text: 'You may know the difference between accepting a verdict and daring to argue it, and how much more it asks of you to stand up for people who cannot stand up for themselves.' },
         ask: 'Where could you press for mercy on behalf of someone who has none coming, and what stops you from making the case?'
@@ -2605,7 +2604,7 @@ export const GENESIS: Reading[] = [
         meaning: 'It is worth being plain, because this is one of the most misread chapters in the Bible. The sin the story stages is violence and the violation of the helpless, a whole city moving as one to assault strangers who came under the protection of a roof. The threatened act is rape, which is about domination, not desire. The measure the chapter applies is the one Abraham passed and Sodom failed: how the powerful treat the powerless stranger at the gate.',
         lenses: {
           theo: 'The judgment falls on a city that had made cruelty to outsiders its ordinary way of life. The fire is terrible, and what it answers is a settled, communal injustice, not a private identity.',
-          arch: 'The walled city that turns on every stranger at its gate is the closed self that can no longer receive what comes from outside it, and destroys what it cannot absorb. (The self that devours what it should welcome.)'
+          arch: 'Hospitality to the stranger was among the most sacred duties of the ancient world, and its violation among the gravest crimes, the same horror the Greeks told in their tales of guests abused. The walled city that turns on the ones at its gate, that destroys what it will not welcome, is the recurring image of a people closed hard against the outside. (The city that devours what it should welcome.)'
         },
         addr: { mode: 'names', text: 'You have felt the difference between a place that opens to the stranger and a place that closes against them, and maybe the pull of the crowd that wants to make the outsider pay.' },
         ask: 'Where do you meet the outsider with the door open, and where with the mob, and which city are you building?'
@@ -2625,7 +2624,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Even the rescue is not about the one rescued. Lot is dragged out by the hand because God remembered Abraham, the man who stood on the ridge and bargained for the city. The bargain held: there were not even ten righteous, and Sodom fell. But the one connection to a praying friend was enough to pull a flawed family out by force. And Lot’s wife, looking back at the only world she knew, becomes a monument to the cost of being unable to leave what is already lost.',
         lenses: {
           theo: 'Grace here runs through relationship. Lot is saved not because he earned it but because someone interceded for him. The chapter quietly answers Abraham’s bargaining: the ten were not found, and yet the pleading was not wasted. It reached the one household it could.',
-          arch: 'To be told not to look back, and to look anyway, is the pull of the self toward the burning thing it cannot stop loving. What you cannot stop turning toward can fix you in place. (The backward look that turns you to salt.)'
+          arch: 'The forbidden backward glance is one of the oldest and most haunting images there is, told again in Orpheus turning to look at Eurydice and losing her at the threshold. To be told not to look back and to look anyway is the pull toward the thing you cannot stop loving even as it destroys you, and it can fix you in place. (Orpheus and Lot’s wife, the look that costs everything.)'
         },
         addr: { mode: 'names', text: 'You know the backward look, the inability to stop turning toward something already gone, and how it can freeze you where you stand.' },
         soft: 'He was pulled out by the hand. Sometimes you are saved not by your own strength but because someone refused to stop pleading for you.',
@@ -2676,7 +2675,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The promise that was sworn, signed, dated, and laughed at finally arrives, and it arrives as a baby and a laugh. Sarah’s bitter laugh from behind the tent flap comes back transformed: God has brought me laughter. The thing held against every impossibility for twenty-five years is here, ordinary and astonishing, nursing at an old woman’s breast.',
         lenses: {
           theo: 'The promise kept does not erase the long wait, it redeems it. The years of barrenness and doubt are not deleted; they are gathered into a joy that knows exactly what it cost to arrive. Grace fulfilled still carries the memory of grace delayed.',
-          arch: 'The long-awaited birth, after hope had curdled into a tired laugh, is the new life that arrives only on the far side of giving up the demand to force it. (What is born when you finally stop grasping.)'
+          arch: 'The child long despaired of, arriving after the hope has curdled into a tired laugh, is a pattern the book will tell again and again, Rebekah, Rachel, Hannah, on to Elizabeth far down the line. The new life comes, in these stories, only on the far side of giving up the demand to force it. (The promised child, born past hope.)'
         },
         addr: { mode: 'names', text: 'You know what it is to want something so long that you laughed it off to protect yourself, and what it would be to have it arrive anyway, late, real, and yours.' },
         ask: 'What long-deferred hope would you barely let yourself name, and what would receiving it ask you to feel?'
@@ -2699,7 +2698,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The arrival of the promised son and the casting out of the other son happen on the same page, and the book refuses to pretend the second is clean. A child is sent toward death by thirst so an inheritance can stay whole. And again, as in chapter 16, the God of the covenant turns toward the discarded ones: he hears the boy, opens the mother’s eyes to water already there, and keeps a promise to a child who was never the chosen one. The chosen line has a shadow, and God does not abandon the shadow.',
         lenses: {
           theo: 'Election in this book is never the same as God’s care running out for everyone else. Isaac carries the covenant, but God hears Ishmael cry, saves him, and promises him a future too. The center is chosen; the margin is not forsaken.',
-          arch: 'The thing we cast out to keep our own story whole does not simply vanish. It survives in the wilderness, heard and kept, and the book will not let us forget it is still our offspring. (What you exile to protect the inheritance.)'
+          arch: 'The one cast out to keep the chosen story clean does not vanish from it. Ishmael is heard in the wilderness and made a nation of his own, as Esau will be, the book refusing to let the rejected son be erased. What you exile to protect the inheritance remains, in the story and on the conscience. (The cast-out son the book will not forget.)'
         },
         addr: { mode: 'names', text: 'You may know the uncomfortable side of getting what you longed for, the someone or something pushed out of the frame so the picture could stay clean.' },
         soft: 'God heard the boy. The one cast out to the edge of the story was not outside the reach of being heard.',
@@ -2729,7 +2728,7 @@ export const GENESIS: Reading[] = [
         meaning: 'This is the chapter the whole movement has climbed toward, and it refuses to be comfortable. The line that breaks you is the small one, repeated twice: the two of them went on together. A father walks his son to an altar, the boy carrying the wood, and they talk. There is no clean lesson here. There is a command no one should obey, a silence where a protest should be, and a question from a child, where is the lamb, that the father cannot answer straight.',
         lenses: {
           theo: 'Readers have fought over this forever. Some hear the supreme act of faith, trust extended past the edge of sense. Some hear the story that ends child sacrifice, the ram replacing the son once and for all. Some cannot get past the horror of a God who would ask, or a father who would go. The book holds all of it and resolves none of it, and that refusal is part of its honesty.',
-          arch: 'The willingness to surrender the most beloved thing, the very thing waited a lifetime for, touches the oldest terror: that what you love most may be asked of you. Whether that is faith or a wound, the story will not say. (The thing you waited for, asked back.)'
+          arch: 'The asking-back of the beloved child touches the oldest terror in religion, that the god who gave may demand the gift returned. The ancient world was full of firstborns offered on altars; this story walks to the very edge of that horror and then stops the hand, a ram in the thicket instead. What recurs is both the dread and its interruption. (Levenson, The Death and Resurrection of the Beloved Son.)'
         },
         addr: { mode: 'names', text: 'You may know the dread of the thing you love most being the thing at risk, and the silence that falls when there is no good answer to give the person walking beside you.' },
         ask: 'Where have you walked toward something unbearable in silence, and what did you say to the people beside you who did not know?'
@@ -2749,7 +2748,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The hand stops. A ram dies instead of a boy, the place is named The LORD Will Provide, and the promise is sworn one more time, stars and sand. And still the story will not let you exhale all the way. Abraham passes the test, but something is spent. He and God never speak again in the book. He comes down the mountain alone in the text. Sarah dies at the start of the next chapter, and the old readers, unable to bear the gap, told stories that she died of the news. The promise survives. The cost is left unmeasured.',
         lenses: {
           theo: 'If there is good news here it is the ram: that God stops the hand, that the thing demanded is not finally taken, that provision arrives at the last second from outside. But the book does not hand you that comfort cleanly. It makes you walk all the way up the mountain first, and it does not undo what the walk cost.',
-          arch: 'To go to the edge of losing the irreplaceable thing, and to have it given back, is not the same as never having faced the loss. You come down changed, and not everything that went up comes down with you. (What the mountain keeps.)'
+          arch: 'To go to the very edge of losing the irreplaceable thing, and to have it handed back, is not the same as never having faced the loss. You come down the mountain changed, and not everything that climbed it comes back down with you. The descent that returns what it nearly took is one of the deepest patterns of initiation. (What the mountain keeps.)'
         },
         addr: { mode: 'names', text: 'You may know the strange aftermath of a dread lifted at the last moment, the relief that does not quite cancel what the fear already took from you.' },
         soft: 'The hand was stopped. Whatever it cost, the boy came down off the mountain alive.',
@@ -2844,7 +2843,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The choice lands before either child has done anything, good or bad. Jacob is not picked because he is better, he is the grasping one, and Esau is not rejected for some crime. The promise simply runs through the younger, against the rule that says it should not. Election here is not a reward for merit. It is a freedom that owes the favored nothing and the passed-over an answer it never gives.',
         lenses: {
           theo: 'Grace that comes before merit is the hardest kind to accept, because it cannot be earned and it cannot be explained. God chooses the younger, the weaker, the one with no claim, and the only honest response is not pride but bewilderment. If it could be deserved it would not be grace.',
-          arch: 'The twins struggling in the dark are an old picture of a self at war with itself, two drives born together and fighting for the upper hand before the light. What rules a life is often decided early, below the level of choice. (The warring brothers as the divided psyche.)'
+          arch: 'Struggling twins, rival brothers born to fight, are one of the most widespread images in human story, Cain and Abel before them, Romulus and Remus far away, the two who cannot both be first. The pattern carries a hard claim the book keeps pressing, that which brother a people or a person turns out to be is contested from the very start. (The warring twins, told the world over.)'
         },
         addr: {
           mode: 'names',
@@ -2930,7 +2929,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The blessing was God’s to give, and the family grabs it by fraud. Jacob gets exactly what was promised in the womb, and gets it by lying to his blind father with his brother’s clothes on his back. The story will not let the chosen line be the clean line. What was meant to come as gift is taken as theft, and the taking will cost Jacob the next twenty years of his life.',
         lenses: {
           theo: 'God’s purpose moves forward here through a deception God never blesses. The text holds together two things we like to keep apart: the promise is real, and the people carrying it are liars. Grace is not a reward for good behavior. It is the thing that keeps working on people who have not earned it and will spend years being humbled into it.',
-          arch: 'Jacob is the trickster, the figure in a hundred old stories who wins by cunning what he could not win by strength, and who must eventually be broken of it. The blessing stolen in disguise has to be re-earned in the open, on a riverbank, in the dark, years later. (The trickster who must lose the mask.)'
+          arch: 'Jacob is the trickster, the figure a hundred cultures tell of, Hermes and Loki, Coyote and Anansi, who wins by cunning what he could never win by strength, and who must, in the end, be broken of the trick. The blessing stolen in disguise will have to be re-earned in the open, on a riverbank, in the dark, years later. (The trickster who must lose the mask.)'
         },
         misreading: {
           named: 'It worked out in the end, so Rebekah and Jacob were right to deceive Isaac.',
@@ -2992,7 +2991,7 @@ export const GENESIS: Reading[] = [
         meaning: 'God meets Jacob at his lowest and least deserving. He is a fugitive who has just cheated his father and robbed his brother, sleeping rough on a stone in the middle of nowhere, and this is the moment heaven opens over him. There is no repentance first, no apology, no deal struck. The promise is simply renewed to the man on the run, before he has done one thing to earn it back. Surely the LORD is in this place, he says, and I did not know it, which may be the truest thing anyone says in the whole cycle.',
         lenses: {
           theo: 'This is grace that arrives before the turning, not after it. We tend to assume God meets us once we have cleaned ourselves up, on the far side of our sorrow. Here he comes to the deceiver mid-flight, in the dark, and binds himself to him anyway. The repentance, when it finally comes, will be the response to the grace, not its price.',
-          arch: 'The stone, the head laid down, the dream opening: this is the descent into the unconscious where the deeper self speaks while the waking will is asleep. The stairway is the axis between the world above and the world below, and what it tells the exhausted ego is that the place it thought was empty was the gate of heaven all along. (The holy found in the wilderness you were only passing through.)'
+          arch: 'The stairway joining earth to heaven is the axis mundi, the sacred center where the worlds touch, an image cultures raised in every ziggurat and temple and world-tree. Jacob stumbles onto one in his sleep, in open country he took for empty, and wakes to say the LORD was in this place and he did not know it. What recurs is the discovery that the gate of heaven can stand in the bleakest waystation. (Eliade, on the axis mundi and the sacred center.)'
         },
         addr: {
           mode: 'names',
@@ -3029,7 +3028,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The trickster is tricked, and the story savors the symmetry. Jacob, who exploited his father’s blindness and his brother’s hunger, wakes in the morning to find that he is the one who was fooled in the dark. Why have you deceived me, he demands, which is almost word for word the charge his own father and brother could have laid on him. What you do to other people has a way of coming back to you wearing a different face, and being on the receiving end is the first thing that ever slows Jacob down.',
         lenses: {
           theo: 'There is a kind of moral physics running under the Jacob story. The deceiver has to be deceived before he can be changed. It is not so much God punishing him as God letting the consequence circle back, holding a mirror up to him until the man who only ever took begins, slowly, to be undone and remade.',
-          arch: 'The shadow returns wearing the face you gave it. What Jacob did to others is now done to him, and the cunning that always worked is turned against him by a craftier man. This is how a self begins to grow up, not by winning, but by finally losing at its own game.'
+          arch: 'What you do to others has a way of returning to you wearing a stranger’s face. The trickster is out-tricked, the man who exploited a father’s blindness and a brother’s hunger is fooled in the dark by a craftier man, and this is the moral physics the old stories run on. A person begins to grow up not by winning but by finally losing at their own game. (The deceiver deceived, justice as recoil.)'
         },
         addr: {
           mode: 'names',
@@ -3055,7 +3054,7 @@ export const GENESIS: Reading[] = [
         meaning: 'You can read Leah’s whole inner life in the names she gives her children. The first three are pleas aimed at her husband: look at my affliction, surely now he will love me, now at last he will be attached to me. And then, with the fourth, something quietly breaks open. This time I will praise the LORD. She stops naming her sons after a love that is not coming and names one after God instead. And it is that son, born the moment she stops bargaining, through whom the whole promise goes. The line does not run through the loved wife. It runs through the one nobody chose.',
         lenses: {
           theo: 'God’s attention in this chapter is fixed on the unloved one. He saw that Leah was unloved, the text says plainly, and opened her womb. The story’s sympathy, and its future, belong to the overlooked sister, not the favored one, which is the pattern the whole Bible keeps repeating: the last become first, the rejected stone becomes the cornerstone.',
-          arch: 'The release in the fourth name is the move from grasping to letting go, from defining yourself by a love you cannot command to standing on ground of your own. It is the same wound at the heart of the cycle, the ache to be chosen, met at last not by getting the love but by ceasing to need it in order to live.'
+          arch: 'The ache to be chosen is one of the most common wounds there is, and Leah names it into her first three sons, each a plea to a husband who will not turn. The fourth name lets the plea go, this time I will praise the LORD, and that is the son the promise runs through. What recurs here is the freedom that arrives the moment you stop auditioning for a love that is not coming. (The freedom past the ache to be chosen.)'
         },
         addr: {
           mode: 'names',
@@ -3134,7 +3133,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The man who always won by cunning finally meets someone he cannot trick, only hold. He wrestles all night, and even after his hip is wrenched he will not let go, until he is blessed, and the blessing he wins is a new name and a permanent limp. This is the hinge of the whole cycle. The one who stole a blessing in the dark, in disguise, now wins one in the dark, in the open, by refusing to release his grip. He walks away blessed and damaged in the same motion. You do not come through a real encounter with God unmarked.',
         lenses: {
           theo: 'The blessing and the wound arrive together, from the same grip. God does not bless Jacob by making him stronger; he blesses him by laming him, ending the long career of grasping so that Israel limps ever after on a leg that remembers the night. The name is new and the swagger is gone. That is what being blessed by this God can cost, and what it can heal.',
-          arch: 'This is the night-sea crossing, the struggle with the figure at the threshold who must be held through the dark before the dawn will give anything up. The wound is the initiation; you are marked by what you wrestle. And the deepest adversary turns out to wear, by morning, the face of God. (Holding on through the dark until it blesses you, and being changed by the grip.)'
+          arch: 'This is the supreme ordeal every hero’s road bends toward, the night struggle with the figure at the threshold who will not be passed until he is held through the dark. The wound is the initiation, the mark you carry out of it; the river is crossed only by the one willing to wrestle until dawn. And the adversary, by morning, wears the face of God. (Campbell, on the threshold ordeal.)'
         },
         misreading: {
           named: 'Jacob beats God in a fair fight and wins by being the stronger man.',
@@ -3172,7 +3171,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The thing Jacob dreaded most for twenty years comes undone the instant it arrives. The brother he cheated does not want revenge; he wants his brother, and he runs. And Jacob, fresh from seeing God’s face at the river, says he sees it again in Esau’s, because the face of the person you wronged, choosing to forgive you, can look an awful lot like the face of God. He even tries to give back the blessing, calling his gift by its name, as though the theft could be undone by a return. The forgiveness he has no right to expect is exactly what meets him.',
         lenses: {
           theo: 'Grace wears a human face here. After the vertical encounter at Peniel comes the horizontal one, and the text rhymes them on purpose: you meet God, and then you meet the brother you wronged, and they can look strangely alike. To be forgiven by someone who had every right to ruin you is one of the nearest things there is to standing in front of God and being received.',
-          arch: 'The shadow-brother, fled and feared for twenty years, turns out at the meeting not to be the monster the dread had painted. What you run from grows teeth in the imagination; faced, it is often a weeping man with his arms open. The reckoning you brace for is rarely the reckoning you get.'
+          arch: 'The brother fled and feared for twenty years turns out, at the meeting, not to be the monster the dread had painted. What you run from grows teeth in the imagination; faced, it is often a weeping man with his arms open. The reckoning you brace for is rarely the reckoning you get. (The dreaded face that turns out to be weeping.)'
         },
         misreading: {
           named: 'They are fully reconciled and the family is healed for good.',
@@ -3213,7 +3212,7 @@ export const GENESIS: Reading[] = [
         meaning: 'This is a story about how a woman’s violation becomes everyone else’s narrative. Dinah is raped, and from that moment every man around her takes up her cause and erases her in the same motion. The brothers turn her pain into a license for slaughter; Jacob turns the slaughter into a worry about his own reputation; the chapter ends with men still arguing over her honor while she has not said a word since the first verse. The text holds two horrors side by side, the assault and the revenge, and refuses to let either one stand as the clean answer to the other.',
         lenses: {
           theo: 'Scripture does not look away from this, and it does not tidy it. There is no verdict from heaven in the chapter, no rescue, no neat justice, and that silence is its own kind of testimony. The Bible is willing to record the world exactly as brutal as it is, including inside the chosen family, and to let the reader feel the wrongness without being handed a moral that makes it sit easier. Jacob does not forget it; on his deathbed he curses the violence of Simeon and Levi by name.',
-          arch: 'Watch how fast a person’s real wound is conscripted into other people’s causes. Everyone claims to act for Dinah; no one asks her. It is one of the oldest ways of silencing someone, to speak so loudly on their behalf that they disappear, and to call it honor.'
+          arch: 'Watch how fast a real wound is conscripted into other people’s causes. Everyone claims to act for Dinah; no one asks her. It is one of the oldest ways there is of silencing a person, to speak so loudly on her behalf that she disappears, and to call it honor. (The victim spoken for until she vanishes.)'
         },
         misreading: {
           named: 'The brothers are the heroes here, righteously avenging their sister.',
@@ -3295,7 +3294,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Favoritism is this family’s inherited disease, and Jacob, of all people, should know what it does. He was the favored son who tore his own family in half. And here he is dressing one boy in a coat that says, out loud, that he matters more than his brothers. The text does not make Joseph innocent either: he is gifted and insufferable, dreaming aloud of the others bowing to him. What it shows is a wound handed down a third time, and a household that has forgotten how to be kind.',
         lenses: {
           theo: 'The patterns we hated in our parents we tend to repeat on our children, unless something costly breaks them. Jacob’s favoritism is Isaac’s favoritism is the same poison passed down the line, and it will take the near-destruction of this family to begin to drain it. Grace, in this story, works slowly, through generations, and through wreckage.',
-          arch: 'Joseph is the marked child, the one singled out as special, carrying a real gift and the inflation that makes him unbearable to everyone around him. The favored one becomes the family’s lightning rod, and the gift that sets him apart is the very thing that gets him thrown down.'
+          arch: 'Joseph is the marked child, the one singled out and dressed to show it, carrying a real gift and the unbearable pride that rides along with it. The favored one becomes the family’s lightning rod, and the very gift that sets him apart is what gets him thrown down. The set-apart child is a figure the old stories return to again and again. (The marked one the gift makes a target.)'
         },
         addr: {
           mode: 'names',
@@ -3324,7 +3323,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The family’s signature move comes all the way home. Jacob fooled his blind father with a goat and a borrowed garment; now his sons fool him with a goat and Joseph’s garment, and it costs him the son he loved most. The lie he built his life on is handed back to him whole. And over the entire catastrophe, for the first time in the cycle, heaven is silent. No dream, no voice, no angel, no rescue. Joseph goes down into Egypt and God does not say a word, for years.',
         lenses: {
           theo: 'This is the start of the strangest providence in Genesis. There is no miracle in this chapter, no intervention, only a vicious human crime and a long silence. The God who walked and spoke openly with Abraham and Jacob goes quiet here, and works, if he is working at all, hidden inside the wreckage, in a direction no one in the scene can see.',
-          arch: 'The pit is the descent every real story requires, the going-under before any rising. The gifted self, too full of itself, is stripped and thrown down into the dark, sold, carried off. You do not get the heights in this story without first being lowered into the empty cistern.'
+          arch: 'The pit is the descent every hero’s story seems to require, the going-under that has to come before any rising. The favored one is stripped of the coat, thrown into the dark, sold and carried off, and only that downward road leads anywhere at all. You do not reach the heights of this story except by way of the empty cistern. (Campbell, the descent that has to come before the rise.)'
         },
         addr: {
           mode: 'names',
@@ -3361,7 +3360,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Tamar is wronged by a powerful man who owes her a future and quietly withholds it, and the law hands her nothing. So she takes justice the only way left to her, by cunning and at the risk of her life, and when Judah moves to have her killed for immorality, she holds up his own seal and stops him cold. She is more righteous than I, he says, and it is the first true thing he has said in the whole story. The woman with no power schools the man with all of it, and the chosen line runs not through the respectable man but through the widow he tried to destroy.',
         lenses: {
           theo: 'The Bible keeps putting its full weight on the powerless one who refuses to vanish quietly. Tamar has no standing and is the righteous one; Judah has everything and is in the wrong, and he is honest enough, finally, to say so. The promise does not run through the strong and proper here. It runs through a wronged woman’s desperate, righteous gamble.',
-          arch: 'This is cunning turned to its rightful use, not grasping at what is not yours, like Jacob, but forcing your way back into a story you were quietly written out of, and claiming what you are owed. The one cast to the margins refuses the margins.'
+          arch: 'This is cunning turned to its rightful use, not grasping at what is not yours, like Jacob, but forcing your way back into a story you were quietly written out of and claiming what you are owed. The wronged woman who takes justice by her wits is a figure the Bible keeps returning to, Tamar here, Ruth to come. The one cast to the margins refuses the margins. (The outsider who forces her way back in.)'
         },
         misreading: {
           named: 'This chapter is a sordid detour that interrupts the real Joseph story.',
@@ -3402,7 +3401,7 @@ export const GENESIS: Reading[] = [
         meaning: 'Joseph does exactly the right thing and is punished for it. He refuses, not out of fear of discovery but because it would be a sin against God, and his integrity costs him the cloak off his back and lands him in a cell on a lie. The story flatly refuses the bargain we keep wanting, that doing right will keep you safe. It does not. And yet the sentence that brackets the whole disaster never wavers: the LORD was with him, in the house where he rose and in the prison where he fell. God’s presence, the text insists, is not the same as God’s protection, and it will not pretend otherwise.',
         lenses: {
           theo: 'The LORD was with him is said as loudly over the prison as over the palace, and that is the book quietly redefining what it means to be blessed: not exempt from injustice, but accompanied through it. Joseph’s faithfulness is real and it is not rewarded with safety. It is met with company in the dark, which turns out to be a different and harder kind of grace.',
-          arch: 'The cloak is torn from him a second time and turned into a lie about him, the garment-betrayal of his life repeating. The descent is not over; the gifted one is stripped again and sent lower still, because in this kind of story you go down twice before you come up.'
+          arch: 'A garment of Joseph’s is turned into a lie about him for the second time, first the bloodied coat and now the seized cloak, the same motif the story keeps folding back on itself. The descent is not finished; the gifted one is stripped again and sent lower still, because in this kind of story you go down twice before you come up. (The repeated garment, the second descent.)'
         },
         misreading: {
           named: 'If Joseph had really been faithful, God would have kept him out of prison.',
@@ -3462,7 +3461,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The forgotten man is remembered and rises in a day, and the first thing he does with the gift is refuse the credit for it: I cannot, but God will. Then he names his children, which is how this book lets a person say what a season meant. Not Manasseh, God undid the harm, but God made me forget, the harm is still real, it has only loosened its grip. And not Ephraim, God took me out of the affliction, but God made me fruitful in the land of my affliction. He bore fruit in the very place that wounded him, not after it, in it. That is the whole theology of suffering in two baby names.',
         lenses: {
           theo: 'The rise is not the reward for the suffering; it is simply the next thing after it, and Joseph reads God in both. He never gets an explanation for the pit and the prison. He gets a vantage, late, from which he can finally see that he was being carried even through the silence. Fruitful in the land of affliction is not the same as rescued from it, and the book means the difference.',
-          arch: 'This is the return from the underworld. The one who went down into the pit comes back up carrying what he found in the dark, and the descent turns out to have been the making of him. You do not get this height without first being lowered into the empty cistern.'
+          arch: 'This is the return from the underworld, the one who went down into the pit climbing back up carrying what the dark taught him. The descent turns out to have been the making of him, not the ruin of him, and the hero of a hundred stories comes home from the depths changed and bearing a gift. (Campbell, the return from the descent.)'
         },
         addr: {
           mode: 'names',
@@ -3517,7 +3516,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The hinge of the whole story belongs to Judah, not Joseph. The brother who once said let us sell him now says let me be the slave in his place. He cannot bear to watch his father grieve a second lost son, so he offers up his own freedom for the boy’s. The deceit that has run through four generations of this family finally turns into its opposite: a man laying himself down for his brother. That is the change Joseph has been testing for, and the moment it appears in front of him, the disguise breaks.',
         lenses: {
           theo: 'The family is not healed by Joseph’s power; it is healed by Judah’s repentance, by one brother willing to take the place of the brother in danger. The book has quietly carried Judah from the man who sold a brother to the man who would be enslaved for one, and it is through Judah, not through the favored Joseph, that the royal line and the Messiah will run. Repentance, not power, is what mends this house.',
-          arch: 'This is substitution, one stepping bodily into the place of another, and it is the integration of the shadow: the brother who did the worst thing becomes the brother who offers the most. The part of the self that committed the betrayal is exactly the part that, transformed, redeems it.'
+          arch: 'Here is substitution, one stepping bodily into the place of another, and it is the deepest turn the family makes: the brother who once sold a brother now offers to be enslaved for one. The image of the one who takes the place of the condemned runs forward through the whole Bible, the ram for Isaac and on. The very part that committed the betrayal is the part that, changed, redeems it. (Substitution, the place taken for another.)'
         },
         misreading: {
           named: 'Joseph’s testing is just him toying with his brothers to savor his revenge.',
@@ -3555,7 +3554,7 @@ export const GENESIS: Reading[] = [
         meaning: 'The first thing Joseph says is I am Joseph, and the second is the one you sold. He does not pretend it did not happen; he says the betrayal to their faces. And then he does the thing that can take a lifetime to learn: he refuses to let the betrayal be the whole truth. It was not you who sent me here, but God. He does not say what they did was good, it was evil. He says God was at work inside it anyway, bending even their crime toward the saving of lives. That is not denial and it is not excuse. It is a man who has found a frame large enough to hold the worst thing that ever happened to him without being destroyed by it.',
         lenses: {
           theo: 'This is providence as Genesis understands it: not a God who prevents the evil, and not a God who pulls the strings so that no one is really guilty, but a God who is not defeated by the evil, who works through the wreckage toward life without ever once calling the wreckage good. They sold him, and God sent him. The book refuses to drop either half of that sentence.',
-          arch: 'This is the reframe that heals, the hard-won capacity to hold your own story so that the wound stays real and stops being final. The betrayal is taken up into a self that has grown larger than it, neither denied nor allowed to define the whole.'
+          arch: 'This is the reframe that heals, the hard-won power to hold your own story so the wound stays real and stops being the whole of it. The betrayal is taken up into a life that has grown larger than it, neither denied nor allowed to be the last word. It is among the oldest kinds of wisdom there is, and one of the most costly to reach. (Naming the wound and refusing it the final say.)'
         },
         misreading: {
           named: 'So it was all God’s plan, which means the brothers did nothing really wrong.',
@@ -3638,7 +3637,7 @@ export const GENESIS: Reading[] = [
         meaning: 'After everything, the brothers still cannot believe they are forgiven, and they reach one last time for a lie to protect themselves. And Joseph weeps, because they still do not trust the grace. Then he says it as plainly as the book ever says anything: you meant it for evil, but God meant it for good. Not the evil was secretly good, it was evil, you meant it. But God meant something through it that you never did, and the proof is the bread in your children’s mouths. He will not take the place of God and settle the score. He forgives the unforgivable and feeds them. And then Genesis closes the way exile itself feels, far from home, in a coffin, holding a promise that has not yet come true.',
         lenses: {
           theo: 'This is the whole book’s last word, and it holds the two halves to the very end: you meant evil, God meant good, human guilt and divine providence in a single sentence, neither one cancelling the other. And it ends unresolved on purpose, with a body in Egypt and a promise of return, because the people who assembled Genesis were themselves in exile, holding exactly that kind of promise, and the open ending was the faith they were reaching for.',
-          arch: 'Forgiveness here is the refusal to take the place of God, to be the one who settles the score. It is the release of the debt you are genuinely owed. And the book ends not in arrival but in trust, a bone waiting in a coffin to be carried home, the deepest image of a hope held past the end of a life.'
+          arch: 'Forgiveness here is the refusal to take the place of God, to be the one who settles the score; it is the release of a debt you are genuinely owed. And the book ends not in arrival but in trust, a bone waiting in a coffin to be carried home, one of the oldest and deepest images there is of a hope held past the end of a life. (The unpaid debt released, the bone that waits for home.)'
         },
         misreading: {
           named: '“You meant evil but God meant good” means the suffering was worth it, or that God caused it.',
@@ -3656,7 +3655,6 @@ export const GENESIS: Reading[] = [
 ];
 
 // The Abraham movement: its grounding, its look-back capstone, and the doorway into Jacob.
-// The primeval movement (1-11) can be ported from the prototype's existing overlays the same way.
 export const ABRAHAM_MOVEMENT: Movement = {
   id: 'abraham', index: 2, title: 'Abraham', range: 'Genesis 12–25',
   throughline: 'A promise made to a childless old man, held against every impossibility and every attempt to force it, until it arrives as laughter and is then asked back on a mountain.',
@@ -3745,8 +3743,8 @@ export const PRIMEVAL_MOVEMENT: Movement = {
   },
 };
 
-// The Jacob movement (25:19 onward): the wrestler. Authored in batches; its look-back
-// capstone and the doorway into Joseph land once the cycle is fully written.
+// The Jacob movement (25:19 onward): the wrestler. Its situation, look-back capstone, and
+// the doorway into Joseph.
 export const JACOB_MOVEMENT: Movement = {
   id: 'jacob', index: 3, title: 'Jacob', range: 'Genesis 25–36',
   throughline: 'A grasper takes the blessing by fraud and spends twenty years being humbled into it, until a night of wrestling leaves him renamed and limping, and the brother he cheated runs to embrace him.',
@@ -3788,7 +3786,7 @@ export const JACOB_MOVEMENT: Movement = {
 };
 
 // The Joseph movement (37-50): the dreamer. The last movement of Genesis, so it carries
-// a capstone but no doorway out; the capstone lands once the novella is fully authored.
+// a capstone but no doorway out.
 export const JOSEPH_MOVEMENT: Movement = {
   id: 'joseph', index: 4, title: 'Joseph', range: 'Genesis 37–50',
   throughline: 'The favored son is thrown in a pit and sold into Egypt, rises and falls and rises again by reading dreams, and at last faces the brothers who betrayed him and chooses to read the whole wreckage as a providence that meant it for good.',
