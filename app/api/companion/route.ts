@@ -1,20 +1,14 @@
-import { isComped, isFreeReading } from "@/lib/access";
 import {
   CompanionUnconfiguredError,
   draftMiddle,
 } from "@/lib/companion-server";
 import { findReadingAnywhere } from "@/lib/content";
+import { isPlusEntitled, lookupCaller } from "@/lib/server-auth";
 import { type NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
-
-interface CallerInfo {
-  uid: string;
-  email?: string;
-  stripeRole?: string;
-}
 
 // A best-effort in-memory rate limiter. It lives per serverless instance, so it is a
 // backstop against the realistic abuse (a script hammering the endpoint to burn model
@@ -58,48 +52,6 @@ function clientIp(req: NextRequest): string {
   return req.headers.get("x-real-ip") ?? "unknown";
 }
 
-// Confirm the caller is a real signed-in reader and recover what we need to authorize the
-// draft: their uid (rate-limit key), email (for comped accounts) and their stripeRole
-// custom claim (set by the Stripe extension for STRATA Plus). The public web API key
-// verifies the ID token via Identity Toolkit, so no service-account secret is needed.
-async function lookupCaller(idToken: string): Promise<CallerInfo | null> {
-  const apiKey = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
-  if (!apiKey) return null;
-  try {
-    const res = await fetch(
-      `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${apiKey}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ idToken }),
-        // Do not let a hung Identity Toolkit call ride the full maxDuration.
-        signal: AbortSignal.timeout(5000),
-      },
-    );
-    if (!res.ok) return null;
-    const data = (await res.json()) as {
-      users?: Array<{
-        localId?: string;
-        email?: string;
-        customAttributes?: string;
-      }>;
-    };
-    const user = data.users?.[0];
-    if (!user?.localId) return null;
-    let stripeRole: string | undefined;
-    try {
-      stripeRole = (
-        JSON.parse(user.customAttributes ?? "{}") as { stripeRole?: string }
-      ).stripeRole;
-    } catch {
-      // no/invalid custom claims; treat as no role
-    }
-    return { uid: user.localId, email: user.email, stripeRole };
-  } catch {
-    return null;
-  }
-}
-
 export async function POST(req: NextRequest) {
   if (!process.env.ANTHROPIC_API_KEY) {
     return NextResponse.json(
@@ -138,16 +90,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "unknown-passage" }, { status: 404 });
   }
 
-  // With billing on, the companion is STRATA Plus, except on a free reading (the primeval
-  // sample) which any signed-in reader may draw. Plus is proven by the stripeRole claim
-  // (set by the Stripe extension) or a comped account.
-  const billingOn = Boolean(process.env.NEXT_PUBLIC_STRIPE_PRICE_ID);
-  const entitled =
-    !billingOn ||
-    caller.stripeRole === "plus" ||
-    isComped(caller.email) ||
-    isFreeReading(found.reading);
-  if (!entitled) {
+  // The companion is STRATA Plus only (owning a single book does not unlock it), except on a
+  // free reading, which any signed-in reader may draw. Same Plus gate as the content route.
+  if (!isPlusEntitled(caller, found.reading)) {
     return NextResponse.json({ error: "plus-required" }, { status: 402 });
   }
 
