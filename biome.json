@@ -27,5 +27,15 @@
   },
   "javascript": {
     "formatter": { "quoteStyle": "double" }
-  }
+  },
+  "overrides": [
+    {
+      "include": ["components/reader/HighlightableVerse.tsx"],
+      "linter": {
+        "rules": {
+          "a11y": { "useSemanticElements": "off" }
+        }
+      }
+    }
+  ]
 }

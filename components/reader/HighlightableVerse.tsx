@@ -1,14 +1,18 @@
 "use client";
 
-import { type ReactNode, useRef, useState } from "react";
+import { type KeyboardEvent, type ReactNode, useRef, useState } from "react";
 import { HighlightPopover } from "./HighlightPopover";
 import { useHighlights } from "./HighlightProvider";
 
 // Wraps a single verse's text. Signed out (or outside a provider) it returns the text
 // untouched. Signed in, the verse becomes a tap target: tapping opens an action popover
 // (highlight on/off, note). A washed verse shows the gold background; a noted one carries
-// a small gold marker. It is an inline button so it flows with the surrounding scripture
-// and wraps across lines; box-decoration-clone carries the wash to each line fragment.
+// a small gold marker.
+//
+// It is a <span role="button">, NOT a <button>: a real button is an atomic inline-block
+// box, so in running prose each verse would be bumped onto its own line. A span flows and
+// wraps as inline text, with role/tabindex/keyboard handlers keeping it operable.
+// box-decoration-clone carries the wash to each wrapped line fragment.
 export function HighlightableVerse({
   vkey,
   children,
@@ -18,24 +22,30 @@ export function HighlightableVerse({
 }) {
   const { enabled, has, getNote, activeKey, setActiveKey } = useHighlights();
   const [anchor, setAnchor] = useState<DOMRect | null>(null);
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const ref = useRef<HTMLSpanElement>(null);
   if (!enabled) return <>{children}</>;
 
   const on = has(vkey);
   const noted = Boolean(getNote(vkey));
   const open = activeKey === vkey;
 
+  const toggle = (rect: DOMRect) => {
+    setAnchor(rect);
+    setActiveKey(open ? null : vkey);
+  };
+
   // Closing returns focus to the verse so a keyboard user lands back where they were.
   const close = () => {
     setActiveKey(null);
-    buttonRef.current?.focus();
+    ref.current?.focus();
   };
 
   return (
     <>
-      <button
-        ref={buttonRef}
-        type="button"
+      <span
+        ref={ref}
+        role="button"
+        tabIndex={0}
         aria-haspopup="dialog"
         aria-expanded={open}
         aria-pressed={on}
@@ -46,11 +56,14 @@ export function HighlightableVerse({
               ? "Highlighted verse, open actions"
               : "Highlight verse"
         }
-        onClick={(e) => {
-          setAnchor(e.currentTarget.getBoundingClientRect());
-          setActiveKey(open ? null : vkey);
+        onClick={(e) => toggle(e.currentTarget.getBoundingClientRect())}
+        onKeyDown={(e: KeyboardEvent<HTMLSpanElement>) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle(e.currentTarget.getBoundingClientRect());
+          }
         }}
-        className={`box-decoration-clone inline cursor-pointer rounded-[2px] text-left align-baseline transition-colors ${
+        className={`box-decoration-clone cursor-pointer rounded-[2px] transition-colors ${
           on ? "bg-gold/[0.22]" : "hover:bg-parchment/[0.05]"
         }`}
       >
@@ -58,7 +71,7 @@ export function HighlightableVerse({
         {noted ? (
           <sup className="ml-[2px] inline-block h-[5px] w-[5px] rounded-full bg-gold-bright align-super" />
         ) : null}
-      </button>
+      </span>
       {open && anchor ? (
         <HighlightPopover vkey={vkey} anchor={anchor} onClose={close} />
       ) : null}
