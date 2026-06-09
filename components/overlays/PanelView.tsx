@@ -1,4 +1,3 @@
-import { FadeImage } from "@/components/media/FadeImage";
 import type { Panel } from "@/lib/types";
 
 type Accent = "lapis" | "gold";
@@ -46,17 +45,14 @@ export function PanelView({ panel, accent }: { panel: Panel; accent: Accent }) {
       </summary>
       <div className="px-4 pb-4">
         {panel.image ? (
-          // Decorative banner inside the panel; the panel text carries the meaning. The
-          // fixed aspect box reserves its space so the image can fade in without a jump.
-          <div className="mb-4 aspect-[16/9] w-full overflow-hidden rounded-[10px] border border-line">
-            <FadeImage
-              src={panel.image}
-              alt=""
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
+          // Decorative banner inside the panel; the panel text carries the meaning.
+          <img
+            src={panel.image}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="mb-4 w-full rounded-[10px] border border-line"
+          />
         ) : null}
         {panel.paragraphs.map((paragraph) => (
           <p
