@@ -2,6 +2,7 @@ import { AuthProvider } from "@/components/auth/AuthProvider";
 import { SubscriptionProvider } from "@/components/auth/SubscriptionProvider";
 import { PlusWelcome } from "@/components/billing/PlusWelcome";
 import { MenuDrawer } from "@/components/nav/MenuDrawer";
+import { ServiceWorker } from "@/components/pwa/ServiceWorker";
 import { HighlightProvider } from "@/components/reader/HighlightProvider";
 import { SettingsProvider } from "@/components/settings/SettingsProvider";
 import type { Metadata } from "next";
@@ -46,6 +47,7 @@ export default function RootLayout({
               <HighlightProvider>
                 <MenuDrawer />
                 <PlusWelcome />
+                <ServiceWorker />
                 {children}
               </HighlightProvider>
             </SettingsProvider>
