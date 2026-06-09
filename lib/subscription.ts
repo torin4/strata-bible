@@ -50,12 +50,15 @@ export async function startCheckout(
   price: string = STRIPE_PRICE_ID,
 ): Promise<void> {
   if (!db || !price) throw new Error("Billing is not configured.");
+  // Return to where they were, tagged so the app shows the welcome once on arrival.
+  const successUrl = new URL(window.location.href);
+  successUrl.searchParams.set("plus", "welcome");
   const ref = await addDoc(
     collection(db, CUSTOMERS, uid, "checkout_sessions"),
     {
       price,
       allow_promotion_codes: true,
-      success_url: window.location.href,
+      success_url: successUrl.toString(),
       cancel_url: window.location.href,
     },
   );
