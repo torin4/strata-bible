@@ -10,6 +10,7 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
+import { useRouter } from "next/navigation";
 import {
   type ReactNode,
   createContext,
@@ -41,6 +42,7 @@ const notConfigured = () => {
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     if (!auth) {
@@ -74,12 +76,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         if (!auth) return;
         try {
           await signOut(auth);
+          // Leave the signed-in experience: send them to the landing, where signing
+          // back in is one tap. (Some signed-in-only pages would otherwise just sit
+          // there in their signed-out state.)
+          router.push("/");
         } catch {
           // A failed sign-out leaves the session as-is; nothing actionable here.
         }
       },
     }),
-    [user, loading],
+    [user, loading, router],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
