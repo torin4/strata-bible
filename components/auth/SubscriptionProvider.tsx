@@ -2,7 +2,11 @@
 
 import { useAuth } from "@/components/auth/AuthProvider";
 import { isComped } from "@/lib/access";
-import { billingEnabled, subscribePlus } from "@/lib/subscription";
+import {
+  type PlusSubscription,
+  billingEnabled,
+  subscribePlus,
+} from "@/lib/subscription";
 import {
   type ReactNode,
   createContext,
@@ -20,6 +24,8 @@ interface SubscriptionContextValue {
   // True only for an actual paid Stripe subscription (not comped), so the UI can show a
   // "manage subscription" link to subscribers but not to comped accounts.
   subscribed: boolean;
+  // The active subscription's details (renewal, plan, cancel state) for the settings page.
+  subscription: PlusSubscription | null;
   billingEnabled: boolean;
 }
 
@@ -31,6 +37,7 @@ const inert = (): SubscriptionContextValue => ({
   loading: false,
   isPlus: !billingEnabled,
   subscribed: false,
+  subscription: null,
   billingEnabled,
 });
 
@@ -39,32 +46,35 @@ const inert = (): SubscriptionContextValue => ({
 // companion do. With billing off, it reports everyone as Plus so nothing is locked.
 export function SubscriptionProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
-  const [active, setActive] = useState(false);
+  const [subscription, setSubscription] = useState<PlusSubscription | null>(
+    null,
+  );
   const [loading, setLoading] = useState(billingEnabled);
 
   useEffect(() => {
     if (!billingEnabled || !user) {
-      setActive(false);
+      setSubscription(null);
       setLoading(false);
       return;
     }
     setLoading(true);
-    return subscribePlus(user.uid, (a) => {
-      setActive(a);
+    return subscribePlus(user.uid, (sub) => {
+      setSubscription(sub);
       setLoading(false);
     });
   }, [user]);
 
-  const value = useMemo<SubscriptionContextValue>(
-    () => ({
+  const value = useMemo<SubscriptionContextValue>(() => {
+    const subscribed = subscription !== null;
+    return {
       loading,
       // Billing off, an active subscription, or a comped account all count as Plus.
-      isPlus: !billingEnabled || active || isComped(user?.email),
-      subscribed: active,
+      isPlus: !billingEnabled || subscribed || isComped(user?.email),
+      subscribed,
+      subscription,
       billingEnabled,
-    }),
-    [loading, active, user],
-  );
+    };
+  }, [loading, subscription, user]);
 
   return (
     <SubscriptionContext.Provider value={value}>

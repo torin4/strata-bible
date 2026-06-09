@@ -52,9 +52,10 @@ export function MenuDrawer() {
   const continueHref = lastRead
     ? `/read/${lastRead.bookId}/${lastRead.readingId}`
     : "/read/genesis/gen-1";
-  const continueSub = lastRead
-    ? lastRead.span || lastRead.title
-    : "Start at the beginning";
+  const resumeTitle = lastRead?.title || "Begin Genesis";
+  const resumeSub = lastRead
+    ? lastRead.span || "Pick up where you left off"
+    : "Start from the beginning";
 
   return (
     <>
@@ -128,34 +129,36 @@ export function MenuDrawer() {
         </div>
 
         <nav className="flex flex-col">
+          {/* Resume is the primary action, so it gets a card, not a row. */}
+          <Link
+            href={continueHref}
+            onClick={close}
+            className="group mb-4 block rounded-[12px] border border-gold/30 bg-gradient-to-b from-gold/[0.07] to-transparent px-4 py-3.5 transition-colors hover:border-gold/50"
+          >
+            <span className="font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
+              Continue reading
+            </span>
+            <span className="mt-1 block truncate font-display text-[17px] leading-tight text-parchment">
+              {resumeTitle}
+            </span>
+            <span className="mt-0.5 block truncate font-body text-[12px] italic text-mist-2">
+              {resumeSub}
+            </span>
+          </Link>
+
           <DrawerLink href="/" label="Home" onNavigate={close} />
-          <DrawerLink
-            href="/find"
-            label="Find a reading"
-            sub="By what you’re carrying"
-            onNavigate={close}
-          />
+          <DrawerLink href="/find" label="Find a reading" onNavigate={close} />
           <DrawerLink href="/journal" label="Journal" onNavigate={close} />
           <DrawerLink
             href="/highlights"
             label="Your highlights"
-            sub="Verses you’ve marked"
             onNavigate={close}
           />
-          <DrawerLink
-            href={continueHref}
-            label="Continue reading"
-            sub={continueSub}
-            onNavigate={close}
-          />
-          <DrawerLink
-            href="/pricing"
-            label="STRATA Plus"
-            sub="Pricing and what it opens"
-            onNavigate={close}
-          />
-          <DrawerLink href="/about" label="About STRATA" onNavigate={close} />
+
           <div className="my-3 border-t border-line" />
+
+          <DrawerLink href="/pricing" label="STRATA Plus" onNavigate={close} />
+          <DrawerLink href="/about" label="About STRATA" onNavigate={close} />
           <DrawerLink
             href="/settings"
             label="Profile & settings"

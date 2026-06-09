@@ -21,14 +21,34 @@ export const billingEnabled = Boolean(STRIPE_PRICE_ID);
 // Matches the Firebase "Run Payments with Stripe" extension's default customers collection.
 const CUSTOMERS = "customers";
 
+// The reader's active STRATA Plus subscription, as much as the settings page needs to show
+// status and offer management. Null when there is no active subscription.
+export interface PlusSubscription {
+  status: string;
+  interval: "month" | "year" | null;
+  cancelAtPeriodEnd: boolean;
+  currentPeriodEnd: number | null; // epoch ms
+}
+
+// Read a Firestore Timestamp-ish value into epoch ms, tolerating the few shapes the
+// extension may write (Timestamp object, {seconds}, or a number).
+function toMillis(value: unknown): number | null {
+  if (!value) return null;
+  if (typeof value === "number") return value;
+  const v = value as { toMillis?: () => number; seconds?: number };
+  if (typeof v.toMillis === "function") return v.toMillis();
+  if (typeof v.seconds === "number") return v.seconds * 1000;
+  return null;
+}
+
 // Live "is this user on STRATA Plus", read from the subscriptions the extension syncs into
 // Firestore from Stripe. We treat a single active or trialing subscription as Plus.
 export function subscribePlus(
   uid: string,
-  onChange: (active: boolean) => void,
+  onChange: (sub: PlusSubscription | null) => void,
 ): Unsubscribe {
   if (!db) {
-    onChange(false);
+    onChange(null);
     return () => {};
   }
   const q = query(
@@ -37,8 +57,24 @@ export function subscribePlus(
   );
   return onSnapshot(
     q,
-    (snap) => onChange(!snap.empty),
-    () => onChange(false),
+    (snap) => {
+      const doc = snap.docs[0];
+      if (!doc) {
+        onChange(null);
+        return;
+      }
+      const data = doc.data() as Record<string, unknown>;
+      const items = Array.isArray(data.items) ? data.items : [];
+      const interval = (items[0] as { price?: { interval?: string } })?.price
+        ?.interval;
+      onChange({
+        status: typeof data.status === "string" ? data.status : "active",
+        interval: interval === "month" || interval === "year" ? interval : null,
+        cancelAtPeriodEnd: Boolean(data.cancel_at_period_end),
+        currentPeriodEnd: toMillis(data.current_period_end),
+      });
+    },
+    () => onChange(null),
   );
 }
 

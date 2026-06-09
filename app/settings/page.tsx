@@ -110,11 +110,18 @@ export default function SettingsPage() {
   );
 }
 
-// The STRATA Plus section: manage an active subscription, or unlock it. Hidden entirely
-// until billing is configured.
+const PLAN_LABEL: Record<"month" | "year", string> = {
+  year: "Annual",
+  month: "Monthly",
+};
+
+// The STRATA Plus section: subscription status and management, or the unlock. Hidden
+// entirely until billing is configured. All real management (cancel, reactivate, change
+// plan, update card, invoices) happens in the Stripe customer portal behind "Manage".
 function PlusSection() {
   const { user } = useAuth();
-  const { isPlus, subscribed, billingEnabled } = useSubscription();
+  const { isPlus, subscribed, subscription, billingEnabled } =
+    useSubscription();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -129,6 +136,17 @@ function PlusSection() {
     });
   };
 
+  const planName = subscription?.interval
+    ? PLAN_LABEL[subscription.interval]
+    : "Plus";
+  const renewal = subscription?.currentPeriodEnd
+    ? new Date(subscription.currentPeriodEnd).toLocaleDateString(undefined, {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      })
+    : null;
+
   return (
     <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
       <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
@@ -139,18 +157,35 @@ function PlusSection() {
           Sign in to unlock STRATA Plus.
         </p>
       ) : subscribed ? (
-        <div className="flex items-center justify-between gap-4">
-          <span className="font-body text-[15px] italic text-parchment-2">
-            Active. Thank you for reading.
-          </span>
-          <button
-            type="button"
-            onClick={() => run(openPortal)}
-            disabled={busy}
-            className="shrink-0 rounded-[10px] border border-gold/40 px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
-          >
-            {busy ? "Opening" : "Manage"}
-          </button>
+        <div className="flex flex-col gap-3">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="font-body text-[15px] text-parchment-2">
+                STRATA Plus, {planName}
+              </div>
+              {renewal ? (
+                <p className="mt-0.5 font-body text-[12.5px] italic text-mist-2">
+                  {subscription?.cancelAtPeriodEnd
+                    ? `Access until ${renewal}`
+                    : `Renews ${renewal}`}
+                </p>
+              ) : null}
+            </div>
+            <button
+              type="button"
+              onClick={() => run(openPortal)}
+              disabled={busy}
+              className="shrink-0 rounded-[10px] border border-gold/40 px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
+            >
+              {busy ? "Opening" : "Manage"}
+            </button>
+          </div>
+          {subscription?.cancelAtPeriodEnd ? (
+            <p className="font-body text-[12.5px] italic leading-[1.6] text-mist">
+              Your plan is set to cancel at the end of the period. You can
+              reactivate it from Manage.
+            </p>
+          ) : null}
         </div>
       ) : isPlus ? (
         <p className="font-body text-[14px] leading-[1.7] text-mist">
