@@ -13,8 +13,13 @@ export function LockBadge({
   bookId: string;
   movementId: string;
 }) {
-  const { isPlus, billingEnabled } = useSubscription();
-  if (!billingEnabled || isPlus || isFreeMovement(bookId, movementId)) {
+  const { isPlus, billingEnabled, owns } = useSubscription();
+  if (
+    !billingEnabled ||
+    isPlus ||
+    isFreeMovement(bookId, movementId) ||
+    owns(bookId)
+  ) {
     return null;
   }
   return (

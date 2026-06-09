@@ -4,9 +4,11 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { Footer } from "@/components/nav/Footer";
 import { PageTransition } from "@/components/nav/PageTransition";
+import { purchasableBooks } from "@/lib/pricing";
 import {
   STRIPE_PRICE_ID,
   STRIPE_PRICE_ID_MONTHLY,
+  buyBook,
   startCheckout,
 } from "@/lib/subscription";
 import Link from "next/link";
@@ -48,6 +50,8 @@ export default function PricingPage() {
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  const books = purchasableBooks();
+
   const buy = (priceId: string) => {
     if (!user) {
       router.push("/login");
@@ -56,6 +60,19 @@ export default function PricingPage() {
     setBusy(priceId);
     setError(null);
     startCheckout(user.uid, priceId).catch(() => {
+      setError("Could not open checkout just now. Please try again.");
+      setBusy(null);
+    });
+  };
+
+  const buyTheBook = (bookId: string) => {
+    if (!user) {
+      router.push("/login");
+      return;
+    }
+    setBusy(`book:${bookId}`);
+    setError(null);
+    buyBook(user.uid, bookId).catch(() => {
       setError("Could not open checkout just now. Please try again.");
       setBusy(null);
     });
@@ -176,6 +193,43 @@ export default function PricingPage() {
             through the period you have paid for.
           </p>
         </div>
+
+        {billingEnabled && !isPlus && books.length > 0 ? (
+          <div className="mx-auto mt-12 max-w-[34rem]">
+            <div className="mb-1 text-center font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
+              Or own a book
+            </div>
+            <p className="mb-4 text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
+              Buy a single book outright, yours to keep. The companion stays in
+              Plus.
+            </p>
+            <ul className="flex flex-col gap-2">
+              {books.map((book) => (
+                <li
+                  key={book.bookId}
+                  className="flex items-center justify-between gap-3 rounded-[12px] border border-line bg-deep px-4 py-3"
+                >
+                  <span className="font-display text-[16px] tracking-[.02em] text-parchment-2">
+                    {book.title}
+                  </span>
+                  <div className="flex items-center gap-3">
+                    <span className="font-body text-[14px] text-mist">
+                      {book.price}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => buyTheBook(book.bookId)}
+                      disabled={busy !== null}
+                      className="rounded-[10px] border border-gold/40 px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
+                    >
+                      {busy === `book:${book.bookId}` ? "Opening" : "Own"}
+                    </button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
         <Footer />
       </PageTransition>

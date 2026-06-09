@@ -1,4 +1,5 @@
 import { db } from "@/lib/firebase";
+import { bookForPriceId, bookOffer } from "@/lib/pricing";
 import { getApp } from "firebase/app";
 import {
   type Unsubscribe,
@@ -78,25 +79,16 @@ export function subscribePlus(
   );
 }
 
-// Start Stripe Checkout for STRATA Plus: write a checkout_sessions doc, wait for the
-// extension to attach the hosted Checkout URL (or an error), then redirect the browser.
-// Defaults to the annual price; pass the monthly price for the monthly plan.
-export async function startCheckout(
+// Write a checkout_sessions doc, wait for the extension to attach the hosted Checkout URL
+// (or an error), then redirect the browser. Shared by the subscription and per-book flows.
+async function runCheckout(
   uid: string,
-  price: string = STRIPE_PRICE_ID,
+  payload: Record<string, unknown>,
 ): Promise<void> {
-  if (!db || !price) throw new Error("Billing is not configured.");
-  // Return to where they were, tagged so the app shows the welcome once on arrival.
-  const successUrl = new URL(window.location.href);
-  successUrl.searchParams.set("plus", "welcome");
+  if (!db) throw new Error("Billing is not configured.");
   const ref = await addDoc(
     collection(db, CUSTOMERS, uid, "checkout_sessions"),
-    {
-      price,
-      allow_promotion_codes: true,
-      success_url: successUrl.toString(),
-      cancel_url: window.location.href,
-    },
+    payload,
   );
   await new Promise<void>((resolve, reject) => {
     const unsub = onSnapshot(ref, (snap) => {
@@ -113,6 +105,75 @@ export async function startCheckout(
       }
     });
   });
+}
+
+// Start Stripe Checkout for STRATA Plus (recurring). Defaults to the annual price; pass the
+// monthly price for the monthly plan. Returns tagged so the welcome shows once on arrival.
+export async function startCheckout(
+  uid: string,
+  price: string = STRIPE_PRICE_ID,
+): Promise<void> {
+  if (!price) throw new Error("Billing is not configured.");
+  const successUrl = new URL(window.location.href);
+  successUrl.searchParams.set("plus", "welcome");
+  await runCheckout(uid, {
+    price,
+    allow_promotion_codes: true,
+    success_url: successUrl.toString(),
+    cancel_url: window.location.href,
+  });
+}
+
+// Buy a single book outright (one-time). The bookId travels as metadata so the purchase can
+// be matched back to the book, and the price itself is matched too.
+export async function buyBook(uid: string, bookId: string): Promise<void> {
+  const offer = bookOffer(bookId);
+  if (!offer) throw new Error("This book is not for sale yet.");
+  const successUrl = new URL(window.location.href);
+  successUrl.searchParams.set("book", bookId);
+  await runCheckout(uid, {
+    mode: "payment",
+    price: offer.priceId,
+    metadata: { bookId },
+    allow_promotion_codes: true,
+    success_url: successUrl.toString(),
+    cancel_url: window.location.href,
+  });
+}
+
+// The books a reader owns outright, from their succeeded one-time payments. A book is owned
+// if a payment carries its bookId metadata or its one-time price.
+export function subscribeOwnedBooks(
+  uid: string,
+  onChange: (books: Set<string>) => void,
+): Unsubscribe {
+  if (!db) {
+    onChange(new Set());
+    return () => {};
+  }
+  const q = query(
+    collection(db, CUSTOMERS, uid, "payments"),
+    where("status", "==", "succeeded"),
+  );
+  return onSnapshot(
+    q,
+    (snap) => {
+      const owned = new Set<string>();
+      for (const doc of snap.docs) {
+        const data = doc.data() as Record<string, unknown>;
+        const meta = data.metadata as { bookId?: string } | undefined;
+        if (typeof meta?.bookId === "string") owned.add(meta.bookId);
+        const prices = Array.isArray(data.prices) ? data.prices : [];
+        for (const p of prices) {
+          const priceId = (p as { price?: string })?.price;
+          const book = priceId ? bookForPriceId(priceId) : null;
+          if (book) owned.add(book);
+        }
+      }
+      onChange(owned);
+    },
+    () => onChange(new Set()),
+  );
 }
 
 // Region the Stripe extension's Cloud Functions are deployed to (its install default is

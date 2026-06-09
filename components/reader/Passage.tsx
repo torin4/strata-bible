@@ -24,11 +24,13 @@ export function Passage({
   bookId,
   readingId,
   readingTitle,
+  isFree,
 }: {
   passage: PassageData;
   bookId: string;
   readingId: string;
   readingTitle: string;
+  isFree: boolean;
 }) {
   const verseNumbers = (
     passage.verses ??
@@ -102,6 +104,7 @@ export function Passage({
           readingId={readingId}
           readingTitle={readingTitle}
           passage={passage}
+          isFree={isFree}
         />
       )}
       {passage.lenses ? <Lenses lenses={passage.lenses} /> : null}

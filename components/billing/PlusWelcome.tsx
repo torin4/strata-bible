@@ -1,13 +1,14 @@
 "use client";
 
+import { BOOK_OFFERS } from "@/lib/pricing";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
-// Shown once when a reader returns from Stripe Checkout (the success URL carries
-// ?plus=welcome). It introduces what STRATA Plus just opened, then strips the marker from
-// the URL so it never reappears on refresh or back-navigation.
-const UNLOCKED = [
+// Shown once when a reader returns from Stripe Checkout. STRATA Plus carries ?plus=welcome
+// and introduces everything it opened; a single book carries ?book=<id> and confirms the
+// purchase. Either way the marker is stripped from the URL so it never reappears.
+const PLUS_UNLOCKED = [
   "The rest of Genesis, Abraham through Joseph",
   "Every book as it is published",
   "The companion on every reading",
@@ -15,13 +16,20 @@ const UNLOCKED = [
 
 export function PlusWelcome() {
   const [open, setOpen] = useState(false);
+  const [book, setBook] = useState<{ id: string; title: string } | null>(null);
   const primaryRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("plus") !== "welcome") return;
+    const plus = params.get("plus") === "welcome";
+    const bookId = params.get("book");
+    if (!plus && !bookId) return;
+    if (bookId) {
+      setBook({ id: bookId, title: BOOK_OFFERS[bookId]?.title ?? "Your book" });
+    }
     setOpen(true);
     params.delete("plus");
+    params.delete("book");
     const qs = params.toString();
     window.history.replaceState(
       null,
@@ -46,6 +54,8 @@ export function PlusWelcome() {
   }, [open]);
 
   if (!open || typeof document === "undefined") return null;
+
+  const browseHref = book ? `/book/${book.id}` : "/book/genesis";
 
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
@@ -79,30 +89,33 @@ export function PlusWelcome() {
         </button>
 
         <div className="mb-2 font-ui text-[10px] font-semibold uppercase tracking-[.22em] text-gold">
-          STRATA Plus
+          {book ? "Purchased" : "STRATA Plus"}
         </div>
         <h2
           id="plus-welcome-title"
           className="font-display text-[26px] font-medium leading-[1.15] text-parchment"
         >
-          You are in
+          {book ? `${book.title} is yours` : "You are in"}
         </h2>
         <p className="mx-auto mt-3 max-w-[20rem] font-body text-[14.5px] leading-[1.7] text-mist">
-          Thank you for reading deeper. The whole strata of the book is open to
-          you now.
+          {book
+            ? "Yours to keep, with no time limit. The companion is part of STRATA Plus."
+            : "Thank you for reading deeper. The whole strata of the book is open to you now."}
         </p>
 
-        <ul className="mx-auto mt-5 flex max-w-[19rem] flex-col gap-2 text-left">
-          {UNLOCKED.map((item) => (
-            <li
-              key={item}
-              className="flex items-start gap-2 font-body text-[14px] leading-[1.5] text-parchment-2"
-            >
-              <span className="mt-[6px] h-[5px] w-[5px] shrink-0 rounded-full bg-gold-bright" />
-              {item}
-            </li>
-          ))}
-        </ul>
+        {book ? null : (
+          <ul className="mx-auto mt-5 flex max-w-[19rem] flex-col gap-2 text-left">
+            {PLUS_UNLOCKED.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-2 font-body text-[14px] leading-[1.5] text-parchment-2"
+              >
+                <span className="mt-[6px] h-[5px] w-[5px] shrink-0 rounded-full bg-gold-bright" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
 
         <button
           ref={primaryRef}
@@ -113,11 +126,11 @@ export function PlusWelcome() {
           Keep reading
         </button>
         <Link
-          href="/book/genesis"
+          href={browseHref}
           onClick={() => setOpen(false)}
           className="mt-3 inline-block font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
         >
-          Browse all of Genesis ›
+          {book ? `Open ${book.title} ›` : "Browse all of Genesis ›"}
         </Link>
       </dialog>
     </div>,

@@ -43,7 +43,7 @@ export function Reader({
   const wrapupIndex = passages.length; // one scene past the last passage
   const maxScene = hasWrapup ? wrapupIndex : last;
   const [i, setI] = useState(0);
-  const { isPlus } = useSubscription();
+  const { isPlus, owns } = useSubscription();
 
   // Restore a deep-linked scene (?s=) on mount, and reflect the current scene in the URL
   // without a navigation so a scene stays shareable.
@@ -63,10 +63,17 @@ export function Reader({
     window.scrollTo({ top: 0 });
   }, [i]);
 
-  // Soft content gate: a locked reading shows the paywall in place of the scenes. Every
-  // hook above still runs, so this early return obeys the rules of hooks.
-  if (!isFree && !isPlus) {
-    return <Paywall context={reading.title} />;
+  // Soft content gate: a locked reading shows the paywall in place of the scenes. Free,
+  // owning the book outright, or Plus all open it. Every hook above still runs, so this
+  // early return obeys the rules of hooks.
+  if (!isFree && !isPlus && !owns(reading.bookId)) {
+    return (
+      <Paywall
+        bookId={reading.bookId}
+        bookTitle={bookTitle}
+        context={reading.title}
+      />
+    );
   }
 
   const onWrapup = hasWrapup && i === wrapupIndex;
@@ -159,6 +166,7 @@ export function Reader({
               bookId={reading.bookId}
               readingId={reading.id}
               readingTitle={reading.title}
+              isFree={isFree}
             />
 
             {!isLastPassage && reading.closeMid ? (

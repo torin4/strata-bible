@@ -32,11 +32,13 @@ export function CompanionMiddle({
   readingId,
   readingTitle,
   passage,
+  isFree,
 }: {
   bookId: string;
   readingId: string;
   readingTitle: string;
   passage: Passage;
+  isFree: boolean;
 }) {
   const { user, configured, loading } = useAuth();
   const { settings } = useSettings();
@@ -139,16 +141,21 @@ export function CompanionMiddle({
     );
   }
 
-  // A non-Plus reader who has spent their free draw is invited to upgrade instead.
-  const outOfFreeDraws = !isPlus && freeDraws >= FREE_DRAW_LIMIT;
+  // The companion is a STRATA Plus feature. On a free reading a non-Plus reader gets one
+  // taste; owning a book outright unlocks the book but not the companion, so there the
+  // prompt goes straight to the upgrade.
+  const companionLocked = !isPlus && !isFree;
+  const outOfFreeDraws = !isPlus && isFree && freeDraws >= FREE_DRAW_LIMIT;
+  const showUpgrade = companionLocked || outOfFreeDraws;
 
   return (
     <div aria-live="polite" className="mt-5 border-t border-line pt-4">
-      {outOfFreeDraws ? (
+      {showUpgrade ? (
         <>
           <p className="mb-2 font-body text-[13px] italic leading-[1.6] text-mist">
-            You have used your free draw. STRATA Plus opens the companion on
-            every reading.
+            {companionLocked
+              ? "The companion is part of STRATA Plus. It draws out the meaning, the turn, and a question on every reading."
+              : "You have used your free draw. STRATA Plus opens the companion on every reading."}
           </p>
           <button
             type="button"

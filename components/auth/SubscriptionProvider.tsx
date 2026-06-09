@@ -5,6 +5,7 @@ import { isComped } from "@/lib/access";
 import {
   type PlusSubscription,
   billingEnabled,
+  subscribeOwnedBooks,
   subscribePlus,
 } from "@/lib/subscription";
 import {
@@ -26,6 +27,8 @@ interface SubscriptionContextValue {
   subscribed: boolean;
   // The active subscription's details (renewal, plan, cancel state) for the settings page.
   subscription: PlusSubscription | null;
+  // Whether the reader owns a specific book outright (one-time purchase).
+  owns: (bookId: string) => boolean;
   billingEnabled: boolean;
 }
 
@@ -38,6 +41,7 @@ const inert = (): SubscriptionContextValue => ({
   isPlus: !billingEnabled,
   subscribed: false,
   subscription: null,
+  owns: () => false,
   billingEnabled,
 });
 
@@ -49,19 +53,26 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
   const [subscription, setSubscription] = useState<PlusSubscription | null>(
     null,
   );
+  const [ownedBooks, setOwnedBooks] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(billingEnabled);
 
   useEffect(() => {
     if (!billingEnabled || !user) {
       setSubscription(null);
+      setOwnedBooks(new Set());
       setLoading(false);
       return;
     }
     setLoading(true);
-    return subscribePlus(user.uid, (sub) => {
+    const unsubPlus = subscribePlus(user.uid, (sub) => {
       setSubscription(sub);
       setLoading(false);
     });
+    const unsubBooks = subscribeOwnedBooks(user.uid, setOwnedBooks);
+    return () => {
+      unsubPlus();
+      unsubBooks();
+    };
   }, [user]);
 
   const value = useMemo<SubscriptionContextValue>(() => {
@@ -72,9 +83,10 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
       isPlus: !billingEnabled || subscribed || isComped(user?.email),
       subscribed,
       subscription,
+      owns: (bookId: string) => ownedBooks.has(bookId),
       billingEnabled,
     };
-  }, [loading, subscription, user]);
+  }, [loading, subscription, ownedBooks, user]);
 
   return (
     <SubscriptionContext.Provider value={value}>
