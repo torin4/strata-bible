@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import { PageTransition } from "@/components/nav/PageTransition";
 import { useSettings } from "@/components/settings/SettingsProvider";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ export default function SettingsPage() {
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
-      <div className="stagger-children mx-auto max-w-[40rem]">
+      <PageTransition className="mx-auto max-w-[40rem]">
         <header className="mb-6 text-center">
           <Link
             href="/"
@@ -99,7 +100,7 @@ export default function SettingsPage() {
             Back to the reader
           </Link>
         </div>
-      </div>
+      </PageTransition>
     </main>
   );
 }

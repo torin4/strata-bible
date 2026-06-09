@@ -3,6 +3,7 @@
 import { useAuth } from "@/components/auth/AuthProvider";
 import { JournalComposer } from "@/components/journal/JournalComposer";
 import { JournalList } from "@/components/journal/JournalList";
+import { PageTransition } from "@/components/nav/PageTransition";
 import Link from "next/link";
 
 export default function JournalPage() {
@@ -10,7 +11,7 @@ export default function JournalPage() {
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
-      <div className="stagger-children mx-auto max-w-[40rem]">
+      <PageTransition className="mx-auto max-w-[40rem]">
         <header className="mb-6 text-center">
           <Link
             href="/"
@@ -61,7 +62,7 @@ export default function JournalPage() {
             Back to the reader
           </Link>
         </div>
-      </div>
+      </PageTransition>
     </main>
   );
 }

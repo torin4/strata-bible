@@ -115,7 +115,9 @@ export default function HighlightsPage() {
                         <button
                           type="button"
                           aria-label="Remove highlight"
-                          onClick={() => setHighlight(user.uid, v.key, false)}
+                          onClick={() =>
+                            setHighlight(user.uid, v.key, false).catch(() => {})
+                          }
                           className="font-ui text-[9.5px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold-bright"
                         >
                           Remove
@@ -210,10 +212,10 @@ function NoteBlock({
           <button
             type="button"
             onClick={() => {
-              removeNote(uid, vkey);
+              removeNote(uid, vkey).catch(() => {});
               setEditing(false);
             }}
-            className="font-ui text-[9.5px] uppercase tracking-[.14em] text-mist-2 transition-colors hover:text-gold-bright"
+            className="font-ui text-[9.5px] uppercase tracking-[.14em] text-mist transition-colors hover:text-gold-bright"
           >
             Delete note
           </button>
@@ -231,7 +233,7 @@ function NoteBlock({
           <button
             type="button"
             onClick={() => {
-              setNote(uid, vkey, text);
+              setNote(uid, vkey, text).catch(() => {});
               setEditing(false);
             }}
             className="rounded-[8px] bg-gold px-3 py-1.5 font-ui text-[10px] uppercase tracking-[.12em] text-deep transition-colors hover:bg-gold-bright"

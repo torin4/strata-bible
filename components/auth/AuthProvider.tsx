@@ -71,7 +71,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         await createUserWithEmailAndPassword(auth, email, password);
       },
       signOutUser: async () => {
-        if (auth) await signOut(auth);
+        if (!auth) return;
+        try {
+          await signOut(auth);
+        } catch {
+          // A failed sign-out leaves the session as-is; nothing actionable here.
+        }
       },
     }),
     [user, loading],
