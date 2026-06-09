@@ -31,7 +31,7 @@ export default function Home() {
               alt=""
               width={58}
               height={72}
-              className="mx-auto mb-6 h-[72px] w-auto"
+              className="logo-glow mx-auto mb-6 h-[72px] w-auto"
             />
             <div className="ml-[.42em] font-display text-[24px] font-semibold tracking-[.42em] text-gold-bright">
               STRATA

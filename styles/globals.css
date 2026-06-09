@@ -87,3 +87,30 @@
     opacity: 1;
   }
 }
+
+/* A subtle warm halo on the landing mark. Built from the gold tokens as a layered
+ * drop-shadow (so it hugs the SVG's actual paths, not a box), with a slow, low amplitude
+ * breath that lifts toward gold-bright. Reduced-motion settles it to the steady glow. */
+@keyframes logo-breath {
+  from {
+    filter: drop-shadow(0 0 6px rgb(var(--gold) / 0.26))
+      drop-shadow(0 0 16px rgb(var(--gold) / 0.14));
+  }
+  to {
+    filter: drop-shadow(0 0 10px rgb(var(--gold-bright) / 0.4))
+      drop-shadow(0 0 26px rgb(var(--gold) / 0.22));
+  }
+}
+
+.logo-glow {
+  filter: drop-shadow(0 0 8px rgb(var(--gold) / 0.3))
+    drop-shadow(0 0 20px rgb(var(--gold) / 0.16));
+  animation: logo-breath 5.5s ease-in-out infinite alternate;
+  will-change: filter;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-glow {
+    animation: none;
+  }
+}
