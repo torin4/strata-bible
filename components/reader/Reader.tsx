@@ -120,7 +120,7 @@ export function Reader({
 
           {passages.length > 1 ? (
             <div className="mt-2 font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
-              Scene {i + 1} of {passages.length}
+              {reading.unitLabel ?? "Scene"} {i + 1} of {passages.length}
             </div>
           ) : null}
 
@@ -150,6 +150,12 @@ export function Reader({
               readingId={reading.id}
               readingTitle={reading.title}
             />
+
+            {!isLastPassage && reading.closeMid ? (
+              <div className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
+                {reading.closeMid}
+              </div>
+            ) : null}
 
             {isLastPassage && reading.closeEnd ? (
               <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
