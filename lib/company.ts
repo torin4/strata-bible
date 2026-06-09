@@ -6,7 +6,7 @@ export const COMPANY = {
   // A reachable support address. Swap for a branded one (e.g. support@yourdomain) once a
   // custom domain is set up.
   contactEmail: "torin2582@gmail.com",
-  url: "https://strata-bible.vercel.app",
+  url: "https://stratabible.app",
   // Bump when the policies are revised.
   policiesUpdated: "June 9, 2026",
   // Jurisdiction for the terms. Confirm against your own legal advice.
