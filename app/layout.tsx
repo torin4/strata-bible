@@ -1,4 +1,5 @@
 import { AuthProvider } from "@/components/auth/AuthProvider";
+import { SubscriptionProvider } from "@/components/auth/SubscriptionProvider";
 import { MenuDrawer } from "@/components/nav/MenuDrawer";
 import { HighlightProvider } from "@/components/reader/HighlightProvider";
 import { SettingsProvider } from "@/components/settings/SettingsProvider";
@@ -33,12 +34,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AuthProvider>
-          <SettingsProvider>
-            <HighlightProvider>
-              <MenuDrawer />
-              {children}
-            </HighlightProvider>
-          </SettingsProvider>
+          <SubscriptionProvider>
+            <SettingsProvider>
+              <HighlightProvider>
+                <MenuDrawer />
+                {children}
+              </HighlightProvider>
+            </SettingsProvider>
+          </SubscriptionProvider>
         </AuthProvider>
       </body>
     </html>

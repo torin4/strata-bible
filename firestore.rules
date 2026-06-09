@@ -8,5 +8,30 @@ service cloud.firestore {
     match /users/{userId}/{document=**} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
+
+    // Stripe extension ("Run Payments with Stripe"). A reader creates and reads only their
+    // own checkout sessions, and reads (never writes) their own synced subscriptions and
+    // payments; the extension writes those server-side. The product/price catalog is public.
+    match /customers/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      match /checkout_sessions/{id} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+      match /subscriptions/{id} {
+        allow read: if request.auth != null && request.auth.uid == uid;
+      }
+      match /payments/{id} {
+        allow read: if request.auth != null && request.auth.uid == uid;
+      }
+    }
+    match /products/{id} {
+      allow read: if true;
+      match /prices/{priceId} {
+        allow read: if true;
+      }
+      match /tax_rates/{taxId} {
+        allow read: if true;
+      }
+    }
   }
 }

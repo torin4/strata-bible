@@ -2,6 +2,7 @@ import { PageTransition } from "@/components/nav/PageTransition";
 import { LastReadTracker } from "@/components/reader/LastReadTracker";
 import { Reader } from "@/components/reader/Reader";
 import { BOOKS } from "@/content";
+import { isFreeReading } from "@/lib/access";
 import {
   getAdjacent,
   getBook,
@@ -68,6 +69,7 @@ export default async function ReadingPage({
             closingMovement={closingMovement}
             closingBookCapstone={closingBookCapstone}
             bookTitle={book?.title}
+            isFree={isFreeReading(reading)}
             prev={prev ? { id: prev.id, title: prev.title } : undefined}
             next={next ? { id: next.id, title: next.title } : undefined}
           />

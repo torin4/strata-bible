@@ -1,5 +1,7 @@
 "use client";
 
+import { useSubscription } from "@/components/auth/SubscriptionProvider";
+import { Paywall } from "@/components/billing/Paywall";
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
 import Link from "next/link";
@@ -23,6 +25,7 @@ export function Reader({
   closingMovement,
   closingBookCapstone,
   bookTitle,
+  isFree = true,
   prev,
   next,
 }: {
@@ -30,6 +33,7 @@ export function Reader({
   closingMovement?: Movement;
   closingBookCapstone?: CapstoneData;
   bookTitle?: string;
+  isFree?: boolean;
   prev?: Adjacent;
   next?: Adjacent;
 }) {
@@ -39,6 +43,7 @@ export function Reader({
   const wrapupIndex = passages.length; // one scene past the last passage
   const maxScene = hasWrapup ? wrapupIndex : last;
   const [i, setI] = useState(0);
+  const { isPlus } = useSubscription();
 
   // Restore a deep-linked scene (?s=) on mount, and reflect the current scene in the URL
   // without a navigation so a scene stays shareable.
@@ -57,6 +62,12 @@ export function Reader({
     window.history.replaceState(null, "", url);
     window.scrollTo({ top: 0 });
   }, [i]);
+
+  // Soft content gate: a locked reading shows the paywall in place of the scenes. Every
+  // hook above still runs, so this early return obeys the rules of hooks.
+  if (!isFree && !isPlus) {
+    return <Paywall context={reading.title} />;
+  }
 
   const onWrapup = hasWrapup && i === wrapupIndex;
   const passage = passages[i];
