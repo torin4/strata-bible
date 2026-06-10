@@ -53,7 +53,6 @@ export default function PricingPage() {
   const [error, setError] = useState<string | null>(null);
 
   const books = purchasableBooks();
-  const ownedBooks = books.filter((book) => owns(book.bookId));
 
   const buy = (priceId: string) => {
     if (!user) {
@@ -214,19 +213,18 @@ export default function PricingPage() {
           ) : null}
         </div>
 
-        {billingEnabled &&
-        (isPlus ? ownedBooks.length > 0 : books.length > 0) ? (
+        {billingEnabled && books.length > 0 ? (
           <div className="mx-auto mt-12 max-w-[34rem]">
             <div className="mb-1 text-center font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
-              {isPlus ? "Books you own" : "Single books"}
+              Single books
             </div>
             <p className="mb-4 text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
               {isPlus
-                ? "Yours to keep, even if you ever change your plan."
+                ? "You already read every book with Plus. Buy one outright to keep it for good, even if you ever change your plan."
                 : "Buy a book outright, yours to keep. The companion stays in Plus."}
             </p>
             <ul className="flex flex-col gap-2">
-              {(isPlus ? ownedBooks : books).map((book) => {
+              {books.map((book) => {
                 const isOwned = owns(book.bookId);
                 return (
                   <li
