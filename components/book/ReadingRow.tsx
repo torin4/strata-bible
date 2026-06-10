@@ -12,9 +12,9 @@ export function ReadingRow({
   bookId,
   reading,
 }: { bookId: string; reading: Reading }) {
-  const { lastRead, sceneFor, resumeHref } = useResume();
+  const { continueTarget, sceneFor, resumeHref } = useResume();
   const scene = sceneFor(reading.id);
-  const isBookmark = lastRead?.readingId === reading.id;
+  const isBookmark = continueTarget?.readingId === reading.id;
 
   return (
     <li>

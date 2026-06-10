@@ -24,7 +24,7 @@ service cloud.firestore {
           && request.resource.data.size() <= 12;
       }
 
-      // Reader state: highlights, progress, prefs, lastRead, companionUsage. Each is a
+      // Reader state: highlights, progress, prefs, lastRead, bookmark, companionUsage. Each is a
       // single small document the client merges into. (companionUsage.freeDraws is written
       // with an increment() transform, which security rules cannot validate reliably, so
       // a tamper-proof free-draw cap belongs server-side, not here.)

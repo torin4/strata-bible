@@ -3,6 +3,7 @@
 import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { Paywall } from "@/components/billing/Paywall";
+import { BookmarkButton } from "@/components/reader/BookmarkButton";
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import { setScene } from "@/lib/progress";
 import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
@@ -134,7 +135,7 @@ export function Reader({
         };
 
   return (
-    <article>
+    <article className="relative">
       {/* Visually hidden live region: announces scene changes to screen readers. */}
       <span aria-live="polite" aria-atomic="true" className="sr-only">
         {onWrapup
@@ -143,9 +144,20 @@ export function Reader({
             ? `${reading.unitLabel ?? "Scene"} ${i + 1} of ${passages.length}, ${passage?.title ?? reading.title}`
             : reading.title}
       </span>
+      {/* The bookmark ribbon, top-right of the scene. Hidden on the wrap-up, which is not a
+          spot to resume to. */}
+      {onWrapup ? null : (
+        <div className="absolute right-0 top-0">
+          <BookmarkButton
+            bookId={reading.bookId}
+            readingId={reading.id}
+            scene={i}
+          />
+        </div>
+      )}
       {onWrapup ? null : (
         <>
-          <div className="mb-[14px] flex flex-wrap items-center gap-2">
+          <div className="mb-[14px] flex flex-wrap items-center gap-2 pr-9">
             <span className="rounded-full border border-gold/50 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
               {TIER_LABEL[reading.tier]}
             </span>

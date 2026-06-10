@@ -16,15 +16,15 @@ export function ContinueReading({
   bookId?: string;
   className?: string;
 }) {
-  const { lastRead, sceneFor, resumeHref } = useResume();
-  if (!lastRead) return null;
-  if (bookId && lastRead.bookId !== bookId) return null;
+  const { continueTarget, continueHref } = useResume();
+  if (!continueTarget || !continueHref) return null;
+  if (bookId && continueTarget.bookId !== bookId) return null;
 
-  const found = findReadingAnywhere(lastRead.readingId);
+  const found = findReadingAnywhere(continueTarget.readingId);
   if (!found) return null;
   const { book, reading } = found;
   const movement = getMovement(book.id, reading);
-  const scene = sceneFor(reading.id);
+  const scene = continueTarget.scene;
   const sceneCount = reading.passages.length;
   const showScene = scene > 0 && sceneCount > 1;
   const unit = reading.unitLabel ?? "Scene";
@@ -39,7 +39,7 @@ export function ContinueReading({
 
   return (
     <Link
-      href={resumeHref(book.id, reading.id)}
+      href={continueHref}
       className={`group block rounded-[16px] border border-gold/30 bg-gradient-to-b from-gold-soft to-parchment/[0.01] px-5 py-4 text-left transition duration-200 hover:-translate-y-0.5 hover:border-gold/55 ${className ?? ""}`}
     >
       <div className="flex items-center gap-1.5">
@@ -59,7 +59,7 @@ export function ContinueReading({
           />
         </svg>
         <span className="font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
-          Continue reading
+          {continueTarget.isBookmark ? "Your bookmark" : "Continue reading"}
         </span>
       </div>
 

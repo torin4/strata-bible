@@ -2,30 +2,21 @@
 
 import { useAuth } from "@/components/auth/AuthProvider";
 import { useResume } from "@/components/reader/ResumeProvider";
-import { type LastRead, subscribeLastRead } from "@/lib/lastRead";
+import { findReadingAnywhere } from "@/lib/content";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 // The app's primary navigation: a slide-out drawer opened from a fixed menu button on
-// every page. Home, Journal, Continue reading (resumes a signed-in reader's last spot),
-// and Profile & settings, with the account control pinned to the bottom.
+// every page. Home, Journal, Continue reading (resumes the bookmark, or the last spot when
+// none is placed), and Profile & settings, with the account control pinned to the bottom.
 export function MenuDrawer() {
   const { user, loading, configured, signOutUser } = useAuth();
-  const { resumeHref } = useResume();
+  const { continueTarget, continueHref } = useResume();
   const [open, setOpen] = useState(false);
-  const [lastRead, setLast] = useState<LastRead | null>(null);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const drawerRef = useRef<HTMLElement>(null);
   const DRAWER_ID = "nav-drawer";
-
-  useEffect(() => {
-    if (!user) {
-      setLast(null);
-      return;
-    }
-    return subscribeLastRead(user.uid, setLast);
-  }, [user]);
 
   // While open: close on Escape, lock the page behind the drawer from scrolling, and move
   // focus to the close button so a keyboard user lands inside the drawer.
@@ -72,12 +63,15 @@ export function MenuDrawer() {
     openButtonRef.current?.focus();
   };
 
-  const continueHref = lastRead
-    ? resumeHref(lastRead.bookId, lastRead.readingId)
-    : "/read/genesis/gen-1";
-  const resumeTitle = lastRead?.title || "Begin Genesis";
-  const resumeSub = lastRead
-    ? lastRead.span || "Pick up where you left off"
+  // Continue follows the same target as the home card: the placed bookmark, or the last spot
+  // when none is placed. Title and span come from the content by id.
+  const target = continueTarget
+    ? findReadingAnywhere(continueTarget.readingId)
+    : null;
+  const continueTo = continueHref ?? "/read/genesis/gen-1";
+  const resumeTitle = target?.reading.title || "Begin Genesis";
+  const resumeSub = target
+    ? target.reading.span || "Pick up where you left off"
     : "Start from the beginning";
 
   return (
@@ -158,7 +152,7 @@ export function MenuDrawer() {
         <nav className="flex flex-col">
           {/* Resume is the primary action, so it gets a card, not a row. */}
           <Link
-            href={continueHref}
+            href={continueTo}
             onClick={close}
             className="group mb-4 block rounded-[12px] border border-gold/30 bg-gradient-to-b from-gold/[0.07] to-transparent px-4 py-3.5 transition-colors hover:border-gold/50"
           >
