@@ -1,5 +1,7 @@
 "use client";
 
+import { askAboutVerse } from "@/lib/companion";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useHighlights } from "./HighlightProvider";
@@ -7,11 +9,19 @@ import { useHighlights } from "./HighlightProvider";
 const WIDTH = 252;
 const MARGIN = 8;
 
-// The action sheet that opens over a tapped verse: highlight on/off, and a note composer.
-// Rendered in a portal and anchored to the verse's on-screen box with fixed positioning,
-// so it never disturbs the inline flow of the scripture. It behaves as a modal dialog for
-// the keyboard and screen reader: focus moves in on open, is trapped while open, and the
-// caller returns it to the verse on close. Closes on outside tap, Escape, or scroll.
+// The preset angles for an Ask: three of STRATA's four layers, one tap each.
+const ANGLES: { key: "history" | "meaning" | "turn"; label: string }[] = [
+  { key: "history", label: "History" },
+  { key: "meaning", label: "Meaning" },
+  { key: "turn", label: "The turn" },
+];
+
+// The action sheet that opens over a tapped verse: highlight on/off, a note composer, and
+// Ask, which puts a bounded question about this verse to the companion. Rendered in a portal
+// and anchored to the verse's on-screen box with fixed positioning, so it never disturbs the
+// inline flow of the scripture. It behaves as a modal dialog for the keyboard and screen
+// reader: focus moves in on open, is trapped while open, and the caller returns it to the
+// verse on close. Closes on outside tap, Escape, or scroll (but not while composing/asking).
 export function HighlightPopover({
   vkey,
   anchor,
@@ -28,16 +38,48 @@ export function HighlightPopover({
   const [text, setText] = useState(existing);
   const panelRef = useRef<HTMLDialogElement>(null);
 
+  // The verse this popover targets, parsed from its key (readingId|passageRef|n), so an Ask
+  // can resolve the canonical verse server-side from authored content.
+  const sep1 = vkey.indexOf("|");
+  const sep2 = vkey.lastIndexOf("|");
+  const readingId = vkey.slice(0, sep1);
+  const passageRef = vkey.slice(sep1 + 1, sep2);
+  const verseN = Number(vkey.slice(sep2 + 1));
+
+  const [asking, setAsking] = useState(false);
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [askBusy, setAskBusy] = useState(false);
+  const [askError, setAskError] = useState<string | null>(null);
+
+  const runAsk = (ask: {
+    angle?: "history" | "meaning" | "turn";
+    question?: string;
+  }) => {
+    setAskBusy(true);
+    setAskError(null);
+    setAnswer(null);
+    askAboutVerse(readingId, passageRef, verseN, ask)
+      .then((a) => {
+        setAnswer(a);
+        setAskBusy(false);
+      })
+      .catch((e: Error) => {
+        setAskError(e.message === "plus-required" ? "plus" : e.message);
+        setAskBusy(false);
+      });
+  };
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     // Close when the verse scrolls away, but only while showing the toolbar. Once the
-    // composer is open, the on-screen keyboard fires scroll/resize, and closing then
-    // would make it impossible to write a note on a phone. (No resize listener for the
-    // same reason: the keyboard's resize must not dismiss the composer.)
+    // composer or the ask panel is open, the on-screen keyboard fires scroll/resize, and
+    // closing then would make it impossible to write on a phone. (No resize listener for
+    // the same reason: the keyboard's resize must not dismiss the composer.)
     const onScroll = () => {
-      if (!composing) onClose();
+      if (!composing && !asking) onClose();
     };
     window.addEventListener("keydown", onKey);
     window.addEventListener("scroll", onScroll, true);
@@ -45,7 +87,7 @@ export function HighlightPopover({
       window.removeEventListener("keydown", onKey);
       window.removeEventListener("scroll", onScroll, true);
     };
-  }, [onClose, composing]);
+  }, [onClose, composing, asking]);
 
   // Move focus into the dialog on open so a keyboard user lands on the controls, not on
   // the obscured page behind. The composer's textarea takes focus itself via autoFocus.
@@ -57,7 +99,7 @@ export function HighlightPopover({
   const trapTab = (e: React.KeyboardEvent) => {
     if (e.key !== "Tab") return;
     const els = panelRef.current?.querySelectorAll<HTMLElement>(
-      'button:not([disabled]), textarea, [href], [tabindex]:not([tabindex="-1"])',
+      'button:not([disabled]), textarea, input:not([disabled]), [href], [tabindex]:not([tabindex="-1"])',
     );
     if (!els || els.length === 0) return;
     const first = els[0];
@@ -75,7 +117,7 @@ export function HighlightPopover({
   if (typeof document === "undefined") return null;
 
   // Clamp horizontally to the viewport; open upward when the verse sits low so a long
-  // composer still fits. Upward placement anchors the popover's bottom to the verse top.
+  // composer or answer still fits. Upward placement anchors the popover's bottom to the top.
   const vw = window.innerWidth;
   const left = Math.min(Math.max(anchor.left, MARGIN), vw - WIDTH - MARGIN);
   const placeAbove = anchor.bottom > window.innerHeight - 220;
@@ -144,6 +186,91 @@ export function HighlightPopover({
               </div>
             </div>
           </div>
+        ) : asking ? (
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-between px-1 pt-0.5">
+              <span className="font-ui text-[9px] font-semibold uppercase tracking-[.18em] text-gold">
+                Ask the companion
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  setAsking(false);
+                  setAnswer(null);
+                  setAskError(null);
+                }}
+                className="font-ui text-[9px] uppercase tracking-[.14em] text-mist transition-colors hover:text-gold-bright"
+              >
+                Done
+              </button>
+            </div>
+            <div className="flex flex-wrap gap-1">
+              {ANGLES.map((a) => (
+                <button
+                  key={a.key}
+                  type="button"
+                  disabled={askBusy}
+                  onClick={() => runAsk({ angle: a.key })}
+                  className="rounded-full border border-line px-[9px] py-1 font-ui text-[9.5px] uppercase tracking-[.1em] text-parchment-2 transition-colors hover:border-gold/40 hover:text-parchment disabled:opacity-50"
+                >
+                  {a.label}
+                </button>
+              ))}
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const q = question.trim();
+                if (q && !askBusy) runAsk({ question: q });
+              }}
+              className="flex items-center gap-1"
+            >
+              <input
+                aria-label="Ask about this verse"
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                placeholder="Ask about this verse."
+                disabled={askBusy}
+                className="min-w-0 flex-1 rounded-[8px] border border-line bg-shell px-2.5 py-1.5 font-body text-[13px] text-parchment placeholder:text-mist-2 focus:border-gold/50 focus:outline-none disabled:opacity-50"
+              />
+              <button
+                type="submit"
+                aria-label="Send question"
+                disabled={askBusy || !question.trim()}
+                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[8px] bg-gold text-deep transition-colors hover:bg-gold-bright disabled:opacity-40"
+              >
+                <span className="text-[15px] leading-none">›</span>
+              </button>
+            </form>
+            {askBusy ? (
+              <p className="px-1 font-body text-[13px] italic text-mist-2">
+                Thinking.
+              </p>
+            ) : askError === "plus" ? (
+              <p className="px-1 font-body text-[13px] leading-[1.5] text-mist">
+                The companion is part of STRATA Plus.{" "}
+                <Link
+                  href="/pricing"
+                  className="text-gold-bright transition-colors hover:text-gold"
+                >
+                  See plans ›
+                </Link>
+              </p>
+            ) : askError ? (
+              <p className="px-1 font-body text-[13px] italic text-psyche">
+                {askError}
+              </p>
+            ) : answer ? (
+              <div className="max-h-[44vh] overflow-y-auto px-1">
+                <p className="whitespace-pre-line font-body text-[13.5px] leading-[1.6] text-parchment-2">
+                  {answer}
+                </p>
+                <p className="mt-2 font-body text-[10.5px] italic leading-[1.5] text-mist-2">
+                  Drawn for you, not the last word.
+                </p>
+              </div>
+            ) : null}
+          </div>
         ) : (
           <div className="flex flex-col gap-2">
             {/* A saved note shows here on a plain tap, so the reader sees it without
@@ -169,6 +296,7 @@ export function HighlightPopover({
                   }
                 }}
               />
+              <PopButton label="Ask" onClick={() => setAsking(true)} />
               <button
                 type="button"
                 aria-label="Close"

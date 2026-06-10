@@ -114,3 +114,84 @@ export async function draftMiddle(passage: Passage): Promise<CompanionLayer> {
     throw new Error("Companion returned no text.");
   return JSON.parse(block.text) as CompanionLayer;
 }
+
+// The companion answering a reader's question about one highlighted verse. Bounded, not a
+// chat: it stays on the verse and its passage, in STRATA's voice, declines off-topic or
+// unsafe questions, and never reaches past the BSB text it is handed.
+const ASK_VERSE_SYSTEM = `You are the STRATA companion, answering a reader's question about a single verse they highlighted. STRATA reads scripture in four layers: history (what it meant then), meaning (what it always carries), the turn (how it speaks to the reader now), and a response. Answer only about the highlighted verse and its passage, in STRATA's voice.
+
+Voice: two to four short sentences. Plain words. No em dashes, only commas and periods. No tidy morals; name the hard thing honestly. End on something that lands.
+
+Honesty and translation: use only the scripture text provided. Never quote, complete, or invent other verses, and never reach for a licensed translation. Do not psychoanalyze the reader or assert their mental state.
+
+Scope: stay on this verse and its passage. If the question is not about this text, asks for something outside reading it, or is unsafe, say so in one short sentence and point the reader back to the verse. Do not answer general, off-topic, or out-of-scope questions.
+
+Return only the answer.`;
+
+const ASK_VERSE_SCHEMA = {
+  type: "object",
+  additionalProperties: false,
+  properties: { answer: { type: "string" } },
+  required: ["answer"],
+} as const;
+
+// The preset angles map to three of the four layers; a free-text question is asked verbatim.
+const ANGLE_PROMPT: Record<string, string> = {
+  history:
+    "Give the history of this verse: what it meant in its own time and setting.",
+  meaning:
+    "Give the meaning of this verse: what it carries in every age, not a moral.",
+  turn: "Give the turn: how this verse addresses the reader now, in the second person.",
+};
+
+export async function askAboutVerse(
+  passage: Passage,
+  verseN: number,
+  ask: { angle?: "history" | "meaning" | "turn"; question?: string },
+): Promise<string> {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey)
+    throw new CompanionUnconfiguredError("ANTHROPIC_API_KEY is not set.");
+
+  const items = passage.verses ?? passage.statutes ?? passage.sayings ?? [];
+  const verse = items.find((v) => v.n === verseN);
+  if (!verse) throw new Error("Verse not found in this passage.");
+
+  const ground = passage.ground
+    ? `${GROUND_LABEL[passage.ground.kind]}: ${passage.ground.text}`
+    : "(no history note)";
+  const scripture = items.map((v) => `${v.n} ${v.text}`).join("\n");
+  const taskLine = ask.angle
+    ? ANGLE_PROMPT[ask.angle]
+    : `The reader asks: ${ask.question}`;
+
+  const userMessage = [
+    `Passage: ${passage.title} (${passage.ref}), kind ${passage.kind}`,
+    `History: ${ground}`,
+    "",
+    "Full passage (Berean Standard Bible, public domain; use only this text):",
+    scripture,
+    "",
+    `The reader highlighted verse ${verseN}: "${verse.text}"`,
+    "",
+    taskLine,
+  ].join("\n");
+
+  const client = new Anthropic({ apiKey });
+  const response = await client.messages.create({
+    model: COMPANION_MODEL,
+    max_tokens: 1024,
+    thinking: { type: "adaptive" },
+    system: ASK_VERSE_SYSTEM,
+    output_config: {
+      effort: "medium",
+      format: { type: "json_schema", schema: ASK_VERSE_SCHEMA },
+    },
+    messages: [{ role: "user", content: userMessage }],
+  });
+
+  const block = response.content.find((b) => b.type === "text");
+  if (!block || block.type !== "text")
+    throw new Error("Companion returned no text.");
+  return (JSON.parse(block.text) as { answer: string }).answer;
+}

@@ -143,3 +143,41 @@ export async function generateMiddle(
   }
   return layer;
 }
+
+// Ask the companion about a single highlighted verse: an angle preset, or a free-text
+// question. The route resolves the canonical verse from authored content (never client
+// text) and is Plus-gated server-side, so a 402 means it needs STRATA Plus.
+export async function askAboutVerse(
+  readingId: string,
+  passageRef: string,
+  verseN: number,
+  ask: { angle?: "history" | "meaning" | "turn"; question?: string },
+): Promise<string> {
+  const user = auth?.currentUser;
+  if (!auth || !user) throw new Error("Sign in to ask the companion.");
+
+  const idToken = await user.getIdToken();
+  const res = await fetch("/api/companion", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${idToken}`,
+    },
+    body: JSON.stringify({
+      task: "ask-verse",
+      readingId,
+      passageRef,
+      verseN,
+      angle: ask.angle,
+      question: ask.question,
+    }),
+  });
+  if (!res.ok) {
+    if (res.status === 402) throw new Error("plus-required");
+    if (res.status === 429)
+      throw new Error("Too many questions just now. Give it a minute.");
+    throw new Error("The companion could not answer this.");
+  }
+  const data = (await res.json()) as { answer: string };
+  return data.answer;
+}

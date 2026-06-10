@@ -1,5 +1,6 @@
 import {
   CompanionUnconfiguredError,
+  askAboutVerse,
   draftMiddle,
 } from "@/lib/companion-server";
 import { findReadingAnywhere } from "@/lib/content";
@@ -66,14 +67,21 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  let body: { task?: string; readingId?: unknown; passageRef?: unknown };
+  let body: {
+    task?: string;
+    readingId?: unknown;
+    passageRef?: unknown;
+    verseN?: unknown;
+    angle?: unknown;
+    question?: unknown;
+  };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "bad-request" }, { status: 400 });
   }
   if (
-    body.task !== "draft-middle" ||
+    (body.task !== "draft-middle" && body.task !== "ask-verse") ||
     typeof body.readingId !== "string" ||
     typeof body.passageRef !== "string"
   ) {
@@ -111,7 +119,27 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    // The draft falls back to authored content on the client if anything here fails.
+    if (body.task === "ask-verse") {
+      const angle =
+        body.angle === "history" ||
+        body.angle === "meaning" ||
+        body.angle === "turn"
+          ? body.angle
+          : undefined;
+      const question =
+        typeof body.question === "string"
+          ? body.question.trim().slice(0, 300)
+          : undefined;
+      if (typeof body.verseN !== "number" || (!angle && !question)) {
+        return NextResponse.json({ error: "bad-request" }, { status: 400 });
+      }
+      const answer = await askAboutVerse(passage, body.verseN, {
+        angle,
+        question,
+      });
+      return NextResponse.json({ answer });
+    }
+    // draft-middle: falls back to authored content on the client if anything here fails.
     const layer = await draftMiddle(passage);
     return NextResponse.json(layer);
   } catch (err) {
@@ -121,7 +149,7 @@ export async function POST(req: NextRequest) {
         { status: 503 },
       );
     }
-    console.error("companion draft-middle failed:", err);
+    console.error("companion request failed:", err);
     return NextResponse.json({ error: "draft-failed" }, { status: 500 });
   }
 }
