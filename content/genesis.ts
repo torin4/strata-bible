@@ -1131,7 +1131,7 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You live inside limits you did not choose, mortality first among them, and the standing temptation is to treat them as insults rather than the shape of being a creature.'
+          text: 'You live inside a limit you never chose, the same line that makes you a creature and not a god. At bottom that limit is your own mortality, and the steady temptation is to treat it as an insult to rage against, rather than the plain shape of being finite.'
         },
         ask: 'Which of your limits have you been fighting as though they were enemies?'
       },
