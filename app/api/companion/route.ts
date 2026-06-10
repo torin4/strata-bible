@@ -2,6 +2,7 @@ import {
   CompanionUnconfiguredError,
   draftMiddle,
   explainVerses,
+  followUpAboutVerses,
 } from "@/lib/companion-server";
 import { findReadingAnywhere } from "@/lib/content";
 import { isPlusEntitled, lookupCaller } from "@/lib/server-auth";
@@ -73,14 +74,18 @@ export async function POST(req: NextRequest) {
     passageRef?: unknown;
     startN?: unknown;
     endN?: unknown;
+    priorAnswer?: unknown;
+    question?: unknown;
   };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "bad-request" }, { status: 400 });
   }
+  const isVerseTask =
+    body.task === "ask-verse" || body.task === "ask-follow-up";
   if (
-    (body.task !== "draft-middle" && body.task !== "ask-verse") ||
+    (body.task !== "draft-middle" && !isVerseTask) ||
     typeof body.readingId !== "string" ||
     typeof body.passageRef !== "string"
   ) {
@@ -118,7 +123,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    if (body.task === "ask-verse") {
+    if (body.task === "ask-verse" || body.task === "ask-follow-up") {
       // A short selection only: validate the bounds and cap the span so the model call
       // stays bounded (matches the client, which hides Explain past the same ceiling).
       const { startN, endN } = body;
@@ -131,6 +136,28 @@ export async function POST(req: NextRequest) {
         endN - startN > 5
       ) {
         return NextResponse.json({ error: "bad-request" }, { status: 400 });
+      }
+      if (body.task === "ask-follow-up") {
+        // One follow up to an explanation. The question is the reader's; cap its length so
+        // it stays a question, and cap the prior reading (our own text, echoed back) so a
+        // crafted client cannot inflate the prompt.
+        const question =
+          typeof body.question === "string" ? body.question.trim() : "";
+        const priorAnswer =
+          typeof body.priorAnswer === "string"
+            ? body.priorAnswer.slice(0, 4000)
+            : "";
+        if (!question || question.length > 500) {
+          return NextResponse.json({ error: "bad-request" }, { status: 400 });
+        }
+        const answer = await followUpAboutVerses(
+          passage,
+          startN,
+          endN,
+          priorAnswer,
+          question,
+        );
+        return NextResponse.json({ answer });
       }
       const answer = await explainVerses(passage, startN, endN);
       return NextResponse.json({ answer });

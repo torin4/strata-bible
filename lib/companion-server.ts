@@ -192,3 +192,78 @@ export async function explainVerses(
     throw new Error("Companion returned no text.");
   return (JSON.parse(block.text) as { answer: string }).answer;
 }
+
+// One follow up to an explanation: the reader read a short companion reading and asked a
+// single question about it. Answer that question, grounded in the same passage. It is one
+// follow up, not a chat (companion-spec.md is firm the companion is not a chat), so the
+// model is told to answer and stop, and to bring a wandering question back to the text.
+const FOLLOW_UP_SYSTEM = `You are the STRATA companion. A reader highlighted a verse or short passage, you gave a brief reading, and they asked one follow up question about it. Answer just that question, grounded in the selection and its surrounding passage, in STRATA's voice.
+
+Voice: two to four short sentences. Plain words. No em dashes, only commas and periods. No preamble, no tidy morals; name the hard thing honestly.
+
+Honesty and translation: use only the scripture text provided. Never quote, complete, or invent other verses, and never reach for a licensed translation. Do not psychoanalyze the reader. If the question wanders off this passage, answer the part that touches the text and bring it back; do not follow it into unrelated territory.
+
+This is a single follow up, not a conversation. Answer it and stop. Return only the answer.`;
+
+export async function followUpAboutVerses(
+  passage: Passage,
+  startN: number,
+  endN: number,
+  priorAnswer: string,
+  question: string,
+): Promise<string> {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey)
+    throw new CompanionUnconfiguredError("ANTHROPIC_API_KEY is not set.");
+
+  const items = passage.verses ?? passage.statutes ?? passage.sayings ?? [];
+  const lo = Math.min(startN, endN);
+  const hi = Math.max(startN, endN);
+  const selected = items.filter((v) => v.n >= lo && v.n <= hi);
+  if (selected.length === 0)
+    throw new Error("Verse not found in this passage.");
+  const isRange = selected.length > 1;
+
+  const ground = passage.ground
+    ? `${GROUND_LABEL[passage.ground.kind]}: ${passage.ground.text}`
+    : "(no history note)";
+  const scripture = items.map((v) => `${v.n} ${v.text}`).join("\n");
+  const highlighted = isRange
+    ? `The reader highlighted verses ${lo} to ${hi}:\n${selected
+        .map((v) => `${v.n} ${v.text}`)
+        .join("\n")}`
+    : `The reader highlighted verse ${lo}: "${selected[0].text}"`;
+
+  const userMessage = [
+    `Passage: ${passage.title} (${passage.ref}), kind ${passage.kind}`,
+    `History: ${ground}`,
+    "",
+    "Full passage (Berean Standard Bible, public domain; use only this text):",
+    scripture,
+    "",
+    highlighted,
+    ...(priorAnswer ? ["", `Your earlier reading: ${priorAnswer}`] : []),
+    "",
+    `The reader's follow up question: ${question}`,
+    "",
+    "Answer this question, briefly and grounded in the passage.",
+  ].join("\n");
+
+  const client = new Anthropic({ apiKey });
+  const response = await client.messages.create({
+    model: COMPANION_MODEL,
+    max_tokens: 1500,
+    thinking: { type: "adaptive" },
+    system: FOLLOW_UP_SYSTEM,
+    output_config: {
+      effort: "medium",
+      format: { type: "json_schema", schema: ASK_VERSE_SCHEMA },
+    },
+    messages: [{ role: "user", content: userMessage }],
+  });
+
+  const block = response.content.find((b) => b.type === "text");
+  if (!block || block.type !== "text")
+    throw new Error("Companion returned no text.");
+  return (JSON.parse(block.text) as { answer: string }).answer;
+}

@@ -180,3 +180,44 @@ export async function explainVerses(
   const data = (await res.json()) as { answer: string };
   return data.answer;
 }
+
+// One follow up to an explanation: the reader's question, sent with the verses and the
+// reading they already saw so the companion can answer in context. Capped to a single
+// follow up in the UI; the route bounds the question length and the span.
+export async function followUpVerses(
+  readingId: string,
+  passageRef: string,
+  startN: number,
+  endN: number,
+  priorAnswer: string,
+  question: string,
+): Promise<string> {
+  const user = auth?.currentUser;
+  if (!auth || !user) throw new Error("Sign in to ask the companion.");
+
+  const idToken = await user.getIdToken();
+  const res = await fetch("/api/companion", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${idToken}`,
+    },
+    body: JSON.stringify({
+      task: "ask-follow-up",
+      readingId,
+      passageRef,
+      startN,
+      endN,
+      priorAnswer,
+      question,
+    }),
+  });
+  if (!res.ok) {
+    if (res.status === 402) throw new Error("plus-required");
+    if (res.status === 429)
+      throw new Error("Too many questions just now. Give it a minute.");
+    throw new Error("The companion could not answer this.");
+  }
+  const data = (await res.json()) as { answer: string };
+  return data.answer;
+}

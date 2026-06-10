@@ -1,6 +1,6 @@
 "use client";
 
-import { explainVerses } from "@/lib/companion";
+import { explainVerses, followUpVerses } from "@/lib/companion";
 import { highlightKey, highlightKeysInRange } from "@/lib/highlights";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -58,10 +58,23 @@ export function HighlightPopover({
   const [askBusy, setAskBusy] = useState(false);
   const [askError, setAskError] = useState<string | null>(null);
 
+  // One follow up to an explanation, capped at a single question. Once followAnswer lands,
+  // the input is gone for this reading (re-running Explain clears it for a fresh one).
+  const [followText, setFollowText] = useState("");
+  const [followQuestion, setFollowQuestion] = useState<string | null>(null);
+  const [followAnswer, setFollowAnswer] = useState<string | null>(null);
+  const [followBusy, setFollowBusy] = useState(false);
+  const [followError, setFollowError] = useState<string | null>(null);
+
   const runExplain = () => {
     setAskBusy(true);
     setAskError(null);
     setAnswer(null);
+    setFollowText("");
+    setFollowQuestion(null);
+    setFollowAnswer(null);
+    setFollowBusy(false);
+    setFollowError(null);
     explainVerses(readingId, passageRef, startN, endN)
       .then((a) => {
         setAnswer(a);
@@ -70,6 +83,27 @@ export function HighlightPopover({
       .catch((e: Error) => {
         setAskError(e.message === "plus-required" ? "plus" : e.message);
         setAskBusy(false);
+      });
+  };
+
+  const runFollowUp = () => {
+    const question = followText.trim();
+    if (!question || !answer) return;
+    setFollowBusy(true);
+    setFollowError(null);
+    setFollowQuestion(question);
+    followUpVerses(readingId, passageRef, startN, endN, answer, question)
+      .then((a) => {
+        setFollowAnswer(a);
+        setFollowBusy(false);
+      })
+      .catch((e: Error) => {
+        setFollowError(
+          e.message === "plus-required"
+            ? "The companion is part of STRATA Plus."
+            : "Could not answer that. Try again.",
+        );
+        setFollowBusy(false);
       });
   };
 
@@ -255,13 +289,69 @@ export function HighlightPopover({
                 </button>
               </p>
             ) : answer ? (
-              <div className="px-1">
-                <p className="whitespace-pre-line font-body text-[13.5px] leading-[1.6] text-parchment-2">
-                  {answer}
-                </p>
-                <p className="mt-2 font-body text-[10.5px] italic leading-[1.5] text-mist-2">
-                  Drawn for you, not the last word.
-                </p>
+              <div className="flex flex-col gap-2 px-1">
+                <div>
+                  <p className="whitespace-pre-line font-body text-[13.5px] leading-[1.6] text-parchment-2">
+                    {answer}
+                  </p>
+                  <p className="mt-2 font-body text-[10.5px] italic leading-[1.5] text-mist-2">
+                    Drawn for you, not the last word.
+                  </p>
+                </div>
+
+                {/* One follow up. After it is answered the input is gone; the reader's
+                    question and the reply read as a short, closed exchange. */}
+                {followAnswer ? (
+                  <div className="border-t border-line pt-2">
+                    <p className="font-body text-[12.5px] italic leading-[1.5] text-mist">
+                      {followQuestion}
+                    </p>
+                    <p className="mt-1.5 whitespace-pre-line font-body text-[13.5px] leading-[1.6] text-parchment-2">
+                      {followAnswer}
+                    </p>
+                  </div>
+                ) : followBusy ? (
+                  <output
+                    className="thinking-dots flex items-center gap-1 border-t border-line pt-2.5"
+                    aria-label="Thinking"
+                  >
+                    <span className="h-[5px] w-[5px] rounded-full bg-mist" />
+                    <span className="h-[5px] w-[5px] rounded-full bg-mist" />
+                    <span className="h-[5px] w-[5px] rounded-full bg-mist" />
+                  </output>
+                ) : (
+                  <div className="border-t border-line pt-2">
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        runFollowUp();
+                      }}
+                      className="flex items-center gap-1.5"
+                    >
+                      <input
+                        type="text"
+                        value={followText}
+                        onChange={(e) => setFollowText(e.target.value)}
+                        maxLength={500}
+                        aria-label="Ask one follow up question"
+                        placeholder="Ask one follow up"
+                        className="min-w-0 flex-1 rounded-[8px] border border-line bg-shell px-2.5 py-1.5 font-body text-[13px] text-parchment placeholder:text-mist-2 focus:border-gold/50 focus:outline-none"
+                      />
+                      <button
+                        type="submit"
+                        disabled={!followText.trim()}
+                        className="shrink-0 rounded-[8px] px-2.5 py-1.5 font-ui text-[10px] uppercase tracking-[.12em] text-gold-bright transition-colors hover:text-gold disabled:opacity-40"
+                      >
+                        Ask
+                      </button>
+                    </form>
+                    {followError ? (
+                      <p className="mt-1.5 font-body text-[12px] italic text-psyche">
+                        {followError}
+                      </p>
+                    ) : null}
+                  </div>
+                )}
               </div>
             ) : null}
           </div>
