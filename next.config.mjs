@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 
-// Content-Security-Policy is shipped Report-Only first: it never blocks, it only reports,
-// so a wrong directive cannot white-screen the live app. Watch the browser console on a
-// deploy for a build or two, then rename the header to "Content-Security-Policy" to
-// enforce. The allowlist covers Firebase Auth/Firestore, Stripe Checkout, and our own
-// self-hosted fonts and service worker. 'unsafe-inline' on scripts is required by Next's
-// hydration bootstrap until a nonce/middleware is wired up; the rest of the policy still
-// gives real protection (framing, object, base-uri, connect allowlist).
+// Content-Security-Policy, now ENFORCED. The allowlist covers Firebase Auth/Firestore, the
+// Stripe extension's Cloud Functions (the customer portal callable lives on cloudfunctions
+// .net / run.app) and Stripe Checkout, plus our own self-hosted fonts and service worker.
+// 'unsafe-inline' on scripts is required by Next's hydration bootstrap until a nonce/
+// middleware is wired up; the rest of the policy still gives real protection (framing,
+// object, base-uri, connect allowlist). If a directive ever blocks something in production,
+// the instant fix is to rename the header below back to "Content-Security-Policy-Report-Only"
+// (it then only reports, never blocks) while the missing source is added.
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -17,14 +18,14 @@ const csp = [
   "font-src 'self'",
   "style-src 'self' 'unsafe-inline'",
   "script-src 'self' 'unsafe-inline' https://js.stripe.com https://apis.google.com https://www.gstatic.com https://*.firebaseapp.com",
-  "connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://*.firebaseapp.com https://api.stripe.com",
+  "connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://*.firebaseapp.com https://*.cloudfunctions.net https://*.run.app https://api.stripe.com",
   "frame-src https://js.stripe.com https://checkout.stripe.com https://*.firebaseapp.com",
   "worker-src 'self'",
   "manifest-src 'self'",
 ].join("; ");
 
 const securityHeaders = [
-  { key: "Content-Security-Policy-Report-Only", value: csp },
+  { key: "Content-Security-Policy", value: csp },
   { key: "X-Frame-Options", value: "SAMEORIGIN" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
