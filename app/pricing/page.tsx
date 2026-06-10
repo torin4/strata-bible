@@ -47,12 +47,14 @@ const INCLUDED = [
 
 export default function PricingPage() {
   const { user } = useAuth();
-  const { isPlus, subscribed, billingEnabled } = useSubscription();
+  const { isPlus, subscribed, billingEnabled, owns } = useSubscription();
   const router = useRouter();
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const books = purchasableBooks();
+  // Only offer books the reader does not already own, so a purchased book never shows a
+  // second buy button (no double charge).
+  const ownable = purchasableBooks().filter((book) => !owns(book.bookId));
 
   const buy = (priceId: string) => {
     if (!user) {
@@ -213,7 +215,7 @@ export default function PricingPage() {
           ) : null}
         </div>
 
-        {billingEnabled && !isPlus && books.length > 0 ? (
+        {billingEnabled && !isPlus && ownable.length > 0 ? (
           <div className="mx-auto mt-12 max-w-[34rem]">
             <div className="mb-1 text-center font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
               Or own a book
@@ -223,7 +225,7 @@ export default function PricingPage() {
               Plus.
             </p>
             <ul className="flex flex-col gap-2">
-              {books.map((book) => (
+              {ownable.map((book) => (
                 <li
                   key={book.bookId}
                   className="flex items-center justify-between gap-3 rounded-[12px] border border-line bg-deep px-4 py-3"
