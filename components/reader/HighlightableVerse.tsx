@@ -57,8 +57,18 @@ export function HighlightableVerse({
             toggle(e.currentTarget.getBoundingClientRect());
           }
         }}
-        className={`box-decoration-clone cursor-pointer rounded-[2px] transition-colors ${
-          on ? "bg-gold/[0.22]" : "hover:bg-parchment/[0.05]"
+        // A translucent gold fill alone composites to muddy brown on the near-black shell,
+        // so a saved highlight also carries a gold-bright underline, which stays legible on
+        // black where a wash cannot. The actively-tapped verse (popover open) gets the
+        // strongest treatment so it is unmistakable which verse the popover acts on. The
+        // 2px bottom border is always present (transparent when idle) so toggling never
+        // shifts the line.
+        className={`box-decoration-clone cursor-pointer rounded-[2px] border-b-2 transition-colors ${
+          open
+            ? "border-gold-bright bg-gold/[0.30]"
+            : on
+              ? "border-gold-bright/60 bg-gold/[0.16]"
+              : "border-transparent hover:bg-parchment/[0.06]"
         }`}
       >
         {children}
