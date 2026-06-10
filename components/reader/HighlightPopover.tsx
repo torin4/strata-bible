@@ -1,6 +1,6 @@
 "use client";
 
-import { askAboutVerse } from "@/lib/companion";
+import { explainVerse } from "@/lib/companion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -9,15 +9,8 @@ import { useHighlights } from "./HighlightProvider";
 const WIDTH = 252;
 const MARGIN = 8;
 
-// The preset angles for an Ask: three of STRATA's four layers, one tap each.
-const ANGLES: { key: "history" | "meaning" | "turn"; label: string }[] = [
-  { key: "history", label: "History" },
-  { key: "meaning", label: "Meaning" },
-  { key: "turn", label: "The turn" },
-];
-
 // The action sheet that opens over a tapped verse: highlight on/off, a note composer, and
-// Ask, a short companion reading of this verse from a chosen angle. Rendered in a portal
+// Explain, a short, plain companion reading of this verse. Rendered in a portal
 // and anchored to the verse's on-screen box with fixed positioning, so it never disturbs the
 // inline flow of the scripture. It behaves as a modal dialog for the keyboard and screen
 // reader: focus moves in on open, is trapped while open, and the caller returns it to the
@@ -51,11 +44,11 @@ export function HighlightPopover({
   const [askBusy, setAskBusy] = useState(false);
   const [askError, setAskError] = useState<string | null>(null);
 
-  const runAsk = (angle: "history" | "meaning" | "turn") => {
+  const runExplain = () => {
     setAskBusy(true);
     setAskError(null);
     setAnswer(null);
-    askAboutVerse(readingId, passageRef, verseN, angle)
+    explainVerse(readingId, passageRef, verseN)
       .then((a) => {
         setAnswer(a);
         setAskBusy(false);
@@ -191,7 +184,7 @@ export function HighlightPopover({
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-between px-1 pt-0.5">
               <span className="font-ui text-[9px] font-semibold uppercase tracking-[.18em] text-gold">
-                Ask the companion
+                Explain this verse
               </span>
               <button
                 type="button"
@@ -204,19 +197,6 @@ export function HighlightPopover({
               >
                 Done
               </button>
-            </div>
-            <div className="flex flex-wrap gap-1.5">
-              {ANGLES.map((a) => (
-                <button
-                  key={a.key}
-                  type="button"
-                  disabled={askBusy}
-                  onClick={() => runAsk(a.key)}
-                  className="rounded-full border border-line px-[11px] py-[5px] font-ui text-[10px] uppercase tracking-[.1em] text-parchment-2 transition-colors hover:border-gold/40 hover:text-parchment disabled:opacity-50"
-                >
-                  {a.label}
-                </button>
-              ))}
             </div>
             {askBusy ? (
               <output
@@ -239,7 +219,14 @@ export function HighlightPopover({
               </p>
             ) : askError ? (
               <p className="px-1 font-body text-[13px] italic text-psyche">
-                {askError}
+                {askError}{" "}
+                <button
+                  type="button"
+                  onClick={runExplain}
+                  className="not-italic text-gold-bright transition-colors hover:text-gold"
+                >
+                  Try again
+                </button>
               </p>
             ) : answer ? (
               <div className="px-1">
@@ -277,7 +264,13 @@ export function HighlightPopover({
                   }
                 }}
               />
-              <PopButton label="Ask" onClick={() => setAsking(true)} />
+              <PopButton
+                label="Explain"
+                onClick={() => {
+                  setAsking(true);
+                  runExplain();
+                }}
+              />
               <button
                 type="button"
                 aria-label="Close"

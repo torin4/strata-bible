@@ -1,7 +1,7 @@
 import {
   CompanionUnconfiguredError,
-  askAboutVerse,
   draftMiddle,
+  explainVerse,
 } from "@/lib/companion-server";
 import { findReadingAnywhere } from "@/lib/content";
 import { isPlusEntitled, lookupCaller } from "@/lib/server-auth";
@@ -72,7 +72,6 @@ export async function POST(req: NextRequest) {
     readingId?: unknown;
     passageRef?: unknown;
     verseN?: unknown;
-    angle?: unknown;
   };
   try {
     body = await req.json();
@@ -119,16 +118,10 @@ export async function POST(req: NextRequest) {
 
   try {
     if (body.task === "ask-verse") {
-      const angle =
-        body.angle === "history" ||
-        body.angle === "meaning" ||
-        body.angle === "turn"
-          ? body.angle
-          : undefined;
-      if (typeof body.verseN !== "number" || !angle) {
+      if (typeof body.verseN !== "number") {
         return NextResponse.json({ error: "bad-request" }, { status: 400 });
       }
-      const answer = await askAboutVerse(passage, body.verseN, angle);
+      const answer = await explainVerse(passage, body.verseN);
       return NextResponse.json({ answer });
     }
     // draft-middle: falls back to authored content on the client if anything here fails.
