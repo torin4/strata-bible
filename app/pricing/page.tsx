@@ -52,9 +52,7 @@ export default function PricingPage() {
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // Only offer books the reader does not already own, so a purchased book never shows a
-  // second buy button (no double charge).
-  const ownable = purchasableBooks().filter((book) => !owns(book.bookId));
+  const books = purchasableBooks();
 
   const buy = (priceId: string) => {
     if (!user) {
@@ -215,39 +213,55 @@ export default function PricingPage() {
           ) : null}
         </div>
 
-        {billingEnabled && !isPlus && ownable.length > 0 ? (
+        {billingEnabled && !isPlus && books.length > 0 ? (
           <div className="mx-auto mt-12 max-w-[34rem]">
             <div className="mb-1 text-center font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
-              Or own a book
+              Single books
             </div>
             <p className="mb-4 text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
-              Buy a single book outright, yours to keep. The companion stays in
-              Plus.
+              Buy a book outright, yours to keep. The companion stays in Plus.
             </p>
             <ul className="flex flex-col gap-2">
-              {ownable.map((book) => (
-                <li
-                  key={book.bookId}
-                  className="flex items-center justify-between gap-3 rounded-[12px] border border-line bg-deep px-4 py-3"
-                >
-                  <span className="font-display text-[16px] tracking-[.02em] text-parchment-2">
-                    {book.title}
-                  </span>
-                  <div className="flex items-center gap-3">
-                    <span className="font-body text-[14px] text-mist">
-                      {book.price}
+              {books.map((book) => {
+                const isOwned = owns(book.bookId);
+                return (
+                  <li
+                    key={book.bookId}
+                    className="flex items-center justify-between gap-3 rounded-[12px] border border-line bg-deep px-4 py-3"
+                  >
+                    <span className="font-display text-[16px] tracking-[.02em] text-parchment-2">
+                      {book.title}
                     </span>
-                    <button
-                      type="button"
-                      onClick={() => buyTheBook(book.bookId)}
-                      disabled={busy !== null}
-                      className="rounded-[10px] border border-gold/40 px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
-                    >
-                      {busy === `book:${book.bookId}` ? "Opening" : "Own"}
-                    </button>
-                  </div>
-                </li>
-              ))}
+                    {isOwned ? (
+                      <div className="flex items-center gap-3">
+                        <span className="rounded-full border border-gold/40 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
+                          Owned
+                        </span>
+                        <Link
+                          href={`/book/${book.bookId}`}
+                          className="font-ui text-[11px] uppercase tracking-[.14em] text-lapis transition-colors hover:text-parchment"
+                        >
+                          Read ›
+                        </Link>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-3">
+                        <span className="font-body text-[14px] text-mist">
+                          {book.price}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => buyTheBook(book.bookId)}
+                          disabled={busy !== null}
+                          className="rounded-[10px] border border-gold/40 px-4 py-2 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft disabled:opacity-50"
+                        >
+                          {busy === `book:${book.bookId}` ? "Opening" : "Own"}
+                        </button>
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ) : null}
