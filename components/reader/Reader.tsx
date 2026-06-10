@@ -1,11 +1,13 @@
 "use client";
 
+import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { Paywall } from "@/components/billing/Paywall";
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
+import { setScene } from "@/lib/progress";
 import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
 import Link from "next/link";
-import { type ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { Capstone } from "./Capstone";
 import { Passage } from "./Passage";
 import { SpanBanner } from "./SpanBanner";
@@ -55,6 +57,14 @@ export function Reader({
     return Number.isInteger(s) && s > 0 && s <= maxScene ? s : 0;
   });
   const { isPlus, owns } = useSubscription();
+  const { user } = useAuth();
+  // Read the user at write time without making auth a trigger: only a real scene step should
+  // persist, never auth resolving under a reader sitting still.
+  const userRef = useRef(user);
+  userRef.current = user;
+  // Skip persisting on the first render, so merely opening a reading (including a deep link
+  // back to a saved scene) never overwrites the saved spot. Only stepping scenes writes.
+  const mounted = useRef(false);
 
   // Reflect the current scene in the URL without a navigation so a scene stays shareable.
   useEffect(() => {
@@ -62,7 +72,17 @@ export function Reader({
       i === 0 ? window.location.pathname : `${window.location.pathname}?s=${i}`;
     window.history.replaceState(null, "", url);
     window.scrollTo({ top: 0 });
-  }, [i]);
+
+    // Persist where the reader is, so the movement and the menu can resume here. Reaching
+    // the final scene resets the spot to 0, so a reading once finished opens fresh next time
+    // and only a genuinely mid-stream reading resumes.
+    if (mounted.current) {
+      const u = userRef.current;
+      if (u) setScene(u.uid, reading.id, i >= last ? 0 : i).catch(() => {});
+    } else {
+      mounted.current = true;
+    }
+  }, [i, last, reading.id]);
 
   // Soft content gate: a locked reading shows the paywall in place of the scenes. Free,
   // owning the book outright, or Plus all open it. Every hook above still runs, so this

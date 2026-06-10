@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import { useResume } from "@/components/reader/ResumeProvider";
 import { type LastRead, subscribeLastRead } from "@/lib/lastRead";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -10,6 +11,7 @@ import { useEffect, useRef, useState } from "react";
 // and Profile & settings, with the account control pinned to the bottom.
 export function MenuDrawer() {
   const { user, loading, configured, signOutUser } = useAuth();
+  const { resumeHref } = useResume();
   const [open, setOpen] = useState(false);
   const [lastRead, setLast] = useState<LastRead | null>(null);
   const openButtonRef = useRef<HTMLButtonElement>(null);
@@ -71,7 +73,7 @@ export function MenuDrawer() {
   };
 
   const continueHref = lastRead
-    ? `/read/${lastRead.bookId}/${lastRead.readingId}`
+    ? resumeHref(lastRead.bookId, lastRead.readingId)
     : "/read/genesis/gen-1";
   const resumeTitle = lastRead?.title || "Begin Genesis";
   const resumeSub = lastRead

@@ -4,6 +4,7 @@ import { PlusWelcome } from "@/components/billing/PlusWelcome";
 import { MenuDrawer } from "@/components/nav/MenuDrawer";
 import { ServiceWorker } from "@/components/pwa/ServiceWorker";
 import { HighlightProvider } from "@/components/reader/HighlightProvider";
+import { ResumeProvider } from "@/components/reader/ResumeProvider";
 import { SettingsProvider } from "@/components/settings/SettingsProvider";
 import { COMPANY } from "@/lib/company";
 import { THEME_COLOR } from "@/lib/theme";
@@ -71,10 +72,12 @@ export default function RootLayout({
           <SubscriptionProvider>
             <SettingsProvider>
               <HighlightProvider>
-                <MenuDrawer />
-                <PlusWelcome />
-                <ServiceWorker />
-                {children}
+                <ResumeProvider>
+                  <MenuDrawer />
+                  <PlusWelcome />
+                  <ServiceWorker />
+                  {children}
+                </ResumeProvider>
               </HighlightProvider>
             </SettingsProvider>
           </SubscriptionProvider>
