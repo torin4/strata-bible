@@ -12,8 +12,9 @@ export function ReadingRow({
   bookId,
   reading,
 }: { bookId: string; reading: Reading }) {
-  const { sceneFor, resumeHref } = useResume();
+  const { lastRead, sceneFor, resumeHref } = useResume();
   const scene = sceneFor(reading.id);
+  const isBookmark = lastRead?.readingId === reading.id;
 
   return (
     <li>
@@ -22,8 +23,28 @@ export function ReadingRow({
         className="group flex items-baseline justify-between gap-3 px-4 py-3 transition-colors hover:bg-parchment/[0.02]"
       >
         <span className="flex flex-col">
-          <span className="font-scripture text-[17px] text-parchment-2 group-hover:text-parchment">
-            {reading.title}
+          <span className="flex items-center gap-1.5">
+            {isBookmark ? (
+              <svg
+                width="8"
+                height="11"
+                viewBox="0 0 9 12"
+                aria-label="Your bookmark"
+                role="img"
+                className="shrink-0 text-gold"
+              >
+                <path
+                  d="M1 1h7v10L4.5 8.2 1 11V1z"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            ) : null}
+            <span className="font-scripture text-[17px] text-parchment-2 group-hover:text-parchment">
+              {reading.title}
+            </span>
           </span>
           <span className="font-body text-[12px] italic text-mist-2">
             {reading.span}

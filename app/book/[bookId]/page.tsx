@@ -3,6 +3,7 @@ import { ReadingRow } from "@/components/book/ReadingRow";
 import { FadeImage } from "@/components/media/FadeImage";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { CompositionPanel } from "@/components/overlays/CompositionPanel";
+import { ContinueReading } from "@/components/reader/ContinueReading";
 import { BOOKS } from "@/content";
 import { getBook, readingsOutsideMovements } from "@/lib/content";
 import Link from "next/link";
@@ -77,6 +78,10 @@ export default async function BookPage({
             ? ` · ${movementCount} ${movementCount === 1 ? "movement" : "movements"}`
             : ""}
         </div>
+
+        {/* The reader's bookmark within this book, when they have one: a quick way back to
+            where they are. Renders nothing when their last spot is elsewhere. */}
+        <ContinueReading bookId={book.id} className="mb-6" />
 
         {book.composition ? (
           <div className="mb-6">

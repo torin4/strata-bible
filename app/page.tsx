@@ -1,5 +1,6 @@
 import { AuthMenu } from "@/components/auth/AuthMenu";
 import { Footer } from "@/components/nav/Footer";
+import { ContinueReading } from "@/components/reader/ContinueReading";
 import { BOOKS, COMING_SOON, PUBLISHED_BOOKS } from "@/content";
 import Link from "next/link";
 
@@ -41,6 +42,10 @@ export default function Home() {
               {TAGLINE}
             </p>
           </div>
+
+          {/* The reader's bookmark, when they have one: pick up where they left off, above
+              the books. Renders nothing signed out or before any reading. */}
+          <ContinueReading className="stagger mt-[40px]" />
 
           {genesis ? (
             <Link
