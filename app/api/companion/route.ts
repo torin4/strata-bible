@@ -73,7 +73,6 @@ export async function POST(req: NextRequest) {
     passageRef?: unknown;
     verseN?: unknown;
     angle?: unknown;
-    question?: unknown;
   };
   try {
     body = await req.json();
@@ -126,17 +125,10 @@ export async function POST(req: NextRequest) {
         body.angle === "turn"
           ? body.angle
           : undefined;
-      const question =
-        typeof body.question === "string"
-          ? body.question.trim().slice(0, 300)
-          : undefined;
-      if (typeof body.verseN !== "number" || (!angle && !question)) {
+      if (typeof body.verseN !== "number" || !angle) {
         return NextResponse.json({ error: "bad-request" }, { status: 400 });
       }
-      const answer = await askAboutVerse(passage, body.verseN, {
-        angle,
-        question,
-      });
+      const answer = await askAboutVerse(passage, body.verseN, angle);
       return NextResponse.json({ answer });
     }
     // draft-middle: falls back to authored content on the client if anything here fails.

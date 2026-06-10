@@ -115,18 +115,16 @@ export async function draftMiddle(passage: Passage): Promise<CompanionLayer> {
   return JSON.parse(block.text) as CompanionLayer;
 }
 
-// The companion answering a reader's question about one highlighted verse. Bounded, not a
-// chat: it stays on the verse and its passage, in STRATA's voice, declines off-topic or
-// unsafe questions, and never reaches past the BSB text it is handed.
-const ASK_VERSE_SYSTEM = `You are the STRATA companion, answering a reader's question about a single verse they highlighted. STRATA reads scripture in four layers: history (what it meant then), meaning (what it always carries), the turn (how it speaks to the reader now), and a response. Answer only about the highlighted verse and its passage, in STRATA's voice.
+// The companion giving a short reading of one highlighted verse, from a preset angle. A
+// scoped task, not a chat: it stays on the verse and its passage, in STRATA's voice, and
+// never reaches past the BSB text it is handed.
+const ASK_VERSE_SYSTEM = `You are the STRATA companion, giving a short reading of a single verse a reader highlighted, from one angle they chose. STRATA reads scripture in four layers: history (what it meant then), meaning (what it always carries), the turn (how it speaks to the reader now), and a response. Read only the highlighted verse and its passage, in STRATA's voice.
 
 Voice: two to four short sentences. Plain words. No em dashes, only commas and periods. No tidy morals; name the hard thing honestly. End on something that lands.
 
 Honesty and translation: use only the scripture text provided. Never quote, complete, or invent other verses, and never reach for a licensed translation. Do not psychoanalyze the reader or assert their mental state.
 
-Scope: stay on this verse and its passage. If the question is not about this text, asks for something outside reading it, or is unsafe, say so in one short sentence and point the reader back to the verse. Do not answer general, off-topic, or out-of-scope questions.
-
-Return only the answer.`;
+Stay on this verse and its passage. Return only the reading.`;
 
 const ASK_VERSE_SCHEMA = {
   type: "object",
@@ -147,7 +145,7 @@ const ANGLE_PROMPT: Record<string, string> = {
 export async function askAboutVerse(
   passage: Passage,
   verseN: number,
-  ask: { angle?: "history" | "meaning" | "turn"; question?: string },
+  angle: "history" | "meaning" | "turn",
 ): Promise<string> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey)
@@ -161,9 +159,7 @@ export async function askAboutVerse(
     ? `${GROUND_LABEL[passage.ground.kind]}: ${passage.ground.text}`
     : "(no history note)";
   const scripture = items.map((v) => `${v.n} ${v.text}`).join("\n");
-  const taskLine = ask.angle
-    ? ANGLE_PROMPT[ask.angle]
-    : `The reader asks: ${ask.question}`;
+  const taskLine = ANGLE_PROMPT[angle];
 
   const userMessage = [
     `Passage: ${passage.title} (${passage.ref}), kind ${passage.kind}`,

@@ -144,14 +144,14 @@ export async function generateMiddle(
   return layer;
 }
 
-// Ask the companion about a single highlighted verse: an angle preset, or a free-text
-// question. The route resolves the canonical verse from authored content (never client
-// text) and is Plus-gated server-side, so a 402 means it needs STRATA Plus.
+// Ask the companion for a short reading of a single highlighted verse, from one of the
+// four-layer angles. The route resolves the canonical verse from authored content (never
+// client text) and is Plus-gated server-side, so a 402 means it needs STRATA Plus.
 export async function askAboutVerse(
   readingId: string,
   passageRef: string,
   verseN: number,
-  ask: { angle?: "history" | "meaning" | "turn"; question?: string },
+  angle: "history" | "meaning" | "turn",
 ): Promise<string> {
   const user = auth?.currentUser;
   if (!auth || !user) throw new Error("Sign in to ask the companion.");
@@ -168,8 +168,7 @@ export async function askAboutVerse(
       readingId,
       passageRef,
       verseN,
-      angle: ask.angle,
-      question: ask.question,
+      angle,
     }),
   });
   if (!res.ok) {

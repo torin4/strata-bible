@@ -17,7 +17,7 @@ const ANGLES: { key: "history" | "meaning" | "turn"; label: string }[] = [
 ];
 
 // The action sheet that opens over a tapped verse: highlight on/off, a note composer, and
-// Ask, which puts a bounded question about this verse to the companion. Rendered in a portal
+// Ask, a short companion reading of this verse from a chosen angle. Rendered in a portal
 // and anchored to the verse's on-screen box with fixed positioning, so it never disturbs the
 // inline flow of the scripture. It behaves as a modal dialog for the keyboard and screen
 // reader: focus moves in on open, is trapped while open, and the caller returns it to the
@@ -47,19 +47,15 @@ export function HighlightPopover({
   const verseN = Number(vkey.slice(sep2 + 1));
 
   const [asking, setAsking] = useState(false);
-  const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState<string | null>(null);
   const [askBusy, setAskBusy] = useState(false);
   const [askError, setAskError] = useState<string | null>(null);
 
-  const runAsk = (ask: {
-    angle?: "history" | "meaning" | "turn";
-    question?: string;
-  }) => {
+  const runAsk = (angle: "history" | "meaning" | "turn") => {
     setAskBusy(true);
     setAskError(null);
     setAnswer(null);
-    askAboutVerse(readingId, passageRef, verseN, ask)
+    askAboutVerse(readingId, passageRef, verseN, angle)
       .then((a) => {
         setAnswer(a);
         setAskBusy(false);
@@ -120,10 +116,15 @@ export function HighlightPopover({
   // composer or answer still fits. Upward placement anchors the popover's bottom to the top.
   const vw = window.innerWidth;
   const left = Math.min(Math.max(anchor.left, MARGIN), vw - WIDTH - MARGIN);
-  const placeAbove = anchor.bottom > window.innerHeight - 220;
+  // Open toward whichever side of the verse has more room, and cap the height to that space
+  // (the panel scrolls inside) so a loaded answer can never push the popover off-screen.
+  const spaceBelow = window.innerHeight - anchor.bottom - 6 - MARGIN;
+  const spaceAbove = anchor.top - 6 - MARGIN;
+  const placeAbove = spaceAbove > spaceBelow;
+  const maxHeight = placeAbove ? spaceAbove : spaceBelow;
   const position = placeAbove
-    ? { top: anchor.top - 6, transform: "translateY(-100%)" }
-    : { top: anchor.bottom + 6 };
+    ? { top: anchor.top - 6, transform: "translateY(-100%)", maxHeight }
+    : { top: anchor.bottom + 6, maxHeight };
 
   return createPortal(
     <>
@@ -144,7 +145,7 @@ export function HighlightPopover({
         tabIndex={-1}
         onKeyDown={trapTab}
         style={{ left, width: WIDTH, ...position }}
-        className="fixed z-50 m-0 max-w-none rounded-[12px] border border-line bg-deep p-2 text-parchment shadow-2xl focus:outline-none"
+        className="fixed z-50 m-0 max-w-none overflow-y-auto rounded-[12px] border border-line bg-deep p-2 text-parchment shadow-2xl focus:outline-none"
       >
         {composing ? (
           <div className="flex flex-col gap-2">
@@ -204,44 +205,19 @@ export function HighlightPopover({
                 Done
               </button>
             </div>
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-1.5">
               {ANGLES.map((a) => (
                 <button
                   key={a.key}
                   type="button"
                   disabled={askBusy}
-                  onClick={() => runAsk({ angle: a.key })}
-                  className="rounded-full border border-line px-[9px] py-1 font-ui text-[9.5px] uppercase tracking-[.1em] text-parchment-2 transition-colors hover:border-gold/40 hover:text-parchment disabled:opacity-50"
+                  onClick={() => runAsk(a.key)}
+                  className="rounded-full border border-line px-[11px] py-[5px] font-ui text-[10px] uppercase tracking-[.1em] text-parchment-2 transition-colors hover:border-gold/40 hover:text-parchment disabled:opacity-50"
                 >
                   {a.label}
                 </button>
               ))}
             </div>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                const q = question.trim();
-                if (q && !askBusy) runAsk({ question: q });
-              }}
-              className="flex items-center gap-1"
-            >
-              <input
-                aria-label="Ask about this verse"
-                value={question}
-                onChange={(e) => setQuestion(e.target.value)}
-                placeholder="Ask about this verse."
-                disabled={askBusy}
-                className="min-w-0 flex-1 rounded-[8px] border border-line bg-shell px-2.5 py-1.5 font-body text-[13px] text-parchment placeholder:text-mist-2 focus:border-gold/50 focus:outline-none disabled:opacity-50"
-              />
-              <button
-                type="submit"
-                aria-label="Send question"
-                disabled={askBusy || !question.trim()}
-                className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[8px] bg-gold text-deep transition-colors hover:bg-gold-bright disabled:opacity-40"
-              >
-                <span className="text-[15px] leading-none">›</span>
-              </button>
-            </form>
             {askBusy ? (
               <p className="px-1 font-body text-[13px] italic text-mist-2">
                 Thinking.
@@ -261,7 +237,7 @@ export function HighlightPopover({
                 {askError}
               </p>
             ) : answer ? (
-              <div className="max-h-[44vh] overflow-y-auto px-1">
+              <div className="px-1">
                 <p className="whitespace-pre-line font-body text-[13.5px] leading-[1.6] text-parchment-2">
                   {answer}
                 </p>
