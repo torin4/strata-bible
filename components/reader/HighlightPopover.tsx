@@ -1,6 +1,7 @@
 "use client";
 
-import { explainVerse } from "@/lib/companion";
+import { explainVerses } from "@/lib/companion";
+import { highlightKey, highlightKeysInRange } from "@/lib/highlights";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -9,35 +10,48 @@ import { useHighlights } from "./HighlightProvider";
 const WIDTH = 252;
 const MARGIN = 8;
 
-// The action sheet that opens over a tapped verse: highlight on/off, a note composer, and
-// Explain, a short, plain companion reading of this verse. Rendered in a portal
-// and anchored to the verse's on-screen box with fixed positioning, so it never disturbs the
-// inline flow of the scripture. It behaves as a modal dialog for the keyboard and screen
-// reader: focus moves in on open, is trapped while open, and the caller returns it to the
-// verse on close. Closes on outside tap, Escape, or scroll (but not while composing/asking).
+// The companion only explains a short selection; past this many verses it is hidden, so the
+// model call stays bounded and the answer stays brief.
+const EXPLAIN_MAX_VERSES = 6;
+
+// The action sheet that opens over a tapped verse or selected span: highlight on/off, a note
+// composer, Explain (a short companion reading), and on a single verse, Extend to start a
+// range. Rendered in a portal and anchored to the verse's on-screen box with fixed
+// positioning, so it never disturbs the inline flow of the scripture. It behaves as a modal
+// dialog for the keyboard and screen reader: focus moves in on open, is trapped while open,
+// and the caller returns it to the verse on close. Closes on outside tap, Escape, or scroll
+// (but not while composing/asking).
 export function HighlightPopover({
-  vkey,
+  readingId,
+  passageRef,
+  startN,
+  endN,
   anchor,
   onClose,
 }: {
-  vkey: string;
+  readingId: string;
+  passageRef: string;
+  startN: number;
+  endN: number;
   anchor: DOMRect;
   onClose: () => void;
 }) {
-  const { has, getNote, toggle, saveNote, removeNote } = useHighlights();
-  const on = has(vkey);
-  const existing = getNote(vkey) ?? "";
+  const { has, getNote, setRange, saveNote, removeNote, beginRange } =
+    useHighlights();
+
+  // The real verses in the selection (range storage stays per-verse). A note attaches to the
+  // first verse of the span, so it surfaces in the journal at the passage's natural place.
+  const keys = highlightKeysInRange(readingId, passageRef, startN, endN);
+  const count = keys.length;
+  const isRange = endN > startN && count > 1;
+  const startKey = highlightKey(readingId, passageRef, startN);
+  const existing = getNote(startKey) ?? "";
+  const allOn = count > 0 && keys.every((k) => has(k));
+  const explainEligible = count > 0 && count <= EXPLAIN_MAX_VERSES;
+
   const [composing, setComposing] = useState(false);
   const [text, setText] = useState(existing);
   const panelRef = useRef<HTMLDialogElement>(null);
-
-  // The verse this popover targets, parsed from its key (readingId|passageRef|n), so an Ask
-  // can resolve the canonical verse server-side from authored content.
-  const sep1 = vkey.indexOf("|");
-  const sep2 = vkey.lastIndexOf("|");
-  const readingId = vkey.slice(0, sep1);
-  const passageRef = vkey.slice(sep1 + 1, sep2);
-  const verseN = Number(vkey.slice(sep2 + 1));
 
   const [asking, setAsking] = useState(false);
   const [answer, setAnswer] = useState<string | null>(null);
@@ -48,7 +62,7 @@ export function HighlightPopover({
     setAskBusy(true);
     setAskError(null);
     setAnswer(null);
-    explainVerse(readingId, passageRef, verseN)
+    explainVerses(readingId, passageRef, startN, endN)
       .then((a) => {
         setAnswer(a);
         setAskBusy(false);
@@ -134,7 +148,9 @@ export function HighlightPopover({
         ref={panelRef}
         open
         aria-modal="true"
-        aria-label="Verse actions"
+        aria-label={
+          isRange ? `Actions for verses ${startN} to ${endN}` : "Verse actions"
+        }
         tabIndex={-1}
         onKeyDown={trapTab}
         style={{ left, width: WIDTH, ...position }}
@@ -145,10 +161,18 @@ export function HighlightPopover({
             <textarea
               // biome-ignore lint/a11y/noAutofocus: a composer opened by deliberate tap
               autoFocus
-              aria-label="Note on this verse"
+              aria-label={
+                isRange
+                  ? `Note on verses ${startN} to ${endN}`
+                  : "Note on this verse"
+              }
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder="Write a note on this verse."
+              placeholder={
+                isRange
+                  ? "Write a note on this passage."
+                  : "Write a note on this verse."
+              }
               rows={3}
               className="w-full resize-none rounded-[8px] border border-line bg-shell px-3 py-2 font-body text-[14px] leading-[1.5] text-parchment placeholder:text-mist-2 focus:border-gold/50 focus:outline-none"
             />
@@ -157,7 +181,7 @@ export function HighlightPopover({
                 <button
                   type="button"
                   onClick={() => {
-                    removeNote(vkey);
+                    removeNote(startKey);
                     onClose();
                   }}
                   className="font-ui text-[10px] uppercase tracking-[.14em] text-mist transition-colors hover:text-gold-bright"
@@ -173,7 +197,9 @@ export function HighlightPopover({
                   primary
                   label="Save"
                   onClick={() => {
-                    saveNote(vkey, text);
+                    // Noting a span highlights the whole span; the note lands on its first verse.
+                    setRange(readingId, passageRef, startN, endN, true);
+                    saveNote(startKey, text);
                     onClose();
                   }}
                 />
@@ -184,7 +210,7 @@ export function HighlightPopover({
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-between px-1 pt-0.5">
               <span className="font-ui text-[9px] font-semibold uppercase tracking-[.18em] text-gold">
-                Explain this verse
+                {isRange ? "Explain this passage" : "Explain this verse"}
               </span>
               <button
                 type="button"
@@ -241,36 +267,55 @@ export function HighlightPopover({
           </div>
         ) : (
           <div className="flex flex-col gap-2">
-            {/* A saved note shows here on a plain tap, so the reader sees it without
-                opening the editor. */}
+            {/* A span shows its range; a saved note shows here on a plain tap, so the reader
+                sees it without opening the editor. */}
+            {isRange ? (
+              <p className="px-1 pt-0.5 font-ui text-[9px] font-semibold uppercase tracking-[.18em] text-gold">
+                Verses {startN}–{endN}
+              </p>
+            ) : null}
             {existing ? (
               <p className="whitespace-pre-line px-1 pt-1 font-body text-[13.5px] italic leading-[1.6] text-parchment-2">
                 {existing}
               </p>
             ) : null}
-            <div className="flex items-center gap-1">
+            <div className="flex flex-wrap items-center gap-1">
               <PopButton
                 label={existing ? "Edit note" : "Note"}
-                onClick={() => setComposing(true)}
+                onClick={() => {
+                  setText(existing);
+                  setComposing(true);
+                }}
               />
               <PopButton
-                label={on ? "Remove" : "Highlight"}
+                label={allOn ? "Remove" : "Highlight"}
                 onClick={() => {
-                  if (on) {
-                    toggle(vkey);
+                  if (allOn) {
+                    setRange(readingId, passageRef, startN, endN, false);
                     onClose();
                   } else {
-                    toggle(vkey); // stay open so a note can follow the highlight
+                    // Stay open so a note can follow the highlight.
+                    setRange(readingId, passageRef, startN, endN, true);
                   }
                 }}
               />
-              <PopButton
-                label="Explain"
-                onClick={() => {
-                  setAsking(true);
-                  runExplain();
-                }}
-              />
+              {!isRange ? (
+                <PopButton
+                  label="Extend"
+                  onClick={() =>
+                    beginRange({ readingId, passageRef, n: startN })
+                  }
+                />
+              ) : null}
+              {explainEligible ? (
+                <PopButton
+                  label="Explain"
+                  onClick={() => {
+                    setAsking(true);
+                    runExplain();
+                  }}
+                />
+              ) : null}
               <button
                 type="button"
                 aria-label="Close"

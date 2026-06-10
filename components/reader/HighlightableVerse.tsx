@@ -1,13 +1,21 @@
 "use client";
 
-import { type KeyboardEvent, type ReactNode, useRef, useState } from "react";
+import {
+  type KeyboardEvent,
+  type ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { HighlightPopover } from "./HighlightPopover";
 import { useHighlights } from "./HighlightProvider";
 
 // Wraps a single verse's text. Signed out (or outside a provider) it returns the text
-// untouched. Signed in, the verse becomes a tap target: tapping opens an action popover
-// (highlight on/off, note). A washed verse shows the gold background; a noted one carries
-// a small gold marker.
+// untouched. Signed in, the verse becomes a tap target. A first tap opens the action
+// popover (highlight on/off, note, explain) for that one verse; from there the reader can
+// "Extend", after which the next verse tapped sets the far end of a range. A saved
+// highlight shows the gold wash plus a bright underline; the verse the popover acts on, and
+// every verse inside an active span, show the strongest treatment so the selection is plain.
 //
 // It is a <span role="button">, NOT a <button>: a real button is an atomic inline-block
 // box, so in running prose each verse would be bumped onto its own line. A span flows and
@@ -20,25 +28,71 @@ export function HighlightableVerse({
   vkey: string;
   children: ReactNode;
 }) {
-  const { enabled, has, getNote, activeKey, setActiveKey } = useHighlights();
-  const [anchor, setAnchor] = useState<DOMRect | null>(null);
+  const {
+    enabled,
+    has,
+    getNote,
+    active,
+    pending,
+    openVerse,
+    extendTo,
+    cancel,
+  } = useHighlights();
   const ref = useRef<HTMLSpanElement>(null);
+  const [rect, setRect] = useState<DOMRect | null>(null);
+
+  // The verse this wrapper stands for, from its key (readingId|passageRef|n). A passageRef
+  // can hold colons and dashes but never a "|", so the first and last separators are exact.
+  const sep1 = vkey.indexOf("|");
+  const sep2 = vkey.lastIndexOf("|");
+  const readingId = vkey.slice(0, sep1);
+  const passageRef = vkey.slice(sep1 + 1, sep2);
+  const n = Number(vkey.slice(sep2 + 1));
+
+  const samePassage =
+    active?.readingId === readingId && active?.passageRef === passageRef;
+  const lo = active ? Math.min(active.anchorN, active.otherN) : 0;
+  const hi = active ? Math.max(active.anchorN, active.otherN) : -1;
+  const inActiveSpan = Boolean(enabled && samePassage && n >= lo && n <= hi);
+  // Only the anchor verse renders the popover, and it always has an on-screen box (it is the
+  // verse the reader first tapped), so a span opened from either end still positions cleanly.
+  const isAnchor = Boolean(enabled && samePassage && active?.anchorN === n);
+  const isPending = Boolean(
+    enabled &&
+      pending?.readingId === readingId &&
+      pending?.passageRef === passageRef &&
+      pending?.n === n,
+  );
+  const saved = enabled && has(vkey);
+  const noted = enabled && Boolean(getNote(vkey));
+
+  // Capture the box when this verse becomes the popover's anchor, fresh each time, so a
+  // selection completed after scrolling still opens against the verse's real position.
+  useEffect(() => {
+    if (isAnchor) setRect(ref.current?.getBoundingClientRect() ?? null);
+  }, [isAnchor]);
+
   if (!enabled) return <>{children}</>;
 
-  const on = has(vkey);
-  const noted = Boolean(getNote(vkey));
-  const open = activeKey === vkey;
-
-  const toggle = (rect: DOMRect) => {
-    setAnchor(rect);
-    setActiveKey(open ? null : vkey);
+  // A tap either sets the far end of an in-progress range, or opens this verse on its own.
+  const activate = () => {
+    if (pending) extendTo({ readingId, passageRef, n });
+    else openVerse({ readingId, passageRef, n });
   };
 
   // Closing returns focus to the verse so a keyboard user lands back where they were.
   const close = () => {
-    setActiveKey(null);
+    cancel();
     ref.current?.focus();
   };
+
+  const wash = inActiveSpan
+    ? "border-gold-bright bg-gold/[0.30]"
+    : isPending
+      ? "border-gold-bright/70 bg-gold/[0.14]"
+      : saved
+        ? "border-gold-bright/60 bg-gold/[0.16]"
+        : "border-transparent hover:bg-parchment/[0.06]";
 
   return (
     <>
@@ -47,37 +101,35 @@ export function HighlightableVerse({
         role="button"
         tabIndex={0}
         aria-haspopup="dialog"
-        aria-expanded={open}
-        aria-pressed={on}
+        aria-expanded={isAnchor}
+        aria-pressed={saved}
         aria-roledescription="highlightable verse"
-        onClick={(e) => toggle(e.currentTarget.getBoundingClientRect())}
+        onClick={activate}
         onKeyDown={(e: KeyboardEvent<HTMLSpanElement>) => {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
-            toggle(e.currentTarget.getBoundingClientRect());
+            activate();
           }
         }}
-        // A translucent gold fill alone composites to muddy brown on the near-black shell,
-        // so a saved highlight also carries a gold-bright underline, which stays legible on
-        // black where a wash cannot. The actively-tapped verse (popover open) gets the
-        // strongest treatment so it is unmistakable which verse the popover acts on. The
-        // 2px bottom border is always present (transparent when idle) so toggling never
-        // shifts the line.
-        className={`box-decoration-clone cursor-pointer rounded-[2px] border-b-2 transition-colors ${
-          open
-            ? "border-gold-bright bg-gold/[0.30]"
-            : on
-              ? "border-gold-bright/60 bg-gold/[0.16]"
-              : "border-transparent hover:bg-parchment/[0.06]"
-        }`}
+        // The 2px bottom border is always present (transparent when idle) so toggling a
+        // highlight never shifts the line; a saved or selected verse colors it gold-bright,
+        // which stays legible on the near-black shell where a translucent fill cannot.
+        className={`box-decoration-clone cursor-pointer rounded-[2px] border-b-2 transition-colors ${wash}`}
       >
         {children}
         {noted ? (
           <sup className="ml-[2px] inline-block h-[5px] w-[5px] rounded-full bg-gold-bright align-super" />
         ) : null}
       </span>
-      {open && anchor ? (
-        <HighlightPopover vkey={vkey} anchor={anchor} onClose={close} />
+      {isAnchor && rect ? (
+        <HighlightPopover
+          readingId={readingId}
+          passageRef={passageRef}
+          startN={lo}
+          endN={hi}
+          anchor={rect}
+          onClose={close}
+        />
       ) : null}
     </>
   );

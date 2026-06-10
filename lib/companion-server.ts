@@ -115,16 +115,16 @@ export async function draftMiddle(passage: Passage): Promise<CompanionLayer> {
   return JSON.parse(block.text) as CompanionLayer;
 }
 
-// The companion giving a short, plain explanation of one highlighted verse. A scoped task,
-// not a chat: it stays on the verse and its passage, in STRATA's voice, and never reaches
-// past the BSB text it is handed.
-const ASK_VERSE_SYSTEM = `You are the STRATA companion, explaining a single verse a reader highlighted. Read only that verse and its passage, in STRATA's voice. Say plainly what the verse is saying, and add the bit of background that makes it land only where that helps. Brief and to the point.
+// The companion giving a short, plain explanation of one highlighted verse or a short span.
+// A scoped task, not a chat: it stays on the selection and its passage, in STRATA's voice,
+// and never reaches past the BSB text it is handed.
+const ASK_VERSE_SYSTEM = `You are the STRATA companion, explaining a verse or a short passage a reader highlighted. Read only that selection and its surrounding passage, in STRATA's voice. Say plainly what it is saying, and add the bit of background that makes it land only where that helps. Brief and to the point.
 
-Voice: two or three short sentences. Plain words. No em dashes, only commas and periods. No preamble, no tidy morals; name the hard thing honestly. End on something that lands.
+Voice: two to four short sentences. Plain words. No em dashes, only commas and periods. No preamble, no tidy morals; name the hard thing honestly. End on something that lands.
 
 Honesty and translation: use only the scripture text provided. Never quote, complete, or invent other verses, and never reach for a licensed translation. Do not psychoanalyze the reader or assert their mental state.
 
-Stay on this verse and its passage. Return only the explanation.`;
+Stay on this selection and its passage. Return only the explanation.`;
 
 const ASK_VERSE_SCHEMA = {
   type: "object",
@@ -133,22 +133,32 @@ const ASK_VERSE_SCHEMA = {
   required: ["answer"],
 } as const;
 
-export async function explainVerse(
+export async function explainVerses(
   passage: Passage,
-  verseN: number,
+  startN: number,
+  endN: number,
 ): Promise<string> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey)
     throw new CompanionUnconfiguredError("ANTHROPIC_API_KEY is not set.");
 
   const items = passage.verses ?? passage.statutes ?? passage.sayings ?? [];
-  const verse = items.find((v) => v.n === verseN);
-  if (!verse) throw new Error("Verse not found in this passage.");
+  const lo = Math.min(startN, endN);
+  const hi = Math.max(startN, endN);
+  const selected = items.filter((v) => v.n >= lo && v.n <= hi);
+  if (selected.length === 0)
+    throw new Error("Verse not found in this passage.");
+  const isRange = selected.length > 1;
 
   const ground = passage.ground
     ? `${GROUND_LABEL[passage.ground.kind]}: ${passage.ground.text}`
     : "(no history note)";
   const scripture = items.map((v) => `${v.n} ${v.text}`).join("\n");
+  const highlighted = isRange
+    ? `The reader highlighted verses ${lo} to ${hi}:\n${selected
+        .map((v) => `${v.n} ${v.text}`)
+        .join("\n")}`
+    : `The reader highlighted verse ${lo}: "${selected[0].text}"`;
 
   const userMessage = [
     `Passage: ${passage.title} (${passage.ref}), kind ${passage.kind}`,
@@ -157,15 +167,17 @@ export async function explainVerse(
     "Full passage (Berean Standard Bible, public domain; use only this text):",
     scripture,
     "",
-    `The reader highlighted verse ${verseN}: "${verse.text}"`,
+    highlighted,
     "",
-    "Explain this verse, briefly and to the point.",
+    isRange
+      ? "Explain this passage, briefly and to the point."
+      : "Explain this verse, briefly and to the point.",
   ].join("\n");
 
   const client = new Anthropic({ apiKey });
   const response = await client.messages.create({
     model: COMPANION_MODEL,
-    max_tokens: 1024,
+    max_tokens: 1500,
     thinking: { type: "adaptive" },
     system: ASK_VERSE_SYSTEM,
     output_config: {

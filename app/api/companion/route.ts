@@ -1,7 +1,7 @@
 import {
   CompanionUnconfiguredError,
   draftMiddle,
-  explainVerse,
+  explainVerses,
 } from "@/lib/companion-server";
 import { findReadingAnywhere } from "@/lib/content";
 import { isPlusEntitled, lookupCaller } from "@/lib/server-auth";
@@ -71,7 +71,8 @@ export async function POST(req: NextRequest) {
     task?: string;
     readingId?: unknown;
     passageRef?: unknown;
-    verseN?: unknown;
+    startN?: unknown;
+    endN?: unknown;
   };
   try {
     body = await req.json();
@@ -118,10 +119,20 @@ export async function POST(req: NextRequest) {
 
   try {
     if (body.task === "ask-verse") {
-      if (typeof body.verseN !== "number") {
+      // A short selection only: validate the bounds and cap the span so the model call
+      // stays bounded (matches the client, which hides Explain past the same ceiling).
+      const { startN, endN } = body;
+      if (
+        typeof startN !== "number" ||
+        typeof endN !== "number" ||
+        !Number.isInteger(startN) ||
+        !Number.isInteger(endN) ||
+        endN < startN ||
+        endN - startN > 5
+      ) {
         return NextResponse.json({ error: "bad-request" }, { status: 400 });
       }
-      const answer = await explainVerse(passage, body.verseN);
+      const answer = await explainVerses(passage, startN, endN);
       return NextResponse.json({ answer });
     }
     // draft-middle: falls back to authored content on the client if anything here fails.

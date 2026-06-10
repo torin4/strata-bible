@@ -24,6 +24,37 @@ export function highlightKey(
   return `${readingId}|${passageRef}|${n}`;
 }
 
+// The verse numbers that actually exist in a passage, in order. Lets a range act only on
+// real verses (a selection never invents a key for a verse that is not there).
+export function versesInPassage(
+  readingId: string,
+  passageRef: string,
+): number[] {
+  const found = findReadingAnywhere(readingId);
+  if (!found) return [];
+  const passage = found.reading.passages.find((p) => p.ref === passageRef);
+  if (!passage) return [];
+  const items = passage.verses ?? passage.statutes ?? passage.sayings ?? [];
+  return items.map((v) => v.n);
+}
+
+// The highlight keys for every real verse whose number falls in [start, end] (order
+// independent). A single verse is the degenerate range start === end. Storage stays
+// per-verse, so a range highlight is just many single-verse keys: backward compatible with
+// existing data and with the journal, which reads single keys.
+export function highlightKeysInRange(
+  readingId: string,
+  passageRef: string,
+  start: number,
+  end: number,
+): string[] {
+  const lo = Math.min(start, end);
+  const hi = Math.max(start, end);
+  return versesInPassage(readingId, passageRef)
+    .filter((n) => n >= lo && n <= hi)
+    .map((n) => highlightKey(readingId, passageRef, n));
+}
+
 // The live state of a reader's highlights: which verses are washed, and the note on each.
 export interface HighlightState {
   verses: Set<string>;
@@ -52,6 +83,33 @@ export async function setHighlight(
   await setDoc(
     highlightsDoc(db, uid),
     { verses: arrayRemove(key), notes: { [key]: deleteField() } },
+    { merge: true },
+  );
+}
+
+// Set (or clear) a whole run of verse highlights in one write. Used by range selection:
+// arrayUnion/arrayRemove both take many elements, so a span of verses is a single document
+// update, not one per verse. Clearing a run also clears each verse's note (a note has no
+// home without its highlight), mirroring the single-key setHighlight.
+export async function setHighlights(
+  uid: string,
+  keys: string[],
+  on: boolean,
+): Promise<void> {
+  if (!db || keys.length === 0) return;
+  if (on) {
+    await setDoc(
+      highlightsDoc(db, uid),
+      { verses: arrayUnion(...keys) },
+      { merge: true },
+    );
+    return;
+  }
+  const clearedNotes: Record<string, ReturnType<typeof deleteField>> = {};
+  for (const key of keys) clearedNotes[key] = deleteField();
+  await setDoc(
+    highlightsDoc(db, uid),
+    { verses: arrayRemove(...keys), notes: clearedNotes },
     { merge: true },
   );
 }
