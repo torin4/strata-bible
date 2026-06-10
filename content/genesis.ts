@@ -1211,7 +1211,7 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'You may be the one in your circle still walking a direction the others have abandoned, and from inside it can feel less like faithfulness and more like being wrong.'
         },
-        ask: 'What are you still holding to that almost everyone around you has let go of?'
+        ask: 'What are you still keeping faith with that almost everyone around you has let go of?'
       },
       {
         label: 'Four',
