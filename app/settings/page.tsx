@@ -4,7 +4,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { useSettings } from "@/components/settings/SettingsProvider";
-import { PLUS_PRICE } from "@/lib/pricing";
+import { PLUS_PRICE, purchasableBooks } from "@/lib/pricing";
 import { openPortal, startCheckout } from "@/lib/subscription";
 import Link from "next/link";
 import { useState } from "react";
@@ -68,6 +68,8 @@ export default function SettingsPage() {
         </section>
 
         <PlusSection />
+
+        <OwnedBooks />
 
         <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
           <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
@@ -195,7 +197,7 @@ function PlusSection() {
       ) : (
         <div className="flex items-center justify-between gap-4">
           <span className="font-body text-[14px] leading-[1.6] text-mist">
-            Open all of Genesis and the companion. {PLUS_PRICE.annual} a year.
+            Open every book and the companion. {PLUS_PRICE.annual} a year.
           </span>
           <button
             type="button"
@@ -215,6 +217,45 @@ function PlusSection() {
           {error}
         </p>
       ) : null}
+    </section>
+  );
+}
+
+// The reader's outright-owned books, shown as a small library with a link into each. Hidden
+// until billing is on, and only when they own at least one.
+function OwnedBooks() {
+  const { owns, billingEnabled } = useSubscription();
+  if (!billingEnabled) return null;
+  const owned = purchasableBooks().filter((book) => owns(book.bookId));
+  if (owned.length === 0) return null;
+  return (
+    <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
+      <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
+        Your books
+      </h2>
+      <ul className="flex flex-col gap-3">
+        {owned.map((book) => (
+          <li
+            key={book.bookId}
+            className="flex items-center justify-between gap-3"
+          >
+            <span className="font-body text-[15px] text-parchment-2">
+              {book.title}
+            </span>
+            <div className="flex items-center gap-3">
+              <span className="rounded-full border border-gold/40 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
+                Owned
+              </span>
+              <Link
+                href={`/book/${book.bookId}`}
+                className="font-ui text-[11px] uppercase tracking-[.14em] text-lapis transition-colors hover:text-parchment"
+              >
+                Read ›
+              </Link>
+            </div>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
