@@ -191,7 +191,11 @@ export function subscribeOwnedBooks(
         const data = doc.data() as Record<string, unknown>;
         const prices = Array.isArray(data.prices) ? data.prices : [];
         for (const p of prices) {
-          const priceId = (p as { price?: string })?.price;
+          // The extension stores each charged price as a Firestore reference; the web SDK
+          // surfaces it as a DocumentReference whose id is the price id (e.g. price_…). Fall
+          // back to a plain { price } shape defensively.
+          const ref = p as { id?: string; price?: string } | null;
+          const priceId = ref?.id ?? ref?.price;
           const book = priceId ? bookForPriceId(priceId) : null;
           if (book) owned.add(book);
         }

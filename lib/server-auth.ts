@@ -156,9 +156,13 @@ async function ownsBook(
       const fields = doc.fields ?? {};
       if (fields.status?.stringValue !== "succeeded") continue;
       for (const entry of fields.prices?.arrayValue?.values ?? []) {
-        const price = entry.mapValue?.fields?.price;
+        // Each entry is a Firestore reference to the price doc (…/prices/price_…). Older
+        // shape: a map carrying a price string or reference.
+        const mapPrice = entry.mapValue?.fields?.price;
         const priceId =
-          price?.stringValue ?? price?.referenceValue?.split("/").pop();
+          entry.referenceValue?.split("/").pop() ??
+          mapPrice?.stringValue ??
+          mapPrice?.referenceValue?.split("/").pop();
         if (priceId && bookForPriceId(priceId) === bookId) return true;
       }
     }
