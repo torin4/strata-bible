@@ -219,9 +219,14 @@ export function HighlightPopover({
               ))}
             </div>
             {askBusy ? (
-              <p className="px-1 font-body text-[13px] italic text-mist-2">
-                Thinking.
-              </p>
+              <output
+                className="thinking-dots flex items-center gap-1 px-1 py-0.5"
+                aria-label="Thinking"
+              >
+                <span className="h-[5px] w-[5px] rounded-full bg-mist" />
+                <span className="h-[5px] w-[5px] rounded-full bg-mist" />
+                <span className="h-[5px] w-[5px] rounded-full bg-mist" />
+              </output>
             ) : askError === "plus" ? (
               <p className="px-1 font-body text-[13px] leading-[1.5] text-mist">
                 The companion is part of STRATA Plus.{" "}
