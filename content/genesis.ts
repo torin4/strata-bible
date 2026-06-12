@@ -1392,7 +1392,7 @@ export const GENESIS: Reading[] = [
   {
     id: 'gen-8',
     bookId: 'genesis',
-    tier: 'grounded',
+    tier: 'sitting',
     span: 'Genesis 8',
     chapterIndex: 8,
     title: 'The waters recede',
@@ -1496,7 +1496,17 @@ export const GENESIS: Reading[] = [
           kind: 'historical',
           text: 'The closest parallel in all of Genesis sits here. In the Epic of Gilgamesh the flood hero sends birds out from his boat and offers a sacrifice the gods crowd around “like flies.” Genesis keeps the birds and the altar and strips out the hungry gods, leaving one God who resolves, never again.',
           src: 'The Epic of Gilgamesh · John Day'
-        }
+        },
+        meaning: 'The whole flood turns on two words, <b>God remembered Noah</b>. Not that God had forgotten, but that the long water now bends from judgment back toward rescue. What comes up out of it is not a clean new world. It is the same earth with the same human heart in it, handed back anyway, under a promise never to drown it again.',
+        lenses: {
+          theo: 'The promise at the end is one-sided and clear-eyed. God reads the human heart as bent from its youth and chooses restraint anyway, not because the threat is gone but because patience will now carry what judgment used to. Mercy here is not a verdict that we improved. It is God deciding to bear a world that has not.',
+          arch: 'The deluge that washes the world back to water and then lifts it up again, dry, is one of the oldest shapes the imagination keeps. Eliade found it the world over as the cosmos sinking into the formless and being made a second time, the old order dissolved so a cleaner one can rise from the same flood. The dove sent out over the waters for somewhere to land is that hope in a single image, that something solid will surface to stand on. (The world dissolved to water and handed back, begun again.)'
+        },
+        addr: {
+          mode: 'names',
+          text: 'The flood is the part everyone remembers. The harder part is what comes after, the long wait in the ark while the water drops by inches, sending out a bird and getting it back, waiting seven more days, then seven more. You are often past the worst of a thing and still unable to step out of it, and that waiting, not the disaster, is what asks the most of you.'
+        },
+        ask: 'What in your life is past its worst but not yet solid enough to stand on, and how are you bearing the wait?'
       }
     ]
   },

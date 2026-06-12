@@ -262,6 +262,11 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For when you are raging at the limits you never chose, and need to know you are grieved over, not raged at.",
   },
+  "gen-8": {
+    themes: ["waiting", "starting-over"],
+    speaksTo:
+      "For the long wait after the worst is over, when you are past the disaster and still cannot step out of it, watching for ground dry enough to stand on.",
+  },
   "gen-9": {
     themes: ["starting-over", "the-outsider"],
     speaksTo:
