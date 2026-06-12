@@ -1679,17 +1679,17 @@ export const GENESIS: Reading[] = [
           text: 'This is the chapter people skip, and the place where the worst misreading in the book has lived. For centuries the so-called “curse of Ham” was twisted to justify the enslavement of Black Africans. The text gives it no footing at all. The curse falls on Canaan, not Ham, and on no race, it is almost certainly an old story-behind-the-story explaining why Israel later subjugated the Canaanite peoples. There is nothing about skin color anywhere in it. The slavery reading is a monstrous later invention laid on top of the words. And underneath the controversy sits the quieter shock: the righteous man God saved gets drunk and is shamed in his own tent.',
           src: 'Westermann'
         },
-        meaning: 'Here is the devastation hidden in the flood story. God washed the whole earth, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and fall into shame, and a grandson is cursed. The water cleaned the world. It did not clean the human heart. The exact trouble named before the flood, the inclination of the heart, walks straight off the ark. You cannot drown your way to a better person.',
+        meaning: 'Here is the quiet devastation under the flood story. God washed the whole earth, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and end up shamed in his own tent. The water cleaned the world. It did not clean the human heart. The very flaw the story blamed for the flood walks straight off the ark with him. You cannot drown your way to a better person.',
         lenses: {
           theo: 'The flood was the most total fresh start imaginable, and at the level that matters it did not work, and the story is honest enough to say so. The trouble was never only out there in a wicked generation. It came through the ark in the heart of the best man aboard. That admission is what sets up everything after: a problem this deep will not be solved by washing the world. It will take something else.',
           arch: 'The flood that dissolves the world back into the chaos-waters and lets it be remade is among the most widespread of all myths, a periodic washing-clean that many peoples imagined. But Genesis refuses the tidy version. The waters recede and the same fracture walks off the ark in the heart of the rescued man. The deepest thing the story says about renewal is that washing the world does not wash the one who survives it. (Eliade, on the deluge and cosmic renewal.)'
         },
         addr: {
           mode: 'names',
-          text: 'You have tried to start clean, the move, the breakup, the resolution, and watched the very thing you were fleeing climb out of the boat with you.'
+          text: 'You have tried to start clean before. A move, a breakup, a fresh resolution. And then you watched the very thing you were fleeing climb out of the boat right behind you.'
         },
         soft: 'The point is not despair. It is that the fix you need runs deeper than a change of setting.',
-        ask: 'What have you tried to outrun by changing your circumstances, only to find it came along?'
+        ask: 'What in yourself have you tried to escape by changing your circumstances, and found waiting for you on the other side?'
       }
     ]
   },
