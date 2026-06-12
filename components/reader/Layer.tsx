@@ -1,3 +1,4 @@
+import type { Figure } from "@/lib/types";
 import { Rich } from "./Rich";
 
 type LayerVariant = "ground" | "meaning";
@@ -19,11 +20,13 @@ export function Layer({
   label,
   text,
   src,
+  figures,
 }: {
   variant: LayerVariant;
   label: string;
   text: string;
   src?: string;
+  figures?: Figure[];
 }) {
   return (
     <div className="mt-5">
@@ -36,7 +39,7 @@ export function Layer({
         {label}
       </div>
       <div className="font-body text-[14.5px] leading-[1.66] text-parchment-2">
-        <Rich text={text} />
+        <Rich text={text} figures={figures} />
       </div>
       {src ? (
         <div className="mt-[7px] font-body text-[11px] italic text-mist-2">

@@ -1881,7 +1881,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Shinar” is Babylonia, and a tower with its top in the heavens is unmistakably a ziggurat, the stepped temple-towers of Mesopotamian cities, built of exactly the baked brick and bitumen the text names. Babylon’s own great ziggurat was called Etemenanki, “the house of the foundation of heaven and earth”. The exiles who shaped this story lived in the shadow of those towers, and “Babel” is simply the Hebrew name for Babylon. Notice the motive: a name, and a refusal to be scattered, which is the exact reverse of the command to fill the earth.',
+          text: '“Shinar” is Babylonia, and a tower with its top in the heavens is unmistakably a <fig>ziggurat</fig>, the stepped temple-towers of Mesopotamian cities, built of exactly the baked brick and bitumen the text names. Babylon’s own great ziggurat was called Etemenanki, “the house of the foundation of heaven and earth”. The exiles who shaped this story lived in the shadow of those towers, and “Babel” is simply the Hebrew name for Babylon. Notice the motive: a name, and a refusal to be scattered, which is the exact reverse of the command to fill the earth.',
           src: 'Smith · Walton'
         },
         meaning: 'The first empire’s project is to build up, gather in one place, and make a name, security and glory through height and concentration. The text does not draw it as cartoon villainy. It is ambition, the deeply human urge to be permanent, to be known, not to end up scattered and small. The trouble is what it reaches for, and why.',
@@ -1892,7 +1892,15 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'You know the pull to build something tall enough that your name outlasts you, to secure yourself by your own achievement so you won’t be scattered or forgotten.'
         },
-        ask: 'What are you building mainly so that your name will last, and what is driving that, really?'
+        ask: 'What are you building mainly so that your name will last, and what is driving that, really?',
+        figures: [
+          {
+            term: 'ziggurat',
+            src: '/images/ziggurat.webp',
+            alt: 'A stepped Mesopotamian ziggurat, a broad temple-tower rising in terraces against a dark sky.',
+            caption: 'A ziggurat, the stepped temple-tower at the heart of a Mesopotamian city. Babylon’s, called Etemenanki, is the kind of tower the Babel story has in view.'
+          }
+        ]
       },
       {
         label: 'Two',

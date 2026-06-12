@@ -117,6 +117,17 @@ export interface Passage {
 
   inTextTurn?: number;               // verse where the text itself turns (Ps 13:5)
   label?: string;                    // narrative scene label: "One", "Two"
+  figures?: Figure[];                // illustrations tied to a word in an authored note
+}
+
+// An illustration tied to a word in an authored note (ground or meaning). The word, wrapped
+// <fig>word</fig> in the text, becomes a tap target that opens the image in a modal. The
+// optional caption is a short description the reader can toggle as an overlay over the image.
+export interface Figure {
+  term: string;      // the word in the text to make tappable (matched case-insensitively)
+  src: string;       // path under /public
+  alt: string;       // accessible description, always available to screen readers
+  caption?: string;  // a short description, toggleable as an overlay in the modal
 }
 
 // A Reading is what the user sits with. It can hold one passage (a poem, a cluster,

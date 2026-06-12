@@ -64,6 +64,7 @@ export function Passage({
           label={GROUND_LABEL[passage.ground.kind]}
           text={passage.ground.text}
           src={passage.ground.src}
+          figures={passage.figures}
         />
       ) : null}
 
@@ -96,7 +97,12 @@ export function Passage({
         <Misreading misreading={passage.misreading} />
       ) : null}
       {passage.meaning ? (
-        <Layer variant="meaning" label="Meaning" text={passage.meaning} />
+        <Layer
+          variant="meaning"
+          label="Meaning"
+          text={passage.meaning}
+          figures={passage.figures}
+        />
       ) : (
         // Grounded/plain tier: the middle is empty. The companion fills it when asked.
         <CompanionMiddle
