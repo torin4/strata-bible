@@ -85,11 +85,12 @@ function FigureLightbox({
   if (typeof document === "undefined") return null;
 
   return createPortal(
-    <dialog
-      open
+    <div
+      // biome-ignore lint/a11y/useSemanticElements: a full-bleed lightbox veil, not the UA dialog box, whose default sizing and white background fight a full-screen overlay
+      role="dialog"
       aria-modal="true"
       aria-label={figure.alt}
-      className="fixed inset-0 z-[60] m-0 max-h-none max-w-none border-0 bg-deep/92 p-0 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] bg-deep/95 backdrop-blur-sm"
     >
       <button
         type="button"
@@ -148,7 +149,7 @@ function FigureLightbox({
           </div>
         </div>
       </div>
-    </dialog>,
+    </div>,
     document.body,
   );
 }
