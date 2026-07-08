@@ -21,6 +21,7 @@ interface SettingsContextValue {
   settings: Settings;
   loading: boolean;
   setCompanionEnabled: (enabled: boolean) => void;
+  setReaderScale: (scale: number) => void;
 }
 
 const SettingsContext = createContext<SettingsContextValue | null>(null);
@@ -56,11 +57,22 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     [user],
   );
 
+  // Same optimistic pattern as the companion toggle. Signed in, the choice persists to
+  // Firestore and syncs across devices; signed out, it holds for the session (per the
+  // Firestore-only storage rule, nothing is written to the device).
+  const setReaderScale = useCallback(
+    (scale: number) => {
+      setSettings((prev) => ({ ...prev, readerScale: scale }));
+      if (user) saveSettings(user.uid, { readerScale: scale }).catch(() => {});
+    },
+    [user],
+  );
+
   // Memoized so consumers do not re-render on every provider render (e.g. each auth change)
   // unless the settings or loading state actually changed.
   const value = useMemo(
-    () => ({ settings, loading, setCompanionEnabled }),
-    [settings, loading, setCompanionEnabled],
+    () => ({ settings, loading, setCompanionEnabled, setReaderScale }),
+    [settings, loading, setCompanionEnabled, setReaderScale],
   );
 
   return (

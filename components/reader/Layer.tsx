@@ -38,11 +38,11 @@ export function Layer({
         />
         {label}
       </div>
-      <div className="font-body text-[14.5px] leading-[1.66] text-parchment-2">
+      <div className="font-body text-[length:calc(14.5px_*_var(--reader-scale,1))] leading-[1.66] text-parchment-2">
         <Rich text={text} figures={figures} />
       </div>
       {src ? (
-        <div className="mt-[7px] font-body text-[11px] italic text-mist-2">
+        <div className="mt-[7px] font-body text-[length:calc(11px_*_var(--reader-scale,1))] italic text-mist-2">
           {src}
         </div>
       ) : null}

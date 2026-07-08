@@ -12,10 +12,10 @@ export function Tensions({ tensions }: { tensions: Tension[] }) {
       {tensions.map((tension, idx) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: static authored list, no reordering
         <div key={idx} className="mb-[12px] last:mb-0">
-          <div className="font-scripture text-[16.5px] leading-[1.4] text-parchment">
+          <div className="font-scripture text-[length:calc(16.5px_*_var(--reader-scale,1))] leading-[1.4] text-parchment">
             {tension.claim}
           </div>
-          <div className="mt-[3px] font-body text-[13.5px] leading-[1.55] text-parchment-2">
+          <div className="mt-[3px] font-body text-[length:calc(13.5px_*_var(--reader-scale,1))] leading-[1.55] text-parchment-2">
             <span className="font-medium italic text-psyche">but</span>{" "}
             {tension.counter}{" "}
             <span className="ml-1 inline-block text-[12px] italic text-mist-2">

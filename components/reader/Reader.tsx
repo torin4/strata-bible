@@ -4,13 +4,21 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { Paywall } from "@/components/billing/Paywall";
 import { BookmarkButton } from "@/components/reader/BookmarkButton";
+import { useSettings } from "@/components/settings/SettingsProvider";
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import { setScene } from "@/lib/progress";
 import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
 import Link from "next/link";
-import { type ReactNode, useEffect, useRef, useState } from "react";
+import {
+  type CSSProperties,
+  type ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { Capstone } from "./Capstone";
 import { Passage } from "./Passage";
+import { ReaderSizeStepper } from "./ReaderSizeStepper";
 import { SpanBanner } from "./SpanBanner";
 import { ThreadGloss } from "./ThreadGloss";
 
@@ -59,6 +67,7 @@ export function Reader({
   });
   const { isPlus, owns } = useSubscription();
   const { user } = useAuth();
+  const { settings } = useSettings();
   // Read the user at write time without making auth a trigger: only a real scene step should
   // persist, never auth resolving under a reader sitting still.
   const userRef = useRef(user);
@@ -135,7 +144,12 @@ export function Reader({
         };
 
   return (
-    <article className="relative">
+    <article
+      className="relative"
+      // Sizes the reading text (scripture and layer prose) via calc() on the authored px.
+      // Chrome (labels, chips, nav) uses fixed px and ignores it. See ReaderSizeStepper.
+      style={{ "--reader-scale": settings.readerScale } as CSSProperties}
+    >
       {/* Visually hidden live region: announces scene changes to screen readers. */}
       <span aria-live="polite" aria-atomic="true" className="sr-only">
         {onWrapup
@@ -147,7 +161,8 @@ export function Reader({
       {/* The bookmark ribbon, top-right of the scene. Hidden on the wrap-up, which is not a
           spot to resume to. */}
       {onWrapup ? null : (
-        <div className="absolute right-0 top-0">
+        <div className="absolute right-0 top-0 flex items-center gap-1">
+          <ReaderSizeStepper />
           <BookmarkButton
             bookId={reading.bookId}
             readingId={reading.id}
@@ -157,7 +172,7 @@ export function Reader({
       )}
       {onWrapup ? null : (
         <>
-          <div className="mb-[14px] flex flex-wrap items-center gap-2 pr-9">
+          <div className="mb-[14px] flex flex-wrap items-center gap-2 pr-[104px]">
             <span className="rounded-full border border-gold/50 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
               {TIER_LABEL[reading.tier]}
             </span>
@@ -211,13 +226,13 @@ export function Reader({
             />
 
             {!isLastPassage && reading.closeMid ? (
-              <div className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
+              <div className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[length:calc(13px_*_var(--reader-scale,1))] italic leading-[1.6] text-mist-2">
                 {reading.closeMid}
               </div>
             ) : null}
 
             {isLastPassage && reading.closeEnd ? (
-              <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
+              <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[length:calc(14px_*_var(--reader-scale,1))] italic leading-[1.66] text-mist">
                 {reading.closeEnd}
               </div>
             ) : null}

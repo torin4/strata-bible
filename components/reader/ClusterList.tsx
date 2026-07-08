@@ -27,7 +27,7 @@ export function ClusterList({
               <div className="min-w-[18px] pt-[5px] font-ui text-[10px] tracking-[.03em] text-gold">
                 {item.n}
               </div>
-              <div className="font-scripture text-[18px] leading-[1.55] text-parchment">
+              <div className="font-scripture text-[length:calc(18px_*_var(--reader-scale,1))] leading-[1.55] text-parchment">
                 <HighlightableVerse
                   vkey={highlightKey(readingId, passageRef, item.n)}
                 >
@@ -48,7 +48,7 @@ export function ClusterList({
               </div>
             ) : null}
             {annotation?.note ? (
-              <div className="mt-[5px] border-l border-lapis/40 pl-[11px] font-body text-[12.5px] italic leading-[1.5] text-mist">
+              <div className="mt-[5px] border-l border-lapis/40 pl-[11px] font-body text-[length:calc(12.5px_*_var(--reader-scale,1))] italic leading-[1.5] text-mist">
                 {annotation.note}
               </div>
             ) : null}

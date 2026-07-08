@@ -16,14 +16,14 @@ export function Capstone({ capstone }: { capstone: CapstoneData }) {
       {capstone.paragraphs.map((paragraph) => (
         <div
           key={paragraph}
-          className="mb-3 font-body text-[14.5px] leading-[1.7] text-parchment-2"
+          className="mb-3 font-body text-[length:calc(14.5px_*_var(--reader-scale,1))] leading-[1.7] text-parchment-2"
         >
           {paragraph}
         </div>
       ))}
       {capstone.tensions ? <Tensions tensions={capstone.tensions} /> : null}
       {capstone.sources ? (
-        <div className="mt-3 font-body text-[11px] italic text-mist-2">
+        <div className="mt-3 font-body text-[length:calc(11px_*_var(--reader-scale,1))] italic text-mist-2">
           {capstone.sources}
         </div>
       ) : null}
@@ -32,7 +32,7 @@ export function Capstone({ capstone }: { capstone: CapstoneData }) {
           <div className="mb-2 font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold">
             One last question
           </div>
-          <div className="font-scripture text-[17px] italic leading-[1.5] text-parchment">
+          <div className="font-scripture text-[length:calc(17px_*_var(--reader-scale,1))] italic leading-[1.5] text-parchment">
             {capstone.ask}
           </div>
         </div>

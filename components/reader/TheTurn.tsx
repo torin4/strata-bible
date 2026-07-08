@@ -11,7 +11,7 @@ export function TheTurn({ addr }: { addr: Address }) {
         The turn
         <ModeChip mode={addr.mode} />
       </div>
-      <div className="font-body text-[14.5px] leading-[1.66] text-parchment-2">
+      <div className="font-body text-[length:calc(14.5px_*_var(--reader-scale,1))] leading-[1.66] text-parchment-2">
         {addr.text}
       </div>
     </div>

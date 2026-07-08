@@ -6,13 +6,14 @@ import { BackLink } from "@/components/nav/BackLink";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { useSettings } from "@/components/settings/SettingsProvider";
 import { PLUS_PRICE, purchasableBooks } from "@/lib/pricing";
+import { READER_SCALES, READER_SCALE_LABELS } from "@/lib/settings";
 import { openPortal, startCheckout } from "@/lib/subscription";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function SettingsPage() {
   const { user, loading, configured, signOutUser } = useAuth();
-  const { settings, setCompanionEnabled } = useSettings();
+  const { settings, setCompanionEnabled, setReaderScale } = useSettings();
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
@@ -100,6 +101,54 @@ export default function SettingsPage() {
           {!user ? (
             <p className="mt-3 font-body text-[12px] italic text-mist-2">
               Sign in to change this.
+            </p>
+          ) : null}
+        </section>
+
+        <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
+          <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
+            Reading text size
+          </h2>
+          <p className="mb-4 font-body text-[13px] leading-[1.6] text-mist-2">
+            Sizes the scripture and the layer prose in the reader. The rest of
+            the interface stays as it is. You can also change this while
+            reading, with the A buttons at the top of a passage.
+          </p>
+          <fieldset
+            aria-label="Reading text size"
+            className="m-0 flex min-w-0 gap-2 border-0 p-0"
+          >
+            {READER_SCALES.map((scale, i) => {
+              const active = settings.readerScale === scale;
+              return (
+                <button
+                  key={scale}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => setReaderScale(scale)}
+                  className={`flex-1 rounded-[10px] border px-2 py-2.5 font-ui text-[11px] uppercase tracking-[.1em] transition-colors ${
+                    active
+                      ? "border-gold/60 bg-gold-soft text-gold-bright"
+                      : "border-line text-mist hover:border-gold/40 hover:text-parchment"
+                  }`}
+                >
+                  {READER_SCALE_LABELS[i]}
+                </button>
+              );
+            })}
+          </fieldset>
+          <div className="mt-4 rounded-[10px] border border-line bg-parchment/[0.02] px-4 py-3">
+            <span
+              className="font-scripture italic text-parchment-2"
+              style={{ fontSize: `calc(16px * ${settings.readerScale})` }}
+            >
+              In the beginning God created the heavens and the earth.
+            </span>
+          </div>
+          {!user ? (
+            <p className="mt-3 font-body text-[12px] italic text-mist-2">
+              Signed out, this holds for now but resets when you return. Sign in
+              to keep it.
             </p>
           ) : null}
         </section>

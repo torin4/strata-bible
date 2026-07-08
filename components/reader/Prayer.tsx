@@ -14,7 +14,7 @@ export function Prayer({ prayer }: { prayer: PrayerData }) {
       <div className="mb-2 font-ui text-[9px] font-semibold uppercase tracking-[.22em] text-gold">
         {LABEL[prayer.mode]}
       </div>
-      <div className="font-scripture text-[18px] italic leading-[1.6] text-parchment-2">
+      <div className="font-scripture text-[length:calc(18px_*_var(--reader-scale,1))] italic leading-[1.6] text-parchment-2">
         {prayer.text}
       </div>
     </div>
