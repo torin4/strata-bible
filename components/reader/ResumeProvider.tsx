@@ -18,8 +18,8 @@ import {
   useState,
 } from "react";
 
-// Where "Continue reading" points: the manual bookmark if one is placed, otherwise the most
-// recent reading opened. isBookmark lets a surface show which it is.
+// A resolved resume spot: book, reading, and scene, plus whether it is the manual pin. Used
+// both for the continue target (which follows the reader) and for the bookmark target.
 export interface ContinueTarget {
   bookId: string;
   readingId: string;
@@ -29,8 +29,13 @@ export interface ContinueTarget {
 
 interface ResumeValue {
   // The single spot "Continue reading" resumes, and a ready-made href to it (at its scene).
+  // This follows the reader: it is the last reading opened, not the pinned bookmark.
   continueTarget: ContinueTarget | null;
   continueHref: string | null;
+  // The manual bookmark as its own spot (null when none is placed), and a ready-made href to
+  // it. Surfaces show this beside the continue target when the reader has wandered off the pin.
+  bookmarkTarget: ContinueTarget | null;
+  bookmarkHref: string | null;
   // The saved scene index for a reading, or 0 when there is no spot to resume.
   sceneFor: (readingId: string) => number;
   // The href into a reading at its own auto-saved scene (used by the movement rows). The
@@ -45,6 +50,8 @@ interface ResumeValue {
 const FALLBACK: ResumeValue = {
   continueTarget: null,
   continueHref: null,
+  bookmarkTarget: null,
+  bookmarkHref: null,
   sceneFor: () => 0,
   resumeHref: (bookId, readingId) => `/read/${bookId}/${readingId}`,
   isBookmarked: () => false,
@@ -59,9 +66,9 @@ function hrefFor(bookId: string, readingId: string, scene: number): string {
 }
 
 // Subscribes once to the signed-in reader's bookmark, last spot, and per-reading resume
-// positions, and resolves the single "Continue reading" target (bookmark first). Mounted
-// high so the menu's "Continue", the home and book bookmark cards, the movement rows, and
-// the reader's ribbon all read from one source. Signed out, there is nothing to resume.
+// positions, and resolves the "Continue reading" target (last read first) plus the pinned
+// bookmark alongside it. Mounted high so the menu's "Continue", the home and book cards, the
+// movement rows, and the reader's ribbon all read from one source. Signed out, nothing resumes.
 export function ResumeProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
   const [scenes, setScenes] = useState<Map<string, number>>(new Map());
@@ -88,22 +95,29 @@ export function ResumeProvider({ children }: { children: ReactNode }) {
   const value = useMemo<ResumeValue>(() => {
     const sceneFor = (readingId: string) => scenes.get(readingId) ?? 0;
 
-    // The bookmark wins; the last-read spot is the fallback so casual readers still resume.
-    const continueTarget: ContinueTarget | null = bookmark
+    // The manual pin, kept on its own so surfaces can show it beside the continue target when
+    // the two diverge. It stays put no matter where the reader wanders next.
+    const bookmarkTarget: ContinueTarget | null = bookmark
       ? {
           bookId: bookmark.bookId,
           readingId: bookmark.readingId,
           scene: bookmark.scene,
           isBookmark: true,
         }
-      : lastRead
-        ? {
-            bookId: lastRead.bookId,
-            readingId: lastRead.readingId,
-            scene: sceneFor(lastRead.readingId),
-            isBookmark: false,
-          }
-        : null;
+      : null;
+
+    // Continue follows the reader: the last reading opened wins, so "Continue reading" always
+    // points where they actually are. The bookmark is only the fallback for a reader who has
+    // pinned a spot but not yet opened anything; otherwise it stands on its own, alongside.
+    const lastTarget: ContinueTarget | null = lastRead
+      ? {
+          bookId: lastRead.bookId,
+          readingId: lastRead.readingId,
+          scene: sceneFor(lastRead.readingId),
+          isBookmark: false,
+        }
+      : null;
+    const continueTarget = lastTarget ?? bookmarkTarget;
 
     return {
       continueTarget,
@@ -112,6 +126,14 @@ export function ResumeProvider({ children }: { children: ReactNode }) {
             continueTarget.bookId,
             continueTarget.readingId,
             continueTarget.scene,
+          )
+        : null,
+      bookmarkTarget,
+      bookmarkHref: bookmarkTarget
+        ? hrefFor(
+            bookmarkTarget.bookId,
+            bookmarkTarget.readingId,
+            bookmarkTarget.scene,
           )
         : null,
       sceneFor,

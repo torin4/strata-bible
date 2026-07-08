@@ -7,8 +7,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 // The app's primary navigation: a slide-out drawer opened from a fixed menu button on
-// every page. Home, Journal, Continue reading (resumes the bookmark, or the last spot when
-// none is placed), and Profile & settings, with the account control pinned to the bottom.
+// every page. Home, Journal, Continue reading (resumes where the reader left off), and
+// Profile & settings, with the account control pinned to the bottom.
 export function MenuDrawer() {
   const { user, loading, configured, signOutUser } = useAuth();
   const { continueTarget, continueHref } = useResume();
@@ -63,8 +63,8 @@ export function MenuDrawer() {
     openButtonRef.current?.focus();
   };
 
-  // Continue follows the same target as the home card: the placed bookmark, or the last spot
-  // when none is placed. Title and span come from the content by id.
+  // Continue follows the same target as the home card: where the reader left off, with a
+  // placed bookmark only as the fallback. Title and span come from the content by id.
   const target = continueTarget
     ? findReadingAnywhere(continueTarget.readingId)
     : null;
