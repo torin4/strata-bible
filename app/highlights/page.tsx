@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import { BackLink } from "@/components/nav/BackLink";
 import { PageTransition } from "@/components/nav/PageTransition";
 import {
   type HighlightGroup,
@@ -44,6 +45,9 @@ export default function HighlightsPage() {
             STRATA
           </Link>
         </header>
+        <div className="mb-6">
+          <BackLink href="/" label="Home" />
+        </div>
 
         <h1 className="mb-8 text-center font-display text-[28px] font-medium text-parchment">
           Your highlights
@@ -140,15 +144,6 @@ export default function HighlightsPage() {
             ))}
           </div>
         )}
-
-        <div className="mt-8 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            Back to the reader
-          </Link>
-        </div>
       </PageTransition>
     </main>
   );

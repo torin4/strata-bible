@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/nav/BackLink";
 import { PageTransition } from "@/components/nav/PageTransition";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -24,6 +25,9 @@ export function LegalLayout({
             STRATA
           </Link>
         </header>
+        <div className="mb-6">
+          <BackLink href="/" label="Home" />
+        </div>
         <h1 className="font-display text-[30px] font-medium text-parchment">
           {title}
         </h1>
@@ -32,14 +36,6 @@ export function LegalLayout({
         </p>
         <div className="mt-8 flex flex-col gap-4 font-body text-[15px] leading-[1.7] text-parchment-2">
           {children}
-        </div>
-        <div className="mt-10 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            Back to the reader
-          </Link>
         </div>
       </PageTransition>
     </main>

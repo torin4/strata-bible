@@ -1,6 +1,7 @@
 import { MovementAccordion } from "@/components/book/MovementAccordion";
 import { ReadingRow } from "@/components/book/ReadingRow";
 import { FadeImage } from "@/components/media/FadeImage";
+import { BackLink } from "@/components/nav/BackLink";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { CompositionPanel } from "@/components/overlays/CompositionPanel";
 import { ContinueReading } from "@/components/reader/ContinueReading";
@@ -72,6 +73,9 @@ export default async function BookPage({
             ) : null}
           </>
         )}
+        <div className="mb-5">
+          <BackLink href="/" label="All books" />
+        </div>
         <div className="mb-8 mt-2 text-center font-ui text-[11px] uppercase tracking-[.16em] text-mist-2">
           {readingCount} {readingCount === 1 ? "reading" : "readings"}
           {movementCount > 0
@@ -104,15 +108,6 @@ export default async function BookPage({
             ))}
           </ul>
         ) : null}
-
-        <div className="mt-6 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            All books
-          </Link>
-        </div>
       </PageTransition>
     </main>
   );

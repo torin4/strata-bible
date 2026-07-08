@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/nav/BackLink";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { LastReadTracker } from "@/components/reader/LastReadTracker";
 import { LockedReader } from "@/components/reader/LockedReader";
@@ -53,22 +54,19 @@ export default async function ReadingPage({
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
       <PageTransition className="mx-auto max-w-[40rem]">
-        <header className="mb-5 flex flex-col items-center gap-2">
+        <header className="mb-4 text-center">
           <Link
             href="/"
             className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
           >
             STRATA
           </Link>
-          {book ? (
-            <Link
-              href={`/book/${bookId}`}
-              className="font-ui text-[10px] uppercase tracking-[.18em] text-mist transition-colors hover:text-gold-bright"
-            >
-              &larr; {book.title}
-            </Link>
-          ) : null}
         </header>
+        {book ? (
+          <div className="mb-4">
+            <BackLink href={`/book/${bookId}`} label={book.title} />
+          </div>
+        ) : null}
 
         <div className="rounded-[20px] border border-line bg-deep px-6 py-8 sm:px-9 sm:py-10">
           {gated ? (
@@ -102,15 +100,6 @@ export default async function ReadingPage({
               />
             </>
           )}
-        </div>
-
-        <div className="mt-6 text-center">
-          <Link
-            href={`/book/${bookId}`}
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            {book ? `All of ${book.title}` : "All readings"}
-          </Link>
         </div>
       </PageTransition>
     </main>

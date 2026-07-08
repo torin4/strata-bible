@@ -1,4 +1,5 @@
 import { FindClient } from "@/components/find/FindClient";
+import { BackLink } from "@/components/nav/BackLink";
 import { PUBLISHED_BOOKS } from "@/content";
 import { READING_THEMES, THEMES } from "@/content/themes";
 import { type FindEntry, normalize } from "@/lib/find";
@@ -59,17 +60,11 @@ export default function FindPage() {
             STRATA
           </Link>
         </header>
+        <div className="mb-6">
+          <BackLink href="/" label="Home" />
+        </div>
 
         <FindClient entries={entries} themes={THEMES} />
-
-        <div className="mt-10 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            Back to the reader
-          </Link>
-        </div>
       </div>
     </main>
   );

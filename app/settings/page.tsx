@@ -2,6 +2,7 @@
 
 import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
+import { BackLink } from "@/components/nav/BackLink";
 import { PageTransition } from "@/components/nav/PageTransition";
 import { useSettings } from "@/components/settings/SettingsProvider";
 import { PLUS_PRICE, purchasableBooks } from "@/lib/pricing";
@@ -24,6 +25,9 @@ export default function SettingsPage() {
             STRATA
           </Link>
         </header>
+        <div className="mb-6">
+          <BackLink href="/" label="Home" />
+        </div>
 
         <h1 className="mb-8 text-center font-display text-[28px] font-medium text-parchment">
           Profile &amp; settings
@@ -99,15 +103,6 @@ export default function SettingsPage() {
             </p>
           ) : null}
         </section>
-
-        <div className="mt-6 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            Back to the reader
-          </Link>
-        </div>
       </PageTransition>
     </main>
   );
