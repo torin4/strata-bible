@@ -1,6 +1,7 @@
 import { AuthMenu } from "@/components/auth/AuthMenu";
 import { Footer } from "@/components/nav/Footer";
 import { ContinueReading } from "@/components/reader/ContinueReading";
+import { WhatIsStrata } from "@/components/reader/WhatIsStrata";
 import { BOOKS, COMING_SOON, PUBLISHED_BOOKS } from "@/content";
 import Link from "next/link";
 
@@ -42,6 +43,10 @@ export default function Home() {
               {TAGLINE}
             </p>
           </div>
+
+          {/* What STRATA is, for newcomers: the four layers named, with a path to the full
+              vision. Signed out only, so it never competes with a returning reader's spot. */}
+          <WhatIsStrata className="stagger mt-[42px]" />
 
           {/* The reader's bookmark, when they have one: pick up where they left off, above
               the books. Renders nothing signed out or before any reading. */}
