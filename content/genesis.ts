@@ -711,7 +711,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Two quiet mercies sit inside the judgment. In the face of a death sentence the man names her Eve, “life,” an act of stubborn hope. And God himself clothes them, trading their thin fig leaves for something that lasts, the first act of covering rather than exposing. The cherubim and the flaming sword are the winged guardians that stood at the gates of ancient temples and palaces.'
+          text: 'Cherubim are not the infants of later art. In the ancient Near East they were the great winged guardians, part lion, part eagle, part human, that flanked the gates of temples and the thrones of kings, and the flaming sword sets the same barred threshold at Eden’s gate. The name the man gives the woman, Chavah, puns on the Hebrew for living. And the garments of skin trade fig leaves for the era’s ordinary durable clothing, made at the cost of an animal.'
         },
         meaning: 'Exile, but not abandonment. They leave the garden clothed, named, and alive. The story that opened with “it is good” ends “east of Eden,” yet God walks them to the door rather than ending them. Even the locked gate is partly mercy, so they don’t live forever inside the break.',
         lenses: {
@@ -1582,7 +1582,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Verse 6 is one of the load-bearing lines of the whole Bible: human life must be protected because every human bears the image of God. It is the same “image” language from Genesis 1, now turned into the ground of justice. In Hebrew the line is a tight mirror, blood and human folding back on human and blood, the punishment shaped like the crime. It is the first statement of the sanctity of human life, and it roots that worth not in law or usefulness but in resemblance to God.',
+          text: 'The image language here is the Priestly writers’ signature, the same word they used in Genesis 1, now carried into law. The Mesopotamian codes the exiles knew, Hammurabi and its kin, priced a life by rank: a noble’s death cost more than a commoner’s. Set against that, this line makes one measure for everyone. In Hebrew it is built as a tight mirror, blood and human folding back on human and blood, the penalty shaped to match the crime.',
           src: 'Middleton'
         },
         meaning: 'Why does murder matter? The text does not say because it breaks a rule. It says because the one you killed looked like God. Every human carries that resemblance, the powerful and the powerless alike. The protection of a life is grounded in dignity, not in what the life can produce.',
@@ -3306,7 +3306,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The famous coat marks Joseph as the favored heir, a provocation in a house already split down the middle, Jacob loving Rachel’s son the way his own father once loved Esau, the family wound repeating to a third generation. The dreams of sheaves and stars bowing down only pour oil on it. And the brothers cannot speak a kind word to him, a small, devastating line about a family where love has curdled into something that cannot even be civil.',
+          text: 'The garment is a ketonet passim, and no one is sure exactly what the phrase means, a coat of many colors in the old Greek, more likely a long ornamented robe with sleeves. Either way it is the dress of someone exempt from field labor, a son marked as heir over his older brothers. Shepherding families like this one lived as semi-nomads on the edges of Canaan, moving their flocks between grazing grounds, which is why the brothers are days away at Dothan when the story turns.',
           src: 'Alter · Sarna · Westermann'
         },
         meaning: 'Favoritism is this family’s inherited disease, and Jacob, of all people, should know what it does. He was the favored son who tore his own family in half. And here he is dressing one boy in a coat that says, out loud, that he matters more than his brothers. The text does not make Joseph innocent either: he is gifted and insufferable, dreaming aloud of the others bowing to him. What it shows is a wound handed down a third time, and a household that has forgotten how to be kind.',
@@ -3335,7 +3335,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'They strip him of the coat first, the symbol of the favor they hate, then pit him, then sell him; Judah is the one who turns fratricide into a profit. And then comes the cruelest echo in Genesis: the brothers kill a young goat, dip the coat in its blood, and use a goat and a garment to deceive their father, the exact two props Jacob once used to deceive his. The deceiver is deceived by his own children, in his own currency.',
+          text: 'Twenty pieces of silver was a real price, about the going rate for a young slave in this era’s records. The traders are a caravan on the great trade road that ran from Gilead down to Egypt, carrying gum, balm, and myrrh, the costly resins of the spice trade, with a sold boy now among the cargo. Egypt’s appetite for foreign slaves is well attested, and a Semite could end up in an Egyptian household exactly as Joseph does.',
           src: 'Alter · Sarna'
         },
         meaning: 'The family’s signature move comes all the way home. Jacob fooled his blind father with a goat and a borrowed garment; now his sons fool him with a goat and Joseph’s garment, and it costs him the son he loved most. The lie he built his life on is handed back to him whole. And over the entire catastrophe, for the first time in the cycle, heaven is silent. No dream, no voice, no angel, no rescue. Joseph goes down into Egypt and God does not say a word, for years.',
@@ -3508,7 +3508,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The boy’s old dream of the sheaves bowing comes literally true, and Joseph alone in the room knows it. He tests the brothers harshly, partly to learn whether they have changed, partly because the wound is still real and the power is suddenly all his. And not knowing he understands their language, he overhears them confess, after twenty years, the guilt they have carried: we saw his anguish and would not listen. He turns away and weeps where they cannot see.',
+          text: 'Egypt was the region’s granary. Its harvest leaned on the Nile’s flood rather than on rain, so when drought starved Canaan, Egypt could still have grain, and hungry peoples came down to buy it. Egyptian sources record exactly this, among them a tomb painting at Beni Hasan of a band of Asiatics arriving with their goods. The famine office Joseph runs, storing through the good years against the lean, fits what is known of how the Egyptian state managed its surplus.',
           src: 'Alter · Sarna'
         },
         meaning: 'The brothers stand before the one man who can feed them or starve them, and they do not know he is the boy they threw in a pit. The test Joseph runs is not only cruelty; it is the real question of whether they are the same men. And he hears them, at last, say out loud the thing they buried, the anguish they would not listen to, and he has to leave the room to weep. The reckoning this family needs is not revenge. It is whether the men who sold one brother would now protect another.',
@@ -3528,7 +3528,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the climax the whole novella has been built toward. Joseph has framed Benjamin, the other son of Rachel, to see what the brothers will do: will they abandon him the way they abandoned Joseph? And Judah, the very brother who first proposed selling Joseph for profit, steps forward and offers to become a slave himself rather than let his father lose another son. The man is not who he was.',
+          text: 'The planted cup is a divining cup. Joseph’s steward says his master reads the future by it, and divination from a cup, watching how oil or fragments move in the liquid, was a recognized art in Egypt and Mesopotamia. To the brothers it marks Joseph as fully an Egyptian official, a man whose sight they cannot get around.',
           src: 'Alter · von Rad'
         },
         meaning: 'The hinge of the whole story belongs to Judah, not Joseph. The brother who once said let us sell him now says let me be the slave in his place. He cannot bear to watch his father grieve a second lost son, so he offers up his own freedom for the boy’s. The deceit that has run through four generations of this family finally turns into its opposite: a man laying himself down for his brother. That is the change Joseph has been testing for, and the moment it appears in front of him, the disguise breaks.',
@@ -3566,7 +3566,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the recognition scene the whole novella has been climbing toward. Joseph does not minimize the crime; he names it twice, the one you sold into Egypt. But he sets it inside a larger frame, God sent me ahead to preserve life. This is the theological heart of the Joseph story, and of the book: a providence that does not cancel human evil but works through it toward life, holding both at once.',
+          text: 'The Joseph story stands apart from the rest of Genesis, a single sustained novella rather than a chain of episodes, and many read it as a later telling shaped by Israel’s wisdom tradition. Its hero is the Hebrew who rises in a foreign court and keeps faith there, the same shape later given to Daniel and Esther, stories told for a people learning to live under empires not their own. The providence it turns on, harm bent toward survival, is that tradition’s signature.',
           src: 'von Rad · Westermann · Alter'
         },
         meaning: 'The first thing Joseph says is I am Joseph, and the second is the one you sold. He does not pretend it did not happen; he says the betrayal to their faces. And then he does the thing that can take a lifetime to learn: he refuses to let the betrayal be the whole truth. It was not you who sent me here, but God. He does not say what they did was good, it was evil. He says God was at work inside it anyway, bending even their crime toward the saving of lives. That is not denial and it is not excuse. It is a man who has found a frame large enough to hold the worst thing that ever happened to him without being destroyed by it.',
@@ -3649,7 +3649,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Even now, the brothers cannot trust the grace they have been shown, and they invent a deathbed wish from their father to shield themselves. Joseph weeps that they still fear him, and gives the book its last and largest word on providence: you meant it for evil, God meant it for good. He refuses the role of judge, am I in the place of God, and chooses, one more time, to feed the very men who tried to destroy him. Then he dies, and Genesis ends not in the promised land but in a coffin in Egypt, with a promise that God will one day carry the bones home.',
+          text: 'Genesis ends on Egyptian soil and in an Egyptian custom: Joseph is embalmed and laid in a coffin, the mummification the Egyptians practiced and Israel did not. The book closes not in the promised land but in that coffin, with a sworn promise that the bones will be carried up when God brings the people out. Exodus will open on the far side of four hundred years, and the bones are still waiting.',
           src: 'von Rad · Westermann · Alter'
         },
         meaning: 'After everything, the brothers still cannot believe they are forgiven, and they reach one last time for a lie to protect themselves. And Joseph weeps, because they still do not trust the grace. Then he says it as plainly as the book ever says anything: you meant it for evil, but God meant it for good. Not the evil was secretly good, it was evil, you meant it. But God meant something through it that you never did, and the proof is the bread in your children’s mouths. He will not take the place of God and settle the score. He forgives the unforgivable and feeds them. And then Genesis closes the way exile itself feels, far from home, in a coffin, holding a promise that has not yet come true.',
