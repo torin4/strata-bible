@@ -11,10 +11,10 @@ export function Symbols({ symbols }: { symbols: SymbolGloss[] }) {
       {symbols.map((symbol, idx) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: static authored list, no reordering
         <div key={idx} className="mb-[11px] last:mb-0">
-          <div className="font-scripture text-[length:calc(17px_*_var(--reader-scale,1))] leading-[1.2] text-gold-bright">
+          <div className="font-scripture text-[17px] leading-[1.2] text-gold-bright">
             {symbol.image}
           </div>
-          <div className="mt-[2px] font-body text-[length:calc(13.5px_*_var(--reader-scale,1))] leading-[1.55] text-parchment-2">
+          <div className="mt-[2px] font-body text-[13.5px] leading-[1.55] text-parchment-2">
             {symbol.meant}
             {symbol.note ? (
               <span className="italic text-mist-2"> {symbol.note}</span>

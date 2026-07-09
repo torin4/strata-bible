@@ -20,7 +20,7 @@ export function Lenses({ lenses }: { lenses: LensesData }) {
               +
             </span>
           </summary>
-          <div className="px-[14px] pb-[14px] font-body text-[length:calc(13.5px_*_var(--reader-scale,1))] leading-[1.62] text-parchment-2">
+          <div className="px-[14px] pb-[14px] font-body text-[13.5px] leading-[1.62] text-parchment-2">
             <Rich text={lenses.theo} />
           </div>
         </details>
@@ -38,9 +38,9 @@ export function Lenses({ lenses }: { lenses: LensesData }) {
               +
             </span>
           </summary>
-          <div className="px-[14px] pb-[14px] font-body text-[length:calc(13.5px_*_var(--reader-scale,1))] leading-[1.62] text-parchment-2">
+          <div className="px-[14px] pb-[14px] font-body text-[13.5px] leading-[1.62] text-parchment-2">
             <Rich text={lenses.arch} />
-            <span className="mt-2 block font-body text-[length:calc(10.5px_*_var(--reader-scale,1))] italic text-mist-2">
+            <span className="mt-2 block font-body text-[10.5px] italic text-mist-2">
               One way to hear it, not the final word.
             </span>
           </div>

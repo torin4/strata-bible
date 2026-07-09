@@ -107,11 +107,11 @@ export default function SettingsPage() {
 
         <section className="mt-5 rounded-[14px] border border-line bg-deep px-6 py-6">
           <h2 className="mb-3 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold">
-            Reading text size
+            Text size
           </h2>
           <p className="mb-4 font-body text-[13px] leading-[1.6] text-mist-2">
-            Sizes the scripture and the layer prose in the reader. The rest of
-            the interface stays as it is. You can also change this while
+            Scales the whole app, the way your browser's zoom does, so text,
+            spacing, and images grow together. You can also change it while
             reading, with the A buttons at the top of a passage.
           </p>
           <fieldset
@@ -137,14 +137,6 @@ export default function SettingsPage() {
               );
             })}
           </fieldset>
-          <div className="mt-4 rounded-[10px] border border-line bg-parchment/[0.02] px-4 py-3">
-            <span
-              className="font-scripture italic text-parchment-2"
-              style={{ fontSize: `calc(16px * ${settings.readerScale})` }}
-            >
-              In the beginning God created the heavens and the earth.
-            </span>
-          </div>
           {!user ? (
             <p className="mt-3 font-body text-[12px] italic text-mist-2">
               Signed out, this holds for now but resets when you return. Sign in

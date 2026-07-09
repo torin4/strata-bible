@@ -36,7 +36,7 @@ export function Scripture({
                 {verse.n}
               </div>
               <div
-                className={`font-scripture text-[length:calc(19px_*_var(--reader-scale,1))] leading-[1.62] text-parchment ${
+                className={`font-scripture text-[19px] leading-[1.62] text-parchment ${
                   isTurn
                     ? "-ml-[11px] pl-[11px] shadow-[inset_3px_0_0_var(--gold-soft)]"
                     : ""
@@ -64,7 +64,7 @@ export function Scripture({
   }
 
   return (
-    <p className="my-[6px] font-scripture text-[length:calc(18.5px_*_var(--reader-scale,1))] leading-[1.74] text-parchment">
+    <p className="my-[6px] font-scripture text-[18.5px] leading-[1.74] text-parchment">
       {verses.map((verse, i) => (
         <Fragment key={verse.n}>
           {i > 0 ? " " : null}

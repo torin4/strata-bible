@@ -7,9 +7,9 @@ import {
   setDoc,
 } from "firebase/firestore";
 
-// The reading-text-size steps, smallest to largest, as multipliers on the authored sizes.
-// Both the in-reader stepper and the settings control choose from this one set, so they
-// always agree. 1 is the authored size (Medium) and the default.
+// The text-size steps, smallest to largest, as a zoom factor on the whole interface. Both
+// the in-reader stepper and the settings control choose from this one set, so they always
+// agree. 1 is the normal size (Medium) and the default.
 export const READER_SCALES = [0.9, 1, 1.2, 1.4] as const;
 export const READER_SCALE_LABELS = [
   "Small",
@@ -20,8 +20,8 @@ export const READER_SCALE_LABELS = [
 export const DEFAULT_READER_SCALE = 1;
 
 // Reader preferences, persisted per user in Firestore. `companionEnabled` gates the AI
-// companion (the reader must stay fully usable with it off); `readerScale` sizes the
-// reading text (scripture and the layer prose), leaving the UI chrome fixed.
+// companion (the reader must stay fully usable with it off); `readerScale` scales the whole
+// interface (text, spacing, and images together), the way browser zoom does.
 export interface Settings {
   companionEnabled: boolean;
   readerScale: number;

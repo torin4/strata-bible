@@ -5,6 +5,7 @@ import { MenuDrawer } from "@/components/nav/MenuDrawer";
 import { ServiceWorker } from "@/components/pwa/ServiceWorker";
 import { HighlightProvider } from "@/components/reader/HighlightProvider";
 import { ResumeProvider } from "@/components/reader/ResumeProvider";
+import { AppTextScale } from "@/components/settings/AppTextScale";
 import { SettingsProvider } from "@/components/settings/SettingsProvider";
 import { COMPANY } from "@/lib/company";
 import { THEME_COLOR } from "@/lib/theme";
@@ -73,10 +74,12 @@ export default function RootLayout({
             <SettingsProvider>
               <HighlightProvider>
                 <ResumeProvider>
-                  <MenuDrawer />
-                  <PlusWelcome />
-                  <ServiceWorker />
-                  {children}
+                  <AppTextScale>
+                    <MenuDrawer />
+                    <PlusWelcome />
+                    <ServiceWorker />
+                    {children}
+                  </AppTextScale>
                 </ResumeProvider>
               </HighlightProvider>
             </SettingsProvider>

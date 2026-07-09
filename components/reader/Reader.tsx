@@ -4,18 +4,11 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { Paywall } from "@/components/billing/Paywall";
 import { BookmarkButton } from "@/components/reader/BookmarkButton";
-import { useSettings } from "@/components/settings/SettingsProvider";
 import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import { setScene } from "@/lib/progress";
 import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
 import Link from "next/link";
-import {
-  type CSSProperties,
-  type ReactNode,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { Capstone } from "./Capstone";
 import { Passage } from "./Passage";
 import { ReaderSizeStepper } from "./ReaderSizeStepper";
@@ -67,7 +60,6 @@ export function Reader({
   });
   const { isPlus, owns } = useSubscription();
   const { user } = useAuth();
-  const { settings } = useSettings();
   // Read the user at write time without making auth a trigger: only a real scene step should
   // persist, never auth resolving under a reader sitting still.
   const userRef = useRef(user);
@@ -144,12 +136,7 @@ export function Reader({
         };
 
   return (
-    <article
-      className="relative"
-      // Sizes the reading text (scripture and layer prose) via calc() on the authored px.
-      // Chrome (labels, chips, nav) uses fixed px and ignores it. See ReaderSizeStepper.
-      style={{ "--reader-scale": settings.readerScale } as CSSProperties}
-    >
+    <article className="relative">
       {/* Visually hidden live region: announces scene changes to screen readers. */}
       <span aria-live="polite" aria-atomic="true" className="sr-only">
         {onWrapup
@@ -226,13 +213,13 @@ export function Reader({
             />
 
             {!isLastPassage && reading.closeMid ? (
-              <div className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[length:calc(13px_*_var(--reader-scale,1))] italic leading-[1.6] text-mist-2">
+              <div className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
                 {reading.closeMid}
               </div>
             ) : null}
 
             {isLastPassage && reading.closeEnd ? (
-              <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[length:calc(14px_*_var(--reader-scale,1))] italic leading-[1.66] text-mist">
+              <div className="mt-[30px] border-t border-line pt-[22px] font-body text-[14px] italic leading-[1.66] text-mist">
                 {reading.closeEnd}
               </div>
             ) : null}
