@@ -114,6 +114,12 @@ export default function AboutPage() {
               it at once. What a passage meant then. What it carries always. How
               it turns to address you now. And what it asks of you in return.
             </p>
+            <p className="mt-4 font-body text-[15.5px] leading-[1.85] text-mist">
+              Some readings carry only the text and its history for now. There,
+              the companion, STRATA's guided reader, can draw out the rest for
+              you, and everything it drafts is marked as drafted, one reading
+              and never the final word.
+            </p>
           </section>
 
           <section className="border-l-2 border-gold/30 pl-5">

@@ -2,8 +2,8 @@
 
 import { useAuth } from "@/components/auth/AuthProvider";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { type FormEvent, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { type FormEvent, Suspense, useState } from "react";
 
 function friendlyError(err: unknown): string {
   const code =
@@ -34,7 +34,17 @@ function friendlyError(err: unknown): string {
   }
 }
 
+// useSearchParams requires a Suspense boundary in the App Router, so the page is a thin
+// wrapper and the form itself reads the params.
 export default function LoginPage() {
+  return (
+    <Suspense fallback={null}>
+      <LoginForm />
+    </Suspense>
+  );
+}
+
+function LoginForm() {
   const {
     user,
     configured,
@@ -43,6 +53,13 @@ export default function LoginPage() {
     signUpWithEmail,
   } = useAuth();
   const router = useRouter();
+  const params = useSearchParams();
+  // Where to return after signing in: the page that sent the reader here (?next=), so a
+  // sign-in from the paywall or mid-reading never dumps them back on home. Same-origin
+  // paths only; anything else falls back to home.
+  const rawNext = params.get("next") ?? "/";
+  const next =
+    rawNext.startsWith("/") && !rawNext.startsWith("//") ? rawNext : "/";
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -54,7 +71,7 @@ export default function LoginPage() {
     setBusy(true);
     try {
       await action();
-      router.push("/");
+      router.push(next);
     } catch (err) {
       setError(friendlyError(err));
     } finally {
@@ -94,7 +111,7 @@ export default function LoginPage() {
                 .
               </p>
               <Link
-                href="/"
+                href={next}
                 className="mt-5 inline-block rounded-[10px] bg-gold px-5 py-2.5 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
               >
                 Continue
@@ -111,7 +128,8 @@ export default function LoginPage() {
                 {mode === "signin" ? "Sign in" : "Create account"}
               </h1>
               <p className="mb-6 text-center font-body text-[12.5px] italic text-mist-2">
-                to keep a journal. The reader stays open to everyone.
+                to keep your place, your highlights, and your journal. Genesis 1
+                to 11 stays free to read.
               </p>
 
               <button

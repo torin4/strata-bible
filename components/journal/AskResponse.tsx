@@ -2,6 +2,7 @@
 
 import { useAuth } from "@/components/auth/AuthProvider";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { JournalComposer } from "./JournalComposer";
 
@@ -22,6 +23,7 @@ export function AskResponse({
   passageRef: string;
 }) {
   const { user, configured, loading } = useAuth();
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [saved, setSaved] = useState(false);
 
@@ -30,7 +32,7 @@ export function AskResponse({
   if (!user) {
     return (
       <Link
-        href="/login"
+        href={`/login?next=${encodeURIComponent(pathname)}`}
         className="mt-3 inline-block font-ui text-[10px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
       >
         Sign in to respond

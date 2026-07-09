@@ -68,7 +68,7 @@ export default function HighlightsPage() {
               and add a note. The reader stays open to everyone.
             </p>
             <Link
-              href="/login"
+              href="/login?next=/highlights"
               className="mt-5 inline-block rounded-[10px] bg-gold px-5 py-2.5 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
             >
               Sign in

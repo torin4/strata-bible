@@ -1,3 +1,4 @@
+import { BeginReading } from "@/components/book/BeginReading";
 import { MovementAccordion } from "@/components/book/MovementAccordion";
 import { ReadingRow } from "@/components/book/ReadingRow";
 import { FadeImage } from "@/components/media/FadeImage";
@@ -6,7 +7,11 @@ import { PageTransition } from "@/components/nav/PageTransition";
 import { CompositionPanel } from "@/components/overlays/CompositionPanel";
 import { ContinueReading } from "@/components/reader/ContinueReading";
 import { BOOKS } from "@/content";
-import { getBook, readingsOutsideMovements } from "@/lib/content";
+import {
+  getBook,
+  readingsInMovement,
+  readingsOutsideMovements,
+} from "@/lib/content";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -26,6 +31,16 @@ export default async function BookPage({
   const orphans = readingsOutsideMovements(bookId);
   const readingCount = book.readings.length;
   const movementCount = book.movements.length;
+
+  // The book's very first reading, for the new visitor's "Begin here" card: the first
+  // reading of the first movement, or the first reading outright when there are none.
+  const firstMovement = [...book.movements].sort(
+    (a, b) => a.index - b.index,
+  )[0];
+  const firstReading =
+    (firstMovement
+      ? readingsInMovement(bookId, firstMovement)[0]
+      : undefined) ?? book.readings[0];
 
   return (
     <main className="min-h-screen bg-shell pb-8 sm:pb-12">
@@ -79,13 +94,25 @@ export default async function BookPage({
         <div className="mb-8 mt-2 text-center font-ui text-[11px] uppercase tracking-[.16em] text-mist-2">
           {readingCount} {readingCount === 1 ? "reading" : "readings"}
           {movementCount > 0
-            ? ` · ${movementCount} ${movementCount === 1 ? "movement" : "movements"}`
+            ? ` · ${movementCount} ${movementCount === 1 ? "movement" : "movements, the acts of the book"}`
             : ""}
         </div>
 
         {/* The reader's bookmark within this book, when they have one: a quick way back to
             where they are. Renders nothing when their last spot is elsewhere. */}
         <ContinueReading bookId={book.id} className="mb-6" />
+
+        {/* The new visitor's start: one obvious way into the first reading. Renders only
+            when there is nothing to resume, so it never competes with the card above. */}
+        {firstReading ? (
+          <BeginReading
+            bookId={book.id}
+            readingId={firstReading.id}
+            title={firstReading.title}
+            span={firstReading.span}
+            className="mb-6"
+          />
+        ) : null}
 
         {book.composition ? (
           <div className="mb-6">

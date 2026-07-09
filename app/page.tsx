@@ -64,8 +64,11 @@ export default function Home() {
               <div className="font-display text-[30px] font-medium leading-none text-gold-bright">
                 {genesis.title}
               </div>
-              <div className="mb-4 mt-3 font-scripture text-[18px] italic leading-[1.4] text-parchment-2">
+              <div className="mb-2 mt-3 font-scripture text-[18px] italic leading-[1.4] text-parchment-2">
                 {GENESIS_BLURB}
+              </div>
+              <div className="mb-4 font-body text-[12px] italic leading-[1.5] text-mist-2">
+                Genesis 1 to 11 is free to read, no account needed.
               </div>
               <div className="font-ui text-[12px] tracking-[.06em] text-lapis group-hover:text-parchment">
                 Begin reading ›

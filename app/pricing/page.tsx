@@ -56,7 +56,7 @@ export default function PricingPage() {
 
   const buy = (priceId: string) => {
     if (!user) {
-      router.push("/login");
+      router.push("/login?next=/pricing");
       return;
     }
     setBusy(priceId);
@@ -69,7 +69,7 @@ export default function PricingPage() {
 
   const buyTheBook = (bookId: string) => {
     if (!user) {
-      router.push("/login");
+      router.push("/login?next=/pricing");
       return;
     }
     setBusy(`book:${bookId}`);
@@ -101,7 +101,7 @@ export default function PricingPage() {
           </h1>
           <p className="mx-auto mt-3 max-w-[34rem] font-body text-[15px] leading-[1.7] text-mist">
             {billingEnabled
-              ? "The primeval history, Genesis 1 to 11, is free to everyone. STRATA Plus opens the rest of the book, every book to come, and the companion that draws out the meaning, the turn, and a question for each reading."
+              ? "The primeval history, Genesis 1 to 11, is free to everyone, and signing in includes one free draw of the companion to try. STRATA Plus opens the rest of the book, every book to come, and the companion that draws out the meaning, the turn, and a question for each reading."
               : "Right now the whole of Genesis and the companion are open to every reader, free, while the book finds its first readers. Subscriptions will come later, and the primeval history will always stay free."}
           </p>
         </div>

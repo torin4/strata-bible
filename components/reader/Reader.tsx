@@ -95,6 +95,7 @@ export function Reader({
         bookId={reading.bookId}
         bookTitle={bookTitle}
         context={reading.title}
+        readingId={reading.id}
       />
     );
   }

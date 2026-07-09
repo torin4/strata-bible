@@ -4,6 +4,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { useResume } from "@/components/reader/ResumeProvider";
 import { findReadingAnywhere } from "@/lib/content";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 // The app's primary navigation: a slide-out drawer opened from a fixed menu button on
@@ -12,6 +13,9 @@ import { useEffect, useRef, useState } from "react";
 export function MenuDrawer() {
   const { user, loading, configured, signOutUser } = useAuth();
   const { continueTarget, continueHref } = useResume();
+  const pathname = usePathname();
+  // Sign-in returns the reader to the page they opened the drawer from (not to /login).
+  const signInHref = `/login?next=${encodeURIComponent(pathname === "/login" ? "/" : pathname)}`;
   const [open, setOpen] = useState(false);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -228,7 +232,7 @@ export function MenuDrawer() {
             </div>
           ) : (
             <Link
-              href="/login"
+              href={signInHref}
               onClick={close}
               className="font-ui text-[10px] uppercase tracking-[.16em] text-gold transition-colors hover:text-gold-bright"
             >

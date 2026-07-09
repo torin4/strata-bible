@@ -1,3 +1,4 @@
+import { FreeBadge } from "@/components/billing/FreeBadge";
 import { LockBadge } from "@/components/billing/LockBadge";
 import { Doorway } from "@/components/overlays/Doorway";
 import { SituationPanel } from "@/components/overlays/SituationPanel";
@@ -8,9 +9,10 @@ import { MovementProgress } from "./MovementProgress";
 import { ReadingRow } from "./ReadingRow";
 
 // The book's movements as an accordion. Each movement opens to its grounding situation,
-// the readings that fall inside it, and the doorway forward to the next movement. All
-// movements start collapsed; the reader opens the one they want. A doorway anchors to
-// the next movement when it is present on the page.
+// the readings that fall inside it, and the doorway forward to the next movement. The
+// first movement starts open so a new visitor sees actual readings without guessing at
+// the accordion; the rest start collapsed. A doorway anchors to the next movement when
+// it is present on the page.
 export function MovementAccordion({
   bookId,
   movements,
@@ -37,6 +39,7 @@ export function MovementAccordion({
           <details
             key={movement.id}
             id={`movement-${movement.id}`}
+            open={movement.id === sorted[0]?.id}
             className="group/movement scroll-mt-4 overflow-hidden rounded-[14px] border border-line bg-deep"
           >
             <summary className="cursor-pointer px-5 py-4">
@@ -54,6 +57,7 @@ export function MovementAccordion({
                   </span>
                 </span>
                 <span className="ml-auto flex items-center gap-2 pt-1">
+                  <FreeBadge bookId={bookId} movementId={movement.id} />
                   <LockBadge bookId={bookId} movementId={movement.id} />
                   <span className="text-[15px] text-mist-2 transition-transform group-open/movement:rotate-45 group-open/movement:text-gold">
                     +

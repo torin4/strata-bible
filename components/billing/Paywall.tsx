@@ -1,29 +1,38 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import { READING_THEMES } from "@/content/themes";
 import { PLUS_PRICE, bookPrice } from "@/lib/pricing";
 import { buyBook, startCheckout } from "@/lib/subscription";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 // The soft content wall, shown in place of a locked reading. Two ways through: own this
-// book outright, or unlock everything (and the companion) with STRATA Plus. Signed out, it
-// sends them to sign in first, since checkout is tied to their account.
+// book outright, or unlock everything (and the companion) with STRATA Plus. Signed out it
+// shows the same two options with their prices, and the sign-in step carries the reader
+// back to this reading (?next=), since checkout is tied to their account.
 export function Paywall({
   bookId,
   bookTitle,
   context,
+  readingId,
 }: {
   bookId?: string;
   bookTitle?: string;
   context?: string;
+  readingId?: string;
 }) {
   const { user } = useAuth();
+  const pathname = usePathname();
   const [busy, setBusy] = useState<null | "book" | "plus">(null);
   const [error, setError] = useState<string | null>(null);
 
   const buyBookId = bookId && bookPrice(bookId) ? bookId : null;
   const title = bookTitle ?? "this book";
+  const loginHref = `/login?next=${encodeURIComponent(pathname)}`;
+  // The reading's own "speaks to" line, when authored: a taste of what is behind the wall.
+  const speaksTo = readingId ? READING_THEMES[readingId]?.speaksTo : undefined;
 
   const run = (kind: "book" | "plus", fn: () => Promise<void>) => {
     setBusy(kind);
@@ -42,6 +51,11 @@ export function Paywall({
       <h2 className="font-display text-[24px] font-medium leading-[1.2] text-parchment">
         Continue the reading{context ? `: ${context}` : ""}
       </h2>
+      {speaksTo ? (
+        <p className="mx-auto mt-2 max-w-[28rem] font-scripture text-[16px] italic leading-[1.5] text-parchment-2">
+          {speaksTo}
+        </p>
+      ) : null}
       <p className="mx-auto mt-3 max-w-[30rem] font-body text-[15px] leading-[1.7] text-mist">
         The primeval history, Genesis 1 to 11, is open to everyone. Own {title}{" "}
         on its own to keep, or unlock every book and the companion with STRATA
@@ -49,12 +63,28 @@ export function Paywall({
       </p>
 
       {!user ? (
-        <Link
-          href="/login"
-          className="mt-6 inline-block rounded-[10px] bg-gold px-6 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
-        >
-          Sign in to continue
-        </Link>
+        <div className="mx-auto mt-6 flex max-w-[22rem] flex-col gap-3">
+          {buyBookId ? (
+            <Link
+              href={loginHref}
+              className="rounded-[10px] bg-gold px-5 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
+            >
+              Own {title}, {bookPrice(buyBookId)}
+            </Link>
+          ) : null}
+          <Link
+            href={loginHref}
+            className="rounded-[10px] border border-gold/45 px-5 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft"
+          >
+            STRATA Plus, {PLUS_PRICE.annual} a year
+          </Link>
+          <p className="font-body text-[12px] italic leading-[1.5] text-mist-2">
+            {buyBookId
+              ? "Own the book forever, or get every book, current and future, plus the companion."
+              : "Every book, current and future, and the companion."}{" "}
+            Sign in first, and you come back to this reading.
+          </p>
+        </div>
       ) : (
         <div className="mx-auto mt-6 flex max-w-[22rem] flex-col gap-3">
           {buyBookId ? (

@@ -19,6 +19,7 @@ import {
 import { startCheckout } from "@/lib/subscription";
 import type { Passage } from "@/lib/types";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type Phase = "checking" | "idle" | "drafting" | "done" | "error";
@@ -43,6 +44,7 @@ export function CompanionMiddle({
   const { user, configured, loading } = useAuth();
   const { settings } = useSettings();
   const { isPlus } = useSubscription();
+  const pathname = usePathname();
   const [phase, setPhase] = useState<Phase>("checking");
   const [layer, setLayer] = useState<CompanionLayer | null>(null);
   const [freeDraws, setFreeDraws] = useState(0);
@@ -81,11 +83,15 @@ export function CompanionMiddle({
     return (
       <div className="mt-5 border-t border-line pt-4">
         <p className="font-body text-[13px] italic leading-[1.6] text-mist-2">
-          The deeper layers for this reading are not authored yet.{" "}
-          <Link href="/login" className="text-gold-bright hover:underline">
+          This reading carries the text and its history.{" "}
+          <Link
+            href={`/login?next=${encodeURIComponent(pathname)}`}
+            className="text-gold-bright hover:underline"
+          >
             Sign in
           </Link>{" "}
-          to let the companion draw them out.
+          and the companion, STRATA's guided reader, can draw out the meaning,
+          the turn, and a question for you.
         </p>
       </div>
     );

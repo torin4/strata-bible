@@ -92,6 +92,7 @@ export function LockedReader({
         bookId={meta.bookId}
         bookTitle={bookTitle}
         context={meta.title}
+        readingId={meta.readingId}
       />
     );
   }
