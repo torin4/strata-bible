@@ -7,10 +7,10 @@ import { READER_SCALES } from "@/lib/settings";
 // through the shared READER_SCALES set. Drives the same saved preference as the settings
 // page, so the two never disagree. Scales the whole interface (see AppTextScale).
 export function ReaderSizeStepper() {
-  const { settings, setReaderScale } = useSettings();
+  const { readerScale, setReaderScale } = useSettings();
 
   const current = READER_SCALES.indexOf(
-    settings.readerScale as (typeof READER_SCALES)[number],
+    readerScale as (typeof READER_SCALES)[number],
   );
   const index = current < 0 ? READER_SCALES.indexOf(1) : current;
   const atMin = index <= 0;

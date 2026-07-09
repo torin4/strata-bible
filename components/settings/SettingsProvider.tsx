@@ -3,6 +3,7 @@
 import { useAuth } from "@/components/auth/AuthProvider";
 import {
   DEFAULT_SETTINGS,
+  DESKTOP_MIN_WIDTH,
   type Settings,
   saveSettings,
   subscribeSettings,
@@ -17,9 +18,15 @@ import {
   useState,
 } from "react";
 
+type FormFactor = "mobile" | "desktop";
+
 interface SettingsContextValue {
   settings: Settings;
   loading: boolean;
+  // Which device class this viewport is, and the text size saved for it. The stepper and
+  // the settings control read and write this one active value.
+  formFactor: FormFactor;
+  readerScale: number;
   setCompanionEnabled: (enabled: boolean) => void;
   setReaderScale: (scale: number) => void;
 }
@@ -32,6 +39,18 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
   const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
   const [loading, setLoading] = useState(true);
+  // Start "desktop" so the server and first client render agree (the saved scales default to
+  // 1, a no-op either way); the effect corrects it to the real viewport on mount and keeps it
+  // in step as the window crosses the breakpoint or a tablet rotates.
+  const [formFactor, setFormFactor] = useState<FormFactor>("desktop");
+
+  useEffect(() => {
+    const mq = window.matchMedia(`(min-width: ${DESKTOP_MIN_WIDTH}px)`);
+    const sync = () => setFormFactor(mq.matches ? "desktop" : "mobile");
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
 
   useEffect(() => {
     if (!user) {
@@ -57,22 +76,45 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     [user],
   );
 
-  // Same optimistic pattern as the companion toggle. Signed in, the choice persists to
-  // Firestore and syncs across devices; signed out, it holds for the session (per the
-  // Firestore-only storage rule, nothing is written to the device).
+  // Same optimistic pattern as the companion toggle, but writes only the field for the
+  // current device class, so setting a phone's size never disturbs a computer's. Signed in,
+  // the choice persists to Firestore and syncs to like devices; signed out, it holds for the
+  // session (per the Firestore-only storage rule, nothing is written to the device).
   const setReaderScale = useCallback(
     (scale: number) => {
-      setSettings((prev) => ({ ...prev, readerScale: scale }));
-      if (user) saveSettings(user.uid, { readerScale: scale }).catch(() => {});
+      const field =
+        formFactor === "desktop" ? "readerScaleDesktop" : "readerScaleMobile";
+      setSettings((prev) => ({ ...prev, [field]: scale }));
+      if (user) saveSettings(user.uid, { [field]: scale }).catch(() => {});
     },
-    [user],
+    [user, formFactor],
   );
 
+  // The size that applies to this device class right now.
+  const readerScale =
+    formFactor === "desktop"
+      ? settings.readerScaleDesktop
+      : settings.readerScaleMobile;
+
   // Memoized so consumers do not re-render on every provider render (e.g. each auth change)
-  // unless the settings or loading state actually changed.
+  // unless the settings, form factor, or loading state actually changed.
   const value = useMemo(
-    () => ({ settings, loading, setCompanionEnabled, setReaderScale }),
-    [settings, loading, setCompanionEnabled, setReaderScale],
+    () => ({
+      settings,
+      loading,
+      formFactor,
+      readerScale,
+      setCompanionEnabled,
+      setReaderScale,
+    }),
+    [
+      settings,
+      loading,
+      formFactor,
+      readerScale,
+      setCompanionEnabled,
+      setReaderScale,
+    ],
   );
 
   return (

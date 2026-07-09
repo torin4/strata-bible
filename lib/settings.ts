@@ -19,17 +19,25 @@ export const READER_SCALE_LABELS = [
 ] as const;
 export const DEFAULT_READER_SCALE = 1;
 
+// Below this viewport width the "mobile" size applies; at or above it, the "desktop" size.
+// The two are stored and chosen separately so a phone and a computer each keep their own,
+// while both still sync per user (no per-device localStorage).
+export const DESKTOP_MIN_WIDTH = 1024;
+
 // Reader preferences, persisted per user in Firestore. `companionEnabled` gates the AI
-// companion (the reader must stay fully usable with it off); `readerScale` scales the whole
-// interface (text, spacing, and images together), the way browser zoom does.
+// companion (the reader must stay fully usable with it off); the two scale fields size the
+// whole interface (text, spacing, and images together, like browser zoom), kept separate for
+// phones and computers so each device class holds its own size.
 export interface Settings {
   companionEnabled: boolean;
-  readerScale: number;
+  readerScaleMobile: number;
+  readerScaleDesktop: number;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
   companionEnabled: true,
-  readerScale: DEFAULT_READER_SCALE,
+  readerScaleMobile: DEFAULT_READER_SCALE,
+  readerScaleDesktop: DEFAULT_READER_SCALE,
 };
 
 // Only accept a stored scale that is one of the known steps, so a stray value can never
@@ -70,7 +78,14 @@ export function subscribeSettings(
           typeof data.companionEnabled === "boolean"
             ? data.companionEnabled
             : DEFAULT_SETTINGS.companionEnabled,
-        readerScale: normalizeScale(data.readerScale),
+        // Fall back to the former single `readerScale` for anyone who set a size before the
+        // split into per-device sizes, so their choice carries over to both.
+        readerScaleMobile: normalizeScale(
+          data.readerScaleMobile ?? data.readerScale,
+        ),
+        readerScaleDesktop: normalizeScale(
+          data.readerScaleDesktop ?? data.readerScale,
+        ),
       });
     },
     () => onChange(DEFAULT_SETTINGS),

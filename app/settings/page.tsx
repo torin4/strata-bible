@@ -13,7 +13,13 @@ import { useState } from "react";
 
 export default function SettingsPage() {
   const { user, loading, configured, signOutUser } = useAuth();
-  const { settings, setCompanionEnabled, setReaderScale } = useSettings();
+  const {
+    settings,
+    readerScale,
+    formFactor,
+    setCompanionEnabled,
+    setReaderScale,
+  } = useSettings();
 
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
@@ -111,15 +117,19 @@ export default function SettingsPage() {
           </h2>
           <p className="mb-4 font-body text-[13px] leading-[1.6] text-mist-2">
             Scales the whole app, the way your browser's zoom does, so text,
-            spacing, and images grow together. You can also change it while
-            reading, with the A buttons at the top of a passage.
+            spacing, and images grow together. Phones and computers each keep
+            their own size. You can also change it while reading, with the A
+            buttons at the top of a passage.
           </p>
+          <div className="mb-2 font-ui text-[10px] uppercase tracking-[.14em] text-gold/75">
+            On this {formFactor === "desktop" ? "computer" : "phone"}
+          </div>
           <fieldset
-            aria-label="Reading text size"
+            aria-label="Text size"
             className="m-0 flex min-w-0 gap-2 border-0 p-0"
           >
             {READER_SCALES.map((scale, i) => {
-              const active = settings.readerScale === scale;
+              const active = readerScale === scale;
               return (
                 <button
                   key={scale}
