@@ -34,13 +34,59 @@ function friendlyError(err: unknown): string {
   }
 }
 
+// Resolve ?next= to a safe same-origin path, or "/" for anything else. See the comment at
+// the call site for why this parses rather than checking string prefixes.
+function sanitizeNext(rawNext: string | null): string {
+  if (!rawNext || !rawNext.startsWith("/")) return "/";
+  try {
+    const url = new URL(rawNext, "http://n");
+    if (url.origin !== "http://n") return "/";
+    return url.pathname + url.search + url.hash;
+  } catch {
+    return "/";
+  }
+}
+
 // useSearchParams requires a Suspense boundary in the App Router, so the page is a thin
-// wrapper and the form itself reads the params.
+// wrapper and the form itself reads the params. The fallback renders the same static
+// shell, so the prerendered page is never blank.
 export default function LoginPage() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<LoginShell />}>
       <LoginForm />
     </Suspense>
+  );
+}
+
+// The page's static frame: the wordmark, the card, and the way back. Rendered empty as
+// the Suspense fallback, and around the live form.
+function LoginShell({ children }: { children?: React.ReactNode }) {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center bg-shell px-4 py-12">
+      <div className="stagger-children w-full max-w-[24rem]">
+        <header className="mb-6 text-center">
+          <Link
+            href="/"
+            className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
+          >
+            STRATA
+          </Link>
+        </header>
+
+        <div className="rounded-[18px] border border-line bg-deep px-6 py-7">
+          {children}
+        </div>
+
+        <div className="mt-5 text-center">
+          <Link
+            href="/"
+            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+          >
+            Back to the reader
+          </Link>
+        </div>
+      </div>
+    </main>
   );
 }
 
@@ -56,10 +102,12 @@ function LoginForm() {
   const params = useSearchParams();
   // Where to return after signing in: the page that sent the reader here (?next=), so a
   // sign-in from the paywall or mid-reading never dumps them back on home. Same-origin
-  // paths only; anything else falls back to home.
-  const rawNext = params.get("next") ?? "/";
-  const next =
-    rawNext.startsWith("/") && !rawNext.startsWith("//") ? rawNext : "/";
+  // paths only, validated by PARSING, not string prefixes: the WHATWG URL parser treats
+  // backslashes as slashes and strips control characters, so values like "/\evil.com"
+  // would slip past a startsWith check and hard-navigate off origin after sign-in. Parsing
+  // against a sentinel base catches every such rewrite; anything that resolves off the
+  // sentinel origin falls back to home.
+  const next = sanitizeNext(params.get("next"));
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -89,133 +137,111 @@ function LoginForm() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-shell px-4 py-12">
-      <div className="stagger-children w-full max-w-[24rem]">
-        <header className="mb-6 text-center">
+    <LoginShell>
+      {user ? (
+        <div className="text-center">
+          <p className="font-body text-[15px] leading-[1.6] text-parchment-2">
+            Signed in as{" "}
+            <span className="text-parchment">
+              {user.displayName || user.email}
+            </span>
+            .
+          </p>
           <Link
-            href="/"
-            className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
+            href={next}
+            className="mt-5 inline-block rounded-[10px] bg-gold px-5 py-2.5 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
           >
-            STRATA
+            Continue
           </Link>
-        </header>
+        </div>
+      ) : !configured ? (
+        <p className="text-center font-body text-[14px] leading-[1.7] text-mist">
+          Sign-in is not configured yet. The reader is open to everyone in the
+          meantime.
+        </p>
+      ) : (
+        <>
+          <h1 className="mb-1 text-center font-display text-[20px] font-medium text-parchment">
+            {mode === "signin" ? "Sign in" : "Create account"}
+          </h1>
+          <p className="mb-6 text-center font-body text-[12.5px] italic text-mist-2">
+            to keep your place, your highlights, and your journal. Genesis 1 to
+            11 stays free to read.
+          </p>
 
-        <div className="rounded-[18px] border border-line bg-deep px-6 py-7">
-          {user ? (
-            <div className="text-center">
-              <p className="font-body text-[15px] leading-[1.6] text-parchment-2">
-                Signed in as{" "}
-                <span className="text-parchment">
-                  {user.displayName || user.email}
-                </span>
-                .
-              </p>
-              <Link
-                href={next}
-                className="mt-5 inline-block rounded-[10px] bg-gold px-5 py-2.5 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
-              >
-                Continue
-              </Link>
-            </div>
-          ) : !configured ? (
-            <p className="text-center font-body text-[14px] leading-[1.7] text-mist">
-              Sign-in is not configured yet. The reader is open to everyone in
-              the meantime.
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => run(signInWithGoogle)}
+            className="w-full rounded-[10px] border border-gold/40 bg-gold-soft px-4 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:border-gold/[0.6] disabled:opacity-50"
+          >
+            Continue with Google
+          </button>
+
+          <div className="my-5 flex items-center gap-3">
+            <span className="h-px flex-1 bg-line" />
+            <span className="font-ui text-[9px] uppercase tracking-[.2em] text-mist-2">
+              or
+            </span>
+            <span className="h-px flex-1 bg-line" />
+          </div>
+
+          <form onSubmit={onSubmit} className="flex flex-col gap-3">
+            <input
+              type="email"
+              required
+              aria-label="Email"
+              autoComplete="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full rounded-[10px] border border-line bg-parchment/[0.03] px-4 py-3 font-body text-[15px] text-parchment placeholder:text-mist-2 focus:border-gold/40 focus:outline-none"
+            />
+            <input
+              type="password"
+              required
+              aria-label="Password"
+              autoComplete={
+                mode === "signin" ? "current-password" : "new-password"
+              }
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full rounded-[10px] border border-line bg-parchment/[0.03] px-4 py-3 font-body text-[15px] text-parchment placeholder:text-mist-2 focus:border-gold/40 focus:outline-none"
+            />
+            <button
+              type="submit"
+              disabled={busy}
+              className="mt-1 w-full rounded-[10px] bg-gold px-4 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright disabled:opacity-50"
+            >
+              {mode === "signin" ? "Sign in" : "Create account"}
+            </button>
+          </form>
+
+          {error ? (
+            <p
+              role="alert"
+              aria-live="assertive"
+              className="mt-4 text-center font-body text-[13px] italic text-psyche"
+            >
+              {error}
             </p>
-          ) : (
-            <>
-              <h1 className="mb-1 text-center font-display text-[20px] font-medium text-parchment">
-                {mode === "signin" ? "Sign in" : "Create account"}
-              </h1>
-              <p className="mb-6 text-center font-body text-[12.5px] italic text-mist-2">
-                to keep your place, your highlights, and your journal. Genesis 1
-                to 11 stays free to read.
-              </p>
+          ) : null}
 
-              <button
-                type="button"
-                disabled={busy}
-                onClick={() => run(signInWithGoogle)}
-                className="w-full rounded-[10px] border border-gold/40 bg-gold-soft px-4 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:border-gold/[0.6] disabled:opacity-50"
-              >
-                Continue with Google
-              </button>
-
-              <div className="my-5 flex items-center gap-3">
-                <span className="h-px flex-1 bg-line" />
-                <span className="font-ui text-[9px] uppercase tracking-[.2em] text-mist-2">
-                  or
-                </span>
-                <span className="h-px flex-1 bg-line" />
-              </div>
-
-              <form onSubmit={onSubmit} className="flex flex-col gap-3">
-                <input
-                  type="email"
-                  required
-                  aria-label="Email"
-                  autoComplete="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full rounded-[10px] border border-line bg-parchment/[0.03] px-4 py-3 font-body text-[15px] text-parchment placeholder:text-mist-2 focus:border-gold/40 focus:outline-none"
-                />
-                <input
-                  type="password"
-                  required
-                  aria-label="Password"
-                  autoComplete={
-                    mode === "signin" ? "current-password" : "new-password"
-                  }
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full rounded-[10px] border border-line bg-parchment/[0.03] px-4 py-3 font-body text-[15px] text-parchment placeholder:text-mist-2 focus:border-gold/40 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  disabled={busy}
-                  className="mt-1 w-full rounded-[10px] bg-gold px-4 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright disabled:opacity-50"
-                >
-                  {mode === "signin" ? "Sign in" : "Create account"}
-                </button>
-              </form>
-
-              {error ? (
-                <p
-                  role="alert"
-                  aria-live="assertive"
-                  className="mt-4 text-center font-body text-[13px] italic text-psyche"
-                >
-                  {error}
-                </p>
-              ) : null}
-
-              <button
-                type="button"
-                onClick={() => {
-                  setMode(mode === "signin" ? "signup" : "signin");
-                  setError(null);
-                }}
-                className="mt-5 w-full text-center font-ui text-[11px] tracking-[.06em] text-mist transition-colors hover:text-gold-bright"
-              >
-                {mode === "signin"
-                  ? "New here? Create an account"
-                  : "Already have an account? Sign in"}
-              </button>
-            </>
-          )}
-        </div>
-
-        <div className="mt-5 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+          <button
+            type="button"
+            onClick={() => {
+              setMode(mode === "signin" ? "signup" : "signin");
+              setError(null);
+            }}
+            className="mt-5 w-full text-center font-ui text-[11px] tracking-[.06em] text-mist transition-colors hover:text-gold-bright"
           >
-            Back to the reader
-          </Link>
-        </div>
-      </div>
-    </main>
+            {mode === "signin"
+              ? "New here? Create an account"
+              : "Already have an account? Sign in"}
+          </button>
+        </>
+      )}
+    </LoginShell>
   );
 }

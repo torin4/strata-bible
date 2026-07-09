@@ -6,9 +6,11 @@ import Link from "next/link";
 
 // The new visitor's way in: a "Begin here" card pointing at the book's first reading, so
 // the book page always has one obvious start. Shown only when there is nothing to resume
-// (no bookmark, no last-read spot anywhere); a returning reader sees their ContinueReading
-// card in this slot instead, so the two never both render. Gated on auth loading so it
-// never flashes for a returning reader whose spot is still resolving.
+// IN THIS BOOK; a returning reader sees their ContinueReading card in this slot instead,
+// so the two never both render (a spot in a different book shows this card, since that is
+// the one ContinueReading hides for). Gated on auth loading AND on the resume state still
+// resolving from Firestore, so it never flashes for a returning reader whose spot is a
+// network round-trip away.
 export function BeginReading({
   bookId,
   readingId,
@@ -23,8 +25,8 @@ export function BeginReading({
   className?: string;
 }) {
   const { loading } = useAuth();
-  const { continueTarget } = useResume();
-  if (loading || continueTarget) return null;
+  const { resolving, continueTarget } = useResume();
+  if (loading || resolving || continueTarget?.bookId === bookId) return null;
 
   return (
     <Link

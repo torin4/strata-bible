@@ -40,7 +40,7 @@ export default function JournalPage() {
         ) : !user ? (
           <div className="rounded-[14px] border border-line bg-deep px-6 py-8 text-center">
             <p className="font-body text-[15px] leading-[1.7] text-parchment-2">
-              Sign in to keep a journal. The reader stays open to everyone.
+              Sign in to keep a journal. Genesis 1 to 11 stays free to read.
             </p>
             <Link
               href="/login?next=/journal"

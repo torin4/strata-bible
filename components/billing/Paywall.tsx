@@ -67,6 +67,7 @@ export function Paywall({
           {buyBookId ? (
             <Link
               href={loginHref}
+              aria-describedby="paywall-signin-note"
               className="rounded-[10px] bg-gold px-5 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-deep transition-colors hover:bg-gold-bright"
             >
               Own {title}, {bookPrice(buyBookId)}
@@ -74,11 +75,15 @@ export function Paywall({
           ) : null}
           <Link
             href={loginHref}
+            aria-describedby="paywall-signin-note"
             className="rounded-[10px] border border-gold/45 px-5 py-3 font-ui text-[12px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:bg-gold-soft"
           >
             STRATA Plus, {PLUS_PRICE.annual} a year
           </Link>
-          <p className="font-body text-[12px] italic leading-[1.5] text-mist-2">
+          <p
+            id="paywall-signin-note"
+            className="font-body text-[12px] italic leading-[1.5] text-mist-2"
+          >
             {buyBookId
               ? "Own the book forever, or get every book, current and future, plus the companion."
               : "Every book, current and future, and the companion."}{" "}

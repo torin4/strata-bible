@@ -28,6 +28,11 @@ export interface ContinueTarget {
 }
 
 interface ResumeValue {
+  // True while a signed-in reader's spot is still loading from Firestore (the first
+  // lastRead and bookmark snapshots have not both arrived). Surfaces that render a
+  // "new reader" state (BeginReading) wait on this so they never flash for a returning
+  // reader whose spot is a network round-trip away. False signed out: nothing to resolve.
+  resolving: boolean;
   // The single spot "Continue reading" resumes, and a ready-made href to it (at its scene).
   // This follows the reader: it is the last reading opened, not the pinned bookmark.
   continueTarget: ContinueTarget | null;
@@ -48,6 +53,7 @@ interface ResumeValue {
 }
 
 const FALLBACK: ResumeValue = {
+  resolving: false,
   continueTarget: null,
   continueHref: null,
   bookmarkTarget: null,
@@ -74,17 +80,31 @@ export function ResumeProvider({ children }: { children: ReactNode }) {
   const [scenes, setScenes] = useState<Map<string, number>>(new Map());
   const [lastRead, setLastRead] = useState<LastRead | null>(null);
   const [bookmark, setBookmarkState] = useState<Bookmark | null>(null);
+  // First-delivery tracking for the two snapshots that decide continueTarget, so surfaces
+  // can tell "no spot" apart from "spot still loading". True when there is nothing pending.
+  const [lastReady, setLastReady] = useState(true);
+  const [markReady, setMarkReady] = useState(true);
 
   useEffect(() => {
     if (!user) {
       setScenes(new Map());
       setLastRead(null);
       setBookmarkState(null);
+      setLastReady(true);
+      setMarkReady(true);
       return;
     }
+    setLastReady(false);
+    setMarkReady(false);
     const unScenes = subscribeScenes(user.uid, setScenes);
-    const unLast = subscribeLastRead(user.uid, setLastRead);
-    const unMark = subscribeBookmark(user.uid, setBookmarkState);
+    const unLast = subscribeLastRead(user.uid, (next) => {
+      setLastRead(next);
+      setLastReady(true);
+    });
+    const unMark = subscribeBookmark(user.uid, (next) => {
+      setBookmarkState(next);
+      setMarkReady(true);
+    });
     return () => {
       unScenes();
       unLast();
@@ -120,6 +140,7 @@ export function ResumeProvider({ children }: { children: ReactNode }) {
     const continueTarget = lastTarget ?? bookmarkTarget;
 
     return {
+      resolving: !lastReady || !markReady,
       continueTarget,
       continueHref: continueTarget
         ? hrefFor(
@@ -155,7 +176,7 @@ export function ResumeProvider({ children }: { children: ReactNode }) {
         }
       },
     };
-  }, [scenes, lastRead, bookmark, user]);
+  }, [scenes, lastRead, bookmark, user, lastReady, markReady]);
 
   return (
     <ResumeContext.Provider value={value}>{children}</ResumeContext.Provider>

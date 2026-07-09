@@ -1,5 +1,6 @@
 "use client";
 
+import { useAuth } from "@/components/auth/AuthProvider";
 import { useSubscription } from "@/components/auth/SubscriptionProvider";
 import { isFreeMovement } from "@/lib/access";
 
@@ -15,8 +16,13 @@ export function FreeBadge({
   bookId: string;
   movementId: string;
 }) {
-  const { isPlus, billingEnabled, owns } = useSubscription();
+  const { loading: authLoading } = useAuth();
+  const { isPlus, billingEnabled, owns, loading } = useSubscription();
+  // Wait for auth AND subscription to resolve, so the chip never flashes for a Plus
+  // subscriber or book owner whose entitlement is still loading.
   if (
+    authLoading ||
+    loading ||
     !billingEnabled ||
     isPlus ||
     !isFreeMovement(bookId, movementId) ||

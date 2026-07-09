@@ -65,7 +65,7 @@ export default function HighlightsPage() {
           <div className="rounded-[14px] border border-line bg-deep px-6 py-8 text-center">
             <p className="font-body text-[15px] leading-[1.7] text-parchment-2">
               Sign in to keep highlights. Tap any verse as you read to mark it,
-              and add a note. The reader stays open to everyone.
+              and add a note. Genesis 1 to 11 stays free to read.
             </p>
             <Link
               href="/login?next=/highlights"

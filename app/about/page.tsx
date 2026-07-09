@@ -116,9 +116,9 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 font-body text-[15.5px] leading-[1.85] text-mist">
               Some readings carry only the text and its history for now. There,
-              the companion, STRATA's guided reader, can draw out the rest for
-              you, and everything it drafts is marked as drafted, one reading
-              and never the final word.
+              the companion, STRATA's AI reading guide, can draw out the rest
+              for you, and everything it drafts is marked as drafted, one
+              reading and never the final word.
             </p>
           </section>
 

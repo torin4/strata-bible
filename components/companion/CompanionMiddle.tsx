@@ -90,8 +90,8 @@ export function CompanionMiddle({
           >
             Sign in
           </Link>{" "}
-          and the companion, STRATA's guided reader, can draw out the meaning,
-          the turn, and a question for you.
+          and the companion, STRATA's AI reading guide, can draw out the
+          meaning, the turn, and a question for you.
         </p>
       </div>
     );
