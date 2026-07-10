@@ -1,17 +1,9 @@
-import { MODE_LABEL } from "@/lib/labels";
+import { MODE_GLOSS, MODE_LABEL } from "@/lib/labels";
 import type { AddrMode } from "@/lib/types";
 
-// Each mode's plain-sentence expansion, for the tooltip and screen readers: the chip's
-// two-word label is the app's shorthand, and a newcomer should not have to decode it.
-const MODE_GLOSS: Record<AddrMode, string> = {
-  names: "This passage names something in you",
-  pray: "This passage is meant to be prayed, not only read",
-  claims: "This passage makes a claim on how you live",
-  "none-but": "Not addressed to you, but worth seeing",
-  reframes: "This passage reframes your present",
-};
-
-// The gold address-mode chip. Used beside the turn and inside per-statute callouts.
+// The gold address-mode chip. Used beside the turn and inside per-statute callouts. The
+// title and sr-only gloss expand the shorthand for hover and screen readers; the visible
+// expansion for touch readers lives in the turn's first-scene introduce line.
 export function ModeChip({ mode }: { mode: AddrMode }) {
   return (
     <span

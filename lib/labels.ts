@@ -17,6 +17,17 @@ export const MODE_LABEL: Record<AddrMode, string> = {
   reframes: "reframes your now",
 };
 
+// Each mode's plain-sentence expansion: the chip's two-word label is the app's shorthand,
+// and a newcomer should not have to decode it. Shown visibly in the turn's first-scene
+// introduce line, and carried on the chip as a tooltip and screen-reader gloss.
+export const MODE_GLOSS: Record<AddrMode, string> = {
+  names: "This one names something in you",
+  pray: "This one is meant to be prayed, not only read",
+  claims: "This one makes a claim on how you live",
+  "none-but": "Not addressed to you, but worth seeing",
+  reframes: "This one reframes your present",
+};
+
 // The small per-passage kind chip in the passage header.
 export const PASSAGE_KIND_LABEL: Record<PassageKind, string> = {
   scene: "narrative",

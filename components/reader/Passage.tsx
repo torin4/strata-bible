@@ -114,6 +114,7 @@ export function Passage({
           readingTitle={readingTitle}
           passage={passage}
           isFree={isFree}
+          firstScene={firstScene}
         />
       )}
       {passage.lenses ? <Lenses lenses={passage.lenses} /> : null}

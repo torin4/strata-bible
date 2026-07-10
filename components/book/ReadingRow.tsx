@@ -90,13 +90,15 @@ export function ReadingRow({
           <span className="font-ui text-[8.5px] uppercase tracking-[.16em] text-lapis">
             {genreLabel(reading.passages.map((passage) => passage.kind))}
           </span>
+          {/* Tooltip only here: an sr-only gloss inside every row's link would append the
+              same two sentences to ~19 accessible names. The full gloss lives on the
+              reading's own chip once opened. */}
           {reading.tier === "sitting" ? null : (
             <span
               title={GROUNDED_GLOSS}
               className="font-ui text-[8.5px] uppercase tracking-[.16em] text-mist-2"
             >
               {TIER_LABEL[reading.tier]}
-              <span className="sr-only">. {GROUNDED_GLOSS}</span>
             </span>
           )}
         </span>

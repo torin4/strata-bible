@@ -22,12 +22,17 @@ export function BookmarkButton({
   const { user, loading } = useAuth();
   const { isBookmarked, toggleBookmark } = useResume();
   const pathname = usePathname();
-  if (loading) return null;
+  // Reserve the slot while auth resolves, so the stepper beside it never shifts.
+  if (loading)
+    return <span aria-hidden="true" className="invisible flex h-8 w-8" />;
 
   if (!user) {
+    // The kept place includes the scene: send ?s= through the sign-in round trip, so
+    // "keep your place" means this very screen, not the reading's first scene.
+    const next = scene > 0 ? `${pathname}?s=${scene}` : pathname;
     return (
       <Link
-        href={`/login?next=${encodeURIComponent(pathname)}`}
+        href={`/login?next=${encodeURIComponent(next)}`}
         aria-label="Sign in to keep your place"
         title="Sign in to keep your place"
         className="flex h-8 w-8 items-center justify-center rounded-[8px] text-mist transition-colors hover:text-gold-bright"

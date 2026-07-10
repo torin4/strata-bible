@@ -33,7 +33,25 @@ export async function generateMetadata({
   const description =
     book.subtitle ??
     `${book.title}, read in four layers, grounded in the history it grew out of.`;
-  return { title, description, openGraph: { title, description } };
+  // Restate the site defaults: a per-page openGraph/twitter block replaces the root's
+  // wholesale, so og:image and siteName would silently vanish otherwise.
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      siteName: "STRATA",
+      images: ["/icons/icon-512.png"],
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: ["/icons/icon-512.png"],
+    },
+  };
 }
 
 export default async function BookPage({

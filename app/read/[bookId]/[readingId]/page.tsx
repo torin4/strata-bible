@@ -19,7 +19,12 @@ import { notFound } from "next/navigation";
 
 // Per-reading metadata, so search and shared links carry the reading's own name and its
 // "speaks to" line instead of the app-wide title. This is the app's organic front door:
-// someone searching a chapter should find the reading, titled as itself.
+// someone searching a chapter should find the reading, titled as itself. The description
+// mirrors the body's content gate: a gated reading only ever uses its speaksTo line
+// (already public via /find and the paywall) or the generic sentence, never the authored
+// thread, so the locked page's public head stays free of paid content. The openGraph and
+// twitter blocks restate the site defaults, since a per-page block replaces the root's
+// wholesale (og:image and siteName would silently vanish otherwise).
 export async function generateMetadata({
   params,
 }: {
@@ -28,12 +33,29 @@ export async function generateMetadata({
   const { bookId, readingId } = await params;
   const reading = getReading(bookId, readingId);
   if (!reading) return {};
+  const gated = BILLING_ON && !isFreeReading(reading);
   const title = `${reading.title} · ${reading.span} · STRATA`;
   const description =
     READING_THEMES[readingId]?.speaksTo ??
-    reading.thread ??
+    (gated ? undefined : reading.thread) ??
     `${reading.title}, ${reading.span}, read in four layers: the history, the meaning, the turn, and a response.`;
-  return { title, description, openGraph: { title, description } };
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      siteName: "STRATA",
+      images: ["/icons/icon-512.png"],
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: ["/icons/icon-512.png"],
+    },
+  };
 }
 
 // Prerender every reading: server components for content, as the brief asks. For a gated

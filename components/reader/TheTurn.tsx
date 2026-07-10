@@ -1,3 +1,4 @@
+import { MODE_GLOSS } from "@/lib/labels";
 import type { Address } from "@/lib/types";
 import { ModeChip } from "./ModeChip";
 
@@ -21,7 +22,7 @@ export function TheTurn({
       </div>
       {introduce ? (
         <div className="mb-[6px] font-body text-[11px] italic text-mist-2">
-          How this passage turns to address you now.
+          How the passage turns to address you now. {MODE_GLOSS[addr.mode]}.
         </div>
       ) : null}
       <div className="font-body text-[14.5px] leading-[1.66] text-parchment-2">

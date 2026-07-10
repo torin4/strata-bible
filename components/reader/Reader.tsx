@@ -247,11 +247,16 @@ export function Reader({
             ) : null}
 
             {/* The quiet case for an account, made once, at the reading's end: the moment
-                a signed-out reader has just finished something worth returning to. */}
-            {isLastPassage && !authLoading && !user ? (
+                a signed-out reader has just finished something worth returning to. Stands
+                down on grounded readings, where CompanionMiddle's signed-out line already
+                makes the same offer on the same screen. The ?s= keeps this very scene
+                through the sign-in round trip. */}
+            {isLastPassage && passage.meaning && !authLoading && !user ? (
               <p className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
                 <Link
-                  href={`/login?next=${encodeURIComponent(pathname)}`}
+                  href={`/login?next=${encodeURIComponent(
+                    i > 0 ? `${pathname}?s=${i}` : pathname,
+                  )}`}
                   className="text-lapis transition-colors hover:text-parchment"
                 >
                   Sign in

@@ -34,12 +34,16 @@ export function CompanionMiddle({
   readingTitle,
   passage,
   isFree,
+  firstScene,
 }: {
   bookId: string;
   readingId: string;
   readingTitle: string;
   passage: Passage;
   isFree: boolean;
+  // Forwarded to the drawn turn so it introduces itself on a reading's first scene, the
+  // same way the authored turn does.
+  firstScene?: boolean;
 }) {
   const { user, configured, loading } = useAuth();
   const { settings } = useSettings();
@@ -131,7 +135,7 @@ export function CompanionMiddle({
         {layer.lenses?.theo || layer.lenses?.arch ? (
           <Lenses lenses={layer.lenses} />
         ) : null}
-        <TheTurn addr={layer.addr} />
+        <TheTurn addr={layer.addr} introduce={firstScene} />
         <Ask text={layer.ask} />
         <AskResponse
           prompt={layer.ask}

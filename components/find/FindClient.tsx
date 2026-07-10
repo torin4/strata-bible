@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 // The discovery surface: say how you are doing in your own words, or tap a feeling, and
-// the sittings that might meet you there rise to the top. All matching is client-side
+// the readings that might meet you there rise to the top. All matching is client-side
 // over the compact index the server passed, so it works offline and signed out.
 export function FindClient({
   entries,
@@ -58,7 +58,7 @@ export function FindClient({
         </h1>
         <p className="mx-auto mt-3 max-w-[30rem] text-center font-body text-[14.5px] leading-[1.7] text-mist">
           Say how you are doing, in your own words, or tap a feeling. These
-          sittings might meet you there.
+          readings might meet you there.
         </p>
 
         <div className="relative mt-6">

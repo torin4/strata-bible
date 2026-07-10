@@ -131,20 +131,32 @@ function LoginForm() {
   };
 
   // The way back in for a forgotten password. Separate from `run`, since success shows a
-  // note here rather than navigating away.
+  // note here rather than navigating away. The note is deliberately conditional ("if an
+  // account exists"): Firebase's email-enumeration protection means success does not
+  // prove delivery, and an unknown-email error maps to the same neutral note so the form
+  // never confirms whether an address has an account.
   const forgot = async () => {
     setNote(null);
     if (!email) {
       setError("Enter your email above first, then tap forgot password.");
       return;
     }
+    const neutral = `If an account exists for ${email}, a password reset link is on its way.`;
     setError(null);
     setBusy(true);
     try {
       await resetPassword(email);
-      setNote(`A password reset link is on its way to ${email}.`);
+      setNote(neutral);
     } catch (err) {
-      setError(friendlyError(err));
+      const code =
+        typeof err === "object" && err && "code" in err
+          ? String((err as { code: string }).code)
+          : "";
+      if (code === "auth/user-not-found") {
+        setNote(neutral);
+      } else {
+        setError(friendlyError(err));
+      }
     } finally {
       setBusy(false);
     }
@@ -251,14 +263,15 @@ function LoginForm() {
             </p>
           ) : null}
 
-          {note ? (
-            <p
-              aria-live="polite"
-              className="mt-4 text-center font-body text-[13px] italic text-mist"
-            >
-              {note}
-            </p>
-          ) : null}
+          {/* Always mounted, so the live region exists in the accessibility tree before
+              the note arrives; a region born with its content is often never announced. */}
+          <p
+            aria-live="polite"
+            aria-atomic="true"
+            className={`text-center font-body text-[13px] italic text-mist ${note ? "mt-4" : ""}`}
+          >
+            {note}
+          </p>
 
           {mode === "signin" ? (
             <button
