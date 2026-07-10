@@ -12,11 +12,28 @@ import {
   readingsInMovement,
   readingsOutsideMovements,
 } from "@/lib/content";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return BOOKS.map((book) => ({ bookId: book.id }));
+}
+
+// Per-book metadata: the book's own name and subtitle instead of the app-wide title.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ bookId: string }>;
+}): Promise<Metadata> {
+  const { bookId } = await params;
+  const book = getBook(bookId);
+  if (!book) return {};
+  const title = `${book.title} · STRATA`;
+  const description =
+    book.subtitle ??
+    `${book.title}, read in four layers, grounded in the history it grew out of.`;
+  return { title, description, openGraph: { title, description } };
 }
 
 export default async function BookPage({

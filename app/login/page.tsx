@@ -97,6 +97,7 @@ function LoginForm() {
     signInWithGoogle,
     signInWithEmail,
     signUpWithEmail,
+    resetPassword,
   } = useAuth();
   const router = useRouter();
   const params = useSearchParams();
@@ -112,14 +113,36 @@ function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [note, setNote] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
   const run = async (action: () => Promise<void>) => {
     setError(null);
+    setNote(null);
     setBusy(true);
     try {
       await action();
       router.push(next);
+    } catch (err) {
+      setError(friendlyError(err));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  // The way back in for a forgotten password. Separate from `run`, since success shows a
+  // note here rather than navigating away.
+  const forgot = async () => {
+    setNote(null);
+    if (!email) {
+      setError("Enter your email above first, then tap forgot password.");
+      return;
+    }
+    setError(null);
+    setBusy(true);
+    try {
+      await resetPassword(email);
+      setNote(`A password reset link is on its way to ${email}.`);
     } catch (err) {
       setError(friendlyError(err));
     } finally {
@@ -228,13 +251,34 @@ function LoginForm() {
             </p>
           ) : null}
 
+          {note ? (
+            <p
+              aria-live="polite"
+              className="mt-4 text-center font-body text-[13px] italic text-mist"
+            >
+              {note}
+            </p>
+          ) : null}
+
+          {mode === "signin" ? (
+            <button
+              type="button"
+              disabled={busy}
+              onClick={forgot}
+              className="mt-4 w-full text-center font-ui text-[11px] tracking-[.06em] text-mist transition-colors hover:text-gold-bright disabled:opacity-50"
+            >
+              Forgot your password?
+            </button>
+          ) : null}
+
           <button
             type="button"
             onClick={() => {
               setMode(mode === "signin" ? "signup" : "signin");
               setError(null);
+              setNote(null);
             }}
-            className="mt-5 w-full text-center font-ui text-[11px] tracking-[.06em] text-mist transition-colors hover:text-gold-bright"
+            className={`${mode === "signin" ? "mt-2" : "mt-5"} w-full text-center font-ui text-[11px] tracking-[.06em] text-mist transition-colors hover:text-gold-bright`}
           >
             {mode === "signin"
               ? "New here? Create an account"

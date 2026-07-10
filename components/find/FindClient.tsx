@@ -119,10 +119,10 @@ export function FindClient({
         </span>
         <div className="mb-4 text-center font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
           {browsing
-            ? `All ${results.length} sittings`
+            ? `All ${results.length} readings`
             : results.length === 0
               ? "Nothing matched"
-              : `${results.length} ${results.length === 1 ? "sitting" : "sittings"}`}
+              : `${results.length} ${results.length === 1 ? "reading" : "readings"}`}
         </div>
 
         {results.length === 0 ? (

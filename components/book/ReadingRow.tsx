@@ -5,6 +5,36 @@ import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import type { Reading } from "@/lib/types";
 import Link from "next/link";
 
+// Small number words for the length signal; larger counts fall back to digits.
+const NUMBER_WORD = [
+  "",
+  "One",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine",
+  "Ten",
+  "Eleven",
+  "Twelve",
+] as const;
+
+// "Seven days" / "One scene": how long a reading is, told before it is opened, in the
+// reading's own unit. Data already on the object, so the signal costs nothing.
+function lengthLabel(reading: Reading): string {
+  const count = reading.passages.length;
+  const unit = (reading.unitLabel ?? "Scene").toLowerCase();
+  const word = NUMBER_WORD[count] ?? String(count);
+  return `${word} ${count === 1 ? unit : `${unit}s`}`;
+}
+
+// What "Grounded" means, for the tier chip's tooltip and screen readers.
+const GROUNDED_GLOSS =
+  "This reading carries the text and its history. The companion can draw out the rest.";
+
 // One reading in a movement's (or a book's) list. Links into the reader, resuming the scene
 // the reader left off on when there is one (the marker tells them where they will land, so
 // the jump past the first scene is never a surprise).
@@ -47,7 +77,7 @@ export function ReadingRow({
             </span>
           </span>
           <span className="font-body text-[12px] italic text-mist-2">
-            {reading.span}
+            {reading.span} · {lengthLabel(reading)}
           </span>
           {scene > 0 ? (
             <span className="mt-1 font-ui text-[8.5px] uppercase tracking-[.16em] text-gold/80">
@@ -60,9 +90,15 @@ export function ReadingRow({
           <span className="font-ui text-[8.5px] uppercase tracking-[.16em] text-lapis">
             {genreLabel(reading.passages.map((passage) => passage.kind))}
           </span>
-          <span className="font-ui text-[8.5px] uppercase tracking-[.16em] text-mist-2">
-            {TIER_LABEL[reading.tier]}
-          </span>
+          {reading.tier === "sitting" ? null : (
+            <span
+              title={GROUNDED_GLOSS}
+              className="font-ui text-[8.5px] uppercase tracking-[.16em] text-mist-2"
+            >
+              {TIER_LABEL[reading.tier]}
+              <span className="sr-only">. {GROUNDED_GLOSS}</span>
+            </span>
+          )}
         </span>
       </Link>
     </li>

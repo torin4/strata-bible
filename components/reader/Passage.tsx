@@ -25,12 +25,15 @@ export function Passage({
   readingId,
   readingTitle,
   isFree,
+  firstScene,
 }: {
   passage: PassageData;
   bookId: string;
   readingId: string;
   readingTitle: string;
   isFree: boolean;
+  // True on the reading's first scene: layer headers introduce themselves there.
+  firstScene?: boolean;
 }) {
   const verseNumbers = (
     passage.verses ??
@@ -115,7 +118,9 @@ export function Passage({
       )}
       {passage.lenses ? <Lenses lenses={passage.lenses} /> : null}
       {passage.tensions ? <Tensions tensions={passage.tensions} /> : null}
-      {passage.addr ? <TheTurn addr={passage.addr} /> : null}
+      {passage.addr ? (
+        <TheTurn addr={passage.addr} introduce={firstScene} />
+      ) : null}
       {passage.soft ? <Soft text={passage.soft} /> : null}
       {passage.ask ? (
         <>

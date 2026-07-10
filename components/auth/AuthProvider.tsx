@@ -6,6 +6,7 @@ import {
   type User,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -27,6 +28,7 @@ interface AuthContextValue {
   signInWithGoogle: () => Promise<void>;
   signInWithEmail: (email: string, password: string) => Promise<void>;
   signUpWithEmail: (email: string, password: string) => Promise<void>;
+  resetPassword: (email: string) => Promise<void>;
   signOutUser: () => Promise<void>;
 }
 
@@ -71,6 +73,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signUpWithEmail: async (email, password) => {
         if (!auth) return notConfigured();
         await createUserWithEmailAndPassword(auth, email, password);
+      },
+      resetPassword: async (email) => {
+        if (!auth) return notConfigured();
+        await sendPasswordResetEmail(auth, email);
       },
       signOutUser: async () => {
         if (!auth) return;

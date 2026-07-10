@@ -4,6 +4,7 @@ import { LastReadTracker } from "@/components/reader/LastReadTracker";
 import { LockedReader } from "@/components/reader/LockedReader";
 import { Reader } from "@/components/reader/Reader";
 import { BOOKS } from "@/content";
+import { READING_THEMES } from "@/content/themes";
 import { isFreeReading } from "@/lib/access";
 import {
   getAdjacent,
@@ -12,8 +13,28 @@ import {
   getClosingMovement,
   getReading,
 } from "@/lib/content";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+// Per-reading metadata, so search and shared links carry the reading's own name and its
+// "speaks to" line instead of the app-wide title. This is the app's organic front door:
+// someone searching a chapter should find the reading, titled as itself.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ bookId: string; readingId: string }>;
+}): Promise<Metadata> {
+  const { bookId, readingId } = await params;
+  const reading = getReading(bookId, readingId);
+  if (!reading) return {};
+  const title = `${reading.title} · ${reading.span} · STRATA`;
+  const description =
+    READING_THEMES[readingId]?.speaksTo ??
+    reading.thread ??
+    `${reading.title}, ${reading.span}, read in four layers: the history, the meaning, the turn, and a response.`;
+  return { title, description, openGraph: { title, description } };
+}
 
 // Prerender every reading: server components for content, as the brief asks. For a gated
 // reading the prerendered shell carries no authored content (see the gate below), so this

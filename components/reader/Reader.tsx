@@ -8,6 +8,7 @@ import { TIER_LABEL, genreLabel } from "@/lib/labels";
 import { setScene } from "@/lib/progress";
 import type { Capstone as CapstoneData, Movement, Reading } from "@/lib/types";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { Capstone } from "./Capstone";
 import { Passage } from "./Passage";
@@ -19,6 +20,11 @@ interface Adjacent {
   id: string;
   title: string;
 }
+
+// What "Grounded" means, for the tier chip's tooltip and screen readers. The reading body
+// says the same thing in place (see CompanionMiddle's empty-middle line).
+const GROUNDED_GLOSS =
+  "This reading carries the text and its history. The companion can draw out the rest.";
 
 // One Reading, paginated a scene at a time. Each passage (a "scene") is its own screen
 // with the four layers; the bottom nav steps scene to scene, then flows into the
@@ -59,7 +65,8 @@ export function Reader({
     return Number.isInteger(s) && s > 0 && s <= maxScene ? s : 0;
   });
   const { isPlus, owns } = useSubscription();
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
+  const pathname = usePathname();
   // Read the user at write time without making auth a trigger: only a real scene step should
   // persist, never auth resolving under a reader sitting still.
   const userRef = useRef(user);
@@ -161,9 +168,18 @@ export function Reader({
       {onWrapup ? null : (
         <>
           <div className="mb-[14px] flex flex-wrap items-center gap-2 pr-[104px]">
-            <span className="rounded-full border border-gold/50 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright">
-              {TIER_LABEL[reading.tier]}
-            </span>
+            {/* The tier chip only renders when it tells the reader something: "sitting" is
+                the default fully-authored state, so it stays silent. "Grounded" carries a
+                gloss, since the word alone reads as an editorial code. */}
+            {reading.tier === "sitting" ? null : (
+              <span
+                title={GROUNDED_GLOSS}
+                className="rounded-full border border-gold/50 bg-gold-soft px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-gold-bright"
+              >
+                {TIER_LABEL[reading.tier]}
+                <span className="sr-only">. {GROUNDED_GLOSS}</span>
+              </span>
+            )}
             <span className="rounded-full border border-lapis/40 bg-lapis/[0.08] px-[9px] py-1 font-ui text-[9.5px] font-semibold uppercase tracking-[.16em] text-lapis">
               {genre}
             </span>
@@ -211,6 +227,7 @@ export function Reader({
               readingId={reading.id}
               readingTitle={reading.title}
               isFree={isFree}
+              firstScene={isFirst}
             />
 
             {!isLastPassage && reading.closeMid ? (
@@ -227,6 +244,20 @@ export function Reader({
 
             {isLastPassage && closingMovement?.capstone ? (
               <Capstone capstone={closingMovement.capstone} />
+            ) : null}
+
+            {/* The quiet case for an account, made once, at the reading's end: the moment
+                a signed-out reader has just finished something worth returning to. */}
+            {isLastPassage && !authLoading && !user ? (
+              <p className="mt-[26px] border-t border-line pt-[18px] text-center font-body text-[13px] italic leading-[1.6] text-mist-2">
+                <Link
+                  href={`/login?next=${encodeURIComponent(pathname)}`}
+                  className="text-lapis transition-colors hover:text-parchment"
+                >
+                  Sign in
+                </Link>{" "}
+                and STRATA keeps your place, your highlights, and your journal.
+              </p>
             ) : null}
           </>
         )}

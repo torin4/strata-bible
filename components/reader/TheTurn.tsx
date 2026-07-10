@@ -3,7 +3,15 @@ import { ModeChip } from "./ModeChip";
 
 // The third layer: how the passage addresses the reader now. The mode chip tells them
 // in what way (names you, pray it, claims you, not yours but worth seeing, reframes).
-export function TheTurn({ addr }: { addr: Address }) {
+// On a reading's first scene, `introduce` adds a one-line gloss under the header so a
+// newcomer meets the term with its meaning; later scenes trust the reader has it.
+export function TheTurn({
+  addr,
+  introduce,
+}: {
+  addr: Address;
+  introduce?: boolean;
+}) {
   return (
     <div className="mt-5">
       <div className="mb-[6px] flex items-center gap-2 font-ui text-[10px] font-semibold uppercase tracking-[.2em] text-gold-bright">
@@ -11,6 +19,11 @@ export function TheTurn({ addr }: { addr: Address }) {
         The turn
         <ModeChip mode={addr.mode} />
       </div>
+      {introduce ? (
+        <div className="mb-[6px] font-body text-[11px] italic text-mist-2">
+          How this passage turns to address you now.
+        </div>
+      ) : null}
       <div className="font-body text-[14.5px] leading-[1.66] text-parchment-2">
         {addr.text}
       </div>
