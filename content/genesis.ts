@@ -57,9 +57,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'There is probably something in your life that feels unformed or stuck, waiting on you to act.'
+          text: 'There is probably something in your life that feels unformed or stuck, waiting on you to act. Genesis says creation began not with force, but with a decision said out loud.'
         },
-        soft: 'Genesis says creation began not with force, but with a decision said out loud.',
         ask: 'What is one thing you could decide and say out loud this week?'
       },
       {
@@ -90,9 +89,8 @@ export const GENESIS: Reading[] = [
         meaning: 'The act here is <b>separation, making space</b>. God holds the waters back to open a livable middle. Order isn’t control for its own sake. It’s carving out room for life.',
         addr: {
           mode: 'names',
-          text: 'Living things need space that something has to hold open for them.'
+          text: 'Living things need space that something has to hold open for them. Sometimes the loving move is a boundary, not more activity.'
         },
-        soft: 'Sometimes the loving move is a boundary, not more activity.',
         ask: 'Where do you need to make space, or hold a line, so something can breathe this week?'
       },
       {
@@ -133,7 +131,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'Some things can’t be forced into being. You can only make the conditions and let them grow.'
         },
-        soft: 'Not everything needs you to do it. Some things need you to let them.',
         ask: 'What have you been trying to force that might just need room and time?'
       },
       {
@@ -179,9 +176,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'Most of us let something quietly govern us. Fear, other people’s opinions, the markets, what the future might do.'
+          text: 'Most of us let something quietly govern us. Fear, other people’s opinions, the markets, what the future might do. Genesis takes the things people worshipped and turns them into furniture.'
         },
-        soft: 'Genesis takes the things people worshipped and turns them into furniture.',
         ask: 'What have you been treating like a god that’s really just a lamp? What changes if you demote it?'
       },
       {
@@ -218,7 +214,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'The first thing God blesses is increase. More life, given freely.'
         },
-        soft: 'It’s easy to live as if everything is scarce and has to be guarded.',
         ask: 'Where could you act from abundance instead of fear this week?'
       },
       {
@@ -266,7 +261,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'The hardest place to believe this is usually a specific face. Someone you can’t stand, or your own in the mirror.'
         },
-        soft: 'The text says the image is in them too. No exceptions.',
         ask: 'Who is one person, maybe yourself, you struggle to see as carrying it? Sit with that today.'
       },
       {
@@ -297,9 +291,8 @@ export const GENESIS: Reading[] = [
         meaning: 'The whole week of making is built toward <b>stopping</b>. Rest is the goal of creation, not a reward for finishing the work but the point of it. And it is the first thing God calls holy.',
         addr: {
           mode: 'names',
-          text: 'Notice it doesn’t end with humanity. It ends with rest.'
+          text: 'Notice it doesn’t end with humanity. It ends with rest. Most of us collapse, few of us rest as if it were sacred.'
         },
-        soft: 'Most of us collapse. Few of us rest as if it were sacred.',
         ask: 'What would it take to set one day, or even one hour, genuinely apart this week?'
       }
     ]
@@ -493,9 +486,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'There is a deep relief in being recognized by someone as their own kind, and a deep fear of being that unguarded in front of anyone.'
+          text: 'There is a deep relief in being recognized by someone as their own kind, and a deep fear of being that unguarded in front of anyone. The garden holds both, for one more verse.'
         },
-        soft: 'The garden holds both, for one more verse.',
         ask: 'Where do you most want to be seen without having to cover, and what makes that feel dangerous?'
       }
     ]
@@ -551,9 +543,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'Somewhere a voice is telling you that a limit in your life is just someone keeping you small.'
+          text: 'Somewhere a voice is telling you that a limit in your life is just someone keeping you small. It rarely says “do something wrong.” It says you’d be freer without the rule.'
         },
-        soft: 'It rarely says “do something wrong.” It says you’d be freer without the rule.',
         ask: 'Where are you being told that a boundary is really a cage?'
       },
       {
@@ -582,9 +573,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You have had the experience of getting the thing you wanted and feeling smaller once you held it.'
+          text: 'You have had the experience of getting the thing you wanted and feeling smaller once you held it. The reach promised more of you. It delivered more of your exposure.'
         },
-        soft: 'The reach promised more of you. It delivered more of your exposure.',
         ask: 'What have you reached for that left you more exposed than before?'
       },
       {
@@ -629,9 +619,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'When you are caught, the reflex is the same: hide first, then hand the blame somewhere. The partner, the circumstances, even God.'
+          text: 'When you are caught, the reflex is the same: hide first, then hand the blame somewhere. The partner, the circumstances, even God. It is older than you. It is in the first story.'
         },
-        soft: 'It is older than you. It is in the first story.',
         ask: 'What are you blaming right now for something that is actually yours to own?'
       },
       {
@@ -722,7 +711,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'There are doors in a life that close behind you. You do not get back to the garden.'
         },
-        soft: 'The question is whether you walk out clothed and named, or stay frozen at the shut gate.',
         ask: 'What can’t you return to, and what would it look like to walk forward instead of standing at the gate?'
       }
     ]
@@ -806,9 +794,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'There is a door in you with something crouching at it right now, a resentment, a habit, a rage you have been quietly feeding.'
+          text: 'There is a door in you with something crouching at it right now, a resentment, a habit, a rage you have been quietly feeding. You are nearer the threshold than the deed. That is the whole point of the warning.'
         },
-        soft: 'You are nearer the threshold than the deed. That is the whole point of the warning.',
         ask: 'What is crouching at your door, and what would ruling it, instead of feeding it, look like today?'
       },
       {
@@ -1686,9 +1673,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You have tried to start clean before. A move, a breakup, a fresh resolution. And then you watched the very thing you were fleeing climb out of the boat right behind you.'
+          text: 'You have tried to start clean before. A move, a breakup, a fresh resolution. And then you watched the very thing you were fleeing climb out of the boat right behind you. The point is not despair. It is that the fix you need runs deeper than a change of setting.'
         },
-        soft: 'The point is not despair. It is that the fix you need runs deeper than a change of setting.',
         ask: 'What in yourself have you tried to escape by changing your circumstances, and found waiting for you on the other side?'
       }
     ]
