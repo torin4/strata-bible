@@ -3,6 +3,7 @@ import {
   getClosingMovement,
   getReading,
 } from "@/lib/content";
+import { expandReading } from "@/lib/expand";
 import { isReadingEntitled, lookupCaller } from "@/lib/server-auth";
 import { type NextRequest, NextResponse } from "next/server";
 
@@ -40,7 +41,7 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({
-    reading,
+    reading: expandReading(reading),
     closingMovement: getClosingMovement(body.bookId, reading) ?? null,
     closingBookCapstone: getClosingBookCapstone(body.bookId, reading) ?? null,
   });

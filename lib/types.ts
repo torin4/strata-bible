@@ -31,6 +31,10 @@ export type AddrMode =
 export interface Verse {
   n: number;
   text: string; // the Berean Standard Bible (BSB), public domain; never a licensed translation
+  // True for a verse the sitting omits, filled from the BSB so the reader can reveal the
+  // full chapter (see lib/expand.ts). Omitted verses are context, not part of the authored
+  // sitting: they never carry highlights or notes and render dimmed, behind a toggle.
+  omitted?: boolean;
 }
 
 export interface Ground {

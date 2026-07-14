@@ -26,6 +26,8 @@ export function Passage({
   readingTitle,
   isFree,
   firstScene,
+  showFull,
+  onToggleFull,
 }: {
   passage: PassageData;
   bookId: string;
@@ -34,13 +36,22 @@ export function Passage({
   isFree: boolean;
   // True on the reading's first scene: layer headers introduce themselves there.
   firstScene?: boolean;
+  // When true, reveal the verses the sitting omits (the "Full text" toggle).
+  showFull?: boolean;
+  onToggleFull?: () => void;
 }) {
+  // Whether this passage leaves any verses out. Only then does the "Full text" control appear.
+  const hasOmitted = Boolean(passage.verses?.some((v) => v.omitted));
+  // The sitting's own verses drive notes and highlights; omitted verses are revealable
+  // context only, so they never key a note or a highlight target.
   const verseNumbers = (
     passage.verses ??
     passage.statutes ??
     passage.sayings ??
     []
-  ).map((v) => v.n);
+  )
+    .filter((v) => !v.omitted)
+    .map((v) => v.n);
 
   return (
     <>
@@ -71,6 +82,19 @@ export function Passage({
         />
       ) : null}
 
+      {hasOmitted ? (
+        <div className="mb-[2px] flex justify-end">
+          <button
+            type="button"
+            onClick={onToggleFull}
+            aria-pressed={showFull}
+            className="font-ui text-[10px] uppercase tracking-[.16em] text-mist-2 transition-colors hover:text-gold"
+          >
+            {showFull ? "Hide the added verses" : "Read the full chapter text"}
+          </button>
+        </div>
+      ) : null}
+
       {passage.form === "poetry" ? (
         <Scripture
           form="poetry"
@@ -78,6 +102,7 @@ export function Passage({
           inTextTurn={passage.inTextTurn}
           readingId={readingId}
           passageRef={passage.ref}
+          showFull={showFull}
         />
       ) : passage.form === "list" ? (
         <ClusterList
@@ -92,6 +117,7 @@ export function Passage({
           verses={passage.verses ?? []}
           readingId={readingId}
           passageRef={passage.ref}
+          showFull={showFull}
         />
       )}
 

@@ -64,6 +64,9 @@ export function Reader({
     );
     return Number.isInteger(s) && s > 0 && s <= maxScene ? s : 0;
   });
+  // "Full text": reveal the verses the sitting omits. Held here, not in the Passage, so it
+  // persists as the reader steps scene to scene rather than resetting on each turn.
+  const [showFull, setShowFull] = useState(false);
   const { isPlus, owns } = useSubscription();
   const { user, loading: authLoading } = useAuth();
   const pathname = usePathname();
@@ -228,6 +231,8 @@ export function Reader({
               readingTitle={reading.title}
               isFree={isFree}
               firstScene={isFirst}
+              showFull={showFull}
+              onToggleFull={() => setShowFull((v) => !v)}
             />
 
             {!isLastPassage && reading.closeMid ? (

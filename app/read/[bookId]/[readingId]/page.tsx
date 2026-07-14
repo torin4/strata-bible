@@ -13,6 +13,7 @@ import {
   getClosingMovement,
   getReading,
 } from "@/lib/content";
+import { expandReading } from "@/lib/expand";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -133,7 +134,7 @@ export default async function ReadingPage({
                 span={reading.span}
               />
               <Reader
-                reading={reading}
+                reading={expandReading(reading)}
                 closingMovement={getClosingMovement(bookId, reading)}
                 closingBookCapstone={getClosingBookCapstone(bookId, reading)}
                 bookTitle={book?.title}
