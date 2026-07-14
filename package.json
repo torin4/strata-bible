@@ -17,6 +17,7 @@
     "lint": "biome check .",
     "lint:tailwind-arbitrary": "node scripts/check-tailwind-arbitrary.mjs",
     "validate-content": "tsx scripts/validate-content.ts",
+    "check-density": "tsx scripts/check-density.ts",
     "test": "vitest run"
   },
   "dependencies": {

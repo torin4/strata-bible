@@ -40,5 +40,8 @@ jobs:
       - name: Validate content
         run: pnpm validate-content
 
+      - name: Content density
+        run: pnpm check-density
+
       - name: Next build smoke
         run: pnpm build
