@@ -2110,9 +2110,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You can be genuinely called and still act out of fear in a way that endangers the very thing you were given.'
+          text: 'You can be genuinely called and still act out of fear in a way that endangers the very thing you were given. The promise was kept anyway. It did not depend on him being brave.'
         },
-        soft: 'The promise was kept anyway. It did not depend on him being brave.',
         ask: 'Where has fear made you protect yourself at someone else’s cost, and what would it mean to trust that what you’re guarding does not rest on you alone?'
       }
     ]
@@ -2454,9 +2453,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You may have wanted a guarantee and been handed instead a darkness to walk into, with the word that someone has bound themselves to you on the far side of it.'
+          text: 'You may have wanted a guarantee and been handed instead a darkness to walk into, with the word that someone has bound themselves to you on the far side of it. The oath did not rest on Abram. He slept through the part that mattered most, and it held.'
         },
-        soft: 'The oath did not rest on Abram. He slept through the part that mattered most, and it held.',
         ask: 'Where did you ask for certainty and get only a promise, and whose keeping of it would you have to trust to walk into the dark?'
       }
     ]
@@ -2502,8 +2500,7 @@ export const GENESIS: Reading[] = [
           theo: 'The God of this story is not only the God of the chosen line. He is the God who sees the discarded, hears the powerless, and meets them where they ran to. The covenant has a center, but its God keeps showing up at the margins.',
           arch: 'The wilderness, the place stripped of every familiar support, is where the old stories set the meeting that changes everything. Hagar, a slave with nowhere left to run, is the first person in the Bible to give God a name, and she does it in the desert she fled to. What recurs is the pattern that you often meet what truly sees you only after you have run out of everywhere else. (Found in the place you fled to.)'
         },
-        addr: { mode: 'names', text: 'You may know what it is to be the one overlooked in someone else’s arrangement, and to be seen, really seen, only after you had run as far as you could.' },
-        soft: 'She was seen. In the one place she thought she was most alone, she was the one who got to name God.',
+        addr: { mode: 'names', text: 'You may know what it is to be the one overlooked in someone else’s arrangement, and to be seen, really seen, only after you had run as far as you could. She was seen. In the one place she thought she was most alone, she was the one who got to name God.' },
         ask: 'Where do you most need to be seen, and what would change if you trusted that you already have been?'
       }
     ]
@@ -2630,8 +2627,7 @@ export const GENESIS: Reading[] = [
           theo: 'Grace here runs through relationship. Lot is saved not because he earned it but because someone interceded for him. The chapter quietly answers Abraham’s bargaining: the ten were not found, and yet the pleading was not wasted. It reached the one household it could.',
           arch: 'The forbidden backward glance is one of the oldest and most haunting images there is, told again in Orpheus turning to look at Eurydice and losing her at the threshold. To be told not to look back and to look anyway is the pull toward the thing you cannot stop loving even as it destroys you, and it can fix you in place. (Orpheus and Lot’s wife, the look that costs everything.)'
         },
-        addr: { mode: 'names', text: 'You know the backward look, the inability to stop turning toward something already gone, and how it can freeze you where you stand.' },
-        soft: 'He was pulled out by the hand. Sometimes you are saved not by your own strength but because someone refused to stop pleading for you.',
+        addr: { mode: 'names', text: 'You know the backward look, the inability to stop turning toward something already gone, and how it can freeze you where you stand. He was pulled out by the hand. Sometimes you are saved not by your own strength but because someone refused to stop pleading for you.' },
         ask: 'What are you still looking back at that you cannot afford to keep facing, and who has a hand out to pull you forward?'
       }
     ]
@@ -2704,8 +2700,7 @@ export const GENESIS: Reading[] = [
           theo: 'Election in this book is never the same as God’s care running out for everyone else. Isaac carries the covenant, but God hears Ishmael cry, saves him, and promises him a future too. The center is chosen; the margin is not forsaken.',
           arch: 'The one cast out to keep the chosen story clean does not vanish from it. Ishmael is heard in the wilderness and made a nation of his own, as Esau will be, the book refusing to let the rejected son be erased. What you exile to protect the inheritance remains, in the story and on the conscience. (The cast-out son the book will not forget.)'
         },
-        addr: { mode: 'names', text: 'You may know the uncomfortable side of getting what you longed for, the someone or something pushed out of the frame so the picture could stay clean.' },
-        soft: 'God heard the boy. The one cast out to the edge of the story was not outside the reach of being heard.',
+        addr: { mode: 'names', text: 'You may know the uncomfortable side of getting what you longed for, the someone or something pushed out of the frame so the picture could stay clean. God heard the boy. The one cast out to the edge of the story was not outside the reach of being heard.' },
         ask: 'Who or what got pushed to the margins so your own story could hold together, and what would it mean to believe they were still heard?'
       }
     ]
@@ -2754,8 +2749,7 @@ export const GENESIS: Reading[] = [
           theo: 'If there is good news here it is the ram: that God stops the hand, that the thing demanded is not finally taken, that provision arrives at the last second from outside. But the book does not hand you that comfort cleanly. It makes you walk all the way up the mountain first, and it does not undo what the walk cost.',
           arch: 'To go to the very edge of losing the irreplaceable thing, and to have it handed back, is not the same as never having faced the loss. You come down the mountain changed, and not everything that climbed it comes back down with you. The descent that returns what it nearly took is one of the deepest patterns of initiation. (What the mountain keeps.)'
         },
-        addr: { mode: 'names', text: 'You may know the strange aftermath of a dread lifted at the last moment, the relief that does not quite cancel what the fear already took from you.' },
-        soft: 'The hand was stopped. Whatever it cost, the boy came down off the mountain alive.',
+        addr: { mode: 'names', text: 'You may know the strange aftermath of a dread lifted at the last moment, the relief that does not quite cancel what the fear already took from you. The hand was stopped. Whatever it cost, the boy came down off the mountain alive.' },
         ask: 'What have you been asked to hold so loosely that you might lose it, and what did the holding cost you, even when it was given back?'
       }
     ]
@@ -2853,7 +2847,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'You know the sense of being set inside a struggle you did not start, a rivalry or a role handed to you from before you could choose it.'
         },
-        soft: 'Some things about your life were decided before you had a say. The question is what you do with them now.',
         ask: 'What part of your story was set before you could choose it, and how have you been carrying it?'
       },
       {
@@ -2878,9 +2871,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know both moves in this scene: trading something that lasts for something you wanted right now, and the colder one, using another person’s need as your leverage.'
+          text: 'You know both moves in this scene: trading something that lasts for something you wanted right now, and the colder one, using another person’s need as your leverage. Appetite is loud and the future is quiet. The trade rarely feels like a trade while you are making it.'
         },
-        soft: 'Appetite is loud and the future is quiet. The trade rarely feels like a trade while you are making it.',
         ask: 'What lasting thing have you been tempted to spend on an immediate hunger, and what is the hunger really?'
       }
     ]
@@ -2941,9 +2933,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to want a blessing badly enough to take it by a means you would rather not say out loud, and to tell yourself the outcome will settle the question of how you got it.'
+          text: 'You know what it is to want a blessing badly enough to take it by a means you would rather not say out loud, and to tell yourself the outcome will settle the question of how you got it. The thing taken by force still has to be lived with afterward, and it rarely sits quiet.'
         },
-        soft: 'The thing taken by force still has to be lived with afterward, and it rarely sits quiet.',
         ask: 'Where have you reached to grab something you could not wait to be given, and what did the grabbing cost?'
       },
       {
@@ -2963,9 +2954,8 @@ export const GENESIS: Reading[] = [
         meaning: 'The chapter’s most human moment belongs to the brother who lost. Esau, who is no innocent himself, lets out a loud and bitter cry and begs, bless me too, my father, as though surely there had to be more than one. The story does not look away from him. It lets the cost of the chosen line be a real person standing in the doorway, weeping, asking for something that has already been given to someone else.',
         addr: {
           mode: 'names',
-          text: 'You know the cry of arriving too late, of asking for the blessing only to be told, gently or not, that it has already gone to someone else.'
+          text: 'You know the cry of arriving too late, of asking for the blessing only to be told, gently or not, that it has already gone to someone else. Being passed over is its own grief, and the one who lost is not always the one who was wrong.'
         },
-        soft: 'Being passed over is its own grief, and the one who lost is not always the one who was wrong.',
         ask: 'Where have you been the one in the doorway, too late, and what would it mean to grieve it honestly instead of pretending it did not land?'
       }
     ]
@@ -2999,9 +2989,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to be running from something you did, bedded down in the bleakest stretch of the road, and to find you were not as alone there as you were certain you were.'
+          text: 'You know what it is to be running from something you did, bedded down in the bleakest stretch of the road, and to find you were not as alone there as you were certain you were. God was in the place, and he did not know it. The not-knowing did not make it any less true.'
         },
-        soft: 'God was in the place, and he did not know it. The not-knowing did not make it any less true.',
         ask: 'Where is a bleak place you are only trying to get through, and what would change if you looked for God to be already in it?'
       }
     ]
@@ -3036,9 +3025,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know the strange justice of having done to you the exact thing you once did to someone else, and the way it can stop you cold.'
+          text: 'You know the strange justice of having done to you the exact thing you once did to someone else, and the way it can stop you cold. The mirror is rarely flattering, but it is usually fair.'
         },
-        soft: 'The mirror is rarely flattering, but it is usually fair.',
         ask: 'Where has something you did to someone come back around to you, and what is it trying to teach you?'
       },
       {
@@ -3064,7 +3052,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'You know what it is to keep performing for a love that does not arrive, and you may know the quieter freedom of finally stopping and being held by something else.'
         },
-        soft: 'The ache to be chosen is real. So is the day you stop auditioning for it.',
         ask: 'Whose love have you been performing for, and what would it free in you to stop?'
       }
     ]
@@ -3145,9 +3132,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know the night before the thing you dread, alone in the dark, holding on to something you will not release until it blesses you, and the way the holding can leave its mark on you.'
+          text: 'You know the night before the thing you dread, alone in the dark, holding on to something you will not release until it blesses you, and the way the holding can leave its mark on you. The blessing and the limp came out of the same grip. Most real ones do.'
         },
-        soft: 'The blessing and the limp came out of the same grip. Most real ones do.',
         ask: 'What are you refusing to let go of until it blesses you, and what might holding on cost you?'
       }
     ]
@@ -3183,9 +3169,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know the dread of facing someone you wronged, the bracing for the blow, and you may know the stranger grace of being met instead with open arms.'
+          text: 'You know the dread of facing someone you wronged, the bracing for the blow, and you may know the stranger grace of being met instead with open arms. What you flee grows teeth in the dark. Faced, it is often smaller, and sometimes weeping.'
         },
-        soft: 'What you flee grows teeth in the dark. Faced, it is often smaller, and sometimes weeping.',
         ask: 'Who are you bracing to face, and what would it change to imagine being met with open arms?'
       }
     ]
@@ -3224,9 +3209,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You may know what it is to have your own pain taken up as someone else’s cause, spoken for so loudly that you disappear from your own story.'
+          text: 'You may know what it is to have your own pain taken up as someone else’s cause, spoken for so loudly that you disappear from your own story. Being avenged is not the same as being heard, and the two are easily confused.'
         },
-        soft: 'Being avenged is not the same as being heard, and the two are easily confused.',
         ask: 'Where has pain, yours or someone else’s, been turned into a banner for a fight that stopped being about the person who was hurt?'
       }
     ]
@@ -3302,9 +3286,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know a family pattern you swore you would never repeat, and the way it can show up in your own hands anyway.'
+          text: 'You know a family pattern you swore you would never repeat, and the way it can show up in your own hands anyway. The wounds we carry have a way of becoming the wounds we hand on, unless we catch them.'
         },
-        soft: 'The wounds we carry have a way of becoming the wounds we hand on, unless we catch them.',
         ask: 'What pattern from the family that made you are you most afraid of repeating, and where do you already see it?'
       },
       {
@@ -3333,7 +3316,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'You know the silence of heaven in the worst stretch, when the very thing you dreaded happens and no voice arrives to explain it.'
         },
-        soft: 'God said nothing here, and was not absent. Those are not the same thing.',
         ask: 'Where has heaven gone quiet on you, and what would it change to trust that silence is not the same as absence?'
       }
     ]
@@ -3372,9 +3354,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to be owed something by someone with power over you, and to have no clean or easy way to claim it.'
+          text: 'You know what it is to be owed something by someone with power over you, and to have no clean or easy way to claim it. The one everyone wrote off is often the one telling the truth.'
         },
-        soft: 'The one everyone wrote off is often the one telling the truth.',
         ask: 'Where have you been quietly written out of something you were owed, and what would claiming it honestly require of you?'
       }
     ]
@@ -3413,9 +3394,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know the bitter version of doing the right thing, the kind that costs you and is not rewarded, and the question of whether God is really with you when it does.'
+          text: 'You know the bitter version of doing the right thing, the kind that costs you and is not rewarded, and the question of whether God is really with you when it does. Being accompanied is not the same as being spared. It may be the better promise.'
         },
-        soft: 'Being accompanied is not the same as being spared. It may be the better promise.',
         ask: 'Where has doing the right thing cost you, and what would change if presence, not protection, were what God was offering in it?'
       }
     ]
@@ -3471,7 +3451,6 @@ export const GENESIS: Reading[] = [
           mode: 'names',
           text: 'You know the difference between being healed of a hard season and being made, somehow, fruitful inside it.'
         },
-        soft: 'Some things are not taken away. They are made to bear fruit where they hurt.',
         ask: 'Where might you be asked not to be rescued from a hard place, but to grow something in it?'
       }
     ]
@@ -3500,9 +3479,8 @@ export const GENESIS: Reading[] = [
         meaning: 'The brothers stand before the one man who can feed them or starve them, and they do not know he is the boy they threw in a pit. The test Joseph runs is not only cruelty; it is the real question of whether they are the same men. And he hears them, at last, say out loud the thing they buried, the anguish they would not listen to, and he has to leave the room to weep. The reckoning this family needs is not revenge. It is whether the men who sold one brother would now protect another.',
         addr: {
           mode: 'names',
-          text: 'You know the strange position of suddenly holding power over people who once held it over you, and the question of what you will do with it.'
+          text: 'You know the strange position of suddenly holding power over people who once held it over you, and the question of what you will do with it. Old guilt has a way of surfacing in the one season you cannot afford it.'
         },
-        soft: 'Old guilt has a way of surfacing in the one season you cannot afford it.',
         ask: 'What buried guilt of yours still surfaces under pressure, and what is it asking you to finally face?'
       },
       {
@@ -3528,9 +3506,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'names',
-          text: 'You know the weight of stepping into the gap for someone, taking the loss onto yourself so the person you love does not have to bear it.'
+          text: 'You know the weight of stepping into the gap for someone, taking the loss onto yourself so the person you love does not have to bear it. The one who did the worst thing is sometimes the one who can finally undo it.'
         },
-        soft: 'The one who did the worst thing is sometimes the one who can finally undo it.',
         ask: 'Where could you step into the gap for someone, and what would it cost you to do it?'
       }
     ]
@@ -3566,9 +3543,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'reframes',
-          text: 'You may be holding a real betrayal, and the question is whether you can name it honestly and still refuse to let it be the only thing your life is allowed to mean.'
+          text: 'You may be holding a real betrayal, and the question is whether you can name it honestly and still refuse to let it be the only thing your life is allowed to mean. Naming the wrong and refusing its last word are not opposites. They are the same act of freedom.'
         },
-        soft: 'Naming the wrong and refusing its last word are not opposites. They are the same act of freedom.',
         ask: 'What wound are you being asked to name honestly and, at the same time, to stop letting define you?'
       }
     ]
@@ -3649,9 +3625,8 @@ export const GENESIS: Reading[] = [
         },
         addr: {
           mode: 'reframes',
-          text: 'You may be carrying something someone meant for your harm, and the slow, unfinished work of trusting that it is not the last word, without ever pretending it was not real.'
+          text: 'You may be carrying something someone meant for your harm, and the slow, unfinished work of trusting that it is not the last word, without ever pretending it was not real. He meant it for evil. God meant it for good. The book makes you hold both, and so will a life.'
         },
-        soft: 'He meant it for evil. God meant it for good. The book makes you hold both, and so will a life.',
         ask: 'What harm done to you are you being asked to name honestly and still entrust to a good you cannot yet see?'
       }
     ]
