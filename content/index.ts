@@ -1,6 +1,7 @@
 import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 import {
   EXODUS,
+  EXODUS_CAPSTONE,
   EXODUS_INTRO,
   OUT_OF_EGYPT_MOVEMENT,
   ROAD_TO_THE_MOUNTAIN_MOVEMENT,
@@ -117,6 +118,7 @@ export const BOOKS: BookEntry[] = [
       THE_PRESENCE_MOVEMENT,
     ],
     composition: EXODUS_INTRO,
+    capstone: EXODUS_CAPSTONE,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

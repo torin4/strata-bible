@@ -1,4 +1,4 @@
-import type { Movement, Panel, Reading } from "@/lib/types";
+import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 
 // Exodus, movement 1: out of Egypt (Exodus 1 to 15:21).
 //
@@ -2336,6 +2336,153 @@ export const EXODUS: Reading[] = [
       },
     ],
   },
+  {
+    id: "ex-35",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 35–40 (selected)",
+    chapterIndex: 35,
+    crossesChapters: true,
+    title: "Just as the LORD had commanded",
+    unitLabel: "Scene",
+    thread: "Six chapters now repeat the seven that came before the calf, almost word for word, with one change: you are to make becomes he made. The book could have said they did everything as commanded in a single verse. It spends six chapters instead, and it spends them straight after the failure.",
+    closeEnd: "A cloud settles on the tent, the glory fills it, and the man who built it cannot go in. That is the last thing the book says.",
+    passages: [
+      {
+        label: "One",
+        ref: "35:1–29 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "Everyone whose heart moved them",
+        verses: [
+          { n: 21, text: "And everyone whose heart stirred him and whose spirit prompted him came and brought an offering to the LORD for the work on the Tent of Meeting, for all its services, and for the holy garments." },
+          { n: 22, text: "So all who had willing hearts, both men and women, came and brought brooches and earrings, rings and necklaces, and all kinds of gold jewelry. And they all presented their gold as a wave offering to the LORD." },
+          { n: 29, text: "So all the men and women of the Israelites whose hearts prompted them brought a freewill offering to the LORD for all the work that the LORD through Moses had commanded them to do." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The materials are collected. Everyone whose heart moved them brought something: brooches, earrings, rings, ornaments, all of it gold, brought by men and women both, as a freewill offering. The list of what they hand over is close to the list of what they handed over in chapter 32.",
+          src: "Propp · Meyers · Fretheim",
+        },
+        meaning:
+          "Read this against the calf and it is the same people, the same gold and the same enthusiasm, pointed somewhere else. Nobody in the text draws the comparison for you. The earrings that became a calf a few chapters ago are now going into a tent, and the difference is not that the people have become reliable. It is that this time what they are giving to was specified in advance by somebody other than them.",
+        addr: {
+          mode: "names",
+          text: "The energy that went into the wrong thing is usually the same energy the right thing needs. It does not have to be replaced, only aimed.",
+        },
+        ask: "What have you poured yourself into that was pointed at the wrong thing, and could the same effort go somewhere better?",
+      },
+      {
+        label: "Two",
+        ref: "36:3–7",
+        kind: "scene",
+        form: "prose",
+        title: "More than enough",
+        verses: [
+          { n: 3, text: "They received from Moses all the contributions that the Israelites had brought to carry out the service of constructing the sanctuary. Meanwhile, the people continued to bring freewill offerings morning after morning," },
+          { n: 5, text: "and said to Moses, “The people are bringing more than enough for doing the work the LORD has commanded us to do.”" },
+          { n: 6, text: "After Moses had given an order, they sent a proclamation throughout the camp: “No man or woman should make anything else as an offering for the sanctuary.” So the people were restrained from bringing more," },
+          { n: 7, text: "since what they already had was more than enough to perform all the work." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The craftsmen come to Moses with a problem nobody in scripture has before or since: the people are bringing more than is needed for the work. So Moses gives an order restraining them from bringing anything else, and the text says they were restrained from bringing more.",
+          src: "Meyers · Propp",
+        },
+        meaning:
+          "This is the only place in the Bible where generosity has to be stopped. It is a small joke and a serious one. The people who complained about water, complained about food, complained about meat, and built a calf out of impatience, now have to be told to stop giving. Nothing has been said to make them like this. They were simply given something specific to do.",
+      },
+      {
+        label: "Three",
+        ref: "37:1–25 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "He made it",
+        verses: [
+          { n: 1, text: "Bezalel went on to construct the ark of acacia wood, two and a half cubits long, a cubit and a half wide, and a cubit and a half high." },
+          { n: 6, text: "He constructed a mercy seat of pure gold, two and a half cubits long and a cubit and a half wide." },
+          { n: 10, text: "He also made the table of acacia wood two cubits long, a cubit wide, and a cubit and a half high." },
+          { n: 17, text: "Then he made the lampstand out of pure hammered gold, all of one piece: its base and shaft, its cups, and its buds and petals." },
+          { n: 25, text: "He made the altar of incense out of acacia wood. It was square, a cubit long, a cubit wide, and two cubits high. Its horns were of one piece." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Here is the repetition, plainly. Chapter 25 said: they are to construct an ark of acacia wood, two and a half cubits long, a cubit and a half wide. Chapter 37 says: Bezalel went on to construct the ark of acacia wood, two and a half cubits long, a cubit and a half wide. The same for the table, the lampstand and the incense altar. Same dimensions, same materials, same order, one word changed.",
+          src: "Propp · Childs",
+        },
+      },
+      {
+        label: "Four",
+        ref: "38:1–21 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "The mirrors",
+        verses: [
+          { n: 1, text: "Bezalel constructed the altar of burnt offering from acacia wood. It was square, five cubits long, five cubits wide, and three cubits high." },
+          { n: 8, text: "Next he made the bronze basin and its stand from the mirrors of the women who served at the entrance to the Tent of Meeting." },
+          { n: 21, text: "This is the inventory for the tabernacle, the tabernacle of the Testimony, as recorded at Moses’ command by the Levites under the direction of Ithamar son of Aaron the priest." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The altar, then the bronze basin, and one detail that appears nowhere in the instructions: the basin was made from the mirrors of the women who served at the entrance to the tent. Chapter 30 said make a bronze basin. It did not say what from. Then an inventory of the metal used, recorded like an account.",
+          src: "Meyers · Propp",
+        },
+        meaning:
+          "In six chapters of near-exact repetition, this is one of the few things that is new, and it is not a specification. It is a note about where the bronze came from. Somebody handed over the object they looked at themselves in, and the writer thought that was worth recording by name of donor rather than by weight. The inventory that follows counts everything in talents and shekels. This verse counts something the inventory cannot.",
+      },
+      {
+        label: "Five",
+        ref: "39:1–43 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "As the LORD had commanded",
+        verses: [
+          { n: 1, text: "From the blue, purple, and scarlet yarn they made specially woven garments for ministry in the sanctuary, as well as the holy garments for Aaron, just as the LORD had commanded Moses." },
+          { n: 32, text: "So all the work for the tabernacle, the Tent of Meeting, was completed. The Israelites did everything just as the LORD had commanded Moses." },
+          { n: 42, text: "The Israelites had done all the work just as the LORD had commanded Moses." },
+          { n: 43, text: "And Moses inspected all the work and saw that they had accomplished it just as the LORD had commanded. So Moses blessed them." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The phrase just as the LORD had commanded Moses runs through this chapter like a refrain, seven times over in the making of the garments alone. Then the work is finished, and brought to Moses, and he inspects all of it and blesses them. The wording of that inspection deliberately echoes the end of the creation account: the work is finished, it is seen, it is blessed.",
+          src: "Childs · Propp · Fretheim",
+        },
+        meaning:
+          "This is where the repetition pays. The refrain is not filler but a verdict, repeated until it cannot be missed: instruction and execution match. And it matters where the book puts it. Between the plans and the building comes the calf, so this chapter is the record that what was broken got rebuilt exactly to specification, down to the loops on the curtains. Other readings are available: scribal duplication, or a text meant to be recited aloud rather than read. Neither explains why the duplicate block sits precisely on the far side of the failure.",
+      },
+      {
+        label: "Six",
+        ref: "40:17–38 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "The cloud, and the glory",
+        verses: [
+          { n: 17, text: "So the tabernacle was set up on the first day of the first month of the second year." },
+          { n: 33, text: "And Moses set up the courtyard around the tabernacle and the altar, and he hung the curtain for the entrance to the courtyard. So Moses finished the work." },
+          { n: 34, text: "Then the cloud covered the Tent of Meeting, and the glory of the LORD filled the tabernacle." },
+          { n: 35, text: "Moses was unable to enter the Tent of Meeting because the cloud had settled on it, and the glory of the LORD filled the tabernacle." },
+          { n: 36, text: "Whenever the cloud was lifted from above the tabernacle, the Israelites would set out through all the stages of their journey." },
+          { n: 37, text: "If the cloud was not lifted, they would not set out until the day it was taken up." },
+          { n: 38, text: "For the cloud of the LORD was over the tabernacle by day, and fire was in the cloud by night, in the sight of all the house of Israel through all their journeys." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "It is set up on the first day of the first month of the second year, almost exactly a year after they left Egypt. Moses finishes the work. Then the cloud covers the tent and the glory fills it, and Moses cannot go in. The book ends with the arrangement for travel: when the cloud lifted they moved on, when it stayed they stayed, and it was fire by night, in the sight of all Israel.",
+          src: "Propp · Childs · Meyers",
+        },
+        meaning:
+          "The last thing that happens in Exodus is that the man who built the tent is shut out of it. Not punished, not rebuked; the place is simply too full. Everything he asked for in chapter 33 has arrived, and it arrives as something he cannot walk into. And then the book stops mid-journey, on an instruction about watching a cloud, which is the least conclusive ending available. A people who spent forty chapters learning that they were not going to be told the itinerary are left waiting to see whether tomorrow they travel or stay.",
+        lenses: {
+          theo: "It closes on presence rather than arrival. No land, no temple, no settled life. A tent, a cloud, and a people who will move when it moves.",
+        },
+        addr: {
+          mode: "names",
+          text: "You may know the version of getting what you asked for where it turns out to be larger than you can handle, and the version of guidance where all you are given is whether to move today.",
+        },
+        ask: "If the only direction you were given was stay or go, and only for today, could you live like that?",
+      },
+    ],
+  },
 ];
 
 export const OUT_OF_EGYPT_MOVEMENT: Movement = {
@@ -2539,6 +2686,25 @@ export const THE_PRESENCE_MOVEMENT: Movement = {
     ],
     sources: "Meyers · Propp · Childs · Friedman",
   },
+  capstone: {
+    kicker: "The fourth movement · Exodus 25–40",
+    title: "A tent, a failure, and a rebuilding",
+    paragraphs: [
+      "Sixteen chapters and most of them are joinery, which is the movement's own answer to what the rescue was for. Not a land, which Exodus never reaches, and not a temple, which is centuries away. A tent with poles through rings, so that the God who brought them out can be carried along with them. The detail is not an obstacle to the meaning. The detail is the meaning: this is what care looks like when somebody writes it down.",
+      "Then it breaks, before the plans are even finished. What the people build at the bottom of the mountain is not another god, which would be easier to dismiss. It is an image of the one who brought them out, because he had been silent for forty days and an image can be seen. And the response to that is the worst passage in the movement, three thousand people killed by their own relatives at Moses' order, which the chapter treats as the act that qualifies the Levites for priesthood. That is not law that has expired. It is a killing the narrative approves of, and this reading does not know how to make it sit easily, and has not pretended to.",
+      "What follows is the rebuilding, told twice over, six chapters restating seven with one word changed. The refrain is a verdict: instruction and execution match, down to the loops on the curtains. Put where it is, on the far side of the failure, it says that what was broken got remade exactly as specified. Then the cloud comes down and the man who built the tent cannot go into it, and the book stops there, mid-journey, with a people waiting to see whether tomorrow they travel or stay.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The Levites who killed three thousand of their own people are rewarded with priesthood, and the narrative calls it being for the LORD.",
+        counter:
+          "The same book has just spent four chapters specifying a priesthood whose job is to carry the people's names into the presence and bear their guilt. A priesthood established by killing the people it exists to carry is a contradiction the movement never resolves, and the reader is left holding both.",
+        where: "Exodus 32:26–29 · Exodus 28:29–30",
+      },
+    ],
+    sources: "Childs · Propp · Meyers · Fretheim",
+  },
 };
 
 export const EXODUS_INTRO: Panel = {
@@ -2551,4 +2717,31 @@ export const EXODUS_INTRO: Panel = {
     "The serious case on the other side is worth hearing rather than waved past. The book carries Egyptian detail a later Judean writer had little reason to know, several of its names are Egyptian, including Moses, and no nation invents for itself an origin in which its ancestors were slaves. On that reading something happened to somebody, smaller than the telling, and the telling grew around it. (Hoffmeier.) The argument is genuinely open. What is not in question is what the story became: the founding memory of the people who kept it, and the event the rest of the Bible keeps turning back to.",
   ],
   sources: "Propp · Assmann · Finkelstein & Silberman · Hoffmeier",
+};
+
+// The book-level look-back over all forty chapters, rendered on its own screen one step past the
+// last scene of the final reading. It carries the tension deferred from chapter 34: the character
+// formula holds compassion and generational punishment in one sentence, and the canon spends
+// centuries arguing with the second half. That argument is book-length, so this is the first place
+// large enough to hold it.
+export const EXODUS_CAPSTONE: Capstone = {
+  kicker: "The whole book · Exodus 1–40",
+  title: "Heard, brought out, and travelled with",
+  paragraphs: [
+    "Everything in this book proceeds from four verbs in the second chapter, before anybody has done anything: God heard, remembered, saw, knew. No rescue is announced, nothing changes in Egypt, and the people crying out have no idea it has happened. Forty chapters later there is a tent in the middle of the camp with a cloud on it. What happens in between is the working out of that hearing, and it takes far longer, costs far more and goes wrong far more often than the summary version anybody carries in their head.",
+    "It cost. Egypt lost its firstborn in a night, and the book mirrors that against the boys thrown in the Nile at the start without ever making it comfortable. The code given at the mountain limits how long a man may be owned while assuming he may be owned, and prices a servant's death at thirty shekels a few chapters from commanding that a foreigner not be oppressed, because you were foreigners. Three thousand people die at the foot of Sinai and the killing earns a priesthood. None of that has been tidied here, because tidying it would mean reading a different book. What can be said is that the people who kept these texts went on arguing with them, and the arguing is in the canon too.",
+    "And it does not arrive. Exodus ends with no land, no temple, no settled life: a tent, a cloud, and an instruction about watching it to know whether to move today. The man who built it cannot go inside, because the thing he asked for turned out to be larger than he could walk into. That is the book's actual claim, made over forty chapters against every expectation its own readers bring: the point of being brought out was never the getting somewhere. It was that this God intended to travel with them, and did, before they were remotely ready for it.",
+  ],
+  tensions: [
+    {
+      claim:
+        "God is compassionate and gracious and slow to anger, and visits the iniquity of the fathers on the children to the third and fourth generation. Both halves are one sentence, spoken by God about God.",
+      counter:
+        "The canon spends centuries arguing with the second half. Deuteronomy forbids putting fathers to death for their children or children for their fathers. Jeremiah says the proverb about fathers eating sour grapes and children's teeth being set on edge will no longer be used. Ezekiel states it flatly: the soul who sins is the one who will die, and a son will not bear the guilt of his father. Scripture does not resolve this. It records itself changing its mind in public.",
+      where:
+        "Exodus 34:6–7 · Deuteronomy 24:16 · Jeremiah 31:29–30 · Ezekiel 18:20",
+    },
+  ],
+  ask: "Exodus ends before the arrival, with a people who can only be told whether to move today. What are you waiting to have settled before you will call your life underway, and what would change if it never gets settled?",
+  sources: "Childs · Propp · Fretheim · Meyers",
 };

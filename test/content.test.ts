@@ -2,6 +2,7 @@ import { PUBLISHED_BOOKS } from "@/content";
 import {
   getAdjacent,
   getBook,
+  getClosingBookCapstone,
   getClosingMovement,
   getMovement,
   getReading,
@@ -89,6 +90,7 @@ describe("content lib", () => {
       "ex-32",
       "ex-33",
       "ex-34",
+      "ex-35",
     ]);
   });
 
@@ -105,7 +107,8 @@ describe("content lib", () => {
     expect(getAdjacent("exodus", "ex-24").next?.id).toBe("ex-25");
     expect(getAdjacent("exodus", "ex-25").next?.id).toBe("ex-28");
     expect(getAdjacent("exodus", "ex-32").next?.id).toBe("ex-33");
-    expect(getAdjacent("exodus", "ex-34").next).toBeUndefined();
+    expect(getAdjacent("exodus", "ex-34").next?.id).toBe("ex-35");
+    expect(getAdjacent("exodus", "ex-35").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
@@ -151,6 +154,7 @@ describe("content lib", () => {
     expect(closing("ex-15a")).toBe("The rescue, and the price on it");
     expect(closing("ex-18")).toBe("Learning to live on what arrives");
     expect(closing("ex-24")).toBe("What the rescue was for");
+    expect(closing("ex-35")).toBe("A tent, a failure, and a rebuilding");
     // The reading straight after a capstone must not surface one of its own.
     expect(closing("ex-15b")).toBeUndefined();
   });
@@ -172,11 +176,38 @@ describe("content lib", () => {
     expect(song && getClosingMovement("exodus", song)?.capstone?.title).toBe(
       "The rescue, and the price on it",
     );
-    // It is a movement look-back, not the book's. Mid-movement readings must not surface it,
-    // and Exodus carries no book capstone until all forty chapters are authored.
+    // It is a movement look-back, not the book's, so a mid-movement reading gets neither.
     const mid = getReading("exodus", "ex-7");
     expect(mid && getClosingMovement("exodus", mid)).toBeUndefined();
-    expect(getBook("exodus")?.capstone).toBeUndefined();
+    expect(mid && getClosingBookCapstone("exodus", mid)).toBeUndefined();
+  });
+
+  it("the book capstone closes the whole book, on the final reading only", () => {
+    // Both capstones fire on the last reading by design: the reader gives the book capstone its
+    // own screen one step past the last scene, while the movement capstone renders inline. This
+    // is what was built when the Joseph capstone was found pre-empting the Genesis closing note.
+    const last = getReading("exodus", "ex-35");
+    expect(last && getClosingBookCapstone("exodus", last)?.title).toBe(
+      "Heard, brought out, and travelled with",
+    );
+    expect(last && getClosingMovement("exodus", last)?.capstone?.title).toBe(
+      "A tent, a failure, and a rebuilding",
+    );
+    // The reading before it closes nothing at book level.
+    const before = getReading("exodus", "ex-34");
+    expect(before && getClosingBookCapstone("exodus", before)).toBeUndefined();
+    // The book capstone carries the argument deferred from chapter 34.
+    const tension = getBook("exodus")?.capstone?.tensions?.[0];
+    expect(tension?.where).toContain("Ezekiel 18:20");
+    expect(tension?.where).toContain("Exodus 34:6");
+  });
+
+  it("Exodus is complete but still unpublished", () => {
+    // Forty chapters are authored, which satisfies the condition for publishing. Taking that
+    // decision is deliberate and separate, so it must not happen by accident.
+    expect(getBook("exodus")?.capstone).toBeDefined();
+    expect(getBook("exodus")?.published).toBeFalsy();
+    expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis"]);
   });
 
   it("the Ten Words render as law, with per-item annotation", () => {

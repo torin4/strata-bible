@@ -32,17 +32,48 @@ publishing decision is recorded in the spec and is not taken here.
 
 **Blocked by:** 06 — Done exactly as commanded.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Movement 4 carries a capstone, rendered at the end of its last reading and nowhere else
-- [ ] The book carries a capstone over all forty chapters, rendered on its own screen past the final scene
-- [ ] The book capstone reads as a look-back over the whole book, not over movement 4
-- [ ] The book capstone carries the tension deferred from chapter 34, with claim, counter and where
-- [ ] Movement 3 carries a doorway pointing at movement 4, and it resolves
-- [ ] Movement 4 carries no doorway
-- [ ] Tests assert the book capstone surfaces only on the final reading, and that the movement capstone still surfaces beside it
-- [ ] Exodus remains unpublished, and a test asserts it, so the publishing decision cannot be taken by accident
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] The density gate passes across the whole book and its output is reviewed
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Movement 4 carries a capstone, rendered at the end of its last reading and nowhere else
+- [x] The book carries a capstone over all forty chapters, rendered on its own screen past the final scene
+- [x] The book capstone reads as a look-back over the whole book, not over movement 4
+- [x] The book capstone carries the tension deferred from chapter 34, with claim, counter and where
+- [x] Movement 3 carries a doorway pointing at movement 4, and it resolves
+- [x] Movement 4 carries no doorway
+- [x] Tests assert the book capstone surfaces only on the final reading, and that the movement capstone still surfaces beside it
+- [x] Exodus remains unpublished, and a test asserts it, so the publishing decision cannot be taken by accident
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] The density gate passes across the whole book and its output is reviewed
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Exodus is a complete book.** Twenty-six readings, four movements, 1,191 verses, all verified
+against the BSB.
+
+**The movement capstone holds the calf rather than disposing of it.** Its tension is one only this
+movement could produce: four chapters specify a priesthood whose job is to carry the people's names
+into the presence and bear their guilt, and then a priesthood is established by killing three
+thousand of the people it exists to carry. The movement never resolves that and the capstone says
+so.
+
+**The book capstone was written to the plan the spec set.** It opens on the four verbs in chapter
+2, heard, remembered, saw, knew, before anybody has done anything, and reads the whole book as the
+working out of that hearing. Then the cost, named and not tidied: Egypt's firstborn, a code that
+prices a servant at thirty shekels a few chapters from commanding care for the foreigner, three
+thousand dead at the mountain. Then the ending, which is the claim the book actually makes. No
+land, no temple, no arrival. A tent, a cloud, and an instruction about whether to move today.
+
+**The deferred tension landed where it was held for.** The character formula against Deuteronomy
+24:16, Jeremiah 31:29-30 and Ezekiel 18:20, which together are the canon recording itself changing
+its mind in public about whether guilt travels. Passage level could not have carried that; a
+book-length look-back can. A test asserts the tension names both ends of the argument.
+
+**Both capstones fire on the last reading and do not compete**, exactly as the spec predicted from
+reading the code: the movement capstone renders inline on the final scene, the book capstone gets
+its own screen a step past it. No sequencing work was needed.
+
+**Exodus remains unpublished, and a test now enforces it.** Forty chapters are authored, so the
+condition set at the start is met and the decision is live. It is recorded in the spec and belongs
+to the author, not to a ticket.

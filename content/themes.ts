@@ -404,6 +404,11 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For a second chance that comes with the same terms rather than easier ones, and for what has changed in you that you cannot see.",
   },
+  "ex-35": {
+    themes: ["starting-over", "deliverance", "waiting"],
+    speaksTo:
+      "For the same energy pointed somewhere better after it went badly wrong, and for guidance that only ever tells you about today.",
+  },
   "ex-20": {
     themes: ["limits", "divided-self", "guilt"],
     speaksTo:
