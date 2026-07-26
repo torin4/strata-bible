@@ -15,14 +15,20 @@ the Genesis one does not today.
 
 **Blocked by:** None — can start immediately.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] The generator is parameterised by book name and expected verse count, rather than hardcoded to one book
-- [ ] The generator still refuses to emit when the source yields an unexpected verse count, so a truncated download cannot produce a plausible-looking file
-- [ ] Regenerating Genesis produces a byte-identical file to the one committed today
-- [ ] An Exodus lookup module is generated and committed, covering all 1,213 verses
-- [ ] The expansion module resolves a book's lookup through a book-id keyed registry instead of a direct import
-- [ ] A reading whose book has no registered lookup is returned untouched, preserving today's behaviour for every non-Genesis book
-- [ ] Every existing expansion test passes unchanged
-- [ ] The generated Exodus text stays server-side and does not enter the client bundle
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] The generator is parameterised by book name and expected verse count, rather than hardcoded to one book
+- [x] The generator still refuses to emit when the source yields an unexpected verse count, so a truncated download cannot produce a plausible-looking file
+- [x] Regenerating Genesis produces a byte-identical file to the one committed today — with one deliberate exception: the header line naming the generator changed, since the generator was renamed. All 1,533 verse lines are byte-identical.
+- [x] An Exodus lookup module is generated and committed, covering all 1,213 verses
+- [x] The expansion module resolves a book's lookup through a book-id keyed registry instead of a direct import
+- [x] A reading whose book has no registered lookup is returned untouched, preserving today's behaviour for every non-Genesis book
+- [x] Every existing expansion test passes unchanged
+- [x] The generated Exodus text stays server-side and does not enter the client bundle
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+**Notes for the next ticket**
+
+- The BSB source is not committed. Regenerating needs `curl -s -o /tmp/bsb.txt https://bereanbible.com/bsb.txt` first.
+- Biome's ignore list was generalised from `bsb-genesis.ts` to `bsb-*.ts`, so future generated books need no config change.
+- The registry is typed possibly-undefined deliberately; the comment in the module explains why. Do not "simplify" it.
