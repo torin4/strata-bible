@@ -8,6 +8,19 @@
 // object, base-uri, connect allowlist). If a directive ever blocks something in production,
 // the instant fix is to rename the header below back to "Content-Security-Policy-Report-Only"
 // (it then only reports, never blocks) while the missing source is added.
+// Next's dev server compiles React Refresh through `eval`, so `next dev` needs 'unsafe-eval' or
+// the whole client bundle is blocked before hydration: no menu, no sign-in, no verse reveals,
+// and a single CSP error in the console as the only clue. Production never runs React Refresh,
+// so the shipped policy stays strict. This must never widen anything outside development.
+const dev = process.env.NODE_ENV === "development";
+const scriptSrc = [
+  "script-src 'self' 'unsafe-inline'",
+  dev ? "'unsafe-eval'" : "",
+  "https://js.stripe.com https://apis.google.com https://www.gstatic.com https://*.firebaseapp.com",
+]
+  .filter(Boolean)
+  .join(" ");
+
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -17,7 +30,7 @@ const csp = [
   "img-src 'self' data: https:",
   "font-src 'self'",
   "style-src 'self' 'unsafe-inline'",
-  "script-src 'self' 'unsafe-inline' https://js.stripe.com https://apis.google.com https://www.gstatic.com https://*.firebaseapp.com",
+  scriptSrc,
   "connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://*.firebaseapp.com https://*.cloudfunctions.net https://*.run.app https://api.stripe.com",
   "frame-src https://js.stripe.com https://checkout.stripe.com https://*.firebaseapp.com",
   "worker-src 'self'",
