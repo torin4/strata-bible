@@ -107,16 +107,36 @@ describe("content lib", () => {
     expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis"]);
   });
 
-  it("every Exodus reading is grounded, with its middles left unauthored", () => {
-    // A reading may only become a sitting in the change that also tags it in content/themes.ts,
-    // or the content validator fails. The skeleton therefore lands entirely grounded.
-    for (const reading of getBook("exodus")?.readings ?? []) {
-      expect(reading.tier, reading.id).toBe("grounded");
+  it("an Exodus reading still awaiting authorship is grounded and empty", () => {
+    // A reading may only become a sitting in the change that also authors its layers and tags
+    // it in content/themes.ts, or the content validator fails. Everything not yet authored
+    // stays grounded, with its middles left for the companion.
+    const pending = (getBook("exodus")?.readings ?? []).filter(
+      (r) => r.tier === "grounded",
+    );
+    expect(pending.length).toBeGreaterThan(0);
+    for (const reading of pending) {
       for (const p of reading.passages) {
         expect(p.meaning, `${reading.id} ${p.ref}`).toBeUndefined();
         expect(p.addr, `${reading.id} ${p.ref}`).toBeUndefined();
         expect(p.ask, `${reading.id} ${p.ref}`).toBeUndefined();
       }
     }
+  });
+
+  it("an authored Exodus sitting carries its layers on every scene", () => {
+    const reading = getReading("exodus", "ex-1");
+    expect(reading?.tier).toBe("sitting");
+    expect(reading?.passages).toHaveLength(3);
+    for (const p of reading?.passages ?? []) {
+      expect(p.ground?.text, `${p.ref} ground`).toBeTruthy();
+      expect(p.meaning, `${p.ref} meaning`).toBeTruthy();
+    }
+    // The turn makes a demand rather than naming, which is what the complicity theme rests on.
+    const turns = (reading?.passages ?? [])
+      .map((p) => p.addr?.mode)
+      .filter(Boolean);
+    expect(turns).toContain("claims");
+    expect(turns).not.toContain("names");
   });
 });

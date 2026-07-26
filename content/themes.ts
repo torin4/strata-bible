@@ -30,7 +30,9 @@ export type ThemeKey =
   | "overlooked"
   | "fear-of-loss"
   | "the-outsider"
-  | "faith-and-fairness";
+  | "faith-and-fairness"
+  | "complicity"
+  | "deliverance";
 
 export interface ThemeDef {
   key: ThemeKey;
@@ -157,6 +159,21 @@ export const THEMES: ThemeDef[] = [
     label: "When faith and fairness clash",
     blurb: "You did right, and the reward did not come.",
   },
+  // The two Exodus adds. Genesis's vocabulary assumes the reader is the one suffering, which
+  // covers a book of family betrayals but not a book with an oppressor in it. Complicity names
+  // the side of a liberation story most readers of this app actually stand on, and deliverance
+  // names the part Genesis never reaches: what it is like afterward.
+  {
+    key: "complicity",
+    label: "Benefiting from someone's cost",
+    blurb: "Your life runs on work you did not do and would not want to.",
+  },
+  {
+    key: "deliverance",
+    label: "Getting out",
+    blurb:
+      "The thing that held you is behind you, and you are not yet anywhere.",
+  },
 ];
 
 export interface ReadingThemes {
@@ -281,6 +298,11 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     themes: ["calling", "fear", "waiting"],
     speaksTo:
       "For when you are asked to leave something settled for a promise you cannot yet see.",
+  },
+  "ex-1": {
+    themes: ["complicity", "injustice", "powerlessness"],
+    speaksTo:
+      "For the work underneath your life that someone else is doing, and for the small refusals available to people with no power at all.",
   },
   "gen-15": {
     themes: ["doubt", "waiting", "god-feels-absent"],

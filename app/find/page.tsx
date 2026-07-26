@@ -49,6 +49,12 @@ function buildIndex(): FindEntry[] {
 export default function FindPage() {
   const entries = buildIndex();
 
+  // Only offer a feeling that some published reading actually answers. A theme key can exist
+  // ahead of the content using it, because a book is authored while still unpublished, and a
+  // chip that always returns nothing reads as broken search rather than an empty shelf.
+  const answered = new Set(entries.flatMap((entry) => entry.themes));
+  const themes = THEMES.filter((theme) => answered.has(theme.key));
+
   return (
     <main className="min-h-screen bg-shell px-4 py-8 sm:py-12">
       <div className="mx-auto max-w-[42rem]">
@@ -64,7 +70,7 @@ export default function FindPage() {
           <BackLink href="/" label="Home" />
         </div>
 
-        <FindClient entries={entries} themes={THEMES} />
+        <FindClient entries={entries} themes={themes} />
       </div>
     </main>
   );

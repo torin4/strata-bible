@@ -23,16 +23,20 @@ export const EXODUS: Reading[] = [
   {
     id: "ex-1",
     bookId: "exodus",
-    tier: "grounded",
+    tier: "sitting",
     span: "Exodus 1",
     chapterIndex: 1,
     title: "The midwives",
+    unitLabel: "Scene",
+    thread: "A family becomes a people, and the moment they are many they are a problem. The book opens by counting seventy names, then stops naming anyone at all, until two women refuse an order and the text records who they were.",
+    closeEnd: "The king who is never named gives up on secrecy and orders the whole nation to do his drowning for him.",
     passages: [
       {
-        ref: "Exodus 1",
+        label: "One",
+        ref: "1:1–7",
         kind: "scene",
         form: "prose",
-        title: "The midwives",
+        title: "The names",
         verses: [
           { n: 1, text: "These are the names of the sons of Israel who went to Egypt with Jacob, each with his family:" },
           { n: 2, text: "Reuben, Simeon, Levi, and Judah;" },
@@ -41,6 +45,25 @@ export const EXODUS: Reading[] = [
           { n: 5, text: "The descendants of Jacob numbered seventy in all, including Joseph, who was already in Egypt." },
           { n: 6, text: "Now Joseph and all his brothers and all that generation died," },
           { n: 7, text: "but the Israelites were fruitful and increased rapidly; they multiplied and became exceedingly numerous, so that the land was filled with them." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The book opens by counting. Seventy people, named one by one, who went down to Egypt. Then a single verse crosses several centuries and the family has become a people filling the land. The Hebrew stacks up verbs of increase, fruitful and swarming and multiplying and strong, which are the words used of living creatures in the first chapter of Genesis. Exodus begins by telling you the blessing worked.",
+          src: "Propp · Sarna · Alter",
+        },
+        meaning:
+          "The echo is deliberate. The words for a people becoming numerous here are the words of the creation account, <b>be fruitful and multiply</b>, so what Egypt does next is not simply cruelty toward a minority. It is a policy set against the thing God said at the beginning. And notice that the counting stops. Seventy names are listed, and after this nobody in the chapter is named again except two midwives, because to the empire these people are not names. They are a quantity, and a quantity can be managed.",
+        lenses: {
+          theo: "The promise to Abraham, that his descendants would be past counting, is kept in a foreign country while nobody is watching. Scripture often has God's word doing its work in the gaps between the stories rather than in the middle of them.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "1:8–14",
+        kind: "scene",
+        form: "prose",
+        title: "The new king",
+        verses: [
           { n: 8, text: "Then a new king, who did not know Joseph, came to power in Egypt." },
           { n: 9, text: "“Look,” he said to his people, “the Israelites have become too numerous and too powerful for us." },
           { n: 10, text: "Come, let us deal shrewdly with them, or they will increase even more; and if a war breaks out, they may join our enemies, fight against us, and leave the country.”" },
@@ -48,6 +71,30 @@ export const EXODUS: Reading[] = [
           { n: 12, text: "But the more they were oppressed, the more they multiplied and flourished; so the Egyptians came to dread the Israelites." },
           { n: 13, text: "They worked the Israelites ruthlessly" },
           { n: 14, text: "and made their lives bitter with hard labor in brick and mortar, and with all kinds of work in the fields. Every service they imposed was harsh." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "A new king who did not know Joseph, and the text is precise about the machinery rather than the man. Taskmasters, forced labour, store cities at Pithom and Rameses, work in brick and mortar and in the fields. This is the ordinary vocabulary of Egyptian building administration, and Semitic-speaking people did the work on royal projects in the delta. The king is never given a name. The bureaucracy is described in detail.",
+          src: "Assmann · Propp · Meyers",
+        },
+        meaning:
+          "Fear does the reasoning. The king does not begin with hatred, he begins with a calculation about what might happen in a war, and the policy follows from the arithmetic. Then comes the line the chapter is built on: the more they were oppressed, the more they multiplied. The oppression does not work, and because it does not work it escalates. That is the logic of every system that decides a group of people is a problem to be solved. It never concludes that it was wrong. It concludes that it was not thorough enough.",
+        lenses: {
+          arch: "Growth read as threat, presence read as invasion, and the labour of the feared group quietly holding up the economy that fears them. The pattern is old and it has never stopped recurring, which is why this chapter reads less like ancient history than most readers expect. (The stranger who multiplies.)",
+        },
+        addr: {
+          mode: "claims",
+          text: "Something in your life runs on work you did not do, at a price you did not pay and would not want to. The food, the building, the device in your hand. This chapter does not let you read it purely as the oppressed party, because it puts the store cities in front of you and asks who they were for.",
+        },
+        ask: "Whose labour is underneath the ordinary comfort of your day, and what would it cost you to find out?",
+      },
+      {
+        label: "Three",
+        ref: "1:15–22",
+        kind: "scene",
+        form: "prose",
+        title: "Shiphrah and Puah",
+        verses: [
           { n: 15, text: "Then the king of Egypt said to the Hebrew midwives, whose names were Shiphrah and Puah," },
           { n: 16, text: "“When you help the Hebrew women give birth, observe them on the birthstools. If the child is a son, kill him; but if it is a daughter, let her live.”" },
           { n: 17, text: "The midwives, however, feared God and did not do as the king of Egypt had instructed; they let the boys live." },
@@ -59,9 +106,24 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The book opens with a list of names and a change of regime. A king who did not know Joseph looks at a growing foreign population and does what frightened powers do, and the text is precise about the machinery of it: quotas, overseers, and store cities at Pithom and Rameses. Semitic-speaking people did live in the Egyptian delta, and conscripted labour on royal building projects is well attested. Then two midwives refuse a direct order to kill, and the story records their names, Shiphrah and Puah, while leaving the king unnamed.",
-          src: "Propp · Meyers · Assmann",
+          text: "Two midwives are given a direct order to kill, and they do not do it. The text records their names, Shiphrah and Puah, ordinary names for women of the region, while the king of the greatest empire on earth goes unnamed throughout. Their answer, that the Hebrew women deliver before a midwife can arrive, is a lie told to a man who could kill them for it. The narrator does not apologise. God deals well with them and gives them households of their own.",
+          src: "Propp · Meyers · Sarna",
         },
+        misreading: {
+          named:
+            "The midwives are a nice story about individual courage, and the real subject is a uniquely wicked king.",
+          why: "The chapter is not built around a villain. It is built around a system: a calculation, a labour policy, an escalation, and finally a decree handed to the whole population, every one of my people, throw the boys in the river. By the last verse the killing is not the king's private cruelty but a civic duty handed to ordinary Egyptians. Reading it as one bad man lets everybody off the hook, in the story and out of it. The midwives matter precisely because they are the only two people who decline the duty.",
+        },
+        meaning:
+          "These are the first people in the Bible to disobey a king, and they are foreign, poor, female, and structurally powerless, which is to say they are the least likely candidates the ancient world could offer. They do not lead a revolt. They simply keep doing their work and lie about the results. The text says they <b>feared God</b>, and puts that fear against fear of Pharaoh, which is what the whole book will end up being about: which power you are actually afraid of. Then the last verse widens the frame and makes it everyone's job, which is what tyranny always needs and usually gets.",
+        lenses: {
+          theo: "Scripture keeps two names that Egypt would have considered beneath recording, and drops the name of the king it would have carved into stone. That inversion is a judgement in itself, made quietly, in who gets remembered.",
+        },
+        addr: {
+          mode: "claims",
+          text: "You will not be asked to run an empire. You will be asked, in some small procedural way, to go along with something, and the request will arrive as routine rather than as evil. The midwives are here to tell you that the refusal available to a person with no power at all is usually just declining to be efficient about it.",
+        },
+        ask: "What are you currently going along with because refusing would be awkward rather than dangerous?",
       },
     ],
   },
