@@ -329,6 +329,16 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For what you inherited that somebody else paid for, and for holding the freedom and its cost in the same hand.",
   },
+  "ex-14": {
+    themes: ["fear", "powerlessness", "starting-over"],
+    speaksTo:
+      "For the place where going back looks reasonable, going forward looks impossible, and standing still is unbearable.",
+  },
+  "ex-15a": {
+    themes: ["deliverance", "waiting", "god-feels-absent"],
+    speaksTo:
+      "For the far side of something you could not see a way past, and for words to say about it that also point at what is still ahead.",
+  },
   "gen-15": {
     themes: ["doubt", "waiting", "god-feels-absent"],
     speaksTo:

@@ -23,18 +23,49 @@ close on that note without naming it. Do not resolve it here.
 
 **Blocked by:** 08 — Author `ex-7` through `ex-12`. 03 — ADR: poetry lineation as house style.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] The firstborn and pillar of cloud reading stays grounded, with its middles left for the companion
-- [ ] The sea becomes a sitting whose turn names rather than demands
-- [ ] The Song is authored as a poem, in poetry form, lineated at the parallelism per the ADR
-- [ ] The Song is authored whole, with no omitted verses, so no filled line ever sits beside a broken one
-- [ ] Its in-text turn is marked at the verse where the poem turns
-- [ ] Its turn hands the words to the reader to pray
-- [ ] It carries a tension on singing over drowned men, left unresolved
-- [ ] Both sittings are tagged in the find index in the same change that makes them sittings
-- [ ] The poem renders correctly in the reader, with its lines breaking as authored and its turn marked
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] The density gate is run and no new passage exceeds the failing ratio on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] The firstborn and pillar of cloud reading stays grounded, with its middles left for the companion
+- [x] The sea becomes a sitting whose turn names rather than demands
+- [x] The Song is authored as a poem, in poetry form, lineated at the parallelism per the ADR
+- [x] The Song is authored whole, with no omitted verses, so no filled line ever sits beside a broken one
+- [x] Its in-text turn is marked at the verse where the poem turns
+- [x] Its turn hands the words to the reader to pray
+- [x] It carries a tension on singing over drowned men, left unresolved
+- [x] Both sittings are tagged in the find index in the same change that makes them sittings
+- [x] The poem renders correctly in the reader, with its lines breaking as authored and its turn marked
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] The density gate is run and no new passage exceeds the failing ratio on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Lineation was done mechanically, never by retyping.** A script reads each verse from the BSB
+lookup and inserts a break before named phrases, then asserts that collapsing the whitespace
+reproduces the BSB exactly. 18 of 21 verses carry breaks; verses 19 and 20 are narrative framing
+around Miriam and stay unbroken on purpose. Rendering verified in the production build: 32 line
+breaks, and "The LORD is a warrior, / the LORD is His name" comes out as a couplet.
+
+**The assertion earned its place immediately.** Verse 17's intended break followed an em dash
+rather than a space, so inserting a line break there would have added whitespace the BSB does
+not have. The script refused. The break moved, and a specific guard now rejects any break that
+does not fall on an existing space.
+
+**The in-text turn is verse 13**, where the song stops recounting the sea and starts looking
+forward to a mountain and a sanctuary the story has not reached. The turn mode is `pray`, the
+first in the movement, handing the words over rather than explaining them.
+
+**The unenforced rule from ticket 03 is now enforced.** ADR 0001 said poems are authored whole so
+a flat filled line can never land beside a broken one, and nothing checked it. The content
+validator now fails a lineated poem whose verse numbers skip. Proved by deleting verse 5 and
+watching it fail by name, then reverting.
+
+**A mistake, and what it cost.** Reverting that temporary verse deletion with a checkout of the
+whole content file discarded every uncommitted change in it, wiping this ticket's authoring of
+the sea and the Song. Recovery took one command because the lineation is scripted and the
+apparatus edits were reproducible, and the other four files were untouched. The lesson is to
+revert a scratch mutation with the inverse edit, never with a checkout of a file that also holds
+real work. The lineation script is kept rather than deleted for this reason among others: it is
+idempotent, it reads words from the BSB rather than from the content file, and Psalms will want
+it.

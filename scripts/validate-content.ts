@@ -83,6 +83,29 @@ for (const reading of allReadings) {
     );
 }
 
+// A lineated poem must be authored whole. ADR 0001 sets poetry with line breaks at the
+// parallelism while the BSB lookup stays flat, so if a poetry passage skipped a verse, the
+// reader's full-text fill would drop an unbroken line in among the broken ones, in the same
+// stanza block. The mitigation was a convention until this check; now a gap in a poem fails.
+for (const book of BOOKS) {
+  for (const reading of book.readings) {
+    for (const passage of reading.passages) {
+      if (passage.form !== "poetry") continue;
+      const verses = passage.verses ?? [];
+      const lineated = verses.some((v) => v.text.includes("\n"));
+      if (!lineated) continue;
+      for (let i = 1; i < verses.length; i++) {
+        if (verses[i].n !== verses[i - 1].n + 1) {
+          fail(
+            `${reading.id} · ${passage.ref}: lineated poem skips verse ${verses[i - 1].n + 1}; a poem must be authored whole (ADR 0001)`,
+          );
+          break;
+        }
+      }
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------------------
 // Scripture integrity. Every authored verse must be the Berean Standard Bible.
 //

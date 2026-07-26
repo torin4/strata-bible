@@ -124,6 +124,33 @@ describe("content lib", () => {
     }
   });
 
+  it("the Song is set as lineated poetry, whole, with its turn marked", () => {
+    // STRATA's first published poem. ADR 0001: authored poetry breaks at the parallelism while
+    // the BSB lookup stays flat, and a poem is authored whole so a flat filled line can never
+    // land beside a broken one.
+    const reading = getReading("exodus", "ex-15a");
+    const p = reading?.passages[0];
+    expect(p?.kind).toBe("poem");
+    expect(p?.form).toBe("poetry");
+    expect(p?.inTextTurn).toBe(13);
+    expect(p?.addr?.mode).toBe("pray");
+
+    const verses = p?.verses ?? [];
+    expect(verses.map((v) => v.n)).toEqual(
+      Array.from({ length: 21 }, (_, i) => i + 1),
+    );
+    expect(verses.filter((v) => v.text.includes("\n")).length).toBeGreaterThan(
+      15,
+    );
+    // Lineation adds whitespace and nothing else; the words stay the BSB's.
+    const flat = (s: string) => s.replace(/\s+/g, " ").trim();
+    const v3 = verses.find((v) => v.n === 3);
+    expect(flat(v3?.text ?? "")).toBe(
+      "The LORD is a warrior, the LORD is His name.",
+    );
+    expect(v3?.text).toContain("\n");
+  });
+
   it("an authored Exodus sitting carries its layers on every scene", () => {
     const reading = getReading("exodus", "ex-1");
     expect(reading?.tier).toBe("sitting");
