@@ -5,6 +5,7 @@ import {
   OUT_OF_EGYPT_MOVEMENT,
   ROAD_TO_THE_MOUNTAIN_MOVEMENT,
   THE_COVENANT_MOVEMENT,
+  THE_PRESENCE_MOVEMENT,
 } from "./exodus";
 import {
   ABRAHAM_MOVEMENT,
@@ -113,6 +114,7 @@ export const BOOKS: BookEntry[] = [
       OUT_OF_EGYPT_MOVEMENT,
       ROAD_TO_THE_MOUNTAIN_MOVEMENT,
       THE_COVENANT_MOVEMENT,
+      THE_PRESENCE_MOVEMENT,
     ],
     composition: EXODUS_INTRO,
   },

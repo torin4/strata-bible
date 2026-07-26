@@ -379,6 +379,11 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the agreements you could not later claim you had not entered, and for eating in the presence of something you were told not to touch.",
   },
+  "ex-25": {
+    themes: ["god-feels-absent", "waiting", "overlooked"],
+    speaksTo:
+      "For wanting presence rather than a visit, and for the unseen tending that keeps a light going through the night.",
+  },
   "ex-20": {
     themes: ["limits", "divided-self", "guilt"],
     speaksTo:

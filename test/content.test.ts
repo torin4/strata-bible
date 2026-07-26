@@ -84,6 +84,7 @@ describe("content lib", () => {
       "ex-21",
       "ex-22",
       "ex-24",
+      "ex-25",
     ]);
   });
 
@@ -97,7 +98,8 @@ describe("content lib", () => {
     expect(getAdjacent("exodus", "ex-18").next?.id).toBe("ex-19");
     expect(getAdjacent("exodus", "ex-19").next?.id).toBe("ex-20");
     expect(getAdjacent("exodus", "ex-21").next?.id).toBe("ex-22");
-    expect(getAdjacent("exodus", "ex-24").next).toBeUndefined();
+    expect(getAdjacent("exodus", "ex-24").next?.id).toBe("ex-25");
+    expect(getAdjacent("exodus", "ex-25").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
@@ -106,6 +108,7 @@ describe("content lib", () => {
       "out-of-egypt",
       "road-to-the-mountain",
       "the-covenant",
+      "the-presence",
     ]);
     const ids = new Set(book?.movements.map((m) => m.id));
     for (const reading of book?.readings ?? []) {
@@ -226,12 +229,12 @@ describe("content lib", () => {
     expect(tensions[0].where).toContain("Deuteronomy 15");
   });
 
-  it("movement 3 is declared by chapter range, with no override and no doorway", () => {
+  it("movement 3 is declared by chapter range, with no override", () => {
     const book = getBook("exodus");
     const movement = book?.movements.find((m) => m.id === "the-covenant");
     expect(movement?.chapterStart).toBe(19);
     expect(movement?.chapterEnd).toBe(24);
-    expect(movement?.doorway).toBeUndefined();
+    // It gained its doorway once movement 4 existed to point at; the chain test covers that.
     expect(movement?.situation.paragraphs.length).toBeGreaterThan(0);
     const tenWords = getReading("exodus", "ex-20");
     expect(tenWords?.movementId).toBeUndefined();

@@ -1824,6 +1824,103 @@ export const EXODUS: Reading[] = [
       },
     ],
   },
+  {
+    id: "ex-25",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 25–27 (selected)",
+    chapterIndex: 25,
+    crossesChapters: true,
+    title: "The pattern",
+    unitLabel: "Scene",
+    thread: "Forty days on the mountain, and what Moses is given is not more law. It is a set of building plans, in cubits, for a tent that can be carried.",
+    closeEnd: "A lamp is to be kept burning from evening until morning, continually, which is the first standing duty anyone is given.",
+    passages: [
+      {
+        label: "One",
+        ref: "25:1–40 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "So that I may dwell among them",
+        verses: [
+          { n: 2, text: "“Tell the Israelites to bring Me an offering. You are to receive My offering from every man whose heart compels him." },
+          { n: 8, text: "And they are to make a sanctuary for Me, so that I may dwell among them." },
+          { n: 9, text: "You must make the tabernacle and design all its furnishings according to the pattern I show you." },
+          { n: 10, text: "And they are to construct an ark of acacia wood, two and a half cubits long, a cubit and a half wide, and a cubit and a half high." },
+          { n: 11, text: "Overlay it with pure gold both inside and out, and make a gold molding around it." },
+          { n: 16, text: "And place inside the ark the Testimony, which I will give you." },
+          { n: 17, text: "And you are to construct a mercy seat of pure gold, two and a half cubits long and a cubit and a half wide." },
+          { n: 21, text: "Set the mercy seat atop the ark and put the Testimony that I will give you into the ark." },
+          { n: 22, text: "And I will meet with you there above the mercy seat, between the two cherubim that are over the ark of the Testimony; I will speak with you about all that I command you regarding the Israelites." },
+          { n: 23, text: "You are also to make a table of acacia wood two cubits long, a cubit wide, and a cubit and a half high." },
+          { n: 30, text: "And place the Bread of the Presence on the table before Me at all times." },
+          { n: 31, text: "Then you are to make a lampstand of pure, hammered gold. It shall be made of one piece, including its base and shaft, its cups, and its buds and petals." },
+          { n: 40, text: "See to it that you make everything according to the pattern shown you on the mountain." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The materials come from a freewill offering, from everyone whose heart prompts him, and the list is what a people who had just been paid off by Egypt would actually have: gold, silver, bronze, dyed yarn, fine linen, acacia wood. Then the specifications, object by object. The ark first, then the table, then the lampstand, each in cubits, each with rings and poles so it can be carried.",
+          src: "Propp · Meyers · Childs",
+        },
+        meaning:
+          "The sentence the whole movement rests on is verse 8: make me a sanctuary, so that I may dwell among them. Everything after it is joinery in service of that. Notice what is being built and what is not. Not a temple, which is a building on a site, but a tent with poles through rings, designed from the first instruction to be taken down and carried. The God who has just refused to be seen arranges to be portable.",
+        lenses: {
+          theo: "The ark holds the tablets and the meeting happens above it, between two carved figures, over an empty space. The most sacred object in Israel is a box with the terms inside and nothing on top.",
+        },
+        addr: {
+          mode: "names",
+          text: "You know the difference between somebody visiting and somebody moving their things in. This is the second one, described in cubits.",
+        },
+        ask: "What would it change if presence were something arranged for rather than waited on?",
+      },
+      {
+        label: "Two",
+        ref: "26:1–33 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "The tent, and the veil",
+        verses: [
+          { n: 1, text: "“You are to construct the tabernacle itself with ten curtains of finely spun linen, each with blue, purple, and scarlet yarn, and cherubim skillfully worked into them." },
+          { n: 7, text: "You are to make curtains of goat hair for the tent over the tabernacle—eleven curtains in all." },
+          { n: 15, text: "You are to construct upright frames of acacia wood for the tabernacle." },
+          { n: 31, text: "Make a veil of blue, purple, and scarlet yarn, and finely spun linen, with cherubim skillfully worked into it." },
+          { n: 33, text: "And hang the veil from the clasps and place the ark of the Testimony behind the veil. So the veil will separate the Holy Place from the Most Holy Place." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Ten linen curtains with cherubim worked into them, a covering of goat hair over that, upright acacia frames beneath, and a veil dividing the inside in two. Portable shrines of roughly this kind are known from Egypt and from nomadic peoples in the region, which makes the design less exotic than it reads and more like a familiar object put to a new use.",
+          src: "Meyers · Propp",
+        },
+        meaning:
+          "The veil is the point of the chapter. Having arranged to live among them, God then installs a curtain, and the innermost room is entered by one man once a year. Nearness and distance are being built into the same structure, in fabric, which is the same thing chapter 19 did with a fence around a mountain. The tabernacle does not resolve that tension. It houses it.",
+      },
+      {
+        label: "Three",
+        ref: "27:1–21 (selected)",
+        kind: "scene",
+        form: "prose",
+        title: "The altar, and the lamp",
+        verses: [
+          { n: 1, text: "“You are to build an altar of acacia wood. The altar must be square, five cubits long, five cubits wide, and three cubits high." },
+          { n: 9, text: "You are also to make a courtyard for the tabernacle. On the south side of the courtyard make curtains of finely spun linen, a hundred cubits long on one side," },
+          { n: 20, text: "And you are to command the Israelites to bring you pure oil of pressed olives for the light, to keep the lamps burning continually." },
+          { n: 21, text: "In the Tent of Meeting, outside the veil that is in front of the Testimony, Aaron and his sons are to tend the lamps before the LORD from evening until morning. This is to be a permanent statute for the Israelites for the generations to come." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Outside the tent, a bronze altar for burnt offerings, and around both a courtyard of linen hangings on posts, so the whole thing is a series of enclosures, each one nearer. The chapter ends with clear oil of pressed olives and an instruction that the lamp burn from evening until morning, continually, tended by Aaron and his sons.",
+          src: "Propp · Meyers",
+        },
+        meaning:
+          "The layout is an argument about access. Courtyard, then tent, then the room behind the veil, and each boundary is real. But the last instruction in the chapter is not about restriction at all. It is a light that has to be kept going all night, every night, by somebody who gets up to do it. The arrangement for God to live among these people turns out to require a person with a job.",
+        addr: {
+          mode: "names",
+          text: "Most of what keeps anything alive is unglamorous and repeated: someone trims a wick in the dark so the light is still there in the morning.",
+        },
+        ask: "What are you tending that nobody sees, and what happens if you stop?",
+      },
+    ],
+  },
 ];
 
 export const OUT_OF_EGYPT_MOVEMENT: Movement = {
@@ -1994,6 +2091,38 @@ export const THE_COVENANT_MOVEMENT: Movement = {
       },
     ],
     sources: "Childs · Propp · Meyers",
+  },
+  doorway: {
+    kicker: "The fourth movement",
+    title: "The presence",
+    paragraphs: [
+      "The terms are agreed and sealed, and Moses goes up the mountain for forty days. What he is given there is not more law. It is a set of building plans, in cubits, for a tent with poles through rings so that it can be carried.",
+      "This is the last movement, and it is the one that says what the rescue was for. Not a law and not a land, in the end, but an arrangement for the God who did all of it to live among the people it was done for. It goes badly wrong first.",
+    ],
+    nextMovementId: "the-presence",
+  },
+};
+
+// Movement 4. Chapters 25 to 40 by range: movement 3 ends at chapter 24, so no reading here needs
+// an explicit movementId. No doorway, because there is no movement 5; this is the last one.
+export const THE_PRESENCE_MOVEMENT: Movement = {
+  id: "the-presence",
+  index: 4,
+  title: "The presence",
+  range: "Exodus 25–40",
+  throughline:
+    "A tent, a failure, and a rebuilding. The God who refused to be seen arranges to be carried, the people break the covenant before the plans are finished, and the book ends with a cloud settling on a tent nobody can enter.",
+  chapterStart: 25,
+  chapterEnd: 40,
+  situation: {
+    kicker: "The ground beneath the tabernacle",
+    title: "The situation",
+    paragraphs: [
+      "The first thing to say is about proportion, because it is the question every reader arrives with. The creation of the world gets thirty-one verses. A tent gets around four hundred, twice over. Read as a story that is badly out of balance. Read as what the book is actually for, it is the argument itself: the point of the rescue was never the leaving, it was that this God would end up living among these people, and the specifications are how that gets arranged. Detail is what care looks like when it is written down.",
+      "What is being described is a portable shrine, and portable shrines are known elsewhere in the region, in Egypt and among nomadic peoples. The design is less exotic than it reads. A frame, curtains, an enclosure, a graded approach from courtyard to inner room. What differs is what sits at the centre, which in other sanctuaries would be an image of the god and here is a box with the terms of an agreement inside it and an empty space above.",
+      "Most scholars read these chapters as the work of priestly writers, giving the tabernacle a plan that closely matches the later temple in Jerusalem, which is either the temple projected backward onto the wilderness or the tent that the temple was built to imitate. The answer is not recoverable and the effect is the same either way: a people who had lost a temple were handed a description of a sanctuary that could be packed up and carried, which is a pointed thing to give exiles.",
+    ],
+    sources: "Meyers · Propp · Childs · Friedman",
   },
 };
 
