@@ -319,6 +319,16 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For when you did the thing you believed you were asked to do and it made everything worse, and you want to say so out loud.",
   },
+  "ex-7": {
+    themes: ["divided-self", "control", "injustice"],
+    speaksTo:
+      "For the refusal you have repeated so often it has set into character, and for the cost a rescue can carry that nobody wants to look at.",
+  },
+  "ex-12": {
+    themes: ["complicity", "deliverance", "grief"],
+    speaksTo:
+      "For what you inherited that somebody else paid for, and for holding the freedom and its cost in the same hand.",
+  },
   "gen-15": {
     themes: ["doubt", "waiting", "god-feels-absent"],
     speaksTo:

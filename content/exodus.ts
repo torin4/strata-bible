@@ -548,13 +548,17 @@ export const EXODUS: Reading[] = [
   {
     id: "ex-7",
     bookId: "exodus",
-    tier: "grounded",
+    tier: "sitting",
     span: "Exodus 7–11 (selected)",
     chapterIndex: 7,
     crossesChapters: true,
     title: "The plagues",
+    unitLabel: "Scene",
+    thread: "Nine rounds of the same shape: a demand, a refusal, a sign, a hardening. The signs work through the ordinary world, water and weather and livestock and light, and each one takes something Egypt trusted.",
+    closeEnd: "The last sign is not sent in this chapter. It is announced, and the announcement is where the reading stops.",
     passages: [
       {
+        label: "One",
         ref: "7:14–25",
         kind: "scene",
         form: "prose",
@@ -569,11 +573,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The cycle is built as a pattern rather than a run of surprises: a demand, a refusal, a sign, a hardening, and again. The signs strike the Nile, the land, the sky, the livestock and the body, which is to say the ordered world that Egypt's gods were held to guarantee. Read as a contest it is not chaos against order. It is a claim about who holds the order.",
+          text: "The cycle is built as a pattern rather than a run of surprises: a demand, a refusal, a sign, a hardening, and again. The signs work through the ordinary world, water and weather and livestock and light, which is to say the order Egypt's gods were held to guarantee. The Nile goes first because the Nile is Egypt. Everything the country eats depends on its flooding.",
           src: "Propp · Fretheim · Assmann",
+        },
+        meaning:
+          "The first sign takes the water. Not a plague sent from outside the world but the country's own river turned against it, and the fish die, and nobody can drink. Then the detail the story insists on: Pharaoh's magicians do the same thing. The sign is not overwhelming and it is not meant to be. It is the opening move of an argument about who the Nile actually belongs to.",
+        lenses: {
+          theo: "Egypt worshipped the river as a god. The contest is not staged in the sky but inside the things people depended on daily, which is where the question of what you actually trust gets settled.",
         },
       },
       {
+        label: "Two",
         ref: "8:1–19",
         kind: "scene",
         form: "prose",
@@ -586,8 +596,16 @@ export const EXODUS: Reading[] = [
           { n: 15, text: "When Pharaoh saw that there was relief, however, he hardened his heart and would not listen to Moses and Aaron, just as the LORD had said." },
           { n: 19, text: "“This is the finger of God,” the magicians said to Pharaoh. But Pharaoh’s heart was hardened, and he would not listen to them, just as the LORD had said." },
         ],
+        ground: {
+          kind: "historical",
+          text: "Frogs, then gnats out of the dust. The magicians match the frogs, which only doubles the misery, and then they fail. Their line to Pharaoh, that this is the finger of God, is the first admission from inside his own court that something has changed. He is unmoved.",
+          src: "Propp · Sarna",
+        },
+        meaning:
+          "Notice what Pharaoh's own experts can and cannot do. They can add frogs. They cannot remove them, and they cannot produce gnats at all. Egypt's power is real and it is entirely one-directional: it can make more of a problem, never less. When his advisers tell him plainly what they are looking at, he does not argue with them. He simply does not listen, which is a different thing from disagreeing.",
       },
       {
+        label: "Three",
         ref: "9:13–35",
         kind: "scene",
         form: "prose",
@@ -602,8 +620,19 @@ export const EXODUS: Reading[] = [
           { n: 34, text: "When Pharaoh saw that the rain and hail and thunder had ceased, he sinned again and hardened his heart—he and his officials." },
           { n: 35, text: "So Pharaoh’s heart was hardened, and he would not let the Israelites go, just as the LORD had said through Moses." },
         ],
+        ground: {
+          kind: "historical",
+          text: "By the hail the warnings have become specific: bring the livestock under shelter and they will live. Some of Pharaoh's officials act on it and some do not, so the text quietly divides Egypt into those who heeded the word and those who did not. Afterward Pharaoh says the words I have sinned, and takes them back the moment the sky clears.",
+          src: "Fretheim · Propp",
+        },
+        meaning:
+          "This is the first confession in the book, and it is worth nothing. He says he has sinned while the hail is still falling and reverses himself as soon as it stops, which the narrator states flatly rather than condemning. Pressure produces the language of repentance easily. What it cannot produce is a changed man, and the difference only shows once the pressure is off.",
+        lenses: {
+          arch: "The apology extracted by consequence, sincere while the consequence lasts. (Repentance that is really negotiation.)",
+        },
       },
       {
+        label: "Four",
         ref: "10:1–29",
         kind: "scene",
         form: "prose",
@@ -620,8 +649,24 @@ export const EXODUS: Reading[] = [
           { n: 28, text: "“Depart from me!” Pharaoh said to Moses. “Make sure you never see my face again, for on the day you see my face, you will die.”" },
           { n: 29, text: "“As you say,” Moses replied, “I will never see your face again.”" },
         ],
+        ground: {
+          kind: "historical",
+          text: "Chapter 10 opens by saying it outright: I have hardened his heart. Three different Hebrew verbs are used across the cycle for this hardening, and in the early rounds the subject is usually Pharaoh himself. Only later does God become the one doing it. Then locusts strip whatever the hail left, and a darkness settles that the text calls a darkness that can be felt.",
+          src: "Propp · Childs · Fretheim",
+        },
+        misreading: {
+          named:
+            "God hardened Pharaoh's heart, so Pharaoh was a puppet, punished for a refusal he was never free to avoid.",
+          why: "Follow the verbs in order. Through the first five rounds it is Pharaoh who hardens his own heart, and only afterward is God named as the one who hardens it. The text describes something recognisable: a man makes the same refusal so many times that it stops being a choice and becomes his character, and Scripture is willing to call that hardening God's work as well as his own. It is not a story about a man denied the chance to repent. It is a story about a man who took the chance nine times and used it to say no.",
+        },
+        meaning:
+          "The darkness is the sign before the last, and it undoes the first thing God ever made. Egypt's sun was its chief god and the pharaoh was held to be that god's son, so three days of dark in which nobody can see anyone else is a verdict on the whole arrangement. His officials have already broken, asking him whether he does not yet realise Egypt is destroyed. He answers by threatening Moses with death if he sees his face again.",
+        lenses: {
+          theo: "Where Israel lives there is light. The text keeps making that distinction not to flatter them but to say the darkness is not weather, it is aimed.",
+        },
       },
       {
+        label: "Five",
         ref: "11:1–10",
         kind: "scene",
         form: "prose",
@@ -634,22 +679,47 @@ export const EXODUS: Reading[] = [
           { n: 9, text: "The LORD said to Moses, “Pharaoh will not listen to you, so that My wonders may be multiplied in the land of Egypt.”" },
           { n: 10, text: "Moses and Aaron did all these wonders before Pharaoh, but the LORD hardened Pharaoh’s heart so that he would not let the Israelites go out of his land." },
         ],
+        ground: {
+          kind: "historical",
+          text: "The last sign is announced here rather than carried out, and the announcement is deliberately unbearable: every firstborn from the palace to the mill, and the livestock too. The firstborn son carried the inheritance and the family line, so this strikes at the future of every household in the country. Egypt holds Moses in high regard by now, which makes the announcement land in silence.",
+          src: "Propp · Sarna · Assmann",
+        },
+        tensions: [
+          {
+            claim:
+              "God's justice frees the enslaved, and the cost of that freedom falls on the nation that enslaved them, down to its children.",
+            counter:
+              "Other voices in the canon refuse to let a nation's guilt fall on its children, or to treat the exodus as Israel's private possession. Ezekiel is explicit that a son does not bear his father's guilt. Amos has God bringing the Philistines up from Caphtor in the same breath as Israel out of Egypt.",
+            where: "Ezekiel 18:20 · Amos 9:7 · Jonah 4:11",
+          },
+        ],
+        meaning:
+          "There is no way to read this that makes the dead children acceptable, and the book does not offer one. What it offers is a mirror: Egypt began by drowning Hebrew boys in the river, and it ends by losing its own sons in a night. That is the logic of the story, measure for measure, and naming the logic is not the same as excusing it. The canon itself will argue with this page, which is why the argument is printed above rather than resolved.",
+        addr: {
+          mode: "claims",
+          text: "The hardening is not a curiosity about someone else's free will. It is a description of what repeated refusal does to a person, and you have refused something small enough times to feel it setting. The reading asks you to find the place where you have stopped being able to choose differently.",
+        },
+        ask: "What have you said no to so often that saying yes is no longer really available to you?",
       },
     ],
   },
   {
     id: "ex-12",
     bookId: "exodus",
-    tier: "grounded",
+    tier: "sitting",
     span: "Exodus 12 (selected)",
     chapterIndex: 12,
     title: "Passover",
+    unitLabel: "Scene",
+    thread: "The night is told twice, as a meal and as a death. The instructions keep stepping out of the story to say how this is to be done in generations to come, because the people keeping it will mostly be people who were not there.",
+    closeEnd: "They leave in such haste the bread has no time to rise, and that unrisen bread becomes the thing eaten every year afterward.",
     passages: [
       {
-        ref: "Exodus 12 (selected)",
+        label: "One",
+        ref: "12:1–14",
         kind: "scene",
         form: "prose",
-        title: "Passover",
+        title: "The meal, and the blood",
         verses: [
           { n: 1, text: "Now the LORD said to Moses and Aaron in the land of Egypt," },
           { n: 2, text: "“This month is the beginning of months for you; it shall be the first month of your year." },
@@ -663,6 +733,25 @@ export const EXODUS: Reading[] = [
           { n: 12, text: "On that night I will pass through the land of Egypt and strike down every firstborn male, both man and beast, and I will execute judgment against all the gods of Egypt. I am the LORD." },
           { n: 13, text: "The blood on the houses where you are staying will be a sign; when I see the blood, I will pass over you. No plague will fall on you to destroy you when I strike the land of Egypt." },
           { n: 14, text: "And this day will be a memorial for you, and you are to celebrate it as a feast to the LORD, as a permanent statute for the generations to come." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "This is liturgy before it is narrative. The month is reset to be the first of the year, the lamb is chosen four days ahead, and the instructions are addressed to a whole congregation across generations. The blood goes on the doorframe as a mark. Passover almost certainly began as an older shepherds' rite, marking a flock and a season, which Israel took up and filled with this night.",
+          src: "Sarna · Childs · Meyers",
+        },
+        meaning:
+          "The meal is eaten dressed to travel, belt fastened and staff in hand, which makes it a strange sort of feast: food taken standing, by people who expect to be gone before morning. And the text is already looking past the night it describes. It tells them how to keep this when they are settled and safe and none of them remember Egypt, because a rescue that is not rehearsed is a rescue that gets forgotten.",
+        lenses: {
+          theo: "The blood is not payment and it is not magic. It is a mark that distinguishes a household, and the instruction attached to it is that when your children ask what this means, you tell them.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "12:21–39",
+        kind: "scene",
+        form: "prose",
+        title: "Midnight, and the going out",
+        verses: [
           { n: 21, text: "Then Moses summoned all the elders of Israel and told them, “Go at once and select for yourselves a lamb for each family, and slaughter the Passover lamb." },
           { n: 22, text: "Take a cluster of hyssop, dip it into the blood in the basin, and brush the blood on the top and sides of the doorframe. None of you shall go out the door of his house until morning." },
           { n: 23, text: "When the LORD passes through to strike down the Egyptians, He will see the blood on the top and sides of the doorframe and will pass over that doorway; so He will not allow the destroyer to enter your houses and strike you down." },
@@ -676,9 +765,16 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The night is told twice over, as a meal and as a rescue. The instructions are liturgy: they were written for people who would keep this feast every year long afterward, which is why the chapter keeps stepping out of the story to say how it is to be done in generations to come. The blood on the doorframe is a mark to be seen, and the meal is eaten dressed to leave.",
-          src: "Sarna · Childs · Meyers",
+          text: "At midnight there is a death in every Egyptian house, from the palace to the prison, and a great cry goes up. Pharaoh summons Moses in the dark and gives way completely, and then asks him for a blessing. The people leave in haste with dough that has not risen, and the text says a mixed multitude went up with them: not only Israelites, but anyone else in Egypt with reason to go.",
+          src: "Propp · Sarna · Meyers",
         },
+        meaning:
+          "The cost is not softened. Egypt loses its sons in a night, and the freedom on the other side of that is real freedom bought at a price somebody else paid. That is the shape of the meal Israel is told to keep forever, and it is worth seeing what the meal actually does with it. It does not celebrate the death. It rehearses the escape, in unrisen bread and a hurried posture, and hands the story to children who will ask what it means.",
+        addr: {
+          mode: "claims",
+          text: "You have inherited things that were paid for by people you never met, and mostly you eat them without asking. This night is kept every year precisely so that the cost stays attached to the freedom instead of quietly coming loose from it.",
+        },
+        ask: "What did you inherit that somebody else paid for, and when did you last say so out loud?",
       },
     ],
   },
