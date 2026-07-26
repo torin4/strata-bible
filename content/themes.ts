@@ -394,6 +394,16 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For what you built for yourself while the waiting went on too long, and the account of it you gave afterward.",
   },
+  "ex-33": {
+    themes: ["god-feels-absent", "doubt", "loneliness"],
+    speaksTo:
+      "For being offered everything you asked for except the presence you actually wanted, and for asking to be shown rather than accompanied.",
+  },
+  "ex-34": {
+    themes: ["guilt", "starting-over", "faith-and-fairness"],
+    speaksTo:
+      "For a second chance that comes with the same terms rather than easier ones, and for what has changed in you that you cannot see.",
+  },
   "ex-20": {
     themes: ["limits", "divided-self", "guilt"],
     speaksTo:

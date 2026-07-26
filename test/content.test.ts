@@ -87,6 +87,8 @@ describe("content lib", () => {
       "ex-25",
       "ex-28",
       "ex-32",
+      "ex-33",
+      "ex-34",
     ]);
   });
 
@@ -102,7 +104,8 @@ describe("content lib", () => {
     expect(getAdjacent("exodus", "ex-21").next?.id).toBe("ex-22");
     expect(getAdjacent("exodus", "ex-24").next?.id).toBe("ex-25");
     expect(getAdjacent("exodus", "ex-25").next?.id).toBe("ex-28");
-    expect(getAdjacent("exodus", "ex-32").next).toBeUndefined();
+    expect(getAdjacent("exodus", "ex-32").next?.id).toBe("ex-33");
+    expect(getAdjacent("exodus", "ex-34").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
