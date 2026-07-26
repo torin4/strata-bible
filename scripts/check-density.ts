@@ -81,7 +81,16 @@ function apparatusWords(p: Passage): number {
     words(p.addr?.text) +
     words(p.soft) +
     words(p.ask) +
-    words(p.prayer?.text)
+    words(p.prayer?.text) +
+    // Per-item annotation on a statute-cluster or saying-cluster: a chip on one law, a gloss on
+    // another, all the way down the list. It is the bulk of what a reader reads on a page of
+    // law, and until Exodus 19-24 no published passage carried any, so the omission never
+    // showed. Counting it is what keeps the ratio honest for the most annotated pages in the
+    // book, which are exactly the pages the 1.8x target was tightened to protect.
+    Object.values(p.perItem ?? {}).reduce(
+      (n, item) => n + words(item.addr?.text) + words(item.note),
+      0,
+    )
   );
 }
 

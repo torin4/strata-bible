@@ -20,11 +20,32 @@ new counting.
 
 **Blocked by:** None — can start immediately.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Per-item address text and per-item gloss notes are counted as apparatus
-- [ ] Demonstrated by adding a per-item annotation to a passage locally and observing the reported ratio rise, then reverting
-- [ ] The baseline is refreshed so no existing passage newly fails, and the refresh is committed
-- [ ] The failure threshold itself is unchanged; only what the gate counts changes
-- [ ] The gate still passes across the whole repo
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Per-item address text and per-item gloss notes are counted as apparatus
+- [x] Demonstrated by adding a per-item annotation to a passage locally and observing the reported ratio rise, then reverting
+- [x] The baseline is refreshed so no existing passage newly fails, and the refresh is committed
+- [x] The failure threshold itself is unchanged; only what the gate counts changes
+- [x] The gate still passes across the whole repo
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Measured on real content before and after.** The only passages in the repo carrying per-item
+annotation are two unpublished genre fixtures, and both moved: the Leviticus statute-cluster from
+1.3x to 1.6x, and the Proverbs saying-cluster from 2.8x to 3.0x. That is 46 words of apparatus in
+Leviticus alone that the gate had never seen.
+
+**Demonstrated on a held book too**, since the fixtures are informational and cannot fail CI. A
+temporary per-item annotation on ex-15b took it from 1.15x to 1.37x, and the passage was named as
+a failure when the target was tightened for the demo. Under the old gate the same page would still
+have reported 1.15x. Reverted with the inverse edit rather than a checkout of the file, after the
+ticket-09 lesson.
+
+**The baseline refresh was verified as a no-op** by comparing checksums rather than assuming it.
+No Genesis or Exodus passage carries per-item annotation yet, so no held ratio changed and the 47
+grandfathered entries are identical. The first real movement of this number will come from
+movement 3's own law readings, which is the point.
+
+**Nothing about the threshold changed.** The gate still warns over 1.5x and fails over 1.8x, and
+still holds authored books whether or not they are published. Only what it counts is different.
