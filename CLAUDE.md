@@ -165,3 +165,20 @@ companion feature, the personalized turn comes second.
 A companion chat sidebar (it is not a chat). Accounts before the reader works. Any genre handling
 beyond the seven proven in seed. Genesis 1–25 is already complete in `genesis.ts`; Jacob (25:19 on)
 and Joseph (37–50) are not authored yet and are a later content pass, not part of the reader slice.
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live as markdown files under `.scratch/<feature-slug>/` in this repo, committed
+alongside the code. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five canonical roles, used verbatim: `needs-triage`, `needs-info`, `ready-for-agent`,
+`ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` and `docs/adr/` at the repo root, both created lazily by
+`/domain-modeling` rather than upfront. See `docs/agents/domain.md`.
