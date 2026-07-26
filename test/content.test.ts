@@ -82,6 +82,8 @@ describe("content lib", () => {
       "ex-19",
       "ex-20",
       "ex-21",
+      "ex-22",
+      "ex-24",
     ]);
   });
 
@@ -94,7 +96,8 @@ describe("content lib", () => {
     // Movement 3 has begun, so ex-18 now leads into it rather than ending the book.
     expect(getAdjacent("exodus", "ex-18").next?.id).toBe("ex-19");
     expect(getAdjacent("exodus", "ex-19").next?.id).toBe("ex-20");
-    expect(getAdjacent("exodus", "ex-21").next).toBeUndefined();
+    expect(getAdjacent("exodus", "ex-21").next?.id).toBe("ex-22");
+    expect(getAdjacent("exodus", "ex-24").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
@@ -138,6 +141,7 @@ describe("content lib", () => {
     };
     expect(closing("ex-15a")).toBe("The rescue, and the price on it");
     expect(closing("ex-18")).toBe("Learning to live on what arrives");
+    expect(closing("ex-24")).toBe("What the rescue was for");
     // The reading straight after a capstone must not surface one of its own.
     expect(closing("ex-15b")).toBeUndefined();
   });
@@ -145,8 +149,11 @@ describe("content lib", () => {
   it("movement 1 now has a doorway, and the last movement has none", () => {
     const movements = getBook("exodus")?.movements ?? [];
     const ids = new Set(movements.map((m) => m.id));
-    expect(movements[0]?.doorway?.nextMovementId).toBe("road-to-the-mountain");
-    expect(ids.has(movements[0]?.doorway?.nextMovementId ?? "")).toBe(true);
+    // Every movement but the last points at the next one, and each target resolves.
+    for (const m of movements.slice(0, -1)) {
+      expect(m.doorway?.nextMovementId, m.id).toBeDefined();
+      expect(ids.has(m.doorway?.nextMovementId ?? ""), m.id).toBe(true);
+    }
     // Whatever the last declared movement is, it points nowhere until the next one exists.
     expect(movements[movements.length - 1]?.doorway).toBeUndefined();
   });

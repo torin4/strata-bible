@@ -22,17 +22,42 @@ holds. The plague reading solved the same problem the same way.
 
 **Blocked by:** 04 — Persons, and what they are worth.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Exodus 22 and 23 are a sitting rendering as numbered clusters
-- [ ] The reading holds at least one passage per chapter, so every statute's chapter can be attributed and verified
-- [ ] The verse-integrity check reports no unverifiable passage for this reading
-- [ ] The laws on the foreigner, the widow, the orphan, the debtor and the sabbath year are present and marked as still claiming the reader
-- [ ] The ground note connects the treatment of the outsider to the memory of having been one
-- [ ] It is tagged in the find index in the same change that makes it a sitting
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Verse selection is made knowing the full-text reveal does not apply to clusters
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] The density gate, counting per-item apparatus, passes on every passage on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Exodus 22 and 23 are a sitting rendering as numbered clusters
+- [x] The reading holds at least one passage per chapter, so every statute's chapter can be attributed and verified
+- [x] The verse-integrity check reports no unverifiable passage for this reading
+- [x] The laws on the foreigner, the widow, the orphan, the debtor and the sabbath year are present and marked as still claiming the reader
+- [x] The ground note connects the treatment of the outsider to the memory of having been one
+- [x] It is tagged in the find index in the same change that makes it a sitting
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Verse selection is made knowing the full-text reveal does not apply to clusters
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] The density gate, counting per-item apparatus, passes on every passage on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**One passage per chapter, and it was verified rather than assumed.** The reading spans 22 and 23,
+so it holds one cluster per chapter. The validator's unverifiable list still names only the one
+Genesis passage it always named, which means both of these were actually checked against the BSB
+rather than skipped in silence. That was the whole correctness point of the rule.
+
+**Most chips are claims, which is the reason this reading sits where it does.** Straight after a
+chapter that regulates owning a person comes a chapter grounding the treatment of the outsider in
+the memory of having been one. The reason clauses do the work: do not oppress a foreigner, because
+you were foreigners; give the cloak back, because he cries out and I hear, using the same verb for
+crying out that was used of Israel in Egypt.
+
+**Two none-but chips.** The sorceress verse is shown rather than skipped, with its afterlife named:
+read aloud at witch trials for centuries to justify killing mostly poor and mostly old women. And
+the sabbath year, which claims nobody who does not farm, kept for its logic: rest legislated so
+that it produces food for someone who owns nothing.
+
+**One chip is a note rather than a claim, deliberately.** The code refuses to favour a poor man in
+his lawsuit, having spent chapters protecting the poor everywhere else. Impartiality cuts both ways
+or it is not impartiality, and that is worth a gloss rather than a demand.
+
+**Density.** Scene one came in at 1.96x and was trimmed to 1.60x; scene two at 1.64x. Held under
+the ceiling by hand rather than at it, after the note about the law readings running dense.

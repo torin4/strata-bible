@@ -1641,6 +1641,189 @@ export const EXODUS: Reading[] = [
       },
     ],
   },
+  {
+    id: "ex-22",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 22–23 (selected)",
+    chapterIndex: 22,
+    crossesChapters: true,
+    title: "The foreigner, the widow, the debtor",
+    unitLabel: "Scene",
+    thread: "The same code that regulated owning a person turns outward here, and grounds its treatment of the outsider in the memory of having been one.",
+    closeEnd: "Rest is commanded twice, and both times the reason given is somebody else's tiredness.",
+    passages: [
+      {
+        label: "One",
+        ref: "22:1–27 (selected)",
+        kind: "statute-cluster",
+        form: "list",
+        title: "You were foreigners",
+        statutes: [
+          { n: 1, text: "“If a man steals an ox or a sheep and slaughters or sells it, he must repay five oxen for an ox and four sheep for a sheep." },
+          { n: 18, text: "You must not allow a sorceress to live." },
+          { n: 21, text: "You must not exploit or oppress a foreign resident, for you yourselves were foreigners in the land of Egypt." },
+          { n: 22, text: "You must not mistreat any widow or orphan." },
+          { n: 23, text: "If you do mistreat them, and they cry out to Me in distress, I will surely hear their cry." },
+          { n: 24, text: "My anger will be kindled, and I will kill you with the sword; then your wives will become widows and your children will be fatherless." },
+          { n: 25, text: "If you lend money to one of My people among you who is poor, you must not act as a creditor to him; you are not to charge him interest." },
+          { n: 26, text: "If you take your neighbor’s cloak as collateral, return it to him by sunset," },
+          { n: 27, text: "because his cloak is the only covering he has for his body. What else will he sleep in? And if he cries out to Me, I will hear, for I am compassionate." },
+        ],
+        perItem: {
+          18: {
+            addr: { mode: "none-but", text: "No claim on you, and its history makes leaving it out dishonest. This sentence was read at witch trials for centuries, in Europe and in New England, to justify killing mostly poor and mostly old women. The verse did not cause that. It was used for it." },
+          },
+          21: {
+            addr: { mode: "claims", text: "Still claims you, and it is the hinge of the code. The reason given is not compassion but memory: you were foreigners. The ethic is built out of what these people had been." },
+          },
+          22: {
+            addr: { mode: "claims", text: "The widow and the orphan are the standing test of a society in this literature, because they are the people with nobody to argue for them." },
+          },
+          25: {
+            addr: { mode: "claims", text: "Lending to the poor without interest. Money owed by someone with nothing is not an ordinary investment." },
+          },
+          27: {
+            addr: { mode: "claims", text: "Give the cloak back by sunset, because it is what he sleeps in. Then a reason startling in a legal code: if he cries out to me, I will hear." },
+            note: "The same verb for crying out that was used of Israel in Egypt. The poor man in your debt is now in the position Israel was in.",
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "The code moves from property to persons with no visible seam: restitution for a stolen ox, a capital sentence for sorcery, then the foreigner, the widow, the orphan and the debtor. Other ancient codes protect the vulnerable too, usually as an act of the king's mercy. Here the obligation is grounded in the people's own history instead.",
+          src: "Meyers · Propp · Childs",
+        },
+        meaning:
+          "Read the reason clauses and the argument becomes visible. Do not oppress a foreigner, because you were foreigners. Give the cloak back, because he cries out and I hear. This is a legal document that keeps stopping to explain itself, and every explanation points back to Egypt. The ethic is not deduced. It is remembered.",
+      },
+      {
+        label: "Two",
+        ref: "23:1–12 (selected)",
+        kind: "statute-cluster",
+        form: "list",
+        title: "Justice, and the seventh year",
+        statutes: [
+          { n: 1, text: "“You shall not spread a false report. Do not join the wicked by being a malicious witness." },
+          { n: 2, text: "You shall not follow the crowd in wrongdoing. When you testify in a lawsuit, do not pervert justice by siding with the crowd." },
+          { n: 3, text: "And do not show favoritism to a poor man in his lawsuit." },
+          { n: 4, text: "If you encounter your enemy’s stray ox or donkey, you must return it to him." },
+          { n: 5, text: "If you see the donkey of one who hates you fallen under its load, do not leave it there; you must help him with it." },
+          { n: 6, text: "You shall not deny justice to the poor in their lawsuits." },
+          { n: 8, text: "Do not accept a bribe, for a bribe blinds those who see and twists the words of the righteous." },
+          { n: 9, text: "Do not oppress a foreign resident, since you yourselves know how it feels to be foreigners; for you were foreigners in the land of Egypt." },
+          { n: 10, text: "For six years you are to sow your land and gather its produce," },
+          { n: 11, text: "but in the seventh year you must let it rest and lie fallow, so that the poor among your people may eat from the field and the wild animals may consume what they leave. Do the same with your vineyard and olive grove." },
+          { n: 12, text: "For six days you are to do your work, but on the seventh day you must cease, so that your ox and your donkey may rest and the son of your maidservant may be refreshed, as well as the foreign resident." },
+        ],
+        perItem: {
+          2: {
+            addr: { mode: "claims", text: "Do not follow a crowd into wrongdoing, and do not shade your testimony to go along with the majority. Written for a world of village courts and just as applicable to a room where everyone has already agreed." },
+          },
+          3: {
+            note: "And do not favour a poor man in his lawsuit either. The code protects the poor relentlessly everywhere else, and here it refuses to let sympathy bend a verdict. Impartiality cuts both ways or it is not impartiality.",
+          },
+          4: {
+            addr: { mode: "claims", text: "Your enemy's ox, wandering. You are to take it back to him. Not forgive him, not reconcile, just return the animal, which is a smaller and more doable thing than most instructions about enemies." },
+          },
+          9: {
+            addr: { mode: "claims", text: "Said twice in two chapters, and the second time with the reason sharpened: you know how it feels. Not you should imagine, but you know." },
+          },
+          11: {
+            addr: { mode: "none-but", text: "No claim on you unless you farm, and worth seeing for its logic. The land rests, and what grows untended is left for the poor to eat. Rest is legislated so that it produces food for someone who owns nothing." },
+          },
+          12: {
+            addr: { mode: "claims", text: "The sabbath again, and here the reason is not creation but the exhaustion of other people: so that your servant and the foreign resident may be refreshed. Your rest is meant to reach the people who work for you." },
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "A run of laws about testimony and courts, then the enemy's stray animal, then the seventh year and the seventh day. The sabbath year here is agricultural and its stated purpose is not piety: the land lies fallow so that the poor may eat what grows on it, and the wild animals get what is left after that.",
+          src: "Meyers · Fretheim",
+        },
+        meaning:
+          "Two things stand out from a code written three thousand years ago. It refuses to bend a verdict toward the poor, having spent chapters protecting them, because a court that favours anybody is not a court. And it makes rest an obligation you owe other people: the land rests so the poor eat, the week rests so your servant and the foreigner catch their breath. Rest here is not self-care. It is redistribution.",
+        addr: {
+          mode: "claims",
+          text: "Your rest is legislated in this code for the sake of the people who work for you. Whatever you do with a day off, the question this page asks is whether anyone further down gets one because of it.",
+        },
+        ask: "Who gets to rest because of how you arrange your week, and who does not?",
+      },
+    ],
+  },
+  {
+    id: "ex-24",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 24",
+    chapterIndex: 24,
+    title: "Blood on the people",
+    unitLabel: "Scene",
+    thread: "The terms are read aloud, agreed a second time, and then sealed in a way no modern reader finds comfortable. After which seventy men climb the mountain and have lunch.",
+    closeEnd: "Moses goes up into the cloud for forty days, and the book leaves him there.",
+    passages: [
+      {
+        label: "One",
+        ref: "24:1–8",
+        kind: "scene",
+        form: "prose",
+        title: "All that the LORD has spoken",
+        verses: [
+          { n: 1, text: "Then the LORD said to Moses, “Come up to the LORD—you and Aaron, Nadab and Abihu, and seventy of Israel’s elders—and you are to worship at a distance." },
+          { n: 2, text: "Moses alone shall approach the LORD, but the others must not come near. And the people may not go up with him.”" },
+          { n: 3, text: "When Moses came and told the people all the words and ordinances of the LORD, they all responded with one voice: “All the words that the LORD has spoken, we will do.”" },
+          { n: 4, text: "And Moses wrote down all the words of the LORD. Early the next morning he got up and built an altar at the base of the mountain, along with twelve pillars for the twelve tribes of Israel." },
+          { n: 5, text: "Then he sent out some young men of Israel, and they offered burnt offerings and sacrificed young bulls as peace offerings to the LORD." },
+          { n: 6, text: "Moses took half of the blood and put it in bowls, and the other half he splattered on the altar." },
+          { n: 7, text: "Then he took the Book of the Covenant and read it to the people, who replied, “All that the LORD has spoken we will do, and we will be obedient.”" },
+          { n: 8, text: "So Moses took the blood, splattered it on the people, and said, “This is the blood of the covenant that the LORD has made with you in accordance with all these words.”" },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Moses writes the words down, builds an altar with twelve pillars, and has young men offer oxen. Half the blood goes against the altar and half is kept in basins. He reads the book aloud, the people answer that they will do it, and then he throws the blood over them and calls it the blood of the covenant. Treaty ratifications in this world involved a slaughtered animal and a ceremony binding both parties.",
+          src: "Childs · Propp · Meyers",
+        },
+        meaning:
+          "They agree three times in this movement, and this is the third and the most physical. It is not a signature. Blood from the same animals goes on the altar and on the people, which puts both parties in the same substance, and there is no way to be sprinkled and consider yourself uninvolved. Whatever else a covenant is here, it is not an arrangement you could later say you had not really entered.",
+        lenses: {
+          arch: "The bond sealed in blood rather than in words, so the parties cannot afterward claim the words were misunderstood. (What is cut cannot be uncut.)",
+        },
+        addr: {
+          mode: "names",
+          text: "You have agreed to things in a way that could be walked back, and to a few that could not. The difference is rarely in the words. It is in what was done at the time.",
+        },
+        ask: "What have you entered that you could not now claim you had not entered?",
+      },
+      {
+        label: "Two",
+        ref: "24:9–18",
+        kind: "scene",
+        form: "prose",
+        title: "They saw God, and ate",
+        verses: [
+          { n: 9, text: "Then Moses went up with Aaron, Nadab and Abihu, and seventy of the elders of Israel," },
+          { n: 10, text: "and they saw the God of Israel. Under His feet was a work like a pavement made of sapphire, as clear as the sky itself." },
+          { n: 11, text: "But God did not lay His hand on the nobles of Israel; they saw Him, and they ate and drank." },
+          { n: 12, text: "Then the LORD said to Moses, “Come up to Me on the mountain and stay here, so that I may give you the tablets of stone, with the law and commandments I have written for their instruction.”" },
+          { n: 13, text: "So Moses set out with Joshua his attendant and went up on the mountain of God." },
+          { n: 14, text: "And he said to the elders, “Wait here for us until we return to you. Aaron and Hur are here with you. Whoever has a dispute can go to them.”" },
+          { n: 15, text: "When Moses went up on the mountain, the cloud covered it," },
+          { n: 16, text: "and the glory of the LORD settled on Mount Sinai. For six days the cloud covered it, and on the seventh day the LORD called to Moses from within the cloud." },
+          { n: 17, text: "And the sight of the glory of the LORD was like a consuming fire on the mountaintop in the eyes of the Israelites." },
+          { n: 18, text: "Moses entered the cloud as he went up on the mountain, and he remained on the mountain forty days and forty nights." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Seventy-four men go up: Moses, Aaron, two of his sons, and seventy elders. They see the God of Israel, with something like a pavement of sapphire under his feet, clear as the sky itself. The text says God did not raise his hand against them, which tells you what was expected. And they ate and drank. Then the cloud covers the mountain for six days and Moses is called into it for forty.",
+          src: "Childs · Propp",
+        },
+        meaning:
+          "This is the strangest paragraph in the movement and it is easy to skim. Seventy-four men see God and the narrator will not describe him, only what was under his feet, and then records that they had a meal. After nineteen chapters of a mountain nobody may touch, the covenant ends with a group of people eating in the presence of the thing that could kill them. The fence has not moved. What changed is that terms now exist.",
+        lenses: {
+          theo: "The meal is the point of the ceremony, not an anticlimax after it. Eating together is what parties to a covenant did, and it is the nearest this book has come to saying the distance is closed.",
+        },
+      },
+    ],
+  },
 ];
 
 export const OUT_OF_EGYPT_MOVEMENT: Movement = {
@@ -1757,6 +1940,15 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
     ],
     sources: "Propp · Fretheim · Meyers",
   },
+  doorway: {
+    kicker: "The third movement",
+    title: "The covenant",
+    paragraphs: [
+      "They have been rescued, fed, watered and organised. What they have not been given is terms. The next stretch is the mountain, and what comes off it is not another rescue but a document: ten sentences, then a long code of case law about oxen and debtors and daughters.",
+      "It is the part of the book most readers skip and the part its own people built a nation on. Some of it will still make a claim on you. Some of it plainly will not, and is worth seeing anyway, because a book that hides its hardest pages is not being trusted with anything.",
+    ],
+    nextMovementId: "the-covenant",
+  },
 };
 
 // The book-level "how it was written" overlay. One of only two places in the movement where the
@@ -1783,6 +1975,25 @@ export const THE_COVENANT_MOVEMENT: Movement = {
       "These chapters were edited over a long time and the seams are visible. The ten words appear twice in the Bible, here and in Deuteronomy, and the two do not match: the reason given for the sabbath is creation in one and slavery in Egypt in the other. Both were kept. That is characteristic of how this book handles its own traditions, and it is worth knowing before reading a code that later readers have often wanted to be seamless.",
     ],
     sources: "Childs · Propp · Meyers · Assmann",
+  },
+  capstone: {
+    kicker: "The third movement · Exodus 19–24",
+    title: "What the rescue was for",
+    paragraphs: [
+      "A covenant is not a rulebook and the difference runs through this whole movement. The terms arrive inside a relationship that already exists, after a rescue that has already happened, to people who agreed before they had heard a word of it. Nothing here is the price of being freed. It is what somebody thought freedom was for, written down by people who had just watched an empire treat human beings as a labour supply.",
+      "Which makes the code's own contents harder rather than easier. It caps how long a man may be owned and it assumes he may be owned. It makes a master liable for a servant's eye and lets him go unpunished if the beaten servant survives two days. It prices a life at thirty shekels when the life is a servant's. These sit a few chapters from the command not to oppress a foreigner because you were foreigners, and from a sabbath legislated so that the people who work for you can breathe. The same document, the same mountain.",
+      "The honest thing to say is that this is an argument in progress rather than a finished position, and the arguing does not stop here. Deuteronomy revisits the release and orders a freed servant sent away supplied. Jeremiah treats a revoked release as grounds for judging the nation. A gospel principle concedes that some of it was written in for hardness of heart. A reader who wants a code that arrived perfect will not find one. A reader who wants to watch a people work out, slowly and against their own interests, what having been slaves obliges them to, is in the right book.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The law is given by God at the mountain, so its provisions carry divine authority as they stand.",
+        counter:
+          "The canon does not treat them as final. It revises the release law, condemns a nation for revoking one, and concedes elsewhere that a provision was an accommodation to hardness of heart rather than an ideal. Scripture here is a record of an argument, and the later voices in it are arguing with the earlier ones.",
+        where: "Deuteronomy 15:12–15 · Jeremiah 34:8–22 · Matthew 19:8",
+      },
+    ],
+    sources: "Childs · Propp · Meyers",
   },
 };
 
