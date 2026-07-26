@@ -28,7 +28,7 @@ export const EXODUS: Reading[] = [
     chapterIndex: 1,
     title: "The midwives",
     unitLabel: "Scene",
-    thread: "A family becomes a people, and the moment they are many they are a problem. The book opens by counting seventy names, then stops naming anyone at all, until two women refuse an order and the text records who they were.",
+    thread: "A family becomes a people, and the moment they are many they are a problem. The book counts seventy names, then names nobody else, until two women refuse an order.",
     closeEnd: "The king who is never named gives up on secrecy and orders the whole nation to do his drowning for him.",
     passages: [
       {
@@ -48,13 +48,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The book opens by counting. Seventy people, named one by one, who went down to Egypt. Then a single verse crosses several centuries and the family has become a people filling the land. The Hebrew stacks up verbs of increase, fruitful and swarming and multiplying and strong, which are the words used of living creatures in the first chapter of Genesis. Exodus begins by telling you the blessing worked.",
+          text: "The book opens by counting. Seventy people, named one by one, who went down to Egypt. Then one verse crosses several centuries and the family has become a people filling the land. The Hebrew piles up the verbs of increase used of living creatures in Genesis 1.",
           src: "Propp · Sarna · Alter",
         },
         meaning:
-          "The echo is deliberate. The words for a people becoming numerous here are the words of the creation account, <b>be fruitful and multiply</b>, so what Egypt does next is not simply cruelty toward a minority. It is a policy set against the thing God said at the beginning. And notice that the counting stops. Seventy names are listed, and after this nobody in the chapter is named again except two midwives, because to the empire these people are not names. They are a quantity, and a quantity can be managed.",
+          "The words for this people multiplying are the words of the creation account, <b>be fruitful and multiply</b>. So what Egypt does next is not just cruelty to a minority. It is set against what God said at the beginning. Notice too that the counting stops. After the seventy names, nobody is named again except two midwives. To an empire, people are a quantity.",
         lenses: {
-          theo: "The promise to Abraham, that his descendants would be past counting, is kept in a foreign country while nobody is watching. Scripture often has God's word doing its work in the gaps between the stories rather than in the middle of them.",
+          theo: "The promise to Abraham, that his descendants would be past counting, is kept in a foreign country while nobody is watching. God's word often does its work in the gaps between the stories.",
         },
       },
       {
@@ -74,17 +74,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A new king who did not know Joseph, and the text is precise about the machinery rather than the man. Taskmasters, forced labour, store cities at Pithom and Rameses, work in brick and mortar and in the fields. This is the ordinary vocabulary of Egyptian building administration, and Semitic-speaking people did the work on royal projects in the delta. The king is never given a name. The bureaucracy is described in detail.",
+          text: "A new king who did not know Joseph, and the text describes the machinery rather than the man. Taskmasters, forced labour, store cities at Pithom and Rameses, work in brick and mortar. This is ordinary Egyptian building administration, and Semitic-speaking people did such work in the delta. The king is never named. The bureaucracy is described in detail.",
           src: "Assmann · Propp · Meyers",
         },
         meaning:
-          "Fear does the reasoning. The king does not begin with hatred, he begins with a calculation about what might happen in a war, and the policy follows from the arithmetic. Then comes the line the chapter is built on: the more they were oppressed, the more they multiplied. The oppression does not work, and because it does not work it escalates. That is the logic of every system that decides a group of people is a problem to be solved. It never concludes that it was wrong. It concludes that it was not thorough enough.",
+          "Fear does the reasoning. The king does not start from hatred but from a calculation about a future war, and the policy follows the arithmetic. Then the line the chapter turns on: the more they were oppressed, the more they multiplied. The oppression fails, and because it fails it escalates. A system that has decided a people are a problem never concludes it was wrong. It concludes it was not thorough enough.",
         lenses: {
-          arch: "Growth read as threat, presence read as invasion, and the labour of the feared group quietly holding up the economy that fears them. The pattern is old and it has never stopped recurring, which is why this chapter reads less like ancient history than most readers expect. (The stranger who multiplies.)",
+          arch: "Growth read as threat, presence read as invasion, and the labour of the feared group holding up the economy that fears them. The pattern is old and has never stopped recurring. (The stranger who multiplies.)",
         },
         addr: {
           mode: "claims",
-          text: "Something in your life runs on work you did not do, at a price you did not pay and would not want to. The food, the building, the device in your hand. This chapter does not let you read it purely as the oppressed party, because it puts the store cities in front of you and asks who they were for.",
+          text: "Something in your life runs on work you did not do, at a price you would not pay. The food, the building, the phone in your hand. The chapter puts the store cities in front of you and asks who they were for.",
         },
         ask: "Whose labour is underneath the ordinary comfort of your day, and what would it cost you to find out?",
       },
@@ -106,24 +106,24 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two midwives are given a direct order to kill, and they do not do it. The text records their names, Shiphrah and Puah, ordinary names for women of the region, while the king of the greatest empire on earth goes unnamed throughout. Their answer, that the Hebrew women deliver before a midwife can arrive, is a lie told to a man who could kill them for it. The narrator does not apologise. God deals well with them and gives them households of their own.",
+          text: "Two midwives are ordered to kill, and they do not. The text records their names, Shiphrah and Puah, while the king of the greatest empire on earth goes unnamed throughout. Their answer to him is a lie told to a man who could kill them for it. The narrator does not apologise.",
           src: "Propp · Meyers · Sarna",
         },
         misreading: {
           named:
-            "The midwives are a nice story about individual courage, and the real subject is a uniquely wicked king.",
-          why: "The chapter is not built around a villain. It is built around a system: a calculation, a labour policy, an escalation, and finally a decree handed to the whole population, every one of my people, throw the boys in the river. By the last verse the killing is not the king's private cruelty but a civic duty handed to ordinary Egyptians. Reading it as one bad man lets everybody off the hook, in the story and out of it. The midwives matter precisely because they are the only two people who decline the duty.",
+            "The midwives are a story about brave individuals, and the real subject is one wicked king.",
+          why: "The chapter is built as a system, not a villain: a calculation, a labour policy, an escalation, and finally a decree handed to the whole population. By the last verse the killing is a civic duty for ordinary Egyptians. One bad man lets everybody off the hook. The midwives matter because they are the only two who decline.",
         },
         meaning:
-          "These are the first people in the Bible to disobey a king, and they are foreign, poor, female, and structurally powerless, which is to say they are the least likely candidates the ancient world could offer. They do not lead a revolt. They simply keep doing their work and lie about the results. The text says they <b>feared God</b>, and puts that fear against fear of Pharaoh, which is what the whole book will end up being about: which power you are actually afraid of. Then the last verse widens the frame and makes it everyone's job, which is what tyranny always needs and usually gets.",
+          "These are the first people in the Bible to disobey a king, and they are foreign, poor, female and powerless. They do not lead a revolt. They keep doing their work and lie about the results. The text says they <b>feared God</b>, and sets that against fear of Pharaoh. That is what the whole book is about: which power you are actually afraid of.",
         lenses: {
-          theo: "Scripture keeps two names that Egypt would have considered beneath recording, and drops the name of the king it would have carved into stone. That inversion is a judgement in itself, made quietly, in who gets remembered.",
+          theo: "Scripture keeps two names Egypt would not have bothered to record, and drops the name of the king it carved into stone. The inversion is itself a judgement.",
         },
         addr: {
           mode: "claims",
-          text: "You will not be asked to run an empire. You will be asked, in some small procedural way, to go along with something, and the request will arrive as routine rather than as evil. The midwives are here to tell you that the refusal available to a person with no power at all is usually just declining to be efficient about it.",
+          text: "You will not be asked to run an empire. You will be asked to go along with something small, and it will arrive as routine rather than as evil. The refusal available to the powerless is usually just declining to be efficient about it.",
         },
-        ask: "What are you currently going along with because refusing would be awkward rather than dangerous?",
+        ask: "What are you going along with because refusing would be awkward rather than dangerous?",
       },
     ],
   },
