@@ -224,8 +224,22 @@ around the materialised verses.
 ### The verse-integrity invariant
 
 A new invariant in the content validator: every authored verse whose book has a BSB lookup must
-match that lookup exactly, or the build fails. Run it against Genesis and report the findings
+be found in that lookup, or the build fails. Run it against Genesis and report the findings
 rather than fixing them inside this piece of work; a Genesis mismatch is a separate decision.
+
+Refined during implementation, after measuring Genesis first. Exact equality alone could not
+hold, because one authored verse is a deliberate trim of a longer BSB verse, so a strict gate
+would have failed on arrival while the same ticket forbade editing Genesis. The rule shipped
+instead: authored text must be a contiguous substring of the BSB verse, identical in the normal
+case. Text the BSB does not contain fails the build, which is the case the invariant exists for,
+since a licensed translation or a verse typed from memory is never a clean substring. A proper
+substring is reported as an abridgement rather than failed, so every editorial trim in the book
+stays visible.
+
+Passages whose verse numbers do not ascend cross a chapter under one ref, so a bare verse number
+cannot be attributed to a chapter and cannot be checked. These are reported as unverifiable, and
+the validator uses the reader's own attribution rules rather than its own copy of them, so the
+two cannot drift apart and disagree about which verse is which.
 
 ### Images
 

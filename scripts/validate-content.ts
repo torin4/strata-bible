@@ -3,6 +3,7 @@
 // between readings, passages, and movements that the reader relies on.
 import { BOOKS } from "@/content";
 import { READING_THEMES } from "@/content/themes";
+import { ascending, bsbForBook, chapterOf } from "@/lib/expand";
 import type { Passage } from "@/lib/types";
 
 const errors: string[] = [];
@@ -82,11 +83,85 @@ for (const reading of allReadings) {
     );
 }
 
+// ---------------------------------------------------------------------------------------
+// Scripture integrity. Every authored verse must be the Berean Standard Bible.
+//
+// STRATA must never ship a copyrighted translation, and the realistic way that rule breaks is
+// not deliberate copying but a verse typed from memory that drifts toward another translation's
+// phrasing, buried in a content file nobody proofreads line by line. This makes that a build
+// failure rather than something a reader discovers.
+//
+// A verse may be TRIMMED: authored text that is a contiguous substring of the BSB verse is a
+// deliberate editorial choice (Genesis 50:17 drops an opening clause). Those are reported, not
+// failed. Text the BSB does not contain at all is a failure, which is the case that matters.
+//
+// A passage whose verse numbers don't ascend spans two chapters under one ref, so a bare verse
+// number can't be attributed to a chapter. Those are unverifiable and are reported as such,
+// using the same rule the reader's full-text fill uses, so the two can never disagree.
+// ---------------------------------------------------------------------------------------
+const abridged: string[] = [];
+const unverifiable: string[] = [];
+let versesChecked = 0;
+
+for (const book of BOOKS) {
+  const bsb = bsbForBook(book.id);
+  if (!bsb) continue;
+  for (const reading of book.readings) {
+    for (const passage of reading.passages) {
+      const verses =
+        passage.verses ?? passage.statutes ?? passage.sayings ?? [];
+      const chapter = chapterOf(passage.ref, reading.chapterIndex);
+      if (!ascending(verses) || chapter === null) {
+        if (verses.length)
+          unverifiable.push(
+            `${reading.id} · ${passage.ref} (${verses.length} verses span more than one chapter)`,
+          );
+        continue;
+      }
+      for (const verse of verses) {
+        // Omitted verses are filled from this same lookup at render time, never authored.
+        if (verse.omitted) continue;
+        versesChecked++;
+        const official = bsb[`${chapter}:${verse.n}`];
+        if (official === undefined) {
+          fail(
+            `${reading.id} · ${passage.ref} v${verse.n}: no BSB verse at ${book.id} ${chapter}:${verse.n}`,
+          );
+          continue;
+        }
+        if (official === verse.text) continue;
+        if (official.includes(verse.text)) {
+          abridged.push(`${reading.id} · ${passage.ref} v${verse.n}`);
+          continue;
+        }
+        fail(
+          `${reading.id} · ${passage.ref} v${verse.n}: authored text is not the BSB at ${book.id} ${chapter}:${verse.n}`,
+        );
+      }
+    }
+  }
+}
+
 // Genesis is the book that ships first: it must read end to end.
 const genesis = BOOKS.find((b) => b.id === "genesis");
 if (!genesis) fail("genesis book missing");
 else if (!genesis.readings.some((r) => r.id === "gen-1"))
   fail("genesis missing gen-1");
+
+// Scripture report: informational, never a failure. Both lists name places where a verse could
+// not be proven identical to the BSB, so neither can hide.
+if (abridged.length) {
+  console.log(
+    `validate-content: ${abridged.length} authored verse(s) trimmed from the BSB (deliberate edits, not failures):`,
+  );
+  for (const a of abridged) console.log(`  ${a}`);
+}
+if (unverifiable.length) {
+  console.log(
+    `validate-content: ${unverifiable.length} passage(s) unverifiable against the BSB (verse numbers cross a chapter under one ref):`,
+  );
+  for (const u of unverifiable) console.log(`  ${u}`);
+}
 
 if (errors.length) {
   console.error(`validate-content: ${errors.length} problem(s):\n`);
@@ -95,4 +170,7 @@ if (errors.length) {
 }
 console.log(
   `validate-content: ${allReadings.length} readings across ${BOOKS.length} books, all valid.`,
+);
+console.log(
+  `validate-content: ${versesChecked} authored verse(s) verified against the Berean Standard Bible.`,
 );

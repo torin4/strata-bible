@@ -27,10 +27,21 @@ const BSB_BY_BOOK: Record<string, VerseLookup | undefined> = {
   exodus: BSB_EXODUS,
 };
 
+// The BSB text for a book, or undefined when the book has no registered lookup. Exported so the
+// content validator proves authored verses against the very registry the reader fills from,
+// rather than a second list that could fall out of step when a book is added.
+export function bsbForBook(bookId: string): VerseLookup | undefined {
+  return BSB_BY_BOOK[bookId];
+}
+
 // The chapter a passage renders from. Range refs ("1:24–31", "42:6–24", "25:1–18") carry it
 // explicitly and win; descriptive grounded refs ("Genesis 24 (selected)") fall back to the
 // reading's chapterIndex. Returns null when neither yields a chapter.
-function chapterOf(ref: string, fallback: number): number | null {
+//
+// Exported because the content validator checks authored verses against the same BSB text this
+// fills from, and it must attribute a verse to a chapter by the same rule. Two copies of this
+// rule would drift, and the validator would then either miss real divergences or invent them.
+export function chapterOf(ref: string, fallback: number): number | null {
   const explicit = ref.match(/(\d+):/); // "…C:V…"
   if (explicit) return Number(explicit[1]);
   return Number.isFinite(fallback) ? fallback : null;
@@ -39,7 +50,10 @@ function chapterOf(ref: string, fallback: number): number | null {
 // Authored verse numbers ascend within a single chapter. A passage whose numbers don't
 // ascend spans more than one chapter under one ref (Genesis 48–49: 48:14, then 49:7, 10, 33),
 // where a bare `n` can't be attributed to a chapter — leave those unexpanded.
-function ascending(verses: Verse[]): boolean {
+//
+// Exported for the same reason as chapterOf: a verse this rule declares unattributable cannot
+// be checked against the BSB either, and the validator must skip exactly what the fill skips.
+export function ascending(verses: Verse[]): boolean {
   for (let i = 1; i < verses.length; i++) {
     if (verses[i].n <= verses[i - 1].n) return false;
   }
