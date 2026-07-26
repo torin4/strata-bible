@@ -1,7 +1,34 @@
 import { getReading } from "@/lib/content";
 import { expandReading } from "@/lib/expand";
-import type { Verse } from "@/lib/types";
+import type { Reading, Verse } from "@/lib/types";
 import { describe, expect, it } from "vitest";
+
+// A minimal reading standing in for authored content, used to exercise a book whose readings
+// don't exist yet. Exodus is registered in the lookup ahead of its content (the movement is
+// authored in a later ticket), so this is the only way to prove the wiring now.
+function stubReading(
+  bookId: string,
+  chapterIndex: number,
+  verses: Verse[],
+): Reading {
+  return {
+    id: `${bookId}-stub`,
+    bookId,
+    tier: "grounded",
+    span: `stub ${chapterIndex}`,
+    chapterIndex,
+    title: "stub",
+    passages: [
+      {
+        ref: `${chapterIndex}:${verses[0].n}–${verses[verses.length - 1].n}`,
+        kind: "scene",
+        form: "prose",
+        title: "stub",
+        verses,
+      },
+    ],
+  };
+}
 
 // The passage carrying `ref` in an expanded reading.
 function passage(readingId: string, ref: string) {
@@ -65,9 +92,24 @@ describe("expandReading", () => {
     expect(refs.some((r) => r.startsWith("43"))).toBe(false);
   });
 
-  it("leaves non-Genesis readings untouched", () => {
+  it("leaves a book with no registered BSB lookup untouched", () => {
     const psalm = getReading("psalms", "ps-13");
     if (!psalm) throw new Error("no ps-13");
     expect(expandReading(psalm)).toBe(psalm);
+  });
+
+  it("fills from the book's own lookup, not Genesis's", () => {
+    // Exodus 3:1–6 authoring 1, 2 and 6: the bush, with the gap filled from Exodus.
+    const reading = stubReading("exodus", 3, [
+      { n: 1, text: "Meanwhile, Moses was shepherding the flock" },
+      { n: 2, text: "There the angel of the LORD appeared to him" },
+      { n: 6, text: "Then He said, “I am the God of your father" },
+    ]);
+    const p = expandReading(reading).passages[0];
+    expect(omitted(p.verses)).toEqual([3, 4, 5]);
+    // The filled text is Exodus's, not the Genesis lookup's verse of the same number.
+    expect(p.verses?.find((v) => v.n === 4)?.text).toContain(
+      "God called out to him from within the bush",
+    );
   });
 });

@@ -5,7 +5,7 @@
     "ignore": [
       "genesis.ts",
       "seed.ts",
-      "bsb-genesis.ts",
+      "bsb-*.ts",
       "types.ts",
       ".next",
       "node_modules",
