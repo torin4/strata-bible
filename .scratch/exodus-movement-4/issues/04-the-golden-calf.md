@@ -27,17 +27,48 @@ live with it rather than dispose of it.
 
 **Blocked by:** 02 — Movement 4 declared, and the pattern.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Exodus 32 is a sitting carrying all four layers across its scenes
-- [ ] Aaron's part is told plainly, including his evasion, without protection
-- [ ] Moses' intercession is shown as an argument with content, not as a formality
-- [ ] The killing of about three thousand people by the Levites is present in the text
-- [ ] It is named as difficult rather than justified, and is not resolved in this reading
-- [ ] It carries at most one load-bearing misreading, used only if one is genuinely earned
-- [ ] The reading is tagged in the find index in the same change that makes it a sitting
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] No passage exceeds the density target on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Exodus 32 is a sitting carrying all four layers across its scenes
+- [x] Aaron's part is told plainly, including his evasion, without protection
+- [x] Moses' intercession is shown as an argument with content, not as a formality
+- [x] The killing of about three thousand people by the Levites is present in the text
+- [x] It is named as difficult rather than justified, and is not resolved in this reading
+- [x] It carries at most one load-bearing misreading, used only if one is genuinely earned
+- [x] The reading is tagged in the find index in the same change that makes it a sitting
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] No passage exceeds the density target on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**The misreading is the reading's real work.** The obvious take is that they swapped gods. Read what
+Aaron actually says: he builds the altar and calls it a feast to the LORD, by name, and the calf is
+credited with the exodus, which is the LORD's act. Nobody in the scene thinks they have changed
+gods. They made an image of the one who brought them out, because he had been silent for forty days
+and an image can be seen. That is harder to dismiss than swapping deities, because it is the failure
+available to people quite sure they are being faithful. The bull was a standard pedestal for an
+invisible god in the region, which makes it subtler still.
+
+**Aaron is not protected.** His account, that he threw the gold in the fire and out came this calf,
+is left standing exactly as thin as it is, four chapters after his vestments were specified in more
+detail than the ark.
+
+**The intercession is shown as an argument with content.** Moses does not plead the people's merits,
+because none are available. He appeals to what God has already done, to what the Egyptians will
+conclude, and to promises made to men long dead. And he turns down the offer to become a new
+Abraham himself, which is the part most retellings drop.
+
+**32:27-28 is present and named, not justified.** The meaning layer says plainly that this is not
+ancient law that can be marked as no longer binding, that it is a killing the narrative approves of,
+and that no reading offered in this app makes it sit easily. A test asserts both verses are in the
+text and that the scene addresses them, so a later edit cannot quietly drop them. The movement's
+look-back returns to it and will not dispose of it either.
+
+**Built out of chapter order on purpose.** This reading was generated before chapter 28's, and the
+ticket-01 helper placed both correctly, which is the guarantee that made these two tickets safe to
+run in either order. Proven on real work rather than a dry run.
+
+Density 1.71x, 0.79x, 0.85x.

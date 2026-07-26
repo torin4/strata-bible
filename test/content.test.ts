@@ -85,6 +85,8 @@ describe("content lib", () => {
       "ex-22",
       "ex-24",
       "ex-25",
+      "ex-28",
+      "ex-32",
     ]);
   });
 
@@ -99,7 +101,8 @@ describe("content lib", () => {
     expect(getAdjacent("exodus", "ex-19").next?.id).toBe("ex-20");
     expect(getAdjacent("exodus", "ex-21").next?.id).toBe("ex-22");
     expect(getAdjacent("exodus", "ex-24").next?.id).toBe("ex-25");
-    expect(getAdjacent("exodus", "ex-25").next).toBeUndefined();
+    expect(getAdjacent("exodus", "ex-25").next?.id).toBe("ex-28");
+    expect(getAdjacent("exodus", "ex-32").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
@@ -227,6 +230,24 @@ describe("content lib", () => {
     const tensions = (reading?.passages ?? []).flatMap((p) => p.tensions ?? []);
     expect(tensions).toHaveLength(1);
     expect(tensions[0].where).toContain("Deuteronomy 15");
+  });
+
+  it("the killing of three thousand is shown, and not marked away", () => {
+    // The commitment this movement was planned on. Unlike the servant laws, this cannot be
+    // marked as law that no longer binds a reader: it is a narrative the book approves of. So
+    // the guard is simply that the verses are present and unannotated by any per-item chip.
+    const calf = getReading("exodus", "ex-32");
+    const shown = (calf?.passages ?? []).flatMap((p) =>
+      (p.verses ?? []).map((v) => v.n),
+    );
+    for (const n of [27, 28]) {
+      expect(shown, `32:${n} must be present`).toContain(n);
+    }
+    // And the scene carrying them addresses it rather than passing over it.
+    const scene = (calf?.passages ?? []).find((p) =>
+      (p.verses ?? []).some((v) => v.n === 28),
+    );
+    expect(scene?.meaning).toContain("three thousand");
   });
 
   it("movement 3 is declared by chapter range, with no override", () => {
