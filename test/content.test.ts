@@ -61,7 +61,7 @@ describe("content lib", () => {
     expect(reading && getClosingMovement("genesis", reading)).toBeUndefined();
   });
 
-  it("Exodus holds its authored readings in order, across both movements", () => {
+  it("Exodus holds its authored readings in order, across its movements", () => {
     const readings = getBook("exodus")?.readings ?? [];
     expect(readings.map((r) => r.id)).toEqual([
       "ex-1",
@@ -79,6 +79,7 @@ describe("content lib", () => {
       "ex-16",
       "ex-17",
       "ex-18",
+      "ex-20",
     ]);
   });
 
@@ -88,8 +89,9 @@ describe("content lib", () => {
     expect(getAdjacent("exodus", "ex-7").next?.id).toBe("ex-12");
     expect(getAdjacent("exodus", "ex-12").prev?.id).toBe("ex-7");
     expect(getAdjacent("exodus", "ex-1").prev).toBeUndefined();
-    // The last authored reading ends the book for now; movement 3 has not been written.
-    expect(getAdjacent("exodus", "ex-18").next).toBeUndefined();
+    // Movement 3 has begun, so ex-18 now leads into it rather than ending the book.
+    expect(getAdjacent("exodus", "ex-18").next?.id).toBe("ex-20");
+    expect(getAdjacent("exodus", "ex-20").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
@@ -97,6 +99,7 @@ describe("content lib", () => {
     expect(book?.movements.map((m) => m.id)).toEqual([
       "out-of-egypt",
       "road-to-the-mountain",
+      "the-covenant",
     ]);
     const ids = new Set(book?.movements.map((m) => m.id));
     for (const reading of book?.readings ?? []) {
@@ -141,7 +144,7 @@ describe("content lib", () => {
     const ids = new Set(movements.map((m) => m.id));
     expect(movements[0]?.doorway?.nextMovementId).toBe("road-to-the-mountain");
     expect(ids.has(movements[0]?.doorway?.nextMovementId ?? "")).toBe(true);
-    // Movement 3 does not exist yet, so the last movement points nowhere.
+    // Whatever the last declared movement is, it points nowhere until the next one exists.
     expect(movements[movements.length - 1]?.doorway).toBeUndefined();
   });
 
@@ -155,6 +158,47 @@ describe("content lib", () => {
     const mid = getReading("exodus", "ex-7");
     expect(mid && getClosingMovement("exodus", mid)).toBeUndefined();
     expect(getBook("exodus")?.capstone).toBeUndefined();
+  });
+
+  it("the Ten Words render as law, with per-item annotation", () => {
+    // The first published statute-cluster. Every other passage in the app is a narrative scene,
+    // so this is the only content exercising the list form and per-item annotation outside the
+    // unpublished fixtures.
+    const reading = getReading("exodus", "ex-20");
+    expect(reading?.tier).toBe("sitting");
+    const cluster = reading?.passages.find((p) => p.ref === "20:1–17");
+    expect(cluster?.kind).toBe("statute-cluster");
+    expect(cluster?.form).toBe("list");
+    // Items live in `statutes`, not `verses`, which is what the list form renders from.
+    expect(cluster?.statutes?.length).toBe(17);
+    expect(cluster?.verses).toBeUndefined();
+    expect(Object.keys(cluster?.perItem ?? {}).length).toBeGreaterThan(0);
+  });
+
+  it("the covenant marks law that claims the reader apart from law that does not", () => {
+    // The whole design of movement 3 rests on this distinction being drawn per item rather than
+    // argued in prose, so both modes must actually be in use.
+    const modes = (getBook("exodus")?.readings ?? [])
+      .flatMap((r) => r.passages)
+      .flatMap((p) => Object.values(p.perItem ?? {}))
+      .map((item) => item.addr?.mode)
+      .filter(Boolean);
+    expect(modes).toContain("claims");
+    expect(modes).toContain("none-but");
+  });
+
+  it("movement 3 is declared by chapter range, with no override and no doorway", () => {
+    const book = getBook("exodus");
+    const movement = book?.movements.find((m) => m.id === "the-covenant");
+    expect(movement?.chapterStart).toBe(19);
+    expect(movement?.chapterEnd).toBe(24);
+    expect(movement?.doorway).toBeUndefined();
+    expect(movement?.situation.paragraphs.length).toBeGreaterThan(0);
+    const tenWords = getReading("exodus", "ex-20");
+    expect(tenWords?.movementId).toBeUndefined();
+    expect(tenWords && getMovement("exodus", tenWords)?.id).toBe(
+      "the-covenant",
+    );
   });
 
   it("the Exodus composition panel argues the history rather than ruling on it", () => {

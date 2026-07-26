@@ -359,6 +359,11 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the thing about how you work that you cannot see and an outsider would name in a day.",
   },
+  "ex-20": {
+    themes: ["limits", "divided-self", "guilt"],
+    speaksTo:
+      "For wanting to know what is actually being asked of you, and for the part of you that resents being told at all.",
+  },
   "gen-15": {
     themes: ["doubt", "waiting", "god-feels-absent"],
     speaksTo:

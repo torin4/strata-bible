@@ -1258,6 +1258,135 @@ export const EXODUS: Reading[] = [
         ask: "Who has told you plainly that what you are doing is not sustainable, and what did you do with it?",
       },
     ],
+  },
+  {
+    id: "ex-20",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 20",
+    chapterIndex: 20,
+    title: "The Ten Words",
+    unitLabel: "Scene",
+    thread: "Ten sentences, most of them short, spoken out of the fire to a people who have already agreed to them. The tradition calls them the ten words rather than the ten commandments, which is what the Hebrew says.",
+    closeEnd: "The people ask for a mediator, and the rest of the book is Moses going up and coming back down.",
+    passages: [
+      {
+        label: "One",
+        ref: "20:1–17",
+        kind: "statute-cluster",
+        form: "list",
+        title: "The ten words",
+        statutes: [
+          { n: 1, text: "And God spoke all these words:" },
+          { n: 2, text: "“I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery." },
+          { n: 3, text: "You shall have no other gods before Me." },
+          { n: 4, text: "You shall not make for yourself an idol in the form of anything in the heavens above, on the earth below, or in the waters beneath." },
+          { n: 5, text: "You shall not bow down to them or worship them; for I, the LORD your God, am a jealous God, visiting the iniquity of the fathers on their children to the third and fourth generations of those who hate Me," },
+          { n: 6, text: "but showing loving devotion to a thousand generations of those who love Me and keep My commandments." },
+          { n: 7, text: "You shall not take the name of the LORD your God in vain, for the LORD will not leave anyone unpunished who takes His name in vain." },
+          { n: 8, text: "Remember the Sabbath day by keeping it holy." },
+          { n: 9, text: "Six days you shall labor and do all your work," },
+          { n: 10, text: "but the seventh day is a Sabbath to the LORD your God, on which you must not do any work—neither you, nor your son or daughter, nor your manservant or maidservant or livestock, nor the foreigner within your gates." },
+          { n: 11, text: "For in six days the LORD made the heavens and the earth and the sea and all that is in them, but on the seventh day He rested. Therefore the LORD blessed the Sabbath day and set it apart as holy." },
+          { n: 12, text: "Honor your father and mother, so that your days may be long in the land that the LORD your God is giving you." },
+          { n: 13, text: "You shall not murder." },
+          { n: 14, text: "You shall not commit adultery." },
+          { n: 15, text: "You shall not steal." },
+          { n: 16, text: "You shall not bear false witness against your neighbor." },
+          { n: 17, text: "You shall not covet your neighbor’s house. You shall not covet your neighbor’s wife, or his manservant or maidservant, or his ox or donkey, or anything that belongs to your neighbor.”" },
+        ],
+        perItem: {
+          3: {
+            addr: { mode: "claims", text: "Before me does not mean instead of me. It means in my presence, which is harder. The question is not whether you have replaced God but what else is standing in the room." },
+          },
+          7: {
+            addr: { mode: "claims", text: "This is about swearing by the name to make a lie stick, or acting in God's name for your own ends. Casual profanity is the least of what it covers." },
+            note: "The Hebrew is closer to carrying the name emptily than to saying it rudely.",
+          },
+          8: {
+            addr: { mode: "claims", text: "The command is to stop, and it is addressed to the whole household including the servants and the foreigner. Nobody rests alone." },
+            note: "The reason given here is creation. Deuteronomy gives a different one: because you were slaves in Egypt.",
+          },
+          12: {
+            addr: { mode: "claims", text: "Written for adults with ageing parents rather than for children, and attached to the length of a people's life in the land." },
+          },
+          13: {
+            note: "The verb is ratsach, unlawful killing. It is not the word used for war or for judicial execution, which the same code goes on to prescribe.",
+          },
+          16: {
+            note: "Courtroom language. This is perjury against a neighbour, in a system with no police and no forensics, where a false witness could end a life.",
+          },
+          17: {
+            addr: { mode: "claims", text: "The only one of the ten that legislates for what happens inside you, where no court could reach." },
+            note: "Notice the list it appears in: house, wife, servants, ox. A wife is named among a man's property, which is the frame the command was written inside.",
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "They open not with a command but with a claim about what has already happened: I am the LORD your God, who brought you out of Egypt, out of the house of slavery. The obligations follow from the rescue rather than earning it. Two versions survive in the Bible, here and in Deuteronomy, and they differ, most visibly in the reason given for the sabbath. Neither was harmonised away.",
+          src: "Childs · Propp · Meyers",
+        },
+        meaning:
+          "The order matters. Four words about God, then one about parents, then five about the person next to you, and the whole thing is addressed to a single person, you, singular, standing in a crowd. What is being built is not a legal system, which comes in the next three chapters, but a shape for a free people: how to hold God, time, family, life, marriage, property and speech, in that order.",
+        lenses: {
+          theo: "The rescue comes first and the obligations second, which is the order the whole Bible keeps returning to. These are not the terms on which Israel was freed. They are what freedom is for.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "20:18–21",
+        kind: "scene",
+        form: "prose",
+        title: "At a distance",
+        verses: [
+          { n: 18, text: "When all the people witnessed the thunder and lightning, the sounding of the ram’s horn, and the mountain enveloped in smoke, they trembled and stood at a distance." },
+          { n: 19, text: "“Speak to us yourself and we will listen,” they said to Moses. “But do not let God speak to us, or we will die.”" },
+          { n: 20, text: "“Do not be afraid,” Moses replied. “For God has come to test you, so that the fear of Him may be before you, to keep you from sinning.”" },
+          { n: 21, text: "And the people stood at a distance as Moses approached the thick darkness where God was." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The people see the thunder and the mountain smoking, and they stand far off and ask Moses to speak instead, because if God speaks to them directly they will die. Moses answers that the fear is the point and also that they should not be afraid, which is not quite a contradiction.",
+          src: "Childs · Fretheim",
+        },
+        meaning:
+          "They asked for the mediator. It was not imposed on them. Having heard ten sentences directly, they decided they would rather have them relayed, and the whole remaining shape of the book, a man going up and coming back down with the words, is the answer to a request the people made out of terror.",
+        addr: {
+          mode: "names",
+          text: "You have probably wanted the thing at a distance too, relayed by someone else, in a form you could put down. Wanting it and dreading it at once is what this scene is made of.",
+        },
+        ask: "What have you asked to receive secondhand because firsthand felt like too much?",
+      },
+      {
+        label: "Three",
+        ref: "20:22–26",
+        kind: "statute-cluster",
+        form: "list",
+        title: "The altar",
+        statutes: [
+          { n: 22, text: "Then the LORD said to Moses, “This is what you are to tell the Israelites: ‘You have seen for yourselves that I have spoken to you from heaven." },
+          { n: 23, text: "You are not to make any gods alongside Me; you are not to make for yourselves gods of silver or gold." },
+          { n: 24, text: "You are to make for Me an altar of earth, and sacrifice on it your burnt offerings and peace offerings, your sheep and goats and cattle. In every place where I cause My name to be remembered, I will come to you and bless you." },
+          { n: 25, text: "Now if you make an altar of stones for Me, you must not build it with stones shaped by tools; for if you use a chisel on it, you will defile it." },
+          { n: 26, text: "And you must not go up to My altar on steps, lest your nakedness be exposed on it.’" },
+        ],
+        perItem: {
+          25: {
+            addr: { mode: "none-but", text: "No claim on you at all. Kept here because of what it says: a tool on the stone profanes it, so the altar has to be something nobody improved." },
+          },
+          26: {
+            addr: { mode: "none-but", text: "Also no claim on you, and worth seeing rather than skipping. The reason given is bodily exposure, which is the kind of plain physical concern a religion of temples and steps had to legislate for." },
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "The first laws given after the ten are about how to build an altar, and they are almost aggressively plain: earth, or undressed stone, and no steps. Wherever God causes his name to be remembered, he will come and bless. No temple, no masonry, nothing a craftsman could take credit for.",
+          src: "Propp · Childs",
+        },
+        meaning:
+          "These make no claim on you, and they are here rather than left out because of what they refuse. Every other religion in the region built upward and built impressively. This one begins by ruling out the tooled stone and the staircase. The first architectural instruction Israel receives is a restriction on how much of the altar can be its own achievement.",
+      },
+    ],
   },];
 
 export const OUT_OF_EGYPT_MOVEMENT: Movement = {
@@ -1379,6 +1508,30 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
 // The book-level "how it was written" overlay. One of only two places in the movement where the
 // evidentiary situation is stated: here and the movement's situation panel. Everywhere else the
 // ground notes stay literary, so a reader is not repeatedly told the story may not have happened.
+// Movement 3. Chapters 19 to 24 by range: movement 2 ends cleanly at chapter 18, so no reading
+// here needs the explicit movementId override that the chapter 15 seam required. No doorway
+// until movement 4 exists, and no capstone until the movement is complete.
+export const THE_COVENANT_MOVEMENT: Movement = {
+  id: "the-covenant",
+  index: 3,
+  title: "The covenant",
+  range: "Exodus 19–24",
+  throughline:
+    "A people who have been rescued are offered terms, and agree to them before they have heard what they are. Then the terms arrive: ten sentences out of the fire, and a long code of case law that is still argued over.",
+  chapterStart: 19,
+  chapterEnd: 24,
+  situation: {
+    kicker: "The ground beneath the covenant",
+    title: "The situation",
+    paragraphs: [
+      "The mountain cannot be located with any confidence, and it matters less than the shape of what happens on it. The covenant at Sinai is built like a treaty of its period between a great king and a lesser one: the king named, what he has already done for the lesser party recited, then the terms, then witnesses and consequences. Israel took the diplomatic form of its world and put God in the position of the great king, which is a claim about who they now belonged to rather than a literary borrowing for its own sake.",
+      "The law itself sits inside a much older legal tradition. Codes from Mesopotamia predate this one by centuries and share its case-law grammar, the long run of sentences beginning if a man. Comparison shows both the borrowing and the divergence. This code is markedly more protective of the debtor, the foreigner and the servant than its neighbours, and it values a person above property in places where they did not. It also permits a person to be owned, which no comparison softens.",
+      "These chapters were edited over a long time and the seams are visible. The ten words appear twice in the Bible, here and in Deuteronomy, and the two do not match: the reason given for the sabbath is creation in one and slavery in Egypt in the other. Both were kept. That is characteristic of how this book handles its own traditions, and it is worth knowing before reading a code that later readers have often wanted to be seamless.",
+    ],
+    sources: "Childs · Propp · Meyers · Assmann",
+  },
+};
+
 export const EXODUS_INTRO: Panel = {
   kicker: "An introduction · Exodus 1–40",
   title: "The book of the going out",

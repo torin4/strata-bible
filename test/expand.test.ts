@@ -67,6 +67,20 @@ describe("expandReading", () => {
     expect(refs.some((r) => r.startsWith("43"))).toBe(false);
   });
 
+  it("leaves a statute-cluster untouched, so selection in law is final", () => {
+    // The reveal completes a curated prose passage; it does not unroll a legal code. That makes
+    // verse selection in a cluster final, with no escape hatch, which is worth locking down
+    // rather than leaving as an assumption for whoever selects the next code.
+    const reading = getReading("exodus", "ex-20");
+    if (!reading) throw new Error("no ex-20");
+    const cluster = expandReading(reading).passages.find(
+      (p) => p.ref === "20:1–17",
+    );
+    expect(cluster?.statutes?.length).toBe(17);
+    expect(cluster?.statutes?.some((v) => v.omitted)).toBe(false);
+    expect(cluster?.verses).toBeUndefined();
+  });
+
   it("leaves a book with no registered BSB lookup untouched", () => {
     const psalm = getReading("psalms", "ps-13");
     if (!psalm) throw new Error("no ps-13");
