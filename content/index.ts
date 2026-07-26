@@ -27,7 +27,8 @@ import { JOB_MOVEMENT, SEED } from "./seed";
 export interface BookEntry {
   id: string;
   title: string;
-  subtitle?: string; // the book's one-line intro, shown under the title
+  subtitle?: string; // the book's one-line intro, shown under the title on its own page
+  blurb?: string; // the poetic one-liner on the landing card, distinct from the subtitle
   heroImage?: string; // a top-of-page hero image (path under /public)
   readings: Reading[];
   movements: Movement[];
@@ -43,13 +44,9 @@ export interface ComingSoon {
   blurb: string;
 }
 
-export const COMING_SOON: ComingSoon[] = [
-  {
-    id: "exodus",
-    title: "Exodus",
-    blurb: "Out of Egypt, through the sea, to the mountain of fire.",
-  },
-];
+// Empty while nothing is announced. The landing renders these after the published books, so
+// adding an entry here is all it takes to announce the next one.
+export const COMING_SOON: ComingSoon[] = [];
 
 // Genesis ships first as the real book. The seed fixtures are one reading per genre,
 // grouped by their own bookId, purely to prove the kind-aware renderer end to end.
@@ -90,6 +87,7 @@ export const BOOKS: BookEntry[] = [
     title: "Genesis",
     subtitle:
       "Four movements: the world, the family, the wrestler, the dreamer.",
+    blurb: "In the beginning, and everything that breaks and is held after.",
     heroImage: "/images/genesis-intro.webp",
     readings: GENESIS,
     movements: [
@@ -102,14 +100,14 @@ export const BOOKS: BookEntry[] = [
     capstone: GENESIS_CAPSTONE,
     published: true,
   },
-  // Exodus is being written. Movement 1 (out of Egypt) is authored to the grounded tier; the
-  // remaining three movements are not declared at all, because a movement whose chapter range
-  // holds no readings fails the content validator. It stays unpublished until all forty
-  // chapters are done, so it is absent from the landing page and from /find while remaining
-  // reachable by direct URL for review. The coming-soon announcement continues to carry it.
+  // Exodus, complete and published: forty chapters across four movements. The free sample is
+  // still Genesis's primeval history and nothing here, so Exodus reads entirely under Plus.
   {
     id: "exodus",
     title: "Exodus",
+    subtitle:
+      "Four movements: out of Egypt, the road, the covenant, the presence.",
+    blurb: "Out of Egypt, through the sea, to the mountain of fire.",
     readings: EXODUS,
     movements: [
       OUT_OF_EGYPT_MOVEMENT,
@@ -119,6 +117,7 @@ export const BOOKS: BookEntry[] = [
     ],
     composition: EXODUS_INTRO,
     capstone: EXODUS_CAPSTONE,
+    published: true,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

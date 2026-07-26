@@ -1,4 +1,5 @@
 import { PUBLISHED_BOOKS } from "@/content";
+import { isFreeMovement } from "@/lib/access";
 import {
   getAdjacent,
   getBook,
@@ -202,12 +203,33 @@ describe("content lib", () => {
     expect(tension?.where).toContain("Exodus 34:6");
   });
 
-  it("Exodus is complete but still unpublished", () => {
-    // Forty chapters are authored, which satisfies the condition for publishing. Taking that
-    // decision is deliberate and separate, so it must not happen by accident.
+  it("Exodus is complete and published, and the genre proofs are not", () => {
     expect(getBook("exodus")?.capstone).toBeDefined();
-    expect(getBook("exodus")?.published).toBeFalsy();
-    expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis"]);
+    expect(getBook("exodus")?.published).toBe(true);
+    // Order matters: the landing numbers the books by their position here.
+    expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis", "exodus"]);
+    // The renderer fixtures stay reachable by URL but unadvertised.
+    expect(getBook("job")?.published).toBeFalsy();
+  });
+
+  it("every published book has what the landing card needs", () => {
+    for (const book of PUBLISHED_BOOKS) {
+      expect(book.blurb, `${book.id} blurb`).toBeTruthy();
+      expect(book.movements.length, `${book.id} movements`).toBeGreaterThan(0);
+    }
+  });
+
+  it("the free sample is still one movement of one book", () => {
+    // Publishing a second book did not widen the free tier. Exodus reads entirely under Plus,
+    // which is a pricing decision and must not drift silently.
+    const free = PUBLISHED_BOOKS.filter((b) =>
+      isFreeMovement(b.id, "primeval"),
+    );
+    expect(free.map((b) => b.id)).toEqual(["genesis"]);
+    const exodus = getBook("exodus");
+    for (const movement of exodus?.movements ?? []) {
+      expect(isFreeMovement("exodus", movement.id), movement.id).toBe(false);
+    }
   });
 
   it("the Ten Words render as law, with per-item annotation", () => {
@@ -314,11 +336,6 @@ describe("content lib", () => {
     const capstone = getBook("exodus")?.movements[0].capstone;
     expect(capstone?.tensions).toHaveLength(1);
     expect(capstone?.tensions?.[0].where).toContain("Amos 9:7");
-  });
-
-  it("Exodus is unpublished until the whole book is authored", () => {
-    expect(getBook("exodus")?.published).toBeFalsy();
-    expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis"]);
   });
 
   it("an Exodus reading still awaiting authorship is grounded and empty", () => {
