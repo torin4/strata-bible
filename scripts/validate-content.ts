@@ -98,7 +98,16 @@ for (const reading of allReadings) {
 // A passage whose verse numbers don't ascend spans two chapters under one ref, so a bare verse
 // number can't be attributed to a chapter. Those are unverifiable and are reported as such,
 // using the same rule the reader's full-text fill uses, so the two can never disagree.
+//
+// Comparison collapses whitespace. Authored poetry carries line breaks at the parallelism where
+// the BSB lookup holds one flat string (see ADR 0001), so a lineated verse is identical in every
+// word and different in its whitespace. Collapsing makes lineation invisible here while leaving
+// the words, and their order, fully enforced.
 // ---------------------------------------------------------------------------------------
+
+// Whitespace-insensitive comparison text: line breaks and runs of spaces become single spaces.
+const flatten = (s: string) => s.replace(/\s+/g, " ").trim();
+
 const abridged: string[] = [];
 const unverifiable: string[] = [];
 let versesChecked = 0;
@@ -129,8 +138,10 @@ for (const book of BOOKS) {
           );
           continue;
         }
-        if (official === verse.text) continue;
-        if (official.includes(verse.text)) {
+        const want = flatten(official);
+        const got = flatten(verse.text);
+        if (want === got) continue;
+        if (want.includes(got)) {
           abridged.push(`${reading.id} · ${passage.ref} v${verse.n}`);
           continue;
         }

@@ -54,3 +54,9 @@ is which. If a future passage needs different attribution, change it in one plac
 **Mutation demo.** Genesis 1:1 was temporarily rewritten toward a KJV-style phrasing ("In the
 beginning, God created the heaven and the earth."). The validator failed with
 `gen-1 · 1:1–5 v1: authored text is not the BSB at genesis 1:1` and exit code 1. Reverted.
+
+**Amended by ticket 03.** As shipped here, the gate compared raw text, which would have rejected
+every lineated poetry verse: a line break sits where the BSB lookup holds a space. Ticket 03
+caught this while recording the lineation decision, before any poetry existed to trip over it.
+The comparison now collapses whitespace on both sides. The guarantee is unchanged in substance,
+every word and its order must still match, and lineation is simply invisible to the check.
