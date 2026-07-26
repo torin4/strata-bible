@@ -114,6 +114,18 @@ describe("content lib", () => {
     expect(getBook("exodus")?.capstone).toBeUndefined();
   });
 
+  it("the Exodus composition panel argues the history rather than ruling on it", () => {
+    // One of only two places the evidentiary situation is stated. It must carry the mainstream
+    // reconstruction AND the serious case for a historical core, both attributed, so a reader
+    // meets a live argument instead of a verdict handed down.
+    const panel = getBook("exodus")?.composition;
+    expect(panel?.paragraphs.length).toBeGreaterThanOrEqual(3);
+    const prose = panel?.paragraphs.join(" ") ?? "";
+    expect(prose).toContain("Finkelstein");
+    expect(prose).toContain("Hoffmeier");
+    expect(panel?.sources).toBeTruthy();
+  });
+
   it("the capstone carries a tension that only surfaces across the whole movement", () => {
     const capstone = getBook("exodus")?.movements[0].capstone;
     expect(capstone?.tensions).toHaveLength(1);

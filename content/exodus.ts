@@ -1,4 +1,4 @@
-import type { Movement, Reading } from "@/lib/types";
+import type { Movement, Panel, Reading } from "@/lib/types";
 
 // Exodus, movement 1: out of Egypt (Exodus 1 to 15:21).
 //
@@ -975,7 +975,7 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
     "paragraphs": [
       "Egypt in the late Bronze Age was the greatest power in the region, and it built with conscripted labour. Semitic-speaking people lived in the eastern delta in numbers, some enslaved, some in service, a few risen high. Store cities, brick quotas and daily tallies are the ordinary furniture of Egyptian administration, and the opening chapters use that vocabulary exactly.",
       "The book never names its pharaoh, which is the first difficulty for anyone trying to date it. The conventional window is the thirteenth century, under Rameses II, largely because the story names a city that bears his name. Around 1208 BCE a victory stele of his successor Merneptah lists Israel among the peoples of Canaan, the earliest mention of Israel anywhere outside the Bible.",
-      "The harder thing to say plainly is this. No Egyptian record mentions the departure, and Egypt kept careful records. Nothing has been found in Sinai from a mass migration, and the archaeology of Canaan points to Israel emerging largely from within it rather than arriving all at once from outside. What the book gives is not a report. It is a founding charter, told and retold by people who believed that a deliverance had happened and who understood themselves by it.",
+      "The harder thing to say plainly is this. No Egyptian record mentions the departure, and Egypt kept careful records. Nothing has been found in Sinai from a mass migration, and the archaeology of Canaan points to Israel emerging largely from within it rather than arriving from outside. What the book gives is not a report. It is a founding charter, told and retold by people who believed that a deliverance had happened and who understood themselves by it.",
       "It reached its final shape centuries after the events it describes, from more than one source, among people for whom empire was the permanent condition. That is worth holding while reading. A story about walking out of an empire was carried, and finally written down, by people living inside one."
     ],
     "timeline": [
@@ -1023,4 +1023,19 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
     ],
     sources: "Propp · Fretheim · Walzer",
   },
+};
+
+// The book-level "how it was written" overlay. One of only two places in the movement where the
+// evidentiary situation is stated: here and the movement's situation panel. Everywhere else the
+// ground notes stay literary, so a reader is not repeatedly told the story may not have happened.
+export const EXODUS_INTRO: Panel = {
+  kicker: "An introduction · Exodus 1–40",
+  title: "The book of the going out",
+  paragraphs: [
+    "Exodus means the going out, and it is the book where a family becomes a nation. It moves through three kinds of writing: a rescue told as story, a covenant given as law, and then, for nearly a third of its length, instructions for building a tent. Readers who arrive for the sea and the mountain are often surprised by how much of the book is joinery.",
+    "It is a composite book, and it does not hide it. More than one telling runs through it, sometimes laid side by side without being reconciled: Moses is called twice, in two different voices, and the crossing of the sea is described both as a wind blowing all night and as water standing up like walls. The Song at the sea is in an archaic Hebrew centuries older than the prose around it. It reached its final shape long after the events it describes, among people carried off to Babylon who knew what it was to live inside an empire.",
+    "Then the question most readers arrive with. No Egyptian record mentions the departure, and Egypt kept careful records of far smaller things. Nothing has been found in Sinai from a mass migration, and the archaeology of Canaan points to Israel emerging largely from within it rather than arriving from outside. On the most widely held reconstruction, the exodus as the book narrates it, on that scale, did not happen. (Finkelstein and Silberman.)",
+    "The serious case on the other side is worth hearing rather than waved past. The book carries Egyptian detail a later Judean writer had little reason to know, several of its names are Egyptian, including Moses, and no nation invents for itself an origin in which its ancestors were slaves. On that reading something happened to somebody, smaller than the telling, and the telling grew around it. (Hoffmeier.) The argument is genuinely open. What is not in question is what the story became: the founding memory of the people who kept it, and the event the rest of the Bible keeps turning back to.",
+  ],
+  sources: "Propp · Assmann · Finkelstein & Silberman · Hoffmeier",
 };
