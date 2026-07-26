@@ -61,7 +61,7 @@ describe("content lib", () => {
     expect(reading && getClosingMovement("genesis", reading)).toBeUndefined();
   });
 
-  it("Exodus movement 1 holds its eleven readings, in authored order", () => {
+  it("Exodus holds its authored readings in order, across both movements", () => {
     const readings = getBook("exodus")?.readings ?? [];
     expect(readings.map((r) => r.id)).toEqual([
       "ex-1",
@@ -75,31 +75,74 @@ describe("content lib", () => {
       "ex-13",
       "ex-14",
       "ex-15a",
+      "ex-15b",
+      "ex-16",
+      "ex-17",
+      "ex-18",
     ]);
   });
 
-  it("Exodus adjacency runs the movement end to end without leaving the book", () => {
+  it("Exodus adjacency follows authored order and stays inside the book", () => {
     // The plague reading spans five chapters, so next/prev must follow authored order rather
     // than chapter arithmetic: ex-7 is followed by ex-12, not by a chapter 8.
     expect(getAdjacent("exodus", "ex-7").next?.id).toBe("ex-12");
     expect(getAdjacent("exodus", "ex-12").prev?.id).toBe("ex-7");
     expect(getAdjacent("exodus", "ex-1").prev).toBeUndefined();
-    expect(getAdjacent("exodus", "ex-15a").next).toBeUndefined();
+    // The last authored reading ends the book for now; movement 3 has not been written.
+    expect(getAdjacent("exodus", "ex-18").next).toBeUndefined();
   });
 
-  it("every Exodus reading belongs to the one declared movement", () => {
+  it("every Exodus reading belongs to one of the declared movements", () => {
     const book = getBook("exodus");
-    expect(book?.movements.map((m) => m.id)).toEqual(["out-of-egypt"]);
+    expect(book?.movements.map((m) => m.id)).toEqual([
+      "out-of-egypt",
+      "road-to-the-mountain",
+    ]);
+    const ids = new Set(book?.movements.map((m) => m.id));
     for (const reading of book?.readings ?? []) {
-      expect(getMovement("exodus", reading)?.id, reading.id).toBe(
-        "out-of-egypt",
-      );
+      const movement = getMovement("exodus", reading)?.id;
+      expect(movement, reading.id).toBeDefined();
+      expect(ids.has(movement ?? ""), reading.id).toBe(true);
     }
   });
 
-  it("Exodus movement 1 carries no doorway while movement 2 does not exist", () => {
-    const movement = getBook("exodus")?.movements[0];
-    expect(movement?.doorway).toBeUndefined();
+  it("the chapter 15 seam splits the Song from Marah across two movements", () => {
+    // Both readings sit in chapter 15, which falls inside movement 1's range, so ex-15b claims
+    // movement 2 with an explicit movementId. This is the one override in the book and it fails
+    // silently if broken: the reading would simply be filed under the wrong movement.
+    const book = getBook("exodus");
+    const song = book?.readings.find((r) => r.id === "ex-15a");
+    const marah = book?.readings.find((r) => r.id === "ex-15b");
+    expect(song?.chapterIndex).toBe(15);
+    expect(marah?.chapterIndex).toBe(15);
+    expect(song?.movementId).toBeUndefined();
+    expect(marah?.movementId).toBe("road-to-the-mountain");
+    expect(song && getMovement("exodus", song)?.id).toBe("out-of-egypt");
+    expect(marah && getMovement("exodus", marah)?.id).toBe(
+      "road-to-the-mountain",
+    );
+    // Navigation still runs straight across the seam in authored order.
+    expect(getAdjacent("exodus", "ex-15a").next?.id).toBe("ex-15b");
+  });
+
+  it("each Exodus movement closes on its own last reading", () => {
+    const closing = (id: string) => {
+      const r = getReading("exodus", id);
+      return r && getClosingMovement("exodus", r)?.capstone?.title;
+    };
+    expect(closing("ex-15a")).toBe("The rescue, and the price on it");
+    expect(closing("ex-18")).toBe("Learning to live on what arrives");
+    // The reading straight after a capstone must not surface one of its own.
+    expect(closing("ex-15b")).toBeUndefined();
+  });
+
+  it("movement 1 now has a doorway, and the last movement has none", () => {
+    const movements = getBook("exodus")?.movements ?? [];
+    const ids = new Set(movements.map((m) => m.id));
+    expect(movements[0]?.doorway?.nextMovementId).toBe("road-to-the-mountain");
+    expect(ids.has(movements[0]?.doorway?.nextMovementId ?? "")).toBe(true);
+    // Movement 3 does not exist yet, so the last movement points nowhere.
+    expect(movements[movements.length - 1]?.doorway).toBeUndefined();
   });
 
   it("the movement capstone closes on the Song, and nowhere else", () => {

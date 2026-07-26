@@ -1,5 +1,10 @@
 import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
-import { EXODUS, EXODUS_INTRO, OUT_OF_EGYPT_MOVEMENT } from "./exodus";
+import {
+  EXODUS,
+  EXODUS_INTRO,
+  OUT_OF_EGYPT_MOVEMENT,
+  ROAD_TO_THE_MOUNTAIN_MOVEMENT,
+} from "./exodus";
 import {
   ABRAHAM_MOVEMENT,
   GENESIS,
@@ -103,7 +108,7 @@ export const BOOKS: BookEntry[] = [
     id: "exodus",
     title: "Exodus",
     readings: EXODUS,
-    movements: [OUT_OF_EGYPT_MOVEMENT],
+    movements: [OUT_OF_EGYPT_MOVEMENT, ROAD_TO_THE_MOUNTAIN_MOVEMENT],
     composition: EXODUS_INTRO,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware

@@ -339,6 +339,26 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the far side of something you could not see a way past, and for words to say about it that also point at what is still ahead.",
   },
+  "ex-15b": {
+    themes: ["deliverance", "doubt", "waiting"],
+    speaksTo:
+      "For the short interval between relief and the next need, when the last rescue turns out not to cover this one.",
+  },
+  "ex-16": {
+    themes: ["control", "fear-of-loss", "limits"],
+    speaksTo:
+      "For what you are storing that was given for a day, and for the fear underneath the storing.",
+  },
+  "ex-17": {
+    themes: ["god-feels-absent", "limits", "loneliness"],
+    speaksTo:
+      "For the anger that is really the question of whether God is here, and for needing someone to hold your arms up.",
+  },
+  "ex-18": {
+    themes: ["limits", "the-outsider", "overlooked"],
+    speaksTo:
+      "For the thing about how you work that you cannot see and an outsider would name in a day.",
+  },
   "gen-15": {
     themes: ["doubt", "waiting", "god-feels-absent"],
     speaksTo:
