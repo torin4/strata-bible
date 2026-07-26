@@ -4,6 +4,7 @@
   "files": {
     "ignore": [
       "genesis.ts",
+      "exodus.ts",
       "seed.ts",
       "bsb-*.ts",
       "types.ts",

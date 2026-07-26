@@ -1,4 +1,5 @@
 import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
+import { EXODUS, OUT_OF_EGYPT_MOVEMENT } from "./exodus";
 import {
   ABRAHAM_MOVEMENT,
   GENESIS,
@@ -92,6 +93,17 @@ export const BOOKS: BookEntry[] = [
     composition: GENESIS_INTRO,
     capstone: GENESIS_CAPSTONE,
     published: true,
+  },
+  // Exodus is being written. Movement 1 (out of Egypt) is authored to the grounded tier; the
+  // remaining three movements are not declared at all, because a movement whose chapter range
+  // holds no readings fails the content validator. It stays unpublished until all forty
+  // chapters are done, so it is absent from the landing page and from /find while remaining
+  // reachable by direct URL for review. The coming-soon announcement continues to carry it.
+  {
+    id: "exodus",
+    title: "Exodus",
+    readings: EXODUS,
+    movements: [OUT_OF_EGYPT_MOVEMENT],
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

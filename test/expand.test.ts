@@ -1,43 +1,18 @@
 import { getReading } from "@/lib/content";
 import { expandReading } from "@/lib/expand";
-import type { Reading, Verse } from "@/lib/types";
+import type { Verse } from "@/lib/types";
 import { describe, expect, it } from "vitest";
 
-// A minimal reading standing in for authored content, used to exercise a book whose readings
-// don't exist yet. Exodus is registered in the lookup ahead of its content (the movement is
-// authored in a later ticket), so this is the only way to prove the wiring now.
-function stubReading(
-  bookId: string,
-  chapterIndex: number,
-  verses: Verse[],
-): Reading {
-  return {
-    id: `${bookId}-stub`,
-    bookId,
-    tier: "grounded",
-    span: `stub ${chapterIndex}`,
-    chapterIndex,
-    title: "stub",
-    passages: [
-      {
-        ref: `${chapterIndex}:${verses[0].n}–${verses[verses.length - 1].n}`,
-        kind: "scene",
-        form: "prose",
-        title: "stub",
-        verses,
-      },
-    ],
-  };
-}
-
 // The passage carrying `ref` in an expanded reading.
-function passage(readingId: string, ref: string) {
-  const reading = getReading("genesis", readingId);
+function passageIn(bookId: string, readingId: string, ref: string) {
+  const reading = getReading(bookId, readingId);
   if (!reading) throw new Error(`no reading ${readingId}`);
   const p = expandReading(reading).passages.find((p) => p.ref === ref);
   if (!p) throw new Error(`no passage ${ref} in ${readingId}`);
   return p;
 }
+const passage = (readingId: string, ref: string) =>
+  passageIn("genesis", readingId, ref);
 
 const omitted = (verses: Verse[] = []) =>
   verses.filter((v) => v.omitted).map((v) => v.n);
@@ -99,17 +74,38 @@ describe("expandReading", () => {
   });
 
   it("fills from the book's own lookup, not Genesis's", () => {
-    // Exodus 3:1–6 authoring 1, 2 and 6: the bush, with the gap filled from Exodus.
-    const reading = stubReading("exodus", 3, [
-      { n: 1, text: "Meanwhile, Moses was shepherding the flock" },
-      { n: 2, text: "There the angel of the LORD appeared to him" },
-      { n: 6, text: "Then He said, “I am the God of your father" },
-    ]);
-    const p = expandReading(reading).passages[0];
-    expect(omitted(p.verses)).toEqual([3, 4, 5]);
-    // The filled text is Exodus's, not the Genesis lookup's verse of the same number.
-    expect(p.verses?.find((v) => v.n === 4)?.text).toContain(
-      "God called out to him from within the bush",
+    // ex-7 authors 7:14, 17, 20–21, 24–25; the gaps come from the Exodus lookup.
+    const p = passageIn("exodus", "ex-7", "7:14–25");
+    expect(authored(p.verses)).toEqual([14, 17, 20, 21, 24, 25]);
+    expect(omitted(p.verses)).toEqual([15, 16, 18, 19, 22, 23]);
+    // Exodus 7:18, not Genesis 7:18 (which is the flood rising).
+    expect(p.verses?.find((v) => v.n === 18)?.text).toContain(
+      "The fish in the Nile will die",
     );
+  });
+
+  it("attributes each plague passage to its own chapter", () => {
+    // The reading spans Exodus 7–11. One passage per chapter is what keeps the reveal working:
+    // a single passage running 7:14 to 11:10 would have non-ascending numbers and fill nothing.
+    const reading = getReading("exodus", "ex-7");
+    if (!reading) throw new Error("no ex-7");
+    const expanded = expandReading(reading);
+    expect(expanded.passages).toHaveLength(5);
+    for (const p of expanded.passages) {
+      expect(
+        omitted(p.verses).length,
+        `${p.ref} reveals nothing`,
+      ).toBeGreaterThan(0);
+    }
+    // Chapter 8's fill is chapter 8's text, not chapter 7's.
+    const eight = expanded.passages.find((p) => p.ref === "8:1–19");
+    expect(eight?.verses?.find((v) => v.n === 3)?.text).toContain("frogs");
+  });
+
+  it("leaves a whole-chapter Exodus reading with nothing to reveal", () => {
+    // ex-1 authors all 22 verses of Exodus 1: a contiguous run, so the fill has no gap to close.
+    const p = passageIn("exodus", "ex-1", "Exodus 1");
+    expect(omitted(p.verses)).toEqual([]);
+    expect(authored(p.verses)).toHaveLength(22);
   });
 });
