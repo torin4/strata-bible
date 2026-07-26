@@ -2496,6 +2496,7 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
   "situation": {
     "kicker": "The ground beneath the road out of Egypt",
     "title": "The situation",
+    "image": "/images/exo-egypt.webp",
     "paragraphs": [
       "Egypt in the late Bronze Age was the greatest power in the region, and it built with conscripted labour. Semitic-speaking people lived in the eastern delta in numbers, some enslaved, some in service, a few risen high. Store cities, brick quotas and daily tallies are the ordinary furniture of Egyptian administration, and the opening chapters use that vocabulary exactly.",
       "The book never names its pharaoh, which is the first difficulty for anyone trying to date it. The conventional window is the thirteenth century, under Rameses II, largely because the story names a city that bears his name. Around 1208 BCE a victory stele of his successor Merneptah lists Israel among the peoples of Canaan, the earliest mention of Israel anywhere outside the Bible.",
@@ -2572,6 +2573,7 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the road to the mountain",
     title: "The situation",
+    image: "/images/exo-road.webp",
     paragraphs: [
       "The country between Egypt and Sinai is limestone, gravel and wind, and the whole problem in it is water. Springs are days apart and a bad one ends a march. The itinerary the book gives, Marah, Elim, the wilderness of Sin, Rephidim, reads like a real route, though almost none of the places can now be located with any confidence and the mountain itself is not securely identified.",
       "These chapters work differently from the ones before them. Each stop follows the same shape: a shortage, a complaint, provision, and then something that outlasts the crisis. A day's portion and no storing. A seventh day taught by the way bread behaves. Judges appointed over thousands and tens. The rescue is finished and what is being built now is a way of living, which is why the wilderness material teaches more than it narrates.",
@@ -2628,6 +2630,7 @@ export const THE_COVENANT_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the covenant",
     title: "The situation",
+    image: "/images/exo-covenant.webp",
     paragraphs: [
       "The mountain cannot be located with any confidence, and it matters less than the shape of what happens on it. The covenant at Sinai is built like a treaty of its period between a great king and a lesser one: the king named, what he has already done for the lesser party recited, then the terms, then witnesses and consequences. Israel took the diplomatic form of its world and put God in the position of the great king, which is a claim about who they now belonged to rather than a literary borrowing for its own sake.",
       "The law itself sits inside a much older legal tradition. Codes from Mesopotamia predate this one by centuries and share its case-law grammar, the long run of sentences beginning if a man. Comparison shows both the borrowing and the divergence. This code is markedly more protective of the debtor, the foreigner and the servant than its neighbours, and it values a person above property in places where they did not. It also permits a person to be owned, which no comparison softens.",
@@ -2679,6 +2682,7 @@ export const THE_PRESENCE_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the tabernacle",
     title: "The situation",
+    image: "/images/exo-presence.webp",
     paragraphs: [
       "The first thing to say is about proportion, because it is the question every reader arrives with. The creation of the world gets thirty-one verses. A tent gets around four hundred, twice over. Read as a story that is badly out of balance. Read as what the book is actually for, it is the argument itself: the point of the rescue was never the leaving, it was that this God would end up living among these people, and the specifications are how that gets arranged. Detail is what care looks like when it is written down.",
       "What is being described is a portable shrine, and portable shrines are known elsewhere in the region, in Egypt and among nomadic peoples. The design is less exotic than it reads. A frame, curtains, an enclosure, a graded approach from courtyard to inner room. What differs is what sits at the centre, which in other sanctuaries would be an image of the god and here is a box with the terms of an agreement inside it and an empty space above.",

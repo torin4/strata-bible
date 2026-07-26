@@ -108,6 +108,7 @@ export const BOOKS: BookEntry[] = [
     subtitle:
       "Four movements: out of Egypt, the road, the covenant, the presence.",
     blurb: "Out of Egypt, through the sea, to the mountain of fire.",
+    heroImage: "/images/exo-intro.webp",
     readings: EXODUS,
     movements: [
       OUT_OF_EGYPT_MOVEMENT,
