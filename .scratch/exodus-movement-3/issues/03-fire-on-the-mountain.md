@@ -17,15 +17,32 @@ register the first two movements established.
 
 **Blocked by:** 02 — The Ten Words.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Exodus 19 is a sitting carrying all four layers across its scenes
-- [ ] It belongs to movement 3 by chapter range, with no explicit movement override
-- [ ] Its turn names rather than demands
-- [ ] Its ground note is concrete and literary and covers the treaty shape the chapter borrows, without relitigating the archaeology
-- [ ] It is tagged in the find index in the same change that makes it a sitting
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] No passage exceeds the density target on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Exodus 19 is a sitting carrying all four layers across its scenes
+- [x] It belongs to movement 3 by chapter range, with no explicit movement override
+- [x] Its turn names rather than demands
+- [x] Its ground note is concrete and literary and covers the treaty shape the chapter borrows, without relitigating the archaeology
+- [x] It is tagged in the find index in the same change that makes it a sitting
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] No passage exceeds the density target on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Three scenes.** The terms offered and accepted before they are heard; the fence around the
+mountain with a death penalty on it; the third morning in smoke and a trumpet that gets louder
+rather than fading. Turns name rather than demand, holding the register.
+
+**One thing the scenes are built to carry.** The order is rescue, then relationship, then terms.
+The people say we will do everything before a single commandment has been spoken, so nothing here
+is a transaction in which obedience buys the rescue. That order is what makes the Ten Words
+readable as what freedom is for rather than as its price.
+
+**Insert order, not append.** Array order is authored reading order and drives adjacency, so
+chapter 19 had to go before the Ten Words rather than at the end of the array. Caught before
+running the generator rather than after.
+
+Density 1.13x, 0.72x, 0.76x.

@@ -1260,6 +1260,108 @@ export const EXODUS: Reading[] = [
     ],
   },
   {
+    id: "ex-19",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 19",
+    chapterIndex: 19,
+    title: "Fire on the mountain",
+    unitLabel: "Scene",
+    thread: "They are offered terms and accept them before they have heard what they are. Then the mountain is fenced, and what comes down it is fire, smoke and a sound that will not stop.",
+    closeEnd: "The people are kept back, and Moses goes up. Everything after this arrives through him.",
+    passages: [
+      {
+        label: "One",
+        ref: "19:1–8",
+        kind: "scene",
+        form: "prose",
+        title: "We will do everything",
+        verses: [
+          { n: 1, text: "In the third month, on the same day of the month that the Israelites had left the land of Egypt, they came to the Wilderness of Sinai." },
+          { n: 2, text: "After they had set out from Rephidim, they entered the Wilderness of Sinai, and Israel camped there in front of the mountain." },
+          { n: 3, text: "Then Moses went up to God, and the LORD called to him from the mountain, “This is what you are to tell the house of Jacob and explain to the sons of Israel:" },
+          { n: 4, text: "‘You have seen for yourselves what I did to Egypt, and how I carried you on eagles’ wings and brought you to Myself." },
+          { n: 5, text: "Now if you will indeed obey My voice and keep My covenant, you will be My treasured possession out of all the nations—for the whole earth is Mine." },
+          { n: 6, text: "And unto Me you shall be a kingdom of priests and a holy nation.’ These are the words that you are to speak to the Israelites.”" },
+          { n: 7, text: "So Moses went back and summoned the elders of the people and set before them all these words that the LORD had commanded him." },
+          { n: 8, text: "And all the people answered together, “We will do everything that the LORD has spoken.” So Moses brought their words back to the LORD." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Three months out of Egypt they camp in front of the mountain, and God's first words are not terms but a reminder: you saw what I did to Egypt, and I carried you on eagles' wings and brought you to myself. Only then the offer. If you keep the covenant you will be a treasured possession, a kingdom of priests, a holy nation. The whole earth is mine, it adds, which stops the choosing from meaning ownership of only one people.",
+          src: "Childs · Fretheim · Propp",
+        },
+        meaning:
+          "The people answer everything the LORD has spoken we will do, and they have not yet heard a single commandment. That is either faith or a kind of blindness and the book does not say which. What it does establish is the order: rescue, then relationship, then terms. Nothing here is a transaction in which obedience buys rescue. The rescue already happened, several chapters ago, while they were complaining.",
+        lenses: {
+          theo: "A kingdom of priests means the whole people, not a caste inside it. Whatever else the covenant does, it does not create a class of insiders with access and a class without.",
+        },
+        addr: {
+          mode: "names",
+          text: "You have said yes to something before knowing what it would ask, and meant it at the time. This scene does not treat that as foolish. It treats it as how most real commitments actually start.",
+        },
+        ask: "What did you agree to before you knew the terms, and would you agree again?",
+      },
+      {
+        label: "Two",
+        ref: "19:9–15",
+        kind: "scene",
+        form: "prose",
+        title: "Do not touch the mountain",
+        verses: [
+          { n: 9, text: "The LORD said to Moses, “Behold, I will come to you in a dense cloud, so that the people will hear when I speak with you, and they will always put their trust in you.” And Moses relayed to the LORD what the people had said." },
+          { n: 10, text: "Then the LORD said to Moses, “Go to the people and consecrate them today and tomorrow. They must wash their clothes" },
+          { n: 11, text: "and be prepared by the third day, for on the third day the LORD will come down on Mount Sinai in the sight of all the people." },
+          { n: 12, text: "And you are to set up a boundary for the people around the mountain and tell them, ‘Be careful not to go up on the mountain or touch its base. Whoever touches the mountain shall surely be put to death." },
+          { n: 13, text: "No hand shall touch him, but he shall surely be stoned or shot with arrows—whether man or beast, he must not live.’ Only when the ram’s horn sounds a long blast may they approach the mountain.”" },
+          { n: 14, text: "When Moses came down from the mountain to the people, he consecrated them, and they washed their clothes." },
+          { n: 15, text: "“Be prepared for the third day,” he said to the people. “Do not draw near to a woman.”" },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Two days of preparation: wash your clothes, be ready, and do not go near the mountain or even touch its edge, on pain of death. The boundary is set by Moses at God's instruction, and it applies to everyone including the priests. The instruction to abstain from sex before the encounter belongs to the ritual purity of the period and is stated without explanation.",
+          src: "Propp · Meyers",
+        },
+        meaning:
+          "The fence is the strange part. A God who has just spent fifteen chapters closing the distance between himself and these people now puts a line around the mountain and posts a death penalty on it. Nearness and danger are being held together rather than resolved, and the book will keep doing that: the same presence that rescues is not safe to walk into casually.",
+        lenses: {
+          arch: "The holy place that must be approached on terms, prepared for, and not strolled into. (The threshold that is guarded.)",
+        },
+      },
+      {
+        label: "Three",
+        ref: "19:16–25",
+        kind: "scene",
+        form: "prose",
+        title: "The mountain in smoke",
+        verses: [
+          { n: 16, text: "On the third day, when morning came, there was thunder and lightning. A thick cloud was upon the mountain, and a very loud blast of the ram’s horn went out, so that all the people in the camp trembled." },
+          { n: 17, text: "Then Moses brought the people out of the camp to meet with God, and they stood at the foot of the mountain." },
+          { n: 18, text: "Mount Sinai was completely enveloped in smoke, because the LORD had descended on it in fire. And the smoke rose like the smoke of a furnace, and the whole mountain quaked violently." },
+          { n: 19, text: "And as the sound of the ram’s horn grew louder and louder, Moses spoke and God answered him in the thunder." },
+          { n: 20, text: "The LORD descended to the top of Mount Sinai and called Moses to the summit. So Moses went up," },
+          { n: 21, text: "and the LORD said to him, “Go down and warn the people not to break through to see the LORD, lest many of them perish." },
+          { n: 22, text: "Even the priests who approach the LORD must consecrate themselves, or the LORD will break out against them.”" },
+          { n: 23, text: "But Moses said to the LORD, “The people cannot come up Mount Sinai, for You solemnly warned us, ‘Put a boundary around the mountain and set it apart as holy.’”" },
+          { n: 24, text: "And the LORD replied, “Go down and bring Aaron with you. But the priests and the people must not break through to come up to the LORD, or He will break out against them.”" },
+          { n: 25, text: "So Moses went down to the people and spoke to them." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "On the third morning: thunder, a thick cloud, a very loud trumpet, and the whole camp trembling. The mountain is in smoke because the LORD descended on it in fire, it shakes violently, and the trumpet gets louder rather than fading. Then Moses speaks and God answers in thunder. The chapter ends with him sent back down to warn the people again not to break through.",
+          src: "Childs · Propp",
+        },
+        meaning:
+          "The description is of a volcano or a storm and it is trying to say something neither quite covers. What the writers reach for is a presence that the physical world cannot hold steady around: smoke, fire, shaking, a sound that keeps rising. Then the anticlimax, which is deliberate. In the middle of all that, God's message is go down and tell them again to stay back. The pyrotechnics are not the point. The words that follow are.",
+        addr: {
+          mode: "names",
+          text: "Whatever you imagine an encounter with God would settle for you, this scene suggests it would mostly be frightening, and that the content would arrive afterward, in sentences, once you had stopped shaking.",
+        },
+        ask: "Do you actually want an encounter, or the reassurance you imagine would follow one?",
+      },
+    ],
+  },
+  {
     id: "ex-20",
     bookId: "exodus",
     tier: "sitting",
@@ -1387,7 +1489,159 @@ export const EXODUS: Reading[] = [
           "These make no claim on you, and they are here rather than left out because of what they refuse. Every other religion in the region built upward and built impressively. This one begins by ruling out the tooled stone and the staircase. The first architectural instruction Israel receives is a restriction on how much of the altar can be its own achievement.",
       },
     ],
-  },];
+  },
+  {
+    id: "ex-21",
+    bookId: "exodus",
+    tier: "sitting",
+    span: "Exodus 21 (selected)",
+    chapterIndex: 21,
+    title: "Persons, and what they are worth",
+    unitLabel: "Scene",
+    thread: "The case law begins with people rather than property, and the first person it deals with is a slave. This is the page of the Bible most readers would rather was not there.",
+    closeEnd: "It ends with a person given a price in silver, in the same chapter that began by limiting how long one could be held.",
+    passages: [
+      {
+        label: "One",
+        ref: "21:1–11",
+        kind: "statute-cluster",
+        form: "list",
+        title: "Six years, and the seventh",
+        statutes: [
+          { n: 1, text: "“These are the ordinances that you are to set before them:" },
+          { n: 2, text: "If you buy a Hebrew servant, he is to serve you for six years. But in the seventh year, he shall go free without paying anything." },
+          { n: 3, text: "If he arrived alone, he is to leave alone; if he arrived with a wife, she is to leave with him." },
+          { n: 4, text: "If his master gives him a wife and she bears him sons or daughters, the woman and her children shall belong to her master, and only the man shall go free." },
+          { n: 5, text: "But if the servant declares, ‘I love my master and my wife and children; I do not want to go free,’" },
+          { n: 6, text: "then his master is to bring him before the judges. And he shall take him to the door or doorpost and pierce his ear with an awl. Then he shall serve his master for life." },
+          { n: 7, text: "And if a man sells his daughter as a servant, she is not to go free as the menservants do." },
+          { n: 8, text: "If she is displeasing in the eyes of her master who had designated her for himself, he must allow her to be redeemed. He has no right to sell her to foreigners, since he has broken faith with her." },
+          { n: 9, text: "And if he chooses her for his son, he must deal with her as with a daughter." },
+          { n: 10, text: "If he takes another wife, he must not reduce the food, clothing, or marital rights of his first wife." },
+          { n: 11, text: "If, however, he does not provide her with these three things, she is free to go without monetary payment." },
+        ],
+        perItem: {
+          2: {
+            addr: { mode: "none-but", text: "No claim on you, and the first thing the code legislates. Six years, then out, free rather than in debt. A limit on a master by the standards of its neighbours. Still one man owning another for six years." },
+          },
+          6: {
+            note: "The pierced ear makes the choice to stay permanent and visible. The law provides for a servant who says he loves his master, and also makes leaving cost him the wife and children the master gave him.",
+          },
+          7: {
+            addr: { mode: "none-but", text: "The hardest sentence in the chapter, and it is not softened here. A daughter is sold, and she does not walk out at seven years the way a man does. What follows are conditions on her treatment, which is a protection and not a release." },
+          },
+          11: {
+            note: "If he fails any of the three things owed her, she goes free with nothing paid. The code protects her inside the arrangement. It does not question the arrangement.",
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "The Covenant Code opens with slavery, which tells you what the ancient world took to be the first question of civil law. Comparison with the codes around it is genuinely two-sided. Israel's law caps a Hebrew servant's term at six years where its neighbours had no such limit, forbids sending them out empty-handed elsewhere in the canon, and makes injury to a servant a matter for the courts. It also assumes throughout that a person may be owned, and it treats a daughter differently from a son.",
+          src: "Propp · Meyers · Childs",
+        },
+        misreading: {
+          named:
+            "These laws were just the times. Everyone had slaves, so there is nothing here to answer for.",
+          why: "It is true that everyone had slaves, and it explains nothing that matters. The same chapter departs sharply from its neighbours in other places, making a master liable for a servant's eye, so the writers were plainly capable of legislating against the grain when they chose to. And the excuse proves too much: if a text is only ever as good as its era, it has nothing to say to any other era, including yours. The honest position is narrower and harder. This is a real limit placed on a real evil by people who did not abolish it, in a book that later turns the memory of slavery into an argument against oppression.",
+        },
+        meaning:
+          "Read it as legislation rather than as endorsement and the shape becomes visible: it is a code restraining an institution it assumes. Six years and not forever. Provision owed to a woman sold into a household, and freedom if the provision fails. These are the moves of someone limiting a practice from inside it. That is worth seeing clearly, and it is not the same as the practice being fine, and the book itself will not let it be, because the same people go on to build their entire ethic of the outsider on having been slaves.",
+      },
+      {
+        label: "Two",
+        ref: "21:12–27",
+        kind: "statute-cluster",
+        form: "list",
+        title: "Harm, and what it costs",
+        statutes: [
+          { n: 12, text: "Whoever strikes and kills a man must surely be put to death." },
+          { n: 13, text: "If, however, he did not lie in wait, but God allowed it to happen, then I will appoint for you a place where he may flee." },
+          { n: 14, text: "But if a man schemes and acts willfully against his neighbor to kill him, you must take him away from My altar to be put to death." },
+          { n: 15, text: "Whoever strikes his father or mother must surely be put to death." },
+          { n: 16, text: "Whoever kidnaps another man must be put to death, whether he sells him or the man is found in his possession." },
+          { n: 17, text: "Anyone who curses his father or mother must surely be put to death." },
+          { n: 18, text: "If men are quarreling and one strikes the other with a stone or a fist, and he does not die but is confined to bed," },
+          { n: 19, text: "then the one who struck him shall go unpunished, as long as the other can get up and walk around outside with his staff. Nevertheless, he must compensate the man for his lost work and see that he is completely healed." },
+          { n: 20, text: "If a man strikes his manservant or maidservant with a rod, and the servant dies by his hand, he shall surely be punished." },
+          { n: 21, text: "However, if the servant gets up after a day or two, the owner shall not be punished, since the servant is his property." },
+          { n: 22, text: "If men who are fighting strike a pregnant woman and her child is born prematurely, but there is no further injury, he shall surely be fined as the woman’s husband demands and as the court allows." },
+          { n: 23, text: "But if a serious injury results, then you must require a life for a life—" },
+          { n: 24, text: "eye for eye, tooth for tooth, hand for hand, foot for foot," },
+          { n: 25, text: "burn for burn, wound for wound, and stripe for stripe." },
+          { n: 26, text: "If a man strikes and blinds the eye of his manservant or maidservant, he must let the servant go free as compensation for the eye." },
+          { n: 27, text: "And if he knocks out the tooth of his manservant or maidservant, he must let the servant go free as compensation for the tooth." },
+        ],
+        perItem: {
+          16: {
+            addr: { mode: "claims", text: "Still claims you. Stealing a person and selling them is a capital crime in the same chapter that regulates owning one. The code draws a line at seizing a human being that it does not draw at holding one." },
+          },
+          20: {
+            addr: { mode: "none-but", text: "A master who beats a servant to death is punished. A real restraint, and rare among contemporaries where a slave was property to be damaged." },
+          },
+          21: {
+            addr: { mode: "none-but", text: "And then this. If the servant survives a day or two there is no penalty, and the reason given is that the servant is property. There is no reading of that sentence which is not what it appears to be." },
+          },
+          24: {
+            addr: { mode: "none-but", text: "Eye for eye is a ceiling, not a licence. Where an injury could be answered by wiping out a family, the rule is that the penalty may not exceed the harm. It reads as savage and was written to restrain savagery." },
+          },
+          26: {
+            addr: { mode: "none-but", text: "A servant blinded or losing a tooth goes free, so an owner who injures one loses them entirely. The incentive runs the right way, and that it was needed tells you what it was needed against." },
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "Case law: if a man does this, then this follows. The sequence runs from murder through striking a parent and kidnapping to injury in a brawl, and then to injury done to a servant. Capital sentences here are prescribed for things no modern legal system treats that way, including cursing a parent. The talion formula, eye for eye, appears three times in the Torah and is quoted more often than it is read.",
+          src: "Childs · Propp · Meyers",
+        },
+        tensions: [
+          {
+            claim:
+              "This is God's law, given at the mountain, and it regulates the ownership and beating of human beings.",
+            counter:
+              "The canon does not leave the page where it found it. Deuteronomy revisits the release and orders the master to send a freed servant away supplied, not empty-handed. Jeremiah treats a release granted then revoked as covenant-breaking grave enough to judge the nation. And the gospels concede, of a different law, that it was written in for hardness of heart, which is the canon calling some of its own legislation accommodation rather than ideal.",
+            where: "Deuteronomy 15:12–15 · Jeremiah 34:8–22 · Matthew 19:8",
+          },
+        ],
+        meaning:
+          "Two things are true here at once and holding both is the work. A master who kills a servant is punished, which was not standard. A master who beats one who survives is not, because the servant is property, which is exactly as bad as it sounds. The code is neither a monster nor a model. It is an argument in progress.",
+      },
+      {
+        label: "Three",
+        ref: "21:28–32",
+        kind: "statute-cluster",
+        form: "list",
+        title: "The ox that gores",
+        statutes: [
+          { n: 28, text: "If an ox gores a man or woman to death, the ox must surely be stoned, and its meat must not be eaten. But the owner of the ox shall not be held responsible." },
+          { n: 29, text: "But if the ox has a habit of goring, and its owner has been warned yet does not restrain it, and it kills a man or woman, then the ox must be stoned and its owner must also be put to death." },
+          { n: 30, text: "If payment is demanded of him instead, he may redeem his life by paying the full amount demanded of him." },
+          { n: 31, text: "If the ox gores a son or a daughter, it shall be done to him according to the same rule." },
+          { n: 32, text: "If the ox gores a manservant or maidservant, the owner must pay thirty shekels of silver to the master of that servant, and the ox must be stoned." },
+        ],
+        perItem: {
+          28: {
+            note: "The ox is stoned and its meat may not be eaten, which treats the animal as bearing something like guilt rather than as a defective possession.",
+          },
+          32: {
+            addr: { mode: "none-but", text: "A free person killed by an ox brings a judgement on the owner's negligence. A servant killed by the same ox brings a fixed thirty shekels to the master, and the servant's family is not mentioned." },
+          },
+        },
+        ground: {
+          kind: "historical",
+          text: "The goring ox is the most discussed case in ancient law and versions of it appear in codes centuries older. The escalation is careful: an ox with no history is one thing, an ox already known to gore is another, and an owner who was warned and did nothing may himself be put to death. Liability turns on what the owner knew.",
+          src: "Propp · Childs",
+        },
+        meaning:
+          "The chapter ends by doing the arithmetic out loud. For a free person the case goes to judgement. For a servant it is a fixed rate paid to the master, and the dead person's family does not appear in the sentence. Nothing is hidden. The code states what a person is worth when the person is owned, in the same book that opened with a God who heard slaves crying.",
+        addr: {
+          mode: "claims",
+          text: "Somewhere in the arrangements you live inside, a life has a number attached: an insurance table, a settlement figure, an acceptable rate. The instinct is to say we have moved past this page. The page is at least explicit about its number.",
+        },
+        ask: "Where does the system you benefit from put a price on a person, and do you know what it is?",
+      },
+    ],
+  },
+];
 
 export const OUT_OF_EGYPT_MOVEMENT: Movement = {
   "id": "out-of-egypt",

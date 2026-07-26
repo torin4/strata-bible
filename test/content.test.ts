@@ -79,7 +79,9 @@ describe("content lib", () => {
       "ex-16",
       "ex-17",
       "ex-18",
+      "ex-19",
       "ex-20",
+      "ex-21",
     ]);
   });
 
@@ -90,8 +92,9 @@ describe("content lib", () => {
     expect(getAdjacent("exodus", "ex-12").prev?.id).toBe("ex-7");
     expect(getAdjacent("exodus", "ex-1").prev).toBeUndefined();
     // Movement 3 has begun, so ex-18 now leads into it rather than ending the book.
-    expect(getAdjacent("exodus", "ex-18").next?.id).toBe("ex-20");
-    expect(getAdjacent("exodus", "ex-20").next).toBeUndefined();
+    expect(getAdjacent("exodus", "ex-18").next?.id).toBe("ex-19");
+    expect(getAdjacent("exodus", "ex-19").next?.id).toBe("ex-20");
+    expect(getAdjacent("exodus", "ex-21").next).toBeUndefined();
   });
 
   it("every Exodus reading belongs to one of the declared movements", () => {
@@ -185,6 +188,35 @@ describe("content lib", () => {
       .filter(Boolean);
     expect(modes).toContain("claims");
     expect(modes).toContain("none-but");
+  });
+
+  it("the servant laws are shown, not selected around, and marked as not binding", () => {
+    // The commitment this movement was planned on. Exodus 21 keeps the verses a curated reading
+    // would be tempted to drop, and marks them with the mode for law that makes no claim on the
+    // reader. If a later edit quietly removes one, this fails.
+    const reading = getReading("exodus", "ex-21");
+    const shown = (reading?.passages ?? []).flatMap((p) =>
+      (p.statutes ?? []).map((s) => s.n),
+    );
+    // 7: a daughter sold. 21: no penalty, since the servant is property. 32: a servant priced.
+    for (const n of [7, 20, 21, 26, 32]) {
+      expect(shown, `21:${n} must be present`).toContain(n);
+    }
+    const annotation = (n: number) =>
+      (reading?.passages ?? [])
+        .map((p) => p.perItem?.[n])
+        .find((item) => item !== undefined);
+    expect(annotation(7)?.addr?.mode).toBe("none-but");
+    expect(annotation(21)?.addr?.mode).toBe("none-but");
+    expect(annotation(32)?.addr?.mode).toBe("none-but");
+    // And the contrast: kidnapping a person still claims the reader, in the same chapter.
+    expect(annotation(16)?.addr?.mode).toBe("claims");
+    // The dodge is named, and the canon is allowed to argue back.
+    const misreadings = (reading?.passages ?? []).filter((p) => p.misreading);
+    expect(misreadings).toHaveLength(1);
+    const tensions = (reading?.passages ?? []).flatMap((p) => p.tensions ?? []);
+    expect(tensions).toHaveLength(1);
+    expect(tensions[0].where).toContain("Deuteronomy 15");
   });
 
   it("movement 3 is declared by chapter range, with no override and no doorway", () => {
