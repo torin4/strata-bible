@@ -3,30 +3,43 @@
 // outweigh the scripture it surrounds. This keeps that honest as the book grows.
 //
 //   - Ratio = apparatus words / scripture words, per passage.
-//   - Each published passage's ceiling is the HIGHER of RATIO_FAIL or its grandfathered
-//     baseline (scripts/density-baseline.json). So the current backlog can't regress and
-//     any NEW passage is held to RATIO_FAIL, while CI stays green today. Trim a passage
-//     and re-run with --update-baseline to ratchet its ceiling down.
+//   - RATIO_TARGET is the figure the book actually reads at, NOT a distant failure ceiling.
+//     Published Genesis measures about 1.56x overall. Exodus 1 was first written up against
+//     a 2.5x ceiling: it passed every check and still read as wordy, because the reader was
+//     getting half again as much commentary per line of scripture as the rest of the book
+//     gives them. The gate now holds new work near the real norm instead of near the limit.
+//   - Each held passage's ceiling is the HIGHER of RATIO_TARGET or its grandfathered baseline
+//     (scripts/density-baseline.json). So the existing backlog cannot regress, and any NEW
+//     passage is held to RATIO_TARGET, while CI stays green today. Trim a passage and re-run
+//     with --update-baseline to ratchet its ceiling down.
+//   - Books are held whether or not they are PUBLISHED. A book is authored long before it
+//     ships, which is precisely when drift creeps in unnoticed. Only the genre proofs, which
+//     are fixtures rather than books, stay informational.
 //   - WARN  over RATIO_WARN: cleanup backlog, never fails CI.
 //   - Tail-stack: Meaning followed by all three of turn + soft + ask — four beats circling
 //     one insight. Reported as a count + list; never fails CI.
 //
-// Unpublished genre proofs are shown for context but never fail the build. Tune via env,
-// e.g. `RATIO_FAIL=2 pnpm check-density`. Refresh the baseline: `pnpm check-density --update-baseline`.
+// Tune via env, e.g. `RATIO_TARGET=1.6 pnpm check-density`. Refresh the baseline:
+// `pnpm check-density --update-baseline`.
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { BOOKS } from "@/content";
 import type { Passage } from "@/lib/types";
 
 const RATIO_WARN = Number(process.env.RATIO_WARN ?? 1.5);
-const RATIO_FAIL = Number(process.env.RATIO_FAIL ?? 2.5);
+const RATIO_TARGET = Number(process.env.RATIO_TARGET ?? 1.8);
 const TOLERANCE = 0.05; // rounding slack, so a baseline of 6.4 doesn't fail at 6.40001
+
+// The books the gate holds: real books, whether or not they are published yet. Everything
+// else in the catalog is a one-reading genre fixture proving the renderer, not authored work,
+// and is reported for context only. Add a book id here when it starts being written.
+const HELD_BOOKS = new Set(["genesis", "exodus"]);
 const UPDATE = process.argv.includes("--update-baseline");
 const BASELINE_PATH = fileURLToPath(
   new URL("./density-baseline.json", import.meta.url),
 );
 
-// Grandfathered ceilings: passageKey -> ratio, for passages currently over RATIO_FAIL.
+// Grandfathered ceilings: passageKey -> ratio, for passages currently over RATIO_TARGET.
 function loadBaseline(): Record<string, number> {
   try {
     return JSON.parse(readFileSync(BASELINE_PATH, "utf8"));
@@ -84,7 +97,7 @@ function stacksTail(p: Passage): boolean {
 
 interface Row {
   book: string;
-  published: boolean;
+  held: boolean;
   passage: string;
   scrip: number;
   appar: number;
@@ -100,7 +113,7 @@ for (const book of BOOKS) {
       const appar = apparatusWords(p);
       rows.push({
         book: book.id,
-        published: book.published === true,
+        held: HELD_BOOKS.has(book.id),
         passage: `${reading.id} · ${p.label ? `${p.label} ` : ""}${p.title}`,
         scrip,
         appar,
@@ -115,11 +128,11 @@ const fmt = (r: Row) =>
   `  ${r.ratio.toFixed(1).padStart(5)}×  ${String(r.scrip).padStart(4)} scrip  ${String(r.appar).padStart(4)} appar  ${r.passage}`;
 
 // --- Baseline handling -----------------------------------------------------------------
-// Refresh mode: snapshot every published passage currently over RATIO_FAIL, then exit.
+// Refresh mode: snapshot every held passage currently over RATIO_TARGET, then exit.
 if (UPDATE) {
   const snapshot: Record<string, number> = {};
   for (const r of rows) {
-    if (r.published && r.ratio > RATIO_FAIL) {
+    if (r.held && r.ratio > RATIO_TARGET) {
       snapshot[r.passage] = Math.round(r.ratio * 10) / 10;
     }
   }
@@ -136,43 +149,41 @@ if (UPDATE) {
 const baseline = loadBaseline();
 
 // A passage's ceiling is the higher of the global fail line or its grandfathered baseline.
-const ceilingFor = (r: Row) => Math.max(RATIO_FAIL, baseline[r.passage] ?? 0);
+const ceilingFor = (r: Row) => Math.max(RATIO_TARGET, baseline[r.passage] ?? 0);
 
-// --- Failures: published passages over their (possibly grandfathered) ceiling ----------
+// --- Failures: held passages over their (possibly grandfathered) ceiling ---------------
 const failures = rows
-  .filter((r) => r.published && r.ratio > ceilingFor(r) + TOLERANCE)
+  .filter((r) => r.held && r.ratio > ceilingFor(r) + TOLERANCE)
   .sort((a, b) => b.ratio - a.ratio);
 
 // Grandfathered passages that have improved below their baseline: the baseline can ratchet.
 const improved = rows.filter(
   (r) =>
-    r.published &&
-    baseline[r.passage] &&
-    r.ratio < baseline[r.passage] - TOLERANCE,
+    r.held && baseline[r.passage] && r.ratio < baseline[r.passage] - TOLERANCE,
 );
 
-// --- Warnings: published passages between the two ceilings ------------------------------
+// --- Warnings: held passages between the two ceilings -----------------------------------
 const warnings = rows
-  .filter((r) => r.published && r.ratio > RATIO_WARN && r.ratio <= RATIO_FAIL)
+  .filter((r) => r.held && r.ratio > RATIO_WARN && r.ratio <= RATIO_TARGET)
   .sort((a, b) => b.ratio - a.ratio);
 
-// --- Tail-stack: published passages with all four beats --------------------------------
-const tailStacks = rows.filter((r) => r.published && r.tail);
+// --- Tail-stack: held passages with all four beats -------------------------------------
+const tailStacks = rows.filter((r) => r.held && r.tail);
 
 const grandfathered = Object.keys(baseline).length;
 console.log(
-  `\ncheck-density: WARN over ${RATIO_WARN}×, FAIL over ${RATIO_FAIL}× (published only; ${grandfathered} passage(s) grandfathered by baseline)\n`,
+  `\ncheck-density: WARN over ${RATIO_WARN}×, FAIL over ${RATIO_TARGET}× (authored books; ${grandfathered} passage(s) grandfathered by baseline)\n`,
 );
 
-const publishedRows = rows.filter((r) => r.published);
-const pScrip = publishedRows.reduce((n, r) => n + r.scrip, 0);
-const pAppar = publishedRows.reduce((n, r) => n + r.appar, 0);
-const overFail = publishedRows.filter((r) => r.ratio > RATIO_FAIL).length;
+const heldRows = rows.filter((r) => r.held);
+const pScrip = heldRows.reduce((n, r) => n + r.scrip, 0);
+const pAppar = heldRows.reduce((n, r) => n + r.appar, 0);
+const overFail = heldRows.filter((r) => r.ratio > RATIO_TARGET).length;
 console.log(
-  `published: ${publishedRows.length} passages · overall ${(pAppar / pScrip).toFixed(2)}× (${pAppar} apparatus / ${pScrip} scripture words)`,
+  `authored: ${heldRows.length} passages · overall ${(pAppar / pScrip).toFixed(2)}× (${pAppar} apparatus / ${pScrip} scripture words)`,
 );
 console.log(
-  `  over ${RATIO_WARN}×: ${warnings.length + overFail} · over ${RATIO_FAIL}×: ${overFail} · tail-stack (meaning+turn+soft+ask): ${tailStacks.length}\n`,
+  `  over ${RATIO_WARN}×: ${warnings.length + overFail} · over ${RATIO_TARGET}×: ${overFail} · tail-stack (meaning+turn+soft+ask): ${tailStacks.length}\n`,
 );
 
 if (failures.length) {
@@ -204,8 +215,8 @@ if (tailStacks.length) {
   console.log("");
 }
 
-// Unpublished proofs, for context only.
-const proofs = rows.filter((r) => !r.published);
+// Genre proofs, for context only.
+const proofs = rows.filter((r) => !r.held);
 if (proofs.length) {
   const byBook = new Map<string, Row[]>();
   for (const r of proofs) {
@@ -213,7 +224,7 @@ if (proofs.length) {
     list.push(r);
     byBook.set(r.book, list);
   }
-  console.log("(unpublished genre proofs, informational — never fail CI)");
+  console.log("(genre proofs, informational — never fail CI)");
   for (const [book, rs] of byBook) {
     const s = rs.reduce((n, r) => n + r.scrip, 0);
     const a = rs.reduce((n, r) => n + r.appar, 0);
@@ -226,7 +237,7 @@ if (proofs.length) {
 
 if (failures.length) {
   console.error(
-    `check-density: FAILED — ${failures.length} published passage(s) over ceiling. Trim the apparatus, or run --update-baseline if this is intentional.`,
+    `check-density: FAILED — ${failures.length} authored passage(s) over ceiling. Trim the apparatus, or run --update-baseline if this is intentional.`,
   );
   process.exit(1);
 }
