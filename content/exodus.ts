@@ -130,16 +130,20 @@ export const EXODUS: Reading[] = [
   {
     id: "ex-2",
     bookId: "exodus",
-    tier: "grounded",
+    tier: "sitting",
     span: "Exodus 2",
     chapterIndex: 2,
     title: "The basket, and the flight",
+    unitLabel: "Scene",
+    thread: "The rescuer is himself rescued first, by women, and out of the same river that was meant to drown him. Then he tries to save someone by force, and has to run.",
+    closeEnd: "Forty years pass in a sentence. The chapter ends not with Moses acting but with God hearing.",
     passages: [
       {
-        ref: "Exodus 2",
+        label: "One",
+        ref: "2:1–10",
         kind: "scene",
         form: "prose",
-        title: "The basket, and the flight",
+        title: "Drawn out of the water",
         verses: [
           { n: 1, text: "Now a man of the house of Levi married a Levite woman," },
           { n: 2, text: "and she conceived and gave birth to a son. When she saw that he was a beautiful child, she hid him for three months." },
@@ -151,11 +155,59 @@ export const EXODUS: Reading[] = [
           { n: 8, text: "“Go ahead,” Pharaoh’s daughter told her. And the girl went and called the boy’s mother." },
           { n: 9, text: "Pharaoh’s daughter said to her, “Take this child and nurse him for me, and I will pay your wages.” So the woman took the boy and nursed him." },
           { n: 10, text: "When the child had grown older, she brought him to Pharaoh’s daughter, and he became her son. She named him Moses and explained, “I drew him out of the water.”" },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The word used for the basket is the word used for Noah's ark, and it appears nowhere else in the Bible. Both are watertight boxes carrying a life through water that was meant to kill. The mother obeys Pharaoh's decree exactly, she does put the child in the Nile, and turns obedience into rescue. Similar stories were told of great men in the ancient world, most famously Sargon of Akkad, set adrift in a reed basket sealed with pitch.",
+          src: "Propp · Sarna · Assmann",
+        },
+        meaning:
+          "Five women save the future of Israel and the text keeps almost none of their names. A mother, a sister, a princess and, just before this, two midwives. The daughter of the man running the genocide pays the mother of the child to nurse her own son. That is the joke the chapter is telling: the empire's own household funds the rescue of the boy who will undo it.",
+        lenses: {
+          theo: "Deliverance starts small and domestic, in a basket and a bribe and a sister watching from the reeds, long before it looks like anything. God is not named once in this scene. The work still gets done.",
+        },
+        addr: {
+          mode: "names",
+          text: "The thing that saves you often arrives through people with no power and no title, doing something small and practical while the important people are looking elsewhere.",
+        },
+        ask: "Who quietly carried you through something, without any authority to do it?",
+      },
+      {
+        label: "Two",
+        ref: "2:11–15",
+        kind: "scene",
+        form: "prose",
+        title: "The killing, and the running",
+        verses: [
           { n: 11, text: "One day, after Moses had grown up, he went out to his own people and observed their hard labor. He saw an Egyptian beating a Hebrew, one of his own people." },
           { n: 12, text: "After looking this way and that and seeing no one, he struck down the Egyptian and hid his body in the sand." },
           { n: 13, text: "The next day Moses went out and saw two Hebrews fighting. He asked the one in the wrong, “Why are you attacking your companion?”" },
           { n: 14, text: "But the man replied, “Who made you ruler and judge over us? Are you planning to kill me as you killed the Egyptian?” Then Moses was afraid and thought, “This thing I have done has surely become known.”" },
           { n: 15, text: "When Pharaoh heard about this matter, he sought to kill Moses. But Moses fled from Pharaoh and settled in the land of Midian, where he sat down beside a well." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "He looks this way and that before he strikes, which is the detail that damns him. Not a man overtaken by rage but a man checking whether anyone is watching. The next day two Hebrews are fighting and one of them asks the question Moses cannot answer: who made you ruler and judge over us. He is a palace insider by upbringing and a Hebrew by birth, and neither side owns him.",
+          src: "Propp · Childs",
+        },
+        meaning:
+          "His first attempt at deliverance is a murder, and it fails on every count. It saves one man, it is done in secret, and within a day the people he meant to help have seen through him. Forty years of desert follow. The book does not treat this as a promising start that went wrong. It treats it as the wrong kind of power altogether, applied by the right man far too early.",
+        lenses: {
+          arch: "The rescuer who acts alone, in secret, and by force, and finds that the rescued do not want him. (The one who appoints himself.)",
+        },
+        addr: {
+          mode: "names",
+          text: "You have wanted to fix something that was genuinely wrong, and reached for the fastest tool, and discovered that the people involved never asked you and did not thank you.",
+        },
+        ask: "Where have you tried to put something right in a way that mostly served your own need to act?",
+      },
+      {
+        label: "Three",
+        ref: "2:16–25",
+        kind: "scene",
+        form: "prose",
+        title: "Midian, and the groaning",
+        verses: [
           { n: 16, text: "Now the priest of Midian had seven daughters, and they came to draw water and fill the troughs to water their father’s flock." },
           { n: 17, text: "And when some shepherds came along and drove them away, Moses rose up to help them and watered their flock." },
           { n: 18, text: "When the daughters returned to their father Reuel, he asked them, “Why have you returned so early today?”" },
@@ -169,25 +221,39 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A Levite child is hidden, set on the river in a basket, and drawn out by the daughter of the man who ordered him drowned. The text explains the name Moses from a Hebrew verb meaning to draw out, though the name itself is Egyptian, the same element that ends Thutmose and Rameses. He grows up, kills an overseer, and runs. In a few verses the chapter moves him from the palace to the desert and leaves him tending another man's sheep.",
-          src: "Propp · Sarna · Assmann",
+          text: "He does at a foreign well what he could not do at home: he defends strangers and it works. Midian lies east, across the Sinai, and he marries into a priestly family there. He names his son Gershom, a stranger there, and the name is his whole condition. The chapter closes on four verbs with God as their subject, heard, remembered, saw, knew, after nothing but silence.",
+          src: "Propp · Fretheim · Sarna",
         },
+        meaning:
+          "The Hebrew name Moses is explained here from a verb meaning to draw out, though the name itself is plainly Egyptian, the ending in Thutmose and Rameses. He is a man with an Egyptian name, a Midianite wife and a Hebrew mother, at home nowhere. Then the chapter turns without warning. Nothing changes in Egypt. The king dies and another takes over, the work goes on, and the only new thing in the world is that God has heard.",
+        lenses: {
+          theo: "The text is careful not to say God acted. It says God heard, remembered, saw and knew. Everything the book does next comes out of that hearing, and the people crying out have no idea it has happened.",
+        },
+        addr: {
+          mode: "names",
+          text: "There is a long stretch in most lives where nothing visibly moves and the honest report is that you are keeping someone else's sheep. This chapter puts forty of those years in a single verse and insists they were not empty.",
+        },
+        ask: "What are you waiting through right now that looks like nothing happening?",
       },
     ],
   },
   {
     id: "ex-3",
     bookId: "exodus",
-    tier: "grounded",
+    tier: "sitting",
     span: "Exodus 3",
     chapterIndex: 3,
     title: "The bush and the name",
+    unitLabel: "Scene",
+    thread: "A bush burns without burning up, and a man turns aside to look. What he gets is not comfort but a job, and every objection he raises is answered with the same thing: I will be with you.",
+    closeEnd: "He asked who he was. He was told who God is, and sent anyway.",
     passages: [
       {
-        ref: "Exodus 3",
+        label: "One",
+        ref: "3:1–6",
         kind: "scene",
         form: "prose",
-        title: "The bush and the name",
+        title: "The bush",
         verses: [
           { n: 1, text: "Meanwhile, Moses was shepherding the flock of his father-in-law Jethro, the priest of Midian. He led the flock to the far side of the wilderness and came to Horeb, the mountain of God." },
           { n: 2, text: "There the angel of the LORD appeared to him in a blazing fire from within a bush. Moses saw the bush ablaze with fire, but it was not consumed." },
@@ -195,12 +261,60 @@ export const EXODUS: Reading[] = [
           { n: 4, text: "When the LORD saw that he had gone over to look, God called out to him from within the bush, “Moses, Moses!” “Here I am,” he answered." },
           { n: 5, text: "“Do not come any closer,” God said. “Take off your sandals, for the place where you are standing is holy ground.”" },
           { n: 6, text: "Then He said, “I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob.” At this, Moses hid his face, for he was afraid to look at God." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Moses is at work, minding a flock that is not his, on the far side of the wilderness. The bush is a common thornbush, the least impressive plant available. What stops him is not the fire but that it does not consume: he turns aside because something ordinary is not behaving. Only when he turns does the voice come.",
+          src: "Childs · Propp · Sarna",
+        },
+        meaning:
+          "The holy ground is a patch of desert that was not holy the day before and will not be marked afterward. It is holy because God is there now. And the sequence matters: the bush burns, Moses turns aside, then God speaks. He is not interrupted, he is invited to notice, and the noticing is his part.",
+        lenses: {
+          theo: "Nothing about the encounter is arranged by Moses. He is not praying, not seeking, not qualified, and not in a temple. He is at work in the middle of nowhere. God's initiative is the only reason anything happens.",
+        },
+        addr: {
+          mode: "names",
+          text: "You have almost certainly walked past something already, not because it was hidden but because you did not stop. This scene says the turning aside is the whole of your part in it.",
+        },
+        ask: "What have you noticed lately and not turned aside to look at?",
+      },
+      {
+        label: "Two",
+        ref: "3:7–12",
+        kind: "scene",
+        form: "prose",
+        title: "I have seen, and I am sending you",
+        verses: [
           { n: 7, text: "The LORD said, “I have indeed seen the affliction of My people in Egypt. I have heard them crying out because of their oppressors, and I am aware of their sufferings." },
           { n: 8, text: "I have come down to rescue them from the hand of the Egyptians and to bring them up out of that land to a good and spacious land, a land flowing with milk and honey—the home of the Canaanites, Hittites, Amorites, Perizzites, Hivites, and Jebusites." },
           { n: 9, text: "And now the cry of the Israelites has reached Me, and I have seen how severely the Egyptians are oppressing them." },
           { n: 10, text: "Therefore, go! I am sending you to Pharaoh to bring My people the Israelites out of Egypt.”" },
           { n: 11, text: "But Moses asked God, “Who am I, that I should go to Pharaoh and bring the Israelites out of Egypt?”" },
           { n: 12, text: "“I will surely be with you,” God said, “and this will be the sign to you that I have sent you: When you have brought the people out of Egypt, all of you will worship God on this mountain.”" },
+        ],
+        ground: {
+          kind: "historical",
+          text: "God's speech piles up verbs of attention: I have seen, I have heard, I know their sufferings, I have come down. Then the sentence turns without warning. I have come down to deliver them, so now go, I am sending you. Moses answers with the first of his objections, and it is a question about himself.",
+          src: "Fretheim · Childs",
+        },
+        meaning:
+          "The rescue is announced as God's own doing and then handed to a man, in the same breath, with no explanation of why it should need one. Moses asks the reasonable question, who am I, and gets no answer to it at all. He is told instead <b>I will be with you</b>. The question was about his adequacy. The reply changes the subject to God's presence, and that is the only assurance he is ever given.",
+        lenses: {
+          theo: "The sign offered is not proof beforehand but confirmation afterward: you will worship at this mountain when you have brought them out. He has to go first and get the evidence later, which is the ordinary shape of the thing.",
+        },
+        addr: {
+          mode: "names",
+          text: "When you have been asked to do something beyond you, the question that comes up is who am I, and this scene never answers it. It moves the ground from your competence to God's company, which is less comforting and more durable.",
+        },
+        ask: "What are you declining on the grounds that you are not the right person?",
+      },
+      {
+        label: "Three",
+        ref: "3:13–22",
+        kind: "scene",
+        form: "prose",
+        title: "The name",
+        verses: [
           { n: 13, text: "Then Moses asked God, “Suppose I go to the Israelites and say to them, ‘The God of your fathers has sent me to you,’ and they ask me, ‘What is His name?’ What should I tell them?”" },
           { n: 14, text: "God said to Moses, “I AM WHO I AM. This is what you are to say to the Israelites: ‘I AM has sent me to you.’”" },
           { n: 15, text: "God also told Moses, “Say to the Israelites, ‘The LORD, the God of your fathers—the God of Abraham, the God of Isaac, and the God of Jacob—has sent me to you.’ This is My name forever, and this is how I am to be remembered in every generation." },
@@ -214,9 +328,24 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A bush burns and is not consumed, and a shepherd turns aside to look. What follows is the disclosure of the name: four consonants the text glosses with a verb of being, which Israel later refused to pronounce aloud. The call is also an argument. God sends, Moses objects, and the objections keep coming for the better part of two chapters. The mountain here is called Horeb, and the book will come back to it.",
-          src: "Childs · Propp · Fretheim",
+          text: "The name is four consonants, YHWH, glossed here with a verb of being that can be read I am who I am or I will be what I will be. Hebrew has no tenses in the way English does, so the promise leans toward the future. Israel later stopped pronouncing it aloud and said Lord instead, which is why English Bibles print LORD in capitals.",
+          src: "Childs · Propp · Sarna",
         },
+        misreading: {
+          named:
+            "The name is a piece of metaphysics, God announcing that he is self-existent being.",
+          why: "That reading arrived with Greek philosophy centuries later. The Hebrew is a verb, not a noun, and it is doing work in a conversation about rescue. Moses asks what to tell slaves who want to know whose authority he is on. The answer is closer to I will be there, as I will be there, which is a promise about what these people are about to see happen rather than a definition of the divine nature.",
+        },
+        meaning:
+          "Ancient gods had names you could use, and knowing a name was a way of getting leverage. This name refuses that. It is a verb that will not sit still, and it commits to presence rather than to being available. What follows is entirely practical: go to the elders, go to the king, he will not listen, and I will stretch out my hand.",
+        lenses: {
+          theo: "God is identified to Moses first as the God of Abraham, Isaac and Jacob, which ties the rescue to promises made centuries earlier to people long dead. The name is new. The commitment is not.",
+        },
+        addr: {
+          mode: "names",
+          text: "You would probably rather have a God you could define than one who says he will be there. A definition can be filed away. A promise of presence has to be tested by going.",
+        },
+        ask: "Would you rather know what God is, or that God is with you? Answer honestly.",
       },
     ],
   },
@@ -267,16 +396,20 @@ export const EXODUS: Reading[] = [
   {
     id: "ex-5",
     bookId: "exodus",
-    tier: "grounded",
+    tier: "sitting",
     span: "Exodus 5",
     chapterIndex: 5,
     title: "Bricks without straw",
+    unitLabel: "Scene",
+    thread: "The first thing the rescue does is make everything worse. The quota holds, the straw stops, and the people who were promised deliverance want the man who promised it gone.",
+    closeEnd: "The chapter ends with Moses accusing God, and God has not yet said a word in reply.",
     passages: [
       {
-        ref: "Exodus 5",
+        label: "One",
+        ref: "5:1–9",
         kind: "scene",
         form: "prose",
-        title: "Bricks without straw",
+        title: "Who is the LORD?",
         verses: [
           { n: 1, text: "After that, Moses and Aaron went to Pharaoh and said, “This is what the LORD, the God of Israel, says: ‘Let My people go, so that they may hold a feast to Me in the wilderness.’”" },
           { n: 2, text: "But Pharaoh replied, “Who is the LORD that I should obey His voice and let Israel go? I do not know the LORD, and I will not let Israel go.”" },
@@ -287,11 +420,59 @@ export const EXODUS: Reading[] = [
           { n: 7, text: "“You shall no longer supply the people with straw for making bricks. They must go and gather their own straw." },
           { n: 8, text: "But require of them the same quota of bricks as before; do not reduce it. For they are lazy; that is why they are crying out, ‘Let us go and sacrifice to our God.’" },
           { n: 9, text: "Make the work harder on the men so they will be occupied and pay no attention to these lies.”" },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Straw was mixed into Nile mud to bind the brick, and Egyptian records do show quotas and daily tallies of bricks delivered. Withdrawing the straw while holding the number is a precise administrative cruelty rather than a rage. Pharaoh's charge is that the people are idle, which is the standard accusation of every system that has just increased what it demands.",
+          src: "Sarna · Meyers · Assmann",
+        },
+        meaning:
+          "Pharaoh's first words are a question: who is the LORD, that I should obey him. He is not being rhetorical, he genuinely does not know the name, and the whole contest to come is an answer to that sentence. What he does know is leverage. Make the work heavier and they will stop listening to talk of freedom, because a person who is exhausted cannot afford hope.",
+        lenses: {
+          arch: "Exhaustion used deliberately as a tool of control, so that there is no strength left over for imagining anything else. (Work as a way of keeping people quiet.)",
+        },
+        addr: {
+          mode: "names",
+          text: "You may know the state of being kept too busy to think, where the volume of what is required is itself the thing preventing you from asking whether it should be required.",
+        },
+        ask: "What in your life is kept unquestioned mainly because you are too tired to question it?",
+      },
+      {
+        label: "Two",
+        ref: "5:10–14",
+        kind: "scene",
+        form: "prose",
+        title: "The quota holds",
+        verses: [
           { n: 10, text: "So the taskmasters and foremen of the people went out and said to them, “This is what Pharaoh says: ‘I am no longer giving you straw." },
           { n: 11, text: "Go and get your own straw wherever you can find it; but your workload will in no way be reduced.’”" },
           { n: 12, text: "So the people scattered all over the land of Egypt to gather stubble for straw." },
           { n: 13, text: "The taskmasters kept pressing them, saying, “Fulfill your quota each day, just as you did when straw was provided.”" },
           { n: 14, text: "Then the Israelite foremen, whom Pharaoh’s taskmasters had set over the people, were beaten and asked, “Why have you not fulfilled your quota of bricks yesterday or today, as you did before?”" },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The foremen are Israelites, appointed over their own people and beaten when the numbers fall short. They are caught between the taskmasters above and the workers below, responsible for a target they cannot meet. Their appeal to Pharaoh is refused in one line, and they walk out knowing they are in trouble.",
+          src: "Meyers · Propp",
+        },
+        meaning:
+          "The cruelty is administered by people who are themselves under it. That is how the system keeps running without anyone in it feeling like the villain: the taskmasters have quotas too, and the foremen take the beating for a shortfall they did not cause. Everyone is following a number. The number came from a man who did not want to be asked a question.",
+        lenses: {
+          theo: "Nothing here is miraculous and nothing improves. The book insists on giving this stretch its full weight rather than hurrying to the rescue, which is a kind of honesty about how deliverance actually feels from inside.",
+        },
+        addr: {
+          mode: "names",
+          text: "You have been the person passing on pressure you did not create, and the person absorbing it. Neither position feels like power, and both keep the machine turning.",
+        },
+        ask: "Where are you enforcing something you would not defend if anyone asked you to?",
+      },
+      {
+        label: "Three",
+        ref: "5:15–23",
+        kind: "scene",
+        form: "prose",
+        title: "You have not delivered them at all",
+        verses: [
           { n: 15, text: "So the Israelite foremen went and appealed to Pharaoh: “Why are you treating your servants this way?" },
           { n: 16, text: "No straw has been given to your servants, yet we are told, ‘Make bricks!’ Look, your servants are being beaten, but the fault is with your own people.”" },
           { n: 17, text: "“You are slackers!” Pharaoh replied. “Slackers! That is why you keep saying, ‘Let us go and sacrifice to the LORD.’" },
@@ -304,9 +485,24 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The first attempt makes everything worse. Pharaoh answers the request with the same quota of bricks and no straw to make them, and the Israelite foremen, beaten for the shortfall, turn on Moses in the road. Quotas and daily tallies are the ordinary vocabulary of Egyptian labour administration. This is the chapter that keeps the book honest: the deliverance does not begin with relief, it begins with the cost of having asked.",
-          src: "Fretheim · Sarna · Meyers",
+          text: "The foremen meet Moses and Aaron waiting in the road and wish judgement on them for making the people a stench to Pharaoh. Moses takes it straight to God and repeats the accusation almost word for word. The chapter ends there, with the complaint unanswered, and the reply does not come until the next chapter opens.",
+          src: "Fretheim · Childs",
         },
+        misreading: {
+          named:
+            "Moses lost his nerve here, and a stronger believer would not have spoken to God like that.",
+          why: "The book puts his complaint in the text and lets it stand, and God's answer when it comes is not a rebuke. Scripture repeatedly hands its most trusted people the words to accuse God, in Job, in the psalms of lament, in Jeremiah. Treating that as failure of faith cuts out most of the Bible's own prayer language, and it leaves a reader in the same position with nothing permitted to say.",
+        },
+        meaning:
+          "Why have you brought harm on this people, and why did you ever send me. He is not asking for information. He is saying the thing out loud that everyone in the story is thinking, which is that obedience made it worse. The book gives the movement's lowest point to the man who was told <b>I will be with you</b>, and does not resolve it for a chapter.",
+        lenses: {
+          theo: "Deliverance in this book gets worse before it gets better, and the text refuses to skip that part. The promise was presence, not a smooth road, and this is the first place the difference is felt.",
+        },
+        addr: {
+          mode: "names",
+          text: "You may have done the thing you believed you were asked to do, and watched it cost other people something. The accusation Moses makes is available to you, and this chapter shows it being made without apology.",
+        },
+        ask: "What would you say to God about the thing that got worse after you obeyed?",
       },
     ],
   },

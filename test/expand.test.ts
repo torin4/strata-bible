@@ -103,10 +103,12 @@ describe("expandReading", () => {
   });
 
   it("leaves a whole-chapter Exodus reading with nothing to reveal", () => {
-    // ex-5 authors all 23 verses of Exodus 5: a contiguous run, so the fill has no gap to close.
-    const p = passageIn("exodus", "ex-5", "Exodus 5");
+    // ex-13 authors all 22 verses of Exodus 13: a contiguous run, so no gap to close. Uses a
+    // reading still awaiting authorship on purpose, since authoring splits a chapter into
+    // scenes and would move this assertion again.
+    const p = passageIn("exodus", "ex-13", "Exodus 13");
     expect(omitted(p.verses)).toEqual([]);
-    expect(authored(p.verses)).toHaveLength(23);
+    expect(authored(p.verses)).toHaveLength(22);
   });
 
   it("an authored sitting's scenes each fill within their own verse range", () => {

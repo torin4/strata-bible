@@ -304,6 +304,21 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the work underneath your life that someone else is doing, and for the small refusals available to people with no power at all.",
   },
+  "ex-2": {
+    themes: ["waiting", "the-outsider", "starting-over"],
+    speaksTo:
+      "For the long stretch where nothing moves and you are keeping someone else’s sheep, and for belonging nowhere while you wait.",
+  },
+  "ex-3": {
+    themes: ["calling", "limits", "doubt"],
+    speaksTo:
+      "For being asked to do something beyond you, and getting no answer to who am I, only the promise that God will be with you.",
+  },
+  "ex-5": {
+    themes: ["god-feels-absent", "faith-and-fairness", "powerlessness"],
+    speaksTo:
+      "For when you did the thing you believed you were asked to do and it made everything worse, and you want to say so out loud.",
+  },
   "gen-15": {
     themes: ["doubt", "waiting", "god-feels-absent"],
     speaksTo:
