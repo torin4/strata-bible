@@ -102,6 +102,24 @@ describe("content lib", () => {
     expect(movement?.doorway).toBeUndefined();
   });
 
+  it("the movement capstone closes on the Song, and nowhere else", () => {
+    const song = getReading("exodus", "ex-15a");
+    expect(song && getClosingMovement("exodus", song)?.capstone?.title).toBe(
+      "The rescue, and the price on it",
+    );
+    // It is a movement look-back, not the book's. Mid-movement readings must not surface it,
+    // and Exodus carries no book capstone until all forty chapters are authored.
+    const mid = getReading("exodus", "ex-7");
+    expect(mid && getClosingMovement("exodus", mid)).toBeUndefined();
+    expect(getBook("exodus")?.capstone).toBeUndefined();
+  });
+
+  it("the capstone carries a tension that only surfaces across the whole movement", () => {
+    const capstone = getBook("exodus")?.movements[0].capstone;
+    expect(capstone?.tensions).toHaveLength(1);
+    expect(capstone?.tensions?.[0].where).toContain("Amos 9:7");
+  });
+
   it("Exodus is unpublished until the whole book is authored", () => {
     expect(getBook("exodus")?.published).toBeFalsy();
     expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis"]);

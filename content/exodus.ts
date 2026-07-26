@@ -1001,5 +1001,26 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
       }
     ],
     "sources": "Propp · Assmann · Finkelstein & Silberman · Hoffmeier"
-  }
+  },
+  // No doorway. Movement 2 does not exist yet, and the content validator fails a doorway
+  // pointing at a movement it cannot resolve. It arrives with the movement it points to.
+  capstone: {
+    kicker: "The first movement · Exodus 1–15:21",
+    title: "The rescue, and the price on it",
+    paragraphs: [
+      "Fifteen chapters from a policy of drowning boys in a river to a song on the far shore of a sea. The shape of it is worth seeing whole. God does not appear for four chapters. When he does, it is to a man minding someone else's sheep who spends two chapters refusing. The first attempt makes things worse, and the people promised freedom turn on the man who promised it. Nothing here happens quickly, and the book seems to want it that way.",
+      "And it is paid for. Egypt loses its firstborn in a night, and the story tells you plainly that this mirrors the boys thrown in the Nile at the start. Measure for measure is the logic, and naming a logic is not the same as being at peace with it. The movement gives Israel a song and gives Egypt no funeral. That asymmetry is in the text, not smuggled in by a reader, and it will sit badly with anyone who has been on the losing side of someone else's liberation.",
+      "What Israel did with the memory is the surprising part. The law built on this rescue keeps circling back to the foreigner: you were strangers in Egypt, so do not do to them what was done to you. The deliverance became an obligation rather than a privilege. That does not settle the cost. It only says what the people who kept the story did with it. They are out. They are not home, the mountain is still ahead, and the first thing waiting on the other side of the singing is thirst.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The exodus is the founding act: God takes a side, and the side is the enslaved.",
+        counter:
+          "The same canon refuses to make that side permanent or exclusive. Amos has God bringing the Philistines up from Caphtor and the Arameans from Kir in the same breath as Israel out of Egypt, which makes the exodus a thing God does rather than a possession Israel holds.",
+        where: "Amos 9:7 · Exodus 22:21 · Deuteronomy 10:19",
+      },
+    ],
+    sources: "Propp · Fretheim · Walzer",
+  },
 };
