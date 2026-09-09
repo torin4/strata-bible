@@ -397,4 +397,18 @@ describe("content lib", () => {
     expect(turns).toContain("claims");
     expect(turns).not.toContain("names");
   });
+  it("Ruth resolves, runs in authored order, and files under its one movement", () => {
+    // Book three, mid-authoring: movement 1 is declared and movements 2 covering chapters 3
+    // and 4 is not, so every reading that exists must fall inside the declared range.
+    const book = getBook("ruth");
+    expect(book?.movements.map((m) => m.id)).toEqual(["empty"]);
+    expect(book?.readings.map((r) => r.id)).toEqual(["ruth-1", "ruth-2"]);
+    expect(getReading("ruth", "ruth-1")?.span).toBe("Ruth 1");
+    expect(getAdjacent("ruth", "ruth-1").prev).toBeUndefined();
+    expect(getAdjacent("ruth", "ruth-1").next?.id).toBe("ruth-2");
+    expect(getAdjacent("ruth", "ruth-2").next).toBeUndefined();
+    for (const reading of book?.readings ?? []) {
+      expect(getMovement("ruth", reading)?.id, reading.id).toBe("empty");
+    }
+  });
 });

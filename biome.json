@@ -5,6 +5,7 @@
     "ignore": [
       "genesis.ts",
       "exodus.ts",
+      "ruth.ts",
       "seed.ts",
       "bsb-*.ts",
       "types.ts",

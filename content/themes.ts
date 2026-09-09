@@ -479,4 +479,9 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For suffering you did not earn, and the refusal to lie about it just to be comforted.",
   },
+  "ruth-1": {
+    themes: ["grief", "god-feels-absent", "starting-over", "loneliness"],
+    speaksTo:
+      "For the part after the funeral, when people ask how you are and the true answer will not fit in the street.",
+  },
 };

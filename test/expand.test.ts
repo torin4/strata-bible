@@ -140,4 +140,15 @@ describe("expandReading", () => {
       expect(omitted(p.verses), p.ref).toEqual([]);
     }
   });
+  it("fills a grounded Ruth reading's gaps from the newly registered lookup", () => {
+    // Book three's registry entry is the whole of its plumbing, and a missing one fails
+    // silently: the reading would pass through untouched and simply lose the reveal.
+    // ruth-2 authors a selection from Ruth 2, so every gap inside its range must come back.
+    const p = passageIn("ruth", "ruth-2", "Ruth 2 (selected)");
+    expect(authored(p.verses)).toEqual([
+      1, 2, 3, 8, 9, 10, 11, 12, 17, 18, 19, 20, 23,
+    ]);
+    expect(omitted(p.verses)).toEqual([4, 5, 6, 7, 13, 14, 15, 16, 21, 22]);
+    expect(p.verses?.find((v) => v.n === 4)?.text).toContain("Boaz");
+  });
 });

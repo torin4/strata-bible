@@ -1,5 +1,6 @@
 import { BSB_EXODUS } from "@/content/bsb-exodus";
 import { BSB_GENESIS } from "@/content/bsb-genesis";
+import { BSB_RUTH } from "@/content/bsb-ruth";
 import type { Passage, Reading, Verse } from "@/lib/types";
 
 // "Read the full text": a curated sitting shows selected verses of a passage, so
@@ -25,6 +26,7 @@ type VerseLookup = Record<string, string>;
 const BSB_BY_BOOK: Record<string, VerseLookup | undefined> = {
   genesis: BSB_GENESIS,
   exodus: BSB_EXODUS,
+  ruth: BSB_RUTH,
 };
 
 // The BSB text for a book, or undefined when the book has no registered lookup. Exported so the

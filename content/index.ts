@@ -17,6 +17,7 @@ import {
   JOSEPH_MOVEMENT,
   PRIMEVAL_MOVEMENT,
 } from "./genesis";
+import { EMPTY_MOVEMENT, RUTH, RUTH_INTRO } from "./ruth";
 import { JOB_MOVEMENT, SEED } from "./seed";
 
 // A book as the shell needs it: its readings (resolved by span), its movements, and
@@ -119,6 +120,21 @@ export const BOOKS: BookEntry[] = [
     composition: EXODUS_INTRO,
     capstone: EXODUS_CAPSTONE,
     published: true,
+  },
+  // Ruth, book three, in progress. Four chapters across two movements; only movement 1 is
+  // declared, and only ruth-1 is authored. Unpublished until all four chapters are done, exactly
+  // as Exodus was for the whole time it was being written. See .scratch/ruth/spec.md.
+  {
+    id: "ruth",
+    title: "Ruth",
+    subtitle:
+      "Four chapters: the road, the field, the threshing floor, the gate.",
+    blurb:
+      "A woman comes home with nothing, and a stranger will not leave her.",
+    readings: RUTH,
+    movements: [EMPTY_MOVEMENT],
+    composition: RUTH_INTRO,
+    published: false,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.
