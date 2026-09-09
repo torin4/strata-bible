@@ -18,15 +18,30 @@ providence: the narrator says only that she happened to come to that part of the
 
 **Blocked by:** 02 — Author Ruth 1, the road.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `ruth-2` is a sitting spanning the whole chapter
-- [ ] The ground note carries the gleaning law as an obligation on the landowner
-- [ ] The meeting holds Boaz's decency and Ruth's exposure at the same time
-- [ ] The turn is on the closing scene, mode `names`
-- [ ] The reading is tagged in the find index in the same change
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] No passage exceeds the density target on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] `ruth-2` is a sitting spanning the whole chapter
+- [x] The ground note carries the gleaning law as an obligation on the landowner
+- [x] The meeting holds Boaz's decency and Ruth's exposure at the same time
+- [x] The turn is on the closing scene, mode `names`
+- [x] The reading is tagged in the find index in the same change
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] No passage exceeds the density target on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**The misreading is on Boaz.** Read as warmth alone, chapter 2 becomes a nice story about a kind
+man, and what Ruth is actually doing disappears: working in public, in front of men, all day, to be
+noticed enough to be allowed to keep working. He is generous and everything he grants is a favour
+he could withdraw. Both are true and the reading holds both.
+
+**The wing and the corner.** Boaz blesses her under the wings of the God of Israel in 2:12, and the
+Hebrew word for wing is the same word used for the corner of a garment, which is what Ruth asks him
+to spread over her in 3:9. The ground note plants it here and the meaning in chapter 3 collects it.
+That is the book's own construction, not ours.
+
+**Density** 0.9x, 0.8x, 0.8x. The chapter carries a lot of scripture per scene, so the apparatus
+sits well under the norm without being thinned.

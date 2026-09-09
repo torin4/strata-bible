@@ -489,4 +489,19 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the summons that does not argue with you, and what it asks you to put down before you understand why.",
   },
+  "ruth-2": {
+    themes: ["starting-over", "waiting", "the-outsider", "powerlessness"],
+    speaksTo:
+      "For the first ordinary day of work after everything changed, and for being noticed by someone who did not have to.",
+  },
+  "ruth-3": {
+    themes: ["fear", "waiting", "powerlessness", "the-outsider"],
+    speaksTo:
+      "For the night you have to ask for something you cannot demand, from someone free to say no.",
+  },
+  "ruth-4": {
+    themes: ["deferred-hope", "grief", "overlooked", "starting-over"],
+    speaksTo:
+      "For the new thing that is not the old thing returned, and for work whose point you may never get to see.",
+  },
 };

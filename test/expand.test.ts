@@ -1,5 +1,5 @@
 import { getReading } from "@/lib/content";
-import { expandReading } from "@/lib/expand";
+import { bsbForBook, expandReading } from "@/lib/expand";
 import type { Verse } from "@/lib/types";
 import { describe, expect, it } from "vitest";
 
@@ -140,16 +140,19 @@ describe("expandReading", () => {
       expect(omitted(p.verses), p.ref).toEqual([]);
     }
   });
-  it("fills a grounded Ruth reading's gaps from the newly registered lookup", () => {
-    // Book three's registry entry is the whole of its plumbing, and a missing one fails
-    // silently: the reading would pass through untouched and simply lose the reveal.
-    // ruth-2 authors a selection from Ruth 2, so every gap inside its range must come back.
-    const p = passageIn("ruth", "ruth-2", "Ruth 2 (selected)");
-    expect(authored(p.verses)).toEqual([
-      1, 2, 3, 8, 9, 10, 11, 12, 17, 18, 19, 20, 23,
-    ]);
-    expect(omitted(p.verses)).toEqual([4, 5, 6, 7, 13, 14, 15, 16, 21, 22]);
-    expect(p.verses?.find((v) => v.n === 4)?.text).toContain("Boaz");
+  it("registers Ruth's lookup, and leaves a chapter authored whole alone", () => {
+    // Ruth is authored whole, every chapter, so there is no gap for the reveal to fill. The
+    // registry entry still matters: the verse-integrity invariant proves the book against it.
+    expect(bsbForBook("ruth")?.["1:1"]).toContain(
+      "In the days when the judges ruled",
+    );
+    const reading = getReading("ruth", "ruth-2");
+    if (!reading) throw new Error("no ruth-2");
+    const expanded = expandReading(reading);
+    for (const p of expanded.passages) {
+      expect(omitted(p.verses), p.ref).toEqual([]);
+    }
+    expect(expanded.passages.flatMap((p) => p.verses ?? [])).toHaveLength(23);
   });
   it("fills a grounded Mark reading's gaps from the newly registered lookup", () => {
     // Book four's registry entry, proved the same way Ruth's was: a missing one fails silently,

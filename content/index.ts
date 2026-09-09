@@ -18,7 +18,13 @@ import {
   PRIMEVAL_MOVEMENT,
 } from "./genesis";
 import { MARK, MARK_INTRO, THE_AUTHORITY_MOVEMENT } from "./mark";
-import { EMPTY_MOVEMENT, RUTH, RUTH_INTRO } from "./ruth";
+import {
+  EMPTY_MOVEMENT,
+  RUTH,
+  RUTH_CAPSTONE,
+  RUTH_INTRO,
+  THE_REDEEMER_MOVEMENT,
+} from "./ruth";
 import { JOB_MOVEMENT, SEED } from "./seed";
 
 // A book as the shell needs it: its readings (resolved by span), its movements, and
@@ -122,19 +128,18 @@ export const BOOKS: BookEntry[] = [
     capstone: EXODUS_CAPSTONE,
     published: true,
   },
-  // Ruth, book three, in progress. Four chapters across two movements; only movement 1 is
-  // declared, and only ruth-1 is authored. Unpublished until all four chapters are done, exactly
-  // as Exodus was for the whole time it was being written. See .scratch/ruth/spec.md.
+  // Ruth, book three, complete: four chapters across two movements. Still unpublished, because
+  // publication is a decision separate from finishing. See .scratch/ruth/spec.md.
   {
     id: "ruth",
     title: "Ruth",
-    subtitle:
-      "Four chapters: the road, the field, the threshing floor, the gate.",
+    subtitle: "Two movements: coming back empty, and the redeemer.",
     blurb:
       "A woman comes home with nothing, and a stranger will not leave her.",
     readings: RUTH,
-    movements: [EMPTY_MOVEMENT],
+    movements: [EMPTY_MOVEMENT, THE_REDEEMER_MOVEMENT],
     composition: RUTH_INTRO,
+    capstone: RUTH_CAPSTONE,
     published: false,
   },
   // Mark, book four, in progress, and the first New Testament book in the app. Sixteen chapters

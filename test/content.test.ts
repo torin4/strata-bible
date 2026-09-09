@@ -397,19 +397,26 @@ describe("content lib", () => {
     expect(turns).toContain("claims");
     expect(turns).not.toContain("names");
   });
-  it("Ruth resolves, runs in authored order, and files under its one movement", () => {
-    // Book three, mid-authoring: movement 1 is declared and movements 2 covering chapters 3
-    // and 4 is not, so every reading that exists must fall inside the declared range.
+  it("Ruth runs end to end and splits across its two movements at chapter 3", () => {
+    // The book is complete: four readings, one per act, two movements split at the threshing
+    // floor. No reading crosses a chapter, so every one files by range with no override.
     const book = getBook("ruth");
-    expect(book?.movements.map((m) => m.id)).toEqual(["empty"]);
-    expect(book?.readings.map((r) => r.id)).toEqual(["ruth-1", "ruth-2"]);
-    expect(getReading("ruth", "ruth-1")?.span).toBe("Ruth 1");
+    expect(book?.movements.map((m) => m.id)).toEqual(["empty", "the-redeemer"]);
+    expect(book?.readings.map((r) => r.id)).toEqual([
+      "ruth-1",
+      "ruth-2",
+      "ruth-3",
+      "ruth-4",
+    ]);
     expect(getAdjacent("ruth", "ruth-1").prev).toBeUndefined();
-    expect(getAdjacent("ruth", "ruth-1").next?.id).toBe("ruth-2");
-    expect(getAdjacent("ruth", "ruth-2").next).toBeUndefined();
-    for (const reading of book?.readings ?? []) {
-      expect(getMovement("ruth", reading)?.id, reading.id).toBe("empty");
-    }
+    expect(getAdjacent("ruth", "ruth-2").next?.id).toBe("ruth-3");
+    expect(getAdjacent("ruth", "ruth-4").next).toBeUndefined();
+    expect(getMovement("ruth", book?.readings[1] as never)?.id).toBe("empty");
+    expect(getMovement("ruth", book?.readings[2] as never)?.id).toBe(
+      "the-redeemer",
+    );
+    // The book capstone renders on the last reading, and nowhere else.
+    expect(book?.capstone?.title).toBe("Not given back, and built anyway");
   });
   it("Mark resolves, runs in authored order, and files under its one declared movement", () => {
     // Book four, mid-authoring. Movement 1 declares chapters 1 to 8; movements 2 to 4 are absent
