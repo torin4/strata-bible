@@ -1,95 +1,66 @@
-# Ruth: image spec and prompts
+# Ruth: image prompts
 
 Status: ready-for-human
 Created: 2026-09-10
 
-Three images, matching the slots Genesis and Exodus already fill. Written after looking at
-`exo-intro.webp` and `exo-road.webp` directly, so the style notes below describe what those files
-actually are rather than what the commit messages say about them.
+Each prompt below is complete and pastes on its own: the style block is already included
+in every one, so there is nothing to remember to append.
 
-## The style, as the existing files render it
+The style was written after opening `exo-intro.webp` and `exo-road.webp` directly, so it
+describes what the shipped files actually are rather than what their commit messages say.
 
-- **Ground.** Near black, effectively `--deep #0d1015`, with a faint warm brown-grey wash lifting
-  through the lower third. Visible paper or canvas grain over the whole frame.
-- **Line.** Single-weight hairline strokes in pale warm gold, sitting between `--gold #c79a3e` and
-  `--parchment #f4ead4`. Contour lines do all the work: rock, water, ground texture and foliage are
-  all described by line rather than by fill. No cross-hatching, no rendered shading.
-- **Colour.** The app palette and nothing else. One muted slate blue, the `--lapis #6f9bce` family
-  heavily darkened, is used sparingly for distant water and far hills. No other hue appears.
-- **Composition.** Horizon sits low, around 60 to 65 percent down the frame. The top half is close
-  to empty. A road, shoreline or watercourse runs across the lower half and carries the eye.
-- **Figures.** Three to five pixels tall, faceless, never more than a handful, often none.
-- **Frame.** None. No border, no text, no signature, no added vignette.
+Three images: a hero on the book page and a banner in each of the two situation panels, matching
+the slots Genesis and Exodus already fill.
 
-## The three slots
+## The slots
 
-| File | Slot | Dimensions | Wired at |
+| File | Slot | Size | Wired at |
 | --- | --- | --- | --- |
-| `ruth-intro.webp` | book hero | 1584 x 672 | `BookEntry.heroImage` in `content/index.ts` |
-| `ruth-empty.webp` | movement 1 situation banner | 1376 x 768 | `EMPTY_MOVEMENT.situation.image` |
-| `ruth-redeemer.webp` | movement 2 situation banner | 1376 x 768 | `THE_REDEEMER_MOVEMENT.situation.image` |
+| `ruth-intro.webp` | book hero | 1584 x 672 | `BookEntry.heroImage` on the Ruth entry in `content/index.ts` |
+| `ruth-empty.webp` | movement 1 situation banner, Coming back empty | 1376 x 768 | `EMPTY_MOVEMENT.situation.image` |
+| `ruth-redeemer.webp` | movement 2 situation banner, The redeemer | 1376 x 768 | `THE_REDEEMER_MOVEMENT.situation.image` |
 
-Exodus's hero is 1584 x 672 and Genesis's is 2752 x 1000. The container crops to its own ratio, so
-either works; 1584 x 672 matches the more recent book and is the smaller download.
+## The prompts
 
-## Shared style block
+### `ruth-intro.webp`  (1584 x 672)
 
-Append to each prompt below.
+```
+A wide panorama in three parts, read left to right. On the left, the dry uplands of Moab, and a road descending west out of them. Across the centre, a broad valley in haze with a narrow band of still flat water lying along it. On the right, terraced barley fields at harvest below a small hill town of flat-roofed mudbrick houses, and on the rise beside the town a flat circular threshing floor with a heap of grain on it. Two minute figures on the road, left of centre, walking toward the right. Late evening.
 
-> Fine gold hairline ink drawing on a near-black ground, in the manner of an engraving. Single
-> weight strokes in pale warm gold, between #c79a3e and #f4ead4, describing everything by contour
-> line with no fill and no rendered shading. Background #0d1015 with a faint warm brown-grey wash
-> in the lower third and a visible paper grain. One heavily darkened slate blue, around #6f9bce,
-> used only for distant water and far hills. No other colour anywhere. Horizon low, about
-> two thirds down the frame, with the sky left almost entirely empty. Any human figures are tiny,
-> faceless, and no more than a handful. No border, no frame, no text, no signature.
+Fine gold hairline ink drawing on a near-black ground, in the manner of a steel engraving. Every form described by single-weight contour line in pale warm gold, between #c79a3e and #f4ead4, with no fill, no cross-hatching and no rendered shading. Background #0d1015, with a faint warm brown-grey wash rising through the lower third and a visible paper grain over the whole frame. One further colour only, a heavily darkened slate blue near #6f9bce, used sparingly for distant water and far hills. No other hue anywhere. The horizon sits low, about two thirds down the frame, and the sky above it is left almost entirely empty. Any human figures are minute faceless silhouettes drawn in line, never more than a handful. No border, no frame, no text, no signature, no vignette.
+```
 
-## 1. `ruth-intro.webp` — the book hero
+### `ruth-empty.webp`  (1376 x 768)
 
-Reads left to right the way the book does, from Moab back to Bethlehem.
+```
+An empty road coming down out of dry hills toward a small flat-roofed town on a low ridge in the middle distance. The whole foreground is a harvested barley field, stubble in long rows, with the corners of the field at the lower left and lower right deliberately left uncut and still standing. A few bound sheaves. No figures anywhere in the frame.
 
-> A wide panorama. On the left, the dry hills of Moab falling away west, with a road descending out
-> of them. Across the centre, the low haze of a valley and a narrow band of still water. On the
-> right, terraced barley fields at harvest below a small hill town of flat-roofed mudbrick houses,
-> and on a rise beside the town a flat circular threshing floor. Two very small figures walk the
-> road, left of centre, heading right. Late evening.
+Fine gold hairline ink drawing on a near-black ground, in the manner of a steel engraving. Every form described by single-weight contour line in pale warm gold, between #c79a3e and #f4ead4, with no fill, no cross-hatching and no rendered shading. Background #0d1015, with a faint warm brown-grey wash rising through the lower third and a visible paper grain over the whole frame. One further colour only, a heavily darkened slate blue near #6f9bce, used sparingly for distant water and far hills. No other hue anywhere. The horizon sits low, about two thirds down the frame, and the sky above it is left almost entirely empty. Any human figures are minute faceless silhouettes drawn in line, never more than a handful. No border, no frame, no text, no signature, no vignette.
+```
 
-## 2. `ruth-empty.webp` — movement 1, the ground beneath the road
+### `ruth-redeemer.webp`  (1376 x 768)
 
-The situation panel covers Moab, a widow's standing, and the gleaning law.
+```
+A flat circular threshing floor of packed earth on high ground at the edge of a small town, at night. A heap of winnowed grain at its centre with a wooden winnowing fork standing upright in it, and loose chaff drifting away to one side on the wind. Below and behind the floor, the town wall and a gate, with a stone bench either side of the opening. No figures.
 
-> An empty road coming down out of dry hills toward a small flat-roofed town on a low ridge in the
-> middle distance. The foreground is a harvested barley field, stubble in rows, with the corners of
-> the field at the lower edges deliberately left uncut and standing. A few sheaves. No figures.
-> Nothing else in the frame.
-
-## 3. `ruth-redeemer.webp` — movement 2, the ground beneath the claim
-
-The situation panel covers the redeemer law, the levirate, and the threshing floor.
-
-> A flat circular threshing floor of packed earth on high ground at the edge of a small town, at
-> night. A heap of winnowed grain at its centre, a winnowing fork standing in the heap, and loose
-> chaff drifting off to one side on the wind. Below and behind, the town wall and a gate with stone
-> benches either side of the opening. No figures.
+Fine gold hairline ink drawing on a near-black ground, in the manner of a steel engraving. Every form described by single-weight contour line in pale warm gold, between #c79a3e and #f4ead4, with no fill, no cross-hatching and no rendered shading. Background #0d1015, with a faint warm brown-grey wash rising through the lower third and a visible paper grain over the whole frame. One further colour only, a heavily darkened slate blue near #6f9bce, used sparingly for distant water and far hills. No other hue anywhere. The horizon sits low, about two thirds down the frame, and the sky above it is left almost entirely empty. Any human figures are minute faceless silhouettes drawn in line, never more than a handful. No border, no frame, no text, no signature, no vignette.
+```
 
 ## After generating
 
-Whatever the source resolution, resize to the dimensions in the table, then encode at quality 92,
-which is what the Exodus set was re-encoded at and measured between 46.3 and 47.7 dB PSNR:
+Resize to the dimensions above and encode at quality 92, which is what the Exodus set was
+re-encoded at and measured between 46.3 and 47.7 dB PSNR against its originals:
 
 ```
-cwebp -q 92 -resize 1584 672 ruth-intro.png    -o public/images/ruth-intro.webp
-cwebp -q 92 -resize 1376 768 ruth-empty.png    -o public/images/ruth-empty.webp
+cwebp -q 92 -resize 1584 672 ruth-intro.png -o public/images/ruth-intro.webp
+cwebp -q 92 -resize 1376 768 ruth-empty.png -o public/images/ruth-empty.webp
 cwebp -q 92 -resize 1376 768 ruth-redeemer.png -o public/images/ruth-redeemer.webp
 ```
 
-Drop the three files into `public/images/` and the wiring is three lines: `heroImage` on the Ruth
-book entry, and an `image` on each of the two situation panels in `scripts/build-ruth.ts`. Do not
-hand-edit `content/ruth.ts`; change the generator and re-run it.
+Drop the files into `public/images/` and the wiring is one line each, applied in the book's
+generator script and re-run. Never hand-edit the generated content file.
 
-## Note on why this is a human ticket
+## Why this is a human ticket
 
-No image model is available to the agent in this repo's tool set. The Adobe tools do selection and
-adjustment only and refuse generative requests outright. The style notes and prompts above are
-derived from the shipped files so that whatever tool produced the Genesis and Exodus sets can be
-pointed at these three with the same result.
+No image model is available in this repo's agent tool set. The Adobe tools do selection and
+adjustment only and refuse generative requests outright.
