@@ -6,6 +6,7 @@
       "genesis.ts",
       "exodus.ts",
       "ruth.ts",
+      "mark.ts",
       "seed.ts",
       "bsb-*.ts",
       "types.ts",

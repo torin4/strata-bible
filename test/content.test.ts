@@ -411,4 +411,20 @@ describe("content lib", () => {
       expect(getMovement("ruth", reading)?.id, reading.id).toBe("empty");
     }
   });
+  it("Mark resolves, runs in authored order, and files under its one declared movement", () => {
+    // Book four, mid-authoring. Movement 1 declares chapters 1 to 8; movements 2 to 4 are absent
+    // until they have readings, so everything that exists must fall inside that range.
+    const book = getBook("mark");
+    expect(book?.movements.map((m) => m.id)).toEqual(["the-authority"]);
+    expect(book?.readings.map((r) => r.id)).toEqual(["mark-1a", "mark-1b"]);
+    expect(getReading("mark", "mark-1a")?.span).toBe("Mark 1:1–20");
+    expect(getAdjacent("mark", "mark-1a").prev).toBeUndefined();
+    expect(getAdjacent("mark", "mark-1a").next?.id).toBe("mark-1b");
+    expect(getAdjacent("mark", "mark-1b").next).toBeUndefined();
+    for (const reading of book?.readings ?? []) {
+      expect(getMovement("mark", reading)?.id, reading.id).toBe(
+        "the-authority",
+      );
+    }
+  });
 });

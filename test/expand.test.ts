@@ -151,4 +151,13 @@ describe("expandReading", () => {
     expect(omitted(p.verses)).toEqual([4, 5, 6, 7, 13, 14, 15, 16, 21, 22]);
     expect(p.verses?.find((v) => v.n === 4)?.text).toContain("Boaz");
   });
+  it("fills a grounded Mark reading's gaps from the newly registered lookup", () => {
+    // Book four's registry entry, proved the same way Ruth's was: a missing one fails silently,
+    // and the reading would simply pass through without a reveal.
+    const p = passageIn("mark", "mark-1b", "1:21–45");
+    expect(omitted(p.verses)).toEqual([24, 26, 28, 33, 36, 39, 42, 43]);
+    expect(p.verses?.find((v) => v.n === 24)?.text).toContain(
+      "Holy One of God",
+    );
+  });
 });

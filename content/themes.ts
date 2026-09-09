@@ -484,4 +484,9 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the part after the funeral, when people ask how you are and the true answer will not fit in the street.",
   },
+  "mark-1a": {
+    themes: ["calling", "starting-over", "fear-of-loss"],
+    speaksTo:
+      "For the summons that does not argue with you, and what it asks you to put down before you understand why.",
+  },
 };

@@ -17,6 +17,7 @@ import {
   JOSEPH_MOVEMENT,
   PRIMEVAL_MOVEMENT,
 } from "./genesis";
+import { MARK, MARK_INTRO, THE_AUTHORITY_MOVEMENT } from "./mark";
 import { EMPTY_MOVEMENT, RUTH, RUTH_INTRO } from "./ruth";
 import { JOB_MOVEMENT, SEED } from "./seed";
 
@@ -134,6 +135,20 @@ export const BOOKS: BookEntry[] = [
     readings: RUTH,
     movements: [EMPTY_MOVEMENT],
     composition: RUTH_INTRO,
+    published: false,
+  },
+  // Mark, book four, in progress, and the first New Testament book in the app. Sixteen chapters
+  // across four movements; only movement 1 is declared, and only mark-1a is authored. The book
+  // ends at 16:8. Unpublished until it is complete. See .scratch/mark/spec.md.
+  {
+    id: "mark",
+    title: "Mark",
+    subtitle:
+      "Four movements: the authority, the way, the temple, handed over.",
+    blurb: "The earliest gospel, and the one that stops mid-sentence.",
+    readings: MARK,
+    movements: [THE_AUTHORITY_MOVEMENT],
+    composition: MARK_INTRO,
     published: false,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
