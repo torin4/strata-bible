@@ -1,4 +1,4 @@
-import type { Movement, Panel, Reading } from "@/lib/types";
+import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 
 // Mark, book four, and the first New Testament book in the app. Sixteen chapters, 673 verses
 // that carry text, every passage a narrative scene.
@@ -2277,6 +2277,16 @@ export const HANDED_OVER_MOVEMENT: Movement = {
     ],
     sources: "Marcus · Collins · Bond · Josephus",
   },
+  capstone: {
+    kicker: "The fourth movement · Mark 14–16:8",
+    title: "Everyone runs, and the officer speaks",
+    paragraphs: [
+      "Count who is left. The twelve are gone by 14:50. Judas has sold him, Peter has denied him three times in a courtyard, and a young man has run out of his own clothes to get away. What remains at the cross is a group of women watching from a distance, whom Mark names here for the first time and says had been following him since Galilee. They were there for all of it, and he has not mentioned them until now.",
+      "And the answer, when it finally comes, comes from the wrong mouth. Not from the disciples, who had the private explanations. Not from the crowd. From the officer commanding the execution detail, who says it having just watched him die. Mark has arranged sixteen chapters so that the only place the sentence can be said truthfully is at the foot of a cross, by somebody with nothing invested in it.",
+      "Then the women, who are the only ones who did not run, run. The last verb in the book is fear.",
+    ],
+    sources: "Marcus · Collins · Bond",
+  },
 };
 
 // The book-level composition overlay: how Mark was written, and how it ends.
@@ -2316,4 +2326,27 @@ export const MARK_INTRO: Panel = {
     },
   ],
   sources: "Marcus · Collins · Bond · France · Ehrman",
+};
+// The book-level look-back, where the ending gets handled.
+export const MARK_CAPSTONE: Capstone = {
+  kicker: "The whole book · Mark 1–16:8",
+  title: "It stops before anybody understands",
+  paragraphs: [
+    "Start with the manuscripts, because almost no reader is shown them. Two of the oldest complete copies of this gospel end at 16:8, with women running from a tomb and telling nobody. The twelve verses printed after that in most Bibles are a later addition, in a different vocabulary and a different style, gathering up appearances from the other three gospels. A different, shorter ending circulated as well. And a few manuscripts carry both, one after the other, which is the clearest evidence there is that people did not know what to do about it. Five verse numbers elsewhere in this book are empty for the same reason. None of this is contested; it sits in the footnotes of most study Bibles. What is unusual is being shown it while you read rather than afterward.",
+    "Then what everybody in the book does, which is fail to see him. The unclean spirits name him correctly and are silenced every time. His family come to take him home because they think he has lost his mind. The scribes say he is possessed. His own village cannot hear him. The twelve, who get the private explanations, are asked in chapter 8 whether they have eyes, are told three times what is coming and answer each time with a question about rank, and have all run by chapter 14. Peter, who gets the title right and is called Satan four verses later, ends the book weeping in a courtyard. The one human being who says it plainly is the Roman officer who has just killed him.",
+    "That failure is the earliest version, not an embarrassment in it. Matthew and Luke both had this book in front of them and both softened it. Mark's he could not do any miracle there becomes he did not do many. Mark's disciples, hardened and uncomprehending in the boat, become worshippers. Mark's cry of abandonment becomes into your hands, and it is finished. The direction of the editing is consistent every time, and it tells you what the first account was like before anybody smoothed it: harder on everyone, including its hero's closest friends, and unwilling to end well.",
+    "And the stop is arranged. The young man says he is going ahead of you into Galilee, there you will see him, and the seeing never happens on the page. Every promise the book makes at the end is made to people who are running. The last clause is that they said nothing to anyone, because they were afraid. And yet the account exists, which means that at some point somebody did speak. That is the only argument this gospel makes for itself, and it makes it by leaving something out. It refuses to show you a single person succeeding, and then stops, and leaves the telling with whoever is holding it.",
+  ],
+  tensions: [
+    {
+      claim:
+        "The gospel of Mark ends at 16:8, with the women saying nothing to anyone because they were afraid.",
+      counter:
+        "The church did not leave it there. Twelve verses were added in a different style, gathering appearances from the other gospels; a shorter ending circulated as well; and some manuscripts carry both, one after the other.",
+      where:
+        "Mark 16:8 · Mark 16:9–20 · the shorter ending · Codex Sinaiticus and Codex Vaticanus",
+    },
+  ],
+  sources: "Marcus · Collins · Bond · France · Ehrman · Metzger",
+  ask: "Every person in this book was looking straight at him and could not say what they were looking at. What are you looking straight at?",
 };

@@ -20,6 +20,7 @@ import {
 import {
   HANDED_OVER_MOVEMENT,
   MARK,
+  MARK_CAPSTONE,
   MARK_INTRO,
   THE_AUTHORITY_MOVEMENT,
   THE_TEMPLE_MOVEMENT,
@@ -173,6 +174,7 @@ export const BOOKS: BookEntry[] = [
       HANDED_OVER_MOVEMENT,
     ],
     composition: MARK_INTRO,
+    capstone: MARK_CAPSTONE,
     published: false,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
