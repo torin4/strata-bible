@@ -1079,6 +1079,239 @@ ${verses(10, range(46, 52))}
       },
     ],
   },
+  {
+    id: "mark-11",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 11",
+    chapterIndex: 11,
+    title: "Not the season for figs",
+    unitLabel: "Scene",
+    thread: "A staged arrival, a tree that had done nothing wrong, an afternoon in the temple courts, and a delegation asking who gave him permission.",
+    closeEnd: "They work out which answer costs them least and say they do not know. He declines to answer them, which is what a question asked in bad faith is owed.",
+    passages: [
+      {
+        label: "One",
+        ref: "11:1–11",
+        kind: "scene",
+        form: "prose",
+        title: "The colt",
+        verses: [
+${verses(11, range(1, 11))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The entry is arranged rather than spontaneous: he sends for a specific animal and the arrangement is already made. The shouting is from Psalm 118, a pilgrim psalm sung on the way up. And the anticlimax is Mark's own. He goes into the temple courts, looks around at everything, and because it is late, leaves. Matthew and Luke both have the temple action happen the same day.",
+          src: "Psalm 118:25–26 · Zechariah 9:9 · Marcus · Collins",
+        },
+        meaning:
+          "A staged entry on a colt, into a city packed for Passover, with a crowd shouting about the kingdom of David, is not a devotional gesture. It is a claim made in public in front of an occupying garrison in the most sensitive week of the year. And then Mark does the thing no other gospel does. He walks in, looks around at everything, and goes back to Bethany because it is late. The survey comes first, which means what happens the next day is not a loss of temper.",
+        lenses: {
+          arch: "The arrival everybody reads as a triumph, made by the only person who has already seen where it ends. (Riding in with the survey done.)",
+        },
+      },
+      {
+        label: "Two",
+        ref: "11:12–25",
+        kind: "scene",
+        form: "prose",
+        title: "Not the season for figs",
+        verses: [
+${verses(11, range(12, 25))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Mark wraps the temple action inside the fig tree, his standard construction: he curses the tree, he clears the courts, they find the tree withered on the way back. And he includes the detail that makes the cursing look unreasonable. It was not the season for figs. The quotation is Isaiah and Jeremiah, and den of robbers comes from a passage about people who commit crimes elsewhere and then shelter in the building.",
+          src: "Isaiah 56:7 · Jeremiah 7:11 · Marcus · Collins",
+        },
+        misreading: {
+          named:
+            "He lost his temper: with a tree that had done nothing, and then with the traders.",
+          why: "The line about the season is Mark's, and he chose to put it in. A version where the tree is at fault would work better and he declined to write it. The two halves are one act: a tree in full leaf, advertising fruit and having none, and an institution in full operation doing the same. And the temple action is not a protest against commerce, which was required to run the sacrifices the law commanded. The quotation he uses is about a building being treated as a safe house by people whose conduct happens somewhere else.",
+        },
+        meaning:
+          "The sandwich tells you how to read both halves, and neither is about a tree or about traders. Take the sequence as it stands: he inspects, he acts, and the verdict is delivered the next morning on something withered from the roots. Then, immediately after, the sayings about a mountain thrown into the sea and about forgiving whatever you hold against anyone, spoken within sight of a mountain with a temple on it.",
+      },
+      {
+        label: "Three",
+        ref: "11:27–33",
+        kind: "scene",
+        form: "prose",
+        title: "By what authority",
+        verses: [
+${verses(11, range(27, 33))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The delegation is the full leadership, chief priests and scribes and elders, which is also the composition of the council that will try him. Their question is legitimate and procedural: who authorised this. His counter-question about John is not evasion. It puts them in the position of having to say in public what they think of a prophet the crowd revered.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The exchange is political arithmetic done out loud, and Mark lets you watch them do it. They weigh the crowd, arrive at the answer that costs them least, and say they do not know. He then declines to answer, which is not a dodge but what a question asked in bad faith is owed. Notice that the whole conversation is about authority, which is the word the crowd reached for in chapter one. Nobody is astonished by it any more.",
+      },
+    ],
+  },
+  {
+    id: "mark-12",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 12",
+    chapterIndex: 12,
+    title: "The stone the builders rejected",
+    unitLabel: "Scene",
+    thread: "A parable they understand perfectly, three questions designed so that either answer destroys him, one honest question, and a widow with two coins.",
+    closeEnd: "The next thing anybody says is an admiring remark about the masonry of the building she has just paid into.",
+    passages: [
+      {
+        label: "One",
+        ref: "12:1–12",
+        kind: "scene",
+        form: "prose",
+        title: "The tenants",
+        verses: [
+${verses(12, range(1, 12))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The parable opens with the vineyard of Isaiah 5, wall and winepress and tower, which his audience knew meant Israel and knew ended in judgement. The chain of beaten and killed servants is the prophetic tradition. And the quotation about the rejected stone is Psalm 118, the same psalm the crowd was shouting from three days earlier. Mark says plainly that they knew the parable was about them.",
+          src: "Isaiah 5:1–7 · Psalm 118:22–23 · Marcus · Collins",
+        },
+        meaning:
+          "This is the only parable in the gospel decoded inside the story, and it is decoded by the people it condemns. What makes it hard is the ending, where the vineyard is given to others, which has been read for centuries as a transfer from one people to another and used to justify a great deal. Read inside its own scene, the tenants are a named leadership in one city in one week, not a nation. The vineyard is not taken from Israel. It is taken from the men who were running it.",
+        lenses: {
+          theo: "The owner sends the son last, expecting the tenants to respect him, and is wrong. It is a parable in which God miscalculates, and nobody in the tradition has been comfortable with that.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "12:13–34",
+        kind: "scene",
+        form: "prose",
+        title: "Whose image is this?",
+        verses: [
+${verses(12, range(13, 34))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Three questions in a row from three different groups, each a trap of a different shape. The tax question is genuinely dangerous: the tribute was paid in a coin carrying the emperor's image and a title claiming divine sonship, which is why asking them to produce one is itself part of the argument. The Sadducees, who held no resurrection, bring a case built to make it absurd. And then a scribe asks a real question.",
+          src: "Deuteronomy 6:4–5 · Leviticus 19:18 · Marcus · Collins",
+        },
+        meaning:
+          "The famous line is regularly used to divide life into two domains, which is not what it does. He asks whose image is on the coin, and the answer is Caesar's, and anyone who knew the first page of Genesis heard the second half of that sentence land very differently. Then the scribe, who is the only member of the opposition in this book treated with respect. He asks without a trap, agrees out loud, adds that loving God and neighbour is worth more than all the offerings, and is told he is not far from the kingdom.",
+        lenses: {
+          arch: "The question built so that either answer destroys you, and the reply that refuses the frame instead of picking a side. (Whose head is on it?)",
+        },
+      },
+      {
+        label: "Three",
+        ref: "12:35–44",
+        kind: "scene",
+        form: "prose",
+        title: "Two small coins",
+        verses: [
+${verses(12, range(35, 44))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Two things are placed together on purpose. He warns about scribes who like the greetings and the front seats and who devour widows' houses. Then he sits down opposite the treasury and watches a widow put in two of the smallest coins in circulation. The treasury stood in the court of the women, with trumpet-shaped receptacles, and a large gift was audible.",
+          src: "Marcus · Collins · France",
+        },
+        misreading: {
+          named:
+            "The widow is a model of generous giving, and the lesson is to give sacrificially.",
+          why: "That reading is available, and it has to ignore the sentence immediately before it, where he condemns the men who devour widows' houses. Taken in sequence, the scene is at least as likely to be a lament: here is what that devouring looks like, a woman with two coins putting in both, into a building he is about to say will be pulled down. Mark does not tell you which reading is right. He sets the two beside each other and moves straight into chapter 13.",
+        },
+        meaning:
+          "He says she put in more than all of them, which is a statement about proportion and is true on either reading. What the sequence does not do is praise the arrangement that leaves her with nothing. And the very next thing that happens is a disciple admiring the stonework of the building she has just paid into.",
+      },
+    ],
+  },
+  {
+    id: "mark-13",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 13",
+    chapterIndex: 13,
+    title: "Not one stone",
+    unitLabel: "Scene",
+    thread: "A remark about the masonry gets an answer nobody wanted, and four of them ask when, sitting on the hill opposite the building in question.",
+    closeEnd: "The last word of the speech is the instruction the whole chapter has been aiming at, and it is not calculate.",
+    passages: [
+      {
+        label: "One",
+        ref: "13:1–13",
+        kind: "scene",
+        form: "prose",
+        title: "Not one stone",
+        verses: [
+${verses(13, range(1, 13))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The temple Herod rebuilt was among the largest religious complexes in the ancient world, and the stones were genuinely enormous, so the disciple's remark is what any visitor said. The reply is a specific prediction about a specific building. Four of them ask when, privately, sitting on the hill opposite it. Most datings of this gospel put it within a few years either side of 70, when that building came down, which is the whole difficulty of the chapter.",
+          src: "Marcus · Collins · Bond",
+        },
+        meaning:
+          "What he warns them about first is not catastrophe but people offering to interpret it. Many will come in my name. Wars, earthquakes and famines are named and then explicitly discounted as indicators: these are the beginning of birth pains, not the end. And the concrete content is about them, not about the world. Councils, floggings, standing in front of governors, and families handing each other over. The chapter is far more interested in how to behave than in what will happen.",
+        lenses: {
+          theo: "The instruction in a crisis is not to calculate but to endure, and the sign the chapter refuses to give is exactly the one everybody keeps trying to extract from it.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "13:14–27",
+        kind: "scene",
+        form: "prose",
+        title: "Let the reader understand",
+        verses: [
+${verses(13, range(14, 27))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The abomination of desolation is a phrase out of Daniel, used there of what Antiochus IV set up in the temple in 167 BCE. The aside, let the reader understand, is the narrator speaking directly to you, and it is the only place in this gospel where that happens. What follows is practical and local: get out of Judea, do not go back for your cloak, pray it is not winter. And sun, moon and stars going dark is standard prophetic language for a political order collapsing, used elsewhere of Babylon and of Egypt.",
+          src: "Daniel 9:27 · Isaiah 13:10 · Ezekiel 32:7 · Marcus · Collins",
+        },
+        misreading: {
+          named:
+            "Chapter 13 is a timetable for the end of the world, and the job is to work out where we are on it.",
+          why: "Almost everything in it is local and dated. Flee to the mountains, do not come down for your coat, hope it is not winter: that is evacuation advice for people in one province. The cosmic imagery is the standard prophetic vocabulary for the fall of a political order and is used elsewhere of Babylon and Egypt. And the chapter says flatly that nobody knows the day, including him. Reading it as a calendar requires ignoring both its geography and its own refusal, and the cost of that reading has never been theoretical.",
+        },
+        meaning:
+          "The centre of the chapter is an instruction to leave, which is not how this kind of writing usually goes. There is no call to defend the city and no promise that the building survives. And the gathering at the end is of the scattered, from the four winds, which takes for granted that the scattering has already happened.",
+      },
+      {
+        label: "Three",
+        ref: "13:28–37",
+        kind: "scene",
+        form: "prose",
+        title: "Nobody knows the day",
+        verses: [
+${verses(13, range(28, 37))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Two sayings that have caused more trouble than anything else in the chapter. This generation will not pass away until all these things have happened. And then, four verses later, that nobody knows the day or the hour, not the angels, nor the Son. Copyists were uncomfortable enough with the second that some manuscripts of Matthew drop the phrase about the Son.",
+          src: "Marcus · Collins · Ehrman",
+        },
+        meaning:
+          "What the chapter actually asks for is in its last word, repeated through the closing verses: stay awake. Not calculate, not prepare, not identify. The parable attached is about a household whose master is away and who do not know when he is coming back, and the instruction goes to the doorkeeper. It is addressed to people living in the interval, which is everyone who has ever read it.",
+        tensions: [
+          {
+            claim:
+              "All these things will happen within this generation.",
+            counter:
+              "Four verses later nobody knows the day or the hour, not the angels in heaven and not the Son. The same speech sets a limit and issues a disclaimer, and never reconciles them.",
+            where: "Mark 13:30 · Mark 13:32",
+          },
+        ],
+        addr: {
+          mode: "names",
+          text: "You have probably wanted a date, or a sign, or anything that would let you stop holding the situation open. The chapter refuses to give one, twice, and asks instead that you stay awake in the meantime.",
+        },
+        ask: "What are you refusing to live in until you know how it turns out?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway: movement 2 does not exist yet, and the content validator fails a
@@ -1144,6 +1377,48 @@ export const THE_WAY_MOVEMENT: Movement = {
       "The two-stage healing at Bethsaida is the only one in the gospels that takes more than one attempt, and it opens the movement. Whether that is medical realism or literary construction is worth deciding for yourself. The man who sees people as trees walking, and then sees clearly, sits four verses before Peter half-sees who Jesus is and is rebuked for the other half.",
     ],
     sources: "Marcus · Collins · France · Bond",
+  },
+  doorway: {
+    kicker: "The third movement",
+    title: "The temple",
+    paragraphs: [
+      "The road ends. What has been coming since chapter eight arrives at a city packed for Passover, with a garrison in it and a leadership that has been planning this since chapter three.",
+      "Six days, most of them spent arguing in a courtyard. He rides in, shuts the temple down for an afternoon, wins every argument they bring him, and then sits on the hill opposite and says the whole thing is coming down.",
+    ],
+    nextMovementId: "the-temple",
+  },
+  capstone: {
+    kicker: "The second movement · Mark 8:22–10:52",
+    title: "Three times told, three times misheard",
+    paragraphs: [
+      "The movement is one shape repeated. He says what is coming. Somebody answers with status. He replies with a reversal. Peter rebukes him and is called Satan. They argue on the road about who is greatest and are handed a child. James and John ask for the thrones and are told about a cup. Three times, and the third comes straight after the most detailed description of all.",
+      "What is being corrected is not ignorance. Peter had the title right. The problem, every time, is that they have understood him as a route to something, and he keeps describing an ending. The book is unusually clear that this is not stupidity: he is walking ahead of them up a road everyone knows leads to the authorities, and Mark says that those following were afraid.",
+      "It is bracketed by two men given their sight, and the difference between them is worth holding. The first needed two touches and was sent home. The second threw off the thing he made his living on and went up the road. Between them, nobody with working eyes sees anything at all.",
+    ],
+    sources: "Marcus · Collins · France",
+  },
+};
+
+export const THE_TEMPLE_MOVEMENT: Movement = {
+  id: "the-temple",
+  index: 3,
+  title: "The temple",
+  range: "Mark 11–13",
+  throughline:
+    "Six days in Jerusalem. He rides in, shuts the temple down for an afternoon, wins every argument they bring him, and then sits on the hill opposite and says not one stone will be left on another.",
+  chapterStart: 11,
+  chapterEnd: 13,
+  situation: {
+    kicker: "The ground beneath the temple",
+    title: "The situation",
+    image: "/images/mark-temple.webp",
+    paragraphs: [
+      "The temple was not a church. It was a working institution, the largest building project in the region, employing thousands, and the centre of a sacrificial economy the law required. Pilgrims arriving for Passover needed unblemished animals and had to pay a temple tax in an acceptable coinage, so the money changing and the animal selling in the outer court were not corruption. They were the mechanism.",
+      "Herod's rebuilding of it was still going on within living memory of these events and was finished only a few years before the whole thing was destroyed. The stones a disciple points at in chapter 13 were genuinely enormous, some of them weighing many tons, and pointing at them is what visitors did.",
+      "The week matters too. Jerusalem's population multiplied at Passover, a festival commemorating a liberation from an empire, which is precisely why the Roman governor came up from Caesarea with troops for it. That is the room this argument is happening in.",
+      "And then the dating problem, which is chapter 13's whole difficulty. Most placings of this gospel put it within a few years either side of 70, the year the temple was destroyed. Whether chapter 13 is prediction, or a text shaped by an event already under way, or both at once, is genuinely argued, and it cannot be settled by preferring one answer.",
+    ],
+    sources: "Marcus · Collins · Bond · Josephus, Jewish War",
   },
 };
 

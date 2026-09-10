@@ -433,6 +433,7 @@ describe("content lib", () => {
     expect(book?.movements.map((m) => m.id)).toEqual([
       "the-authority",
       "the-way",
+      "the-temple",
     ]);
     expect(book?.readings.map((r) => r.id)).toEqual([
       "mark-1a",
@@ -448,6 +449,9 @@ describe("content lib", () => {
       "mark-9",
       "mark-10a",
       "mark-10b",
+      "mark-11",
+      "mark-12",
+      "mark-13",
     ]);
     expect(getReading("mark", "mark-1a")?.span).toBe("Mark 1:1\u201320");
     expect(getAdjacent("mark", "mark-1a").prev).toBeUndefined();
@@ -456,7 +460,8 @@ describe("content lib", () => {
     expect(getAdjacent("mark", "mark-2").next?.id).toBe("mark-3");
     expect(getAdjacent("mark", "mark-5").next?.id).toBe("mark-6");
     expect(getAdjacent("mark", "mark-8a").next?.id).toBe("mark-8b");
-    expect(getAdjacent("mark", "mark-10b").next).toBeUndefined();
+    expect(getAdjacent("mark", "mark-10b").next?.id).toBe("mark-11");
+    expect(getAdjacent("mark", "mark-13").next).toBeUndefined();
     // The chapter-8 seam: mark-8b sits in chapter 8, which movement 1 declares, and takes an
     // explicit movementId to file under the way. It is the only override in the book and it
     // fails silently if it is wrong.

@@ -564,4 +564,19 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the thing you stopped asking for out loud because people around you were embarrassed by it.",
   },
+  "mark-11": {
+    themes: ["anger", "injustice", "complicity"],
+    speaksTo:
+      "For the thing in full leaf that is bearing nothing, and for the difference between losing your temper and having already looked.",
+  },
+  "mark-12": {
+    themes: ["injustice", "complicity", "powerlessness"],
+    speaksTo:
+      "For the question with no safe answer, and for the widow paying into a building that is coming down.",
+  },
+  "mark-13": {
+    themes: ["fear", "waiting", "doubt", "deferred-hope"],
+    speaksTo:
+      "For wanting a date, or a sign, or anything that would let you stop holding it open.",
+  },
 };
