@@ -856,6 +856,11 @@ export const MARK: Reading[] = [
             where: "Mark 6:51–52 · Matthew 14:32–33",
           },
         ],
+        addr: {
+          mode: "names",
+          text: "You have had a thing explained to you, and then shown to you, and then been caught out by the next instance of it as though it were new. Mark does not call that stupidity. He calls it a hardened heart, and he uses the word about his own side.",
+        },
+        ask: "What keeps taking you by surprise that you have already been through?",
       },
     ],
   },
@@ -1533,6 +1538,11 @@ export const MARK: Reading[] = [
         },
         meaning:
           "The exchange is political arithmetic done out loud, and Mark lets you watch them do it. They weigh the crowd, arrive at the answer that costs them least, and say they do not know. He then declines to answer, which is not a dodge but what a question asked in bad faith is owed. Notice that the whole conversation is about authority, which is the word the crowd reached for in chapter one. Nobody is astonished by it any more.",
+        addr: {
+          mode: "names",
+          text: "You have worked out mid-conversation which answer would cost you least, and given that one instead of the one you hold. It is rarely a lie. It is a calculation, done fast, and it arrives feeling like prudence.",
+        },
+        ask: "Where have you answered for the room rather than for what you actually think?",
       },
     ],
   },
@@ -1649,6 +1659,11 @@ export const MARK: Reading[] = [
         },
         meaning:
           "He says she put in more than all of them, which is a statement about proportion and is true on either reading. What the sequence does not do is praise the arrangement that leaves her with nothing. And the very next thing that happens is a disciple admiring the stonework of the building she has just paid into.",
+        addr: {
+          mode: "names",
+          text: "Somebody is paying for something you benefit from, and paying a larger share of what they have than you are paying of yours. He did not praise the arrangement and he did not fix it. He sat down opposite it and watched.",
+        },
+        ask: "Who is funding something in your life at a cost you would not accept for yourself?",
       },
     ],
   },
@@ -1897,6 +1912,11 @@ export const MARK: Reading[] = [
         lenses: {
           arch: "The prayer that is not answered, prayed by someone who then goes and does the thing. (Asked three times, and got up.)",
         },
+        addr: {
+          mode: "names",
+          text: "You have asked for something to be taken away and it was not taken away. The book does not treat that as a failure of the asking, and it does not tell you what to feel about it. It records that he asked three times, and then got up.",
+        },
+        ask: "What have you asked for that has not come, and what would getting up look like?",
       },
     ],
   },
@@ -2082,6 +2102,11 @@ export const MARK: Reading[] = [
         },
         meaning:
           "The two torn things are the frame of the whole book. At the river the heavens are torn open and a voice says this is my Son, and nobody in the story hears it. At the death the curtain is torn and a Roman officer says this man was the Son of God, and he is the only human being in sixteen chapters to say it and not be told to be quiet. He says it having watched him die, which is the only vantage from which this book will let anybody see it.",
+        addr: {
+          mode: "names",
+          text: "The one person in sixteen chapters who says it plainly has no stake in the answer, and says it having watched a man die badly from close up. This book will not let anyone see it from a comfortable distance, which is worth knowing before you ask why it is not clearer.",
+        },
+        ask: "What have you only ever looked at from a safe distance?",
       },
     ],
   },

@@ -157,9 +157,10 @@ export const BOOKS: BookEntry[] = [
     capstone: RUTH_CAPSTONE,
     published: true,
   },
-  // Mark, book four, in progress, and the first New Testament book in the app. Sixteen chapters
-  // across four movements; only movement 1 is declared, and only mark-1a is authored. The book
-  // ends at 16:8. Unpublished until it is complete. See .scratch/mark/spec.md.
+  // Mark, book four, complete and published, and the first New Testament book in the app. Twenty
+  // readings across four movements, ending at 16:8; the longer ending is the subject of the book
+  // capstone rather than authored as scripture. Reads entirely under Plus, as Exodus and Ruth do.
+  // See .scratch/mark/spec.md.
   {
     id: "mark",
     title: "Mark",
@@ -176,7 +177,7 @@ export const BOOKS: BookEntry[] = [
     ],
     composition: MARK_INTRO,
     capstone: MARK_CAPSTONE,
-    published: false,
+    published: true,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

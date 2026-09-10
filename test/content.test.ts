@@ -203,18 +203,30 @@ describe("content lib", () => {
     expect(tension?.where).toContain("Exodus 34:6");
   });
 
-  it("the shelf is Genesis, Exodus and Ruth, and nothing unfinished is on it", () => {
+  it("the shelf is Genesis, Exodus, Ruth and Mark, and nothing unfinished is on it", () => {
     expect(getBook("exodus")?.capstone).toBeDefined();
     expect(getBook("ruth")?.capstone).toBeDefined();
+    expect(getBook("mark")?.capstone).toBeDefined();
     // Order matters: the landing numbers the books by their position here.
     expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual([
       "genesis",
       "exodus",
       "ruth",
+      "mark",
     ]);
-    // A book goes public only when it is finished. Mark is mid-authoring and must stay off,
-    // which is the rule that held for the whole time Exodus and Ruth were being written.
-    expect(getBook("mark")?.published).toBeFalsy();
+    // A book goes public only when it is finished: every reading a sitting, every movement with a
+    // panel, a banner and a capstone, and a book capstone. That rule held for Exodus, Ruth and
+    // Mark while each was being written.
+    for (const book of PUBLISHED_BOOKS) {
+      expect(book.heroImage, `${book.id} hero`).toBeTruthy();
+      for (const m of book.movements) {
+        expect(m.capstone, `${book.id}/${m.id} capstone`).toBeDefined();
+        expect(m.situation.image, `${book.id}/${m.id} banner`).toBeTruthy();
+      }
+    }
+    // Not asserted: that every reading is a sitting. Genesis carries 18 grounded readings on
+    // purpose, whose middles wait on the companion, and that is a tier in the schema rather than
+    // an unfinished state. Exodus, Ruth and Mark happen to be fully authored.
     // The renderer fixtures stay reachable by URL but unadvertised.
     expect(getBook("job")?.published).toBeFalsy();
   });

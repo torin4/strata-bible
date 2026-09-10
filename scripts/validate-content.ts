@@ -83,6 +83,26 @@ for (const reading of allReadings) {
     );
 }
 
+// A sitting must turn on the reader somewhere, and offer them somewhere to put the answer.
+// The four layers are history, meaning, the turn and the response; a sitting with no `addr` has
+// only two of them and reads as commentary. This is not a rule about HOW MANY turns a reading
+// carries: Genesis turns on every scene, Exodus and the books after it turn once per sitting, and
+// both are deliberate. It is a rule about zero, which has happened, silently, and which no other
+// check catches because the theme index only cares that the reading exists.
+for (const book of BOOKS) {
+  for (const reading of book.readings) {
+    if (reading.tier !== "sitting") continue;
+    if (!reading.passages.some((p) => p.addr))
+      fail(
+        `${reading.id}: a sitting with no turn (no passage carries an addr)`,
+      );
+    else if (!reading.passages.some((p) => p.ask || p.prayer))
+      fail(
+        `${reading.id}: turns on the reader but gives them no ask or prayer to answer it`,
+      );
+  }
+}
+
 // A lineated poem must be authored whole. ADR 0001 sets poetry with line breaks at the
 // parallelism while the BSB lookup stays flat, so if a poetry passage skipped a verse, the
 // reader's full-text fill would drop an unbroken line in among the broken ones, in the same
