@@ -529,4 +529,19 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For being the one everybody stopped trying to help, and for taking what you needed without permission.",
   },
+  "mark-6": {
+    themes: ["overlooked", "fear", "calling", "doubt"],
+    speaksTo:
+      "For being unhearable to the people who knew you first, and for going along with something because backing out would cost you face.",
+  },
+  "mark-7": {
+    themes: ["the-outsider", "shame", "injustice"],
+    speaksTo:
+      "For the line you keep between the people who count and the people who are an exception.",
+  },
+  "mark-8a": {
+    themes: ["doubt", "god-feels-absent", "limits"],
+    speaksTo:
+      "For having been shown a thing more than once and still starting the arithmetic from nothing.",
+  },
 };

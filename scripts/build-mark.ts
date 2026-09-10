@@ -553,6 +553,246 @@ ${verses(5, range(35, 43))}
       },
     ],
   },
+  {
+    id: "mark-6",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 6",
+    chapterIndex: 6,
+    title: "What He could not do there",
+    unitLabel: "Scene",
+    thread: "He goes home and it does not work. Then he sends the twelve out with nothing, a king kills a prophet at a birthday party, five thousand people are fed, and the men in the boat still do not understand.",
+    closeEnd: "Mark says it flatly at the end: they had not understood about the loaves, and their hearts were hardened. It is his own disciples he is describing.",
+    passages: [
+      {
+        label: "One",
+        ref: "6:1–13",
+        kind: "scene",
+        form: "prose",
+        title: "The carpenter",
+        verses: [
+${verses(6, range(1, 13))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "In his own village he is placed by his trade and by his mother, which is unusual: a man was normally named as his father's son, and the phrasing has been read both as an insult and as a sign that Joseph was dead. Then he sends the twelve out with a staff and nothing else. No bread, no bag, no money.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The people who have known him longest are the ones who cannot hear him, and the reason given is that they know exactly who he is. The carpenter. Mary's son. His sisters are right here. Familiarity is not neutral in this book; it obstructs with the same weight as opposition does. And the instructions to the twelve are about travelling light enough to be dependent, with no strategy for winning anybody over: if a place will not have you, leave, and shake its dust off your feet.",
+        tensions: [
+          {
+            claim:
+              "He could not do any miracle there, and he was amazed at their unbelief.",
+            counter:
+              "Matthew, retelling this scene from Mark, changes the sentence. He did not do many miracles there, because of their unbelief. An inability becomes a decision.",
+            where: "Mark 6:5–6 · Matthew 13:58",
+          },
+        ],
+        lenses: {
+          arch: "The prophet who cannot work at home, because home decided long ago what he is. (Known too well to be heard.)",
+        },
+      },
+      {
+        label: "Two",
+        ref: "6:14–29",
+        kind: "scene",
+        form: "prose",
+        title: "A head on a platter",
+        verses: [
+${verses(6, range(14, 29))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "This is the only story in the gospel where Jesus does not appear. It is a flashback, triggered by Herod hearing about him and concluding that John has come back. Herod here is Antipas, a client ruler rather than a king, and Mark gives him the title anyway. Josephus also records that Antipas executed John, but gives a different reason: fear of the crowd John could raise. The detail that Herod feared him, protected him and liked listening to him is Mark's own.",
+          src: "Marcus · Collins · Josephus, Antiquities 18",
+        },
+        meaning:
+          "It is placed here for a reason. Mark has just sent the twelve out to preach, and immediately shows what happens to a man who preaches. The flashback is the shape of the ending, told early, about somebody else. And Herod is the most recognisable figure in it. He is not a monster. He is a man who liked the preacher, protected him, made a stupid promise in front of guests, and could not face what taking it back would cost him in the room. He kills a man he admired because he is embarrassed.",
+        lenses: {
+          theo: "The forerunner goes ahead in this too. What happens to John at the hands of a weak ruler swayed by the people watching is a small rehearsal of chapter 15.",
+        },
+      },
+      {
+        label: "Three",
+        ref: "6:30–44",
+        kind: "scene",
+        form: "prose",
+        title: "You give them something to eat",
+        verses: [
+${verses(6, range(30, 44))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "They come back from the mission and he tries to take them somewhere quiet, and the crowd gets there first on foot. Sheep without a shepherd is a phrase out of Numbers and Ezekiel with political weight: it is what gets said about a people whose leaders have failed them. Two hundred denarii is roughly two hundred days of a labourer's wages. And they are seated in groups of hundreds and fifties, which is how Israel was ordered in the wilderness.",
+          src: "Numbers 27:17 · Ezekiel 34 · Marcus · Collins",
+        },
+        meaning:
+          "The instruction is the part that gets skipped. <b>You</b> give them something to eat. Their answer is a costing, which is reasonable and entirely beside the point, and his next question is not how much money do you have but how many loaves have you got. The scene is arranged as a wilderness scene throughout: a crowd with no leadership, food in a deserted place, people seated in ranks. Anyone who knew Exodus knew what was being echoed. Twelve baskets are left over, one for each of the men who said it could not be done.",
+        lenses: {
+          theo: "The question is not what do you need. It is what do you have. That is a smaller question, and it is the one that gets an answer.",
+        },
+      },
+      {
+        label: "Four",
+        ref: "6:45–56",
+        kind: "scene",
+        form: "prose",
+        title: "He meant to pass by them",
+        verses: [
+${verses(6, range(45, 56))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "He sends them ahead and goes up the mountain alone to pray, the second of these in the book. Verse 48 says he intended to pass by them, which reads oddly until you notice the phrase: passing by is what God does in front of Moses on the mountain and in front of Elijah at the cave. What he calls out to them, translated flatly, is I am.",
+          src: "Exodus 33:19–22 · 1 Kings 19:11 · Marcus · Collins",
+        },
+        meaning:
+          "That he meant to pass by them is not indifference. It is the vocabulary of a showing: something a person is given to see, rather than something done for them. Then the ending, which is the hardest sentence about the disciples in any gospel. They were utterly astounded, because they had not understood about the loaves, and their hearts had been hardened. Hardened is the word this book has been using for the opposition.",
+        tensions: [
+          {
+            claim:
+              "The men who handled the loaves and then watched him walk on the water are amazed and uncomprehending, and their hearts are hardened.",
+            counter:
+              "Matthew ends the same scene with the same men worshipping him in the boat and confessing him as the Son of God.",
+            where: "Mark 6:51–52 · Matthew 14:32–33",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mark-7",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 7",
+    chapterIndex: 7,
+    title: "What comes out",
+    unitLabel: "Scene",
+    thread: "An argument about washing hands turns into a claim about where defilement actually comes from. Then he leaves the country and loses an argument to a foreign woman.",
+    closeEnd: "He tells them to say nothing, and they say it more. By this point the instruction is not even slowing anyone down.",
+    passages: [
+      {
+        label: "One",
+        ref: "7:1–23",
+        kind: "scene",
+        form: "prose",
+        title: "Corban",
+        verses: [
+${verses(7, [...range(1, 15), ...range(17, 23)])}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Mark stops the story to explain ceremonial handwashing to readers who would not have known the custom, which is one of the plainest signs of who this gospel was for. Corban was a real vow formula: property declared as dedicated could not then be transferred, and the complaint is that the vow was being used to put assets beyond the reach of an obligation to parents. The numbering here jumps from 15 to 17, which is not an error. Verse 16 is absent from the earliest manuscripts, as this book's introduction explains.",
+          src: "Marcus · Collins · France",
+        },
+        misreading: {
+          named:
+            "Verse 19 abolishes the food laws, and it says so in brackets.",
+          why: "The bracket is the narrator's comment, not a line in the argument. Mark is drawing out what he takes the saying to imply for his own Gentile readers, which was exactly the live question in his community. What Jesus is answering is a question about handwashing, a tradition of the elders rather than a command in Torah. Read the scene as a ruling on diet and you lose what it actually does, which is move defilement from what happens to a person to what comes out of one. The list at the end is not about food at all.",
+        },
+        meaning:
+          "The structure is an accusation returned. They arrive with a question about tradition; he answers with Isaiah and then a worked example of a tradition that lets a man look devout while leaving his parents unsupported. And then the principle, which is far more disruptive than the argument carrying it: nothing entering a person from outside can defile them. In a world organised around contact, contamination and boundary, that sentence moves the entire problem inward. Every item on the list he gives comes from the inside.",
+      },
+      {
+        label: "Two",
+        ref: "7:24–30",
+        kind: "scene",
+        form: "prose",
+        title: "Even the dogs",
+        verses: [
+${verses(7, range(24, 30))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "He has left Jewish territory for the region of Tyre, and the woman is marked twice as an outsider, Greek and Syrophoenician. Tyre was a wealthy coastal city that drew grain from the Galilean countryside, so children's bread and dogs is not purely an abstraction; there is an economic edge under it. She is the only person in the gospel who wins an argument with him.",
+          src: "Marcus · Collins · Bond",
+        },
+        meaning:
+          "The scene is not rescued here. He calls her people dogs, in a diminutive, and the diminutive has been used to soften it for centuries. It is still what he says. She does not dispute the frame. She takes it and works inside it: even the dogs under the table get the children's crumbs. And what changes his answer is named in the text as her answer, not her faith and not her need. Because of this word, go. A Gentile woman argues a Jewish teacher out of a boundary, and Mark sets it immediately after a paragraph about what actually defiles a person.",
+        lenses: {
+          arch: "The one outside the arrangement who does not dispute its terms but uses them, and turns out to have read them more carefully than the people inside. (Arguing from under the table.)",
+        },
+      },
+      {
+        label: "Three",
+        ref: "7:31–37",
+        kind: "scene",
+        form: "prose",
+        title: "Ephphatha",
+        verses: [
+${verses(7, range(31, 37))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The route in verse 31 is geographically strange, a long way round through Gentile country, and readers have argued about it since antiquity. The healing is physical in a way the later gospels tend to trim: fingers in the ears, spit, a touch on the tongue, a sigh. The Aramaic is kept and then translated, as with talitha koum. And the crowd's verdict, he has done all things well, echoes the creation account.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "He takes the man away from the crowd first, the second time in two chapters that a healing happens out of sight of an audience. Then the sigh, which Mark gives him twice in this stretch and never explains. And the ending is the running joke going sour: the more he tells them to be quiet, the more they proclaim it. The secrecy is failing in every direction by now, and what is spreading is a reputation for wonders, which is precisely the thing that will make him impossible to explain.",
+        addr: {
+          mode: "names",
+          text: "Somewhere you keep a line between the people who count and the people who are an exception to be handled, and you would never put it in writing. The woman in this chapter had it said to her face, argued from underneath it, and won.",
+        },
+        ask: "Who are you treating as an exception rather than as one of the people who count?",
+      },
+    ],
+  },
+  {
+    id: "mark-8a",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 8:1–21",
+    chapterIndex: 8,
+    title: "Do you still not understand?",
+    unitLabel: "Scene",
+    thread: "He feeds a crowd again, refuses to produce a sign, and then asks the men in the boat the question the whole first half of the book has been building toward.",
+    closeEnd: "The movement ends on the question, and the question is not answered.",
+    passages: [
+      {
+        label: "One",
+        ref: "8:1–10",
+        kind: "scene",
+        form: "prose",
+        title: "Again",
+        verses: [
+${verses(8, range(1, 10))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "A second feeding, this time in Gentile territory, with seven loaves and seven baskets left over rather than twelve. Critics have long read the two feedings as one event reaching Mark twice through different lines of tradition. Mark has both, and in the next scene has Jesus refer to both separately, with their numbers. However the tradition got there, the book as it stands means them as two.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The disciples' question is the part worth staring at. They have done this before, with more people and less bread, and they ask where anyone would get enough bread out here. It is not stupidity. It is the ordinary way a person handles something that has already happened to them and for which they have no category: it gets filed as an incident rather than as a fact about the world. Mark is not mocking them. He is describing something the reader will recognise.",
+        lenses: {
+          arch: "The thing that already happened to you once, filed as an incident rather than as evidence. (Forgetting the last time.)",
+        },
+      },
+      {
+        label: "Two",
+        ref: "8:11–21",
+        kind: "scene",
+        form: "prose",
+        title: "Eyes, and not seeing",
+        verses: [
+${verses(8, range(11, 21))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "They ask for a sign from heaven and the refusal is flat: no sign will be given to this generation. That is worth weighing in a book already full of miracles. The works are not signs in the sense being demanded, which is a proof arriving from outside that settles the question for you. Then the remark about leaven, which they take to be about having forgotten the bread.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The interrogation at the end is the harshest speech he makes to anybody in this book, and it is aimed at his own side. Having eyes, do you not see, and having ears, do you not hear. The words are Isaiah's, out of the same passage he quoted in chapter four about those on the outside, and he has now turned it on the twelve. That is the movement's argument arriving. Being inside, having the private explanation, and having carried the baskets yourself does not produce sight.",
+        addr: {
+          mode: "names",
+          text: "You are not short of evidence. You have handled the thing yourself, more than once, and still find yourself doing the arithmetic from nothing every time, as though none of it had happened.",
+        },
+        ask: "What have you already been shown that you keep treating as though it never happened?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway: movement 2 does not exist yet, and the content validator fails a
@@ -577,6 +817,16 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
       "And it was written into a war. The window most scholars give runs either side of the Jewish revolt against Rome and the destruction of the temple in 70. Whatever else it is, it is an account of a Galilean executed by the Roman state, written for people who were watching that same state level Jerusalem.",
     ],
     sources: "Marcus · Collins · Bond · Horsley",
+  },
+  capstone: {
+    kicker: "The first movement · Mark 1:1–8:21",
+    title: "Everyone has seen it, and nobody can say what it is",
+    paragraphs: [
+      "Count who has named him correctly in eight chapters. A voice at the river. The unclean spirits, repeatedly, and every time they are told to be quiet. That is the whole list. The crowds are astonished and reach for wonder. The scribes reach for possession. His family reaches for madness. And the twelve, who have had the private explanation since chapter four, are asked at the end of the movement whether they have eyes.",
+      "The movement is built out of authority: over teaching, over spirits, over disease, over the sabbath, over a storm, over bread twice. And every exercise of it makes the question harder rather than easier, because none of it fits a category anyone has. A man who forgives sins is either God or a blasphemer, and the scribes are not wrong that those are the options.",
+      "It ends on a question and does not answer it. Do you still not understand. The people it is put to have been with him since the first chapter, have been sent out with authority of their own, and have twice picked up the baskets afterward. If proximity and evidence were going to be enough, they would have been by now.",
+    ],
+    sources: "Marcus · Collins · Bond · France",
   },
 };
 
@@ -621,6 +871,4 @@ export const MARK_INTRO: Panel = {
 `;
 
 writeFileSync("content/mark.ts", file);
-console.log(
-  "Wrote content/mark.ts: mark-1a, mark-1b, mark-2, mark-3, mark-4, mark-5.",
-);
+console.log("Wrote content/mark.ts: movement 1 complete, nine readings.");

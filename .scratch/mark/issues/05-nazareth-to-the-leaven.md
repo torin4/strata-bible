@@ -20,16 +20,46 @@ movement 2 does with the two blind men.
 
 **Blocked by:** 04 — Author Mark 3:7 to 5:43, the family, the parables and Legion.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `mark-6`, `mark-7` and `mark-8a` are sittings
-- [ ] The Nazareth sentence is given as Mark wrote it, and the later softening is named
-- [ ] The Syrophoenician exchange is left as it stands
-- [ ] Movement 1 has a capstone that closes on the unanswered question
-- [ ] Each reading has one turn, on its closing passage
-- [ ] All three are tagged in the find index in the same change
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] No passage exceeds the density target on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] `mark-6`, `mark-7` and `mark-8a` are sittings
+- [x] The Nazareth sentence is given as Mark wrote it, and the later softening is named
+- [x] The Syrophoenician exchange is left as it stands
+- [x] Movement 1 has a capstone that closes on the unanswered question
+- [x] Each reading has one turn, on its closing passage
+- [x] All three are tagged in the find index in the same change
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] No passage exceeds the density target on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Two tensions, both of them Mark against Matthew, and both about the same instinct.** Mark 6:5 says
+he could not do any miracle there; Matthew changes it to did not do many, turning an inability into
+a decision. Mark 6:52 ends the walking on the water with the disciples uncomprehending and their
+hearts hardened, using the word this book reserves for the opposition; Matthew ends the same scene
+with them worshipping and confessing him as the Son of God. Neither is argued about here. The two
+texts are set side by side and the reader can see the edit happening.
+
+**The Syrophoenician scene is not rescued.** He calls her people dogs, the diminutive has been used
+to soften it for centuries, and it is still what he says. What the reading holds instead is what she
+does with it: she does not dispute the frame, she works inside it, and the text names her answer,
+not her faith and not her need, as the thing that changes his.
+
+**Verse 16 pays off the introduction.** The numbering in Mark 7 jumps from 15 to 17, and the ground
+note says why: verse 16 is absent from the earliest manuscripts, exactly as the composition panel
+warned. The expansion fill skips a verse the lookup does not have, so the gap renders correctly with
+no special handling.
+
+**The Herod scene is the only one in the gospel without Jesus in it**, and it is placed immediately
+after the twelve are sent out to preach. The reading says what that placement is for: it is the
+shape of the ending, told early, about somebody else. And Herod is not written as a monster. He is a
+man who liked the preacher and could not afford, in front of guests, to take back a stupid promise.
+
+**The movement capstone closes on the question and does not answer it**, and does not gesture at
+what the next movement does with it. That restraint is the correction the Joseph capstone in Genesis
+had to be given.
+
+**Density** nothing over 1.4x in these three readings. Movement 1 is nine readings, 305 verses.
