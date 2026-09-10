@@ -604,4 +604,9 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For being handed something to say, and so far saying nothing to anyone.",
   },
+  "ecc-1": {
+    themes: ["limits", "doubt", "overlooked"],
+    speaksTo:
+      "For the thing you are still hoping to think your way out of, and for the fear that none of it stays.",
+  },
 };

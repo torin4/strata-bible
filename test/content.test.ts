@@ -1,4 +1,4 @@
-import { PUBLISHED_BOOKS } from "@/content";
+import { BOOKS, PUBLISHED_BOOKS } from "@/content";
 import { isFreeMovement } from "@/lib/access";
 import {
   getAdjacent,
@@ -236,6 +236,40 @@ describe("content lib", () => {
       expect(book.blurb, `${book.id} blurb`).toBeTruthy();
       expect(book.movements.length, `${book.id} movements`).toBeGreaterThan(0);
     }
+  });
+
+  it("the catalogue is no longer one passage kind, and Ecclesiastes runs in order", () => {
+    // Four books of pure `scene` made the renderer's genre claim untestable. Ecclesiastes is the
+    // first published-catalogue book to use others, so this asserts the claim rather than trusting
+    // it: a regression in a kind only one book uses would otherwise go unnoticed.
+    const kinds = new Set(
+      BOOKS.filter((b) => b.movements.length)
+        .flatMap((b) => b.readings)
+        .flatMap((r) => r.passages)
+        .map((p) => p.kind),
+    );
+    expect(kinds.has("scene")).toBe(true);
+    expect(kinds.has("poem")).toBe(true);
+    expect(kinds.has("argument")).toBe(true);
+
+    const book = getBook("ecclesiastes");
+    expect(book?.movements.map((m) => m.id)).toEqual(["under-the-sun"]);
+    expect(book?.readings.map((r) => r.id)).toEqual(["ecc-1", "ecc-2"]);
+    expect(getAdjacent("ecclesiastes", "ecc-1").next?.id).toBe("ecc-2");
+    expect(getAdjacent("ecclesiastes", "ecc-2").next).toBeUndefined();
+    for (const reading of book?.readings ?? []) {
+      expect(getMovement("ecclesiastes", reading)?.id, reading.id).toBe(
+        "under-the-sun",
+      );
+    }
+
+    // The opening poem is lineated and authored whole, per ADR 0001.
+    const poem = getReading("ecclesiastes", "ecc-1")?.passages[0];
+    expect(poem?.form).toBe("poetry");
+    expect(poem?.verses?.every((v) => v.text.includes("\n"))).toBe(true);
+    expect(poem?.verses?.map((v) => v.n)).toEqual([
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+    ]);
   });
 
   it("the free sample is still one movement of one book", () => {

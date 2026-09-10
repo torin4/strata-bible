@@ -1,3 +1,4 @@
+import { BSB_ECCLESIASTES } from "@/content/bsb-ecclesiastes";
 import { BSB_EXODUS } from "@/content/bsb-exodus";
 import { BSB_GENESIS } from "@/content/bsb-genesis";
 import { BSB_MARK } from "@/content/bsb-mark";
@@ -29,6 +30,7 @@ const BSB_BY_BOOK: Record<string, VerseLookup | undefined> = {
   exodus: BSB_EXODUS,
   ruth: BSB_RUTH,
   mark: BSB_MARK,
+  ecclesiastes: BSB_ECCLESIASTES,
 };
 
 // The BSB text for a book, or undefined when the book has no registered lookup. Exported so the

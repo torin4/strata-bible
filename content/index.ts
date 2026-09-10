@@ -1,5 +1,10 @@
 import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 import {
+  ECCLESIASTES,
+  ECCLESIASTES_INTRO,
+  UNDER_THE_SUN_MOVEMENT,
+} from "./ecclesiastes";
+import {
   EXODUS,
   EXODUS_CAPSTONE,
   EXODUS_INTRO,
@@ -178,6 +183,20 @@ export const BOOKS: BookEntry[] = [
     composition: MARK_INTRO,
     capstone: MARK_CAPSTONE,
     published: true,
+  },
+  // Ecclesiastes, book five, in progress, and the first book in the app that is not narrative.
+  // Twelve chapters across three movements; only movement 1 is declared, and only ecc-1 is
+  // authored. Unpublished until it is complete. See .scratch/ecclesiastes/spec.md.
+  {
+    id: "ecclesiastes",
+    title: "Ecclesiastes",
+    subtitle:
+      "Three movements: under the sun, what cannot be found out, eat your bread.",
+    blurb: "Everything is vapour, and you should still eat your bread.",
+    readings: ECCLESIASTES,
+    movements: [UNDER_THE_SUN_MOVEMENT],
+    composition: ECCLESIASTES_INTRO,
+    published: false,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

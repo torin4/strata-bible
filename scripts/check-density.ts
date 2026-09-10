@@ -33,7 +33,13 @@ const TOLERANCE = 0.05; // rounding slack, so a baseline of 6.4 doesn't fail at 
 // The books the gate holds: real books, whether or not they are published yet. Everything
 // else in the catalog is a one-reading genre fixture proving the renderer, not authored work,
 // and is reported for context only. Add a book id here when it starts being written.
-const HELD_BOOKS = new Set(["genesis", "exodus", "ruth", "mark"]);
+const HELD_BOOKS = new Set([
+  "genesis",
+  "exodus",
+  "ruth",
+  "mark",
+  "ecclesiastes",
+]);
 const UPDATE = process.argv.includes("--update-baseline");
 const BASELINE_PATH = fileURLToPath(
   new URL("./density-baseline.json", import.meta.url),
