@@ -544,4 +544,24 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For having been shown a thing more than once and still starting the arithmetic from nothing.",
   },
+  "mark-8b": {
+    themes: ["doubt", "shame", "calling", "fear"],
+    speaksTo:
+      "For getting the answer right and the meaning wrong, and for what you would still be seen doing if it cost you.",
+  },
+  "mark-9": {
+    themes: ["doubt", "powerlessness", "ambition", "limits"],
+    speaksTo:
+      "For saying the true thing rather than the confident thing, and not being corrected for it.",
+  },
+  "mark-10a": {
+    themes: ["control", "fear-of-loss", "ambition", "overlooked"],
+    speaksTo:
+      "For the one thing your life is arranged around that you would rather was left out of the question.",
+  },
+  "mark-10b": {
+    themes: ["ambition", "deferred-hope", "powerlessness", "the-outsider"],
+    speaksTo:
+      "For the thing you stopped asking for out loud because people around you were embarrassed by it.",
+  },
 };

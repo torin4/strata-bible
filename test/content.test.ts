@@ -430,7 +430,10 @@ describe("content lib", () => {
     // until they have readings. mark-2 spans a chapter boundary, so adjacency has to follow
     // authored order rather than chapter arithmetic.
     const book = getBook("mark");
-    expect(book?.movements.map((m) => m.id)).toEqual(["the-authority"]);
+    expect(book?.movements.map((m) => m.id)).toEqual([
+      "the-authority",
+      "the-way",
+    ]);
     expect(book?.readings.map((r) => r.id)).toEqual([
       "mark-1a",
       "mark-1b",
@@ -441,6 +444,10 @@ describe("content lib", () => {
       "mark-6",
       "mark-7",
       "mark-8a",
+      "mark-8b",
+      "mark-9",
+      "mark-10a",
+      "mark-10b",
     ]);
     expect(getReading("mark", "mark-1a")?.span).toBe("Mark 1:1\u201320");
     expect(getAdjacent("mark", "mark-1a").prev).toBeUndefined();
@@ -448,11 +455,20 @@ describe("content lib", () => {
     expect(getAdjacent("mark", "mark-2").prev?.id).toBe("mark-1b");
     expect(getAdjacent("mark", "mark-2").next?.id).toBe("mark-3");
     expect(getAdjacent("mark", "mark-5").next?.id).toBe("mark-6");
-    expect(getAdjacent("mark", "mark-8a").next).toBeUndefined();
+    expect(getAdjacent("mark", "mark-8a").next?.id).toBe("mark-8b");
+    expect(getAdjacent("mark", "mark-10b").next).toBeUndefined();
+    // The chapter-8 seam: mark-8b sits in chapter 8, which movement 1 declares, and takes an
+    // explicit movementId to file under the way. It is the only override in the book and it
+    // fails silently if it is wrong.
+    const seam = book?.readings.find((r) => r.id === "mark-8b");
+    expect(seam?.chapterIndex).toBe(8);
+    expect(seam?.movementId).toBe("the-way");
+    expect(seam && getMovement("mark", seam)?.id).toBe("the-way");
+    expect(getMovement("mark", book?.readings[8] as never)?.id).toBe(
+      "the-authority",
+    );
     for (const reading of book?.readings ?? []) {
-      expect(getMovement("mark", reading)?.id, reading.id).toBe(
-        "the-authority",
-      );
+      expect(getMovement("mark", reading), reading.id).toBeDefined();
     }
   });
 });

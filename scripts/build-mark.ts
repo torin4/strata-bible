@@ -793,6 +793,292 @@ ${verses(8, range(11, 21))}
       },
     ],
   },
+  {
+    id: "mark-8b",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 8:22–38",
+    chapterIndex: 8,
+    movementId: "the-way",
+    title: "Trees walking",
+    unitLabel: "Scene",
+    thread: "A blind man sees people as trees walking and needs a second touch. Four verses later Peter names him correctly and is called Satan for what he says next. The movement opens on partial sight.",
+    closeEnd: "Then the sentence that has been softened harder than anything else in the book, and the crowd is called over to hear it.",
+    passages: [
+      {
+        label: "One",
+        ref: "8:22–26",
+        kind: "scene",
+        form: "prose",
+        title: "Trees walking",
+        verses: [
+${verses(8, range(22, 26))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The only healing in the gospels that takes two attempts. He leads the man out of the village first, uses spit and his hands, and then asks him what he can see. The answer is that people look like trees walking. He puts his hands on him again and the man sees clearly. Then he is sent home rather than back into the village.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "Whether Mark had this as reportage or as construction, its position does the work. Four verses later Peter names him correctly, and then in the same conversation is called Satan for what he does with the name. Partial sight is not blindness and it is not sight. It is the state nearly everyone in this book is in, including the ones who have the answer right.",
+      },
+      {
+        label: "Two",
+        ref: "8:27–33",
+        kind: "scene",
+        form: "prose",
+        title: "You are the Christ",
+        verses: [
+${verses(8, range(27, 33))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Caesarea Philippi is Gentile territory in the far north, about as far from Jerusalem as this story travels, and the question is asked there rather than at home. Peter's answer is correct, and it is the first time a human being in this book says it. He is immediately told to say nothing about it, which is the secrecy pattern arriving at the least expected moment.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The order matters. Peter gets it right, then comes the first plain statement of what is coming, then Peter takes him aside and rebukes him, and the verb Mark uses is the one used for silencing spirits. The reply is the harshest sentence anyone in the gospel receives, and it goes to the man who just answered correctly. Notice what is condemned. Not a wrong answer about who he is, but a wrong idea of what that means. Peter has the title right and the job description wrong, and the book treats that as more dangerous than not knowing.",
+      },
+      {
+        label: "Three",
+        ref: "8:34–38",
+        kind: "scene",
+        form: "prose",
+        title: "Take up your cross",
+        verses: [
+${verses(8, range(34, 38))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "He calls the crowd over, so this is not said privately to the twelve. It is said to anybody listening.",
+          src: "Marcus · Collins · Bond",
+        },
+        misreading: {
+          named:
+            "Taking up your cross means bearing a hardship: a difficult marriage, a chronic illness, a burden you did not choose.",
+          why: "The people hearing it had watched it done. It was a specific method of public execution used by an occupying power, and the condemned carried the beam to the site through a crowd on purpose. What it names is not an affliction that happens to you. It is a decision, taken in public, that everyone watching understands to be the end of you. Softened into hardship it becomes a consolation. As spoken it is a warning.",
+        },
+        meaning:
+          "The arithmetic in verse 35 only works if the terms are meant. Saving your life is the thing that loses it. And what is put at stake is being ashamed of him and of his words, which is public rather than private.",
+        addr: {
+          mode: "claims",
+          text: "This one is not describing you. It is asking something of you, and it was said to a crowd rather than to professionals. The question is not what you believe but what you would still be seen doing.",
+        },
+        ask: "What would you stop doing tomorrow if the people whose opinion you value found out?",
+      },
+    ],
+  },
+  {
+    id: "mark-9",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 9",
+    chapterIndex: 9,
+    title: "Listen to Him",
+    unitLabel: "Scene",
+    thread: "Three of them see him lit up on a mountain and are told to listen to him. Then they come down, cannot help a boy, argue about rank, and are told what to do with a hand that keeps offending.",
+    closeEnd: "Two verse numbers in this chapter are empty, and the introduction to this book explains why.",
+    passages: [
+      {
+        label: "One",
+        ref: "9:1–13",
+        kind: "scene",
+        form: "prose",
+        title: "Listen to Him",
+        verses: [
+${verses(9, range(1, 13))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Six days later, three of them, a high mountain: the furniture of Sinai, where Moses went up with named companions and the cloud covered the mountain for six days. Moses and Elijah are the two figures in the tradition who did not have ordinary endings. Peter's offer of three shelters is the vocabulary of the Feast of Tabernacles, and Mark notes that he did not know what to say. The voice repeats what was said at the river and adds one instruction.",
+          src: "Exodus 24:15–18 · Marcus · Collins",
+        },
+        meaning:
+          "The addition is the whole point. At the river the voice spoke to him. Here it speaks to them, and what it says is not look at him but <b>listen to him</b>, six verses after he told them what was coming and Peter refused to have it. Then the descent, where they argue about what rising from the dead could possibly mean. That is the ordinary state of this book. They have had a vision, and it has not made them able to hear a sentence.",
+        lenses: {
+          theo: "The mountain settles nothing. It confirms who he is to three men who already had the answer, and then tells them to listen to the part they cannot accept.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "9:14–29",
+        kind: "scene",
+        form: "prose",
+        title: "Help my unbelief",
+        verses: [
+${verses(9, range(14, 29))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "They come down into an argument. The nine who stayed behind have failed at something they were given authority to do in chapter six. The father's description of the boy is clinical and Mark keeps every detail of it. And his request is hedged in a way nobody else's is: if you can do anything, have compassion and help us.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "Verse 24 is the most useful sentence in the gospel for anyone who has tried to believe something on purpose. The father does not resolve his doubt and is never asked to. He says both halves in one breath, I believe, help my unbelief, and that is the condition on which it happens. And note what the disciples are told afterward in private: this kind comes out only by prayer. They had done it before. Having been able to once is not the same as being able.",
+        lenses: {
+          arch: "The father who says the true thing rather than the confident thing, and is not corrected for it. (Both halves, out loud.)",
+        },
+      },
+      {
+        label: "Three",
+        ref: "9:30–37",
+        kind: "scene",
+        form: "prose",
+        title: "Who was the greatest",
+        verses: [
+${verses(9, range(30, 37))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The second passion prediction, given privately, and Mark says they did not understand it and were afraid to ask. Then the argument on the road, which they will not admit to when he asks about it. The child he sets among them is not a picture of innocence. In that world a child had no standing, no legal weight, and no capacity to advance anybody's position.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The sequence is the point, and it runs three times in this movement. He says what is coming, they answer with a status question, and he replies with a reversal. Here the reversal is embodied: he puts his arms around somebody with nothing to offer, and says that welcoming that person is welcoming him. No advice about ambition is attached. There is only a demonstration of who you would have to start noticing.",
+      },
+      {
+        label: "Four",
+        ref: "9:38–50",
+        kind: "scene",
+        form: "prose",
+        title: "Cut it off",
+        verses: [
+${verses(9, [...range(38, 43), 45, ...range(47, 50)])}
+        ],
+        ground: {
+          kind: "historical",
+          text: "John's complaint is that somebody outside the group is doing the work, and the answer is the widest sentence in the book: whoever is not against us is for us. Then the millstone, and the sayings about hand, foot and eye. Two verse numbers here, 44 and 46, are empty. They repeat a line from Isaiah about the worm and the fire and are absent from the earliest manuscripts, which is why the numbering jumps twice.",
+          src: "Isaiah 66:24 · Marcus · Collins",
+        },
+        meaning:
+          "These sayings have done real damage read as instructions, and they are not instructions. They are hyperbole of a kind the tradition used freely, and nobody in the movement is recorded acting on them. What they do is put a price on the people the previous scene said had no standing. Better to go maimed than to trip up one of these little ones, and the little ones are exactly who the disciples have just been arguing about ranking above.",
+        lenses: {
+          arch: "The rule you would enforce on an outsider, applied first to your own hand. (Starting the cutting at home.)",
+        },
+        addr: {
+          mode: "claims",
+          text: "You keep a list of people you would apply a standard to, and it does not start with you. The sequence here runs the other way. The outsider doing good work is left alone, and the cutting begins at your own hand.",
+        },
+        ask: "Which standard are you enforcing outward that you have never once turned around?",
+      },
+    ],
+  },
+  {
+    id: "mark-10a",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 10:1–31",
+    chapterIndex: 10,
+    title: "One thing you lack",
+    unitLabel: "Scene",
+    thread: "Divorce, children, and a man who has kept every commandment since he was young. The chapter is about what people are holding on to, and who gets counted.",
+    closeEnd: "The last will be first. It is said to men who have just been promised that everything they gave up comes back, with persecutions.",
+    passages: [
+      {
+        label: "One",
+        ref: "10:1–16",
+        kind: "scene",
+        form: "prose",
+        title: "What God has joined",
+        verses: [
+${verses(10, range(1, 16))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The question is a test, and it lands in a live dispute: one school allowed divorce on wide grounds and another on narrow ones, and either way it was a right men had and women largely did not. He answers by going behind Moses to Genesis. Then verse 12 extends the ruling to a woman divorcing her husband, which was not possible in Jewish law and was in Roman law, which tells you something about who Mark is writing for.",
+          src: "Deuteronomy 24:1–4 · Genesis 1–2 · Marcus · Collins",
+        },
+        meaning:
+          "It is worth being clear about what is being protected. In a system where a man could dismiss a wife and leave her with no standing and no income, a hard line on divorce is not first of all a rule about marriage. It is a limit on the power of the person holding all of it. Then the children, immediately after, and the disciples turning them away, and the second reversal in two chapters: the kingdom is received the way somebody with no standing receives things, which is the only way they can.",
+      },
+      {
+        label: "Two",
+        ref: "10:17–31",
+        kind: "scene",
+        form: "prose",
+        title: "One thing you lack",
+        verses: [
+${verses(10, range(17, 31))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The man runs and kneels, which is not how anyone approached a teacher, and his opening is flattering. The reply is the strangest line in the exchange: why do you call me good, no one is good but God alone. The commandments he lists are the ones about other people, and he adds one that is not among the ten: do not defraud. And Mark alone reports that Jesus looked at him and loved him.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "This is the only person in the gospel called to follow who does not, and Mark makes him as sympathetic as possible. He is sincere, he has kept them, and he is loved. What he is asked for is not moral improvement. It is the removal of the thing his life is built on. The disciples' reaction shows how unexpected that was, because wealth was widely read as evidence of God's favour, which is why the question that follows is who then can be saved. The answer is nobody, and that this is not the relevant question. The camel is not a gate.",
+        lenses: {
+          theo: "He looked at him and loved him, and then asked for the one thing he would not give, and let him walk away without going after him. The love and the letting go are in the same sentence.",
+        },
+        addr: {
+          mode: "claims",
+          text: "There is one thing your life is arranged around, and you would call it a responsibility rather than a possession. He did not ask the man to hold it more lightly. He asked him to get rid of it, and then let him go.",
+        },
+        ask: "What is the one thing you would want left out of the question?",
+      },
+    ],
+  },
+  {
+    id: "mark-10b",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 10:32–52",
+    chapterIndex: 10,
+    title: "On the road",
+    unitLabel: "Scene",
+    thread: "The third and most detailed statement of what is coming, answered with a request for the best seats. Then a blind beggar who will not be quiet.",
+    closeEnd: "He throws off his cloak, which for a beggar is the thing he sits on and collects in, and follows him up the road.",
+    passages: [
+      {
+        label: "One",
+        ref: "10:32–45",
+        kind: "scene",
+        form: "prose",
+        title: "Grant that we may sit",
+        verses: [
+${verses(10, range(32, 45))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Verse 32 is one of the most vivid sentences in the gospel: they are going up to Jerusalem, he is walking ahead of them, they are amazed, and those following are afraid. The third prediction is the most detailed of the three, naming the mocking, the spitting and the flogging.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "Three times now: he says what is coming, and they answer with position. The reply does not scold them for ambition. It changes the currency. The cup, the baptism, and then a flat comparison with how authority works everywhere else, where the great exercise it over people. Not so among you. And the last verse is the only place in this gospel where he says what the death is for, in one clause, with no theory attached.",
+        tensions: [
+          {
+            claim:
+              "James and John come to him themselves and ask for the seats at his right and left in his glory.",
+            counter:
+              "Matthew, retelling the same scene, hands the request to their mother and leaves the two of them standing there.",
+            where: "Mark 10:35–37 · Matthew 20:20–21",
+          },
+        ],
+      },
+      {
+        label: "Two",
+        ref: "10:46–52",
+        kind: "scene",
+        form: "prose",
+        title: "What do you want Me to do for you?",
+        verses: [
+${verses(10, range(46, 52))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Jericho is the last stop before the climb to Jerusalem. Bartimaeus is named, which is rare for someone healed, and he calls him son of David, the first time anyone in the book uses a title like that in public and is not silenced for it. The crowd tells him to be quiet and he shouts louder. The cloak he throws off is a beggar's working equipment, the thing he spreads out to collect on.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The question he is asked is word for word the question James and John were asked eleven verses earlier. What do you want me to do for you. They asked for thrones. He asks to see. And this is the only healing in the gospel where the person healed is last seen following on the road, which is the word this whole movement has been built on. It opened with a blind man who needed two touches and was sent home. It closes with one who sees, and goes up the road.",
+        addr: {
+          mode: "names",
+          text: "You have probably been told, by people who meant well, that the thing you keep asking for is not worth making a scene about. He shouted louder, and the man who mattered stopped walking.",
+        },
+        ask: "What have you gone quiet about because the people around you were embarrassed by it?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway: movement 2 does not exist yet, and the content validator fails a
@@ -818,6 +1104,15 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
     ],
     sources: "Marcus · Collins · Bond · Horsley",
   },
+  doorway: {
+    kicker: "The second movement",
+    title: "The way",
+    paragraphs: [
+      "Eight chapters of authority end in a question nobody in the boat can answer. What follows does not answer it either, exactly. It changes it.",
+      "From here the book has a direction and a destination, and he begins saying out loud what is waiting at the end of the road. Three times. And three times the men walking with him hear something else entirely, because what he is describing is not what any of them came for.",
+    ],
+    nextMovementId: "the-way",
+  },
   capstone: {
     kicker: "The first movement · Mark 1:1–8:21",
     title: "Everyone has seen it, and nobody can say what it is",
@@ -827,6 +1122,28 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
       "It ends on a question and does not answer it. Do you still not understand. The people it is put to have been with him since the first chapter, have been sent out with authority of their own, and have twice picked up the baskets afterward. If proximity and evidence were going to be enough, they would have been by now.",
     ],
     sources: "Marcus · Collins · Bond · France",
+  },
+};
+
+export const THE_WAY_MOVEMENT: Movement = {
+  id: "the-way",
+  index: 2,
+  title: "The way",
+  range: "Mark 8:22–10:52",
+  throughline:
+    "Between two blind men who are given their sight, he says three times what is coming, and three times the people closest to him hear something else. The book stops asking who he is and starts asking what following him costs.",
+  chapterStart: 9,
+  chapterEnd: 10,
+  situation: {
+    kicker: "The ground beneath the way",
+    title: "The situation",
+    paragraphs: [
+      "This stretch is bracketed by the only two blind men in the gospel. At Bethsaida, where the healing takes two attempts, and at Jericho, where a man throws off his cloak and follows on the road. Between them, three times, he says plainly what is going to happen to him, and three times the people closest to him hear something else: Peter rebukes him, they argue about who is greatest, and James and John ask for the best seats. Each misunderstanding is followed by teaching about what following actually costs. That is the construction, and most readers have never been shown it.",
+      "The road is literal as well as thematic. From Caesarea Philippi in the far north to Jericho is most of the length of the country, and the final stretch climbs from below sea level to around seven hundred and fifty metres. Mark says they were going up to Jerusalem and that he was walking ahead of them, and every reader knew what was waiting at the top.",
+      "Son of Man is the title he uses of himself here, and it settles nothing. It can mean simply a human being, and it is also the figure in Daniel 7 who is given dominion. Mark has him use it of the one with authority to forgive sins and of the one who will be handed over and killed, and never explains the gap between them.",
+      "The two-stage healing at Bethsaida is the only one in the gospels that takes more than one attempt, and it opens the movement. Whether that is medical realism or literary construction is worth deciding for yourself. The man who sees people as trees walking, and then sees clearly, sits four verses before Peter half-sees who Jesus is and is rebuked for the other half.",
+    ],
+    sources: "Marcus · Collins · France · Bond",
   },
 };
 

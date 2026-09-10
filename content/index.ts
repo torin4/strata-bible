@@ -17,7 +17,12 @@ import {
   JOSEPH_MOVEMENT,
   PRIMEVAL_MOVEMENT,
 } from "./genesis";
-import { MARK, MARK_INTRO, THE_AUTHORITY_MOVEMENT } from "./mark";
+import {
+  MARK,
+  MARK_INTRO,
+  THE_AUTHORITY_MOVEMENT,
+  THE_WAY_MOVEMENT,
+} from "./mark";
 import {
   EMPTY_MOVEMENT,
   RUTH,
@@ -159,7 +164,7 @@ export const BOOKS: BookEntry[] = [
       "Four movements: the authority, the way, the temple, handed over.",
     blurb: "The earliest gospel, and the one that stops mid-sentence.",
     readings: MARK,
-    movements: [THE_AUTHORITY_MOVEMENT],
+    movements: [THE_AUTHORITY_MOVEMENT, THE_WAY_MOVEMENT],
     composition: MARK_INTRO,
     published: false,
   },
