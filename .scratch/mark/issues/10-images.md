@@ -15,12 +15,12 @@ set.
 
 **Blocked by:** nothing for generation. Wiring for three of the five is blocked by 06, 07 and 08.
 
-**Status:** needs-info
+**Status:** done
 
 - [x] Prompts written for all five slots, each self-contained
 - [x] Dimensions and encode settings recorded, matching the Exodus compression pass
 - [x] The five files exist in `public/images/`
-- [ ] `heroImage` is set on the Mark book entry
+- [x] `heroImage` is set on the Mark book entry
 - [x] Each declared movement's situation panel carries an `image`
 - [x] Wired via the generator, not by hand-editing the content file
 - [x] Typecheck, lint, tests, content validation and the build all pass
@@ -39,7 +39,26 @@ until then. The temple one is worth flagging as the best image in either book: t
 a wall under an olive tree, looking across the valley at a building one of them has just said will
 be pulled down. That is Mark 13:3 exactly.
 
-`mark-intro.webp` has the same triptych defect as the Ruth hero, four ruled panels rather than a
-continuous panorama, from the same "in four parts" phrasing. Held pending a re-run or a decision.
+`mark-intro.webp` came back as four ruled panels rather than a continuous panorama, from the same
+"in four parts" phrasing that produced Ruth's triptych. It was held, and then checked properly
+rather than assumed, and it survives its container: see the second comment below. Wired as the
+book hero. All five images are in use.
 
 **Compressed** with the rest of the set at quality 92, 45.7 to 46.8 dB PSNR.
+
+## Comments, second pass
+
+**The hero was held on a verdict borrowed from Ruth rather than measured here, and that was wrong.**
+
+Ruth's triptych failed its container for concrete reasons: the crop centred on a washed-out pastel
+panel, sliced the two figures in half at the left edge, and cropped the threshing floor out. None of
+those apply to this image. Measured properly:
+
+- The container is `aspect-[688/384]` with `max-h-[400px]`, so it is not one aspect ratio. At phone
+  width the box is 1.79:1 and the crop shows x=236 to 1289 of 1526: nets, a boat, the road climbing,
+  and the walled city with the temple platform. Coherent, and no pastel anywhere.
+- At desktop width the 400px cap makes the box roughly 3.5:1 against a 2.60:1 source, so it crops
+  vertically instead and the full width shows, including the tomb with the stone rolled back.
+
+The ruled panels read as a deliberate polyptych at hero size rather than as a broken photograph.
+Wired as `heroImage`. No re-run needed, and all five Mark images are now in use.

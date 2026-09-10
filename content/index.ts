@@ -166,6 +166,7 @@ export const BOOKS: BookEntry[] = [
     subtitle:
       "Four movements: the authority, the way, the temple, handed over.",
     blurb: "The earliest gospel, and the one that stops mid-sentence.",
+    heroImage: "/images/mark-intro.webp",
     readings: MARK,
     movements: [
       THE_AUTHORITY_MOVEMENT,
