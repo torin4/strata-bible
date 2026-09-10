@@ -504,4 +504,14 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the new thing that is not the old thing returned, and for work whose point you may never get to see.",
   },
+  "mark-1b": {
+    themes: ["shame", "the-outsider", "limits"],
+    speaksTo:
+      "For the thing about you that you long ago decided you deserved, and stopped asking about.",
+  },
+  "mark-2": {
+    themes: ["shame", "the-outsider", "injustice", "limits"],
+    speaksTo:
+      "For being the person at the table nobody approves of, and for a rule enforced on you by someone who has stopped asking what it is for.",
+  },
 };

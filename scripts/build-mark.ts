@@ -1,10 +1,13 @@
-// Build content/mark.ts: the book file, movement 1, and the first two readings.
+// Build content/mark.ts: the book file, movement 1, and the readings authored so far.
 //
-// Mark 1:1–20 is authored as a sitting in three scenes. Mark 1:21–45 lands as a grounded skeleton.
+// One generator for the book, emitting the file whole, for the reason recorded in build-ruth.ts:
+// flipping a grounded skeleton to a sitting is a replacement, and placeReading refuses an id that
+// is already present. Later tickets that add readings which never existed as skeletons may place
+// them instead.
 // Four movements follow the book's architecture rather than its chapter numbers, and only the
 // first is declared until movement 2 has readings (see .scratch/mark/spec.md).
 //
-// Usage: npx tsx scripts/build-mark-beginning.ts
+// Usage: npx tsx scripts/build-mark.ts
 import { writeFileSync } from "node:fs";
 import { BSB_MARK } from "@/content/bsb-mark";
 
@@ -18,6 +21,9 @@ const verses = (chapter: number, ns: number[], indent = "          ") =>
       return `${indent}{ n: ${n}, text: ${q(text)} },`;
     })
     .join("\n");
+
+const range = (a: number, b: number) =>
+  Array.from({ length: b - a + 1 }, (_, i) => a + i);
 
 const file = `import type { Movement, Panel, Reading } from "@/lib/types";
 
@@ -131,24 +137,182 @@ ${verses(1, [14, 15, 16, 17, 18, 19, 20])}
   {
     id: "mark-1b",
     bookId: "mark",
-    tier: "grounded",
+    tier: "sitting",
     span: "Mark 1:21–45",
     chapterIndex: 1,
     title: "A day in Capernaum",
+    unitLabel: "Scene",
+    thread: "One day, told without a gap in it. A synagogue, a house, the whole town at the door after dark, and a man before dawn trying to get out of the building he has just filled.",
+    closeEnd: "He tells the man to say nothing. The man says everything, and the result is that Jesus can no longer walk into a town.",
     passages: [
       {
-        ref: "1:21–45",
+        label: "One",
+        ref: "1:21–28",
         kind: "scene",
         form: "prose",
-        title: "One day, and the leper",
+        title: "Authority",
         verses: [
-${verses(1, [21, 22, 23, 25, 27, 29, 30, 31, 32, 34, 35, 37, 38, 40, 41, 44, 45])}
+${verses(1, range(21, 28))}
         ],
         ground: {
           kind: "historical",
-          text: "One day, told as a single sequence. He teaches in the synagogue and the crowd notices that he speaks as though the authority is his own rather than borrowed from a teacher. An unclean spirit names him and is silenced, which begins a pattern that runs the length of the book. He heals in a house, and after sundown, when the sabbath has ended, the whole town is at the door. Before dawn he goes out alone, and when they find him he says they are going somewhere else. Then a leper, and the detail that matters is that he touched him. Under the purity laws the contact was supposed to run the other way.",
+          text: "A scribe taught by citing the chain of authorities behind him, and the crowd's word for this man is that he does not. The unclean spirit speaks before anyone else does, names him, and is told to be quiet. That silencing starts a pattern that runs the length of the book.",
           src: "Marcus · Collins · France",
         },
+        misreading: {
+          named:
+            "The unclean spirits are either literal demons, or primitive superstition a modern reader should quietly skip past.",
+          why: "Both readings stop the book. In this world, illness, madness and misfortune were understood as something having taken up residence where it did not belong, and people described what they saw in the vocabulary they had. You do not have to adopt that vocabulary to read the scene, which is a man screaming in a synagogue who is afterwards sitting quietly. It is also worth noticing how close that vocabulary runs to the language of occupation, in a book written for people whose country had something in it that did not belong.",
+        },
+        meaning:
+          "Two things happen here and only one of them is a miracle. The crowd says <b>authority</b> twice, and what they mean is that he is not quoting anybody. And the first character in the book to say who he is, is the thing being thrown out. Not the crowd, not the scribes, not the men who just left their nets. The book keeps that arrangement for fifteen chapters.",
+        lenses: {
+          arch: "The one who names you correctly turns out to be the one you are in the middle of getting rid of. (Recognised by the wrong mouth.)",
+        },
+      },
+      {
+        label: "Two",
+        ref: "1:29–39",
+        kind: "scene",
+        form: "prose",
+        title: "The whole town at the door",
+        verses: [
+${verses(1, range(29, 39))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The house is Simon's, and the fever is dealt with in one sentence: he takes her hand and lifts her. The town waits until after sunset because that is when the sabbath ends and carrying a sick person stops being work. Then before dawn he goes out to a deserted place, and the word Mark uses for it is the same one he used for the wilderness John was preaching in.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The pace is the argument. Synagogue, house, whole town at the door, and then a man getting up in the dark to be somewhere nobody is. When they find him, notice that Simon's sentence is a complaint dressed as news: everyone is looking for you. The answer is not to go back. It is to leave. Whatever this book thinks he came for, being wanted by a town is not it.",
+        lenses: {
+          theo: "The first thing he does after a day that worked is remove himself from it. Mark keeps putting him alone after a success, and every time, somebody comes to fetch him back.",
+        },
+      },
+      {
+        label: "Three",
+        ref: "1:40–45",
+        kind: "scene",
+        form: "prose",
+        title: "If You are willing",
+        verses: [
+${verses(1, range(40, 45))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Leprosy in Leviticus is a category of ritual impurity rather than one disease, and its consequence is exclusion: the person lives outside the camp, and contact passes the state on. Which is what makes verse 41 the sentence in the scene. He touched him. Under the law the uncleanness travels toward the clean person, not the other way. Then he sends him to a priest, because only a priest can certify that anything has changed.",
+          src: "Leviticus 13–14 · Marcus · Collins",
+        },
+        meaning:
+          "The man's line is not about ability. It is about willingness. He has been told, or has worked out for himself, that his condition is a verdict, and the only open question is whether anyone wants it lifted. The answer is two words and a hand. Then the joke Mark keeps making: the man is told to say nothing, says everything, and by the end the one who could not enter a town can go anywhere, and the one who could go anywhere cannot enter a town. They have changed places.",
+        addr: {
+          mode: "names",
+          text: "You have probably decided somewhere that a thing about you is not only true but deserved, and stopped asking about it on those grounds. The man in this scene does not doubt the power. He doubts the willingness.",
+        },
+        ask: "What have you stopped asking for, because somewhere you decided you had it coming?",
+      },
+    ],
+  },
+  {
+    id: "mark-2",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 2:1–3:6",
+    chapterIndex: 2,
+    crossesChapters: true,
+    title: "Five arguments",
+    unitLabel: "Scene",
+    thread: "Five arguments in a row, each closer to the bone than the last. At the end of the fifth, two groups who agree about nothing else agree that he has to die. Mark gets there by chapter three.",
+    closeEnd: "The Pharisees and the Herodians go out together. It is the only thing in the book they ever do together.",
+    passages: [
+      {
+        label: "One",
+        ref: "2:1–12",
+        kind: "scene",
+        form: "prose",
+        title: "Through the roof",
+        verses: [
+${verses(2, range(1, 12))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "A village house had a flat roof of beams, brush and packed mud, reached by an outside stair and diggable by hand. Four men do real damage to somebody's house. What Jesus answers is <b>their</b> faith, plural, which in the sentence is the faith of the carriers rather than the man on the mat. And the blasphemy charge is not invented: forgiveness was God's to give, and the scribes are stating the ordinary position correctly.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "He is asked for nothing and gives something nobody requested. The man was brought for his legs. Then the argument, and notice its shape: he does not defend the claim, he demonstrates it, and he does it by proving the easier case. Anyone can say your sins are forgiven, because nobody can check. So he does the one that can be checked. The scribes are not being slow here. They have understood him exactly, which is why the temperature keeps rising for the rest of the chapter.",
+        lenses: {
+          theo: "Forgiveness arrives before the request and with no condition attached, and the first people to object are the ones who care most about God's prerogatives. Both halves of that recur.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "2:13–22",
+        kind: "scene",
+        form: "prose",
+        title: "Eating with them",
+        verses: [
+${verses(2, range(13, 22))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "A booth on the road by the lake collected tolls for Herod Antipas, and the locals who staffed them worked for the occupation's revenue. That is why the word arrives paired with sinners, and why nobody at that table has a reputation left to lose. Eating together was not a social nicety in that world. It was the public statement of who you counted as your own.",
+          src: "Marcus · Bond · Horsley",
+        },
+        meaning:
+          "The complaint is not about doctrine, it is about the guest list, which is where most complaints of this kind actually live. His answer is a doctor's, and it sounds generous until you notice that it concedes their category rather than disputing it. He is not saying these people are fine. He is saying that is where the work is. Then the images pile up and they are all about strain: a patch that tears the coat worse than the hole did, wine that splits the skin holding it. The problem is not the wine.",
+        lenses: {
+          arch: "The table as the actual statement, whatever is said anywhere else. (Known by who you eat with.)",
+        },
+      },
+      {
+        label: "Three",
+        ref: "2:23–28",
+        kind: "scene",
+        form: "prose",
+        title: "Made for man",
+        verses: [
+${verses(2, range(23, 28))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Picking grain by hand as you walked through a field was legal. The objection is that doing it on the sabbath turns it into harvesting. The story he cites is in 1 Samuel 21, and the priest there is Ahimelech, not Abiathar. Readers have noticed since antiquity, and both Matthew and Luke quietly drop the name when they retell it.",
+          src: "1 Samuel 21:1–6 · Marcus · Collins",
+        },
+        meaning:
+          "The principle is stated as flatly as anything in the book. The sabbath was made for the person, not the person for the sabbath. It is not an argument against the sabbath, which he keeps. It is an argument about what any rule is for, and it is the kind of sentence that sounds obvious right up until you apply it to a rule you are currently enforcing on somebody else.",
+        tensions: [
+          {
+            claim:
+              "The sabbath command is absolute. It is grounded in the creation account, and the law attaches death to profaning it.",
+            counter:
+              "Here it is made subordinate to the person it was given for, and the case is settled by appeal to a story in which the rule was broken and the man who broke it was David.",
+            where: "Exodus 20:8–11 · Exodus 31:14–15 · 1 Samuel 21:1–6",
+          },
+        ],
+      },
+      {
+        label: "Four",
+        ref: "3:1–6",
+        kind: "scene",
+        form: "prose",
+        title: "The withered hand",
+        verses: [
+${verses(3, range(1, 6))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "They are watching to see whether he will heal, which means they already take it for granted that he can. A withered hand is not an emergency. The man could be treated tomorrow at no cost to anyone, and everyone in the room knows it, which is what makes the question a trap and the answer a decision. This is also the one place in the four gospels where the narrator says outright that he was angry, and Matthew and Luke both remove it.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "He does not need to do this today, and he does it in the middle of the room, having first made the man stand up where everyone can see him. The question he asks has no safe answer, and they give none. Then the sentence that closes the sequence: two groups who agree about nothing, the Pharisees and the Herodians, go out together and start planning how to kill him. Over a hand.",
+        addr: {
+          mode: "names",
+          text: "The decision to do the decent thing on the inconvenient day is rarely about the decent thing. It is about whether you are willing to be seen deciding. He made the man stand up first.",
+        },
+        ask: "What are you waiting for a better day to do, and who is that timing actually for?",
       },
     ],
   },
@@ -220,4 +384,4 @@ export const MARK_INTRO: Panel = {
 `;
 
 writeFileSync("content/mark.ts", file);
-console.log("Wrote content/mark.ts: mark-1a (3 scenes), mark-1b (grounded).");
+console.log("Wrote content/mark.ts: mark-1a, mark-1b, mark-2.");

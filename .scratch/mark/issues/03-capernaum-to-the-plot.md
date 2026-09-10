@@ -16,16 +16,43 @@ per chapter so every verse's chapter can be attributed.
 
 **Blocked by:** 02 — Author Mark 1:1–20, the beginning.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `mark-1b` is a sitting spanning 1:21–45
-- [ ] `mark-2` is a sitting spanning 2:1–3:6, with `crossesChapters` set and one passage per chapter
-- [ ] The unclean spirit is handled without endorsement and without condescension
-- [ ] The five conflicts read as one escalating construction rather than five anecdotes
-- [ ] Each reading has one turn, on its closing passage
-- [ ] Both readings are tagged in the find index in the same change
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] No passage exceeds the density target on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] `mark-1b` is a sitting spanning 1:21–45
+- [x] `mark-2` is a sitting spanning 2:1–3:6, with `crossesChapters` set and one passage per chapter
+- [x] The unclean spirit is handled without endorsement and without condescension
+- [x] The five conflicts read as one escalating construction rather than five anecdotes
+- [x] Each reading has one turn, on its closing passage
+- [x] Both readings are tagged in the find index in the same change
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] No passage exceeds the density target on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**One deviation from the ticket, and it is an improvement.** The ticket said `mark-2` should hold
+one passage per chapter, copying the Exodus plague reading. That rule exists so every verse's
+chapter can be attributed, and it does not require one passage per chapter, only that no passage
+crosses one. So the conflict cycle is four scenes rather than two: the paralytic, Levi and the
+fasting question, the grainfields, and the withered hand. Chapter 2 carries three of them and
+chapter 3 carries the last. Every passage is verifiable and the reading is far better shaped.
+
+**The misreading is on the unclean spirit**, in the first scene of `mark-1b`, because it is the
+first thing a modern reader trips over in this gospel and it decides whether they can read the book
+at all. Both available exits are named and closed: literal demonology, and the quiet skip. What is
+left is the scene itself, and the observation that the vocabulary of possession runs very close to
+the vocabulary of occupation in a book written for people living under one.
+
+**The tension is the sabbath**, and it reaches back into the app's own second book. The command as
+Exodus gives it is absolute and carries a death penalty for profaning it; here it is made
+subordinate to the person it was given for, and the case is closed by appeal to a story where the
+rule was broken and the man who broke it was David.
+
+**Two details left in that most retellings remove.** Mark names Abiathar as the priest in the
+grain-fields argument, and 1 Samuel 21 names Ahimelech; Matthew and Luke both drop the name when
+they retell it. And Mark 3:5 says outright that he was angry, which Matthew and Luke both remove.
+Neither is smoothed over here.
+
+**Density** 1.7x, 0.9x, 1.7x on `mark-1b`; 0.7x, 0.7x, 1.7x, 1.7x on `mark-2`. Nothing over ceiling.

@@ -418,16 +418,22 @@ describe("content lib", () => {
     // The book capstone renders on the last reading, and nowhere else.
     expect(book?.capstone?.title).toBe("Not given back, and built anyway");
   });
-  it("Mark resolves, runs in authored order, and files under its one declared movement", () => {
+  it("Mark runs in authored order and files under its one declared movement", () => {
     // Book four, mid-authoring. Movement 1 declares chapters 1 to 8; movements 2 to 4 are absent
-    // until they have readings, so everything that exists must fall inside that range.
+    // until they have readings. mark-2 spans a chapter boundary, so adjacency has to follow
+    // authored order rather than chapter arithmetic.
     const book = getBook("mark");
     expect(book?.movements.map((m) => m.id)).toEqual(["the-authority"]);
-    expect(book?.readings.map((r) => r.id)).toEqual(["mark-1a", "mark-1b"]);
-    expect(getReading("mark", "mark-1a")?.span).toBe("Mark 1:1–20");
+    expect(book?.readings.map((r) => r.id)).toEqual([
+      "mark-1a",
+      "mark-1b",
+      "mark-2",
+    ]);
+    expect(getReading("mark", "mark-1a")?.span).toBe("Mark 1:1\u201320");
     expect(getAdjacent("mark", "mark-1a").prev).toBeUndefined();
-    expect(getAdjacent("mark", "mark-1a").next?.id).toBe("mark-1b");
-    expect(getAdjacent("mark", "mark-1b").next).toBeUndefined();
+    expect(getAdjacent("mark", "mark-1b").next?.id).toBe("mark-2");
+    expect(getAdjacent("mark", "mark-2").prev?.id).toBe("mark-1b");
+    expect(getAdjacent("mark", "mark-2").next).toBeUndefined();
     for (const reading of book?.readings ?? []) {
       expect(getMovement("mark", reading)?.id, reading.id).toBe(
         "the-authority",

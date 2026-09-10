@@ -154,13 +154,29 @@ describe("expandReading", () => {
     }
     expect(expanded.passages.flatMap((p) => p.verses ?? [])).toHaveLength(23);
   });
-  it("fills a grounded Mark reading's gaps from the newly registered lookup", () => {
-    // Book four's registry entry, proved the same way Ruth's was: a missing one fails silently,
-    // and the reading would simply pass through without a reveal.
-    const p = passageIn("mark", "mark-1b", "1:21–45");
-    expect(omitted(p.verses)).toEqual([24, 26, 28, 33, 36, 39, 42, 43]);
-    expect(p.verses?.find((v) => v.n === 24)?.text).toContain(
-      "Holy One of God",
+  it("keeps a cross-chapter Mark reading inside each passage's own chapter", () => {
+    // mark-2 spans 2:1 to 3:6. Every passage is authored contiguous, so nothing should be filled,
+    // and the last one is chapter 3 while the reading's chapterIndex is 2. A fill that attributed
+    // a bare verse number to the reading's chapter would quietly pull the wrong verses in here.
+    expect(bsbForBook("mark")?.["1:1"]).toContain(
+      "the beginning of the gospel",
     );
+    const reading = getReading("mark", "mark-2");
+    if (!reading) throw new Error("no mark-2");
+    expect(reading.crossesChapters).toBe(true);
+    const expanded = expandReading(reading);
+    expect(expanded.passages.map((p) => p.ref)).toEqual([
+      "2:1\u201312",
+      "2:13\u201322",
+      "2:23\u201328",
+      "3:1\u20136",
+    ]);
+    for (const p of expanded.passages) {
+      expect(omitted(p.verses), p.ref).toEqual([]);
+    }
+    // Verse numbers restart at the chapter boundary rather than running on.
+    const last = expanded.passages[3];
+    expect(authored(last.verses)).toEqual([1, 2, 3, 4, 5, 6]);
+    expect(last.verses?.[0].text).toContain("withered hand");
   });
 });
