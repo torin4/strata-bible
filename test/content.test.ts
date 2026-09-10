@@ -203,11 +203,18 @@ describe("content lib", () => {
     expect(tension?.where).toContain("Exodus 34:6");
   });
 
-  it("Exodus is complete and published, and the genre proofs are not", () => {
+  it("the shelf is Genesis, Exodus and Ruth, and nothing unfinished is on it", () => {
     expect(getBook("exodus")?.capstone).toBeDefined();
-    expect(getBook("exodus")?.published).toBe(true);
+    expect(getBook("ruth")?.capstone).toBeDefined();
     // Order matters: the landing numbers the books by their position here.
-    expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual(["genesis", "exodus"]);
+    expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual([
+      "genesis",
+      "exodus",
+      "ruth",
+    ]);
+    // A book goes public only when it is finished. Mark is mid-authoring and must stay off,
+    // which is the rule that held for the whole time Exodus and Ruth were being written.
+    expect(getBook("mark")?.published).toBeFalsy();
     // The renderer fixtures stay reachable by URL but unadvertised.
     expect(getBook("job")?.published).toBeFalsy();
   });

@@ -128,8 +128,9 @@ export const BOOKS: BookEntry[] = [
     capstone: EXODUS_CAPSTONE,
     published: true,
   },
-  // Ruth, book three, complete: four chapters across two movements. Still unpublished, because
-  // publication is a decision separate from finishing. See .scratch/ruth/spec.md.
+  // Ruth, book three, published. Four chapters across two movements. No hero image: the generated
+  // one came back as a ruled triptych rather than a continuous panorama and is held pending a
+  // re-run, so the book page falls back to its text header. See .scratch/ruth/issues/07-images.md.
   {
     id: "ruth",
     title: "Ruth",
@@ -140,7 +141,7 @@ export const BOOKS: BookEntry[] = [
     movements: [EMPTY_MOVEMENT, THE_REDEEMER_MOVEMENT],
     composition: RUTH_INTRO,
     capstone: RUTH_CAPSTONE,
-    published: false,
+    published: true,
   },
   // Mark, book four, in progress, and the first New Testament book in the app. Sixteen chapters
   // across four movements; only movement 1 is declared, and only mark-1a is authored. The book
