@@ -187,9 +187,11 @@ export const BOOKS: BookEntry[] = [
     capstone: MARK_CAPSTONE,
     published: true,
   },
-  // Ecclesiastes, book five, in progress, and the first book in the app that is not narrative.
-  // Twelve chapters across three movements; only movement 1 is declared, and only ecc-1 is
-  // authored. Unpublished until it is complete. See .scratch/ecclesiastes/spec.md.
+  // Ecclesiastes, book five, complete and published, and the first book in the app that is not
+  // narrative: three passage kinds run here (poem, argument, saying-cluster) where the four books
+  // before it were entirely scene. Twelve readings across three movements. 210 of 222 verses are
+  // authored; the twelve absent are inside the two saying-clusters, which are selections by
+  // design. Reads under Plus, as every book after Genesis does. See .scratch/ecclesiastes/spec.md.
   {
     id: "ecclesiastes",
     title: "Ecclesiastes",
@@ -205,7 +207,7 @@ export const BOOKS: BookEntry[] = [
     ],
     composition: ECCLESIASTES_INTRO,
     capstone: ECCLESIASTES_CAPSTONE,
-    published: false,
+    published: true,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.
