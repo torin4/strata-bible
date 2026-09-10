@@ -16,12 +16,30 @@ this sceptical is in the canon at all.
 
 **Blocked by:** 03.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Movement 2 declared with its chapter range and an authored situation panel
-- [ ] Movement 1 gains its doorway
-- [ ] `ecc-5` and `ecc-6` are sittings
-- [ ] Chapter 6 is left as hard as it is
-- [ ] Both tagged in the find index in the same change
-- [ ] Scripture verbatim, sources paraphrased, no em dashes, density within target
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Movement 2 declared with its chapter range and an authored situation panel
+- [x] Movement 1 gains its doorway
+- [x] `ecc-5` and `ecc-6` are sittings
+- [x] Chapter 6 is left as hard as it is
+- [x] Both tagged in the find index in the same change
+- [x] Scripture verbatim, sources paraphrased, no em dashes, density within target
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Chapter 5 is the least dated writing in the Bible and the reading says so without gloating.** A man
+who loves money is never satisfied by money. What you accumulate attracts people to consume it. The
+worker sleeps and the rich man does not. The naked-in, naked-out line at the centre is treated as an
+accounting fact rather than a moral about greed, and the point of the paragraph around it is what
+people do with whole lives in full knowledge of it.
+
+**Chapter 6 is left as hard as it is**, per the ticket. The book has spent five chapters saying
+enjoyment is the portion; here it says the portion can be withheld and names God as the one
+withholding it. That sentence is not softened. The stillborn comparison is given as what it is: the
+writer measuring by his own standard, consistently, and reporting where it comes out.
+
+**The situation panel puts the economy in.** Silver by weight and land rather than a number held
+somewhere safe, which is why a rich man not sleeping is literal. A chain of officials each watched
+by a higher one, which is Persian-period provincial administration. And vows as binding transactions
+with a real institution, which makes the messenger in 5:6 somebody who has come to collect.

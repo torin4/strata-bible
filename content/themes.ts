@@ -624,4 +624,24 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For carrying something alone that you have quietly filed under strength.",
   },
+  "ecc-5": {
+    themes: ["control", "ambition", "fear-of-loss"],
+    speaksTo:
+      "For the enjoyment you have been postponing until you feel you have earned it.",
+  },
+  "ecc-6": {
+    themes: ["deferred-hope", "control", "limits"],
+    speaksTo:
+      "For the life you keep comparing this one to, and the damage the comparison is doing.",
+  },
+  "ecc-7": {
+    themes: ["faith-and-fairness", "grief", "doubt", "injustice"],
+    speaksTo:
+      "For the arrangement that has not paid out, and the fact that you have not said so out loud.",
+  },
+  "ecc-8": {
+    themes: ["powerlessness", "injustice", "doubt", "limits"],
+    speaksTo:
+      "For somebody else's confident account of your life, which never quite fitted.",
+  },
 };

@@ -25,6 +25,9 @@ const verse = (chapter: number, n: number, indent = "          ") => {
 const verses = (chapter: number, ns: number[], indent = "          ") =>
   ns.map((n) => verse(chapter, n, indent)).join("\n");
 
+// Sayings render from the same BSB lookup as verses; the field name is what the renderer keys on.
+const sayings = (chapter: number, ns: number[]) => verses(chapter, ns);
+
 // Lineate a verse for `poetry` form by breaking AFTER each given substring (ADR 0001). The words
 // are never retyped and never altered: the result is asserted identical to the BSB once whitespace
 // is collapsed, so a bad marker throws here rather than shipping a corrupted verse.
@@ -350,6 +353,262 @@ ${verses(4, range(7, 16))}
       },
     ],
   },
+  {
+    id: "ecc-5",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 5",
+    chapterIndex: 5,
+    title: "Your lot",
+    thread: "How to behave in a place of worship, which turns out to be mostly an instruction to say less. Then officials watching officials, money that will not fill anyone, and a man leaving exactly as he arrived.",
+    closeEnd: "And then, for the fourth time, the same sentence. Eat, drink, find something in the work. Here he calls it a gift.",
+    passages: [
+      {
+        ref: "5:1–7",
+        kind: "argument",
+        form: "prose",
+        title: "Let your words be few",
+        verses: [
+${verses(5, range(1, 7))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The house of God is the temple, and this is advice about conduct inside it. A vow was a binding transaction: a person promised something to God in exchange for something they wanted, and the law treated a broken one seriously. The messenger in verse 6 is most likely a temple official who has come to collect. So this is practical guidance about a real institution and a real debt.",
+          src: "Deuteronomy 23:21–23 · Fox · Seow",
+        },
+        meaning:
+          "The whole passage is about talking too much, and it is the only religious instruction in the book. Go to listen rather than to perform. Do not make promises you will regret. And once you are in one, do not tell the official it was a mistake. God is in heaven and you are on earth, so let your words be few. That is not piety. It is a warning about the distance between what people say in a religious moment and what they are willing to do on the Tuesday afterwards.",
+        lenses: {
+          theo: "The one piece of worship advice in this book is to say less. Everywhere else it is sceptical about what people can know. Here it is sceptical about what they promise.",
+        },
+      },
+      {
+        ref: "5:8–17",
+        kind: "argument",
+        form: "prose",
+        title: "Never satisfied",
+        verses: [
+${verses(5, range(8, 17))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Verse 8 describes a chain of officials, each watched by a higher one, which is the administration of a province inside an empire. It is offered as a reason not to be astonished by injustice rather than as a defence of it. Then the money: income that does not satisfy, goods that attract people to consume them, wealth that keeps its owner awake, and a fortune lost in a bad venture leaving a son with nothing.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "This is the most practical stretch in the book and none of it has dated. A man who loves money is never satisfied by money. What you accumulate attracts people to consume it. The worker sleeps and the rich man does not. And at the centre, the accounting fact: he came naked and he leaves naked and takes nothing in his hands. That is not a moral about greed. It is stated flatly, and the paragraph around it is about what people do with entire lives in full knowledge of it.",
+        lenses: {
+          arch: "The thing acquired to produce security, which arrives and then has to be guarded, and takes the sleep it was bought to provide. (What you own, watching you.)",
+        },
+      },
+      {
+        ref: "5:18–20",
+        kind: "argument",
+        form: "prose",
+        title: "This is his lot",
+        verses: [
+${verses(5, range(18, 20))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The word given as lot is a portion: the share assigned to a person, the way land or food is apportioned. It describes what somebody gets rather than what they earn, and it is the term this book reaches for whenever it stops arguing.",
+          src: "Fox · Seow",
+        },
+        meaning:
+          "Fourth time, and the wording is stronger than before. Not merely that there is nothing better, but that this is good and fitting; that the ability to enjoy what you have is itself given; and that a man occupied with the joy of his heart does not spend his days counting them. That last line is close to a definition of contentment, and it has been arrived at from the bleakest available direction.",
+        addr: {
+          mode: "claims",
+          text: "You have probably been treating enjoyment as something earned first and permitted afterwards. This book puts it the other way round. The days are few, the enjoyment is the portion, and there is no version of this where you finish and then begin.",
+        },
+        ask: "What are you postponing until you have earned it?",
+      },
+    ],
+  },
+  {
+    id: "ecc-6",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 6",
+    chapterIndex: 6,
+    title: "A stranger will enjoy them",
+    thread: "The shortest chapter and the bleakest. A man given everything and denied the capacity to enjoy it, and a comparison with a stillborn child that the book does not soften.",
+    closeEnd: "It ends on two questions nobody can answer, which is where the first half of the book stops.",
+    passages: [
+      {
+        ref: "6:1–6",
+        kind: "argument",
+        form: "prose",
+        title: "A stranger will enjoy them",
+        verses: [
+${verses(6, range(1, 6))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The affliction is precise, and it is the inverse of chapter five: not a man who lacks, but a man who has everything and is not given the capacity to enjoy it. The stillborn comparison uses a rhetorical form the ancient world knew. And the detail about not receiving a proper burial matters, because burial was the last thing a life could still get right.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "The book has spent five chapters saying that enjoyment is the portion. Here it says the portion can be withheld, and it names God as the one withholding it, which is the most uncomfortable sentence in the chapter and is not softened. Then the comparison, which is meant to shock: a stillborn child, who never saw the sun and knew nothing, is better off than a man with a hundred children and a thousand years who could not enjoy any of it. He is not being provocative. He is measuring by his own standard, consistently, and that is where it comes out.",
+      },
+      {
+        ref: "6:7–12",
+        kind: "argument",
+        form: "prose",
+        title: "Better what the eye can see",
+        verses: [
+${verses(6, range(7, 12))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Verse 9 is a proverb, and it is the book's one piece of straightforward advice about wanting things: what is in front of you beats the wandering of appetite. The chapter then closes on two questions, which is how the first half of the book ends. Who knows what is good for a person, and who can say what comes after.",
+          src: "Fox · Seow",
+        },
+        meaning:
+          "The appetite line is the practical version of everything said so far about accumulation. All a man's labour is for his mouth, and the mouth is never filled. And the two closing questions are not rhetorical dressing. They are the position the book has been arguing toward since chapter one: nobody can tell you what is good, and nobody can tell you what comes after. The second half is written from inside that rather than out of it.",
+        addr: {
+          mode: "claims",
+          text: "You are carrying an idea of the life you would enjoy, and it is not the one in front of you, and the comparison is doing steady damage to the one you have. Better what the eye can see, says the book, and it is not counselling modesty. It is being practical.",
+        },
+        ask: "What is actually in front of you, that you have been treating as the wrong version?",
+      },
+    ],
+  },
+  {
+    id: "ecc-7",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 7",
+    chapterIndex: 7,
+    title: "Better than",
+    thread: "A run of better-than sayings that recommend funerals over parties, and then the sentence that breaks the promise Proverbs makes.",
+    closeEnd: "He set out to be wise and reports that it was beyond him. Then one thing he says he did find, which is about people rather than about the world.",
+    passages: [
+      {
+        ref: "7:1–14 (selected)",
+        kind: "saying-cluster",
+        form: "list",
+        title: "Better than",
+        sayings: [
+${sayings(7, [1, 2, 3, 4, 5, 8, 9, 10, 12, 13, 14])}
+        ],
+        perItem: {
+          1: {
+            note: "The second half is the surprise. A good name outlasting you is a conventional saying. Your death being better than your birth is not.",
+          },
+          2: {
+            note: "The reason given is not that grief improves you. It is that a funeral tells the truth about where this goes and a party does not.",
+          },
+          10: {
+            addr: {
+              mode: "claims",
+              text: "Nostalgia is named here as a failure of wisdom rather than a harmless habit. Not because the past was bad, but because the comparison is unavailable to you and you are making it anyway.",
+            },
+          },
+          13: {
+            note: "The same image as chapter one, what is crooked cannot be straightened, and here it is put directly to God's account.",
+          },
+          14: {
+            note: "The closest the book comes to naming its own method. Take the good day as good. On the bad one, consider that you were never given the pattern.",
+          },
+        },
+        ground: {
+          kind: "genre",
+          text: "The better-than saying is a standard wisdom form and Ecclesiastes uses it more densely here than anywhere else. Proverbs uses it too. The difference is what this collection recommends: a house of mourning over a house of feasting, sorrow over laughter, the end of a thing over its beginning. Read as advice that sounds morbid. Read as a form it is doing what the form does, which is compare two goods and rank them.",
+          src: "Fox · Seow · von Rad",
+        },
+        misreading: {
+          named:
+            "The book is recommending gloom: mourning over feasting, sorrow over laughter, a funeral over a party.",
+          why: "The form compares two goods rather than condemning one, and the text gives its reason: death is the end of every man and the living should take it to heart. The house of mourning is recommended as information, not as a mood. And this is the same writer who has already told you four times to eat your bread and enjoy your work. He is not against the party. He is saying the party will not tell you anything and the funeral will.",
+        },
+        meaning:
+          "The cluster's argument is that the unwelcome thing is usually the more useful one. A rebuke over a song. The end over the beginning. Patience over pride. And then verse 14, which is as close as this book comes to stating its method outright: be glad on the good day, and on the bad one consider that God made the one alongside the other, so that nobody can work out what is coming. That is not consolation. It is an instruction about where to put your attention on each kind of day.",
+      },
+      {
+        ref: "7:15–29",
+        kind: "argument",
+        form: "prose",
+        title: "Nothing to be found",
+        verses: [
+${verses(7, range(15, 29))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Verse 15 is a report of something seen rather than a theory advanced. Verses 16 and 17, advising against being overly righteous or overly wicked, have troubled readers for a very long time and have been read as counsel of moderation, as irony, and as advice about staying alive under an unpredictable regime. And verse 28 is among the hardest sentences in the book, on which more below.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "Two hard things here, and the second is harder. The first is verse 15, the flat contradiction of what Proverbs promises, reported as an observation rather than argued as a position. The second is verses 26 to 28, where he writes of a woman as a snare and then reports finding one man in a thousand and not one woman among them all. That is misogyny, it is in the text, and it is not improved by explanation. What can be said is narrow and worth saying anyway: he attributes the search to a method he has just called a failure, he appears to be handling a saying that already existed, and the very next verse takes the charge off any category of person and puts it on mankind in general. None of that makes the sentence acceptable. It does show that the book does not rest on it.",
+        tensions: [
+          {
+            claim:
+              "A righteous man perishes in his righteousness and a wicked man lives long in his wickedness. He says he has seen both.",
+            counter:
+              "Proverbs, kept in the same collection, promises the opposite: the LORD does not let the righteous go hungry, and the fear of the LORD prolongs life. Job is built on the same wound from the other direction, one man's case instead of a survey.",
+            where:
+              "Ecclesiastes 7:15 · Proverbs 10:3 · Proverbs 10:27 · Job 1–2",
+          },
+        ],
+        addr: {
+          mode: "claims",
+          text: "You have probably kept a private ledger in which doing the right thing is supposed to produce a result, and noticed that it does not always, and not said so out loud. This book says it out loud, inside the collection, and nothing catches fire.",
+        },
+        ask: "Where has the arrangement not paid out, and who have you not said that to?",
+      },
+    ],
+  },
+  {
+    id: "ecc-8",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 8",
+    chapterIndex: 8,
+    title: "Nobody can find it out",
+    thread: "How to survive a king, why a delayed sentence makes people bolder, and three separate admissions that nobody can find out what is going on.",
+    closeEnd: "The wise man who claims to know is named specifically and disbelieved. That is the last word of the movement.",
+    passages: [
+      {
+        ref: "8:1–9",
+        kind: "argument",
+        form: "prose",
+        title: "Keep the king's command",
+        verses: [
+${verses(8, range(1, 9))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "This is court advice, a recognised wisdom subject: how to behave in front of a ruler whose word is final and who does whatever he pleases. The counsel is practical and unheroic. Do not be in a hurry to leave his presence, do not join a bad cause, and remember that nobody has authority over the day of their death. Written in a province, about power that could not be appealed.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "There is no politics here in the sense of a programme, and it would be easy to read that as quietism. What the passage does is describe the position of somebody with no leverage and then tell them the truth about it. The king does as he likes. There is no discharge from that war. And then verse 9, which is the sentence underneath all of it: a man lords it over another man to his own harm. That is offered as an observation, with no expectation that stating it will change anything.",
+        lenses: {
+          arch: "Advice for the powerless that does not pretend they have power, and does not tell them their patience is a virtue. (How to stand in the room.)",
+        },
+      },
+      {
+        ref: "8:10–17",
+        kind: "argument",
+        form: "prose",
+        title: "Nobody can find it out",
+        verses: [
+${verses(8, range(10, 17))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Verse 11 is social observation: when sentence is not carried out quickly, people grow bolder about doing wrong. Then the book does something it rarely does. It states the conventional position, that it will go well with those who fear God, and immediately reports the contrary evidence, that there are righteous men who get what the wicked deserve and wicked men who get what the righteous deserve.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "This is the movement's title arriving. Three times in a few verses he says nobody can find it out: however hard a man labours to seek it he will not find it, and even if a wise man claims to know, he cannot find it. That last clause is aimed squarely at his own profession. He is not saying there is nothing to find. He is saying the search does not terminate, that anyone telling you they have finished it is wrong, and that this holds for the wise as much as for anybody. And then, for the fifth time, the permission: eat, drink, and be glad.",
+        addr: {
+          mode: "claims",
+          text: "Somebody has explained your situation to you with confidence, and it did not fit, and you assumed the failure was yours for not seeing it their way. This book puts the wise man who claims to have it worked out in the same sentence as everybody else who cannot.",
+        },
+        ask: "Whose confident account of your life have you been deferring to?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway until movement 2 exists; no capstone until the movement completes.
@@ -373,6 +632,15 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },
+  doorway: {
+    kicker: "The second movement",
+    title: "What cannot be found out",
+    paragraphs: [
+      "The first movement asked what a life adds up to and answered vapour, interrupting itself three times to say eat your bread anyway.",
+      "What follows narrows. Money, worship, power, the man who has everything and cannot enjoy it, and then a long collection of sayings about what is better than what. It closes by admitting, three separate times, that nobody can find out what is actually being done under the sun, however confidently the wise claim to have looked.",
+    ],
+    nextMovementId: "not-found-out",
+  },
   capstone: {
     kicker: "The first movement · Ecclesiastes 1–4",
     title: "Vapour, and a handful with quiet",
@@ -380,6 +648,28 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
       "Four chapters, and the case is made. A closed system that goes nowhere. An experiment run with every resource available and reported honestly. A catalogue of times nobody controls. And the tears of people who had no comforter. The word that keeps landing is the one for vapour, and the honest way to hear it is not meaningless, which is a translator's word, but unholdable. Everything in these chapters is real, and none of it stays.",
       "What is easy to miss is that the answer is already here. Three times in four chapters he stops and says the same thing: eat, drink, find something in the work. It arrives in chapter two immediately after he says he hated life, and in chapter three immediately after he says nobody can see the whole. Each time it is attached to the bleakness rather than offered against it. This book does not cheer up. It hands you something to do.",
       "And the last thing the movement does is turn outward. Chapters one to three ask what a life adds up to. Chapter four asks what people do to each other, and answers with a man alone and a cord of three strands. That is not an argument that company is fulfilling. It is an argument that you will fall over.",
+    ],
+    sources: "Fox · Seow · Krüger · Barton",
+  },
+};
+
+export const NOT_FOUND_OUT_MOVEMENT: Movement = {
+  id: "not-found-out",
+  index: 2,
+  title: "What cannot be found out",
+  range: "Ecclesiastes 5–8",
+  throughline:
+    "Money that will not fill anyone, a man denied the ability to enjoy what he has, a collection of sayings about what is better than what, and the repeated admission that nobody can find out what is done under the sun.",
+  chapterStart: 5,
+  chapterEnd: 8,
+  situation: {
+    kicker: "The ground beneath the search",
+    title: "The situation",
+    paragraphs: [
+      "The world of chapter five is a province inside an empire. One official watched by a higher one, and higher ones over them, is the administrative reality of Persian-period Judah: a small territory whose taxes and decisions travelled a long way off. The book offers that chain as a reason not to be astonished by injustice, which is a bleak sort of realism rather than an endorsement of it.",
+      "Money in that economy was silver by weight and land, not a number held somewhere safe. It was physical, on the premises and vulnerable, which is why the observation that a rich man cannot sleep is literal rather than figurative.",
+      "Vows were binding transactions with a real institution. A person promised something to God in exchange for something wanted, and the law took a broken vow seriously. When the book says do not tell the messenger it was a mistake, the messenger is somebody who has come to collect.",
+      "And the movement's title is the book's own claim, made three separate times in chapter eight. However hard a person works at it, and however confidently the wise say they have it, nobody can find out the work that is done under the sun. That is a limit on knowledge, stated by somebody who went and tried.",
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },

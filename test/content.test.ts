@@ -253,20 +253,37 @@ describe("content lib", () => {
     expect(kinds.has("argument")).toBe(true);
 
     const book = getBook("ecclesiastes");
-    expect(book?.movements.map((m) => m.id)).toEqual(["under-the-sun"]);
+    expect(book?.movements.map((m) => m.id)).toEqual([
+      "under-the-sun",
+      "not-found-out",
+    ]);
     expect(book?.readings.map((r) => r.id)).toEqual([
       "ecc-1",
       "ecc-2",
       "ecc-3",
       "ecc-4",
+      "ecc-5",
+      "ecc-6",
+      "ecc-7",
+      "ecc-8",
     ]);
     expect(getAdjacent("ecclesiastes", "ecc-1").next?.id).toBe("ecc-2");
-    expect(getAdjacent("ecclesiastes", "ecc-4").next).toBeUndefined();
+    expect(getAdjacent("ecclesiastes", "ecc-4").next?.id).toBe("ecc-5");
+    expect(getAdjacent("ecclesiastes", "ecc-8").next).toBeUndefined();
     for (const reading of book?.readings ?? []) {
-      expect(getMovement("ecclesiastes", reading)?.id, reading.id).toBe(
-        "under-the-sun",
-      );
+      expect(getMovement("ecclesiastes", reading), reading.id).toBeDefined();
     }
+
+    // The first saying-cluster in a published book. `list` form carries `sayings` rather than
+    // `verses`, is annotated selectively through `perItem`, and the expansion fill leaves it alone
+    // because there is no numbered range to complete.
+    const cluster = getReading("ecclesiastes", "ecc-7")?.passages[0];
+    expect(cluster?.kind).toBe("saying-cluster");
+    expect(cluster?.form).toBe("list");
+    expect(cluster?.sayings?.length).toBe(11);
+    expect(cluster?.verses).toBeUndefined();
+    expect(cluster?.perItem?.[10]?.addr?.mode).toBe("claims");
+    expect(kinds.has("saying-cluster")).toBe(true);
 
     // The opening poem is lineated and authored whole, per ADR 0001.
     for (const [id, n] of [

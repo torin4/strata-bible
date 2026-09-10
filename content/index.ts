@@ -2,6 +2,7 @@ import type { Capstone, Movement, Panel, Reading } from "@/lib/types";
 import {
   ECCLESIASTES,
   ECCLESIASTES_INTRO,
+  NOT_FOUND_OUT_MOVEMENT,
   UNDER_THE_SUN_MOVEMENT,
 } from "./ecclesiastes";
 import {
@@ -194,7 +195,7 @@ export const BOOKS: BookEntry[] = [
       "Three movements: under the sun, what cannot be found out, eat your bread.",
     blurb: "Everything is vapour, and you should still eat your bread.",
     readings: ECCLESIASTES,
-    movements: [UNDER_THE_SUN_MOVEMENT],
+    movements: [UNDER_THE_SUN_MOVEMENT, NOT_FOUND_OUT_MOVEMENT],
     composition: ECCLESIASTES_INTRO,
     published: false,
   },
