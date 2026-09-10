@@ -663,6 +663,273 @@ export const ECCLESIASTES: Reading[] = [
       },
     ],
   },
+  {
+    id: "ecc-9",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 9",
+    chapterIndex: 9,
+    title: "Go, eat your bread",
+    thread: "One fate for everyone, the dead knowing nothing, and then, four verses later, the most direct instruction in the book. Go. Eat. Drink. Wear white. Love somebody. Work hard.",
+    closeEnd: "A poor wise man saves a city and nobody remembers him. That is the last word on wisdom in this movement, and it is not a triumph.",
+    passages: [
+      {
+        ref: "9:1–6",
+        kind: "argument",
+        form: "prose",
+        title: "One fate",
+        verses: [
+          { n: 1, text: "So I took all this to heart and concluded that the righteous and the wise, as well as their deeds, are in God’s hands. Man does not know what lies ahead, whether love or hate." },
+          { n: 2, text: "It is the same for all: There is a common fate for the righteous and the wicked, for the good and the bad, for the clean and the unclean, for the one who sacrifices and the one who does not. As it is for the good, so it is for the sinner; as it is for the one who makes a vow, so it is for the one who refuses to take a vow." },
+          { n: 3, text: "This is an evil in everything that is done under the sun: There is one fate for everyone. Furthermore, the hearts of men are full of evil and madness while they are alive, and afterward they join the dead." },
+          { n: 4, text: "There is hope, however, for anyone who is among the living; for even a live dog is better than a dead lion." },
+          { n: 5, text: "For the living know that they will die, but the dead know nothing. They have no further reward, because the memory of them is forgotten." },
+          { n: 6, text: "Their love, their hate, and their envy have already vanished, and they will never again have a share in all that is done under the sun." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The common fate is death, and the list of pairs it levels is deliberately provocative: righteous and wicked, clean and unclean, the one who sacrifices and the one who does not, the one who makes a vow and the one who refuses. Those are cultic categories, the distinctions that ordered religious life, and death is presented as indifferent to every one of them.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "Verse 5 is the sentence that nearly kept this book out of the collection. The dead know nothing, have no further reward, and their memory is forgotten. There is no hedging anywhere in it. And verse 4 is the strangest consolation in Scripture: there is hope for anyone among the living, because a live dog is better than a dead lion. Dog was not an affectionate word in that world. He is saying that being alive and worthless beats being dead and magnificent, and he offers it as encouragement.",
+        tensions: [
+          {
+            claim:
+              "The dead know nothing and have no further reward, and their love and hate and envy have already vanished.",
+            counter:
+              "Later writing in the same collection refuses to leave it there, and the hope it grows is asserted rather than argued for. This book neither denies that hope nor makes room for it. It reports what can be seen under the sun, and stops.",
+            where: "Ecclesiastes 9:5–6 · Daniel 12:2 · Isaiah 26:19",
+          },
+        ],
+      },
+      {
+        ref: "9:7–12",
+        kind: "argument",
+        form: "prose",
+        title: "Go, eat your bread",
+        verses: [
+          { n: 7, text: "Go, eat your bread with joy, and drink your wine with a cheerful heart, for God has already approved your works:" },
+          { n: 8, text: "Let your garments always be white, and never spare the oil for your head." },
+          { n: 9, text: "Enjoy life with your beloved wife all the days of the fleeting life that God has given you under the sun—all your fleeting days. For this is your portion in life and in your labor under the sun." },
+          { n: 10, text: "Whatever you find to do with your hands, do it with all your might, for in Sheol, where you are going, there is no work or planning or knowledge or wisdom." },
+          { n: 11, text: "I saw something else under the sun: The race is not to the swift, nor the battle to the strong; neither is the bread to the wise, nor the wealth to the intelligent, nor the favor to the skillful. For time and chance happen to all." },
+          { n: 12, text: "For surely no man knows his time: Like fish caught in a cruel net or birds trapped in a snare, so men are ensnared in an evil time that suddenly falls upon them." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The instructions are specific and physical: bread, wine, white garments, oil on the head, a wife, work done with force. White clothing and oil were what people wore to a feast rather than to an ordinary day, so the instruction is to dress for a celebration on a normal Tuesday. And the reason given is not that life is good. It is that in Sheol there is no work or planning or knowledge or wisdom.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "This is the sentence the book exists for, and the order it arrives in is the argument. It comes immediately after the bleakest paragraph in the book, and its grounds are that paragraph. Not in spite of the one fate: because of it. The clause people miss is in the middle, that God has already approved your works, which removes the condition. You are not being told you may enjoy things once you have earned the right. Then verse 11 makes the same point from the other side: the race is not to the swift, and time and chance happen to all. Nothing here is deserved, including the good parts.",
+        lenses: {
+          theo: "The permission is granted rather than offered. He does not say you may. He says go. This is the only stretch of the book written in the imperative, which is worth noticing in twelve chapters that otherwise refuse to advise.",
+        },
+        addr: {
+          mode: "claims",
+          text: "You have been holding off on the ordinary pleasures until the situation resolves, and the situation is not going to resolve on the schedule you had in mind. This is not permission to enjoy yourself once things improve. It is an instruction to eat, today, on the grounds that the days are few.",
+        },
+        ask: "What have you been holding off on until things settle?",
+      },
+      {
+        ref: "9:13–18",
+        kind: "argument",
+        form: "prose",
+        title: "Nobody remembered that poor man",
+        verses: [
+          { n: 13, text: "I have also seen this wisdom under the sun, and it was great to me:" },
+          { n: 14, text: "There was a small city with few men. A mighty king came against it, surrounded it, and built large siege ramps against it." },
+          { n: 15, text: "Now a poor wise man was found in the city, and he saved the city by his wisdom. Yet no one remembered that poor man." },
+          { n: 16, text: "And I said, “Wisdom is better than strength, but the wisdom of the poor man is despised, and his words are not heeded.”" },
+          { n: 17, text: "The calm words of the wise are heeded over the shouts of a ruler among fools." },
+          { n: 18, text: "Wisdom is better than weapons of war, but one sinner destroys much good." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "A short parable with no names and no date: a small city, a great king, siege ramps, and a poor wise man who saved it. Whether it happened or is an example is not stated, and probably does not matter to the point being made.",
+          src: "Fox · Seow",
+        },
+        meaning:
+          "The story is told to praise wisdom and it ends by reporting that wisdom did not get paid. He saved the city and nobody remembered him, and the wisdom of a poor man is despised and his words go unheeded. Then, immediately after, the book says wisdom is better than weapons of war, and that one sinner destroys much good. Both are held at once. Wisdom works, and it is not rewarded, and the second fact is not allowed to cancel the first.",
+      },
+    ],
+  },
+  {
+    id: "ecc-10",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 10",
+    chapterIndex: 10,
+    title: "A little folly",
+    thread: "The lighter of the two collections: dead flies in the perfume, a snake that bites before it is charmed, and a bird that carries what you said in your own bedroom.",
+    closeEnd: "It ends on the advice of somebody who has watched what happens to people who talk.",
+    passages: [
+      {
+        ref: "10:1–20 (selected)",
+        kind: "saying-cluster",
+        form: "list",
+        title: "A little folly",
+        sayings: [
+          { n: 1, text: "As dead flies bring a stench to the perfumer’s oil, so a little folly outweighs wisdom and honor." },
+          { n: 2, text: "A wise man’s heart inclines to the right, but the heart of a fool to the left." },
+          { n: 4, text: "If the ruler’s temper flares against you, do not abandon your post, for calmness lays great offenses to rest." },
+          { n: 8, text: "He who digs a pit may fall into it, and he who breaches a wall may be bitten by a snake." },
+          { n: 9, text: "The one who quarries stones may be injured by them, and he who splits logs endangers himself." },
+          { n: 10, text: "If the axe is dull and the blade unsharpened, more strength must be exerted, but skill produces success." },
+          { n: 12, text: "The words of a wise man’s mouth are gracious, but the lips of a fool consume him." },
+          { n: 14, text: "Yet the fool multiplies words. No one knows what is coming, and who can tell him what will come after him?" },
+          { n: 18, text: "Through laziness the roof caves in, and in the hands of the idle, the house leaks." },
+          { n: 19, text: "A feast is prepared for laughter, and wine makes life merry, but money is the answer for everything." },
+          { n: 20, text: "Do not curse the king even in your thoughts, or curse the rich even in your bedroom, for a bird of the air may carry your words, and a winged creature may report your speech." },
+        ],
+        perItem: {
+          1: {
+            note: "The image is the argument of the whole chapter. A little folly does not reduce wisdom proportionally. It contaminates the jar.",
+          },
+          10: {
+            note: "The one piece of plain practical advice in the book: sharpen the axe. Skill is offered as a substitute for force.",
+          },
+          14: {
+            note: "The refrain from chapter eight, dropped into a saying about people who talk too much. Nobody knows what is coming, and the fool multiplies words anyway.",
+          },
+          19: {
+            addr: {
+              mode: "claims",
+              text: "This is not the cynicism it reads as. Money answering everything is an observation about what money does, made by a man who has already reported that it never satisfies anybody. Both are true, and you know both.",
+            },
+          },
+          20: {
+            note: "Advice from somebody who has watched what happens to people who talk. The bird carrying your words is proverbial, and the point is that a bedroom is not private.",
+          },
+        },
+        ground: {
+          kind: "genre",
+          text: "The second and lighter collection, working differently from chapter seven's. Where those sayings compared two goods and ranked them, these mostly describe consequences: dig a pit and fall into it, breach a wall and meet a snake, quarry stone and be hurt by it. The form is observational rather than moral, and several of them are about work rather than about virtue.",
+          src: "Fox · Seow · von Rad",
+        },
+        meaning:
+          "The chapter reads as a grab-bag and has one argument running under it: small things are decisive. A few dead flies spoil the whole jar. A dull axe costs strength you did not need to spend. A word said in a bedroom travels. None of it is about grand failures of character. It is about the disproportionate cost of small carelessness, which is the observation of somebody who has watched competent people undone by things they did not think mattered.",
+        addr: {
+          mode: "claims",
+          text: "Something small in your working life is costing you more than it should, and you have been treating it as beneath attention because the big things are handled. Sharpen the axe, says the book, which is the least spiritual sentence in Scripture and one of the most useful.",
+        },
+        ask: "What have you been leaving blunt?",
+      },
+    ],
+  },
+  {
+    id: "ecc-11",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 11:1–12:8",
+    chapterIndex: 11,
+    crossesChapters: true,
+    title: "Remember your Creator",
+    thread: "Sow in the morning and the evening because you do not know which will take. Then the finest writing in the book: a house falling quietly into disrepair, which is a body.",
+    closeEnd: "The last line returns the sentence the book opened with, closing the frame. Everything is vapour, and he has told you six times what to do about it.",
+    passages: [
+      {
+        ref: "11:1–10",
+        kind: "argument",
+        form: "prose",
+        title: "Cast your bread",
+        verses: [
+          { n: 1, text: "Cast your bread upon the waters, for after many days you will find it again." },
+          { n: 2, text: "Divide your portion among seven, or even eight, for you do not know what disaster may befall the land." },
+          { n: 3, text: "If the clouds are full, they will pour out rain upon the earth; whether a tree falls to the south or to the north, in the place where it falls, there it will lie." },
+          { n: 4, text: "He who watches the wind will fail to sow, and he who observes the clouds will fail to reap." },
+          { n: 5, text: "As you do not know the path of the wind, or how the bones are formed in a mother’s womb, so you cannot understand the work of God, the Maker of all things." },
+          { n: 6, text: "Sow your seed in the morning, and do not rest your hands in the evening, for you do not know which will succeed, whether this or that, or if both will equally prosper." },
+          { n: 7, text: "Light is sweet, and it pleases the eyes to see the sun." },
+          { n: 8, text: "So if a man lives many years, let him rejoice in them all. But let him remember the days of darkness, for they will be many. Everything to come is futile." },
+          { n: 9, text: "Rejoice, O young man, while you are young, and let your heart be glad in the days of your youth. Walk in the ways of your heart and in the sight of your eyes, but know that for all these things God will bring you to judgment." },
+          { n: 10, text: "So banish sorrow from your heart, and cast off pain from your body, for youth and vigor are fleeting." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "Casting bread on the waters has been read as maritime trade, as sowing grain on flooded ground, and as ordinary generosity; the image survives all three readings. Dividing a portion among seven or eight is risk-spreading, stated as such: you do not know what disaster may come. And the instruction to sow morning and evening is agricultural advice being used as a general argument about acting without information.",
+          src: "Fox · Seow · Krüger",
+        },
+        meaning:
+          "This is the practical conclusion of everything the book has established, and it is the opposite of paralysis. You cannot know which venture will succeed, so run more than one. You cannot read the weather, so stop watching it and sow. You do not understand how bones are formed in a womb and you will not understand the work of God either, so act anyway. Then the turn to a young man, told to rejoice and follow his heart and his eyes, with a clause attached about judgment that has been read as a later hand and reads just as well as this writer's own refusal to make it simple.",
+        lenses: {
+          arch: "The decision taken without the information that would have settled it, which is every decision anybody has ever actually made. (Sowing in weather you cannot read.)",
+        },
+      },
+      {
+        ref: "12:1–8",
+        kind: "poem",
+        form: "poetry",
+        title: "Before the silver cord",
+        verses: [
+          { n: 1, text: "Remember your Creator in the days of your youth,\nbefore the days of adversity come and the years approach\nof which you will say, “I find no pleasure in them,”" },
+          { n: 2, text: "before the light of the sun, moon, and stars is darkened,\nand the clouds return after the rain," },
+          { n: 3, text: "on the day the keepers of the house tremble and the strong men stoop,\nwhen those grinding cease because they are few\nand those watching through windows see dimly," },
+          { n: 4, text: "when the doors to the street are shut\nand the sound of the mill fades away, when one rises at the sound of a bird\nand all the daughters of song grow faint," },
+          { n: 5, text: "when men fear the heights and dangers of the road,\nwhen the almond tree blossoms, the grasshopper loses its spring,\nand the caper berry shrivels—for then man goes to his eternal home and mourners walk the streets." },
+          { n: 6, text: "Remember Him before the silver cord is snapped and the golden bowl is crushed,\nbefore the pitcher is shattered at the spring\nand the wheel is broken at the well," },
+          { n: 7, text: "before the dust returns to the ground from which it came\nand the spirit returns to God who gave it." },
+          { n: 8, text: "“Futility of futilities,” says the Teacher.\n“Everything is futile!”" },
+        ],
+        ground: {
+          kind: "genre",
+          text: "The imagery is a household running down. The keepers of the house tremble, the strong men stoop, those grinding cease because they are few, the ones watching through windows see dimly, the doors to the street are shut. Then four broken things at a well: a silver cord, a golden bowl, a pitcher, a wheel. And the almond blossoming, the grasshopper losing its spring, the caper berry shrivelling.",
+          src: "Fox · Seow · Alter",
+        },
+        misreading: {
+          named:
+            "The poem is a coded anatomy of old age: the keepers are the hands, the grinders are the teeth, the windows are the eyes.",
+          why: "That decoding is ancient, ingenious, and mostly works, which is the problem. Read as a key the poem becomes a puzzle with a solution, and once you have the solution there is no reason to read it again. What is on the page is a great house in its last stage, the staff too few to keep it, the doors shut and the sound going out of it. That image does something the anatomy cannot. It makes the ending gradual, domestic and quiet, which is how it usually is.",
+        },
+        meaning:
+          "The instruction is to remember now, and everything after it is the reason, laid out as one long before: before the light goes, before the house shuts, before the cord snaps and the pitcher goes at the spring. Then a line that is not despair but bookkeeping, the dust returning to the ground and the breath to God who gave it. And then the thesis again, word for word from chapter one, closing the frame. Nothing has been solved. Something has been recommended, six times.",
+        addr: {
+          mode: "claims",
+          text: "You will be, at some point, a house with fewer people in it than it was built for. The book does not ask you to be brave about that. It asks you to remember now, while the light is still sweet, which is a thing that can only be done early.",
+        },
+        ask: "What do you want to be in the habit of, before the days come that you take no pleasure in?",
+      },
+    ],
+  },
+  {
+    id: "ecc-12",
+    bookId: "ecclesiastes",
+    tier: "sitting",
+    span: "Ecclesiastes 12:9–14",
+    chapterIndex: 12,
+    title: "The epilogue",
+    thread: "Six verses in a different voice, speaking about the Teacher from outside his own book, and closing on a sentence that lands like a door shutting.",
+    closeEnd: "Whether that is a later hand making a dangerous book keepable, or the author signing his own work, is genuinely argued, and this app is not going to settle it for you.",
+    passages: [
+      {
+        ref: "12:9–14",
+        kind: "argument",
+        form: "prose",
+        title: "The whole duty of man",
+        verses: [
+          { n: 9, text: "Not only was the Teacher wise, but he also taught the people knowledge; he pondered, searched out, and arranged many proverbs." },
+          { n: 10, text: "The Teacher searched to find delightful sayings and to record accurate words of truth." },
+          { n: 11, text: "The words of the wise are like goads, and the anthologies of the masters are like firmly embedded nails driven by a single Shepherd." },
+          { n: 12, text: "And by these, my son, be further warned: There is no end to the making of many books, and much study wearies the body." },
+          { n: 13, text: "When all has been heard, the conclusion of the matter is this: Fear God and keep His commandments, because this is the whole duty of man." },
+          { n: 14, text: "For God will bring every deed into judgment, along with every hidden thing, whether good or evil." },
+        ],
+        ground: {
+          kind: "historical",
+          text: "The voice changes here. For twelve chapters the book has spoken as I; these six verses speak of the Teacher as he, describe his method from outside it, and address a reader as my son, which is the standard address of instruction literature.",
+          src: "Fox · Seow · Longman · Barton",
+        },
+        meaning:
+          "Two readings, both serious. On the first this is a later editor doing what the book needed to survive: framing twelve dangerous chapters with a summary orthodox enough to keep, which is why we have it at all. On the second it is the author signing his own work, and the judgment clause is consistent with the one he attached to the young man two chapters earlier. What is not in doubt is the effect. After twelve chapters of vapour, fear God and keep his commandments lands like a door closing on a room somebody had just opened a window in.",
+        addr: {
+          mode: "claims",
+          text: "Somebody has summarised your situation for you in a sentence that was true and did not touch what you were actually asking about. This book keeps both: the summary, and the twelve chapters that will not fit inside it.",
+        },
+        ask: "What summary of your life is accurate and still does not describe it?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway until movement 2 exists; no capstone until the movement completes.
@@ -727,6 +994,57 @@ export const NOT_FOUND_OUT_MOVEMENT: Movement = {
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },
+  doorway: {
+    kicker: "The third movement",
+    title: "Eat your bread",
+    paragraphs: [
+      "Eight chapters of looking, and the finding is that the looking does not finish. What follows does not solve that. It stops trying.",
+      "The last four chapters hold the bleakest sentence in the book and the most direct instruction in it, four verses apart. Then a second collection of sayings, a poem about a house falling into disrepair that is really about a body, and six verses in a different voice that somebody added at the end.",
+    ],
+    nextMovementId: "eat-your-bread",
+  },
+  capstone: {
+    kicker: "The second movement · Ecclesiastes 5–8",
+    title: "Nobody has finished looking",
+    paragraphs: [
+      "Four chapters narrowing from the shape of a life to the specifics of one. Money that will not fill anybody. A man given everything and denied the capacity to enjoy it. A collection of sayings that recommends the funeral over the party, for a stated reason. And a chapter of court advice for people with no leverage at all.",
+      "What holds it together is the claim in the movement's title, made three times in the last chapter and aimed squarely at the writer's own profession: nobody can find out the work that is done under the sun, and even a wise man who says he has, cannot. That is not an argument for ignorance. It is an argument against people selling completion, and it is made by somebody who went and looked.",
+      "And the permission has now landed five times in eight chapters, each time attached to the hardest sentence around it. By this point it is not an interruption of the argument. It is the conclusion the argument keeps producing.",
+    ],
+    sources: "Fox · Seow · Krüger",
+  },
+};
+
+export const EAT_YOUR_BREAD_MOVEMENT: Movement = {
+  id: "eat-your-bread",
+  index: 3,
+  title: "Eat your bread",
+  range: "Ecclesiastes 9–12",
+  throughline:
+    "One fate for everyone, and then the most direct instruction in the book, four verses later. Go. Eat. Drink. Wear white. Love somebody. Do the work with your might, because the days are few.",
+  chapterStart: 9,
+  chapterEnd: 12,
+  situation: {
+    kicker: "The ground beneath the answer",
+    title: "The situation",
+    paragraphs: [
+      "Sheol is not hell. In the Hebrew Bible it is the grave, the place of the dead, and it is characterised by inactivity rather than by punishment: no work, no planning, no knowledge, no wisdom. When this book says the dead know nothing, that is what it is describing, not making a claim about judgement, and the hope that grows later in the collection is a development rather than a correction.",
+      "White garments and oil on the head were what people wore to a feast. Telling somebody to wear them always is telling them to dress for a celebration on an ordinary day, which is a stronger instruction than it looks in English.",
+      "The permission that has appeared five times so far arrives here in the imperative, for the only time in the book. Go, eat, drink, let, enjoy, do. This is the one stretch of Ecclesiastes that gives orders.",
+      "And the closing poem's imagery is drawn from a household. The keepers of the house tremble, the strong men stoop, the grinders cease because they are few, those looking through the windows grow dim, the door to the street is shut. Readers have decoded it line by line as an anatomy of aging, and it works as one. It also works simply as a house running down, which is what the poem actually describes.",
+    ],
+    sources: "Fox · Seow · Krüger · Barton",
+  },
+  capstone: {
+    kicker: "The third movement · Ecclesiastes 9–12",
+    title: "Go, and then the house shuts",
+    paragraphs: [
+      "The movement opens on the flattest statement of death in the collection and answers it four verses later with the only imperatives in the book. Go. Eat. Drink. Wear white. Love somebody. Do the work with your might. The grounds for the instruction are the sentence it follows, not a mitigation of it.",
+      "Then the second collection of sayings, mostly about how small carelessness undoes competent people, and the practical conclusion drawn from twelve chapters of not knowing: you cannot read the weather, so sow in the morning and again in the evening, because you do not know which will take.",
+      "And the closing poem, which is a house running down, with too few staff to keep it, the doors shut and the sound going out of it. It ends with the dust returning to the ground and the breath returning to God, and then the thesis again, word for word from chapter one. Nothing has been solved. Something has been recommended, six times.",
+    ],
+    sources: "Fox · Seow · Krüger",
+  },
 };
 
 // The book-level composition overlay.
@@ -758,4 +1076,26 @@ export const ECCLESIASTES_INTRO: Panel = {
     },
   ],
   sources: "Fox · Seow · Longman · Krüger · Barton",
+};
+// The book-level look-back, where the argument for the book's presence in the canon lives.
+export const ECCLESIASTES_CAPSTONE: Capstone = {
+  kicker: "The whole book · Ecclesiastes 1–12",
+  title: "It is in the collection, and it says this",
+  paragraphs: [
+    "The most interesting fact about this book is that it is here at all. A text saying that the same fate comes to the righteous and the wicked, that the dead know nothing and have no further reward, that a man has no advantage over a beast, and that nobody can find out what is done under the sun, including the wise, was kept, copied, argued over and read aloud. Ancient discussion records the dispute plainly, on exactly the grounds a modern reader raises.",
+    "It was not kept by being tamed, though the last six verses tried. The epilogue is orthodox and it is six verses long, and the twelve chapters in front of it are not adjusted to fit. Whatever the collection decided when it kept this book, it did not decide to make it agree.",
+    "And what it claims is narrower than its reputation. Not that life is meaningless, which is a translator's word doing work the Hebrew does not do. Hevel is vapour: real, visible, and impossible to hold. Everything in these chapters is real and none of it stays, and the book is precise about the difference between those two things.",
+    "It does not end in despair, because it never was despair. Six times in twelve chapters, always immediately after the hardest sentence in its paragraph, it stops and says the same thing. Eat your bread. Drink your wine. Wear white. Enjoy the work while your hand is still on it. Be with the person you love, all the days of your fleeting life. That is not offered as compensation and it is not offered as a distraction. It is offered as the portion, which is this book's word for what a person actually gets.",
+  ],
+  tensions: [
+    {
+      claim:
+        "The conclusion of the matter is to fear God and keep his commandments, for this is the whole duty of man, and God will bring every deed into judgment.",
+      counter:
+        "The twelve chapters it is appended to say that one fate comes to the righteous and the wicked alike, that the dead know nothing, and that nobody can find out the work done under the sun. Whether the epilogue is a later hand making a dangerous book keepable, or the author signing his own, is argued and unsettled.",
+      where: "Ecclesiastes 12:13–14 · Ecclesiastes 9:2–5 · Ecclesiastes 8:17",
+    },
+  ],
+  sources: "Fox · Seow · Longman · Krüger · Barton",
+  ask: "This book was kept because somebody decided the collection needed a voice that would say all of it out loud. What are you not saying, that the people around you might need said?",
 };

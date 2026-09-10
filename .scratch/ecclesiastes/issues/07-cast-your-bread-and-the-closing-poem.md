@@ -17,12 +17,30 @@ tradition has enjoyed rather too much.
 
 **Blocked by:** 06.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `ecc-11` spans 11:1–12:8 with `crossesChapters` and one passage per chapter
-- [ ] 12:1–7 is lineated and authored whole
-- [ ] The closing poem is not reduced to an anatomical key
-- [ ] The frame closing at 12:8 is named
-- [ ] Tagged in the find index in the same change
-- [ ] Scripture verbatim, sources paraphrased, no em dashes, density within target
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] `ecc-11` spans 11:1–12:8 with `crossesChapters` and one passage per chapter
+- [x] 12:1–7 is lineated and authored whole
+- [x] The closing poem is not reduced to an anatomical key
+- [x] The frame closing at 12:8 is named
+- [x] Tagged in the find index in the same change
+- [x] Scripture verbatim, sources paraphrased, no em dashes, density within target
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**The closing poem is not reduced to an anatomical key**, which was the ticket's requirement and the
+easy failure. The misreading grants that the decoding is ancient, ingenious and mostly works, and
+then says why that is the problem: read as a key the poem becomes a puzzle with a solution, and once
+you have the solution there is no reason to read it again. What is on the page is a great house in
+its last stage, and that image does something the anatomy cannot.
+
+**The frame closing at 12:8 is inside the poem passage** rather than stranded on its own, so the
+reader meets the thesis returning as the last line of the poem, which is where it does its work.
+
+**Third poem through the lineation helper with no changes.** Chapter 12's house imagery breaks at
+the parallelism cleanly.
+
+**`ecc-11` was caught by the turn invariant** added during Mark, which is the second time that gate
+has paid for itself. The poem and the argument were both authored without an `addr` and the build
+refused.

@@ -13,13 +13,31 @@ two: a dead fly in the perfume, a snake that bites before it is charmed, a bird 
 
 **Blocked by:** 05.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Movement 3 declared with its chapter range and an authored situation panel
-- [ ] Movement 2 gains its capstone and doorway
-- [ ] `ecc-9` gives 9:7–10 its full weight, as permission granted on the basis of the bleakness
-- [ ] The tension on 9:5 is set out honestly in both directions
-- [ ] `ecc-10` is a `saying-cluster` sitting
-- [ ] Both tagged in the find index in the same change
-- [ ] Scripture verbatim, sources paraphrased, no em dashes, density within target
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] Movement 3 declared with its chapter range and an authored situation panel
+- [x] Movement 2 gains its capstone and doorway
+- [x] `ecc-9` gives 9:7–10 its full weight, as permission granted on the basis of the bleakness
+- [x] The tension on 9:5 is set out honestly in both directions
+- [x] `ecc-10` is a `saying-cluster` sitting
+- [x] Both tagged in the find index in the same change
+- [x] Scripture verbatim, sources paraphrased, no em dashes, density within target
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**One deviation from the house rule, and it is deliberate.** `ecc-9`'s turn sits on 9:7-12 rather
+than on the reading's closing passage. The rule that matters, and the one the validator now
+enforces, is one turn per sitting; putting it on the closing passage is a convention. Here the
+reading's peak is go, eat your bread, and the poor wise man nobody remembered is a deliberate
+cooling-off after it. Turning on the coda would have been tidier and worse.
+
+**9:7-10 is given the weight the ticket asked for, and the order is the argument.** It arrives
+immediately after the bleakest paragraph in the book and its grounds are that paragraph: not in
+spite of the one fate, because of it. The clause people miss is that God has already approved your
+works, which removes the condition, and the situation panel notes that this is the only stretch of
+the book written in the imperative.
+
+**The 9:5 tension is set out in both directions**, per the spec's rule for this book. It does not
+adjudicate: it says this book neither denies the later hope nor makes room for it, and reports what
+can be seen under the sun and stops.

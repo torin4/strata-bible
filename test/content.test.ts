@@ -256,7 +256,14 @@ describe("content lib", () => {
     expect(book?.movements.map((m) => m.id)).toEqual([
       "under-the-sun",
       "not-found-out",
+      "eat-your-bread",
     ]);
+    // ecc-11 spans 11:1 to 12:8 and still files under the third movement by range.
+    const spanning = book?.readings.find((r) => r.id === "ecc-11");
+    expect(spanning?.crossesChapters).toBe(true);
+    expect(spanning && getMovement("ecclesiastes", spanning)?.id).toBe(
+      "eat-your-bread",
+    );
     expect(book?.readings.map((r) => r.id)).toEqual([
       "ecc-1",
       "ecc-2",
@@ -266,10 +273,15 @@ describe("content lib", () => {
       "ecc-6",
       "ecc-7",
       "ecc-8",
+      "ecc-9",
+      "ecc-10",
+      "ecc-11",
+      "ecc-12",
     ]);
     expect(getAdjacent("ecclesiastes", "ecc-1").next?.id).toBe("ecc-2");
     expect(getAdjacent("ecclesiastes", "ecc-4").next?.id).toBe("ecc-5");
-    expect(getAdjacent("ecclesiastes", "ecc-8").next).toBeUndefined();
+    expect(getAdjacent("ecclesiastes", "ecc-8").next?.id).toBe("ecc-9");
+    expect(getAdjacent("ecclesiastes", "ecc-12").next).toBeUndefined();
     for (const reading of book?.readings ?? []) {
       expect(getMovement("ecclesiastes", reading), reading.id).toBeDefined();
     }

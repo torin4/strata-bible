@@ -644,4 +644,24 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For somebody else's confident account of your life, which never quite fitted.",
   },
+  "ecc-9": {
+    themes: ["grief", "god-feels-absent", "deferred-hope", "starting-over"],
+    speaksTo:
+      "For everything you have been holding off on until the situation resolves.",
+  },
+  "ecc-10": {
+    themes: ["limits", "control", "ambition"],
+    speaksTo:
+      "For the small thing you have left blunt because the big things are handled.",
+  },
+  "ecc-11": {
+    themes: ["waiting", "grief", "starting-over", "limits"],
+    speaksTo:
+      "For acting without the information that would have settled it, and for the house quietly running down.",
+  },
+  "ecc-12": {
+    themes: ["doubt", "faith-and-fairness", "overlooked"],
+    speaksTo:
+      "For the summary of your life that is accurate and still does not describe it.",
+  },
 };
