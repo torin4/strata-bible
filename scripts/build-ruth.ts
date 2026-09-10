@@ -384,6 +384,7 @@ export const EMPTY_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the road",
     title: "The situation",
+    image: "/images/ruth-empty.webp",
     paragraphs: [
       "Moab sits across the Dead Sea from Bethlehem, near enough to walk to and foreign enough to matter. It is the neighbour Israel's texts treat worst: Numbers blames Moabite women for leading Israel into worship of another god, and Deuteronomy bars Moabites from the assembly of the LORD to the tenth generation. Going there to eat during a famine is what people did, and the book reports it without a word of comment.",
       "A widow's position was a matter of property law rather than sympathy. Households held land, land passed through men, and a woman with no husband and no sons had no standing and no income of her own. When Naomi tells her daughters-in-law that she has nothing to offer them, she is not being dramatic. She is describing the arrangement accurately. What was left to a woman in that position was a household willing to take her in, or the leftovers of somebody else's harvest.",
@@ -425,6 +426,7 @@ export const THE_REDEEMER_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the claim",
     title: "The situation",
+    image: "/images/ruth-redeemer.webp",
     paragraphs: [
       "A redeemer, in this law, is a relative with both the right and the duty to buy back what a family has lost: land it was forced to sell, or a relative sold into debt slavery. It is a family safety net written into property law, and it exists because land was not supposed to leave a family permanently. The word runs through the second half of this book and it is a legal term before it is anything else.",
       "There is a separate obligation, in Deuteronomy, that a dead man's brother should marry his widow so that the first son carries the dead man's name and keeps his portion. It applies to brothers living on the same property. Boaz is not a brother, and neither is the nearer man.",
