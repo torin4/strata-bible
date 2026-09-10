@@ -435,12 +435,16 @@ describe("content lib", () => {
       "mark-1a",
       "mark-1b",
       "mark-2",
+      "mark-3",
+      "mark-4",
+      "mark-5",
     ]);
     expect(getReading("mark", "mark-1a")?.span).toBe("Mark 1:1\u201320");
     expect(getAdjacent("mark", "mark-1a").prev).toBeUndefined();
     expect(getAdjacent("mark", "mark-1b").next?.id).toBe("mark-2");
     expect(getAdjacent("mark", "mark-2").prev?.id).toBe("mark-1b");
-    expect(getAdjacent("mark", "mark-2").next).toBeUndefined();
+    expect(getAdjacent("mark", "mark-2").next?.id).toBe("mark-3");
+    expect(getAdjacent("mark", "mark-5").next).toBeUndefined();
     for (const reading of book?.readings ?? []) {
       expect(getMovement("mark", reading)?.id, reading.id).toBe(
         "the-authority",

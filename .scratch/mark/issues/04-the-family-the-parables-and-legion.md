@@ -20,17 +20,43 @@ let the reader do the arithmetic.
 
 **Blocked by:** 03 — Author Mark 1:21 to 3:6, Capernaum and the first plot.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `mark-3`, `mark-4` and `mark-5` are sittings
-- [ ] The family scene is left as harsh as Mark wrote it
-- [ ] The stated purpose of the parables is faced rather than softened
-- [ ] Legion is read against Roman occupation, in the ground layer, without overclaiming
-- [ ] The woman with the flow of blood is read against the purity laws she is breaking by touching him
-- [ ] Each reading has one turn, on its closing passage
-- [ ] All three are tagged in the find index in the same change
-- [ ] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
-- [ ] Sources are attributed and paraphrased, never quoted
-- [ ] No em dashes in authored copy
-- [ ] No passage exceeds the density target on its own merits
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] `mark-3`, `mark-4` and `mark-5` are sittings
+- [x] The family scene is left as harsh as Mark wrote it
+- [x] The stated purpose of the parables is faced rather than softened
+- [x] Legion is read against Roman occupation, in the ground layer, without overclaiming
+- [x] The woman with the flow of blood is read against the purity laws she is breaking by touching him
+- [x] Each reading has one turn, on its closing passage
+- [x] All three are tagged in the find index in the same change
+- [x] The scripture is materialised verbatim from the BSB lookup and passes the verse-integrity invariant
+- [x] Sources are attributed and paraphrased, never quoted
+- [x] No em dashes in authored copy
+- [x] No passage exceeds the density target on its own merits
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**Legion is authored the way the ticket asked: plainly, and without overclaiming.** The ground note
+gives the four facts and stops. The name is a Roman military unit of several thousand. The herd is
+about two thousand. A boar was carried on the standards of the Tenth Legion, which garrisoned Judea
+around when this book was written. They go into the sea and drown. The misreading block closes both
+exits, literal demonology and dismissal, and says you do not have to settle the metaphysics to hear
+what is being said about occupation. Nowhere does it assert the text means Rome. It lets the reader
+do the arithmetic, which is the house style.
+
+**The quietest line in the chapter got the meaning.** A man they had been chaining is sitting there
+dressed and in his right mind, and the town asks the healer to leave. An arrangement everybody hates
+can still be the one everybody is used to.
+
+**Mark 4:12 is faced rather than softened.** The stated purpose of the parables is that those
+outside look and do not see, in case they should turn and be forgiven. The misreading names the
+comfortable reading and refuses it, and declines to resolve whether that is terrible or merciful.
+
+**The two sandwiches are both named as construction**, not noticed as coincidence: the family
+around the Beelzebul charge in chapter 3, and the woman inside Jairus's story in chapter 5. In the
+second, the reading says outright that the delay is why the child is dead when he arrives, and
+lets that stand.
+
+**Density** 0.8x, 1.1x, 1.7x on mark-3; 0.7x, 0.6x, 1.2x on mark-4; 0.7x, 0.7x, 0.9x on mark-5.
+The five-verse family scene needed one trim to come off 2.0x.

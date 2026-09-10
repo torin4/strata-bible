@@ -316,6 +316,243 @@ ${verses(3, range(1, 6))}
       },
     ],
   },
+  {
+    id: "mark-3",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 3:7–35",
+    chapterIndex: 3,
+    title: "Out of His mind",
+    unitLabel: "Scene",
+    thread: "The crowds get large enough to be a problem, he appoints twelve men, and then the two verdicts arrive: his family says he is mad, and the scribes say he is possessed.",
+    closeEnd: "He answers by drawing the family again around whoever does the will of God, while his mother is standing in the road outside.",
+    passages: [
+      {
+        label: "One",
+        ref: "3:7–19",
+        kind: "scene",
+        form: "prose",
+        title: "The twelve",
+        verses: [
+${verses(3, range(7, 19))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The places the crowd comes from include Tyre, Sidon and the far side of the Jordan, which is a way of saying the map is already larger than Galilee. He keeps a boat ready so he is not crushed. The unclean spirits go on naming him and go on being silenced, the pattern from chapter 1 still running. Then he appoints twelve, which is not a number anybody in that audience heard as arbitrary.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "Two things are set here that the rest of the book pays off. The twelve are appointed to be with him and to be sent out, in that order, so the being with comes first and most of what follows is them failing at it. And the list ends with the man who hands him over, named as such the moment he is introduced. Mark gives away the ending in a subordinate clause in chapter three and then carries straight on.",
+        lenses: {
+          theo: "Twelve is not a staffing decision. It is a claim about what is being started again, made by a man who has not yet been accused of anything and shortly will be accused of everything.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "3:20–30",
+        kind: "scene",
+        form: "prose",
+        title: "Two verdicts",
+        verses: [
+${verses(3, range(20, 30))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Two verdicts arrive in one scene, and Mark puts one inside the other, which is his standard move: the family sets out, the scribes make their charge, the family arrives. The scribes have come down from Jerusalem, so the capital is now paying attention. Their accusation concedes that the exorcisms happen and disputes only the source, which is the shape most serious opposition takes.",
+          src: "Marcus · Collins · France",
+        },
+        misreading: {
+          named:
+            "The unforgivable sin is a trap door, and a person might fall through it by accident or by having the wrong thought.",
+          why: "Read what it is attached to. The sentence arrives immediately after men have watched someone set free and called it the work of the devil, and Mark adds the note himself: he said this because they were saying he had an unclean spirit. What is named is a settled determination to look straight at something good and call it evil. The anxiety this verse usually produces, in people afraid they have committed it, is close to evidence that they have not. The state being described does not worry about itself.",
+        },
+        meaning:
+          "The family scene is the harshest thing any gospel says about them, and Matthew and Luke both drop it. His own people go out to seize him, and the verb is the one used elsewhere for making an arrest. Their explanation is that he is out of his mind, which is the kind thing to think. The scribes' is that he is possessed, which is not. Between them they cover the whole range of what people say about someone they cannot account for. He is ill, or he is dangerous.",
+      },
+      {
+        label: "Three",
+        ref: "3:31–35",
+        kind: "scene",
+        form: "prose",
+        title: "Who are My mother and brothers?",
+        verses: [
+${verses(3, range(31, 35))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "They do not come in. They stand outside and send word in, and the crowd sitting around him is what he gestures at when he answers. His family is outside the circle and strangers are inside it.",
+          src: "Marcus · Collins",
+        },
+        meaning:
+          "It is not a rejection of his family, and it is not the warm redefinition it usually gets read as either. It is a hard sentence delivered while his mother is standing in the road. Whoever does the will of God: the qualification is doing, not believing and not being related.",
+        addr: {
+          mode: "names",
+          text: "The people who have known you longest are often the most certain that what you are doing now is a symptom. They are using the only category they have for it.",
+        },
+        ask: "Who has decided your direction is something to be managed rather than heard?",
+      },
+    ],
+  },
+  {
+    id: "mark-4",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 4",
+    chapterIndex: 4,
+    title: "Parables, and the storm",
+    unitLabel: "Scene",
+    thread: "He teaches from a boat, and what he teaches is that the teaching is meant to be difficult. Then the same evening, on the same water, the men who have had it all explained privately are terrified.",
+    closeEnd: "They ask each other who this is. It is the question the whole book is built on, and nobody in the boat can answer it.",
+    passages: [
+      {
+        label: "One",
+        ref: "4:1–20",
+        kind: "scene",
+        form: "prose",
+        title: "So that they may not perceive",
+        verses: [
+${verses(4, range(1, 20))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Sowing in that agriculture went before ploughing rather than after, so a man broadcasting seed across a path, rocky ground and thorns is not being careless. He is doing the job the way it was done. The quotation in verse 12 is Isaiah 6, from a passage where a prophet is told at the outset that his preaching will harden the people who hear it. And Mark's phrase for those outside is literal: outside is where the family was standing in the previous chapter.",
+          src: "Isaiah 6:9–10 · Marcus · Collins",
+        },
+        misreading: {
+          named:
+            "The parables are homely illustrations, told to make hard ideas easy for ordinary people.",
+          why: "This chapter says the opposite, in his own mouth, which is why most readers slide past verse 12. The stated purpose is that those outside may look and not see and hear and not understand, in case they should turn and be forgiven. Softening that into a teaching method loses what Mark is doing with it. Parables sort people, and the sorting is the point. Whether that reads as terrible or as merciful depends on what you think a person does with a story they cannot immediately cash out.",
+        },
+        meaning:
+          "The parable is about failure, three quarters of it, and it is told to a crowd so large he has to get into a boat to be heard. Then he explains it privately to the twelve, which sets the rest of the book up: they are inside, they get the explanation, and by chapter eight they still do not understand. Notice what the explanation does not contain. There is no advice for the path, the rocks or the thorns. The soil is never asked to improve. What is promised is only that some of it lands, and that where it does the yield is out of all proportion to the loss.",
+        lenses: {
+          arch: "The word that goes out indiscriminately and mostly does not take, thrown by someone who keeps throwing it. (Sowing before you know the ground.)",
+        },
+      },
+      {
+        label: "Two",
+        ref: "4:21–34",
+        kind: "scene",
+        form: "prose",
+        title: "What a seed does at night",
+        verses: [
+${verses(4, range(21, 34))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Three short sayings and two seed parables. The seed growing secretly is unique to Mark; neither Matthew nor Luke keeps it. And the mustard seed is not literally the smallest seed anyone knew, which ancient readers understood as well as we do. It was a stock phrase for something proverbially tiny, the way we say a grain of sand.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The two seed parables make the same argument from opposite ends. In the first a man scatters seed and then sleeps and rises, night and day, and it grows, and he does not know how. In the second the smallest thing in the proverb becomes the largest thing in the garden. Both are arguments against measuring where you happen to be standing. And both sit in a chapter that has just said plainly that most of what is sown fails, which stops either of them hardening into a promise.",
+        lenses: {
+          theo: "Verse 27 is the most restful sentence in the gospel. He sleeps and rises, night and day, and the seed sprouts and grows, and he does not know how. Whatever the kingdom is doing, it is not waiting for him to watch it.",
+        },
+      },
+      {
+        label: "Three",
+        ref: "4:35–41",
+        kind: "scene",
+        form: "prose",
+        title: "Who is this?",
+        verses: [
+${verses(4, range(35, 41))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The lake sits low in a ring of hills and squalls come down onto it fast, so the storm is local and unremarkable. What is not unremarkable is where he is: asleep on the cushion in the stern, the kind of detail an eyewitness account keeps and a legend does not. And the word he uses on the wind is the one he used on the unclean spirit in the synagogue. Be silent.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "Their complaint is not do something. It is do you not care. That is what people say when they already believe he could and are not sure he will, which is the leper's doubt from chapter one in a different mouth. And his question back is harder than it sounds, because they have just watched him do it and the thing he asks about is the fear. Then the sentence the book is built on, asked by the people closest to him, in a boat, in the dark. Who is this?",
+        addr: {
+          mode: "names",
+          text: "You may have already decided that the silence means indifference. The people in the boat had a whole chapter of evidence behind them and still reached for that reading first.",
+        },
+        ask: "Where have you started reading a delay as proof that you are not cared about?",
+      },
+    ],
+  },
+  {
+    id: "mark-5",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 5",
+    chapterIndex: 5,
+    title: "Legion",
+    unitLabel: "Scene",
+    thread: "Three healings, and the first is the one this whole apparatus exists for. A man with a Roman military unit for a name, a herd going into the sea, and a town that asks the healer to leave.",
+    closeEnd: "He tells them to tell nobody, and then tells them to give her something to eat, which is the most human sentence in the chapter.",
+    passages: [
+      {
+        label: "One",
+        ref: "5:1–20",
+        kind: "scene",
+        form: "prose",
+        title: "My name is Legion",
+        verses: [
+${verses(5, range(1, 20))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "This is Gentile territory, which is why there are pigs in it at all. The man lives among the tombs, has broken every chain put on him, and cuts himself with stones. Asked his name, he answers with a Roman military unit of several thousand men. The herd is about two thousand, and a boar was carried on the standards of the Tenth Legion, which garrisoned Judea in the years around when this book was written. They go down the bank into the sea and drown.",
+          src: "Marcus · Horsley · Collins",
+        },
+        misreading: {
+          named:
+            "This is either a straight account of demon expulsion, or ancient credulity with nothing in it for a modern reader.",
+          why: "Neither reading survives the details Mark chose. The name is a military unit. The herd is the size of a legion at strength. They beg not to be sent out of the country, and then go into the sea and drown, which is what the exodus did to an army and what everyone in that audience wanted done to Rome. And the town's response to a man restored is to ask the healer to leave, because what has just happened is more frightening than the arrangement they had. You do not have to settle the metaphysics to hear what is being said about occupation.",
+        },
+        meaning:
+          "The quietly devastating line is the town's. A man they had been chaining is sitting there dressed and in his right mind, and they ask the one who did it to go. An arrangement everybody hates can still be the arrangement everybody is used to, and whoever breaks it is not thanked for it. Then the ending inverts the pattern the book has been building. Everywhere else he tells people to say nothing. Here, in Gentile country, he tells the man to go home and say everything.",
+        lenses: {
+          arch: "The one everybody has stopped trying to help, chained where the dead are kept, and a town's relief at having somewhere to put him. (The man outside the wall.)",
+        },
+      },
+      {
+        label: "Two",
+        ref: "5:21–34",
+        kind: "scene",
+        form: "prose",
+        title: "Who touched My clothes?",
+        verses: [
+${verses(5, range(21, 34))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "One story goes inside another again. A synagogue official kneels in public, which costs him something in front of his colleagues, and then while his daughter is dying the account stops for a woman who has been bleeding twelve years. Under the purity laws that condition made her continuously unclean, and passed the state to whatever she touched. A crowded street is the last place she should be, and a stranger's cloak the last thing she should take hold of.",
+          src: "Leviticus 15:25–27 · Marcus · Collins",
+        },
+        meaning:
+          "Twelve years of her illness, twelve years of the girl's entire life, and Mark sets the two numbers side by side deliberately. She takes what she needs without asking, from behind, and the thing she most wanted to avoid, being known, is exactly what he insists on: he stops a dying child's rescue to make her say it out loud in front of everyone. That looks cruel until you see what she gets from it. She came for the cloak. She leaves having been called daughter, in public, in a street where nobody was supposed to touch her.",
+        lenses: {
+          theo: "He does not tell her that the touch worked because of anything he did. He tells her that her faith has healed her, which puts the thing she did furtively at the centre of the account and leaves it standing there.",
+        },
+      },
+      {
+        label: "Three",
+        ref: "5:35–43",
+        kind: "scene",
+        form: "prose",
+        title: "Talitha koum",
+        verses: [
+${verses(5, range(35, 43))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The news arrives while he is still speaking to the woman. The professional mourners are already at the house, which was normal and immediate. The words he speaks to the child are Aramaic, and Mark keeps them and then translates them, as he does throughout this gospel for readers who did not have the language. The last instruction in the scene is not about secrecy. It is to give her something to eat.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The delay caused by the woman is the reason the child is dead by the time he arrives, and Mark lets that stand without smoothing it over. Then he clears out everyone whose job was to grieve professionally, takes three men and two parents, and says four ordinary words to a child in her own language. Little girl, get up. Whatever else Mark is doing with the secrecy here, the thing he leaves in your hand is that after the miracle somebody had to remember she has not eaten.",
+        addr: {
+          mode: "names",
+          text: "Two people needed him at once, and one of them was by any reasonable measure the more urgent. The book does not resolve that. It just refuses to let the less urgent one go unattended while it happens.",
+        },
+        ask: "Who is quietly waiting while you deal with the urgent thing, and what would it cost to stop?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway: movement 2 does not exist yet, and the content validator fails a
@@ -384,4 +621,6 @@ export const MARK_INTRO: Panel = {
 `;
 
 writeFileSync("content/mark.ts", file);
-console.log("Wrote content/mark.ts: mark-1a, mark-1b, mark-2.");
+console.log(
+  "Wrote content/mark.ts: mark-1a, mark-1b, mark-2, mark-3, mark-4, mark-5.",
+);
