@@ -1312,6 +1312,243 @@ ${verses(13, range(28, 37))}
       },
     ],
   },
+  {
+    id: "mark-14a",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 14:1–52",
+    chapterIndex: 14,
+    title: "Take this cup",
+    unitLabel: "Scene",
+    thread: "A woman pours out a year's wages, a friend agrees a price, and in a garden he asks to be let off and is not.",
+    closeEnd: "Verse 50 is four words long. Everyone deserted him and fled. The twelve appointed in chapter three are gone by the end of chapter fourteen.",
+    passages: [
+      {
+        label: "One",
+        ref: "14:1–11",
+        kind: "scene",
+        form: "prose",
+        title: "She has done what she could",
+        verses: [
+${verses(14, range(1, 11))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Another sandwich: the leaders plot, the woman anoints, Judas goes to the leaders. The ointment is valued at more than three hundred denarii, about a year's wages for a labourer, and the objection about the poor is a reasonable one. Anointing the head is what is done to a king, and the word for anointed is where the title comes from. She is not named. Mark says her act will be told wherever the gospel goes, and then does not record her name.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "She is the only person in the book who does something to him rather than asking something of him, and the only one who behaves as though she has understood what is about to happen. He says as much: she has anointed my body in advance of my burial. The disciples, who have been told three times, raise a budget objection. And Mark closes the sandwich by putting Judas at the priests' door immediately after, so the extravagant act and the transaction sit on the same page.",
+        lenses: {
+          theo: "The anointing of the king is done by an unnamed woman with a jar, in a private house, days before an execution. It is the only coronation this book gives him.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "14:12–31",
+        kind: "scene",
+        form: "prose",
+        title: "One of you will betray Me",
+        verses: [
+${verses(14, range(12, 31))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "In Mark's chronology the meal is a Passover meal, which puts the execution on the festival day itself. The words over the bread and the cup stand alongside Paul's as the earliest form we have. And the hymn they sing on the way out is the Hallel, sung at Passover, which ends in Psalm 118, the psalm the crowd was shouting on the way in.",
+          src: "Marcus · Collins · 1 Corinthians 11:23–25",
+        },
+        meaning:
+          "The table talk is entirely about failure and it is addressed to everybody at the table. One of you will betray me, and each of them asks surely not I, which is the right question. Then the prediction that all of them will fall away, which Peter denies loudly and specifically, and the others join in: Mark writes that they all said the same. So the meal the church has kept ever since is instituted at a table where the host says plainly that every guest is about to abandon him, and hands them the bread anyway.",
+        tensions: [
+          {
+            claim:
+              "The last supper is a Passover meal, and the execution falls on the festival day itself.",
+            counter:
+              "John's gospel puts the meal before Passover and has him die as the lambs are being killed, the day before. The two chronologies cannot both be right, and neither has ever been reconciled to the other.",
+            where: "Mark 14:12–16 · John 13:1 · John 19:14",
+          },
+        ],
+      },
+      {
+        label: "Three",
+        ref: "14:32–52",
+        kind: "scene",
+        form: "prose",
+        title: "Take this cup",
+        verses: [
+${verses(14, range(32, 52))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Gethsemane means oil press. He takes the three who were on the mountain, and Mark's verb for his distress is strong enough that later writers softened it. Abba is the Aramaic, kept and then translated, and it is the only prayer of his this gospel records in his own language. And then the young man in the linen cloth, who appears in no other gospel, is never named, and is never explained.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "This is the least composed portrait of him in the four gospels and it is left that way here. He asks for the cup to be taken away. He asks three times. Nothing answers, and he goes anyway, which is a different thing from not minding. Then the arrest, the desertion, and the detail nobody has satisfactorily explained: a young man following in a linen cloth, grabbed, who leaves the cloth and runs away naked. Whatever it is, Mark thought it worth two verses at the moment his book empties of everybody.",
+        lenses: {
+          arch: "The prayer that is not answered, prayed by someone who then goes and does the thing. (Asked three times, and got up.)",
+        },
+      },
+    ],
+  },
+  {
+    id: "mark-14b",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 14:53–72",
+    chapterIndex: 14,
+    title: "Outside in the courtyard",
+    unitLabel: "Scene",
+    thread: "Two hearings in one building. Inside, a man is condemned for saying who he is. Outside in the yard, another man swears he does not know him.",
+    closeEnd: "The rooster goes a second time and he breaks down. It is the last this gospel sees of Peter.",
+    passages: [
+      {
+        label: "One",
+        ref: "14:53–65",
+        kind: "scene",
+        form: "prose",
+        title: "I am",
+        verses: [
+${verses(14, range(53, 65))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "The proceedings have problems as a legal process and readers have noticed for a long time: a capital case at night, on the eve of a festival, with a verdict in the same session. Mark may be describing a hearing rather than a formal trial, or writing at a distance from the procedure. The testimony collapses because the witnesses do not agree, which was a requirement. Then the high priest asks directly, and gets the only unhedged answer in the book.",
+          src: "Marcus · Collins · Bond",
+        },
+        meaning:
+          "Fourteen chapters of telling people to be quiet end here. Asked plainly, in the one setting where the answer will kill him, he says <b>I am</b>, and adds the line from Daniel about the Son of Man coming with clouds. The secrecy was never modesty and was never suspense. It held until the only moment at which the title could not be misheard as a career. He says it when saying it is indistinguishable from a death sentence.",
+        lenses: {
+          theo: "He is condemned on the truth and not on any of the charges. The witnesses fail, and the case against him is made by his own answer.",
+        },
+      },
+      {
+        label: "Two",
+        ref: "14:66–72",
+        kind: "scene",
+        form: "prose",
+        title: "I do not know Him",
+        verses: [
+${verses(14, range(66, 72))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Mark cuts between the two rooms deliberately, the last sandwich in the book. A servant girl, then the bystanders, then his accent gives him away. And the rooster crowing twice is Mark's alone; Matthew, Luke and John all have it once.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "It happens in the yard of the building where the other conversation is going on, and Mark has arranged them so that you cannot read one without the other. Inside, a man says who he is and it kills him. Outside, a man says he is not who he is and it saves him. That is the whole cost of chapter eight put into one piece of staging. And then the last thing this gospel says about its most prominent human being: he broke down and wept. He does not appear again.",
+        addr: {
+          mode: "names",
+          text: "You know what you would say if the cost were high enough and the room unfriendly enough, because you have probably already said it once, in a smaller way, and been relieved that nobody noticed.",
+        },
+        ask: "Where have you let something pass because saying otherwise would have made the room difficult?",
+      },
+    ],
+  },
+  {
+    id: "mark-15",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 15",
+    chapterIndex: 15,
+    title: "Truly this man",
+    unitLabel: "Scene",
+    thread: "A governor who can see it is envy, a crowd that has been worked, a flogging, and six hours. The only person who says plainly who he is, is the officer running the execution.",
+    closeEnd: "Two women watch where he is laid. Mark names them, because they are the ones who come back.",
+    passages: [
+      {
+        label: "One",
+        ref: "15:1–20",
+        kind: "scene",
+        form: "prose",
+        title: "Wishing to satisfy the crowd",
+        verses: [
+${verses(15, range(1, 20))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Pilate governed Judea for about a decade, and other sources describe him as inflexible and brutal, which does not match the hesitant figure in the gospels; the gap is one of the standard problems here. The custom of releasing a prisoner at the festival is recorded nowhere outside the gospels. Barabbas was held for murder committed in an uprising, which makes this a choice between two kinds of answer to Rome. And the mocking is a soldiers' game, with a purple cloak and a crown of thorns.",
+          src: "Marcus · Collins · Bond · Josephus",
+        },
+        meaning:
+          "Mark says plainly why the priests handed him over: envy. And plainly why Pilate did what he did: wishing to satisfy the crowd. Neither is a theological explanation. They are the two most ordinary motives in public life and between them they are enough. The crowd is a real crowd, and it is also, six days after a different crowd was shouting on the road, a demonstration of how quickly a crowd becomes a different crowd. The soldiers' game is what an army does with a prisoner once the paperwork is finished.",
+      },
+      {
+        label: "Two",
+        ref: "15:21–32",
+        kind: "scene",
+        form: "prose",
+        title: "He saved others",
+        verses: [
+${verses(15, [...range(21, 27), ...range(29, 32)])}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Simon of Cyrene is named, and so are his sons, which reads like a reference to men the first readers might have known. The drugged wine is refused. The charge on the placard is political: King of the Jews is the crime Rome executed people for, not a theological complaint. Verse 28 is one of the empty numbers in this book, absent from the earliest manuscripts, which is why the count jumps here.",
+          src: "Marcus · Collins · France",
+        },
+        meaning:
+          "The mocking is theologically precise, and that is what makes it unbearable. He saved others; he cannot save himself. Everybody in the scene offers that as a refutation, and the book has spent ten chapters arguing that it is the definition. Come down from the cross and we will believe: it is the demand for a sign from chapter eight, made one last time, and refused one last time in the only way left.",
+      },
+      {
+        label: "Three",
+        ref: "15:33–47",
+        kind: "scene",
+        form: "prose",
+        title: "Truly this man",
+        verses: [
+${verses(15, range(33, 47))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "Darkness from noon to three. The cry is in Aramaic, kept and then translated, and it is the first line of Psalm 22. The curtain torn in two is described with the same verb Mark used in chapter one for the heavens at the baptism, and those are the only two places in the gospel where he uses it. The centurion is the Roman officer commanding the execution detail. And the women are named here for the first time, with the note that they had followed him and provided for him in Galilee.",
+          src: "Psalm 22:1 · Marcus · Collins",
+        },
+        misreading: {
+          named:
+            "The cry from the cross is not despair, because Psalm 22 ends in vindication and he is quoting the whole psalm.",
+          why: "That is a real reading with a long history, and it is doing work the text does not ask for. Mark gives one line, and gives it in Aramaic, which he does only when he wants the words themselves heard. He does not quote the psalm's ending and neither does anyone in the scene; the bystanders mishear it as a call for Elijah. Luke replaces the cry with into your hands I commit my spirit, and John with it is finished, which tells you how uncomfortable it made the tradition. Mark's Jesus dies asking why.",
+        },
+        meaning:
+          "The two torn things are the frame of the whole book. At the river the heavens are torn open and a voice says this is my Son, and nobody in the story hears it. At the death the curtain is torn and a Roman officer says this man was the Son of God, and he is the only human being in sixteen chapters to say it and not be told to be quiet. He says it having watched him die, which is the only vantage from which this book will let anybody see it.",
+      },
+    ],
+  },
+  {
+    id: "mark-16",
+    bookId: "mark",
+    tier: "sitting",
+    span: "Mark 16:1–8",
+    chapterIndex: 16,
+    title: "They said nothing to anyone",
+    unitLabel: "Scene",
+    thread: "Three women bring spices to finish a burial, find the stone moved, are given a message, and run.",
+    closeEnd: "Two of the oldest complete manuscripts of this gospel stop here.",
+    passages: [
+      {
+        ref: "16:1–8",
+        kind: "scene",
+        form: "prose",
+        title: "They said nothing to anyone",
+        verses: [
+${verses(16, range(1, 8))}
+        ],
+        ground: {
+          kind: "historical",
+          text: "They come to anoint a body, which means not one of them is expecting anything. Their practical worry on the way is who will move the stone. The young man in white sitting on the right is the second young man in this gospel, and Mark explains neither. The message names Peter separately from the disciples, after everything in chapter fourteen. And verse 8 is where the two oldest complete manuscripts of this gospel end.",
+          src: "Marcus · Collins · Ehrman",
+        },
+        meaning:
+          "Everything is arranged for the scene that does not happen. He is going ahead of you into Galilee, there you will see him: the book points forward and then stops before the seeing. The last verb is fear and the last clause is that they said nothing to anyone. In Greek it ends on a conjunction, which is a strange way to end a sentence and a stranger way to end a book, and it is why people have argued for centuries about whether the ending was lost. Whatever the history, the text that has been read for two thousand years does this. It names the failure of everybody, including the last three people left, and then hands the telling to whoever is holding it.",
+        addr: {
+          mode: "names",
+          text: "Everyone in this book who was given something to say either misunderstood it, denied it, or ran. The account you are holding was written anyway, which means somebody eventually spoke. The book stops at the point where that becomes your problem rather than theirs.",
+        },
+        ask: "What have you been given to say that you have so far said nothing about, to anyone?",
+      },
+    ],
+  },
 ];
 
 // Movement 1. No doorway: movement 2 does not exist yet, and the content validator fails a
@@ -1370,6 +1607,7 @@ export const THE_WAY_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the way",
     title: "The situation",
+    image: "/images/mark-way.webp",
     paragraphs: [
       "This stretch is bracketed by the only two blind men in the gospel. At Bethsaida, where the healing takes two attempts, and at Jericho, where a man throws off his cloak and follows on the road. Between them, three times, he says plainly what is going to happen to him, and three times the people closest to him hear something else: Peter rebukes him, they argue about who is greatest, and James and John ask for the best seats. Each misunderstanding is followed by teaching about what following actually costs. That is the construction, and most readers have never been shown it.",
       "The road is literal as well as thematic. From Caesarea Philippi in the far north to Jericho is most of the length of the country, and the final stretch climbs from below sea level to around seven hundred and fifty metres. Mark says they were going up to Jerusalem and that he was walking ahead of them, and every reader knew what was waiting at the top.",
@@ -1419,6 +1657,48 @@ export const THE_TEMPLE_MOVEMENT: Movement = {
       "And then the dating problem, which is chapter 13's whole difficulty. Most placings of this gospel put it within a few years either side of 70, the year the temple was destroyed. Whether chapter 13 is prediction, or a text shaped by an event already under way, or both at once, is genuinely argued, and it cannot be settled by preferring one answer.",
     ],
     sources: "Marcus · Collins · Bond · Josephus, Jewish War",
+  },
+  doorway: {
+    kicker: "The fourth movement",
+    title: "Handed over",
+    paragraphs: [
+      "The arguing is finished. What follows is the longest continuous stretch in the gospel, told almost hour by hour, from a woman with a jar to a stone rolled across a door.",
+      "The verb running through it is handed over. Judas hands him to the priests, the priests hand him to Pilate, Pilate hands him to the soldiers. Nobody in the chain has to decide very much. Each of them passes him on.",
+    ],
+    nextMovementId: "handed-over",
+  },
+  capstone: {
+    kicker: "The third movement · Mark 11–13",
+    title: "Six days, and a building coming down",
+    paragraphs: [
+      "He wins every exchange in these three chapters. The authority question, the tax, the resurrection, the greatest commandment, David's son. By the end the opposition has stopped asking. And winning the arguments settles nothing, because the decision to kill him was taken in chapter three and none of this was ever going to change it.",
+      "What is judged here is not a religion. It is an institution: in full leaf and bearing nothing, taking two coins off a widow, run by men who like the greetings in the marketplace. The fig tree says what the temple action means. The widow says what it costs.",
+      "And then he sits down opposite it and says it will all come down, which within a lifetime of the writing it had. The chapter that follows refuses twice to be a calendar, and asks for something much harder than calculation.",
+    ],
+    sources: "Marcus · Collins · Bond",
+  },
+};
+
+export const HANDED_OVER_MOVEMENT: Movement = {
+  id: "handed-over",
+  index: 4,
+  title: "Handed over",
+  range: "Mark 14–16:8",
+  throughline:
+    "A woman pours out oil, a friend sells him, the rest run, and he dies asking why he has been abandoned. The only person who says plainly who he is, is the officer who killed him. Then the book stops.",
+  chapterStart: 14,
+  chapterEnd: 16,
+  situation: {
+    kicker: "The ground beneath the last week",
+    title: "The situation",
+    image: "/images/mark-handed-over.webp",
+    paragraphs: [
+      "Crucifixion was not primarily a way of killing people, which could be done faster and more cheaply. It was a public deterrent, used by Rome on slaves and on provincials convicted of sedition, carried out beside roads and outside city gates so that it would be seen. The placard naming the charge was part of the mechanism. King of the Jews is a sedition charge, not a theological one.",
+      "Judea was governed by a Roman prefect who held the power of execution, which the council did not, which is why there are two hearings rather than one. The council's problem was to produce a charge Rome would act on, and a claim to kingship was the charge that worked.",
+      "The week is the reason for the tension in it. Jerusalem's population multiplied at Passover, a festival commemorating liberation from an empire, and the governor came up from Caesarea with troops for exactly that reason. Arresting somebody at night, away from the crowd, is what the text says they were trying to do, and it is what anybody would have done.",
+      "And the burial is unusual. Crucified bodies were often left where they were, which was part of the point, so a body released to a member of the council is irregular enough that Mark has Pilate check first whether he is already dead.",
+    ],
+    sources: "Marcus · Collins · Bond · Josephus",
   },
 };
 

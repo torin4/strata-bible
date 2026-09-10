@@ -18,6 +18,7 @@ import {
   PRIMEVAL_MOVEMENT,
 } from "./genesis";
 import {
+  HANDED_OVER_MOVEMENT,
   MARK,
   MARK_INTRO,
   THE_AUTHORITY_MOVEMENT,
@@ -165,7 +166,12 @@ export const BOOKS: BookEntry[] = [
       "Four movements: the authority, the way, the temple, handed over.",
     blurb: "The earliest gospel, and the one that stops mid-sentence.",
     readings: MARK,
-    movements: [THE_AUTHORITY_MOVEMENT, THE_WAY_MOVEMENT, THE_TEMPLE_MOVEMENT],
+    movements: [
+      THE_AUTHORITY_MOVEMENT,
+      THE_WAY_MOVEMENT,
+      THE_TEMPLE_MOVEMENT,
+      HANDED_OVER_MOVEMENT,
+    ],
     composition: MARK_INTRO,
     published: false,
   },
