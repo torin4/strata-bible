@@ -254,9 +254,14 @@ describe("content lib", () => {
 
     const book = getBook("ecclesiastes");
     expect(book?.movements.map((m) => m.id)).toEqual(["under-the-sun"]);
-    expect(book?.readings.map((r) => r.id)).toEqual(["ecc-1", "ecc-2"]);
+    expect(book?.readings.map((r) => r.id)).toEqual([
+      "ecc-1",
+      "ecc-2",
+      "ecc-3",
+      "ecc-4",
+    ]);
     expect(getAdjacent("ecclesiastes", "ecc-1").next?.id).toBe("ecc-2");
-    expect(getAdjacent("ecclesiastes", "ecc-2").next).toBeUndefined();
+    expect(getAdjacent("ecclesiastes", "ecc-4").next).toBeUndefined();
     for (const reading of book?.readings ?? []) {
       expect(getMovement("ecclesiastes", reading)?.id, reading.id).toBe(
         "under-the-sun",
@@ -264,9 +269,19 @@ describe("content lib", () => {
     }
 
     // The opening poem is lineated and authored whole, per ADR 0001.
+    for (const [id, n] of [
+      ["ecc-1", 11],
+      ["ecc-3", 8],
+    ] as const) {
+      const poem = getReading("ecclesiastes", id)?.passages[0];
+      expect(poem?.form, id).toBe("poetry");
+      expect(
+        poem?.verses?.every((v) => v.text.includes("\n")),
+        id,
+      ).toBe(true);
+      expect(poem?.verses?.length, id).toBe(n);
+    }
     const poem = getReading("ecclesiastes", "ecc-1")?.passages[0];
-    expect(poem?.form).toBe("poetry");
-    expect(poem?.verses?.every((v) => v.text.includes("\n"))).toBe(true);
     expect(poem?.verses?.map((v) => v.n)).toEqual([
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
     ]);

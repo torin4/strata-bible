@@ -21,13 +21,43 @@ in movement 3.
 
 **Blocked by:** 02.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] `ecc-2`, `ecc-3` and `ecc-4` are sittings
-- [ ] 3:1–8 is a lineated poem, authored whole
-- [ ] The time poem's apparatus says something a reader who already knows it does not know
-- [ ] The tension on 3:19–21 sets it against Genesis 1 without resolving it
-- [ ] Movement 1 has a capstone that does not pre-empt movement 3
-- [ ] All three tagged in the find index in the same change
-- [ ] Scripture verbatim, sources paraphrased, no em dashes, density within target
-- [ ] Typecheck, lint, tests, content validation and the build all pass
+- [x] `ecc-2`, `ecc-3` and `ecc-4` are sittings
+- [x] 3:1–8 is a lineated poem, authored whole
+- [x] The time poem's apparatus says something a reader who already knows it does not know
+- [x] The tension on 3:19–21 sets it against Genesis 1 without resolving it
+- [x] Movement 1 has a capstone that does not pre-empt movement 3
+- [x] All three tagged in the find index in the same change
+- [x] Scripture verbatim, sources paraphrased, no em dashes, density within target
+- [x] Typecheck, lint, tests, content validation and the build all pass
+
+## Comments
+
+**The time poem was the risk in this ticket and the apparatus earns its place by reading the list.**
+Half the pairs are things nobody chooses: a time to kill, to tear down, to hate, for war. The poem
+gives them exactly the same standing as being born and dancing and embracing. The misreading names
+the consolation reading, grants that the comfort people take from it is real, and says plainly that
+it is not what the poem is doing. And the meaning points at what the poem withholds: it never tells
+you which time it currently is, which is the only thing anybody in one wants to know.
+
+**The permission is tracked rather than announced.** It lands three times in these four chapters,
+each time immediately after the hardest sentence in its paragraph: after I hated life in chapter 2,
+after nobody can see the whole in chapter 3, and again at 3:22. The readings note the pattern where
+it occurs and the movement capstone says what it amounts to. This book does not cheer up. It hands
+you something to do.
+
+**3:19-21 carries the movement's tension**, set against Genesis 1 and against the hope that grows
+later in the collection. The reading is careful about what the text actually claims: verse 21 is a
+question, not a denial, and what is being asserted is a limit on the enquiry rather than a verdict
+on the world.
+
+**Chapter 4 is where the register changes.** The book stops asking what a life adds up to and starts
+asking what people do to each other. Two are better than one is built entirely on weakness: you will
+fall over, you will be cold, somebody will come at you. It is an argument from vulnerability, which
+is much harder to wave away than a sentiment.
+
+**The lineation helper handled a second poem with no changes**, and the test now asserts both poems
+are lineated and authored whole rather than just the first.
+
+**Density** nothing above 1.6x. The movement is four readings and 82 verses.

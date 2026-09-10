@@ -609,4 +609,19 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For the thing you are still hoping to think your way out of, and for the fear that none of it stays.",
   },
+  "ecc-2": {
+    themes: ["ambition", "control", "fear-of-loss", "limits"],
+    speaksTo:
+      "For work that will outlast your control of it, and the refusal to enjoy it until you know it lasts.",
+  },
+  "ecc-3": {
+    themes: ["waiting", "grief", "limits", "powerlessness"],
+    speaksTo:
+      "For a hard stretch nobody can tell you the length of, and the day in front of you meanwhile.",
+  },
+  "ecc-4": {
+    themes: ["loneliness", "injustice", "powerlessness"],
+    speaksTo:
+      "For carrying something alone that you have quietly filed under strength.",
+  },
 };
