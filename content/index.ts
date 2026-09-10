@@ -196,6 +196,7 @@ export const BOOKS: BookEntry[] = [
     subtitle:
       "Three movements: under the sun, what cannot be found out, eat your bread.",
     blurb: "Everything is vapour, and you should still eat your bread.",
+    heroImage: "/images/ecclesiastes-intro.webp",
     readings: ECCLESIASTES,
     movements: [
       UNDER_THE_SUN_MOVEMENT,

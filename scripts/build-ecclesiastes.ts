@@ -865,6 +865,7 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the sun",
     title: "The situation",
+    image: "/images/ecc-sun.webp",
     paragraphs: [
       "Under the sun is the book's own phrase, used around thirty times, and it marks the boundary of the enquiry. It means the world as anyone can observe it, with no appeal to anything outside it. That is a deliberate limit rather than an oversight, and everything the book concludes is concluded inside it.",
       "Wisdom writing was an international trade. Egypt and Mesopotamia produced instruction texts and sceptical dialogues for centuries, and some of them sound startlingly like this one: a man arguing with his own soul about whether living is worth it, or a servant agreeing with every contradictory thing his master proposes. Israel's contribution sits inside that conversation rather than apart from it.",
@@ -906,6 +907,7 @@ export const NOT_FOUND_OUT_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the search",
     title: "The situation",
+    image: "/images/ecc-search.webp",
     paragraphs: [
       "The world of chapter five is a province inside an empire. One official watched by a higher one, and higher ones over them, is the administrative reality of Persian-period Judah: a small territory whose taxes and decisions travelled a long way off. The book offers that chain as a reason not to be astonished by injustice, which is a bleak sort of realism rather than an endorsement of it.",
       "Money in that economy was silver by weight and land, not a number held somewhere safe. It was physical, on the premises and vulnerable, which is why the observation that a rich man cannot sleep is literal rather than figurative.",
@@ -947,6 +949,7 @@ export const EAT_YOUR_BREAD_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the answer",
     title: "The situation",
+    image: "/images/ecc-bread.webp",
     paragraphs: [
       "Sheol is not hell. In the Hebrew Bible it is the grave, the place of the dead, and it is characterised by inactivity rather than by punishment: no work, no planning, no knowledge, no wisdom. When this book says the dead know nothing, that is what it is describing, not making a claim about judgement, and the hope that grows later in the collection is a development rather than a correction.",
       "White garments and oil on the head were what people wore to a feast. Telling somebody to wear them always is telling them to dress for a celebration on an ordinary day, which is a stronger instruction than it looks in English.",
