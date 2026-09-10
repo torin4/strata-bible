@@ -128,15 +128,21 @@ export const BOOKS: BookEntry[] = [
     capstone: EXODUS_CAPSTONE,
     published: true,
   },
-  // Ruth, book three, published. Four chapters across two movements. No hero image: the generated
-  // one came back as a ruled triptych rather than a continuous panorama and is held pending a
-  // re-run, so the book page falls back to its text header. See .scratch/ruth/issues/07-images.md.
+  // Ruth, book three, published. Four chapters across two movements.
+  //
+  // The hero and the movement 1 banner are swapped from what their prompts intended. The image
+  // generated as the hero came back a ruled triptych, which the full-bleed container crops badly:
+  // it frames the washed-out centre panel between two dividers and cuts the figures in half. It
+  // reads correctly at natural aspect inside a situation panel, and its subject (Moab, the valley,
+  // Bethlehem) is what that panel is about, so it went there as ruth-moab.webp. The continuous
+  // barley panorama became the hero. See .scratch/ruth/issues/07-images.md.
   {
     id: "ruth",
     title: "Ruth",
     subtitle: "Two movements: coming back empty, and the redeemer.",
     blurb:
       "A woman comes home with nothing, and a stranger will not leave her.",
+    heroImage: "/images/ruth-intro.webp",
     readings: RUTH,
     movements: [EMPTY_MOVEMENT, THE_REDEEMER_MOVEMENT],
     composition: RUTH_INTRO,

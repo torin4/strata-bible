@@ -384,7 +384,7 @@ export const EMPTY_MOVEMENT: Movement = {
   situation: {
     kicker: "The ground beneath the road",
     title: "The situation",
-    image: "/images/ruth-empty.webp",
+    image: "/images/ruth-moab.webp",
     paragraphs: [
       "Moab sits across the Dead Sea from Bethlehem, near enough to walk to and foreign enough to matter. It is the neighbour Israel's texts treat worst: Numbers blames Moabite women for leading Israel into worship of another god, and Deuteronomy bars Moabites from the assembly of the LORD to the tenth generation. Going there to eat during a famine is what people did, and the book reports it without a word of comment.",
       "A widow's position was a matter of property law rather than sympathy. Households held land, land passed through men, and a woman with no husband and no sons had no standing and no income of her own. When Naomi tells her daughters-in-law that she has nothing to offer them, she is not being dramatic. She is describing the arrangement accurately. What was left to a woman in that position was a household willing to take her in, or the leftovers of somebody else's harvest.",

@@ -12,7 +12,7 @@ tool set. The spec, the prompts, the dimensions and the encode commands are writ
 
 **Blocked by:** 06 — Two capstones, and the book's own ending.
 
-**Status:** needs-info
+**Status:** done
 
 - [x] Style spec written from the shipped Genesis and Exodus files rather than from description
 - [x] Prompts written for all three slots
@@ -46,3 +46,30 @@ in Genesis or Exodus carries pastels. The banner is good enough to ship with it;
 **All eight compressed** at quality 92, measuring 45.7 to 46.8 dB PSNR, comparable to the 46.3 to
 47.7 dB the Exodus set measured. 8.1 MB becomes 2.1 MB across the set, a 75 percent reduction, with
 dimensions unchanged.
+
+## Comments, second pass
+
+**Resolved by swapping the two slots rather than by re-generating anything.**
+
+Publishing Ruth with no hero left it visibly unfinished beside Genesis and Exodus, so the crop was
+checked rather than argued about. The hero container is 688/384 and uses object-cover, which on the
+triptych shows x=240 to 1198 of 1439: both dividers visible, the washed-out centre panel framed
+between them, the two figures cut in half at the left edge, and the threshing floor cropped out
+entirely. It was not a matter of taste. It genuinely did not work in that slot.
+
+The situation-panel banner, by contrast, renders at natural aspect with no crop at all, so a
+triptych reads there as a deliberate three-panel illustration. And its subject, Moab to the valley
+to Bethlehem, is precisely what movement 1's situation panel is about.
+
+So the two swapped, and the files were renamed to match their roles:
+
+- `ruth-intro.webp` is now the continuous barley panorama, the book hero. It crops well, and the
+  uncut standing corners survive at both lower edges.
+- `ruth-moab.webp` is the triptych, the movement 1 banner, shown whole.
+- `ruth-redeemer.webp` is unchanged.
+
+Every image slot in every published book is now filled. No re-run needed for Ruth.
+
+**Still open for Mark:** `mark-intro.webp` has the same triptych defect and the same container will
+crop it the same way. The fixed prompt is in `.scratch/mark/images.md`. Mark's four movement banners
+are all continuous, so only the hero needs re-running.
