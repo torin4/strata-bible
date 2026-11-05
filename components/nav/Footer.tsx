@@ -37,6 +37,12 @@ export function Footer() {
         >
           Refunds
         </Link>
+        <Link
+          href="/legal-notice"
+          className="transition-colors hover:text-gold-bright"
+        >
+          特定商取引法に基づく表記
+        </Link>
         <a
           href={`mailto:${COMPANY.contactEmail}`}
           className="transition-colors hover:text-gold-bright"

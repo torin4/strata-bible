@@ -9,10 +9,10 @@ export default function PrivacyPage() {
   return (
     <LegalLayout title="Privacy Policy" updated={COMPANY.policiesUpdated}>
       <p>
-        This policy explains what {COMPANY.name} collects when you use{" "}
-        {COMPANY.product}, why, and the choices you have. We keep it to what the
-        service needs to work. The reader is usable signed out, and signed out
-        we store nothing about you.
+        This policy explains what {COMPANY.operatorLine} ("we") collects when
+        you use {COMPANY.product}, why, and the choices you have. We keep it to
+        what the service needs to work. The reader is usable signed out, and
+        signed out we store nothing about you.
       </p>
 
       <LegalH2>What we collect</LegalH2>

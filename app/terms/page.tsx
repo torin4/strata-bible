@@ -11,9 +11,9 @@ export default function TermsPage() {
     <LegalLayout title="Terms of Service" updated={COMPANY.policiesUpdated}>
       <p>
         These terms govern your use of {COMPANY.product}, a reading application
-        operated by {COMPANY.name} ("we", "us"). By creating an account or using
-        the service, you agree to them. If you do not agree, please do not use
-        the service.
+        operated by {COMPANY.operatorLine} ("we", "us"). By creating an account
+        or using the service, you agree to them. If you do not agree, please do
+        not use the service.
       </p>
 
       <LegalH2>The service</LegalH2>
