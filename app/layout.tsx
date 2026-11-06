@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     title: "STRATA",
     description: DESCRIPTION,
     url: COMPANY.url,
-    images: ["/icons/icon-512.png"],
+    // The image comes from app/opengraph-image.png (file-based metadata wins).
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "STRATA",
     description: DESCRIPTION,
-    images: ["/icons/icon-512.png"],
+    // The image comes from app/twitter-image.png.
   },
 };
 
