@@ -1,7 +1,7 @@
 import { COMPANY } from "@/lib/company";
 import Link from "next/link";
 
-// Site footer: pricing, about, the legal pages, and a contact address, so they are always
+// Site footer: pricing, about, the blog, the legal pages, and a contact address, so they are always
 // reachable (and so a payment processor can find them).
 export function Footer() {
   return (
@@ -18,6 +18,9 @@ export function Footer() {
           className="transition-colors hover:text-gold-bright"
         >
           About
+        </Link>
+        <Link href="/blog" className="transition-colors hover:text-gold-bright">
+          Blog
         </Link>
         <Link
           href="/terms"

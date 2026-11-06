@@ -1,10 +1,11 @@
 import { BOOKS } from "@/content";
+import { BLOG_POSTS } from "@/content/blog";
 import { isFreeReading } from "@/lib/access";
 import { COMPANY } from "@/lib/company";
 import type { MetadataRoute } from "next";
 
-// Pages search engines should know about: the public pages, every published book, and the
-// free readings. Paywalled readings are left out: their prerendered page carries no
+// Pages search engines should know about: the public pages, the blog and its posts, every
+// published book, and the free readings. Paywalled readings are left out: their prerendered page carries no
 // authored text (see the gate in app/read), so there is nothing for a search engine to read.
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = COMPANY.url;
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/pricing",
     "/find",
+    "/blog",
     "/terms",
     "/privacy",
     "/refund-policy",
@@ -21,6 +23,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const published = BOOKS.filter((book) => book.published);
   return [
     ...pages.map((path) => ({ url: `${base}${path}` })),
+    ...BLOG_POSTS.map((post) => ({
+      url: `${base}/blog/${post.slug}`,
+      lastModified: post.updated ?? post.published,
+    })),
     ...published.map((book) => ({ url: `${base}/book/${book.id}` })),
     ...published.flatMap((book) =>
       book.readings

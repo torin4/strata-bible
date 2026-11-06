@@ -9,10 +9,15 @@ const PREVIEW = {
   alt: "STRATA: an illuminated reading of scripture, grounded in the history it grew out of.",
 };
 
+// An article's dates, for pages that are articles (the blog) rather than app pages. Given,
+// the Open Graph type becomes "article" and carries the publish and update times.
+type ArticleDates = { publishedTime: string; modifiedTime?: string };
+
 export function pageMeta(
   title: string,
   description: string,
   path: string,
+  article?: ArticleDates,
 ): Metadata {
   return {
     title,
@@ -22,9 +27,15 @@ export function pageMeta(
       title,
       description,
       url: path,
-      type: "website",
       siteName: "STRATA",
       images: [PREVIEW],
+      ...(article
+        ? {
+            type: "article",
+            publishedTime: article.publishedTime,
+            modifiedTime: article.modifiedTime ?? article.publishedTime,
+          }
+        : { type: "website" }),
     },
     twitter: {
       card: "summary_large_image",
@@ -33,4 +44,13 @@ export function pageMeta(
       images: [PREVIEW.url],
     },
   };
+}
+
+// The preview image's path, for structured data that names an image (the blog's Article).
+export const PREVIEW_IMAGE = PREVIEW.url;
+
+// Serialize structured data for a <script type="application/ld+json"> tag. "<" is escaped
+// so no string inside the data can close the script element early.
+export function jsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
 }
