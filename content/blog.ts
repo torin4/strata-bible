@@ -261,8 +261,219 @@ const FLOOD_STORIES: BlogPost = {
   ],
 };
 
+const GARDEN_OF_EDEN: BlogPost = {
+  slug: "adam-and-eve-genesis-2-3-in-its-ancient-context",
+  title: "Adam and Eve and the garden: Genesis 2–3 in its ancient context",
+  seoTitle: "Adam and Eve and the garden: Genesis 2–3 in context | STRATA",
+  description:
+    "What the story of Adam and Eve in Genesis 2–3 meant to its first readers: the second creation account, the garden as a sanctuary, the serpent, the tree of knowledge, and how the idea of the fall came later.",
+  dek: "Dust and breath, a garden with one limit, and a story about trust that later readers called the fall.",
+  published: "2026-11-06",
+  readings: ["gen-2", "gen-3", "gen-4"],
+  body: [
+    p(
+      'The story of Adam and Eve may be the best known story in the Bible, and much of what people know about it comes from later retellings. There is no apple in Genesis. The serpent is never called Satan. The words "fall" and "original sin" do not appear. Each of those ideas has a history of its own, and some are deeply held parts of Jewish and Christian faith. Reading Genesis 2–3 on its own terms first leaves those traditions in place, and shows what they were built on.',
+    ),
+    p(
+      "This guide follows STRATA's free readings of [the garden](/read/genesis/gen-2) and [the serpent](/read/genesis/gen-3), which set the history beneath each scene before asking what it means.",
+    ),
+    h2("A second creation story"),
+    p(
+      'The garden story begins at Genesis 2:4, right after the seven days of Genesis 1, and it reads very differently. God is now called "the LORD God." The order changes: a human is formed first, then the garden, then the animals, then the woman. The tone moves from liturgy to storytelling, close to the ground. Most scholars assign this account to a different source from Genesis 1, usually called the Yahwist, and generally consider it the older of the two, though its date is debated. The editors who gave Genesis its shape set the two accounts side by side and let each speak.',
+    ),
+    p(
+      'The first scene turns on a pun. "Then the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being" (Genesis 2:7). The Hebrew word for the human is *adam*, and the word for the ground is *adamah*. The first person is an earthling, made of earth. Stories of humans shaped from clay were common in the ancient world. In the Babylonian epic of Atrahasis, people are made from clay mixed with the flesh and blood of a slain god. Genesis keeps the clay and adds the breath of God.',
+    ),
+    h2("A garden drawn like a temple"),
+    p(
+      '"Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it" (Genesis 2:15). The two Hebrew verbs here appear together elsewhere in the Torah for the duties of the Levites who served at the tabernacle (Numbers 3:7–8). Scholars such as Gordon Wenham and John Walton have argued that the garden is drawn as a kind of sanctuary, a place where God is present, with the human as its gardener and keeper. Other details fit that picture. God walks in the garden, its entrance lies to the east like the entrance of the later tabernacle, and cherubim guard it, as carved cherubim would later guard the holiest room of the temple.',
+    ),
+    p(
+      "The garden also sits on a real map. Two of its four rivers are the Tigris and the Euphrates (Genesis 2:14), the rivers of Mesopotamia. Eden is placed in the world its first listeners knew.",
+    ),
+    h2("One limit"),
+    p(
+      'The command is mostly permission: "You may eat freely from every tree of the garden, but you must not eat from the tree of the knowledge of good and evil" (Genesis 2:16–17). What "the knowledge of good and evil" means has long been debated. In Hebrew, naming two opposites can stand for everything between them, so it may point to knowledge of every kind. Many scholars read it more narrowly as the power to decide for oneself what is good and what is evil, a moral authority that belongs to God. On either reading the tree is a limit about trust.',
+    ),
+    p(
+      'Then comes the first thing in the Bible called not good: "It is not good for the man to be alone" (Genesis 2:18). The word translated "helper" implies no lower rank, and elsewhere in the Hebrew Bible it is used of God helping Israel. The word traditionally rendered "rib" more often means "side," as in the side of a building or of the tabernacle. The man\'s first words on seeing the woman are the first poetry in the Bible: "This is now bone of my bones and flesh of my flesh" (Genesis 2:23).',
+    ),
+    h2("The serpent and the question"),
+    p(
+      '"Now the serpent was more crafty than any beast of the field that the LORD God had made" (Genesis 3:1). In Genesis 3 the serpent is an animal, a cunning one that speaks, as animals do in folk stories. Its identification with the devil comes from later Jewish and Christian writings, and in the New Testament the Book of Revelation (12:9) names the devil as the ancient serpent. Many readers hold that later reading as part of their faith. Genesis 3 itself keeps its attention on the conversation.',
+    ),
+    p(
+      "The serpent's method is to recast the limit. \"Did God really say, 'You must not eat from any tree in the garden?'\" (Genesis 3:1). Then it promises, \"you will be like God, knowing good and evil\" (Genesis 3:5). The suggestion is that the one prohibition exists to keep the humans small. Read this way, the story places the root of the trouble in distrust, the thought that God's goodness comes with a catch.",
+    ),
+    h2("Eyes opened, and hiding"),
+    p(
+      'The fruit is never named. The apple came much later, probably helped along by a pun in Latin, where the words for "apple" and "evil" look alike. What the humans gain is exactly what was promised, open eyes, and the first thing they see is their own exposure: "they knew that they were naked; so they sewed together fig leaves and made coverings for themselves" (Genesis 3:7).',
+    ),
+    p(
+      'Then God comes walking in the garden and calls out, "Where are you?" (Genesis 3:9). It is a question, and the scene that follows is a chain of questions and deflections. The man blames the woman, and in the same breath the God who gave her. The woman blames the serpent. Nobody owns what they did.',
+    ),
+    h2("The sentences and the exile"),
+    p(
+      'The consequences that follow answer questions every ancient listener would have asked. Why do snakes crawl? Why is childbirth so painful? Why does farming break the body? Why do we die? "For dust you are, and to dust you shall return" (Genesis 3:19). Many interpreters stress that the line about the man ruling over the woman (Genesis 3:16) describes a broken relationship and does not prescribe one. It belongs to the list of things that went wrong.',
+    ),
+    p(
+      "Two Mesopotamian stories make a useful comparison. In the myth of Adapa, a wise man is offered the food and water of life by the gods, refuses them, and so loses his chance at immortality. In the Epic of Gilgamesh, the hero at last obtains a plant that restores youth, and a snake carries it off while he bathes. Ancient storytellers kept returning to the question of why humans, so close to the divine in some ways, still die. Genesis gives its own answer, in which the loss comes through a broken trust.",
+    ),
+    p(
+      'God does not abandon the couple. "And the LORD God made garments of skin for Adam and his wife, and He clothed them" (Genesis 3:21). They leave the garden clothed, named and alive. The way back to the tree of life is guarded by cherubim, which in the ancient Near East were great winged guardian figures, nothing like the infants of later art.',
+    ),
+    h2("How the fall came to be"),
+    p(
+      "The rest of the Hebrew Bible seldom looks back to this story. The idea that it explains a universal human condition grew over centuries. The apostle Paul draws on Adam in Romans 5 to speak of sin and death entering the world through one man, and around the turn of the fifth century Augustine developed from Paul the doctrine of original sin that has shaped Western Christianity. Eastern Orthodox Christianity has generally spoken of an inherited mortality and a weakened nature rather than an inherited guilt. Jewish tradition has not read the story as a doctrine of inherited sin, and rabbinic thought speaks instead of an inclination to evil that every person must learn to master.",
+    ),
+    p(
+      "These are real differences, and they matter to many readers. The story can be read alongside any of them. In its own words it is about a gift, a limit, a broken trust, and a God who still makes clothes for the people walking out of the gate.",
+    ),
+    h2("Reading on"),
+    p(
+      "The garden leads straight into the next story, where the breach between people and God becomes a breach between brothers. STRATA's free readings of [Genesis 2](/read/genesis/gen-2), [Genesis 3](/read/genesis/gen-3) and [Cain and Abel](/read/genesis/gen-4) take each scene in four layers, with the history first. They belong to the free readings of [Genesis 1–11](/book/genesis), which open with [the creation account](/read/genesis/gen-1).",
+    ),
+  ],
+};
+
+const CAIN_AND_ABEL: BlogPost = {
+  slug: "cain-and-abel-genesis-4-explained",
+  title: "Cain and Abel: what Genesis 4 says, and what it leaves unsaid",
+  seoTitle: "Cain and Abel explained: Genesis 4 in context | STRATA",
+  description:
+    "The story of Cain and Abel in Genesis 4, read closely: why the offering was refused, sin crouching at the door, \"Am I my brother's keeper?\", the mark of Cain, and where Cain's wife came from.",
+  dek: "Two offerings, a warning at the door, a question nobody wants to answer, and a mark that protects.",
+  published: "2026-11-06",
+  readings: ["gen-4", "gen-3", "gen-5"],
+  body: [
+    p(
+      'The story of Cain and Abel runs to just sixteen verses (Genesis 4:1–16), and it has given the language some of its most lasting phrases: "Am I my brother\'s keeper?", "the mark of Cain", "east of Eden". It is the first story in the Bible set wholly outside the garden, and the first death in it is a killing. Read slowly, it is also one of the most carefully balanced stories in Genesis, with a warning before the crime, a question after it, and a protection laid over the guilty man.',
+    ),
+    p(
+      "This guide follows STRATA's free [reading of Genesis 4](/read/genesis/gen-4), which sets the history beneath each scene.",
+    ),
+    h2("Two brothers and their names"),
+    p(
+      "\"With the help of the LORD I have brought forth a man,\" Eve says at Cain's birth (Genesis 4:1). The name Cain, *qayin*, sounds like the Hebrew verb she uses here, which can mean to get or to acquire. His brother's name, Abel, is *hevel*, the word for a breath or a vapor, the same word Ecclesiastes uses for everything that passes. The younger brother is named for something that does not last, and the story bears that out.",
+    ),
+    p(
+      '"Now Abel was a keeper of sheep, while Cain was a tiller of the soil" (Genesis 4:2). The pairing of herder and farmer is old. Sumerian literature includes stories in which a shepherd and a farmer compete for favor, among them the contest between the shepherd god Dumuzi and the farmer god Enkimdu for the hand of the goddess Inanna. Genesis tells a far darker version of that rivalry.',
+    ),
+    h2("Why was Cain's offering refused?"),
+    p(
+      'Both brothers bring an offering. Cain brings "some of the fruit of the soil," and Abel brings "the best portions of the firstborn of his flock" (Genesis 4:3–4). "And the LORD looked with favor on Abel and his offering, but He had no regard for Cain and his offering" (Genesis 4:4–5).',
+    ),
+    p(
+      "Genesis does not say why, and readers have filled the silence for a very long time. Some point to the difference in the gifts, the best of the flock set against simply some of the harvest. The New Testament's Letter to the Hebrews says Abel offered his sacrifice by faith (Hebrews 11:4), and the First Letter of John contrasts Cain's deeds with his brother's (1 John 3:12). Other readers think the silence is deliberate. Claus Westermann read the scene as an experience everyone meets sooner or later: favor in life is not shared out evenly, and no reason is given. On that reading, the story cares less about the cause of the slight than about what Cain does with it.",
+    ),
+    h2("Sin crouching at the door"),
+    p(
+      'The most important moment comes before the murder. "Why are you angry," the LORD says to Cain, "and why has your countenance fallen? If you do what is right, will you not be accepted? But if you refuse to do what is right, sin is crouching at your door; it desires you, but you must master it" (Genesis 4:6–7).',
+    ),
+    p(
+      'The picture is of a predator waiting at a threshold. Scholars have long compared the Hebrew word for "crouching" with the Akkadian *rabisu*, a kind of demon thought to lurk at doorways. The closing words echo what was said to the woman in Genesis 3:16, "Your desire will be for your husband, and he will rule over you," now turned on sin itself. God meets Cain in the space between the feeling and the deed, names the danger, and tells him he can still master it. The warning is itself a kind of grace.',
+    ),
+    h2("The field"),
+    p(
+      '"Then Cain said to his brother Abel, \'Let us go out to the field.\' And while they were in the field, Cain rose up against his brother Abel and killed him" (Genesis 4:8). In the traditional Hebrew text, Cain\'s words are missing: the verse says Cain spoke to his brother, and then nothing follows. The words "Let us go out to the field" come from ancient versions such as the Greek Septuagint and the Samaritan Pentateuch, and many modern translations, the Berean Standard Bible among them, include them. Either way, the killing itself is told in a single clause.',
+    ),
+    h2("Am I my brother's keeper?"),
+    p(
+      'Then God asks a question, as in the garden. "Where is your brother Abel?" Cain replies, "I do not know! Am I my brother\'s keeper?" (Genesis 4:9). His question expects the answer no. A great deal of the rest of Scripture, from the law to the prophets, can be read as an answer of yes.',
+    ),
+    p(
+      '"The voice of your brother\'s blood cries out to Me from the ground" (Genesis 4:10). The Hebrew word for blood here is plural. The Mishnah, an early collection of Jewish law, noticed this and read it as the blood of Abel together with all the descendants who would never be born to him. From it the Mishnah drew the teaching that to destroy a single life is to destroy a whole world (Mishnah Sanhedrin 4:5).',
+    ),
+    h2("The mark of Cain"),
+    p(
+      'Cain is sentenced to be "a fugitive and a wanderer on the earth" (Genesis 4:12), and he fears that whoever finds him will kill him. God answers with protection: "the LORD placed a mark on Cain, so that no one who found him would kill him" (Genesis 4:15). Cain settles "in the land of Nod, east of Eden" (Genesis 4:16), and Nod sounds like the Hebrew word for wandering.',
+    ),
+    p(
+      "For centuries the mark of Cain was twisted into a brand of inferiority and used to support slavery and racial prejudice. The text gives that reading no support. It never says what the mark looked like, and it states its purpose plainly, to keep the guilty man alive. The first murderer is punished, and he is also shielded from the violence he set loose.",
+    ),
+    h2("Where did Cain's wife come from?"),
+    p(
+      "It is one of the most common questions about Genesis 4, and the text does not answer it. Cain fears other people, takes a wife and builds a city (Genesis 4:14–17), all in a world that seems already populated. Traditional interpreters often answered that Cain married a sister, since Genesis 5:4 says Adam had other sons and daughters, and the ancient Jewish book of Jubilees even gives her a name. Many modern scholars think the Cain story was first told on its own, in a world full of people, before it took its place after the garden. Neither answer touches the story's real concern, which is how violence enters a family and what God does about it.",
+    ),
+    h2("Two lines"),
+    p(
+      'The chapter closes with two families. Cain\'s descendants build the first city and give rise to herding, music and metalwork. Then Lamech, seventh in line from Adam, sings a boast: "If Cain is avenged sevenfold, then Lamech seventy-sevenfold" (Genesis 4:24). Vengeance has compounded. Many readers hear that boast reversed in the Gospels, when Jesus tells Peter to forgive seventy-seven times, as many translations render it (Matthew 18:22). Meanwhile another line begins with Seth, and the chapter ends quietly: "At that time men began to call upon the name of the LORD" (Genesis 4:26).',
+    ),
+    h2("Reading Genesis 4 today"),
+    p(
+      "Cain and Abel is short, and it holds a whole moral world: an unexplained disappointment, an anger that can still be mastered, a refusal to take responsibility, a victim whose blood will not stay quiet, and a God who both judges and protects. STRATA's free [reading of Genesis 4](/read/genesis/gen-4) takes the story a scene at a time. It follows [the serpent](/read/genesis/gen-3) and leads into the long genealogy of [Genesis 5](/read/genesis/gen-5), all within the free readings of [Genesis 1–11](/book/genesis).",
+    ),
+  ],
+};
+
+const TOWER_OF_BABEL: BlogPost = {
+  slug: "tower-of-babel-historical-context",
+  title: "The Tower of Babel in its historical context",
+  seoTitle: "The Tower of Babel: Genesis 11 in historical context | STRATA",
+  description:
+    "What the Tower of Babel story in Genesis 11 meant to its first readers: Mesopotamian ziggurats, Babylon's great tower Etemenanki, the pun on Babel and confusion, and how the story closes Genesis 1–11.",
+  dek: "Baked brick and bitumen, the ziggurats of Babylon, and a pun that renamed an empire.",
+  published: "2026-11-06",
+  readings: ["gen-11", "gen-10", "gen-1"],
+  body: [
+    p(
+      'The story of the Tower of Babel is nine verses long (Genesis 11:1–9). It is the last story in the part of Genesis that tells of the whole human race, before the narrative narrows to Abraham and his family, and "babel" has passed into English as a word for a confusion of voices. It is also one of the most historically rooted stories in Genesis 1–11. The city, the building materials and the tower all point to a real place.',
+    ),
+    p(
+      "This guide follows STRATA's free [reading of Genesis 11](/read/genesis/gen-11), which sets the history beneath each scene before asking what it means.",
+    ),
+    h2("The land of Shinar"),
+    p(
+      '"Now the whole world had one language and a common form of speech" (Genesis 11:1). People journey east and settle on "a plain in the land of Shinar" (Genesis 11:2), the Bible\'s name for Babylonia, in southern Mesopotamia. The previous chapter has already put Babylon there, as the first city of Nimrod\'s kingdom: "His kingdom began in Babylon, Erech, Accad, and Calneh, in the land of Shinar" (Genesis 10:10).',
+    ),
+    h2("Brick and bitumen"),
+    p(
+      '"Come, let us make bricks and bake them thoroughly." So they used brick instead of stone, and tar instead of mortar (Genesis 11:3). The narrator explains the materials as if to listeners who build with stone, as people did in the rocky hill country of Israel. Mesopotamia, a land of river clay with little stone, built in mud brick, and its grandest buildings used fired brick set in bitumen, a natural tar. The detail is accurate, and it marks this as a story about a foreign land.',
+    ),
+    h2("A tower with its top in the heavens"),
+    p(
+      'The builders say, "let us build for ourselves a city with a tower that reaches to the heavens, that we may make a name for ourselves and not be scattered over the face of all the earth" (Genesis 11:4). The tower is almost certainly a ziggurat, one of the stepped temple-towers that rose over Mesopotamian cities for well over a thousand years. A ziggurat was understood as a link between heaven and earth, with a shrine at its summit.',
+    ),
+    p(
+      "Babylon's own ziggurat was called Etemenanki, a Sumerian name meaning \"house of the foundation of heaven and earth.\" It stood beside the temple of Marduk, the city's god, and it was rebuilt on a grand scale by the Babylonian kings Nabopolassar and his son Nebuchadnezzar II, the same Nebuchadnezzar whose army destroyed Jerusalem in 586 BCE. The Greek historian Herodotus, writing in the fifth century BCE, described a tower of stacked stages in Babylon. Whenever the Babel story was first told, it took on a sharp meaning for the Judeans carried off to Babylon, some of whom lived in the city that tower dominated.",
+    ),
+    h2("A name, and a refusal"),
+    p(
+      'Notice what the builders want: a name, and not to be scattered. Both run against what came before. At creation and again after the flood, God told humanity to "fill the earth" (Genesis 1:28; 9:1). The builders gather in one place instead and set out to secure a name for themselves. The very next chapter answers them, when God says to Abram, "I will make your name great" (Genesis 12:2). In the shape of Genesis, a name grasped by building high is set against a name received as a gift.',
+    ),
+    h2("The LORD came down"),
+    p(
+      '"Then the LORD came down to see the city and the tower that the sons of men were building" (Genesis 11:5). The tower was meant to reach the heavens, and God has to come down to see it. Readers ancient and modern have heard a quiet irony here. God then says, "If they have begun to do this as one people speaking the same language, then nothing they devise will be beyond them. Come, let Us go down and confuse their language, so that they will not understand one another\'s speech" (Genesis 11:6–7). The "let Us" echoes "Let Us make man" in Genesis 1:26.',
+    ),
+    p(
+      "How to read God's concern has long been debated. Many interpreters take it as judgment on pride, a reading that runs through much of Jewish and Christian tradition. The first-century historian Josephus connected the project with Nimrod and cast it as rebellion against God. Others read it as restraint, God setting a limit on unified human power before it runs to its worst end, much as Genesis 6 set a limit on the human lifespan. STRATA's reading leans toward the second view, and finds a hidden mercy in the scattering.",
+    ),
+    h2("Babel and Babylon"),
+    p(
+      '"That is why it is called Babel, for there the LORD confused the language of the whole world, and from that place the LORD scattered them over the face of all the earth" (Genesis 11:9). *Babel* is simply the Hebrew name for Babylon. The verse explains it through a pun on the Hebrew verb *balal*, to confuse or to mix. In Akkadian, the language of Babylon itself, the name was understood as *Bab-ili*, "gate of the god." The story takes the proudest name of the greatest city in its world and hears in it the sound of confusion.',
+    ),
+    h2("Babel and the table of nations"),
+    p(
+      'Read in order, Genesis 10 and 11 seem to tell the spread of languages twice. Genesis 10 already describes Noah\'s descendants spreading out "according to their languages" (Genesis 10:5), and Genesis 11 then opens with one language for the whole world. Most scholars see two traditions placed side by side, as elsewhere in these chapters. Together they offer two views of human diversity. In Genesis 10 it unfolds naturally as families grow, and in Genesis 11 it comes as a check on a single overreaching project.',
+    ),
+    p(
+      "There is an older Mesopotamian echo as well. A Sumerian epic, Enmerkar and the Lord of Aratta, contains a passage about a time when all people spoke one tongue, and the god Enki changed the speech in their mouths. Scholars debate exactly how to read it, but it shows that the question of why people speak different languages was being asked long before Genesis.",
+    ),
+    h2("Where the primeval history ends"),
+    p(
+      'Babel is the last story of Genesis 1–11, and it ends without the mercy that followed each earlier breakdown. Adam and Eve were clothed, Cain was protected, Noah was carried through the flood. At Babel the people are scattered, "and they stopped building the city" (Genesis 11:8). The answer comes in the next chapter, when God calls Abram and promises that "all the families of the earth will be blessed through you" (Genesis 12:3). Christian readers have also long paired Babel with Pentecost in Acts 2, where people of many languages each hear the apostles speaking in their own tongue.',
+    ),
+    p(
+      "For the exiles who shaped Genesis, the story held one more meaning. Genesis opens by answering Babylon's creation story, and its first movement closes at Babylon itself, named for confusion and left unfinished. The empire that had conquered them was, in this telling, one more human project under God's judgment, and it would not last forever. STRATA's free [reading of Genesis 11](/read/genesis/gen-11) closes the free readings of [Genesis 1–11](/book/genesis). It follows [the table of nations](/read/genesis/gen-10) and looks back to where the whole movement began, in [Genesis 1](/read/genesis/gen-1).",
+    ),
+  ],
+};
+
 // Newest first.
 export const BLOG_POSTS: BlogPost[] = [
+  GARDEN_OF_EDEN,
+  CAIN_AND_ABEL,
+  TOWER_OF_BABEL,
   GENESIS_1_CONTEXT,
   SMALL_GROUP_GUIDE,
   FLOOD_STORIES,

@@ -9,7 +9,7 @@ import Link from "next/link";
 // card per post, newest first, in the home page's card style.
 export const metadata = pageMeta(
   "Bible study guides: Genesis in its ancient context | STRATA Blog",
-  "Study guides for reading the Bible in its history: Genesis 1 in its ancient setting, a six-week small-group plan for Genesis 1–11, and the flood story beside Atrahasis and Gilgamesh.",
+  "Study guides for reading Genesis in its history: creation, Adam and Eve, Cain and Abel, Noah's flood, the Tower of Babel, and a small-group plan for Genesis 1–11.",
   "/blog",
 );
 
