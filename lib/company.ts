@@ -3,9 +3,9 @@
 export const COMPANY = {
   name: "SP DIGITAL LABS",
   // SP Digital Labs is a trading name, not a company. Legal text names the person.
-  operator: "Joseph Suzuki Parker",
+  operator: "Joseph Suzuki-Parker",
   operatorLine:
-    "SP Digital Labs, the name under which Joseph Suzuki Parker, an independent developer based in Japan, publishes apps",
+    "SP Digital Labs, the name under which Joseph Suzuki-Parker, an independent developer based in Japan, publishes apps",
   product: "STRATA",
   // Support address on the studio domain, forwarded to the owner's inbox.
   contactEmail: "support@spdigitallabs.app",
