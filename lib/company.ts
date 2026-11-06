@@ -7,9 +7,8 @@ export const COMPANY = {
   operatorLine:
     "SP Digital Labs, the name under which Joseph Suzuki Parker, an independent developer based in Japan, publishes apps",
   product: "STRATA",
-  // A reachable support address. Swap for a branded one (e.g. support@yourdomain) once a
-  // custom domain is set up.
-  contactEmail: "torin2582@gmail.com",
+  // Support address on the studio domain, forwarded to the owner's inbox.
+  contactEmail: "support@spdigitallabs.app",
   url: "https://stratabible.app",
   // Bump when the policies are revised.
   policiesUpdated: "June 9, 2026",
