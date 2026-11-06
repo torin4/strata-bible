@@ -12,6 +12,7 @@ import {
   readingsInMovement,
   readingsOutsideMovements,
 } from "@/lib/content";
+import { pageMeta } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -29,29 +30,15 @@ export async function generateMetadata({
   const { bookId } = await params;
   const book = getBook(bookId);
   if (!book) return {};
-  const title = `${book.title} · STRATA`;
-  const description =
-    book.subtitle ??
-    `${book.title}, read in four layers, grounded in the history it grew out of.`;
-  // Restate the site defaults: a per-page openGraph/twitter block replaces the root's
-  // wholesale, so og:image and siteName would silently vanish otherwise.
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      siteName: "STRATA",
-      images: ["/icons/icon-512.png"],
-    },
-    twitter: {
-      card: "summary",
-      title,
-      description,
-      images: ["/icons/icon-512.png"],
-    },
-  };
+  const title = `${book.title}: a reading guide with history and meaning | STRATA`;
+  const description = [
+    book.subtitle,
+    book.blurb,
+    `Read ${book.title} in four layers, grounded in the history it grew out of.`,
+  ]
+    .filter(Boolean)
+    .join(" ");
+  return pageMeta(title, description, `/book/${bookId}`);
 }
 
 export default async function BookPage({

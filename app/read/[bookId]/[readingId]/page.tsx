@@ -14,6 +14,7 @@ import {
   getReading,
 } from "@/lib/content";
 import { expandReading } from "@/lib/expand";
+import { pageMeta } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -35,28 +36,16 @@ export async function generateMetadata({
   const reading = getReading(bookId, readingId);
   if (!reading) return {};
   const gated = BILLING_ON && !isFreeReading(reading);
-  const title = `${reading.title} · ${reading.span} · STRATA`;
-  const description =
-    READING_THEMES[readingId]?.speaksTo ??
-    (gated ? undefined : reading.thread) ??
-    `${reading.title}, ${reading.span}, read in four layers: the history, the meaning, the turn, and a response.`;
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      siteName: "STRATA",
-      images: ["/icons/icon-512.png"],
-    },
-    twitter: {
-      card: "summary",
-      title,
-      description,
-      images: ["/icons/icon-512.png"],
-    },
-  };
+  // Lead with what people search for ("Genesis 1 meaning"), then the reading's own name.
+  const title = `${reading.span} meaning and history: ${reading.title} | STRATA`;
+  const layers = `${reading.span} explained in four layers: what it meant to its first readers, what it carries always, and how it speaks to you now.`;
+  const speaks = READING_THEMES[readingId]?.speaksTo;
+  // A gated reading's head stays free of paid content: the public theme line or the
+  // generic sentence only, never the authored thread.
+  const description = gated
+    ? (speaks ?? layers)
+    : [layers, speaks ?? reading.thread].filter(Boolean).join(" ");
+  return pageMeta(title, description, `/read/${bookId}/${readingId}`);
 }
 
 // Prerender every reading: server components for content, as the brief asks. For a gated
