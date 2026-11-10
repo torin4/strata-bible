@@ -3,6 +3,7 @@ import { COMPANY } from "@/lib/company";
 
 export const metadata = {
   title: "Refund Policy, STRATA",
+  alternates: { canonical: "/refund-policy" },
 };
 
 export default function RefundPolicyPage() {

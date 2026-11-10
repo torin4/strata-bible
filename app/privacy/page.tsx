@@ -3,6 +3,7 @@ import { COMPANY } from "@/lib/company";
 
 export const metadata = {
   title: "Privacy Policy, STRATA",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

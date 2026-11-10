@@ -12,6 +12,10 @@ import Link from "next/link";
 // stay reachable by direct URL for the renderer proof, but are not advertised here.)
 const TAGLINE =
   "An illuminated reading of scripture, grounded in the history it grew out of.";
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 
 export default function Home() {

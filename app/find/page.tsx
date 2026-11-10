@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Find a reading, STRATA",
+  alternates: { canonical: "/find" },
 };
 
 // Build the compact search index on the server from the full content, so the heavy

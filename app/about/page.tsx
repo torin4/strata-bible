@@ -5,6 +5,7 @@ import Link from "next/link";
 // threatens it. Scholars named here are the ones actually cited across the readings.
 export const metadata = {
   title: "About STRATA",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

@@ -4,6 +4,7 @@ import { PLUS_PRICE, TIER_PRICE } from "@/lib/pricing";
 
 export const metadata = {
   title: "特定商取引法に基づく表記, STRATA",
+  alternates: { canonical: "/legal-notice" },
 };
 
 // Seller disclosure required by Japan's Act on Specified Commercial Transactions for

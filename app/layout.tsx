@@ -52,7 +52,8 @@ export const metadata: Metadata = {
     siteName: "STRATA",
     title: "STRATA",
     description: DESCRIPTION,
-    url: COMPANY.url,
+    // No url here: a page without its own openGraph would inherit it and claim to be the home
+    // page. Each page names itself through alternates.canonical (or pageMeta) instead.
     // The image comes from app/opengraph-image.png (file-based metadata wins).
   },
   twitter: {
