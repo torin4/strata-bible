@@ -28,8 +28,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 1,
     title: "The midwives",
     unitLabel: "Scene",
-    thread: "A family becomes a people, and the moment they are many they are a problem. The book counts seventy names, then names nobody else, until two women refuse an order.",
-    closeEnd: "The king who is never named gives up on secrecy and orders the whole nation to do his drowning for him.",
+    thread: "Genesis ended with Jacob’s family settled in Egypt, and Exodus begins there, many generations later, after the family has grown into a whole people. As soon as the Israelites become numerous, Egypt’s king decides that they are a problem. The writer lists the seventy members of Jacob’s family who went down to Egypt and then names no one else in the chapter until two midwives refuse a royal order.",
+    closeEnd: "By the end of the chapter the king, whom the writer never names, gives up on doing his killing in secret and orders all his people to drown the Hebrew baby boys for him.",
     passages: [
       {
         label: "One",
@@ -48,13 +48,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The book opens by counting. Seventy people, named one by one, who went down to Egypt. Then one verse crosses several centuries and the family has become a people filling the land. The Hebrew piles up the verbs of increase used of living creatures in Genesis 1.",
+          text: "The writer opens Exodus by counting the seventy members of Jacob’s family, one by one, who went down to Egypt with him. Then, in a single verse, he passes over several centuries, and the family has become a people filling the land. To describe their growth, he piles up the same Hebrew verbs of increase that God used of living creatures in Genesis 1.",
           src: "Propp · Sarna · Alter",
         },
         meaning:
-          "The words for this people multiplying are the words of the creation account, <b>be fruitful and multiply</b>. So what Egypt does next is not just cruelty to a minority. It is set against what God said at the beginning. Notice too that the counting stops. After the seventy names, nobody is named again except two midwives. To an empire, people are a quantity.",
+          "When the writer describes the Israelites multiplying, he uses the words of the creation account, <b>be fruitful and multiply</b>. He wants us to see that what Egypt does next is more than cruelty to a minority, because the king sets himself against what God said at the beginning of the world. The writer also stops counting names. After the seventy names, he names no one again except the two midwives, as if to show that an empire sees people only as a quantity.",
         lenses: {
-          theo: "The promise to Abraham, that his descendants would be past counting, is kept in a foreign country while nobody is watching. God's word often does its work in the gaps between the stories.",
+          theo: "God had promised Abraham that his descendants would be too many to count, and he keeps that promise in a foreign country, while no one in the story is paying attention. Again and again in the Bible, God does his work in the long stretches between the stories people remember.",
         },
       },
       {
@@ -74,19 +74,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A new king who did not know Joseph, and the text describes the machinery rather than the man. Taskmasters, forced labour, store cities at Pithom and Rameses, work in brick and mortar. This is ordinary Egyptian building administration, and Semitic-speaking people did such work in the delta. The king is never named. The bureaucracy is described in detail.",
+          text: "The writer introduces a new king “who did not know Joseph,” and he describes the king’s machinery rather than the king himself: taskmasters, forced labor, store cities at Pithom and Rameses, and work in brick and mortar. All of this matches what we know of ordinary Egyptian building projects, and historians know that Semitic-speaking people did such work in the Nile delta. The writer never gives the king’s name, but he describes the king’s bureaucracy in detail.",
           src: "Assmann · Propp · Meyers",
         },
         meaning:
-          "Fear does the reasoning. The king does not start from hatred but from a calculation about a future war, and the policy follows the arithmetic. Then the line the chapter turns on: the more they were oppressed, the more they multiplied. The oppression fails, and because it fails it escalates. A system that has decided a people are a problem never concludes it was wrong. It concludes it was not thorough enough.",
+          "The king begins not from hatred but from fear, and from a calculation about a war that might come. He reasons that the Israelites could side with an enemy, and his policy follows from that reasoning. Then the writer gives the line on which the chapter turns: the more the Egyptians oppressed the Israelites, the more they multiplied. The oppression fails, and because it fails, the king makes it worse. Rulers who have decided that a people are a problem rarely conclude that they were wrong; they conclude that they were not thorough enough.",
         lenses: {
-          arch: "Growth read as threat, presence read as invasion, and the labour of the feared group holding up the economy that fears them. The pattern is old and has never stopped recurring. (The stranger who multiplies.)",
+          arch: "In many times and places, people have looked at a growing minority and seen a threat, and have treated their presence as an invasion, even while depending on their labor to keep the economy running. Exodus describes a pattern that is very old, and people have repeated it ever since.",
         },
         addr: {
           mode: "claims",
-          text: "Something in your life runs on work you did not do, at a price you would not pay. The food, the building, the phone in your hand. The chapter puts the store cities in front of you and asks who they were for.",
+          text: "Much of what we use every day was made by people we have never met, often at a cost we would not accept for ourselves: our food, our buildings, the phone in our hand. The writer sets the store cities in front of us and invites us to ask whom they were built for.",
         },
-        ask: "Whose labour is underneath the ordinary comfort of your day, and what would it cost you to find out?",
+        ask: "Whose labor lies underneath the ordinary comforts of your day, and what would it cost you to find out?",
       },
       {
         label: "Three",
@@ -106,24 +106,24 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two midwives are ordered to kill, and they do not. The text records their names, Shiphrah and Puah, while the king of the greatest empire on earth goes unnamed throughout. Their answer to him is a lie told to a man who could kill them for it. The narrator does not apologise.",
+          text: "Pharaoh orders two midwives to kill the Hebrew baby boys, and they refuse. The writer records their names, Shiphrah and Puah, while he leaves the king of the greatest empire on earth unnamed from start to finish. When the king questions them, they answer with a lie, told to a man who could have them killed for it, and the writer does not apologize for them.",
           src: "Propp · Meyers · Sarna",
         },
         misreading: {
           named:
-            "The midwives are a story about brave individuals, and the real subject is one wicked king.",
-          why: "The chapter is built as a system, not a villain: a calculation, a labour policy, an escalation, and finally a decree handed to the whole population. By the last verse the killing is a civic duty for ordinary Egyptians. One bad man lets everybody off the hook. The midwives matter because they are the only two who decline.",
+            "Some readers treat this chapter as a story about two brave individuals set against one wicked king.",
+          why: "The writer describes a whole system rather than a single villain. The king makes a calculation, sets a labor policy, makes it harsher, and finally hands the killing to his entire population, so that by the last verse ordinary Egyptians are drowning children as a public duty. If we blame only one bad man, we excuse everyone else who went along. The midwives matter because they are the only two people in the chapter who refuse.",
         },
         meaning:
-          "These are the first people in the Bible to disobey a king, and they are foreign, poor, female and powerless. They do not lead a revolt. They keep doing their work and lie about the results. The text says they <b>feared God</b>, and sets that against fear of Pharaoh. That is what the whole book is about: which power you are actually afraid of.",
+          "The midwives are among the first people in the Bible to disobey a king, and they have no wealth, no rank, and no power. They do not lead a revolt. They simply go on doing their work and lie about the results. The writer says that they <b>feared God</b>, and he sets their fear of God against the fear that Pharaoh expects from everyone. That choice, which power a person truly fears, is what the whole book of Exodus is about.",
         lenses: {
-          theo: "Scripture keeps two names Egypt would not have bothered to record, and drops the name of the king it carved into stone. The inversion is itself a judgement.",
+          theo: "The biblical writers kept two names that Egypt would never have bothered to record, and they left out the name of a king who had his name carved into stone. By reversing who is remembered, the writers pass their own judgment on the king.",
         },
         addr: {
           mode: "claims",
-          text: "You will not be asked to run an empire. You will be asked to go along with something small, and it will arrive as routine rather than as evil. The refusal available to the powerless is usually just declining to be efficient about it.",
+          text: "Most of us will never be asked to run an empire. We will more likely be asked to go along with something small, and it will come to us as routine rather than as evil. When we have no power, the refusal open to us is often simply to stop cooperating efficiently.",
         },
-        ask: "What are you going along with because refusing would be awkward rather than dangerous?",
+        ask: "What are you going along with because refusing would be awkward, though not dangerous?",
       },
     ],
   },
@@ -135,8 +135,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 2,
     title: "The basket, and the flight",
     unitLabel: "Scene",
-    thread: "The rescuer is himself rescued first, by women, and out of the same river that was meant to drown him. Then he tries to save someone by force, and has to run.",
-    closeEnd: "Forty years pass in a sentence. The chapter ends not with Moses acting but with God hearing.",
+    thread: "Moses, the man God will use to rescue Israel, is first rescued himself, by women, and from the same river where Pharaoh meant him to drown. When he grows up, he tries to save one of his people by force, and he has to run for his life.",
+    closeEnd: "The writer passes over forty years in a single sentence, and he ends the chapter not with something Moses does but with God hearing his people.",
     passages: [
       {
         label: "One",
@@ -158,17 +158,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The word used for the basket is the word used for Noah's ark, and it appears nowhere else in the Bible. Both are watertight boxes carrying a life through water that was meant to kill. The mother obeys Pharaoh's decree exactly, she does put the child in the Nile, and turns obedience into rescue. Similar stories were told of great men in the ancient world, most famously Sargon of Akkad, set adrift in a reed basket sealed with pitch.",
+          text: "The Hebrew word for the basket is the same word used for Noah’s ark, and the writers use it nowhere else in the Bible. In both stories someone builds a watertight box to carry a life through water that was meant to kill. Moses’s mother obeys Pharaoh’s decree to the letter, since she does put her son in the Nile, and she turns her obedience into a rescue. People in the ancient world told similar stories about great men, the most famous being Sargon of Akkad, whose mother set him adrift in a reed basket sealed with pitch.",
           src: "Propp · Sarna · Assmann",
         },
         meaning:
-          "Five women save the future of Israel and the text keeps almost none of their names. A mother, a sister, a princess and, just before this, two midwives. The daughter of the man running the genocide pays the mother of the child to nurse her own son. That is the joke the chapter is telling: the empire's own household funds the rescue of the boy who will undo it.",
+          "Five women save Israel’s future in these first two chapters, and the writer keeps the names of only the two midwives: the others are a mother, a sister, and a princess. The daughter of the king who ordered the killing even pays the boy’s own mother to nurse him. The writer is enjoying the irony, because he shows the empire’s own royal household paying for the rescue of the boy who will one day bring it down.",
         lenses: {
-          theo: "Deliverance starts small and domestic, in a basket and a bribe and a sister watching from the reeds, long before it looks like anything. God is not named once in this scene. The work still gets done.",
+          theo: "God begins his rescue in small, household ways, through a basket, a payment, and a sister watching from the reeds, long before anyone could recognize it as a rescue. The writer never mentions God once in this scene, and yet God’s work still gets done.",
         },
         addr: {
           mode: "names",
-          text: "The thing that saves you often arrives through people with no power and no title, doing something small and practical while the important people are looking elsewhere.",
+          text: "Often the people who carry us through something have no power and no title. They do something small and practical while the important people are looking elsewhere.",
         },
         ask: "Who quietly carried you through something, without any authority to do it?",
       },
@@ -187,17 +187,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He looks this way and that before he strikes, which is the detail that damns him. Not a man overtaken by rage but a man checking whether anyone is watching. The next day two Hebrews are fighting and one of them asks the question Moses cannot answer: who made you ruler and judge over us. He is a palace insider by upbringing and a Hebrew by birth, and neither side owns him.",
+          text: "Before Moses strikes the Egyptian, he looks this way and that, and the writer includes that detail because it condemns him. Moses is not overcome by rage; he is checking whether anyone is watching. The next day he finds two Hebrews fighting, and one of them asks him a question he cannot answer: who made you ruler and judge over us? Moses grew up in the palace but was born a Hebrew, and neither group accepts him as its own.",
           src: "Propp · Childs",
         },
         meaning:
-          "His first attempt at deliverance is a murder, and it fails on every count. It saves one man, it is done in secret, and within a day the people he meant to help have seen through him. Forty years of desert follow. The book does not treat this as a promising start that went wrong. It treats it as the wrong kind of power altogether, applied by the right man far too early.",
+          "Moses’s first attempt to rescue his people is a murder, and it fails in every way. He saves one man, he acts in secret, and within a day the people he meant to help have seen through him. Forty years in the desert follow. The writer does not present this as a promising start that went wrong. He presents it as the wrong kind of <b>power</b> altogether, used by the right man far too early.",
         lenses: {
-          arch: "The rescuer who acts alone, in secret, and by force, and finds that the rescued do not want him. (The one who appoints himself.)",
+          arch: "Many stories tell of a would-be rescuer who acts alone, in secret, and by force, and then finds that the people he meant to rescue do not want him. Moses appoints himself as Israel’s rescuer, and in this chapter he learns that he cannot be one on his own authority.",
         },
         addr: {
           mode: "names",
-          text: "You have wanted to fix something that was genuinely wrong, and reached for the fastest tool, and discovered that the people involved never asked you and did not thank you.",
+          text: "Most of us have wanted to fix something that was truly wrong, reached for the fastest way to do it, and found that the people involved never asked for our help and did not thank us for it.",
         },
         ask: "Where have you tried to put something right in a way that mostly served your own need to act?",
       },
@@ -221,17 +221,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He does at a foreign well what he could not do at home: he defends strangers and it works. Midian lies east, across the Sinai, and he marries into a priestly family there. He names his son Gershom, a stranger there, and the name is his whole condition. The chapter closes on four verbs with God as their subject, heard, remembered, saw, knew, after nothing but silence.",
+          text: "At a well in a foreign land, Moses does what he failed to do at home: he defends strangers, and this time he succeeds. Midian lies east of Egypt, across the Sinai, and there Moses marries into a priestly family. He names his son Gershom, which sounds like the Hebrew for “a stranger there,” and the name sums up his whole condition. After a long silence, the writer closes the chapter with four verbs that have God as their subject: God heard, remembered, saw, and knew.",
           src: "Propp · Fretheim · Sarna",
         },
         meaning:
-          "The Hebrew name Moses is explained here from a verb meaning to draw out, though the name itself is plainly Egyptian, the ending in Thutmose and Rameses. He is a man with an Egyptian name, a Midianite wife and a Hebrew mother, at home nowhere. Then the chapter turns without warning. Nothing changes in Egypt. The king dies and another takes over, the work goes on, and the only new thing in the world is that God has heard.",
+          "The writer explains the name Moses from a Hebrew verb meaning “to draw out,” but the name itself is clearly Egyptian, the same ending found in the names of pharaohs such as Thutmose and Rameses. Moses has an Egyptian name, a Midianite wife, and a Hebrew mother, and he is at home nowhere. Then, without warning, the writer turns back to Egypt. There nothing has changed: one king dies, another takes over, and the work goes on. The only new thing in the world is that God has <b>heard</b> his people.",
         lenses: {
-          theo: "The text is careful not to say God acted. It says God heard, remembered, saw and knew. Everything the book does next comes out of that hearing, and the people crying out have no idea it has happened.",
+          theo: "The writer is careful not to say that God acted. He says that God heard, remembered, saw, and knew. Everything God does in the rest of the book comes out of that hearing, and the people crying out in Egypt have no idea that he has heard them.",
         },
         addr: {
           mode: "names",
-          text: "There is a long stretch in most lives where nothing visibly moves and the honest report is that you are keeping someone else's sheep. This chapter puts forty of those years in a single verse and insists they were not empty.",
+          text: "Most lives include a long stretch in which nothing seems to move, when the honest report is that we are keeping someone else’s sheep. The writer puts forty such years into a single verse, and he wants us to know that they were not empty.",
         },
         ask: "What are you waiting through right now that looks like nothing happening?",
       },
@@ -245,8 +245,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 3,
     title: "The bush and the name",
     unitLabel: "Scene",
-    thread: "A bush burns without burning up, and a man turns aside to look. What he gets is not comfort but a job, and every objection he raises is answered with the same thing: I will be with you.",
-    closeEnd: "He asked who he was. He was told who God is, and sent anyway.",
+    thread: "While Moses is tending sheep, he sees a bush that burns without burning up, and he turns aside to look at it. God does not give him comfort there; he gives him a task. Every time Moses objects, God answers him the same way: I will be with you.",
+    closeEnd: "Moses asked who he was, and God answered by telling him who God is, and then sent him anyway.",
     passages: [
       {
         label: "One",
@@ -264,19 +264,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Moses is at work, minding a flock that is not his, on the far side of the wilderness. The bush is a common thornbush, the least impressive plant available. What stops him is not the fire but that it does not consume: he turns aside because something ordinary is not behaving. Only when he turns does the voice come.",
+          text: "Moses is at work, tending a flock that belongs to his father-in-law, on the far side of the wilderness. The bush he sees is a common thornbush, the least impressive plant he could have found there. What stops him is not the fire itself but the fact that the fire does not consume the bush. Moses turns aside because something ordinary is not behaving as it should, and only when he turns does God speak.",
           src: "Childs · Propp · Sarna",
         },
         meaning:
-          "The holy ground is a patch of desert that was not holy the day before and will not be marked afterward. It is holy because God is there now. And the sequence matters: the bush burns, Moses turns aside, then God speaks. He is not interrupted, he is invited to notice, and the noticing is his part.",
+          "The ground where Moses stands is a patch of desert that was not holy the day before and that no one will mark afterward. It is <b>holy</b> because God is there now. The order of events also matters. The bush burns, Moses turns aside, and then God speaks. God does not interrupt Moses; he invites him to notice, and the noticing is Moses’s part.",
         lenses: {
-          theo: "Nothing about the encounter is arranged by Moses. He is not praying, not seeking, not qualified, and not in a temple. He is at work in the middle of nowhere. God's initiative is the only reason anything happens.",
+          theo: "Moses arranges nothing about this meeting. He is not praying, not searching for God, not qualified, and not in a temple. He is at work in the middle of nowhere, and the meeting happens only because God chooses to begin it.",
         },
         addr: {
           mode: "names",
-          text: "You have almost certainly walked past something already, not because it was hidden but because you did not stop. This scene says the turning aside is the whole of your part in it.",
+          text: "Most of us have walked past something that mattered, not because anyone hid it from us but because we did not stop to look. In this scene, turning aside to look is the whole of what God asks of Moses at first.",
         },
-        ask: "What have you noticed lately and not turned aside to look at?",
+        ask: "What have you noticed lately but not turned aside to look at?",
       },
       {
         label: "Two",
@@ -294,17 +294,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "God's speech piles up verbs of attention: I have seen, I have heard, I know their sufferings, I have come down. Then the sentence turns without warning. I have come down to deliver them, so now go, I am sending you. Moses answers with the first of his objections, and it is a question about himself.",
+          text: "God speaks to Moses with verb after verb of attention: I have seen, I have heard, I know their sufferings, I have come down. Then, without warning, God turns the sentence: I have come down to deliver them, so now go, for I am sending you. Moses answers with the first of several objections, and it is a question about himself.",
           src: "Fretheim · Childs",
         },
         meaning:
-          "The rescue is announced as God's own doing and then handed to a man, in the same breath, with no explanation of why it should need one. Moses asks the reasonable question, who am I, and gets no answer to it at all. He is told instead <b>I will be with you</b>. The question was about his adequacy. The reply changes the subject to God's presence, and that is the only assurance he is ever given.",
+          "God announces the rescue as his own work, and in the same breath he hands it to a man, without explaining why he should need one. Moses asks the reasonable question, “Who am I?”, and God gives him no answer to it at all. Instead God tells him, <b>I will be with you</b>. Moses asked whether he was adequate; God changed the subject to his own presence, and that is the only assurance Moses ever receives.",
         lenses: {
-          theo: "The sign offered is not proof beforehand but confirmation afterward: you will worship at this mountain when you have brought them out. He has to go first and get the evidence later, which is the ordinary shape of the thing.",
+          theo: "The sign God offers is not proof beforehand but confirmation afterward: when Moses has brought the people out, they will worship God at this mountain. Moses has to go first and receive the evidence later, and believers have usually found that this is how faith works.",
         },
         addr: {
           mode: "names",
-          text: "When you have been asked to do something beyond you, the question that comes up is who am I, and this scene never answers it. It moves the ground from your competence to God's company, which is less comforting and more durable.",
+          text: "When we are asked to do something beyond us, we usually ask, as Moses did, “Who am I?” God never answers that question in this scene. Instead he moves the ground from our competence to his company, which is less comforting, but which lasts longer.",
         },
         ask: "What are you declining on the grounds that you are not the right person?",
       },
@@ -328,24 +328,24 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The name is four consonants, YHWH, glossed here with a verb of being that can be read I am who I am or I will be what I will be. Hebrew has no tenses in the way English does, so the promise leans toward the future. Israel later stopped pronouncing it aloud and said Lord instead, which is why English Bibles print LORD in capitals.",
+          text: "The name God gives is written with four Hebrew consonants, YHWH, and the writer explains it with a verb of being that can be read either “I am who I am” or “I will be what I will be.” Hebrew verbs do not mark time the way English tenses do, so the promise leans toward the future. In later centuries Jews stopped saying the name aloud and said “Lord” in its place, which is why English Bibles print LORD in capitals.",
           src: "Childs · Propp · Sarna",
         },
         misreading: {
           named:
-            "The name is a piece of metaphysics, God announcing that he is self-existent being.",
-          why: "That reading arrived with Greek philosophy centuries later. The Hebrew is a verb, not a noun, and it is doing work in a conversation about rescue. Moses asks what to tell slaves who want to know whose authority he is on. The answer is closer to I will be there, as I will be there, which is a promise about what these people are about to see happen rather than a definition of the divine nature.",
+            "Some readers take the name as a statement of philosophy, in which God announces that he is pure, self-existent being.",
+          why: "That reading came centuries later, when Christian and Jewish thinkers read the Bible through Greek philosophy. In Hebrew the name is a verb rather than a noun, and God speaks it in a conversation about rescue. Moses asks what he should tell a people of slaves who will want to know whose authority he comes with. God’s answer is closer to “I will be there, as I will be there,” a promise about what these people are about to see him do, rather than a definition of what God is.",
         },
         meaning:
-          "Ancient gods had names you could use, and knowing a name was a way of getting leverage. This name refuses that. It is a verb that will not sit still, and it commits to presence rather than to being available. What follows is entirely practical: go to the elders, go to the king, he will not listen, and I will stretch out my hand.",
+          "Ancient people believed that knowing a god’s name gave them a way to call on that god and gain some hold over him. God gives Moses a name that refuses to be used that way. It is a verb that will not sit still, and in it God commits himself to being <b>present</b> rather than to being available on demand. Then God turns entirely practical: go to the elders, go to the king, he will not listen, and I will stretch out my hand.",
         lenses: {
-          theo: "God is identified to Moses first as the God of Abraham, Isaac and Jacob, which ties the rescue to promises made centuries earlier to people long dead. The name is new. The commitment is not.",
+          theo: "God first identifies himself to Moses as the God of Abraham, Isaac, and Jacob, and so he ties the rescue to promises he made centuries earlier to people long dead. The name is new, but God’s commitment is not.",
         },
         addr: {
           mode: "names",
-          text: "You would probably rather have a God you could define than one who says he will be there. A definition can be filed away. A promise of presence has to be tested by going.",
+          text: "Most of us would rather have a God we could define than a God who says only that he will be there. We can file a definition away, but we can only test a promise of presence by going.",
         },
-        ask: "Would you rather know what God is, or that God is with you? Answer honestly.",
+        ask: "Would you rather know what God is, or know that God is with you? Answer honestly.",
       },
     ],
   },
@@ -387,7 +387,7 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Moses runs out of objections and is given signs instead, then a brother to do the speaking. On the road back there is a passage nobody has explained away: the LORD meets him at a lodging place and seeks to kill him, and Zipporah cuts her son's foreskin and touches his feet with it. It is old, compressed, and resists every smoothing anyone has tried on it. The chapter does not pause over it, and neither should a reader expect to resolve it.",
+          text: "Moses runs out of objections, and God gives him signs to perform instead, and then his brother Aaron to do the speaking. On the road back to Egypt the writer includes a passage that no interpreter has managed to explain away. The LORD meets Moses at a place where they stop for the night and seeks to kill him, and Moses’s wife Zipporah cuts off her son’s foreskin and touches Moses’s feet with it. The passage is old and compressed, and it has resisted every attempt to smooth it out. The writer does not pause over it, and readers should not expect to resolve it either.",
           src: "Propp · Childs",
         },
       },
@@ -401,7 +401,7 @@ export const EXODUS: Reading[] = [
     chapterIndex: 5,
     title: "Bricks without straw",
     unitLabel: "Scene",
-    thread: "The first thing the rescue does is make everything worse. The quota holds, the straw stops, and the people who were promised deliverance want the man who promised it gone.",
+    thread: "When Moses first goes to Pharaoh, he only makes everything worse. Pharaoh keeps the brick quota the same and stops supplying straw, and the people God promised to deliver now want the man who brought that promise gone.",
     closeEnd: "The chapter ends with Moses accusing God, and God has not yet said a word in reply.",
     passages: [
       {
@@ -423,19 +423,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Straw was mixed into Nile mud to bind the brick, and Egyptian records do show quotas and daily tallies of bricks delivered. Withdrawing the straw while holding the number is a precise administrative cruelty rather than a rage. Pharaoh's charge is that the people are idle, which is the standard accusation of every system that has just increased what it demands.",
+          text: "Egyptian brickmakers mixed straw into Nile mud to bind their bricks, and Egyptian records do show quotas and daily tallies of bricks delivered. When Pharaoh withholds the straw but keeps the number the same, he is not acting in a rage; he is choosing a precise administrative cruelty. He accuses the people of being idle, and rulers have made that same accusation whenever they have just increased what they demand.",
           src: "Sarna · Meyers · Assmann",
         },
         meaning:
-          "Pharaoh's first words are a question: who is the LORD, that I should obey him. He is not being rhetorical, he genuinely does not know the name, and the whole contest to come is an answer to that sentence. What he does know is leverage. Make the work heavier and they will stop listening to talk of freedom, because a person who is exhausted cannot afford hope.",
+          "Pharaoh’s first words are a question: who is the LORD, that I should obey him? He is not speaking for effect. He truly does not know the name, and the whole contest that follows is God’s answer to his question. What Pharaoh does know is how to keep people under control. He decides to make the work heavier so that they will stop listening to talk of freedom, because people who are exhausted cannot afford to <b>hope</b>.",
         lenses: {
-          arch: "Exhaustion used deliberately as a tool of control, so that there is no strength left over for imagining anything else. (Work as a way of keeping people quiet.)",
+          arch: "Rulers have often used exhaustion deliberately as a way to control people, keeping them so tired that they have no strength left to imagine anything different. Pharaoh uses work in exactly this way, to keep the Israelites quiet.",
         },
         addr: {
           mode: "names",
-          text: "You may know the state of being kept too busy to think, where the volume of what is required is itself the thing preventing you from asking whether it should be required.",
+          text: "Many of us know what it is to be kept too busy to think, when the sheer amount of work we are given keeps us from asking whether we should be doing it at all.",
         },
-        ask: "What in your life is kept unquestioned mainly because you are too tired to question it?",
+        ask: "What in your life goes unquestioned mainly because you are too tired to question it?",
       },
       {
         label: "Two",
@@ -452,17 +452,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The foremen are Israelites, appointed over their own people and beaten when the numbers fall short. They are caught between the taskmasters above and the workers below, responsible for a target they cannot meet. Their appeal to Pharaoh is refused in one line, and they walk out knowing they are in trouble.",
+          text: "Pharaoh appoints Israelites as foremen over their own people, and the taskmasters beat them whenever the numbers fall short. The foremen are caught between the taskmasters above them and the workers below, responsible for a target they cannot meet. When they appeal to Pharaoh, he refuses them in a single line, and they leave knowing they are in trouble.",
           src: "Meyers · Propp",
         },
         meaning:
-          "The cruelty is administered by people who are themselves under it. That is how the system keeps running without anyone in it feeling like the villain: the taskmasters have quotas too, and the foremen take the beating for a shortfall they did not cause. Everyone is following a number. The number came from a man who did not want to be asked a question.",
+          "The people who carry out the cruelty are themselves suffering under it. That is how such a system keeps running without anyone in it feeling like the villain. The taskmasters have quotas of their own, and the foremen are beaten for a shortfall they did not cause. Everyone is following a number, and the number came from a king who did not want anyone to <b>question</b> him.",
         lenses: {
-          theo: "Nothing here is miraculous and nothing improves. The book insists on giving this stretch its full weight rather than hurrying to the rescue, which is a kind of honesty about how deliverance actually feels from inside.",
+          theo: "In this chapter God performs no miracle, and nothing improves. The writer gives this stretch its full weight rather than hurrying on to the rescue, and in doing so he tells the truth about how deliverance feels to the people waiting inside it.",
         },
         addr: {
           mode: "names",
-          text: "You have been the person passing on pressure you did not create, and the person absorbing it. Neither position feels like power, and both keep the machine turning.",
+          text: "At different times most of us have both passed on pressure that we did not create and absorbed pressure from others. Neither position feels like power, yet in both we keep the machine running.",
         },
         ask: "Where are you enforcing something you would not defend if anyone asked you to?",
       },
@@ -485,22 +485,22 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The foremen meet Moses and Aaron waiting in the road and wish judgement on them for making the people a stench to Pharaoh. Moses takes it straight to God and repeats the accusation almost word for word. The chapter ends there, with the complaint unanswered, and the reply does not come until the next chapter opens.",
+          text: "The foremen find Moses and Aaron waiting in the road, and they call down judgment on them for making the people hateful to Pharaoh. Moses takes the complaint straight to God and repeats the accusation almost word for word. The writer ends the chapter there, with the complaint unanswered, and God does not reply until the next chapter opens.",
           src: "Fretheim · Childs",
         },
         misreading: {
           named:
-            "Moses lost his nerve here, and a stronger believer would not have spoken to God like that.",
-          why: "The book puts his complaint in the text and lets it stand, and God's answer when it comes is not a rebuke. Scripture repeatedly hands its most trusted people the words to accuse God, in Job, in the psalms of lament, in Jeremiah. Treating that as failure of faith cuts out most of the Bible's own prayer language, and it leaves a reader in the same position with nothing permitted to say.",
+            "Some readers say that Moses lost his nerve here, and that a stronger believer would not have spoken to God like that.",
+          why: "The writer records Moses’s complaint and lets it stand, and when God answers, he does not rebuke Moses. Throughout Scripture the writers give their most trusted people words with which to accuse God, in Job, in the psalms of lament, and in Jeremiah. If we treat such words as a failure of faith, we cut out much of the Bible’s own language of prayer, and we leave readers in Moses’s position with nothing they are allowed to say.",
         },
         meaning:
-          "Why have you brought harm on this people, and why did you ever send me. He is not asking for information. He is saying the thing out loud that everyone in the story is thinking, which is that obedience made it worse. The book gives the movement's lowest point to the man who was told <b>I will be with you</b>, and does not resolve it for a chapter.",
+          "Moses asks God why he has brought harm on this people, and why he ever sent Moses at all. He is not asking for information. He is saying aloud what everyone in the story is thinking, that obeying God has made things worse. The writer gives the lowest point of this part of the book to the very man God told, <b>I will be with you</b>, and he leaves it unresolved for a chapter.",
         lenses: {
-          theo: "Deliverance in this book gets worse before it gets better, and the text refuses to skip that part. The promise was presence, not a smooth road, and this is the first place the difference is felt.",
+          theo: "In Exodus God’s deliverance gets worse before it gets better, and the writer will not skip that part. God promised Moses his presence, not an easy road, and this is the first place where Moses and the people feel the difference.",
         },
         addr: {
           mode: "names",
-          text: "You may have done the thing you believed you were asked to do, and watched it cost other people something. The accusation Moses makes is available to you, and this chapter shows it being made without apology.",
+          text: "Some of us have done what we believed God asked of us and then watched it cost other people something. Moses’s accusation is open to us as well, and in this chapter the writer shows Moses making it without apology.",
         },
         ask: "What would you say to God about the thing that got worse after you obeyed?",
       },
@@ -539,7 +539,7 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A second call, told in a different voice from the one that told chapter 3, which is why the name is disclosed again to a Moses who has already heard it. This telling is formal and legal in its cadence, and it states the promise in a series of clauses. A genealogy then interrupts to fix Moses and Aaron in the line of Levi, and the narrative resumes as though the interruption had not happened.",
+          text: "Scholars think Genesis and Exodus were woven together from several older sources, and this chapter comes from the one they call the Priestly writer. That is why God reveals his name to Moses here a second time, even though Moses already heard it at the burning bush in chapter 3: an editor kept both accounts. The Priestly writer tells the call in a formal, legal style and sets out God’s promise in a series of clauses. Then the writer stops to give a genealogy that places Moses and Aaron in the tribe of Levi, and afterward he picks up the narrative as though he had never paused.",
           src: "Friedman · Propp",
         },
       },
@@ -554,8 +554,8 @@ export const EXODUS: Reading[] = [
     crossesChapters: true,
     title: "The plagues",
     unitLabel: "Scene",
-    thread: "Nine rounds of the same shape: a demand, a refusal, a sign, a hardening. The signs work through the ordinary world, water and weather and livestock and light, and each one takes something Egypt trusted.",
-    closeEnd: "The last sign is not sent in this chapter. It is announced, and the announcement is where the reading stops.",
+    thread: "In Exodus 7 through 10 Moses demands Israel’s release nine times, and each time the same thing happens: Pharaoh refuses, God sends a sign, and Pharaoh’s heart hardens. God works these signs through the ordinary world of water, weather, livestock and light, and with each one he takes away something the Egyptians trusted.",
+    closeEnd: "God does not send the last sign in this reading. Moses only announces it, and the reading stops there.",
     passages: [
       {
         label: "One",
@@ -573,13 +573,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The cycle is built as a pattern rather than a run of surprises: a demand, a refusal, a sign, a hardening, and again. The signs work through the ordinary world, water and weather and livestock and light, which is to say the order Egypt's gods were held to guarantee. The Nile goes first because the Nile is Egypt. Everything the country eats depends on its flooding.",
+          text: "The writer builds these signs as a repeating pattern rather than a run of surprises: Moses makes a demand, Pharaoh refuses, God sends a sign, and Pharaoh’s heart hardens, again and again. God works through the ordinary world of water, weather, livestock and light, which was exactly the order the Egyptians believed their gods kept in place. He strikes the Nile first because Egypt depended on it completely. Every crop in the country grew because the river flooded each year.",
           src: "Propp · Fretheim · Assmann",
         },
         meaning:
-          "The first sign takes the water. Not a plague sent from outside the world but the country's own river turned against it, and the fish die, and nobody can drink. Then the detail the story insists on: Pharaoh's magicians do the same thing. The sign is not overwhelming and it is not meant to be. It is the opening move of an argument about who the Nile actually belongs to.",
+          "With the first sign God takes away Egypt’s water. He does not send a plague from outside the world; he turns the country’s own river against it, so the fish die and no one can drink. Then the writer adds a detail he clearly wants us to notice: Pharaoh’s magicians do the same thing. God does not overwhelm Pharaoh with this sign, and he does not mean to. He is opening an argument about <b>who owns the Nile</b>.",
         lenses: {
-          theo: "Egypt worshipped the river as a god. The contest is not staged in the sky but inside the things people depended on daily, which is where the question of what you actually trust gets settled.",
+          theo: "The Egyptians worshipped the Nile’s yearly flood as a god, Hapi. God does not challenge Egypt’s gods somewhere up in the sky. He challenges them inside the things the Egyptians depended on every day, and that is where people usually find out what they really trust.",
         },
       },
       {
@@ -598,11 +598,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Frogs, then gnats out of the dust. The magicians match the frogs, which only doubles the misery, and then they fail. Their line to Pharaoh, that this is the finger of God, is the first admission from inside his own court that something has changed. He is unmoved.",
+          text: "Next God sends frogs, and then gnats that rise out of the dust. The magicians manage to produce frogs too, which only doubles the misery, but they cannot produce gnats. They tell Pharaoh that this is “the finger of God,” and with those words his own court admits for the first time that something has changed. Pharaoh is unmoved.",
           src: "Propp · Sarna",
         },
         meaning:
-          "Notice what Pharaoh's own experts can and cannot do. They can add frogs. They cannot remove them, and they cannot produce gnats at all. Egypt's power is real and it is entirely one-directional: it can make more of a problem, never less. When his advisers tell him plainly what they are looking at, he does not argue with them. He simply does not listen, which is a different thing from disagreeing.",
+          "Pharaoh’s own experts can do some things and not others. They can add frogs, but they cannot take them away, and they cannot make gnats at all. Egypt’s power is real, but it only works in one direction: its magicians can make a problem worse and never better. When his advisers tell him plainly what they are seeing, Pharaoh does not argue with them. He simply refuses to <b>listen</b>, which is a different thing from disagreeing.",
       },
       {
         label: "Three",
@@ -622,13 +622,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "By the hail the warnings have become specific: bring the livestock under shelter and they will live. Some of Pharaoh's officials act on it and some do not, so the text quietly divides Egypt into those who heeded the word and those who did not. Afterward Pharaoh says the words I have sinned, and takes them back the moment the sky clears.",
+          text: "By the time God sends the hail, his warnings have become specific: anyone who brings their livestock under shelter will save them. Some of Pharaoh’s officials take the warning and some do not, so the writer quietly divides the Egyptians into those who heeded God’s word and those who ignored it. Afterward Pharaoh says, “I have sinned,” and he takes the words back as soon as the sky clears.",
           src: "Fretheim · Propp",
         },
         meaning:
-          "This is the first confession in the book, and it is worth nothing. He says he has sinned while the hail is still falling and reverses himself as soon as it stops, which the narrator states flatly rather than condemning. Pressure produces the language of repentance easily. What it cannot produce is a changed man, and the difference only shows once the pressure is off.",
+          "Pharaoh makes the first confession in the book of Exodus, and it means nothing. He says he has sinned while the hail is still falling and changes his mind as soon as it stops, and the writer simply reports this without comment. People find it easy to use the language of repentance while they are under pressure. What pressure cannot do is change them, and we only see whether someone has changed once the pressure is gone.",
         lenses: {
-          arch: "The apology extracted by consequence, sincere while the consequence lasts. (Repentance that is really negotiation.)",
+          arch: "People in every age have made apologies like Pharaoh’s, sincere for exactly as long as the trouble lasts. Someone caught in a crisis promises to change, and once the crisis passes, he goes back to what he was doing. Pharaoh is not really repenting. He is bargaining for relief.",
         },
       },
       {
@@ -651,18 +651,18 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Chapter 10 opens by saying it outright: I have hardened his heart. Three different Hebrew verbs are used across the cycle for this hardening, and in the early rounds the subject is usually Pharaoh himself. Only later does God become the one doing it. Then locusts strip whatever the hail left, and a darkness settles that the text calls a darkness that can be felt.",
+          text: "At the start of chapter 10, God says it outright: “I have hardened his heart.” The writer uses three different Hebrew verbs for this hardening across the whole account. In the early rounds Pharaoh’s heart hardens, or Pharaoh hardens it himself, and only from the sixth sign onward does the writer name God as the one who hardens it. Then God sends locusts to eat whatever the hail left, and a darkness falls that the writer calls “a darkness that can be felt.”",
           src: "Propp · Childs · Fretheim",
         },
         misreading: {
           named:
-            "God hardened Pharaoh's heart, so Pharaoh was a puppet, punished for a refusal he was never free to avoid.",
-          why: "Follow the verbs in order. Through the first five rounds it is Pharaoh who hardens his own heart, and only afterward is God named as the one who hardens it. The text describes something recognisable: a man makes the same refusal so many times that it stops being a choice and becomes his character, and Scripture is willing to call that hardening God's work as well as his own. It is not a story about a man denied the chance to repent. It is a story about a man who took the chance nine times and used it to say no.",
+            "God hardened Pharaoh’s heart, so Pharaoh was a puppet, punished for refusing when he was never free to do anything else.",
+          why: "If we follow who does the hardening, the order matters. Through the first five signs Pharaoh’s heart hardens, or Pharaoh hardens it himself, and only after that does the writer name God as the one hardening it. The writer is describing something we can recognize: a man makes the same refusal so many times that it stops being a choice and becomes his character, and the writer is willing to call that hardening God’s work as well as Pharaoh’s own. Pharaoh is not a man who was denied the chance to repent. He was given that chance again and again, and each time he used it to say no.",
         },
         meaning:
-          "The darkness is the sign before the last, and it undoes the first thing God ever made. Egypt's sun was its chief god and the pharaoh was held to be that god's son, so three days of dark in which nobody can see anyone else is a verdict on the whole arrangement. His officials have already broken, asking him whether he does not yet realise Egypt is destroyed. He answers by threatening Moses with death if he sees his face again.",
+          "God sends the darkness as the second-to-last sign, and in it he undoes the first thing he made in Genesis, which was light. The Egyptians worshipped the sun as their chief god, Ra, and they called the pharaoh Ra’s son, so three days of darkness in which no one can see anyone else is God’s verdict on that whole system. By now Pharaoh’s officials have given up and have asked him whether he still does not realize that Egypt is ruined. Pharaoh answers by telling Moses that if he ever sees his face again, Moses will die.",
         lenses: {
-          theo: "Where Israel lives there is light. The text keeps making that distinction not to flatter them but to say the darkness is not weather, it is aimed.",
+          theo: "Where the Israelites live, the writer tells us, there is light. He keeps drawing that line between Israel and Egypt, not to flatter Israel but to make clear that God is aiming the darkness, and that it is not ordinary weather.",
         },
       },
       {
@@ -681,23 +681,23 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The last sign is announced here rather than carried out, and the announcement is deliberately unbearable: every firstborn from the palace to the mill, and the livestock too. The firstborn son carried the inheritance and the family line, so this strikes at the future of every household in the country. Egypt holds Moses in high regard by now, which makes the announcement land in silence.",
+          text: "In this reading Moses only announces the last sign, and what he announces is meant to be unbearable to hear: every firstborn in Egypt will die, from the son of Pharaoh on his throne to the son of the slave woman at the mill, and the firstborn of the livestock too. In Egypt, as across the ancient world, the firstborn son inherited the family’s land and carried on its name, so God is striking at the future of every household in the country. By this point the Egyptians hold Moses in high regard, and they hear his announcement in silence.",
           src: "Propp · Sarna · Assmann",
         },
         tensions: [
           {
             claim:
-              "God's justice frees the enslaved, and the cost of that freedom falls on the nation that enslaved them, down to its children.",
+              "God acts justly when he frees the enslaved, and the Egyptians who enslaved them bear the cost of that freedom, down to their children.",
             counter:
-              "Other voices in the canon refuse to let a nation's guilt fall on its children, or to treat the exodus as Israel's private possession. Ezekiel is explicit that a son does not bear his father's guilt. Amos has God bringing the Philistines up from Caphtor in the same breath as Israel out of Egypt.",
+              "Other biblical writers refuse to let a nation’s guilt fall on its children, or to treat the exodus as something that belongs to Israel alone. Ezekiel states plainly that a son does not bear the guilt of his father. Amos pictures God saying that he brought the Philistines up from Caphtor just as he brought Israel up out of Egypt.",
             where: "Ezekiel 18:20 · Amos 9:7 · Jonah 4:11",
           },
         ],
         meaning:
-          "There is no way to read this that makes the dead children acceptable, and the book does not offer one. What it offers is a mirror: Egypt began by drowning Hebrew boys in the river, and it ends by losing its own sons in a night. That is the logic of the story, measure for measure, and naming the logic is not the same as excusing it. The canon itself will argue with this page, which is why the argument is printed above rather than resolved.",
+          "No one can read this passage in a way that makes the death of children acceptable, and the writer does not try to. What he does instead is hold up a mirror. Egypt began by drowning the Hebrews’ baby boys in the Nile, and it ends by losing its own sons in a single night. The writer tells the story as <b>measure for measure</b>, but naming that pattern is not the same as excusing it. Other biblical writers argue with this passage, and that is why their objection appears above, left unresolved.",
         addr: {
           mode: "claims",
-          text: "The hardening is not a curiosity about someone else's free will. It is a description of what repeated refusal does to a person, and you have refused something small enough times to feel it setting. The reading asks you to find the place where you have stopped being able to choose differently.",
+          text: "Pharaoh’s hardening is not just a puzzle about someone else’s free will. It describes what repeated refusal does to any person, and most of us have refused some small thing often enough to feel ourselves setting hard in the same way. As you read, look for the place in your own life where you can no longer easily choose differently.",
         },
         ask: "What have you said no to so often that saying yes is no longer really available to you?",
       },
@@ -711,8 +711,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 12,
     title: "Passover",
     unitLabel: "Scene",
-    thread: "The night is told twice, as a meal and as a death. The instructions keep stepping out of the story to say how this is to be done in generations to come, because the people keeping it will mostly be people who were not there.",
-    closeEnd: "They leave in such haste the bread has no time to rise, and that unrisen bread becomes the thing eaten every year afterward.",
+    thread: "The writer tells the story of the last night in Egypt twice, once as a meal and once as a death. He keeps pausing the story to explain how later generations should keep the meal, because most of the people who would celebrate Passover were born long after the night itself.",
+    closeEnd: "The Israelites leave in such a hurry that their bread has no time to rise, and from then on they eat unrisen bread every year to remember that night.",
     passages: [
       {
         label: "One",
@@ -736,13 +736,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "This is liturgy before it is narrative. The month is reset to be the first of the year, the lamb is chosen four days ahead, and the instructions are addressed to a whole congregation across generations. The blood goes on the doorframe as a mark. Passover almost certainly began as an older shepherds' rite, marking a flock and a season, which Israel took up and filled with this night.",
+          text: "The writer gives instructions for a ritual here before he tells what happened. God resets the calendar so that this month becomes the first of the year, tells each household to choose its lamb four days ahead, and addresses his commands to the whole people across all their generations. They are to put the lamb’s blood on their doorframes as a mark. Most scholars think Passover began as an older spring ritual among shepherds, who marked their flocks as they moved to new pasture, and that Israel took up that rite and gave it the meaning of this night.",
           src: "Sarna · Childs · Meyers",
         },
         meaning:
-          "The meal is eaten dressed to travel, belt fastened and staff in hand, which makes it a strange sort of feast: food taken standing, by people who expect to be gone before morning. And the text is already looking past the night it describes. It tells them how to keep this when they are settled and safe and none of them remember Egypt, because a rescue that is not rehearsed is a rescue that gets forgotten.",
+          "The Israelites eat the meal dressed to travel, with their belts fastened and their staffs in their hands, which makes it a strange sort of feast: people eat standing, expecting to be gone before morning. The writer is already looking beyond the night he describes. He tells the Israelites how to keep this meal once they are settled and safe and none of them remember Egypt, because people quickly forget a rescue unless they <b>rehearse</b> it.",
         lenses: {
-          theo: "The blood is not payment and it is not magic. It is a mark that distinguishes a household, and the instruction attached to it is that when your children ask what this means, you tell them.",
+          theo: "The blood is neither a payment nor a magic charm. God tells the Israelites to use it to mark their households, and he attaches an instruction to it: when your children ask what this means, you must tell them.",
         },
       },
       {
@@ -765,14 +765,14 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "At midnight there is a death in every Egyptian house, from the palace to the prison, and a great cry goes up. Pharaoh summons Moses in the dark and gives way completely, and then asks him for a blessing. The people leave in haste with dough that has not risen, and the text says a mixed multitude went up with them: not only Israelites, but anyone else in Egypt with reason to go.",
+          text: "At midnight someone dies in every Egyptian house, from Pharaoh’s palace to the prison cell, and a great cry goes up across the country. Pharaoh calls for Moses in the dark and gives in completely, and he even asks Moses to bless him. The Israelites leave in such haste that their dough has not risen, and the writer says that “a mixed multitude” went with them. Not only Israelites left Egypt that night, but anyone else who had reason to go.",
           src: "Propp · Sarna · Meyers",
         },
         meaning:
-          "The cost is not softened. Egypt loses its sons in a night, and the freedom on the other side of that is real freedom bought at a price somebody else paid. That is the shape of the meal Israel is told to keep forever, and it is worth seeing what the meal actually does with it. It does not celebrate the death. It rehearses the escape, in unrisen bread and a hurried posture, and hands the story to children who will ask what it means.",
+          "The writer does not soften the cost. Egypt loses its sons in one night, and the Israelites’ freedom is real, but someone else paid for it. Israel is told to keep this meal forever, and it is worth seeing what the meal does with that cost. It does not celebrate the deaths. It rehearses the <b>escape</b>, with unrisen bread and a hurried posture, and it hands the story on to children who will ask what it means.",
         addr: {
           mode: "claims",
-          text: "You have inherited things that were paid for by people you never met, and mostly you eat them without asking. This night is kept every year precisely so that the cost stays attached to the freedom instead of quietly coming loose from it.",
+          text: "Each of us has inherited things that people we never met paid for, and mostly we enjoy them without asking how they came to us. Israel kept this night every year so that they would remember the cost of their freedom and never take the freedom for granted.",
         },
         ask: "What did you inherit that somebody else paid for, and when did you last say so out loud?",
       },
@@ -817,7 +817,7 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two things are fixed in place before the sea. Every firstborn is claimed, which binds the last plague to a permanent obligation, and the feast of unleavened bread is tied to the month of the departure. Then the route: not the short coastal road, which ran past Egyptian forts, but the long way round. A pillar of cloud goes ahead by day and a pillar of fire by night.",
+          text: "Before the Israelites reach the sea, God settles two matters. He claims every firstborn as his own, which turns the last plague into a permanent obligation, and he ties the Feast of Unleavened Bread to the month in which they left Egypt. Then he chooses their route. Instead of the short road along the coast, which ran past a line of Egyptian forts, he leads them the long way round. He goes ahead of them as a pillar of cloud by day and a pillar of fire by night.",
           src: "Propp · Sarna",
         },
       },
@@ -831,8 +831,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 14,
     title: "The sea",
     unitLabel: "Scene",
-    thread: "Water in front, an army behind, and no road. What the people want at that moment is not freedom. It is Egypt.",
-    closeEnd: "They go in on dry ground, and the chapter ends with a people who believe, for now.",
+    thread: "The Israelites find themselves with the sea in front of them, Pharaoh’s army behind them, and no road out. At that moment they do not want freedom. They want to go back to Egypt.",
+    closeEnd: "They walk into the sea on dry ground, and by the end of the chapter the people believe, at least for now.",
     passages: [
       {
         ref: "Exodus 14",
@@ -874,17 +874,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two accounts run through this chapter, woven together rather than blended. In one, a strong east wind drives the sea back through the night and Israel walks over on dry ground. In the other, Moses stretches out his hand and the waters stand as walls. Both are here and neither was removed. The Hebrew is yam suph, the sea of reeds, which is not the Red Sea that later translation made of it.",
+          text: "Scholars find two accounts woven together in this chapter, rather than blended into one. In one account, God drives the sea back with a strong east wind that blows all night, and Israel walks across on dry ground. In the other, Moses stretches out his hand and the waters stand up like walls on either side. The editors kept both and removed neither. The Hebrew name for the sea is yam suph, which most scholars translate as “sea of reeds.” The name “Red Sea” comes from the ancient Greek translation.",
           src: "Friedman · Propp · Alter",
         },
         meaning:
-          "The first thing freed people do is ask to go back. Were there no graves in Egypt, they say, and it is not cowardice so much as arithmetic: a known misery against an unknown drowning. Moses tells them to stand still and watch. Then God tells him the opposite, why are you crying out to me, tell them to move. Both instructions are in the text, one line apart, and the chapter does not tidy them.",
+          "The first thing the freed people do is ask to go back. “Were there no graves in Egypt?” they ask Moses, and they are not so much cowardly as calculating: they weigh a misery they know against drowning in a sea they do not. Moses tells them to stand still and watch what God will do. One line later God tells Moses the opposite, asking why he is crying out and telling him to get the people moving. The writer keeps both instructions side by side and makes no attempt to <b>reconcile</b> them.",
         lenses: {
-          theo: "That the editors kept two tellings, one where a wind blows all night and one where the water stands up like walls, says something about how the book holds its own memory. It did not need a single version to be true.",
+          theo: "The editors kept two tellings of the crossing, one in which a wind blows all night and one in which the water stands up like walls. By keeping both, they showed how Israel held its memory of this event. They did not need a single version to believe it was true.",
         },
         addr: {
           mode: "names",
-          text: "You know the place where going back looks reasonable and going forward looks impossible, and standing still is unbearable. The chapter puts the people exactly there and does not pretend the fear was unreasonable.",
+          text: "Most of us know what it is to stand where going back seems sensible, going forward seems impossible, and standing still is unbearable. The writer puts the Israelites in exactly that place, and he does not pretend their fear was unreasonable.",
         },
         ask: "What are you facing where the old misery is starting to look preferable to the unknown one?",
       },
@@ -897,8 +897,8 @@ export const EXODUS: Reading[] = [
     span: "Exodus 15:1–21",
     chapterIndex: 15,
     title: "The Song at the sea",
-    thread: "On the far shore they do not explain what happened. They sing it. And the song runs past the sea to a mountain and a sanctuary the story has not reached yet.",
-    closeEnd: "It ends where it began, in Miriam's mouth, with a tambourine.",
+    thread: "Once the Israelites reach the far shore, they do not explain what happened to them. They sing about it. And in their song they look beyond the sea to a mountain and a sanctuary that they have not yet reached.",
+    closeEnd: "The song ends where it may have begun, with Miriam singing and playing her tambourine.",
     passages: [
       {
         ref: "15:1–21",
@@ -931,26 +931,26 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "genre",
-          text: "The Song is very probably older than the prose around it, kept in an archaic Hebrew the later writers did not modernise, and it is among the oldest sustained poetry in the Bible. Miriam's couplet at the close, sung with a tambourine, may well be the core the whole song grew out of, with the long version given to Moses later. It is set here as verse, its lines broken where the Hebrew turns.",
+          text: "Most scholars think the Song of the Sea is older than the prose story around it. It is written in an archaic Hebrew that later writers did not update, and it is among the oldest long poems in the Bible. Miriam’s short song at the end, which she sings with a tambourine, may be the original core from which the longer song grew, and later tradition gave the longer version to Moses. Here we set the song out as poetry, breaking its lines where the Hebrew lines break.",
           src: "Propp · Alter · Meyers",
         },
         tensions: [
           {
             claim:
-              "The rescued sing, and what they sing about is the drowning of the men who chased them.",
+              "The rescued Israelites sing, and they sing about the drowning of the men who chased them.",
             counter:
-              "A rabbinic tradition has the angels wanting to sing too, and God stopping them: the works of my hands are drowning in the sea and you would sing. The tradition does not silence Israel, who were the ones in the water. It refuses the same song to everyone watching from dry land.",
+              "The rabbis told a story in which the angels wanted to sing along, and God stopped them, saying that the work of his hands was drowning in the sea and they wanted to sing. In this story God does not silence Israel, since they were the ones whose lives were in danger. He refuses the same song only to those watching from dry land.",
             where: "Talmud, Sanhedrin 39b · Ezekiel 18:23",
           },
         ],
         meaning:
-          "The song does two things at once and the second is easy to miss. It looks back at the sea, and then at verse 13 it turns and looks forward, to a people being led and planted on a mountain that does not exist yet in this story. That is why it was kept and sung for centuries: it is not a victory report. It is a people learning to say that the God who did that will also do this.",
+          "The Israelites do two things in their song, and the second is easy to miss. They look back at the sea, and then at verse 13 they turn and look forward, to God leading his people and planting them on a mountain they have not yet reached. That is why Israel kept singing this song for centuries. It is not simply a victory report. In it, the people are learning to say that the God who rescued them at the sea will also bring them <b>home</b>.",
         lenses: {
-          theo: "The oldest thing in the book is a song rather than a law or an argument. What Israel preserved first was not an explanation of the rescue but the sound people made about it.",
+          theo: "The oldest part of Exodus is a song, not a law or an argument. The first thing Israel kept and passed down was not an explanation of their rescue but the song they sang about it.",
         },
         addr: {
           mode: "pray",
-          text: "This is handed to you as words rather than as information. If something has been got through, the song is available to say, including the part where it turns from what happened to what is still ahead.",
+          text: "The writer gives you this song to say, not just to learn about. If you have come through something hard, you can make the song your own, including the part where it turns from what God has done to what still lies ahead.",
         },
         prayer: {
           mode: "pray",
@@ -968,8 +968,8 @@ export const EXODUS: Reading[] = [
     movementId: "road-to-the-mountain",
     title: "Bitter water",
     unitLabel: "Scene",
-    thread: "Three days past the singing, the water is undrinkable. The song and the complaint are six verses apart in the same chapter, and the book does not treat that as a contradiction.",
-    closeEnd: "Then Elim, twelve springs and seventy palms, mentioned without comment and left behind.",
+    thread: "Only three days after the people sang on the far shore of the sea, they find that the water in the desert is too bitter to drink. The writer places their song of praise and their complaint just six verses apart in the same chapter, and he does not treat the two as a contradiction.",
+    closeEnd: "Afterward the people come to Elim, where there are twelve springs and seventy palm trees. The writer mentions the place without comment, and the people move on.",
     passages: [
       {
         ref: "15:22–27",
@@ -986,18 +986,18 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Three days into the wilderness of Shur with no water, and the first water they find cannot be drunk. Marah means bitter, and the Hebrew lets the place and the people share the word. A tree is thrown in and the water turns sweet. Then a statute is given, before Sinai and without ceremony, and it is about listening.",
+          text: "Three days into the wilderness of Shur, the people have found no water, and the first water they do find is too bitter to drink. The place is called Marah, which means “bitter,” and in Hebrew the same word can describe both the water and the mood of the people. At God’s direction Moses throws a piece of wood into the water, and it becomes sweet. Then, before the people reach Sinai and without any ceremony, God gives them a statute, and it is about listening to his voice.",
           src: "Propp · Sarna",
         },
-        meaning: "The distance between the song and the complaint is three days and six verses, and the book sets them next to each other without flinching. It is the same people and the same God. What changed is only that there is a new problem, and the last rescue does not carry over to cover it. Then twelve springs at Elim, noted in a single verse and not dwelt on, which is roughly how good stretches get recorded.",
+        meaning: "Only three days separate the people’s song from their complaint, and the writer sets the two side by side without apology. The people are the same, and so is God. The only change is that the people face a new problem, and the memory of their last rescue does not carry them through it. Afterward they reach the twelve springs at Elim, which the writer records in a single verse and does not dwell on, much as most of us pass quickly over the easy stretches of our own lives.",
         lenses: {
-          theo: "What is being tested is not whether they can bear thirst. It is whether the God who took them through the sea is still trusted when the next thing goes wrong, which is a different question and a harder one.",
+          theo: "God is not testing whether the people can endure thirst. He is testing whether they will still trust the God who brought them through the sea when the next thing goes wrong, and that is a different and harder question.",
         },
         addr: {
           mode: "names",
-          text: "You know the interval between relief and the next need, and how short it turns out to be. Three days is about right.",
+          text: "Most of us know how short the interval can be between one relief and the next need. For the Israelites it was three days, and for us it is often about the same.",
         },
-        ask: "What did you come through recently, and how quickly did the next thirst arrive?",
+        ask: "What hard thing have you come through recently, and how soon afterward did you find yourself in need again?",
       },
     ],
   },
@@ -1009,8 +1009,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 16,
     title: "Bread for the day",
     unitLabel: "Scene",
-    thread: "Hunger rewrites Egypt into a place of full pots. The answer is bread that cannot be stored, and a seventh day taught by the way the food behaves before it is ever commanded.",
-    closeEnd: "They ate it for forty years, until the edge of a land they could farm.",
+    thread: "When the people grow hungry in the desert, they begin to remember Egypt as a place where they ate their fill. God answers them with bread that cannot be stored, and he teaches them about the seventh day through the way that bread behaves, before he ever gives them a command about it.",
+    closeEnd: "The Israelites ate this bread for forty years, until they reached the edge of a land they could farm.",
     passages: [
       {
         label: "One",
@@ -1026,15 +1026,15 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A month out of Egypt, and the complaint is precise: if only we had died there, where we sat by pots of meat and ate our fill. Slaves did not sit by pots of meat. The answer is bread from the sky with a condition attached, a day's portion each day, and the text says outright that the condition is a test.",
+          text: "A month after leaving Egypt, the people make a very specific complaint: they wish they had died there, where they sat beside pots of meat and ate all the bread they wanted. Slaves in Egypt did not sit beside pots of meat. God answers by sending bread from the sky, but he attaches a condition, that each person gather only one day’s portion each day, and he says plainly that he is using the condition to test them.",
           src: "Propp · Fretheim",
         },
-        meaning: "The false memory is the interesting part. Hunger has quietly improved Egypt into somewhere worth going back to, and nobody in the crowd corrects it. God does not correct it either. The answer to a lie told out of need is not an argument but food, and the food comes with the one rule that will actually address the fear underneath: enough, daily, and no more.",
+        meaning: "The people’s false memory is the most revealing part of the scene. Their hunger has led them to remember Egypt as a place worth going back to, and no one in the crowd corrects them. God does not correct them either. Instead of answering a lie told out of need with an argument, he answers it with food, and with the food he gives the one rule that speaks to the fear beneath their complaint: there will be <b>enough</b>, every day, and no more than that.",
         addr: {
           mode: "names",
-          text: "A hard present is very good at making a bad past look survivable, and the improvement happens without you noticing you have made it.",
+          text: "When our present is hard, we easily begin to remember a bad past as bearable, and we usually make that adjustment without noticing we have done it.",
         },
-        ask: "What are you remembering as better than it was, because now is hard?",
+        ask: "What are you remembering as better than it was, because your life now is hard?",
       },
       {
         label: "Two",
@@ -1057,18 +1057,18 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Quail in the evening, and in the morning a fine flaky substance on the ground. They ask man hu, what is it, and the question becomes the name. It melts in the sun and it will not keep overnight. Every attempt to identify it with a desert plant or insect secretion has to account for why it stopped when they reached farmland.",
+          text: "In the evening quail come and cover the camp, and in the morning the people find a fine, flaky substance on the ground. They ask one another, “Man hu?” which means “What is it?” and their question becomes its name, manna. It melts in the sun and spoils if anyone keeps it overnight. People have tried to identify it with a desert plant or with the sweet droplets that insects leave on tamarisk trees, but anyone who does so must also explain why, according to the book of Joshua, it stopped as soon as the people could eat the produce of the land.",
           src: "Sarna · Propp",
         },
-        meaning: "Everyone gathered what they needed, and when it was measured the one who gathered much had nothing left over and the one who gathered little had no lack. Then the rule: leave none until morning. Some did, and it bred worms. The wilderness economy is built so that hoarding is not so much forbidden as impossible, and a people who had been worked for someone else's storehouses are being taught to live without one.",
+        meaning: "Everyone gathered what they needed, and when they measured it, the one who had gathered much had nothing left over, and the one who had gathered little had no shortage. Then Moses gave them a rule: no one was to keep any until morning. Some kept it anyway, and by morning it was full of worms. God arranged life in the wilderness so that hoarding was not so much forbidden as impossible. These people had spent their lives working to fill someone else’s storehouses, and now God was teaching them to live without one.",
         lenses: {
-          arch: "Provision that has to be received again each day and cannot be banked. (Daily bread.)",
+          arch: "No one can store the manna up for later; each person has to receive it fresh each day. Many Christian readers hear an echo of this story when Jesus teaches his followers to ask God for their “daily bread,” and in John’s Gospel Jesus speaks of himself as bread from heaven, setting himself beside the manna that fed Israel in the wilderness.",
         },
         addr: {
           mode: "claims",
-          text: "Some of what you are holding was given for a day and has been kept for a year, and the keeping of it is doing something to you. This passage is not against provision. It is against the storehouse as a way of not having to trust anyone.",
+          text: "Some of what we hold on to was given to us for a single day, and we have kept it for a year, and keeping it has changed us. The writer is not against provision. He is warning against the storehouse, the habit of piling things up so that we never have to trust anyone.",
         },
-        ask: "What are you storing that was given to you for today?",
+        ask: "What are you storing up that was given to you only for today?",
       },
       {
         label: "Three",
@@ -1088,13 +1088,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "On the sixth day twice as much falls, and this time it keeps. Some go out on the seventh anyway and find nothing. Sabbath appears here, before Sinai and before any commandment, and it arrives as a fact about how the bread behaves rather than as a rule anyone is given.",
+          text: "On the sixth day twice as much manna falls, and this time it keeps overnight. Some people go out on the seventh day anyway and find nothing. This is the first time the sabbath appears in Israel’s story, before Sinai and before any commandment, and God introduces it through the way the bread behaves rather than as a rule he hands down.",
           src: "Meyers · Fretheim",
         },
-        meaning: "Rest is taught before it is commanded, and it is taught by the food. The manna keeps on one day and rots on every other, so the week has a shape whether or not anyone approves of it. For people whose entire experience of time was a quota that never stopped, a day when gathering is pointless is not a restriction. It is the first evidence that they are no longer owned.",
+        meaning: "God teaches the people to rest before he commands them to, and he teaches them through their food. The manna keeps on one day and spoils on every other, so the people’s week takes on a shape whether they like it or not. These people had known time only as a quota of work that never stopped. For them, a day when gathering was pointless was not a restriction. It was the first proof that no one <b>owned</b> them anymore.",
         addr: {
           mode: "names",
-          text: "You have probably tried to gather on the seventh day, and found nothing, and gone out again the next week to check.",
+          text: "Most of us have gone out to gather on our own seventh day, found nothing worth the effort, and then gone out again the following week just to check.",
         },
         ask: "What would have to be true for you to stop for a day without calculating the cost?",
       },
@@ -1108,8 +1108,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 17,
     title: "The rock, and Amalek",
     unitLabel: "Scene",
-    thread: "Thirst again, and this time the quarrel has a question under it: is the LORD among us or not. Then the first battle, won by a man who cannot hold his own arms up.",
-    closeEnd: "The chapter ends on a vow of war in every generation, which later parts of the Bible will handle with visible discomfort.",
+    thread: "The people are thirsty again, and this time their quarrel with Moses hides a deeper question: is the LORD among us or not? Then Israel fights its first battle, and the people win it while Moses stands on a hill, unable to keep his own arms raised without help.",
+    closeEnd: "At the end of the chapter God vows war against Amalek in every generation, and later Israelites carry that vow into some of the most troubling stories in the Bible, such as Saul’s war against Amalek in 1 Samuel 15.",
     passages: [
       {
         label: "One",
@@ -1128,16 +1128,16 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "No water at Rephidim. The people quarrel with Moses and he tells them they are testing God; he is close enough to being stoned to say so out loud. He is told to strike the rock at Horeb. The place keeps both names, Massah and Meribah, testing and quarrelling, and later writers return to it as the standing example of what not to do.",
+          text: "When the people camp at Rephidim, there is no water. They quarrel with Moses, and he tells them that they are testing God; by then he fears they are close to stoning him. God tells him to strike the rock at Horeb, and water comes out. Moses gives the place two names, Massah and Meribah, meaning “testing” and “quarreling,” and later biblical writers, in Deuteronomy and the Psalms, point back to it as the standing example of how not to treat God.",
           src: "Propp · Childs",
         },
-        meaning: "The sentence the whole episode turns on is the one the narrator puts last: is the LORD among us or not. That is what the thirst is really asking, and it is the question the wilderness keeps asking in different forms for forty years. It is not answered with an argument. It is answered with water, which settles nothing permanently, which is why the question comes back.",
+        meaning: "The writer saves for last the sentence on which the whole episode turns: the people were testing God by asking, “Is the LORD among us or not?” That was the real question behind their complaint about water, and they will ask it again, in different forms, throughout their forty years in the wilderness. God does not answer them with an argument. He answers them with water, and because water cannot settle the matter for good, they soon ask again.",
         lenses: {
-          theo: "The complaint is treated as serious and is answered, and it is also given a name that sticks as a warning. Both at once. Scripture is willing to meet a demand and to remember that it was a demand.",
+          theo: "God takes the people’s complaint seriously and answers it, and yet Moses also gives the place a name that will stand as a warning. Both things are true at once. The writers of Scripture are willing to show God meeting a demand and also to remember that it was a demand.",
         },
         addr: {
           mode: "names",
-          text: "Underneath most of your complaints about circumstances is a shorter question about whether anyone is actually there, and it usually goes unasked in those words.",
+          text: "Beneath many of our complaints about our circumstances lies a shorter question, whether anyone is really there, and we seldom ask it in those words.",
         },
         ask: "What are you angry about that is really the question of whether God is here?",
       },
@@ -1160,17 +1160,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Amalek attacks, and the first battle in Israel's history is fought while Moses stands on a hill with the staff raised. When his hands are up they prevail, when they drop Amalek does. Aaron and Hur put a stone under him and hold his arms, one on each side, until sunset. The chapter closes on a vow of war with Amalek from generation to generation.",
+          text: "The Amalekites, a desert people, attack Israel, and Israel fights its first battle while Moses stands on a hill holding up the staff of God. Whenever he holds up his hands, Israel prevails, and whenever he lowers them, Amalek prevails. When his arms grow tired, Aaron and Hur set a stone under him to sit on and hold up his hands, one on each side, until the sun goes down. At the end of the chapter God vows to wage war with Amalek from generation to generation.",
           src: "Propp · Fretheim",
         },
         misreading: {
-          named: "The raised hands are a technique: hold the right posture and God is obliged to act.",
-          why: "The detail the story insists on is that Moses cannot do it. His hands get heavy, he needs a rock to sit on and two men to hold him up, and the sun has to go down before it is over. Read as technique it is superstition and it does not even work, since the technique fails every time the man performing it gets tired. Read as it is written, it is a picture of a leader who is visibly not the source of anything, being held in position by other people.",
+          named: "Some readers treat Moses’ raised hands as a technique: if a person holds the right posture, God is obliged to act.",
+          why: "The writer insists that Moses cannot do it alone. His hands grow heavy, he needs a stone to sit on and two men to hold his arms, and the battle lasts until sunset. If we read the scene as a technique, it is superstition, and it does not even work, since it fails every time the man performing it gets tired. If we read it as the writer tells it, it is a picture of a leader who is plainly not the source of the victory, held in place by other people.",
         },
-        meaning: "The victory is real and the man at the centre of it is propped up by his brother and a man we never hear from again. That is the whole image. Israel's first military success is staged so that nobody watching could mistake where the strength came from, least of all Moses, who spent the afternoon being carried.",
+        meaning: "The victory is real, but the man at the center of it has to be propped up by his brother Aaron and by Hur, a man who appears only briefly in the story. The writer tells of Israel’s first military success in such a way that no one watching could mistake where the strength came from, least of all Moses, who spent the afternoon being <b>held up</b> by others.",
         addr: {
           mode: "names",
-          text: "You have been in the position that required you to keep something up longer than you could, and whether it held depended on who was standing either side of you.",
+          text: "Most of us have had to keep something going for longer than we had strength for, and whether we managed it depended on who stood beside us.",
         },
         ask: "Who is currently holding your arms up, and have you told them?",
       },
@@ -1184,8 +1184,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 18,
     title: "Jethro",
     unitLabel: "Scene",
-    thread: "A foreign priest arrives, blesses Israel's God before Israel has a law, and then tells Moses that the way he is working is not good.",
-    closeEnd: "Moses listens to him, does all of it, and sends him home to his own country.",
+    thread: "Jethro, a priest from the foreign land of Midian and Moses’ father-in-law, comes to visit. He praises Israel’s God before Israel has received any law, and then he tells Moses that the way he is working is not good.",
+    closeEnd: "Moses listens to Jethro, does everything he advises, and then sends him home to his own country.",
     passages: [
       {
         label: "One",
@@ -1209,16 +1209,16 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Jethro, priest of Midian, brings Moses' wife and two sons back to him at the mountain of God. He hears the whole account, says now I know that the LORD is greater than all gods, and brings a burnt offering. Aaron and all the elders of Israel come and eat bread with him in the presence of God.",
+          text: "Jethro, the priest of Midian, whose daughter Zipporah Moses married, brings Moses’ wife and two sons back to him at the mountain of God. He listens to Moses tell the whole story of the escape from Egypt, says that now he knows the LORD is greater than all gods, and offers a burnt offering. Then Aaron and all the elders of Israel come and eat bread with him in the presence of God.",
           src: "Propp · Meyers · Fretheim",
         },
-        meaning: "The first person in this book to bless the God of Israel and offer sacrifice to him is not an Israelite. He is a Midianite priest, a professional of another religion, and the elders sit down and eat with him. This happens before Sinai, before the covenant, before a single law has been given. The book puts it there and adds no qualification at all.",
+        meaning: "In Exodus, the first person to say “Blessed be the LORD” and offer a sacrifice to Israel’s God is not an Israelite. He is a Midianite priest, a man who serves in another religion, and Israel’s elders sit down and eat with him. All of this happens before Sinai, before the covenant, and before God gives a single law. The writer places the scene here and adds no qualification at all.",
         lenses: {
-          theo: "Whatever the covenant at the mountain is going to mean, it arrives after a foreigner has already recognised this God and been welcomed at the table. The order of events is doing work.",
+          theo: "Whatever the covenant at Sinai will come to mean, God makes it only after a foreigner has already recognized him and been welcomed at Israel’s table. The writer seems to have placed the scene here deliberately, so that we meet this foreigner before we meet the law.",
         },
         addr: {
           mode: "names",
-          text: "The recognition you were waiting for from inside your own circle may well arrive first from someone standing outside it, who owes you nothing.",
+          text: "The recognition we hoped for from inside our own circle may well come first from someone outside it, someone who owes us nothing.",
         },
         ask: "Who outside your own people has seen something true about your life that the insiders missed?",
       },
@@ -1247,13 +1247,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Jethro watches Moses judge the people from morning until evening and tells him plainly that what he is doing is not good, and that he will wear himself out along with everybody waiting. He proposes a structure: capable men who fear God and hate dishonest gain, set over thousands, hundreds, fifties and tens, with only the hard cases coming up. Moses listens and does all of it.",
+          text: "Jethro watches Moses sit as judge for the people from morning until evening, and he tells him plainly that what he is doing is not good, and that he will wear himself out along with everyone waiting in line. He proposes a structure: capable men who fear God and hate bribes should be appointed over groups of thousands, hundreds, fifties, and tens, and only the hard cases should come to Moses. Moses listens and does everything Jethro says.",
           src: "Propp · Meyers",
         },
-        meaning: "The correction does not come from God, and it does not come from Israel. It comes from a foreigner who watched for one day, and the text records without embarrassment that Moses simply took the advice. Notice the criterion for the men chosen: trustworthy, God-fearing, not on the take. Character, not expertise. And notice what it says about Moses, that the man who spoke with God at the bush could not see the flaw in his own working week until a visitor named it.",
+        meaning: "The correction does not come from God, and it does not come from an Israelite. It comes from a foreigner who has watched Moses for a single day, and the writer records, without embarrassment, that Moses simply took his advice. The qualities Jethro asks for in the new judges are worth noticing: they must be trustworthy, fear God, and refuse bribes, so he looks first for character rather than expertise. The writer also lets us see something about Moses himself. The man who spoke with God at the burning bush could not see the flaw in his own working day until a visitor <b>named</b> it.",
         addr: {
           mode: "names",
-          text: "There is something about how you work that an outsider would name in a day and that you have not been able to see in years, because you are inside it.",
+          text: "There is probably something about the way we work that an outsider could name in a day, though we have not seen it in years, because we are too close to it.",
         },
         ask: "Who has told you plainly that what you are doing is not sustainable, and what did you do with it?",
       },
@@ -1267,8 +1267,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 19,
     title: "Fire on the mountain",
     unitLabel: "Scene",
-    thread: "They are offered terms and accept them before they have heard what they are. Then the mountain is fenced, and what comes down it is fire, smoke and a sound that will not stop.",
-    closeEnd: "The people are kept back, and Moses goes up. Everything after this arrives through him.",
+    thread: "At Sinai God offers the people a covenant, and they accept it before they have heard what it asks of them. Then Moses sets a boundary around the mountain, and God comes down on it in fire and smoke, with the blast of a trumpet that grows louder and louder.",
+    closeEnd: "God keeps the people back and calls Moses up the mountain. From this point on, God gives everything to the people through Moses.",
     passages: [
       {
         label: "One",
@@ -1288,17 +1288,17 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Three months out of Egypt they camp in front of the mountain, and God's first words are not terms but a reminder: you saw what I did to Egypt, and I carried you on eagles' wings and brought you to myself. Only then the offer. If you keep the covenant you will be a treasured possession, a kingdom of priests, a holy nation. The whole earth is mine, it adds, which stops the choosing from meaning ownership of only one people.",
+          text: "Three months after leaving Egypt, the people camp in front of the mountain. God’s first words to them are not terms but a reminder: they have seen what he did to Egypt, and how he carried them on eagles’ wings and brought them to himself. Only then does he make his offer. If they keep his covenant, they will be his treasured possession, a kingdom of priests, and a holy nation. He adds that the whole earth is his, so that no one will think his choice of Israel means he cares for one people alone.",
           src: "Childs · Fretheim · Propp",
         },
         meaning:
-          "The people answer everything the LORD has spoken we will do, and they have not yet heard a single commandment. That is either faith or a kind of blindness and the book does not say which. What it does establish is the order: rescue, then relationship, then terms. Nothing here is a transaction in which obedience buys rescue. The rescue already happened, several chapters ago, while they were complaining.",
+          "The people answer, “Everything the LORD has spoken we will do,” before they have heard a single commandment. That may be faith or it may be a kind of blindness, and the writer does not tell us which. What he does make clear is the order of events: first God rescues them, then he draws them into a relationship, and only then does he give them terms. Their obedience does not buy their rescue. God rescued them several chapters earlier, while they were still complaining.",
         lenses: {
-          theo: "A kingdom of priests means the whole people, not a caste inside it. Whatever else the covenant does, it does not create a class of insiders with access and a class without.",
+          theo: "When God calls Israel “a kingdom of priests,” he means the whole people, not a special class within it. Later in Exodus God sets apart Aaron’s family to serve as priests, but here, at the beginning, he calls every Israelite to stand near him and serve him.",
         },
         addr: {
           mode: "names",
-          text: "You have said yes to something before knowing what it would ask, and meant it at the time. This scene does not treat that as foolish. It treats it as how most real commitments actually start.",
+          text: "Most of us have said yes to something before we knew what it would ask of us, and we meant it at the time. The writer does not treat the Israelites as foolish for doing so. He shows that this is how most real commitments begin.",
         },
         ask: "What did you agree to before you knew the terms, and would you agree again?",
       },
@@ -1319,13 +1319,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two days of preparation: wash your clothes, be ready, and do not go near the mountain or even touch its edge, on pain of death. The boundary is set by Moses at God's instruction, and it applies to everyone including the priests. The instruction to abstain from sex before the encounter belongs to the ritual purity of the period and is stated without explanation.",
+          text: "God gives the people two days to prepare. They are to wash their clothes, make themselves ready, and not go near the mountain or even touch its edge, on pain of death. Moses sets the boundary at God’s instruction, and it applies to everyone, including the priests. Moses also tells the men not to sleep with their wives before the meeting, a rule that belonged to the ritual purity customs of the time; the writer gives no explanation for it.",
           src: "Propp · Meyers",
         },
         meaning:
-          "The fence is the strange part. A God who has just spent fifteen chapters closing the distance between himself and these people now puts a line around the mountain and posts a death penalty on it. Nearness and danger are being held together rather than resolved, and the book will keep doing that: the same presence that rescues is not safe to walk into casually.",
+          "The fence around the mountain is the strangest part of the scene. For eighteen chapters God has been drawing closer to these people, and now he has Moses mark a line around the mountain and attach the penalty of death to crossing it. The writer holds God’s nearness and God’s danger together without resolving them, and he will keep doing so throughout the book. The God who rescues his people is not someone they can approach <b>casually</b>.",
         lenses: {
-          arch: "The holy place that must be approached on terms, prepared for, and not strolled into. (The threshold that is guarded.)",
+          arch: "Many ancient religions had holy places that worshipers could enter only after careful preparation, and only on terms set for them. Sinai is the first such place in Israel’s story. Many scholars think that the tabernacle described later in Exodus copies its pattern, with an outer court where the people may come, a holy place for the priests, and an inner room that only one person may enter.",
         },
       },
       {
@@ -1348,14 +1348,14 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "On the third morning: thunder, a thick cloud, a very loud trumpet, and the whole camp trembling. The mountain is in smoke because the LORD descended on it in fire, it shakes violently, and the trumpet gets louder rather than fading. Then Moses speaks and God answers in thunder. The chapter ends with him sent back down to warn the people again not to break through.",
+          text: "On the morning of the third day there is thunder and lightning, a thick cloud on the mountain, and a very loud trumpet blast, and everyone in the camp trembles. The mountain is wrapped in smoke because the LORD has come down on it in fire, it shakes violently, and the trumpet grows louder instead of fading. Then Moses speaks, and God answers him in thunder. At the end of the chapter God sends Moses back down to warn the people once more not to force their way up.",
           src: "Childs · Propp",
         },
         meaning:
-          "The description is of a volcano or a storm and it is trying to say something neither quite covers. What the writers reach for is a presence that the physical world cannot hold steady around: smoke, fire, shaking, a sound that keeps rising. Then the anticlimax, which is deliberate. In the middle of all that, God's message is go down and tell them again to stay back. The pyrotechnics are not the point. The words that follow are.",
+          "The writer describes something like a volcano or a great storm, but he is trying to say something that neither picture quite covers. He reaches for a presence that the physical world cannot hold steady: smoke, fire, shaking, and a sound that keeps growing louder. Then, deliberately, he lets the scene fall flat. In the middle of all that noise, God’s message to Moses is simply to go back down and tell the people again to keep their distance. The writer wants us to see that the fire and thunder are not the point. What matters are the <b>words</b> God speaks next.",
         addr: {
           mode: "names",
-          text: "Whatever you imagine an encounter with God would settle for you, this scene suggests it would mostly be frightening, and that the content would arrive afterward, in sentences, once you had stopped shaking.",
+          text: "We may imagine that meeting God would settle our doubts. The writer suggests that such a meeting would mostly be frightening, and that we would only understand what God said afterward, in plain sentences, once we had stopped shaking.",
         },
         ask: "Do you actually want an encounter, or the reassurance you imagine would follow one?",
       },
@@ -1369,8 +1369,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 20,
     title: "The Ten Words",
     unitLabel: "Scene",
-    thread: "Ten sentences, most of them short, spoken out of the fire to a people who have already agreed to them. The tradition calls them the ten words rather than the ten commandments, which is what the Hebrew says.",
-    closeEnd: "The people ask for a mediator, and the rest of the book is Moses going up and coming back down.",
+    thread: "God speaks ten sentences, most of them short, out of the fire to a people who have already agreed to keep them. Elsewhere the Hebrew Bible calls them “the ten words” rather than “the ten commandments,” and Jewish tradition still uses that name.",
+    closeEnd: "Terrified, the people ask Moses to speak to God for them, and for the rest of the book Moses goes up the mountain and comes back down with God’s words.",
     passages: [
       {
         label: "One",
@@ -1399,39 +1399,39 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           3: {
-            addr: { mode: "claims", text: "Before me does not mean instead of me. It means in my presence, which is harder. The question is not whether you have replaced God but what else is standing in the room." },
+            addr: { mode: "claims", text: "In the Hebrew, “before me” does not mean “instead of me.” It means “in my presence,” which is harder to keep. God is not only asking whether we have replaced him, but what else we have allowed to stand in the room with him." },
           },
           7: {
-            addr: { mode: "claims", text: "This is about swearing by the name to make a lie stick, or acting in God's name for your own ends. Casual profanity is the least of what it covers." },
-            note: "The Hebrew is closer to carrying the name emptily than to saying it rudely.",
+            addr: { mode: "claims", text: "God forbids swearing by his name to make a lie believable, and acting in his name for our own ends. Casual swearing is the least of what he has in view." },
+            note: "In Hebrew God speaks of lifting up or carrying his name for nothing, which is closer to using it emptily than to saying it rudely.",
           },
           8: {
-            addr: { mode: "claims", text: "The command is to stop, and it is addressed to the whole household including the servants and the foreigner. Nobody rests alone." },
-            note: "The reason given here is creation. Deuteronomy gives a different one: because you were slaves in Egypt.",
+            addr: { mode: "claims", text: "God commands the people to stop work, and he addresses the command to the whole household, including servants, animals, and the foreigner living among them, so that no one rests alone." },
+            note: "Here God grounds the sabbath in creation, since he rested on the seventh day. When Moses repeats the commands in Deuteronomy, he gives a different reason: the Israelites were once slaves in Egypt.",
           },
           12: {
-            addr: { mode: "claims", text: "Written for adults with ageing parents rather than for children, and attached to the length of a people's life in the land." },
+            addr: { mode: "claims", text: "God gave this command mainly to adults with aging parents, not to children, and he tied it to the people’s long life in the land." },
           },
           13: {
-            note: "The verb is ratsach, unlawful killing. It is not the word used for war or for judicial execution, which the same code goes on to prescribe.",
+            note: "The Hebrew verb is ratsach, which Israelites used for murder and manslaughter. They did not ordinarily use it for killing in war or for legal execution, which the laws that follow go on to require for certain crimes.",
           },
           16: {
-            note: "Courtroom language. This is perjury against a neighbour, in a system with no police and no forensics, where a false witness could end a life.",
+            note: "God uses the language of the courtroom here. He forbids lying under oath against a neighbor, in a society with no police and no forensic evidence, where a false witness could cost someone their life.",
           },
           17: {
-            addr: { mode: "claims", text: "The only one of the ten that legislates for what happens inside you, where no court could reach." },
-            note: "Notice the list it appears in: house, wife, servants, ox. A wife is named among a man's property, which is the frame the command was written inside.",
+            addr: { mode: "claims", text: "Of all the ten, this is the only command that governs what happens inside a person, where no court could reach." },
+            note: "Look at the list in which this command appears: house, wife, servants, ox, and donkey. Here the wife is listed among a man’s possessions, and that was the world in which God gave the command. When Moses repeats it in Deuteronomy, he names the wife first and gives her a separate verb.",
           },
         },
         ground: {
           kind: "historical",
-          text: "They open not with a command but with a claim about what has already happened: I am the LORD your God, who brought you out of Egypt, out of the house of slavery. The obligations follow from the rescue rather than earning it. Two versions survive in the Bible, here and in Deuteronomy, and they differ, most visibly in the reason given for the sabbath. Neither was harmonised away.",
+          text: "God begins not with a command but with a reminder of what he has already done: “I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.” The duties he gives follow from the rescue; the people do not earn the rescue by keeping them. The Bible preserves two versions of the ten words, here and in Deuteronomy 5, and they differ, most visibly in the reason given for the sabbath. The editors kept both rather than making them agree.",
           src: "Childs · Propp · Meyers",
         },
         meaning:
-          "The order matters. Four words about God, then one about parents, then five about the person next to you, and the whole thing is addressed to a single person, you, singular, standing in a crowd. What is being built is not a legal system, which comes in the next three chapters, but a shape for a free people: how to hold God, time, family, life, marriage, property and speech, in that order.",
+          "The order of the ten matters. In one common way of counting, there are four words about God, then one about parents, then five about the person next to you. God also addresses every command to a single person, “you” in the singular, standing within a crowd. He is not yet giving Israel a legal system, which comes in the next three chapters. He is giving a free people a <b>shape</b> for their life: how to treat God, time, family, life, marriage, property, and speech, in that order.",
         lenses: {
-          theo: "The rescue comes first and the obligations second, which is the order the whole Bible keeps returning to. These are not the terms on which Israel was freed. They are what freedom is for.",
+          theo: "God rescues first and gives commands second, and the writers of the Bible keep returning to that order. God did not free Israel on condition that they keep these commands. He gave the commands to show them what their freedom was for.",
         },
       },
       {
@@ -1448,14 +1448,14 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The people see the thunder and the mountain smoking, and they stand far off and ask Moses to speak instead, because if God speaks to them directly they will die. Moses answers that the fear is the point and also that they should not be afraid, which is not quite a contradiction.",
+          text: "The people see the thunder and lightning and the smoking mountain, and they stand far off and beg Moses to speak to them instead, because they fear that if God speaks to them directly, they will die. Moses tells them not to be afraid, and in the same breath tells them that God has come so that the fear of him will keep them from sinning. The two statements are not quite a contradiction.",
           src: "Childs · Fretheim",
         },
         meaning:
-          "They asked for the mediator. It was not imposed on them. Having heard ten sentences directly, they decided they would rather have them relayed, and the whole remaining shape of the book, a man going up and coming back down with the words, is the answer to a request the people made out of terror.",
+          "The people asked for a go-between; God did not force one on them. Having heard ten sentences directly from God, they decided they would rather have his words passed on to them. For the rest of the book, Moses goes up the mountain and comes back down with God’s words, and in this way God answers a <b>request</b> the people made out of terror.",
         addr: {
           mode: "names",
-          text: "You have probably wanted the thing at a distance too, relayed by someone else, in a form you could put down. Wanting it and dreading it at once is what this scene is made of.",
+          text: "Most of us have wanted to hear from God at a distance too, through someone else, in a form we could set aside. The people in this scene both want God’s words and dread them, and most of us know that mixture well.",
         },
         ask: "What have you asked to receive secondhand because firsthand felt like too much?",
       },
@@ -1474,19 +1474,19 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           25: {
-            addr: { mode: "none-but", text: "No claim on you at all. Kept here because of what it says: a tool on the stone profanes it, so the altar has to be something nobody improved." },
+            addr: { mode: "none-but", text: "You are not bound by this law, but we include it because of what God says in it: if a builder shapes the altar’s stones with a tool, he profanes them, so the altar has to be something no one has improved." },
           },
           26: {
-            addr: { mode: "none-but", text: "Also no claim on you, and worth seeing rather than skipping. The reason given is bodily exposure, which is the kind of plain physical concern a religion of temples and steps had to legislate for." },
+            addr: { mode: "none-but", text: "You are not bound by this law either, but it is worth noticing rather than skipping. God forbids steps up to the altar so that the priest’s body will not be exposed, which is the kind of plain physical concern that a religion of temples and stairways had to make rules about." },
           },
         },
         ground: {
           kind: "historical",
-          text: "The first laws given after the ten are about how to build an altar, and they are almost aggressively plain: earth, or undressed stone, and no steps. Wherever God causes his name to be remembered, he will come and bless. No temple, no masonry, nothing a craftsman could take credit for.",
+          text: "The first laws God gives after the ten words are about how to build an altar, and they are strikingly plain. The people are to make it of earth, or of stones that no tool has shaped, and it must have no steps. God promises that wherever he causes his name to be remembered, he will come to his people and bless them. There is no temple here and no fine stonework, nothing a craftsman could take credit for.",
           src: "Propp · Childs",
         },
         meaning:
-          "These make no claim on you, and they are here rather than left out because of what they refuse. Every other religion in the region built upward and built impressively. This one begins by ruling out the tooled stone and the staircase. The first architectural instruction Israel receives is a restriction on how much of the altar can be its own achievement.",
+          "You are not bound by these altar laws, and we include them because of what God refuses in them. Israel’s neighbors built grand temples, often raised high on stepped platforms. God begins by ruling out shaped stone and staircases, so the first building instruction Israel receives limits how much of the altar can be the people’s own <b>achievement</b>.",
       },
     ],
   },
@@ -1498,8 +1498,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 21,
     title: "Persons, and what they are worth",
     unitLabel: "Scene",
-    thread: "The case law begins with people rather than property, and the first person it deals with is a slave. This is the page of the Bible most readers would rather was not there.",
-    closeEnd: "It ends with a person given a price in silver, in the same chapter that began by limiting how long one could be held.",
+    thread: "Exodus 21 begins the Covenant Code, the body of case law that follows the Ten Commandments. The lawgivers deal with people before they deal with property, and the first person they deal with is a slave. Many readers wish this page were not in the Bible, but it is, and we should read it honestly.",
+    closeEnd: "The chapter began by limiting how long anyone could be held as a servant, and it ends with the lawgivers setting a price in silver on a servant’s life.",
     passages: [
       {
         label: "One",
@@ -1522,30 +1522,30 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           2: {
-            addr: { mode: "none-but", text: "No claim on you, and the first thing the code legislates. Six years, then out, free rather than in debt. A limit on a master by the standards of its neighbours. Still one man owning another for six years." },
+            addr: { mode: "none-but", text: "You are not bound by this law, but slavery is the first thing Israel’s lawgivers regulate. A Hebrew servant works six years and then goes free, owing nothing. They limited what a master could do, yet they still allowed one man to own another for six years." },
           },
           6: {
-            note: "The pierced ear makes the choice to stay permanent and visible. The law provides for a servant who says he loves his master, and also makes leaving cost him the wife and children the master gave him.",
+            note: "When a servant has his ear pierced at his master’s door, he makes his choice to stay permanent and visible to everyone. The lawgivers allow for a servant who says he loves his master, but they also rule that if he leaves, he must leave behind the wife and children his master gave him.",
           },
           7: {
-            addr: { mode: "none-but", text: "The hardest sentence in the chapter, and it is not softened here. A daughter is sold, and she does not walk out at seven years the way a man does. What follows are conditions on her treatment, which is a protection and not a release." },
+            addr: { mode: "none-but", text: "This is the hardest sentence in the chapter, and we will not soften it here. A father may sell his daughter, and unlike a male servant, she does not go free after six years. The verses that follow set conditions on how her master must treat her. Those conditions protect her, but they do not release her." },
           },
           11: {
-            note: "If he fails any of the three things owed her, she goes free with nothing paid. The code protects her inside the arrangement. It does not question the arrangement.",
+            note: "If her master fails to give her any of the three things he owes her, she goes free without paying anything. The lawgivers protect her within the arrangement, but they never question the arrangement itself.",
           },
         },
         ground: {
           kind: "historical",
-          text: "The Covenant Code opens with slavery, which tells you what the ancient world took to be the first question of civil law. Comparison with the codes around it is genuinely two-sided. Israel's law caps a Hebrew servant's term at six years where its neighbours had no such limit, forbids sending them out empty-handed elsewhere in the canon, and makes injury to a servant a matter for the courts. It also assumes throughout that a person may be owned, and it treats a daughter differently from a son.",
+          text: "The Covenant Code opens with slavery, which shows what people in the ancient world considered the first question of civil law. When scholars compare it with the codes of Israel’s neighbors, the picture cuts both ways. Israel’s law limits a Hebrew servant’s term to six years. That limit was not unique, since the older Code of Hammurabi freed family members sold for debt after three years, but Israel’s lawgivers also make injury to a servant a matter for the courts, and in Deuteronomy Moses later forbids sending a freed servant away empty-handed. Yet the code assumes throughout that one person may own another, and it treats a daughter differently from a son.",
           src: "Propp · Meyers · Childs",
         },
         misreading: {
           named:
-            "These laws were just the times. Everyone had slaves, so there is nothing here to answer for.",
-          why: "It is true that everyone had slaves, and it explains nothing that matters. The same chapter departs sharply from its neighbours in other places, making a master liable for a servant's eye, so the writers were plainly capable of legislating against the grain when they chose to. And the excuse proves too much: if a text is only ever as good as its era, it has nothing to say to any other era, including yours. The honest position is narrower and harder. This is a real limit placed on a real evil by people who did not abolish it, in a book that later turns the memory of slavery into an argument against oppression.",
+            "These laws simply reflect their times. Everyone had slaves, so there is nothing here that needs answering for.",
+          why: "It is true that everyone in the ancient world kept slaves, but that fact explains nothing that matters. Elsewhere in this same chapter the lawgivers depart sharply from the customs of their neighbors, for instance by making a master answer for blinding a servant, so they could clearly legislate against the habits of their day when they chose to. The excuse also proves too much. If a text can only ever be as good as its own era, then it has nothing to say to any other era, including ours. The honest position is narrower and harder. People who did not abolish a real evil nonetheless placed real limits on it, and they did so in a book whose writers later turn Israel’s memory of slavery into an argument against oppression.",
         },
         meaning:
-          "Read it as legislation rather than as endorsement and the shape becomes visible: it is a code restraining an institution it assumes. Six years and not forever. Provision owed to a woman sold into a household, and freedom if the provision fails. These are the moves of someone limiting a practice from inside it. That is worth seeing clearly, and it is not the same as the practice being fine, and the book itself will not let it be, because the same people go on to build their entire ethic of the outsider on having been slaves.",
+          "If we read this as legislation rather than as approval, we can see what the lawgivers were doing: they were restraining an institution they took for granted. A servant works six years, not a lifetime. A woman sold into a household is owed food, clothing and marital rights, and if her master withholds them, she goes free. These are the moves of people limiting a practice from inside it. We should see that clearly, but it does not mean the practice was acceptable, and the writers of Exodus do not let us think so, because the same people go on to build their whole ethic toward outsiders on the memory of having been slaves.",
       },
       {
         label: "Two",
@@ -1573,37 +1573,37 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           16: {
-            addr: { mode: "claims", text: "Still claims you. Stealing a person and selling them is a capital crime in the same chapter that regulates owning one. The code draws a line at seizing a human being that it does not draw at holding one." },
+            addr: { mode: "claims", text: "This law still makes a claim on you. In the same chapter that regulates owning a person, the lawgivers make it a capital crime to kidnap someone and sell them. They draw a line at seizing a human being that they do not draw at holding one." },
           },
           20: {
-            addr: { mode: "none-but", text: "A master who beats a servant to death is punished. A real restraint, and rare among contemporaries where a slave was property to be damaged." },
+            addr: { mode: "none-but", text: "A master who beats a servant to death is punished. That was a real restraint, and a rare one in a world where many peoples treated a slave as property that a master could damage as he pleased." },
           },
           21: {
-            addr: { mode: "none-but", text: "And then this. If the servant survives a day or two there is no penalty, and the reason given is that the servant is property. There is no reading of that sentence which is not what it appears to be." },
+            addr: { mode: "none-but", text: "Then comes this verse. If the beaten servant survives a day or two, the master receives no penalty, and the lawgivers explain that the servant is his property. No honest reading can make that sentence mean anything other than what it says." },
           },
           24: {
-            addr: { mode: "none-but", text: "Eye for eye is a ceiling, not a licence. Where an injury could be answered by wiping out a family, the rule is that the penalty may not exceed the harm. It reads as savage and was written to restrain savagery." },
+            addr: { mode: "none-but", text: "“Eye for eye” sets a ceiling on punishment, not a license for it. In a world where someone might answer an injury by wiping out the offender’s whole family, the lawgivers insisted that the penalty must not exceed the harm. To us the rule sounds savage, but they wrote it to restrain savagery." },
           },
           26: {
-            addr: { mode: "none-but", text: "A servant blinded or losing a tooth goes free, so an owner who injures one loses them entirely. The incentive runs the right way, and that it was needed tells you what it was needed against." },
+            addr: { mode: "none-but", text: "If a master blinds a servant or knocks out a tooth, the servant goes free, so a master who injures a servant loses that servant entirely. The lawgivers gave masters a strong reason not to injure their servants, and the fact that they needed such a law tells us what they were guarding against." },
           },
         },
         ground: {
           kind: "historical",
-          text: "Case law: if a man does this, then this follows. The sequence runs from murder through striking a parent and kidnapping to injury in a brawl, and then to injury done to a servant. Capital sentences here are prescribed for things no modern legal system treats that way, including cursing a parent. The talion formula, eye for eye, appears three times in the Torah and is quoted more often than it is read.",
+          text: "This section is case law, written in the form “if a man does this, then this shall follow.” The cases run from murder, to striking a parent, to kidnapping, to injuries in a brawl, and then to injuries done to a servant. The lawgivers prescribe death for some acts that no modern legal system punishes that way, including cursing a parent. The formula “eye for eye” appears three times in the Torah, and people quote it far more often than they read it in context.",
           src: "Childs · Propp · Meyers",
         },
         tensions: [
           {
             claim:
-              "This is God's law, given at the mountain, and it regulates the ownership and beating of human beings.",
+              "The Israelites received this law from God at the mountain, and it regulates the owning and beating of human beings.",
             counter:
-              "The canon does not leave the page where it found it. Deuteronomy revisits the release and orders the master to send a freed servant away supplied, not empty-handed. Jeremiah treats a release granted then revoked as covenant-breaking grave enough to judge the nation. And the gospels concede, of a different law, that it was written in for hardness of heart, which is the canon calling some of its own legislation accommodation rather than ideal.",
+              "Later writers in the Bible did not leave this page where they found it. In Deuteronomy, Moses revisits the release of servants and orders a master to send a freed servant away with provisions, not empty-handed. Jeremiah condemns the leaders of Judah for freeing their slaves and then taking them back, and he treats it as a breach of covenant serious enough to bring judgment on the nation. And in the gospels Jesus says of a different law, the one permitting divorce, that Moses allowed it because the people’s hearts were hard, which shows that the Bible’s own voices can call some of its laws a concession rather than an ideal.",
             where: "Deuteronomy 15:12–15 · Jeremiah 34:8–22 · Matthew 19:8",
           },
         ],
         meaning:
-          "Two things are true here at once and holding both is the work. A master who kills a servant is punished, which was not standard. A master who beats one who survives is not, because the servant is property, which is exactly as bad as it sounds. The code is neither a monster nor a model. It is an argument in progress.",
+          "Two things are true here at once, and our work as readers is to hold both. A master who kills a servant is punished, which was not the usual practice of the time. But a master who beats a servant who survives is not punished, because the servant is his property, and that is exactly as bad as it sounds. The code is neither monstrous nor a model to copy. It records a people still in the middle of an argument about what a person is worth.",
       },
       {
         label: "Three",
@@ -1620,24 +1620,24 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           28: {
-            note: "The ox is stoned and its meat may not be eaten, which treats the animal as bearing something like guilt rather than as a defective possession.",
+            note: "The owner must stone the ox and may not eat its meat. The lawgivers treat the animal as if it carried something like guilt, rather than as a damaged piece of property.",
           },
           32: {
-            addr: { mode: "none-but", text: "A free person killed by an ox brings a judgement on the owner's negligence. A servant killed by the same ox brings a fixed thirty shekels to the master, and the servant's family is not mentioned." },
+            addr: { mode: "none-but", text: "If an ox kills a free person, the owner faces judgment for his negligence. If the same ox kills a servant, the owner pays the servant’s master a fixed thirty shekels, and the lawgivers never mention the servant’s family." },
           },
         },
         ground: {
           kind: "historical",
-          text: "The goring ox is the most discussed case in ancient law and versions of it appear in codes centuries older. The escalation is careful: an ox with no history is one thing, an ox already known to gore is another, and an owner who was warned and did nothing may himself be put to death. Liability turns on what the owner knew.",
+          text: "Ancient lawyers discussed the goring ox more than almost any other case, and versions of it appear in law codes centuries older than Exodus, including the Code of Hammurabi. The lawgivers move through the case carefully. An ox with no history of goring is one matter, an ox already known to gore is another, and an owner who was warned and did nothing may himself be put to death. The owner’s guilt depends on what he knew.",
           src: "Propp · Childs",
         },
         meaning:
-          "The chapter ends by doing the arithmetic out loud. For a free person the case goes to judgement. For a servant it is a fixed rate paid to the master, and the dead person's family does not appear in the sentence. Nothing is hidden. The code states what a person is worth when the person is owned, in the same book that opened with a God who heard slaves crying.",
+          "At the end of the chapter the lawgivers do the arithmetic out loud. When an ox kills a free person, the case goes to judgment. When it kills a servant, the owner pays the master a fixed sum, and the dead person’s family never appears in the ruling. The lawgivers hide nothing. They state plainly what a person was worth when that person was owned, in the same book that opened with God hearing the cries of slaves.",
         addr: {
           mode: "claims",
-          text: "Somewhere in the arrangements you live inside, a life has a number attached: an insurance table, a settlement figure, an acceptable rate. The instinct is to say we have moved past this page. The page is at least explicit about its number.",
+          text: "In the systems we live inside, someone has usually put a number on a human life, whether in an insurance table, a legal settlement, or an acceptable rate of loss. We like to think we have moved past this page of Exodus. At least these lawgivers were honest enough to write their number down.",
         },
-        ask: "Where does the system you benefit from put a price on a person, and do you know what it is?",
+        ask: "Where do the systems you benefit from put a price on a person, and do you know what that price is?",
       },
     ],
   },
@@ -1650,8 +1650,8 @@ export const EXODUS: Reading[] = [
     crossesChapters: true,
     title: "The foreigner, the widow, the debtor",
     unitLabel: "Scene",
-    thread: "The same code that regulated owning a person turns outward here, and grounds its treatment of the outsider in the memory of having been one.",
-    closeEnd: "Rest is commanded twice, and both times the reason given is somebody else's tiredness.",
+    thread: "In Exodus 21 the lawgivers regulated the owning of servants. In chapters 22 and 23 they turn to people outside the household, such as foreigners, widows and debtors, and they ground Israel’s treatment of outsiders in the people’s memory of having been outsiders in Egypt.",
+    closeEnd: "The lawgivers command rest twice in these chapters, and both times the reason they give is that someone else is tired.",
     passages: [
       {
         label: "One",
@@ -1672,29 +1672,29 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           18: {
-            addr: { mode: "none-but", text: "No claim on you, and its history makes leaving it out dishonest. This sentence was read at witch trials for centuries, in Europe and in New England, to justify killing mostly poor and mostly old women. The verse did not cause that. It was used for it." },
+            addr: { mode: "none-but", text: "You are not bound by this law, but it would be dishonest to leave it out, because of how people later used it. For centuries, in Europe and in New England, courts read this sentence at witch trials to justify killing people, most of them poor, old women. The verse did not cause those killings, but people used it to justify them." },
           },
           21: {
-            addr: { mode: "claims", text: "Still claims you, and it is the hinge of the code. The reason given is not compassion but memory: you were foreigners. The ethic is built out of what these people had been." },
+            addr: { mode: "claims", text: "This law still claims you, and the whole code turns on it. The lawgivers do not ground it in compassion but in memory: you were foreigners in Egypt. They built Israel’s ethic out of what the people themselves had been." },
           },
           22: {
-            addr: { mode: "claims", text: "The widow and the orphan are the standing test of a society in this literature, because they are the people with nobody to argue for them." },
+            addr: { mode: "claims", text: "Throughout this part of the Bible, the writers treat the widow and the orphan as the standing test of a society, because no one else will speak up for them." },
           },
           25: {
-            addr: { mode: "claims", text: "Lending to the poor without interest. Money owed by someone with nothing is not an ordinary investment." },
+            addr: { mode: "claims", text: "The Israelites must lend to the poor without charging interest. The lawgivers do not want anyone to treat money owed by a person with nothing as an ordinary investment." },
           },
           27: {
-            addr: { mode: "claims", text: "Give the cloak back by sunset, because it is what he sleeps in. Then a reason startling in a legal code: if he cries out to me, I will hear." },
-            note: "The same verb for crying out that was used of Israel in Egypt. The poor man in your debt is now in the position Israel was in.",
+            addr: { mode: "claims", text: "A lender who takes a poor man’s cloak as a pledge must give it back by sunset, because the man sleeps in it. Then God gives a reason that is startling in a legal code: if the poor man cries out to me, I will hear him." },
+            note: "The writer uses the same verb for crying out that he used for Israel’s cry in Egypt. The poor man in your debt now stands where Israel once stood.",
           },
         },
         ground: {
           kind: "historical",
-          text: "The code moves from property to persons with no visible seam: restitution for a stolen ox, a capital sentence for sorcery, then the foreigner, the widow, the orphan and the debtor. Other ancient codes protect the vulnerable too, usually as an act of the king's mercy. Here the obligation is grounded in the people's own history instead.",
+          text: "The lawgivers move from property to persons without any visible break. They cover repayment for a stolen ox, then the death penalty for sorcery, and then the foreigner, the widow, the orphan and the debtor. Other ancient law codes also protect vulnerable people, but their kings usually present that protection as an act of royal mercy. Here the lawgivers ground the obligation in the people’s own history instead.",
           src: "Meyers · Propp · Childs",
         },
         meaning:
-          "Read the reason clauses and the argument becomes visible. Do not oppress a foreigner, because you were foreigners. Give the cloak back, because he cries out and I hear. This is a legal document that keeps stopping to explain itself, and every explanation points back to Egypt. The ethic is not deduced. It is remembered.",
+          "If we read the reasons the lawgivers attach to these laws, we can follow their argument. Do not oppress a foreigner, because you were foreigners. Give back the cloak, because the poor man will cry out and God will hear. The writers of this legal document keep stopping to explain themselves, and every explanation points back to Egypt. They did not work out this ethic from first principles. They <b>remembered</b> it.",
       },
       {
         label: "Two",
@@ -1717,34 +1717,34 @@ export const EXODUS: Reading[] = [
         ],
         perItem: {
           2: {
-            addr: { mode: "claims", text: "Do not follow a crowd into wrongdoing, and do not shade your testimony to go along with the majority. Written for a world of village courts and just as applicable to a room where everyone has already agreed." },
+            addr: { mode: "claims", text: "Do not follow a crowd into wrongdoing, and do not shade your testimony to agree with the majority. The lawgivers wrote this for village courts, but it applies just as well to any room where everyone has already made up their minds." },
           },
           3: {
-            note: "And do not favour a poor man in his lawsuit either. The code protects the poor relentlessly everywhere else, and here it refuses to let sympathy bend a verdict. Impartiality cuts both ways or it is not impartiality.",
+            note: "The lawgivers also forbid favoring a poor man in his lawsuit. Everywhere else they protect the poor relentlessly, yet here they refuse to let sympathy bend a verdict, because impartiality that favors one side is not impartiality.",
           },
           4: {
-            addr: { mode: "claims", text: "Your enemy's ox, wandering. You are to take it back to him. Not forgive him, not reconcile, just return the animal, which is a smaller and more doable thing than most instructions about enemies." },
+            addr: { mode: "claims", text: "If you find your enemy’s ox wandering, you must take it back to him. The lawgivers do not ask you to forgive him or to make peace with him, only to return his animal, which is a smaller and more manageable thing than most commands about enemies." },
           },
           9: {
-            addr: { mode: "claims", text: "Said twice in two chapters, and the second time with the reason sharpened: you know how it feels. Not you should imagine, but you know." },
+            addr: { mode: "claims", text: "The lawgivers give this command twice in two chapters, and the second time they sharpen the reason: you know how a foreigner feels. They do not ask the people to imagine it. They remind them that they already know it." },
           },
           11: {
-            addr: { mode: "none-but", text: "No claim on you unless you farm, and worth seeing for its logic. The land rests, and what grows untended is left for the poor to eat. Rest is legislated so that it produces food for someone who owns nothing." },
+            addr: { mode: "none-but", text: "You are not bound by this law unless you farm, but its logic is worth seeing. Every seventh year the farmer lets the land rest, and the poor may eat whatever grows on it untended. The lawgivers arrange the land’s rest so that it feeds people who own nothing." },
           },
           12: {
-            addr: { mode: "claims", text: "The sabbath again, and here the reason is not creation but the exhaustion of other people: so that your servant and the foreign resident may be refreshed. Your rest is meant to reach the people who work for you." },
+            addr: { mode: "claims", text: "The lawgivers command the sabbath again, but this time they do not give creation as the reason. They give the tiredness of other people: so that your servant and the foreigner among you may be refreshed. They mean your rest to reach the people who work for you." },
           },
         },
         ground: {
           kind: "historical",
-          text: "A run of laws about testimony and courts, then the enemy's stray animal, then the seventh year and the seventh day. The sabbath year here is agricultural and its stated purpose is not piety: the land lies fallow so that the poor may eat what grows on it, and the wild animals get what is left after that.",
+          text: "This section opens with a series of laws about testimony and the courts, then turns to an enemy’s stray animal, and then to the seventh year and the seventh day. The sabbath year here is about farming, and the lawgivers do not give a religious reason for it. The farmer leaves the land unplanted so that the poor may eat what grows on it, and the wild animals may eat whatever the poor leave.",
           src: "Meyers · Fretheim",
         },
         meaning:
-          "Two things stand out from a code written three thousand years ago. It refuses to bend a verdict toward the poor, having spent chapters protecting them, because a court that favours anybody is not a court. And it makes rest an obligation you owe other people: the land rests so the poor eat, the week rests so your servant and the foreigner catch their breath. Rest here is not self-care. It is redistribution.",
+          "Two things stand out in this code, which people wrote down some three thousand years ago. First, after spending chapters protecting the poor, the lawgivers still refuse to let a court bend a verdict in their favor, because a court that favors anyone is not a court. Second, they make rest something you owe to other people: the land rests so the poor can eat, and the household rests so the servant and the foreigner can catch their breath. In this code, rest is not a private comfort. It is a way of sharing what you have.",
         addr: {
           mode: "claims",
-          text: "Your rest is legislated in this code for the sake of the people who work for you. Whatever you do with a day off, the question this page asks is whether anyone further down gets one because of it.",
+          text: "In this code the lawgivers command your rest for the sake of the people who work for you. Whatever you do with your own day off, they would ask whether anyone who works under you gets a day off because of it.",
         },
         ask: "Who gets to rest because of how you arrange your week, and who does not?",
       },
@@ -1758,8 +1758,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 24,
     title: "Blood on the people",
     unitLabel: "Scene",
-    thread: "The terms are read aloud, agreed a second time, and then sealed in a way no modern reader finds comfortable. After which seventy men climb the mountain and have lunch.",
-    closeEnd: "Moses goes up into the cloud for forty days, and the book leaves him there.",
+    thread: "Moses reads the terms of the covenant aloud, the people agree to them a second time, and then Moses seals the agreement in a way that no modern reader finds comfortable. Afterward, seventy-four men climb the mountain and share a meal in the presence of God.",
+    closeEnd: "Moses goes up into the cloud for forty days, and the writer leaves him there.",
     passages: [
       {
         label: "One",
@@ -1779,19 +1779,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Moses writes the words down, builds an altar with twelve pillars, and has young men offer oxen. Half the blood goes against the altar and half is kept in basins. He reads the book aloud, the people answer that they will do it, and then he throws the blood over them and calls it the blood of the covenant. Treaty ratifications in this world involved a slaughtered animal and a ceremony binding both parties.",
+          text: "Moses writes the words down, builds an altar with twelve pillars, one for each tribe, and has young men offer oxen as sacrifices. He throws half the blood against the altar and keeps the other half in basins. Then he reads the book aloud, the people promise to do all of it, and he throws the rest of the blood over them, calling it the blood of the covenant. In this world, when peoples ratified a treaty, they slaughtered an animal and held a ceremony that bound both parties.",
           src: "Childs · Propp · Meyers",
         },
         meaning:
-          "They agree three times in this movement, and this is the third and the most physical. It is not a signature. Blood from the same animals goes on the altar and on the people, which puts both parties in the same substance, and there is no way to be sprinkled and consider yourself uninvolved. Whatever else a covenant is here, it is not an arrangement you could later say you had not really entered.",
+          "The people agree to the covenant three times in this part of Exodus, and this third time is the most physical. It is not a signature. Moses puts the blood of the same animals both on the altar, which stands for God, and on the people, so that both parties share in the same substance, and no one who has been splashed with it can consider himself uninvolved. Whatever else the covenant means here, no one could later claim they had not really entered it.",
         lenses: {
-          arch: "The bond sealed in blood rather than in words, so the parties cannot afterward claim the words were misunderstood. (What is cut cannot be uncut.)",
+          arch: "Many ancient peoples sealed their most serious agreements with blood rather than with words alone, so that neither side could later claim to have misunderstood the terms. People still mark their most binding commitments with something done in front of witnesses, such as a vow, a ring or a handshake, because they know that what has been done cannot easily be undone.",
         },
         addr: {
           mode: "names",
-          text: "You have agreed to things in a way that could be walked back, and to a few that could not. The difference is rarely in the words. It is in what was done at the time.",
+          text: "Most of us have agreed to some things in a way we could later back out of, and to a few things in a way we could not. The difference rarely lies in the words we used. It lies in what we did at the time.",
         },
-        ask: "What have you entered that you could not now claim you had not entered?",
+        ask: "What have you committed yourself to so fully that you could not now pretend you had not?",
       },
       {
         label: "Two",
@@ -1813,13 +1813,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Seventy-four men go up: Moses, Aaron, two of his sons, and seventy elders. They see the God of Israel, with something like a pavement of sapphire under his feet, clear as the sky itself. The text says God did not raise his hand against them, which tells you what was expected. And they ate and drank. Then the cloud covers the mountain for six days and Moses is called into it for forty.",
+          text: "Seventy-four men go up the mountain: Moses, Aaron, Aaron’s two sons, and seventy elders of Israel. They see the God of Israel, and under his feet they see something like a pavement of sapphire, as clear as the sky itself. The writer adds that God did not raise his hand against them, which tells us what the men expected to happen. Then they ate and drank. After this a cloud covers the mountain for six days, and on the seventh God calls Moses into it, where he stays forty days.",
           src: "Childs · Propp",
         },
         meaning:
-          "This is the strangest paragraph in the movement and it is easy to skim. Seventy-four men see God and the narrator will not describe him, only what was under his feet, and then records that they had a meal. After nineteen chapters of a mountain nobody may touch, the covenant ends with a group of people eating in the presence of the thing that could kill them. The fence has not moved. What changed is that terms now exist.",
+          "This is the strangest passage in this part of Exodus, and readers easily skim past it. Seventy-four men see God, yet the writer will not describe him, only what lay under his feet, and then he records that they shared a meal. Since chapter 19, God had warned that anyone who touched the mountain would die. Now the covenant ends with a group of people eating in the presence of the God who could have killed them. The boundary has not moved. What has changed is that God and the people now have terms between them.",
         lenses: {
-          theo: "The meal is the point of the ceremony, not an anticlimax after it. Eating together is what parties to a covenant did, and it is the nearest this book has come to saying the distance is closed.",
+          theo: "The meal is the point of the ceremony, not an anticlimax after it. In the ancient world, parties to a covenant ate together to show that the agreement was made, and with this meal the writers of Exodus come closest to saying that God has closed the distance between himself and his people.",
         },
       },
     ],
@@ -1833,8 +1833,8 @@ export const EXODUS: Reading[] = [
     crossesChapters: true,
     title: "The pattern",
     unitLabel: "Scene",
-    thread: "Forty days on the mountain, and what Moses is given is not more law. It is a set of building plans, in cubits, for a tent that can be carried.",
-    closeEnd: "A lamp is to be kept burning from evening until morning, continually, which is the first standing duty anyone is given.",
+    thread: "Moses spends forty days on the mountain, and what God gives him there is not more law. It is a set of building plans, measured in cubits, for a tent the people can carry with them.",
+    closeEnd: "God commands that a lamp be kept burning from evening until morning, continually, which means that someone will have to get up and tend it every night.",
     passages: [
       {
         label: "One",
@@ -1859,19 +1859,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The materials come from a freewill offering, from everyone whose heart prompts him, and the list is what a people who had just been paid off by Egypt would actually have: gold, silver, bronze, dyed yarn, fine linen, acacia wood. Then the specifications, object by object. The ark first, then the table, then the lampstand, each in cubits, each with rings and poles so it can be carried.",
+          text: "God asks for the materials as a freewill offering, from everyone whose heart moves them to give. The list matches what a people who had just been loaded with gifts by the Egyptians would actually have had: gold, silver, bronze, dyed yarn, fine linen and acacia wood. Then God gives the specifications, object by object. He begins with the ark, then the table, then the lampstand, and he gives the size of each in cubits and provides each with rings and poles so the Israelites can carry it.",
           src: "Propp · Meyers · Childs",
         },
         meaning:
-          "The sentence the whole movement rests on is verse 8: make me a sanctuary, so that I may dwell among them. Everything after it is joinery in service of that. Notice what is being built and what is not. Not a temple, which is a building on a site, but a tent with poles through rings, designed from the first instruction to be taken down and carried. The God who has just refused to be seen arranges to be portable.",
+          "Everything in this section rests on verse 8, where God says, “And they are to make a sanctuary for Me, so that I may dwell among them.” Everything after that verse is carpentry in service of that purpose. It is worth noticing what God tells them to build and what he does not. He does not ask for a temple, a building fixed in one place, but for a tent with poles through rings, designed from the first instruction to be taken down and carried. The God who would not let the people come near his mountain arranges to travel with them.",
         lenses: {
-          theo: "The ark holds the tablets and the meeting happens above it, between two carved figures, over an empty space. The most sacred object in Israel is a box with the terms inside and nothing on top.",
+          theo: "The ark holds the tablets of the covenant, and God promises to meet Moses above it, between two carved cherubim, over an empty space. Israel’s most sacred object is a box with the terms of the covenant inside it and no image of God on top.",
         },
         addr: {
           mode: "names",
-          text: "You know the difference between somebody visiting and somebody moving their things in. This is the second one, described in cubits.",
+          text: "We all know the difference between someone who visits and someone who moves in. Here God is moving in, and the writers describe the arrangements down to the cubit.",
         },
-        ask: "What would it change if presence were something arranged for rather than waited on?",
+        ask: "What would change if you prepared a place for God’s presence instead of simply waiting for it?",
       },
       {
         label: "Two",
@@ -1888,11 +1888,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Ten linen curtains with cherubim worked into them, a covering of goat hair over that, upright acacia frames beneath, and a veil dividing the inside in two. Portable shrines of roughly this kind are known from Egypt and from nomadic peoples in the region, which makes the design less exotic than it reads and more like a familiar object put to a new use.",
+          text: "The tent is made of ten linen curtains with cherubim woven into them, a covering of goat hair over those, and upright frames of acacia wood beneath, with a veil dividing the inside into two rooms. Archaeologists know of portable shrines roughly like this from Egypt and from nomadic peoples in the region, so the design is less strange than it first seems. The Israelites were putting a familiar kind of object to a new use.",
           src: "Meyers · Propp",
         },
         meaning:
-          "The veil is the point of the chapter. Having arranged to live among them, God then installs a curtain, and the innermost room is entered by one man once a year. Nearness and distance are being built into the same structure, in fabric, which is the same thing chapter 19 did with a fence around a mountain. The tabernacle does not resolve that tension. It houses it.",
+          "The veil is the heart of this chapter. Having arranged to live among the people, God then has them hang a curtain, and, as Leviticus later explains, only the high priest may enter the innermost room, once a year. God builds both nearness and distance into the same structure, in fabric, just as he did in chapter 19 when he had Moses set a boundary around the mountain. The tabernacle does not settle that tension. It gives it a home.",
       },
       {
         label: "Three",
@@ -1908,16 +1908,16 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Outside the tent, a bronze altar for burnt offerings, and around both a courtyard of linen hangings on posts, so the whole thing is a series of enclosures, each one nearer. The chapter ends with clear oil of pressed olives and an instruction that the lamp burn from evening until morning, continually, tended by Aaron and his sons.",
+          text: "Outside the tent stands a bronze altar for burnt offerings, and around both runs a courtyard of linen hangings on posts, so the whole design is a series of enclosures, each one nearer to the center. At the end of the chapter God commands pure oil of pressed olives and tells Aaron and his sons to keep the lamp burning from evening until morning, continually.",
           src: "Propp · Meyers",
         },
         meaning:
-          "The layout is an argument about access. Courtyard, then tent, then the room behind the veil, and each boundary is real. But the last instruction in the chapter is not about restriction at all. It is a light that has to be kept going all night, every night, by somebody who gets up to do it. The arrangement for God to live among these people turns out to require a person with a job.",
+          "The layout shows who may come how near. First comes the courtyard, then the tent, then the room behind the veil, and each boundary is real. Yet God’s last instruction in the chapter is not about keeping anyone out. He asks for a light that someone must keep burning all night, every night, by getting up to tend it. If God is to live among these people, someone has to do a job.",
         addr: {
           mode: "names",
-          text: "Most of what keeps anything alive is unglamorous and repeated: someone trims a wick in the dark so the light is still there in the morning.",
+          text: "Most of the work that keeps anything alive is plain and repetitive. Someone has to trim the wick in the dark so that the light is still burning in the morning.",
         },
-        ask: "What are you tending that nobody sees, and what happens if you stop?",
+        ask: "What are you tending that nobody sees, and what would happen if you stopped?",
       },
     ],
   },
@@ -1930,8 +1930,8 @@ export const EXODUS: Reading[] = [
     crossesChapters: true,
     title: "The priest, and the craftsman",
     unitLabel: "Scene",
-    thread: "Who wears the names, and who does the work. The clothing is specified in more detail than the furniture, and the first person in the Bible said to be filled with the Spirit of God turns out to be a metalworker.",
-    closeEnd: "Then two tablets of stone, and the movement's long preparation is over.",
+    thread: "These chapters describe who will carry the names of Israel before God and who will do the building. The writers describe the priest’s clothing in more detail than most of the furniture, and the first person in the Bible said to be filled with the Spirit of God turns out to be a metalworker.",
+    closeEnd: "Then God gives Moses two tablets of stone, and the long preparation in this part of Exodus comes to an end.",
     passages: [
       {
         label: "One",
@@ -1951,13 +1951,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The priest's clothing gets more specification than most of the furniture: an ephod, a breastpiece, a robe, a turban with a gold plate on it. Two onyx stones on the shoulders carry the names of the tribes, six and six, engraved as a gem-cutter engraves a seal. Twelve more stones sit on the breastpiece over his heart. In the fold of it are the Urim and Thummim, which were used to get a yes or a no from God and which nobody now can describe.",
+          text: "The writers give the priest’s clothing more detail than most of the furniture: an ephod, a breastpiece, a robe, and a turban with a gold plate on its front. Two onyx stones on the shoulders carry the names of the tribes, six on each, engraved the way a gem cutter engraves a seal. Twelve more stones sit on the breastpiece over the priest’s heart. In a pouch in the breastpiece the priest keeps the Urim and Thummim, which priests used to receive a yes or no answer from God, though no one today knows exactly what they looked like.",
           src: "Meyers · Propp · Childs",
         },
         meaning:
-          "The garments are for glory and beauty, the text says, and then it says twice what they are actually for. Aaron carries the names of the tribes on his shoulders and over his heart whenever he goes in, as a continual memorial. The job is not to represent God to the people. It is to carry the people, by name, into the presence, on his body, and to bear the guilt of whatever they get wrong in the offering.",
+          "God says the garments are for glory and beauty, and then he says twice what they are actually for. Aaron carries the names of the tribes on his shoulders and over his heart whenever he goes into the holy place, as a continual reminder before God. His task is not mainly to represent God to the people. It is to carry the people, by name, into God’s presence on his own body, and to bear the guilt of any fault in their offerings.",
         lenses: {
-          theo: "The gold plate on his forehead reads holy to the LORD, and its stated purpose is so that the offerings will be accepted. Even the acceptance is arranged for in advance rather than earned on the day.",
+          theo: "The gold plate on Aaron’s forehead reads “Holy to the LORD,” and God says it is there so that the people’s offerings will be accepted. God arranges for their acceptance in advance, so that the people do not have to earn it on the day.",
         },
       },
       {
@@ -1976,11 +1976,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The ordination runs seven days: washing, dressing, anointing with oil, blood on the ear and thumb and toe, and a share of the meat. Then the chapter ends by saying what the whole apparatus is for, and it is the same sentence the instructions opened with. I will dwell among the Israelites and be their God, and they will know that I am the LORD their God who brought them out of Egypt.",
+          text: "The ordination of the priests lasts seven days. Moses washes them, dresses them and anoints them with oil, puts blood on the right ear, thumb and big toe of each, and gives them a share of the sacrificial meat. At the end of the chapter God states what the whole arrangement is for, in words that echo the start of the instructions: “I will dwell among the Israelites and be their God,” so that they will know he is the LORD their God who brought them out of Egypt.",
           src: "Propp · Meyers",
         },
         meaning:
-          "The rescue is the reason given, at the end of the ordination as at the start of the plans. They will know that I am the LORD their God, who brought them out of Egypt, so that I might dwell among them. Everything in these four chapters, the stones, the oil, the seven days, exists to make an ordinary arrangement work: somebody has to be able to go in, on behalf of everybody else, without dying.",
+          "At the end of the ordination, as at the start of the plans, God names the rescue from Egypt as the reason for everything. He brought the people out so that he might dwell among them. Everything in these four chapters, the stones, the oil and the seven days, exists to make a simple arrangement work: someone must be able to go into God’s presence on behalf of everyone else, and come out alive.",
       },
       {
         label: "Three",
@@ -1998,11 +1998,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "An incense altar, a bronze basin for washing, and in between them a census tax: half a shekel from every man counted, as a ransom for his life. The rich are not to give more and the poor are not to give less. The money goes to the service of the tent.",
+          text: "This section describes an incense altar and a bronze basin for washing, and between those two instructions God sets a census tax. Every man who is counted must pay half a shekel as a ransom for his life. The rich may not give more and the poor may not give less, and the money goes to the service of the tent.",
           src: "Meyers · Propp",
         },
         meaning:
-          "A flat rate in a code that elsewhere scales offerings to what a person can afford. Here the point is not affordability but equivalence: this payment stands for a life, and no life is worth more of it than another. The wealthiest man in the camp and the poorest put the same coin in, which is a small sentence with a long argument inside it.",
+          "Elsewhere the lawgivers scale offerings to what a person can afford, but here God sets a flat rate. His concern is not what people can afford but that they are equal: this payment stands for a life, and no one’s life is worth more of it than anyone else’s. The richest man in the camp and the poorest put in the same coin, and in that small rule God makes a large claim about human worth.",
       },
       {
         label: "Four",
@@ -2023,19 +2023,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "God names the man who will build it. Bezalel son of Uri, of the tribe of Judah, and Oholiab with him, and skill given to every craftsman among them. Then the sabbath is restated, with the building of the sanctuary explicitly not exempt from it, and the section closes with two tablets of stone inscribed by the finger of God.",
+          text: "God names the man who will build the tabernacle: Bezalel son of Uri, of the tribe of Judah, with Oholiab as his helper, and God gives skill to every craftsman who works with them. Then God restates the sabbath law and makes clear that even the building of the sanctuary must stop on the seventh day. At the close of the section God gives Moses two tablets of stone, inscribed by the finger of God.",
           src: "Meyers · Propp · Fretheim",
         },
         meaning:
-          "This is the first time in the Bible anyone is said to be filled with the Spirit of God, and he is not a prophet, a priest or a king. He is a man who works gold, stone and wood, and what he is filled with is skill, ability and knowledge in all kinds of crafts. Four chapters of specification end by saying that making things well is a gift of God's own Spirit, and then that even this work stops on the seventh day.",
+          "Bezalel is the first person in the Bible whom God is said to fill with his Spirit, and he is not a prophet, a priest or a king. He works in gold, stone and wood, and God fills him with skill, ability and knowledge in every kind of craft. After four chapters of specifications, God declares that making things well is a gift of his own Spirit, and then he commands that even this work stop on the seventh day.",
         lenses: {
-          theo: "The sabbath is restated here rather than anywhere else on purpose. The one project that could plausibly claim exemption, building God's own dwelling, is told to stop for a day like everything else.",
+          theo: "God restates the sabbath here on purpose. The one project that could most plausibly claim an exemption, the building of God’s own dwelling, must stop for a day like every other kind of work.",
         },
         addr: {
           mode: "names",
-          text: "If you make things, this passage says the skill is not incidental to your spiritual life and is not a distraction from it. And that it still stops on the seventh day, however urgent the work looks.",
+          text: "If you make things, the writer is telling you that your skill is not separate from your spiritual life, nor a distraction from it. It also tells you that your work must still stop on the seventh day, however urgent it seems.",
         },
-        ask: "What do you make, and have you ever thought of the skill in it as given rather than acquired?",
+        ask: "What do you make, and have you ever thought of your skill as something God gave you rather than something you acquired?",
       },
     ],
   },
@@ -2047,8 +2047,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 32,
     title: "The golden calf",
     unitLabel: "Scene",
-    thread: "Moses is up the mountain too long. What happens at the bottom of it is not a switch to another god, which is what makes it worse rather than better.",
-    closeEnd: "The chapter ends with a plague and no repair. What repairs it takes two more chapters and a second set of tablets.",
+    thread: "Moses stays on the mountain so long that the people below give up waiting for him. What they do next is not to switch to another god, and that makes their failure harder to dismiss, not easier.",
+    closeEnd: "The chapter ends with a plague, and nothing has been repaired. It will take Moses two more chapters and a second set of tablets to repair it.",
     passages: [
       {
         label: "One",
@@ -2066,18 +2066,18 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Forty days is a long time to wait at the foot of a mountain that has been on fire. The people ask Aaron for gods to go before them, since they do not know what has become of this Moses. He asks for their gold earrings, makes a calf, and the people say these are your gods who brought you up out of Egypt. Then Aaron builds an altar in front of it and announces a feast to the LORD, using the name.",
+          text: "Forty days is a long time to wait at the foot of a mountain that has been on fire. The people come to Aaron and ask him to make them gods to go before them, because they do not know what has happened to Moses. Aaron asks for their gold earrings and makes a calf from them, and the people say that these are the gods who brought them up out of Egypt. Then Aaron builds an altar in front of the calf and announces a feast to the LORD, using God’s own name.",
           src: "Childs · Propp · Fretheim",
         },
         misreading: {
           named:
-            "They abandoned the LORD for a different god, which is idolatry of the obvious kind.",
-          why: "Read what Aaron actually says. He builds the altar and calls the feast a feast to the LORD, by name, and the calf is credited with the exodus, which is the LORD's act. Nobody in the scene thinks they have changed gods. They have made an image of the one who brought them out, because he has been silent for forty days and an image can be seen. That is a harder failure to dismiss than swapping deities, because it is the one available to people who are quite sure they are being faithful.",
+            "The Israelites abandoned the LORD for a different god, which is idolatry of the obvious kind.",
+          why: "Look at what Aaron actually says. He builds the altar and calls the feast a feast to the LORD, by name, and the people credit the calf with bringing them out of Egypt, which was the LORD’s own act. Nobody in the scene thinks they have changed gods. They have made an image of the God who rescued them, because he has been silent for forty days and they can see an image. That failure is harder to dismiss than swapping one god for another, because it is the failure open to people who are quite sure they are being faithful.",
         },
         meaning:
-          "The command they have just agreed to, twice, is the one about images, and they break it within six weeks using the correct divine name. The bull was a standard pedestal for a god in the region, a platform for an invisible deity to stand on rather than the deity itself, which makes the failure subtler still. What they wanted was not another god. It was this God, present, portable and visible, on their schedule. Which, as the previous seven chapters have been explaining at length, was already being arranged.",
+          "The people have just agreed, twice, to a covenant that forbids making images, and within six weeks they break it while using God’s correct name. In that region people often set a god on the back of a bull, so the bull served as a pedestal for an invisible god rather than as the god himself, which makes the people’s failure even subtler. They did not want another god. They wanted this God, present, portable and visible, on their own schedule. And for the previous seven chapters, God had been telling Moses how he would provide exactly that.",
         lenses: {
-          arch: "The image made because the wait became unbearable, standing in for something that was already on its way. (Impatience carved into a shape.)",
+          arch: "When a wait becomes unbearable, people often make something they can see to stand in for what they were promised. A golden calf is one form of it, but people in every age have made the same kind of substitute out of money, another person, or a plan of their own, often just before the real thing was about to arrive.",
         },
       },
       {
@@ -2098,13 +2098,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "God tells Moses to go down, calls them your people whom you brought up out of Egypt, and proposes to destroy them and make a great nation of Moses instead. Moses argues him out of it in three moves: they are your people, you brought them out; the Egyptians will say you took them out to kill them in the mountains; and remember Abraham, Isaac and Israel, to whom you swore by your own self. The text then says the LORD relented.",
+          text: "God tells Moses to go down, calls the Israelites “your people, whom you brought up out of the land of Egypt,” and proposes to destroy them and make a great nation from Moses instead. Moses argues him out of it in three steps. First, these are God’s own people, whom God himself brought out of Egypt. Second, the Egyptians will say God brought them out only to kill them in the mountains. Third, God swore by his own self to Abraham, Isaac and Israel. Then the writer says that the LORD relented.",
           src: "Fretheim · Childs · Propp",
         },
         meaning:
-          "The intercession is an argument with content, not a formality. Moses does not plead the people's merits, because there are none available. He appeals to what God has already done, to what the neighbours will conclude, and to promises made centuries earlier to men long dead. And he refuses the offer to become a new Abraham himself, which is the part most easily missed. He is offered a nation of his own and turns it down to keep the one that just made a calf.",
+          "Moses’ intercession is a real argument, not a formality. He does not plead the people’s good qualities, because they have none to offer. He appeals instead to what God has already done, to what the Egyptians will conclude, and to promises God made centuries earlier to men long dead. Readers easily miss that he also refuses God’s offer to make him a new Abraham. God offers him a nation of his own, and Moses turns it down to keep the people who have just made a calf.",
         lenses: {
-          theo: "Scripture is willing to say that God relented, and to show a man changing God's mind by argument. Whatever that means about the nature of God, the text does not soften it, and it is not an isolated case.",
+          theo: "The writers of the Bible are willing to say that God relented, and to show a man changing God’s mind by argument. Whatever that tells us about the nature of God, the writer does not soften it, and this is not the only place in the Bible where it happens.",
         },
       },
       {
@@ -2130,14 +2130,14 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Moses comes down with the tablets, sees the calf and the dancing, and throws them down at the foot of the mountain. He burns the calf, grinds it to powder, scatters it on water and makes them drink it. Then he asks Aaron what the people did to him, and Aaron's answer is that he threw the gold into the fire and out came this calf. Then Moses calls for whoever is for the LORD, the Levites come, and he sends them through the camp.",
+          text: "Moses comes down with the tablets, sees the calf and the dancing, and throws the tablets down, breaking them at the foot of the mountain. He burns the calf, grinds it to powder, scatters the powder on water and makes the Israelites drink it. Then he asks Aaron what the people did to him, and Aaron answers that he threw the gold into the fire and out came this calf. Finally Moses calls out for whoever is on the LORD’s side, and when the Levites come, he sends them through the camp with swords.",
           src: "Propp · Childs",
         },
         meaning:
-          "Three things happen here and only one of them is comfortable. Aaron, whose vestments were specified four chapters ago in more detail than the ark, gives an excuse so thin it is almost comic, and the text lets him stand there holding it. Moses offers to be blotted out of God's book rather than see the people destroyed, which is the high point of his life. And in between, he sends the Levites through the camp with swords and about three thousand people die, and the chapter treats it as the act that qualifies them for priesthood.\n\nThat last one is not softened here and will not be. It is not ancient law that can be marked as no longer binding; it is a killing the narrative approves of, and no reading offered in this app makes it sit easily. It is in the book. The movement's look-back returns to it and does not dispose of it either.",
+          "Three things happen here, and only one of them is comfortable. Aaron, whose priestly clothing God described four chapters earlier in more detail than the ark, gives an excuse so thin it is almost comic, and the writer simply leaves him standing there with it. Moses offers to be blotted out of God’s book rather than see the people destroyed, which is the high point of his life. And between those two moments, Moses sends the Levites through the camp with swords, about three thousand people die, and the writer presents the killing as the act that qualifies the Levites for the priesthood.\n\nWe will not soften that last part here. It is not an ancient law that we can set aside as no longer binding. It is a killing the writer approves of, and no reading offered in this app makes it sit easily. It is in the book, and the summary at the end of this section returns to it without explaining it away.",
         addr: {
           mode: "names",
-          text: "You have waited for something long enough to start building a substitute, and you have probably also given an account of how it happened that was not quite what happened.",
+          text: "Most of us have waited for something long enough to start building a substitute, and most of us have also told a version of how it happened that was not quite what happened.",
         },
         ask: "What did you make for yourself while you were waiting, and how did you explain it afterward?",
       },
@@ -2151,8 +2151,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 33,
     title: "Show me your glory",
     unitLabel: "Scene",
-    thread: "God offers to send an angel instead of coming himself, and Moses refuses the offer. Then he asks for more than he has been given.",
-    closeEnd: "He is put in a cleft of rock with a hand over him, and what he is shown is a back.",
+    thread: "After the golden calf, God offers to send an angel to lead the people instead of going with them himself, and Moses refuses the offer. Then Moses asks for more than God has yet given him.",
+    closeEnd: "God places Moses in a cleft of the rock and covers him with his hand, and all Moses is allowed to see is God’s back.",
     passages: [
       {
         label: "One",
@@ -2170,16 +2170,16 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "After the calf, God tells them to go up to the land and says he will send an angel ahead of them, but will not go in their midst himself, because they are a stiff-necked people and he might destroy them on the way. The people hear it and mourn, and nobody puts on any ornaments. The word for ornaments is the same kind of thing the calf was made from.",
+          text: "After the calf, God tells the people to go up to the promised land and says he will send an angel ahead of them, but he will not go among them himself, because they are a stiff-necked people and he might destroy them on the way. When the people hear this they mourn, and no one puts on any jewelry. The jewelry they now set aside is the same kind of gold they gave Aaron to make the calf.",
           src: "Childs · Propp · Fretheim",
         },
         meaning:
-          "This is the offer that sounds generous and is not. You get the land, the angel, the protection, the promise kept in every particular, and you do not get God going with you. The people understand immediately that this is a demotion and they mourn over it, which is the first properly good sign they have given in the book. Something has been learned. They would rather have the presence than the package.",
+          "God’s offer sounds generous, but it is not. The people would get the land, the angel, the protection and every promise kept, but they would not have God with them. They understand at once that this is a demotion, and they mourn over it, which is the first truly good sign they have given in the whole book. They have learned something. They would rather have God’s presence than everything he offers without it.",
         addr: {
           mode: "names",
-          text: "You can be given everything you asked for and notice that the one thing you actually wanted is missing from the delivery.",
+          text: "It is possible to receive everything you asked for and then notice that the one thing you actually wanted is missing.",
         },
-        ask: "What would you rather have: the outcome you have been praying for, or the sense that God is with you in it?",
+        ask: "Which would you rather have: the outcome you have been praying for, or the sense that God is with you in it?",
       },
       {
         label: "Two",
@@ -2196,13 +2196,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A different tent from the one being built: a tent of meeting pitched outside the camp, at a distance, where anyone seeking the LORD would go. When Moses went out the whole people stood and watched from their own doorways, and the cloud came down, and the text says the LORD spoke with Moses face to face, as a man speaks with his friend. Joshua stayed in the tent when Moses left.",
+          text: "This is a different tent from the tabernacle being planned. Moses pitches a tent of meeting outside the camp, at some distance, and anyone who wants to seek the LORD goes out to it. Whenever Moses goes out, all the people stand at the doors of their own tents and watch, and the pillar of cloud comes down, and the writer says that the LORD spoke with Moses face to face, as a man speaks with his friend. Moses’ young assistant Joshua stays in the tent when Moses leaves.",
           src: "Propp · Childs",
         },
         meaning:
-          "Everyone stands in their doorway and watches somebody else go in. That is the picture, and it is worth sitting with before the tabernacle gets built and makes it official. The face to face here is not a contradiction of what comes later in the chapter, where the face cannot be seen; it is the idiom for speaking plainly and directly, the way friends do. What the people get is the sight of a man walking to a tent, and a cloud, and the report afterward.",
+          "Each person stands in a doorway and watches someone else go in. That is the picture the writer paints, and it is worth pausing over before the people build the tabernacle and make the arrangement permanent. Speaking “face to face” here does not contradict what comes later in the chapter, where God says no one can see his face. It is an idiom for speaking plainly and directly, as friends do. What the people receive is the sight of a man walking to a tent, a cloud coming down, and Moses’ report afterward.",
         lenses: {
-          arch: "The mediator whose access everyone else watches from a distance, and the mixture of gratitude and resentment that arrangement always produces. (Standing in the doorway.)",
+          arch: "Many communities have had one person who goes before God, or before the powerful, on everyone else’s behalf, while the rest watch from a distance. People tend to feel both grateful to such a go-between and resentful of him, and we can imagine both feelings in the Israelites standing at their tent doors.",
         },
       },
       {
@@ -2227,19 +2227,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Moses presses. He asks to be shown God's ways, refuses the offer of an angel outright, and says if your Presence does not go with us, do not lead us up from here. He gets what he asks for. Then he asks for one thing more: show me your glory. The answer is a distinction. Goodness will pass by, and the name will be proclaimed, and mercy will be given to whom it is given. But the face cannot be seen by anyone living. A cleft in the rock, a hand over it while the glory passes, and afterward, the back.",
+          text: "Moses presses further. He asks God to show him his ways, refuses outright the offer of an angel, and says that if God’s presence does not go with them, God should not send them up from this place. God grants what he asks. Then Moses asks for one thing more: “Please show me Your glory.” God answers with a distinction. He will make all his goodness pass before Moses, proclaim his name, and show mercy to whom he will show mercy. But no one may see his face and live. So God sets Moses in a cleft of the rock, covers him with his hand while his glory passes by, and afterward lets him see his back.",
           src: "Childs · Fretheim · Propp",
         },
         meaning:
-          "This is the closest approach to God in the Hebrew Bible and what it delivers is a description of what was seen going away. Not a refusal, exactly: he is given the goodness, the name, the presence for the journey, everything he asked for on behalf of the people. What he is refused is the face, and the reason given is not that God is unwilling but that no one could survive it. The book's most intimate scene ends with a man who has been spoken to as a friend being hidden by a hand so he is not destroyed by what he asked to see.",
+          "This is the closest any person comes to God in the Hebrew Bible, and what Moses receives is a glimpse of God going away. God does not exactly refuse him. He gives Moses his goodness, his name and his presence for the journey, everything Moses asked for on behalf of the people. God refuses only to show his face, and he does not say he is unwilling. He says no one could survive it. So the most intimate scene in the book ends with God hiding a man he speaks to as a friend under his own hand, so that the man is not destroyed by what he asked to see.",
         lenses: {
-          theo: "Everything granted here is relational and nothing is a vision: the name, the goodness, the promise to go along. Presence is offered without disclosure, which is the arrangement the rest of scripture works inside.",
+          theo: "Everything God grants here concerns a relationship, and none of it is a vision: his name, his goodness, his promise to go with them. God offers his presence without revealing himself fully, and that is how the people of the rest of the Bible live with him.",
         },
         addr: {
           mode: "names",
-          text: "You have wanted to be shown something outright rather than accompanied through it. This scene treats that wanting as reasonable, answers most of it, and declines the last part on the grounds that it would not survive you.",
+          text: "Most of us have wanted God to show us something plainly rather than simply go with us through it. The writer treats that desire as reasonable. God grants most of it and refuses only the last part, because no one could survive it.",
         },
-        ask: "What have you asked to be shown, and could you live with being accompanied instead?",
+        ask: "What have you asked God to show you, and could you live with being accompanied instead?",
       },
     ],
   },
@@ -2251,8 +2251,8 @@ export const EXODUS: Reading[] = [
     chapterIndex: 34,
     title: "The second tablets",
     unitLabel: "Scene",
-    thread: "Moses cuts the stones himself this time. What is proclaimed over them is the sentence the rest of the Bible quotes about God more than any other, and it has two halves that do not sit easily together.",
-    closeEnd: "He comes down with a face he cannot see, and starts wearing a veil so other people can look at him.",
+    thread: "This time Moses cuts the stone tablets himself. God then proclaims over them the description of himself that later writers in the Bible quote more than any other, and its two halves do not sit easily together.",
+    closeEnd: "Moses comes down with a shining face he cannot see himself, and he begins wearing a veil so that other people can bear to look at him.",
     passages: [
       {
         label: "One",
@@ -2273,13 +2273,13 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The first tablets were given; these Moses cuts himself and carries up. Then the LORD passes in front of him and proclaims a formula that recurs throughout the Bible, in the psalms, in Joel, in Jonah, in Nehemiah: compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness, forgiving iniquity and transgression and sin. And, in the same breath, by no means leaving the guilty unpunished, visiting the iniquity of the fathers on the children to the third and fourth generation.",
+          text: "God gave Moses the first tablets, but Moses cuts these himself and carries them up the mountain. Then the LORD passes in front of him and proclaims words that later writers repeat throughout the Bible, in the Psalms, in Joel, in Jonah and in Nehemiah: he is compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness, forgiving iniquity, transgression and sin. In the same breath he adds that he will by no means leave the guilty unpunished, but will visit the iniquity of the fathers on their children to the third and fourth generation.",
           src: "Childs · Fretheim · Propp",
         },
         meaning:
-          "This is the nearest thing to a definition of God's character in the Hebrew Bible, and the book puts it in God's own mouth immediately after the worst thing the people have done. Both halves are one sentence. The generational clause is the harder half and it should not be smoothed: it describes consequence running downhill through families, which anyone who has watched one knows happens, and it says God is somehow behind that. Later voices in the canon push back on it hard, and the pushing back is worth its own hearing rather than a footnote here. What is not in dispute is which half the rest of the Bible quotes. When Jonah wants to explain why he ran, he quotes the mercy.",
+          "This is the nearest thing to a definition of God’s character in the Hebrew Bible, and the writer puts it in God’s own mouth immediately after the worst thing the people have done. God speaks both halves as one sentence. The clause about later generations is the harder half, and we should not smooth it over. It describes how the consequences of wrongdoing run down through families, which anyone who has watched a family knows happens, and it says that God somehow stands behind that. Later prophets, notably Jeremiah and Ezekiel, push back on it hard, and their objections deserve a hearing of their own. But there is no doubt which half the rest of the Bible quotes. When Jonah explains why he ran from God, he quotes the <b>mercy</b>.",
         lenses: {
-          theo: "The formula is proclaimed after the calf rather than before it, which is the placement doing the work. It is a description of what this God is like given at the moment the people have least claim on it.",
+          theo: "God proclaims these words after the golden calf, not before it, and that placement matters. He describes what he is like at the very moment the people have the least claim on his kindness.",
         },
       },
       {
@@ -2300,11 +2300,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The covenant is renewed with a short set of terms rather than the full code: make no molten idols, make no treaties with the peoples of the land, keep the festivals, and rest on the seventh day even in ploughing time and harvest. The line about a jealous God uses a word closer to zealous or fiercely committed than to petty envy. Forty days again, and this time Moses writes.",
+          text: "God renews the covenant with a short list of terms rather than the full code. The people must make no cast idols, make no treaties with the peoples of the land, keep the festivals, and rest on the seventh day even at plowing time and harvest. When God calls himself a jealous God, the Hebrew word is closer to “zealous” or “fiercely committed” than to petty envy. Moses spends another forty days on the mountain, and this time he writes the words himself.",
           src: "Propp · Meyers",
         },
         meaning:
-          "A second chance arrives with the same terms rather than easier ones, which is worth noticing. Nothing is relaxed to account for what happened. And the small clause about ploughing time and harvest is the one that gives it away: rest is commanded precisely in the two weeks of the year when stopping costs most. A renewal that asked less would have been a different covenant with a lower opinion of the people in it.",
+          "God gives the people a second chance on the same terms as before, not easier ones, and that is worth noticing. He relaxes nothing because of what they did. The small clause about plowing time and harvest reveals his intent: he commands rest in exactly the weeks of the year when stopping costs a farmer the most. If he had renewed the covenant on easier terms, he would have shown a lower opinion of the people he made it with.",
       },
       {
         label: "Three",
@@ -2323,14 +2323,14 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He comes down with the tablets and does not know his face is shining. Aaron and the people are afraid to come near him, so he covers it with a veil, and from then on he wears it whenever he speaks to them and takes it off when he goes in to speak with God. The Hebrew word for the radiance is unusual and was read centuries later, through Latin, as horns, which is why Michelangelo's Moses has them.",
+          text: "Moses comes down with the tablets and does not know that his face is shining. Aaron and the people are afraid to come near him, so he covers his face with a veil, and from then on he wears it whenever he speaks to the people and takes it off whenever he goes in to speak with God. The Hebrew word for the shining is unusual, and centuries later Jerome’s Latin translation rendered it as “horned,” which is why Michelangelo carved his statue of Moses with horns.",
           src: "Propp · Childs",
         },
         meaning:
-          "The man who asked to see a face comes back down with one nobody can look at, and he is the last to know. Then the arrangement that closes the chapter: a veil on for the people, off for God. Whatever proximity does to a person, it is not something they can see in themselves and it makes other people uneasy. He does not explain it or defend it. He covers it up so the conversation can carry on.",
+          "Moses, who asked to see God’s face, comes back down with a face no one can look at, and he is the last to know it. At the end of the chapter Moses makes a new arrangement: he puts the veil on for the people and takes it off for God. When a person draws near to God, he cannot see the change in himself, and other people find it unsettling. Moses does not explain it or defend it. He covers his face so that the conversation can go on.",
         addr: {
           mode: "names",
-          text: "Whatever has changed in you through what you have been through is probably more obvious to other people than to you, and it may be the thing they find hardest to be near.",
+          text: "Whatever has changed in you through what you have lived through is probably more obvious to others than to you, and it may be the very thing they find hardest to be near.",
         },
         ask: "What has changed in you that you cannot see, and who has told you about it?",
       },
@@ -2345,8 +2345,8 @@ export const EXODUS: Reading[] = [
     crossesChapters: true,
     title: "Just as the LORD had commanded",
     unitLabel: "Scene",
-    thread: "Six chapters now repeat the seven that came before the calf, almost word for word, with one change: you are to make becomes he made. The book could have said they did everything as commanded in a single verse. It spends six chapters instead, and it spends them straight after the failure.",
-    closeEnd: "A cloud settles on the tent, the glory fills it, and the man who built it cannot go in. That is the last thing the book says.",
+    thread: "Chapters 35 to 40 repeat the instructions of chapters 25 to 31 almost word for word, with one change: “you are to make” becomes “he made.” The writers could have said in a single verse that the people did everything God commanded. Instead they spend six chapters on it, and they place those chapters right after the golden calf.",
+    closeEnd: "The cloud settles on the tent, God’s glory fills it, and Moses, who built it, cannot go in. A few verses later the writers end the book, with the people watching the cloud to know when to move.",
     passages: [
       {
         label: "One",
@@ -2361,16 +2361,16 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The materials are collected. Everyone whose heart moved them brought something: brooches, earrings, rings, ornaments, all of it gold, brought by men and women both, as a freewill offering. The list of what they hand over is close to the list of what they handed over in chapter 32.",
+          text: "Moses collects the materials. Everyone whose heart moves them brings something, men and women alike, as a freewill offering: brooches, earrings, rings and ornaments, all of gold. The list of what they hand over closely matches what they gave Aaron in chapter 32 to make the calf.",
           src: "Propp · Meyers · Fretheim",
         },
         meaning:
-          "Read this against the calf and it is the same people, the same gold and the same enthusiasm, pointed somewhere else. Nobody in the text draws the comparison for you. The earrings that became a calf a few chapters ago are now going into a tent, and the difference is not that the people have become reliable. It is that this time what they are giving to was specified in advance by somebody other than them.",
+          "If we read this beside the story of the calf, we see the same people, the same gold and the same eagerness, now directed somewhere else. The writer never draws the comparison for us. The earrings that became a calf a few chapters ago now go into a tent, and the difference is not that the people have become reliable. The difference is that this time God, not the people themselves, decided in advance what they would give to.",
         addr: {
           mode: "names",
-          text: "The energy that went into the wrong thing is usually the same energy the right thing needs. It does not have to be replaced, only aimed.",
+          text: "The energy we put into the wrong thing is usually the same energy the right thing needs. We do not have to replace it, only direct it somewhere better.",
         },
-        ask: "What have you poured yourself into that was pointed at the wrong thing, and could the same effort go somewhere better?",
+        ask: "What have you poured yourself into that was aimed at the wrong thing, and could you direct that same effort somewhere better?",
       },
       {
         label: "Two",
@@ -2386,11 +2386,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The craftsmen come to Moses with a problem nobody in scripture has before or since: the people are bringing more than is needed for the work. So Moses gives an order restraining them from bringing anything else, and the text says they were restrained from bringing more.",
+          text: "The craftsmen come to Moses with a problem no one else in the Bible ever has: the people are bringing more than the work requires. So Moses sends word through the camp that no one should bring anything more, and the writer says the people stopped bringing.",
           src: "Meyers · Propp",
         },
         meaning:
-          "This is the only place in the Bible where generosity has to be stopped. It is a small joke and a serious one. The people who complained about water, complained about food, complained about meat, and built a calf out of impatience, now have to be told to stop giving. Nothing has been said to make them like this. They were simply given something specific to do.",
+          "This is the only place in the Bible where someone has to stop people from giving. The writer tells it as a small joke and a serious point at once. These are the people who complained about water, about food and about meat, and who built a calf out of impatience, and now Moses has to tell them to stop giving. No one has lectured them into it. God simply gave them something specific to do.",
       },
       {
         label: "Three",
@@ -2407,7 +2407,7 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Here is the repetition, plainly. Chapter 25 said: they are to construct an ark of acacia wood, two and a half cubits long, a cubit and a half wide. Chapter 37 says: Bezalel went on to construct the ark of acacia wood, two and a half cubits long, a cubit and a half wide. The same for the table, the lampstand and the incense altar. Same dimensions, same materials, same order, one word changed.",
+          text: "Here the repetition is easy to see. In chapter 25 God said they were to construct an ark of acacia wood, two and a half cubits long and a cubit and a half wide. In chapter 37 the writer says that Bezalel constructed the ark of acacia wood, two and a half cubits long and a cubit and a half wide. The writer does the same for the table, the lampstand and the incense altar, with the same dimensions, the same materials and the same order, and he changes only the verb.",
           src: "Propp · Childs",
         },
       },
@@ -2424,11 +2424,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The altar, then the bronze basin, and one detail that appears nowhere in the instructions: the basin was made from the mirrors of the women who served at the entrance to the tent. Chapter 30 said make a bronze basin. It did not say what from. Then an inventory of the metal used, recorded like an account.",
+          text: "Next come the altar and the bronze basin, along with one detail that appears nowhere in the instructions: Bezalel made the basin from the bronze mirrors of the women who served at the entrance to the tent. In chapter 30 God said only to make a bronze basin, without saying what to make it from. After this the writer lists the metal used, recorded like an account.",
           src: "Meyers · Propp",
         },
         meaning:
-          "In six chapters of near-exact repetition, this is one of the few things that is new, and it is not a specification. It is a note about where the bronze came from. Somebody handed over the object they looked at themselves in, and the writer thought that was worth recording by name of donor rather than by weight. The inventory that follows counts everything in talents and shekels. This verse counts something the inventory cannot.",
+          "In six chapters of almost exact repetition, this is one of the few new details, and it is not a measurement. It is a note about where the bronze came from. Certain women handed over the mirrors they used to look at themselves, and the writer thought that worth recording by who gave it rather than by weight. In the inventory that follows, he counts everything in talents and shekels. In this verse he records something no inventory can count.",
       },
       {
         label: "Five",
@@ -2444,11 +2444,11 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The phrase just as the LORD had commanded Moses runs through this chapter like a refrain, seven times over in the making of the garments alone. Then the work is finished, and brought to Moses, and he inspects all of it and blesses them. The wording of that inspection deliberately echoes the end of the creation account: the work is finished, it is seen, it is blessed.",
+          text: "Throughout this chapter the writer repeats the phrase “just as the LORD had commanded Moses” like a refrain, seven times in the making of the priests’ garments alone. Then the people finish the work and bring it to Moses, and he inspects all of it and blesses them. The writer words that inspection to echo the end of the creation account in Genesis, where God finishes his work, sees it, and blesses it.",
           src: "Childs · Propp · Fretheim",
         },
         meaning:
-          "This is where the repetition pays. The refrain is not filler but a verdict, repeated until it cannot be missed: instruction and execution match. And it matters where the book puts it. Between the plans and the building comes the calf, so this chapter is the record that what was broken got rebuilt exactly to specification, down to the loops on the curtains. Other readings are available: scribal duplication, or a text meant to be recited aloud rather than read. Neither explains why the duplicate block sits precisely on the far side of the failure.",
+          "Here the repetition pays off. The writer does not use the refrain as filler but as a verdict, repeated until no one can miss it: what God instructed and what the people made match exactly. Where the writers placed this chapter matters too. The story of the calf comes between the plans and the building, so this chapter records that what the people broke, they rebuilt exactly as God specified, down to the loops on the curtains. Scholars have offered other explanations, such as a scribe copying a block twice, or a text meant to be recited aloud rather than read. Neither explains why the repeated block sits precisely on the far side of the people’s failure.",
       },
       {
         label: "Six",
@@ -2467,19 +2467,19 @@ export const EXODUS: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "It is set up on the first day of the first month of the second year, almost exactly a year after they left Egypt. Moses finishes the work. Then the cloud covers the tent and the glory fills it, and Moses cannot go in. The book ends with the arrangement for travel: when the cloud lifted they moved on, when it stayed they stayed, and it was fire by night, in the sight of all Israel.",
+          text: "Moses sets up the tabernacle on the first day of the first month of the second year, almost exactly a year after the people left Egypt, and he finishes the work. Then the cloud covers the tent, the glory of the LORD fills it, and Moses cannot go in. The writer ends the book with the arrangement for travel: when the cloud lifted, the people set out, and when it stayed, they stayed, and the cloud was over the tent by day and fire was in it by night, in the sight of all Israel.",
           src: "Propp · Childs · Meyers",
         },
         meaning:
-          "The last thing that happens in Exodus is that the man who built the tent is shut out of it. Not punished, not rebuked; the place is simply too full. Everything he asked for in chapter 33 has arrived, and it arrives as something he cannot walk into. And then the book stops mid-journey, on an instruction about watching a cloud, which is the least conclusive ending available. A people who spent forty chapters learning that they were not going to be told the itinerary are left waiting to see whether tomorrow they travel or stay.",
+          "The last event in Exodus is that the man who built the tent cannot enter it. God does not punish or rebuke him. The tent is simply too full of God’s glory. Everything Moses asked for in chapter 33 has arrived, and it comes as something he cannot walk into. Then the writer stops in the middle of the journey, with an instruction about watching a cloud, which is the least conclusive ending he could have chosen. The people have spent forty chapters learning that God would not tell them the whole route, and the writer leaves them waiting each morning to see whether they will travel or stay.",
         lenses: {
-          theo: "It closes on presence rather than arrival. No land, no temple, no settled life. A tent, a cloud, and a people who will move when it moves.",
+          theo: "The writer ends the book with God present among his people, not with their arrival in the land. They have no land, no temple and no settled life yet. They have a tent, a cloud, and a willingness to move when God moves.",
         },
         addr: {
           mode: "names",
-          text: "You may know the version of getting what you asked for where it turns out to be larger than you can handle, and the version of guidance where all you are given is whether to move today.",
+          text: "Some of us know what it is to receive what we asked for and find it larger than we can handle. Some of us also know the kind of guidance that tells us only whether to move today.",
         },
-        ask: "If the only direction you were given was stay or go, and only for today, could you live like that?",
+        ask: "If the only direction God gave you was to stay or to go, and only for today, could you live that way?",
       },
     ],
   },
@@ -2490,7 +2490,7 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
   "index": 1,
   "title": "Out of Egypt",
   "range": "Exodus 1–15:21",
-  "throughline": "A people with no name in anyone's record, a king who will not hear them, and a God who says he has. From the two midwives who refuse an order to the song on the far shore.",
+  "throughline": "In Egypt the descendants of Jacob have grown into a people that no Egyptian record names, ruled by a king who will not listen to them, and their God tells them that he has heard their cries. This section follows them from the two midwives who refuse the king’s order to the song the people sing on the far shore of the sea.",
   "chapterStart": 1,
   "chapterEnd": 15,
   "situation": {
@@ -2498,31 +2498,31 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
     "title": "The situation",
     "image": "/images/exo-egypt.webp",
     "paragraphs": [
-      "Egypt in the late Bronze Age was the greatest power in the region, and it built with conscripted labour. Semitic-speaking people lived in the eastern delta in numbers, some enslaved, some in service, a few risen high. Store cities, brick quotas and daily tallies are the ordinary furniture of Egyptian administration, and the opening chapters use that vocabulary exactly.",
-      "The book never names its pharaoh, which is the first difficulty for anyone trying to date it. The conventional window is the thirteenth century, under Rameses II, largely because the story names a city that bears his name. Around 1208 BCE a victory stele of his successor Merneptah lists Israel among the peoples of Canaan, the earliest mention of Israel anywhere outside the Bible.",
-      "The harder thing to say plainly is this. No Egyptian record mentions the departure, and Egypt kept careful records. Nothing has been found in Sinai from a mass migration, and the archaeology of Canaan points to Israel emerging largely from within it rather than arriving from outside. What the book gives is not a report. It is a founding charter, told and retold by people who believed that a deliverance had happened and who understood themselves by it.",
-      "It reached its final shape centuries after the events it describes, from more than one source, among people for whom empire was the permanent condition. That is worth holding while reading. A story about walking out of an empire was carried, and finally written down, by people living inside one."
+      "In the late Bronze Age, roughly 1550 to 1150 BCE, Egypt was the greatest power in the region, and its kings built with forced labor. Many Semitic-speaking people lived in the eastern part of the Nile delta. Some were slaves, some were servants, and a few rose to high office. Egyptian officials kept records of store cities, brick quotas and daily tallies of work, and the writers of the opening chapters of Exodus use that same vocabulary exactly.",
+      "The writers never name the pharaoh, and that is the first difficulty for anyone who tries to date the story. Most scholars place it in the thirteenth century BCE, under Rameses II, largely because the writers name a city called Rameses among the cities the Israelites built. Around 1208 BCE, Rameses’ successor Merneptah set up a stone monument boasting of his victories, and on it his scribes list Israel among the peoples of Canaan. That is the earliest mention of Israel anywhere outside the Bible.",
+      "Here we have to say something harder. No Egyptian record mentions the Israelites leaving, even though the Egyptians kept careful records. Archaeologists have found nothing in Sinai from a mass migration, and most of them read the evidence in Canaan as showing that Israel grew up largely from peoples already living there rather than arriving from outside. So we should not read the book as an eyewitness report. The Israelites told and retold it as the founding story of their nation, because they believed God had rescued them and they understood who they were by that rescue.",
+      "Editors gave the book its final shape centuries after the events it describes, combining more than one source, and they worked among people who had lived under one empire or another for generations. It helps to keep that in mind while reading. The people who carried this story about walking out of an empire, and who finally wrote it down, were themselves living inside one."
     ],
     "timeline": [
       {
         "tag": "c. 1279–1213 BCE",
-        "text": "Rameses II builds extensively in the eastern delta, including a city bearing his name."
+        "text": "Rameses II builds a great deal in the eastern delta, including a city named after himself."
       },
       {
         "tag": "c. 1208 BCE",
-        "text": "The Merneptah stele names Israel as a people in Canaan: the earliest mention outside the Bible."
+        "text": "On a victory monument, King Merneptah’s scribes name Israel as a people in Canaan. It is the earliest mention of Israel outside the Bible."
       },
       {
         "tag": "c. 1100s BCE",
-        "text": "The Song at the sea, in archaic Hebrew, is among the oldest poetry the book preserves."
+        "text": "Israelites compose the Song at the sea (Exodus 15) in an archaic Hebrew. Scholars count it among the oldest poetry in the book."
       },
       {
         "tag": "700s–500s BCE",
-        "text": "The prose traditions are written down and combined, more than one voice kept side by side."
+        "text": "Scribes write down the prose stories and combine them, keeping more than one version side by side."
       },
       {
         "tag": "586 BCE",
-        "text": "Jerusalem falls and the exile begins. A story about leaving an empire is now read from inside one."
+        "text": "The Babylonians capture Jerusalem and carry many of its people into exile. From then on, Jews read this story about leaving an empire while living inside one."
       }
     ],
     "sources": "Propp · Assmann · Finkelstein & Silberman · Hoffmeier"
@@ -2533,16 +2533,16 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
     kicker: "The first movement · Exodus 1–15:21",
     title: "The rescue, and the price on it",
     paragraphs: [
-      "Fifteen chapters from a policy of drowning boys in a river to a song on the far shore of a sea. The shape of it is worth seeing whole. God does not appear for four chapters. When he does, it is to a man minding someone else's sheep who spends two chapters refusing. The first attempt makes things worse, and the people promised freedom turn on the man who promised it. Nothing here happens quickly, and the book seems to want it that way.",
-      "And it is paid for. Egypt loses its firstborn in a night, and the story tells you plainly that this mirrors the boys thrown in the Nile at the start. Measure for measure is the logic, and naming a logic is not the same as being at peace with it. The movement gives Israel a song and gives Egypt no funeral. That asymmetry is in the text, not smuggled in by a reader, and it will sit badly with anyone who has been on the losing side of someone else's liberation.",
-      "What Israel did with the memory is the surprising part. The law built on this rescue keeps circling back to the foreigner: you were strangers in Egypt, so do not do to them what was done to you. The deliverance became an obligation rather than a privilege. That does not settle the cost. It only says what the people who kept the story did with it. They are out. They are not home, the mountain is still ahead, and the first thing waiting on the other side of the singing is thirst.",
+      "In fifteen chapters the writers take us from a king’s order to drown Hebrew baby boys in the Nile to a song sung on the far shore of the sea, and it is worth looking at the whole shape of it. God does not speak until the third chapter. When he does, he speaks to Moses, a man tending his father-in-law’s sheep, who then spends two chapters trying to refuse the task. Moses’ first visit to the king only makes things worse, and the people he promised to free turn against him. The writers let nothing happen quickly, and they seem to want it that way.",
+      "The rescue also comes at a terrible cost. In one night every Egyptian family loses its firstborn son, and the writers tell us plainly that this answers the king’s order at the start to throw the Hebrew boys into the Nile. They reason by the rule of measure for measure, but naming that rule does not make us at peace with it. The writers give Israel a song and give Egypt no funeral. That imbalance is in the text itself, not something readers have added, and anyone who has been on the losing side of someone else’s liberation will find it hard to read.",
+      "What the Israelites did with this memory is the surprising part. In the laws they built on the rescue, they keep returning to the foreigner: you were strangers in Egypt, so do not do to strangers what was done to you. They treated their deliverance as an obligation rather than a privilege. That does not settle the question of the cost. It only tells us what the people who kept the story did with it. At the end of this section the Israelites are out of Egypt but not yet home. The mountain still lies ahead, and the first thing they meet on the other side of their singing is thirst.",
     ],
     tensions: [
       {
         claim:
-          "The exodus is the founding act: God takes a side, and the side is the enslaved.",
+          "The Israelites remembered the exodus as their founding event, the moment God took the side of the enslaved.",
         counter:
-          "The same canon refuses to make that side permanent or exclusive. Amos has God bringing the Philistines up from Caphtor and the Arameans from Kir in the same breath as Israel out of Egypt, which makes the exodus a thing God does rather than a possession Israel holds.",
+          "Other biblical writers refuse to let Israel treat that choice as permanent or exclusive. The prophet Amos has God say that he brought the Philistines from Caphtor and the Arameans from Kir, just as he brought Israel out of Egypt. Amos means that the exodus is something God does for peoples, not a possession Israel holds.",
         where: "Amos 9:7 · Exodus 22:21 · Deuteronomy 10:19",
       },
     ],
@@ -2552,8 +2552,8 @@ export const OUT_OF_EGYPT_MOVEMENT: Movement = {
     kicker: "The second movement",
     title: "The road to the mountain",
     paragraphs: [
-      "Getting out was the easy part, and it took ten signs and a sea. What follows is harder to dramatise and takes longer: three days to the first bad water, a month to the first hunger, and a stretch of country where the only question that matters is whether there is anything to drink tomorrow.",
-      "This is where the people stop being an audience to their own rescue and start having to live on it. They are given bread that cannot be stored, a day in the week when gathering is pointless, and a foreign priest who tells their leader he is doing it wrong. None of it looks like the sea. All of it is the training for the mountain.",
+      "Leaving Egypt was the easy part, even though it took ten plagues and the parting of a sea. What follows is less dramatic and takes longer. Three days after the crossing the people find only bitter water, a month later they are hungry, and they travel through country where the only question that matters is whether they will have anything to drink tomorrow.",
+      "In this section the people stop watching their own rescue and have to start living by it. God gives them bread that they cannot store, and a day each week on which there is nothing to gather. A foreign priest also tells their leader that he is going about his work the wrong way. None of this looks like the miracle at the sea, but all of it prepares the people for the mountain.",
     ],
     nextMovementId: "road-to-the-mountain",
   },
@@ -2567,7 +2567,7 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
   title: "The road to the mountain",
   range: "Exodus 15:22–18",
   throughline:
-    "Three days past the song the water is bitter, and the rest of the way is learning to live on what arrives. Bread for a day, a day for rest, and a foreigner who says plainly that this is not working.",
+    "Three days after the song at the sea the Israelites find only bitter water, and for the rest of the journey they have to learn to live on what God provides. He gives them bread for one day at a time and a day of rest each week, and a foreign priest tells Moses plainly that his way of leading is not working.",
   chapterStart: 16,
   chapterEnd: 18,
   situation: {
@@ -2575,9 +2575,9 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/exo-road.webp",
     paragraphs: [
-      "The country between Egypt and Sinai is limestone, gravel and wind, and the whole problem in it is water. Springs are days apart and a bad one ends a march. The itinerary the book gives, Marah, Elim, the wilderness of Sin, Rephidim, reads like a real route, though almost none of the places can now be located with any confidence and the mountain itself is not securely identified.",
-      "These chapters work differently from the ones before them. Each stop follows the same shape: a shortage, a complaint, provision, and then something that outlasts the crisis. A day's portion and no storing. A seventh day taught by the way bread behaves. Judges appointed over thousands and tens. The rescue is finished and what is being built now is a way of living, which is why the wilderness material teaches more than it narrates.",
-      "One thing is worth naming plainly before the mountain. The man who gives Israel its first working system of justice is a Midianite priest, and he is welcomed, fed and listened to, several chapters before any covenant exists. Whatever the law is going to mean, the book has already established that this God was recognised from outside before he was codified from within.",
+      "The country between Egypt and Sinai is limestone, gravel and wind, and in it the whole problem is water. Springs lie days apart, and a bad one can end a journey. The writers give a list of stops, Marah, Elim, the wilderness of Sin, and Rephidim, which reads like a real route, but scholars can locate almost none of these places with confidence, and no one has securely identified the mountain itself.",
+      "The writers tell these chapters differently from the ones before them. Every stop follows the same pattern: the people run short of something, they complain, God provides, and something is established that lasts beyond the crisis. God gives bread one day’s portion at a time and forbids them to store it. He teaches them a seventh day of rest through the way the bread arrives. Moses appoints judges over groups of thousands and of tens. The rescue is over, and now God and his people are building a way of life, which is why the writers spend more of these chapters teaching than telling a story.",
+      "Before the people reach the mountain, the writers want us to notice one thing. The man who gives Israel its first working system of justice is Jethro, a priest from Midian, outside Israel. Moses welcomes him, eats with him and listens to him, several chapters before God makes any covenant with Israel. Whatever the law will come to mean, the writers have already shown that an outsider recognized Israel’s God before Israel had written any law down.",
     ],
     sources: "Propp · Meyers · Fretheim",
   },
@@ -2585,18 +2585,18 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
     kicker: "The second movement · Exodus 15:22–18",
     title: "Learning to live on what arrives",
     paragraphs: [
-      "This is the quiet movement, and it is the one that does the actual work. The sea was a single night. This is weeks of thirst, hunger, quarrelling and administration, and what the people are being taught in it is not gratitude but a way of holding provision. Bread that rots if hoarded. A day when gathering achieves nothing. A leader who has to be propped up by two men to get through an afternoon.",
-      "It is also where the complaints start, and the book is careful with them. They are answered, every time, with water or bread or a workable system. And they are also given names that stick, Massah and Meribah, testing and quarrelling, which later writers use as a warning. Both things are allowed to be true. The demand was met and the demand is remembered as a demand.",
-      "Then Jethro, which is the strangest thing here and the easiest to skip. A foreign priest blesses Israel's God, eats with the elders, watches Moses work for one day and tells him it is not good. Moses does everything he says. The people who will shortly receive a law at a mountain have already taken their best piece of governance from an outsider, and the book does not apologise for it or explain it away.",
+      "This is the quietest section of Exodus, and it is where God does much of his real work with the people. The crossing of the sea took a single night. This section covers weeks of thirst, hunger, quarreling and administration, and what God is teaching the people in it is not gratitude but how to receive what he provides. He gives bread that rots if they hoard it, and a day on which gathering gets them nothing. Their leader is so worn out that two men have to hold up his arms to get him through a battle.",
+      "This is also where the people begin to complain, and the writers handle their complaints with care. Every time, God answers them with water, bread, or a system that works. Yet the people also give two places lasting names, Massah and Meribah, which mean testing and quarreling, and later biblical writers use those names as a warning. The writers let both things stand: God met the people’s demands, and the people remembered those demands as a failing.",
+      "Then comes Jethro, the strangest figure in this section and the easiest to skip. He is a foreign priest, yet he blesses Israel’s God and eats with Israel’s elders. After watching Moses judge the people for a single day, he tells him that his way of working is not good, and Moses does everything Jethro suggests. So the people who are about to receive a law at the mountain have already taken their best idea about government from an outsider, and the writers neither apologize for this nor explain it away.",
     ],
     tensions: [
       {
         claim:
-          "Amalek attacked the weak at the rear, and the LORD is at war with Amalek from generation to generation.",
+          "When the Amalekites attacked Israel, they struck the weak stragglers at the rear, and God declares that he will be at war with Amalek from generation to generation.",
         counter:
-          "The same movement seats a Midianite priest at Israel's table and takes his advice, and the law built on this rescue commands love for the foreigner because you were foreigners yourselves. The canon carries both a perpetual enmity and a standing obligation to the outsider, and later writers handle the first with visible unease.",
+          "In the same section Moses seats a Midianite priest at Israel’s table and takes his advice, and the laws that follow command Israel to love foreigners because they were once foreigners themselves. The Bible holds both a lasting hatred and a standing duty to the outsider, and later writers handle the hatred with visible unease.",
         where:
-          "Exodus 17:16 · Exodus 18:12 · Deuteronomy 10:19 · 1 Samuel 15",
+          "Exodus 17:16 · Deuteronomy 25:17–19 · Exodus 18:12 · Deuteronomy 10:19 · 1 Samuel 15",
       },
     ],
     sources: "Propp · Fretheim · Meyers",
@@ -2605,8 +2605,8 @@ export const ROAD_TO_THE_MOUNTAIN_MOVEMENT: Movement = {
     kicker: "The third movement",
     title: "The covenant",
     paragraphs: [
-      "They have been rescued, fed, watered and organised. What they have not been given is terms. The next stretch is the mountain, and what comes off it is not another rescue but a document: ten sentences, then a long code of case law about oxen and debtors and daughters.",
-      "It is the part of the book most readers skip and the part its own people built a nation on. Some of it will still make a claim on you. Some of it plainly will not, and is worth seeing anyway, because a book that hides its hardest pages is not being trusted with anything.",
+      "By now God has rescued the people, fed them, given them water and helped them organize. What he has not yet given them are the terms of their relationship with him. In the next section they reach the mountain, and what Moses brings down from it is not another rescue but a written agreement: ten commands, followed by a long set of laws about oxen, debtors and daughters.",
+      "Most readers skip this part of the book, yet the Israelites built a nation on it. Some of these laws may still make a claim on you, and some plainly will not. They are worth reading anyway, because a reader who is shown only the easy pages has not really been trusted with the book.",
     ],
     nextMovementId: "the-covenant",
   },
@@ -2624,7 +2624,7 @@ export const THE_COVENANT_MOVEMENT: Movement = {
   title: "The covenant",
   range: "Exodus 19–24",
   throughline:
-    "A people who have been rescued are offered terms, and agree to them before they have heard what they are. Then the terms arrive: ten sentences out of the fire, and a long code of case law that is still argued over.",
+    "God offers the people he has rescued the terms of a covenant, and they agree to them before they have heard what they are. Then the terms arrive: ten commands spoken out of the fire on the mountain, followed by a long set of case laws that people still argue over.",
   chapterStart: 19,
   chapterEnd: 24,
   situation: {
@@ -2632,9 +2632,9 @@ export const THE_COVENANT_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/exo-covenant.webp",
     paragraphs: [
-      "The mountain cannot be located with any confidence, and it matters less than the shape of what happens on it. The covenant at Sinai is built like a treaty of its period between a great king and a lesser one: the king named, what he has already done for the lesser party recited, then the terms, then witnesses and consequences. Israel took the diplomatic form of its world and put God in the position of the great king, which is a claim about who they now belonged to rather than a literary borrowing for its own sake.",
-      "The law itself sits inside a much older legal tradition. Codes from Mesopotamia predate this one by centuries and share its case-law grammar, the long run of sentences beginning if a man. Comparison shows both the borrowing and the divergence. This code is markedly more protective of the debtor, the foreigner and the servant than its neighbours, and it values a person above property in places where they did not. It also permits a person to be owned, which no comparison softens.",
-      "These chapters were edited over a long time and the seams are visible. The ten words appear twice in the Bible, here and in Deuteronomy, and the two do not match: the reason given for the sabbath is creation in one and slavery in Egypt in the other. Both were kept. That is characteristic of how this book handles its own traditions, and it is worth knowing before reading a code that later readers have often wanted to be seamless.",
+      "No one can locate the mountain with confidence, and its location matters less than the shape of what happens on it. The writers present the covenant at Sinai in the form of a treaty of that era between a great king and a lesser one. Such treaties name the great king, list what he has already done for the lesser party, set out the terms, and then call witnesses and spell out the consequences of breaking them. The Israelites took this diplomatic form from the world around them and put God in the place of the great king. In doing so they were saying whom they now belonged to.",
+      "The laws themselves belong to a much older legal tradition. Mesopotamian kings had published law codes centuries earlier, such as the Code of Hammurabi, and those codes are written the same way, in long runs of cases beginning “if a man.” When scholars compare them, they find both borrowing and difference. The Israelite code protects the debtor, the foreigner and the servant much more than its neighbors did, and in places it values a person above property where they did not. It also allows one person to own another, and no comparison makes that easier to accept.",
+      "Editors worked on these chapters over a long period, and we can still see where they joined their sources. The Ten Commandments appear twice in the Bible, here and in Deuteronomy, and the two lists do not match. In Exodus the reason for keeping the sabbath is that God rested after creation; in Deuteronomy it is that the Israelites were once slaves in Egypt. The editors kept both. That is how the people who shaped this book usually handled their own traditions, and it is worth knowing before reading a law code that later readers have often wished were seamless.",
     ],
     sources: "Childs · Propp · Meyers · Assmann",
   },
@@ -2642,16 +2642,16 @@ export const THE_COVENANT_MOVEMENT: Movement = {
     kicker: "The third movement · Exodus 19–24",
     title: "What the rescue was for",
     paragraphs: [
-      "A covenant is not a rulebook and the difference runs through this whole movement. The terms arrive inside a relationship that already exists, after a rescue that has already happened, to people who agreed before they had heard a word of it. Nothing here is the price of being freed. It is what somebody thought freedom was for, written down by people who had just watched an empire treat human beings as a labour supply.",
-      "Which makes the code's own contents harder rather than easier. It caps how long a man may be owned and it assumes he may be owned. It makes a master liable for a servant's eye and lets him go unpunished if the beaten servant survives two days. It prices a life at thirty shekels when the life is a servant's. These sit a few chapters from the command not to oppress a foreigner because you were foreigners, and from a sabbath legislated so that the people who work for you can breathe. The same document, the same mountain.",
-      "The honest thing to say is that this is an argument in progress rather than a finished position, and the arguing does not stop here. Deuteronomy revisits the release and orders a freed servant sent away supplied. Jeremiah treats a revoked release as grounds for judging the nation. A gospel principle concedes that some of it was written in for hardness of heart. A reader who wants a code that arrived perfect will not find one. A reader who wants to watch a people work out, slowly and against their own interests, what having been slaves obliges them to, is in the right book.",
+      "A covenant is not a rulebook, and the difference matters throughout this section. God gives the terms inside a relationship that already exists, after a rescue he has already carried out, to people who agreed before they had heard a word of them. The people do not keep these laws as the price of their freedom. In giving these laws, the writers showed what they thought freedom was for, and the writers had just seen an empire treat human beings as a supply of labor.",
+      "That makes the contents of the code harder, not easier, to read. The law limits how long a man may be kept as a slave, but it assumes that he may be kept as one. It holds a master responsible if he knocks out a servant’s eye, yet lets him go unpunished if a servant he beats survives a day or two. When an ox gores a slave to death, it sets the payment to the slave’s master at thirty shekels of silver. These laws sit only a few chapters away from the command not to oppress a foreigner because Israel was once a foreigner in Egypt, and from a sabbath law written so that the people who work for you can rest. They come from the same document and the same mountain.",
+      "The honest thing to say is that the Israelites were still arguing about these laws, and they went on arguing long after Sinai. In Deuteronomy, Moses revisits the law of release and commands that a freed servant be sent away with provisions. The prophet Jeremiah condemns the people of Jerusalem for freeing their slaves and then taking them back. In the Gospel of Matthew, Jesus says that Moses allowed divorce because of the hardness of people’s hearts, which concedes that some laws were a concession rather than an ideal. A reader who wants a law code that arrived perfect will not find one here. A reader who wants to watch a people work out, slowly and against their own interests, what having been slaves requires of them, is reading the right book.",
     ],
     tensions: [
       {
         claim:
-          "The law is given by God at the mountain, so its provisions carry divine authority as they stand.",
+          "God gives the law at the mountain, so readers may take its provisions to carry divine authority exactly as they stand.",
         counter:
-          "The canon does not treat them as final. It revises the release law, condemns a nation for revoking one, and concedes elsewhere that a provision was an accommodation to hardness of heart rather than an ideal. Scripture here is a record of an argument, and the later voices in it are arguing with the earlier ones.",
+          "Later biblical writers do not treat these laws as final. Deuteronomy revises the law of release, Jeremiah condemns a nation for going back on one, and Jesus says that one law was a concession to hard hearts rather than God’s ideal. In these passages the later writers are arguing with the earlier ones, and the Bible keeps a record of the argument.",
         where: "Deuteronomy 15:12–15 · Jeremiah 34:8–22 · Matthew 19:8",
       },
     ],
@@ -2661,8 +2661,8 @@ export const THE_COVENANT_MOVEMENT: Movement = {
     kicker: "The fourth movement",
     title: "The presence",
     paragraphs: [
-      "The terms are agreed and sealed, and Moses goes up the mountain for forty days. What he is given there is not more law. It is a set of building plans, in cubits, for a tent with poles through rings so that it can be carried.",
-      "This is the last movement, and it is the one that says what the rescue was for. Not a law and not a land, in the end, but an arrangement for the God who did all of it to live among the people it was done for. It goes badly wrong first.",
+      "Once the people have agreed to the covenant and sealed it, Moses goes up the mountain for forty days. What God gives him there is not more law. It is a set of building plans, measured in cubits, for a tent with poles run through rings so that the people can carry it.",
+      "In this last section the writers show what the rescue was for. In the end God did not bring the people out for a law or for a land, but so that he could live among the people he had rescued. Before that can happen, though, the people go badly wrong.",
     ],
     nextMovementId: "the-presence",
   },
@@ -2676,7 +2676,7 @@ export const THE_PRESENCE_MOVEMENT: Movement = {
   title: "The presence",
   range: "Exodus 25–40",
   throughline:
-    "A tent, a failure, and a rebuilding. The God who refused to be seen arranges to be carried, the people break the covenant before the plans are finished, and the book ends with a cloud settling on a tent nobody can enter.",
+    "This section tells of a tent, a failure and a rebuilding. God, who would not let himself be seen, arranges for the people to carry his dwelling with them. Before the plans are finished the people break the covenant, and at the end of the book a cloud settles on the tent, and no one can enter it.",
   chapterStart: 25,
   chapterEnd: 40,
   situation: {
@@ -2684,9 +2684,9 @@ export const THE_PRESENCE_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/exo-presence.webp",
     paragraphs: [
-      "The first thing to say is about proportion, because it is the question every reader arrives with. The creation of the world gets thirty-one verses. A tent gets around four hundred, twice over. Read as a story that is badly out of balance. Read as what the book is actually for, it is the argument itself: the point of the rescue was never the leaving, it was that this God would end up living among these people, and the specifications are how that gets arranged. Detail is what care looks like when it is written down.",
-      "What is being described is a portable shrine, and portable shrines are known elsewhere in the region, in Egypt and among nomadic peoples. The design is less exotic than it reads. A frame, curtains, an enclosure, a graded approach from courtyard to inner room. What differs is what sits at the centre, which in other sanctuaries would be an image of the god and here is a box with the terms of an agreement inside it and an empty space above.",
-      "Most scholars read these chapters as the work of priestly writers, giving the tabernacle a plan that closely matches the later temple in Jerusalem, which is either the temple projected backward onto the wilderness or the tent that the temple was built to imitate. The answer is not recoverable and the effect is the same either way: a people who had lost a temple were handed a description of a sanctuary that could be packed up and carried, which is a pointed thing to give exiles.",
+      "Almost every reader first asks about proportion. The writers of Genesis tell the creation of the world in thirty-one verses, while the writers of Exodus spend more than four hundred verses on a tent, because they describe it twice, once as instructions and once as the people build it. If we read Exodus only as a story, that looks badly out of balance. But the writers are making their point through the detail: God did not rescue the people simply so they could leave Egypt, but so that he could live among them, and these instructions show how that was arranged. When people care about something, they write down its details.",
+      "The writers are describing a portable shrine, and other peoples in the region, in Egypt and among nomadic tribes, made shrines like it. The design is less strange than it first seems: a frame, curtains, an enclosure, and a series of spaces leading from an outer courtyard to an inner room. The difference lies in the center. Other peoples would have placed an image of their god there. The Israelites placed a box holding the terms of their covenant, with an empty space above it.",
+      "Most scholars think priestly writers composed these chapters and gave the tabernacle a plan that closely matches the later temple in Jerusalem. Either they projected the temple back onto the wilderness, or the builders of the temple modeled it on the tent. We cannot now recover which, and the effect is the same either way. The priests handed people who had lost their temple a description of a sanctuary that could be packed up and carried, which was a pointed thing to give to exiles.",
     ],
     sources: "Meyers · Propp · Childs · Friedman",
   },
@@ -2694,16 +2694,16 @@ export const THE_PRESENCE_MOVEMENT: Movement = {
     kicker: "The fourth movement · Exodus 25–40",
     title: "A tent, a failure, and a rebuilding",
     paragraphs: [
-      "Sixteen chapters and most of them are joinery, which is the movement's own answer to what the rescue was for. Not a land, which Exodus never reaches, and not a temple, which is centuries away. A tent with poles through rings, so that the God who brought them out can be carried along with them. The detail is not an obstacle to the meaning. The detail is the meaning: this is what care looks like when somebody writes it down.",
-      "Then it breaks, before the plans are even finished. What the people build at the bottom of the mountain is not another god, which would be easier to dismiss. It is an image of the one who brought them out, because he had been silent for forty days and an image can be seen. And the response to that is the worst passage in the movement, three thousand people killed by their own relatives at Moses' order, which the chapter treats as the act that qualifies the Levites for priesthood. That is not law that has expired. It is a killing the narrative approves of, and this reading does not know how to make it sit easily, and has not pretended to.",
-      "What follows is the rebuilding, told twice over, six chapters restating seven with one word changed. The refrain is a verdict: instruction and execution match, down to the loops on the curtains. Put where it is, on the far side of the failure, it says that what was broken got remade exactly as specified. Then the cloud comes down and the man who built the tent cannot go into it, and the book stops there, mid-journey, with a people waiting to see whether tomorrow they travel or stay.",
+      "Most of these sixteen chapters describe carpentry and needlework, and that is how the writers answer the question of what the rescue was for. It was not for a land, which the people never reach within Exodus, and not for a temple, which lies centuries in the future. It was for a tent with poles run through rings, so that the people could carry with them the God who brought them out. The writers do not want us to read past the detail to find the meaning, because the detail is the meaning. This is how people write when they care about something.",
+      "Before Moses has even come down with the plans, the people break the covenant. What they make at the foot of the mountain is not a different god, which would be easier to dismiss. It is an image of the God who brought them out, made because he had been silent for forty days and they wanted something they could see. Then comes the worst passage in this section. At Moses’ order, the Levites kill about three thousand of their own relatives, and the writer presents this as the act that qualifies the Levites to be priests. This is not a law that later readers can set aside as outdated. It is a killing the writer approves of. This guide cannot make it sit easily with the rest of the book and will not pretend to.",
+      "Then the writers tell of the rebuilding. Across six chapters they repeat the instructions of the earlier seven almost word for word, turning each command into a report of what the people did. Their refrain gives a verdict: the people did everything exactly as God commanded, down to the loops on the curtains. By placing this after the people’s failure, the writers show that God remade exactly what had been broken. Then the cloud comes down on the tent, and Moses, who built it, cannot go inside. The writers end the book there, in the middle of the journey, with a people waiting to see whether tomorrow they will travel or stay.",
     ],
     tensions: [
       {
         claim:
-          "The Levites who killed three thousand of their own people are rewarded with priesthood, and the narrative calls it being for the LORD.",
+          "The Levites kill three thousand of their own people, God rewards them with the priesthood, and the writer describes their act as taking the LORD’s side.",
         counter:
-          "The same book has just spent four chapters specifying a priesthood whose job is to carry the people's names into the presence and bear their guilt. A priesthood established by killing the people it exists to carry is a contradiction the movement never resolves, and the reader is left holding both.",
+          "Yet the writers have just spent four chapters describing a priesthood whose task is to carry the people’s names into God’s presence and to bear their guilt. A priesthood founded by killing the very people it exists to carry is a contradiction the writers never resolve, and they leave the reader holding both.",
         where: "Exodus 32:26–29 · Exodus 28:29–30",
       },
     ],
@@ -2715,10 +2715,10 @@ export const EXODUS_INTRO: Panel = {
   kicker: "An introduction · Exodus 1–40",
   title: "The book of the going out",
   paragraphs: [
-    "Exodus means the going out, and it is the book where a family becomes a nation. It moves through three kinds of writing: a rescue told as story, a covenant given as law, and then, for nearly a third of its length, instructions for building a tent. Readers who arrive for the sea and the mountain are often surprised by how much of the book is joinery.",
-    "It is a composite book, and it does not hide it. More than one telling runs through it, sometimes laid side by side without being reconciled: Moses is called twice, in two different voices, and the crossing of the sea is described both as a wind blowing all night and as water standing up like walls. The Song at the sea is in an archaic Hebrew centuries older than the prose around it. It reached its final shape long after the events it describes, among people carried off to Babylon who knew what it was to live inside an empire.",
-    "Then the question most readers arrive with. No Egyptian record mentions the departure, and Egypt kept careful records of far smaller things. Nothing has been found in Sinai from a mass migration, and the archaeology of Canaan points to Israel emerging largely from within it rather than arriving from outside. On the most widely held reconstruction, the exodus as the book narrates it, on that scale, did not happen. (Finkelstein and Silberman.)",
-    "The serious case on the other side is worth hearing rather than waved past. The book carries Egyptian detail a later Judean writer had little reason to know, several of its names are Egyptian, including Moses, and no nation invents for itself an origin in which its ancestors were slaves. On that reading something happened to somebody, smaller than the telling, and the telling grew around it. (Hoffmeier.) The argument is genuinely open. What is not in question is what the story became: the founding memory of the people who kept it, and the event the rest of the Bible keeps turning back to.",
+    "The name Exodus means “the going out,” and in this book the family of Jacob becomes a nation. The writers use three kinds of writing: a rescue told as a story, a covenant given as law, and then, for nearly a third of the book, instructions for building a tent. Readers who come for the sea and the mountain are often surprised by how much of the book is about carpentry.",
+    "Editors assembled Exodus from more than one source, and they did not hide it. Sometimes they set two versions of an event side by side without reconciling them. God calls Moses twice, in chapters 3 and 6, and the two accounts sound like two different writers. In one description of the sea crossing a wind blows all night, and in another the water stands up like walls. The Song at the sea is written in a Hebrew centuries older than the prose around it. The editors gave the book its final shape long after the events it describes, among people whom the Babylonians had carried into exile and who knew what it was to live inside an empire.",
+    "Most readers arrive wondering whether it happened. No Egyptian record mentions the Israelites leaving, though the Egyptians kept careful records of far smaller events. Archaeologists have found nothing in Sinai from a mass migration, and most read the evidence in Canaan as showing that Israel grew largely out of peoples already living there rather than arriving from outside. In the reconstruction most scholars hold, the exodus did not happen on the scale the book describes. (Finkelstein and Silberman.)",
+    "Scholars on the other side make a serious case, and it deserves a hearing. The writers include details about Egypt that a later writer in Judah had little reason to know, several of the names in the book are Egyptian, including Moses, and no nation invents a past in which its own ancestors were slaves. On that view, something did happen to some group of people, on a smaller scale than the book describes, and the Israelites’ telling grew around it. (Hoffmeier.) Scholars still argue the question. No one disputes what the Israelites made of the story: they kept it as the founding memory of their people, and the other biblical writers return to it again and again.",
   ],
   sources: "Propp · Assmann · Finkelstein & Silberman · Hoffmeier",
 };
@@ -2732,20 +2732,20 @@ export const EXODUS_CAPSTONE: Capstone = {
   kicker: "The whole book · Exodus 1–40",
   title: "Heard, brought out, and travelled with",
   paragraphs: [
-    "Everything in this book proceeds from four verbs in the second chapter, before anybody has done anything: God heard, remembered, saw, knew. No rescue is announced, nothing changes in Egypt, and the people crying out have no idea it has happened. Forty chapters later there is a tent in the middle of the camp with a cloud on it. What happens in between is the working out of that hearing, and it takes far longer, costs far more and goes wrong far more often than the summary version anybody carries in their head.",
-    "It cost. Egypt lost its firstborn in a night, and the book mirrors that against the boys thrown in the Nile at the start without ever making it comfortable. The code given at the mountain limits how long a man may be owned while assuming he may be owned, and prices a servant's death at thirty shekels a few chapters from commanding that a foreigner not be oppressed, because you were foreigners. Three thousand people die at the foot of Sinai and the killing earns a priesthood. None of that has been tidied here, because tidying it would mean reading a different book. What can be said is that the people who kept these texts went on arguing with them, and the arguing is in the canon too.",
-    "And it does not arrive. Exodus ends with no land, no temple, no settled life: a tent, a cloud, and an instruction about watching it to know whether to move today. The man who built it cannot go inside, because the thing he asked for turned out to be larger than he could walk into. That is the book's actual claim, made over forty chapters against every expectation its own readers bring: the point of being brought out was never the getting somewhere. It was that this God intended to travel with them, and did, before they were remotely ready for it.",
+    "Everything in Exodus grows out of four verbs in the second chapter, written before anyone has done anything: God heard, remembered, saw and knew. At that point God has announced no rescue, nothing changes in Egypt, and the people crying out have no idea that he has heard them. Forty chapters later a tent stands in the middle of their camp with a cloud resting on it. What happens in between is God acting on what he heard, and it takes far longer, costs far more, and goes wrong far more often than the short version most of us carry in our heads.",
+    "The rescue came at a price. In one night every Egyptian family lost its firstborn, and the writers set that beside the Hebrew boys thrown into the Nile at the start of the book without ever making it comfortable. The law God gives at the mountain limits how long a man may be kept as a slave while assuming he may be kept as one, and it sets the payment for a slave killed by an ox at thirty shekels, only a few chapters before it commands Israel not to oppress a foreigner because they were once foreigners. At the foot of Sinai the Levites kill three thousand people, and their killing earns them the priesthood. This guide has not tidied any of that away, because a tidied version would no longer be this book. What we can say is that the people who kept these texts went on arguing with them, and the Bible preserves that argument too.",
+    "And the people do not arrive. Exodus ends with no land, no temple and no settled life, only a tent, a cloud, and an instruction to watch the cloud to know whether to move on that day. Moses, who built the tent, cannot go inside it, because the presence he asked to see is greater than he can approach. Over forty chapters the writers make one claim, against every expectation their readers bring: God did not bring the people out simply so they could get somewhere. He brought them out because he meant to travel with them, and he did, long before they were ready for him.",
   ],
   tensions: [
     {
       claim:
-        "God is compassionate and gracious and slow to anger, and visits the iniquity of the fathers on the children to the third and fourth generation. Both halves are one sentence, spoken by God about God.",
+        "God describes himself as compassionate, gracious and slow to anger, and in the same sentence he says that he punishes the sins of the fathers in their children to the third and fourth generation.",
       counter:
-        "The canon spends centuries arguing with the second half. Deuteronomy forbids putting fathers to death for their children or children for their fathers. Jeremiah says the proverb about fathers eating sour grapes and children's teeth being set on edge will no longer be used. Ezekiel states it flatly: the soul who sins is the one who will die, and a son will not bear the guilt of his father. Scripture does not resolve this. It records itself changing its mind in public.",
+        "Later biblical writers argued with the second half of that sentence for centuries. Deuteronomy forbids putting fathers to death for their children’s sins or children for their fathers’. Jeremiah says that people will no longer repeat the proverb that the fathers ate sour grapes and the children’s teeth were set on edge. Ezekiel says it outright: the person who sins is the one who will die, and a son will not bear his father’s guilt. The biblical writers never resolve the question, and the Bible preserves the record of them changing their minds in public.",
       where:
         "Exodus 34:6–7 · Deuteronomy 24:16 · Jeremiah 31:29–30 · Ezekiel 18:20",
     },
   ],
-  ask: "Exodus ends before the arrival, with a people who can only be told whether to move today. What are you waiting to have settled before you will call your life underway, and what would change if it never gets settled?",
+  ask: "Exodus ends before the people arrive anywhere, and each day they can only be told whether to move on. What are you waiting to have settled before you will say your life has really begun? What would change if it were never settled?",
   sources: "Childs · Propp · Fretheim · Meyers",
 };
