@@ -21,8 +21,8 @@ export const RUTH: Reading[] = [
     chapterIndex: 1,
     title: "The road",
     unitLabel: "Scene",
-    thread: "A famine takes a family out of Bethlehem, and inside five verses the husband and both sons are dead. What is left is three widows on a road, and an argument about whether anyone should follow anyone.",
-    closeEnd: "The barley harvest is the first thing in the chapter that is not a loss, and Naomi does not mention it.",
+    thread: "During a famine, a man from Bethlehem takes his wife Naomi and their two sons east to the neighboring country of Moab. Within five verses the husband and both sons have died, and three widows are left standing on a road, arguing about whether either of the younger women should follow Naomi home.",
+    closeEnd: "The three of them reach Bethlehem just as the barley harvest begins, which is the first thing in the chapter that is not a loss, and Naomi does not mention it.",
     passages: [
       {
         label: "One",
@@ -41,13 +41,13 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Bethlehem means house of bread, and the book opens with a famine in it. The family walks east to Moab, across the Dead Sea, close enough to reach on foot and foreign enough to matter: Moab is the neighbour Israel's texts are most hostile to. The two sons are called Mahlon and Chilion, names that sound like the Hebrew for sickness and for wasting away. Then three deaths in three verses, with ten years passing inside half a sentence.",
+          text: "The name Bethlehem means “house of bread,” and yet the writer opens the book with a famine there. The family walks east to Moab, on the far side of the Dead Sea, a country near enough to reach on foot but foreign enough to matter, because Moab is the neighbor that Israel’s writers treat with the most hostility. The two sons are named Mahlon and Chilion, names that sound like the Hebrew words for sickness and for wasting away. The writer then reports three deaths in three verses, and lets ten years pass in half a sentence.",
           src: "Campbell · Hubbard · Sasson · Alter",
         },
         meaning:
-          "The book begins by subtracting. A husband, then ten years, then both sons, and the verb used twice for what happens to Naomi is the one used of what is left over after a disaster. Notice what the narrator does not do. No reason is given, no fault is assigned, and nobody is told what any of it was for. The first thing that moves is a rumour: she hears there is food at home, and she gets up.",
+          "The writer begins the book by taking things away from Naomi: first her husband, then ten years, then both of her sons. Twice he describes Naomi with a Hebrew verb that people used for whatever was left over after a disaster. He gives no reason for any of it, he blames no one, and he never says what the losses were for. The first thing that moves Naomi is a rumor. She hears that there is food again at home, and she sets out.",
         lenses: {
-          theo: "God does nothing in the first five verses and is not blamed for them either. The first mention of him is second-hand, a report reaching Moab that he has given his people bread. Whatever is moving her at this point is a rumour of a harvest.",
+          theo: "In these first five verses God does nothing, and no one blames him for what happens. The first time the writer mentions God, it is in a report that reaches Naomi in Moab, saying that the LORD has given his people bread. At this point Naomi is moving on nothing more than news of a harvest.",
         },
       },
       {
@@ -71,25 +71,25 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Naomi releases them, and what she wishes on them is <b>hesed</b>, translated here as loving devotion: the book's key word, and it always means someone doing more than they owe. Her argument is a property argument. In a society held together by households and land, a woman with no husband and no sons has no standing and no income, and she is telling them accurately that she has nothing to give. Ruth's reply is not a sentiment. It is an oath, sworn in the LORD's name, calling down punishment on herself if she breaks it.",
+          text: "Naomi releases her daughters-in-law, and she prays that God will show them <b>hesed</b>, which this translation renders as “loving devotion.” It is the key word of the book, and throughout Ruth people use it for someone doing more than they owe. Naomi’s argument to the young women is about property. In a society held together by households and land, a woman with no husband and no sons had no standing and no income, and Naomi is telling them truthfully that she has nothing to give them. Ruth answers with more than a feeling. She swears an oath in the LORD’s name and calls down punishment on herself if she ever breaks it.",
           src: "Campbell · Trible · Eskenazi & Frymer-Kensky",
         },
         misreading: {
           named:
-            "Naomi is at a low point of faith here, and the book is on its way to correcting her.",
-          why: "She says the hand of the LORD has gone out against her, and says it again on arrival, and nobody in the book ever contradicts her. Not Ruth, not Boaz, not the narrator, and not God. The blessing at the end is spoken over a grandchild, not over a correction. Her account of her own life is allowed to stand, which is not the same as the book agreeing with it, and it is a great deal more room than most readers have been given.",
+            "Naomi’s faith has hit a low point here, and the writer is going to correct her before the book ends.",
+          why: "Naomi says that the hand of the LORD has gone out against her, and she says it again when she arrives home, and no one in the book ever contradicts her. Ruth does not, Boaz does not, the writer does not, and God does not. At the end, the women of the town bless Naomi over a grandchild, but they never correct what she said. The writer lets her account of her own life stand. That is not the same as agreeing with it, but it gives her far more room than most readers have given her.",
         },
         meaning:
-          "Three women stop on a road and argue about whether loyalty is worth what it costs. Naomi is right on the facts: she has nothing to offer and says so twice. Orpah does the sensible thing, and the text does not blame her for it or mention her again. Then Ruth, who is the foreigner here, binds herself to a destitute woman and to a God she has no reason to trust, in the strongest form of words available to her. The line is read at weddings. It is spoken by a widow to her mother-in-law, on a road, with nothing waiting at the other end.",
+          "Three women stop on a road and argue about whether loyalty is worth what it costs. Naomi has the facts right: she has nothing to offer, and she tells them so twice. Orpah does the sensible thing and goes home, and the writer neither blames her for it nor mentions her again. Then Ruth, the foreigner among them, binds herself to a penniless woman and to a God she has no reason to trust, using the strongest words available to her. People now read her words at weddings, but Ruth spoke them to her mother-in-law, on a road, with nothing waiting for either of them at the other end.",
         lenses: {
-          theo: "Naomi asks God to show them the loving devotion she believes he has stopped showing her. She is still praying, and what she prays for is that these two will be treated better than she has been.",
+          theo: "Naomi asks God to show her daughters-in-law the loving devotion she believes he has stopped showing her. She is still praying, and what she asks is that God will treat these two women better than he has treated her.",
         },
         tensions: [
           {
             claim:
-              "Ruth declares herself into Israel: your people will be my people, and your God will be my God.",
+              "Ruth declares that she is joining Israel: “Your people will be my people, and your God will be my God.”",
             counter:
-              "The law bars her people from the assembly of the LORD to the tenth generation, and a later reform sent foreign wives away. This book answers by making her David's great-grandmother and saying so in its last line.",
+              "The law in Deuteronomy bars Moabites from the assembly of the LORD to the tenth generation, and centuries later Ezra and Nehemiah ordered Israelite men to send their foreign wives away. The writer of Ruth answers by making this Moabite woman the great-grandmother of King David, and he says so in the last line of the book.",
             where: "Deuteronomy 23:3 · Ezra 9–10 · Nehemiah 13:23–27 · Ruth 4:17",
           },
         ],
@@ -108,19 +108,19 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The whole town turns out, and the women use her name as a question. She answers with a play on it: Naomi is close to the word for pleasant, and Mara is bitter.",
+          text: "The whole town comes out to see them, and the women ask whether this can really be Naomi. She answers with a play on her own name. “Naomi” sounds like the Hebrew word for pleasant, and she tells them to call her “Mara,” which means bitter.",
           src: "Campbell · Hubbard · Trible",
         },
         meaning:
-          "She does not say she is sad. She says her name is wrong now. Then the accounting: <b>I went away full</b>. She left in a famine, with nothing, so the fullness she is counting was the three of them. She comes back to a harvest and calls it empty. Whatever is being weighed was never bread.",
+          "Naomi does not say that she is sad. She says that her name no longer fits her. Then she gives an account of what she has lost: <b>“I went away full.”</b> In fact she left during a famine with no food at all, so the fullness she is counting was her husband and her two sons. She comes home at harvest time and calls herself empty. Whatever Naomi is weighing, it was never bread.",
         addr: {
           mode: "names",
-          text: "You have been asked how you are by people who meant it kindly, and found the true answer would not fit in the street. Naomi gave hers anyway, and the book wrote it down without softening it.",
+          text: "Most of us have been asked how we are by someone who meant it kindly, and found that the true answer was too large to give in the street. Naomi gave hers anyway, and the writer recorded it without softening it.",
         },
-        ask: "What would you have to say out loud for someone to know where you actually are?",
+        ask: "What would you have to say out loud for someone to know how you really are?",
         prayer: {
           mode: "meditate",
-          text: "Carry her sentence today without repairing it. I went away full, and the LORD has brought me back empty. She is never corrected for it.",
+          text: "Carry Naomi’s sentence with you today without trying to fix it: “I went away full, and the LORD has brought me back empty.” No one in the book ever corrects her for saying it.",
         },
       },
     ],
@@ -133,8 +133,8 @@ export const RUTH: Reading[] = [
     chapterIndex: 2,
     title: "The field",
     unitLabel: "Scene",
-    thread: "A widow with no land goes out to pick up what the harvesters drop, and happens onto the field of a man from her dead husband's clan. Nothing miraculous occurs. Somebody notices her, and decides to be more decent than he has to be.",
-    closeEnd: "She comes home with more than a day's gleaning, and Naomi hears the name and understands something Ruth does not.",
+    thread: "Ruth, a widow with no land, goes out to pick up the grain that the harvesters drop, and she happens to work in a field that belongs to a man from her dead husband’s clan. Nothing miraculous takes place. The owner notices her and decides to treat her more decently than he has to.",
+    closeEnd: "Ruth comes home with far more than a day’s gleaning, and when Naomi hears the owner’s name, she understands something that Ruth does not.",
     passages: [
       {
         label: "One",
@@ -153,13 +153,13 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Gleaning is law rather than charity. A landowner is forbidden to harvest the corners of his field and forbidden to go back for what was dropped, and what is left belongs to the poor, the foreigner, the widow and the orphan. It is relief written as a restriction on the strong, and it works only if the strong comply. Verse 3 says she happened to come to the part of the field belonging to Boaz. The narrator says it flatly and claims nothing more.",
+          text: "Gleaning was a matter of law, not charity. Israel’s law forbade a landowner to harvest the corners of his field or to go back for what his workers dropped, and it gave what was left to the poor, the foreigner, the widow, and the orphan. The lawgivers wrote this relief as a restriction on the strong, and it helped the poor only if the strong obeyed it. In verse 3 the writer says that Ruth happened to come to the part of the field that belonged to Boaz. He says it plainly and claims nothing more.",
           src: "Leviticus 19:9–10 · Deuteronomy 24:19–21 · Hubbard · Meyers",
         },
         meaning:
-          "Two things here are worth slowing down for. Ruth does not ask Naomi to arrange anything; she says let me go and work, and she goes out before anyone has spoken for her. And when Boaz sees her, his question is not who is she but <b>whose</b> is she. In a world organised by households, a woman standing on her own is a question about which household she belongs to, and the honest answer in her case is none.",
+          "Two details here are worth slowing down for. First, Ruth does not ask Naomi to arrange anything for her. She says, “Let me go and work,” and she goes out before anyone has spoken up for her. Second, when Boaz sees her, he does not ask who she is but <b>whose</b> she is. In a world where every woman was expected to belong to some household, people saw a woman on her own as a question about which household she belonged to, and the honest answer in Ruth’s case was none.",
         lenses: {
-          arch: "The first day somewhere nobody is obliged to you, spent proving you will work before anyone will speak to you. (Starting at the bottom of another man's field.)",
+          arch: "Most people know what it is like to spend a first day in a place where no one owes them anything, working hard to prove themselves before anyone will speak to them. Ruth spends her first day in Bethlehem like that, at the very bottom of the social order, picking up leftovers in another man’s field.",
         },
       },
       {
@@ -181,18 +181,18 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Boaz tells her to stay in his field, keep close to his own workers, and drink from the jars. He also says he has ordered the young men not to touch her, and later tells them not to insult her. Both lines describe what a foreign widow gleaning alone was exposed to. His blessing uses the image of a bird's wings, and the Hebrew word for wing is also the word for the corner of a garment. It comes back in the next chapter.",
+          text: "Boaz tells Ruth to stay in his field, to keep close to his own workers, and to drink from their water jars. He also tells her that he has ordered the young men not to touch her, and later he tells them not to insult her. Both instructions show what a foreign widow gleaning alone would normally have faced. When Boaz blesses her, he speaks of the LORD’s wings, and the Hebrew word for wing is also the word for the corner of a garment. Ruth will use that word again in the next chapter.",
           src: "Campbell · Hubbard · Trible",
         },
         misreading: {
           named:
             "Boaz is simply a good man being generous, and the scene is about kindness.",
-          why: "He is generous, and that is real. He is also a man of standing dealing with a destitute foreigner who has no protection and no claim on him, and everything he grants is a favour he could take back. The order not to touch her is not decoration; it tells you what was ordinary. Reading the scene as warmth alone loses what Ruth is actually doing, which is working in public, in front of men, all day, to be noticed enough to be allowed to keep working.",
+          why: "Boaz is generous, and his generosity is real. But he is also a man of standing dealing with a penniless foreigner who has no protection and no claim on him, and he could take back any favor he grants her. His order that the young men not touch her is not a decorative detail; it tells us what usually happened to women in her position. If we read the scene only as a warm moment, we miss what Ruth is actually doing, which is working in public, in front of men, all day long, so that someone will notice her enough to let her keep working.",
         },
         meaning:
-          "She asks him why, and supplies the reason herself: I am a foreigner. He answers with what she has done rather than what she is, and blesses her in the name of a God she adopted on a road in chapter 1. The image he reaches for is wings, and the word is the same one used for the corner of a garment. Remember it. In the next chapter she uses it back at him, and it is not a blessing then. It is a request.",
+          "Ruth asks Boaz why he is being so kind, and she supplies the reason he might have for not being kind: she is a foreigner. Boaz answers by speaking of what she has done rather than what she is, and he blesses her in the name of the God she chose on the road in chapter 1. He asks that she find refuge under the LORD’s wings, and the Hebrew word for wings is the same word people used for the corner of a garment. Readers should remember it. In the next chapter Ruth will say that word back to Boaz, and she will not be offering a blessing then. She will be making a request.",
         lenses: {
-          theo: "Boaz asks the LORD to repay her, and by the end of the book he is himself the means by which it happens. That is the pattern this book keeps making: the prayer and the answer turn out to be the same person, and he does not appear to notice.",
+          theo: "Boaz asks the LORD to reward Ruth, and by the end of the book Boaz himself is the one through whom God does it. The writer of Ruth returns to this pattern again and again: the person who prays for someone turns out to be the answer to his own prayer, and he does not seem to notice.",
         },
       },
       {
@@ -212,16 +212,16 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "An ephah is somewhere near thirty pounds of barley, far more than a day of gleaning should produce, and Naomi notices at once. Her question is where. Her blessing lands on whoever did the noticing. And when the name comes back she uses a word she has not used since the road, the book's word for doing more than you owe, and then the legal one: kinsman-redeemer.",
+          text: "An ephah of barley probably weighed somewhere between twenty-five and thirty pounds, far more than a gleaner could expect to gather in one day, and Naomi notices it at once. She asks where Ruth worked, and she blesses whoever noticed her. When she hears the name Boaz, she uses a word she has not spoken since the road, the book’s word for doing more than you owe, and then she uses a legal term: kinsman-redeemer.",
           src: "Hubbard · Campbell · Eskenazi & Frymer-Kensky",
         },
         meaning:
-          "The plot arrives in a sentence and Ruth does not know it has. She is reporting her day. Naomi hears the name and understands what it means, because she knows the family and she knows the law. Notice what has moved in her. In chapter 1 she said the hand of the LORD had gone out against her, and nobody corrected her. Nobody corrects her here either. She simply says a blessing out loud, which is the first thing she has said since the road that is not about being empty.",
+          "Ruth is only telling Naomi about her day, and she does not realize that she has just given her the key to everything that follows. Naomi hears the name and understands what it means, because she knows the family and she knows the law. Something has changed in Naomi. In chapter 1 she said the hand of the LORD had gone out against her, and no one corrected her. No one corrects her here either. She simply speaks a blessing out loud, and it is the first thing she has said since the road that is not about being empty.",
         addr: {
           mode: "names",
-          text: "Something has probably already moved in your favour without your knowing it, and you will find out later than everyone else did. Ruth worked a full day and carried the evidence home on her back, and still had to be told what it meant.",
+          text: "Sometimes our circumstances have already turned in our favor before we know it, and we are the last to find out. Ruth worked all day and carried the proof home on her back, and still someone had to tell her what it meant.",
         },
-        ask: "What are you carrying home at the moment without knowing yet what it is worth?",
+        ask: "What are you carrying home right now without yet knowing what it is worth?",
       },
     ],
   },
@@ -233,8 +233,8 @@ export const RUTH: Reading[] = [
     chapterIndex: 3,
     title: "The threshing floor",
     unitLabel: "Scene",
-    thread: "Naomi sends her, washed and perfumed, to a threshing floor at night. What happens there is either a legal claim or a scandal depending on who is telling it, and the Hebrew keeps both open on purpose.",
-    closeEnd: "She goes home with six measures of barley and a sentence that answers the one she has been carrying since the first chapter.",
+    thread: "Naomi sends Ruth, washed and perfumed, to the threshing floor at night. Depending on who tells the story, what happens there is either a legal claim or a scandal, and the writer chose Hebrew words that leave both readings open on purpose.",
+    closeEnd: "Ruth goes home with six measures of barley and a message from Boaz that answers the complaint Naomi has carried since the first chapter.",
     passages: [
       {
         label: "One",
@@ -252,13 +252,13 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Naomi calls it seeking a resting place, which in this book means a household and a future rather than sleep. Threshing floors were worked in the open at the end of harvest, usually on a rise where the wind could take the chaff, and men slept beside the heap to guard it. Her instructions are precise, and the last of them is deliberately vague: uncover his feet, lie down, and he will tell you what to do.",
+          text: "Naomi says she is seeking “a resting place” for Ruth, and in this book that phrase means a household and a future, not sleep. At the end of the harvest, farmers threshed their grain in the open, usually on a rise where the wind could carry off the chaff, and the men slept beside the heap of grain to guard it. Naomi gives Ruth precise instructions, but she leaves the last one deliberately vague: uncover his feet, lie down, and he will tell you what to do.",
           src: "Campbell · Sasson · Eskenazi & Frymer-Kensky",
         },
         meaning:
-          "Read it as it stands. An older woman with no other way to secure a future for a younger one sends her, at night, alone, to a place where men have been drinking and are sleeping, to wake one of them. Naomi is not naive about what she is asking for. And Ruth, who has already agreed once to something nobody would have blamed her for refusing, says only that she will do everything she says.",
+          "Read the scene as it stands. An older woman who has no other way to secure a future for a younger one sends her out at night, alone, to a place where men have been drinking and are now asleep, and tells her to wake one of them. Naomi knows exactly what she is asking. And Ruth, who has already agreed once to something no one would have blamed her for refusing, says only that she will do everything Naomi tells her.",
         lenses: {
-          arch: "The plan made at night by people with no leverage, where the only thing anyone has to put in is the willingness to be the one who takes the risk. (Sent to ask.)",
+          arch: "People with no power have often had to make plans like Naomi’s, at night and in secret, when the only thing they could offer was someone willing to take the risk. Here Naomi makes the plan, and Ruth is the one who goes out and asks.",
         },
       },
       {
@@ -278,16 +278,16 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The Hebrew of this scene is deliberately open. The word for feet is used elsewhere in the Bible as a euphemism, the verb for uncovering carries the same freight, and lie down is the ordinary word for sleeping and also the ordinary word for sex. Translations settle it in one direction or the other. The text does not. What is not ambiguous is the exposure: a foreign widow found on a threshing floor at night has no recourse at all.",
+          text: "The writer chose Hebrew words for this scene that can be read more than one way. The Bible uses the word for “feet” elsewhere as a polite way of referring to the genitals, the verb for “uncovering” carries the same overtone, and “lie down” is the ordinary word both for sleeping and for sex. Translators usually settle the meaning in one direction or the other, but the writer did not. What he leaves in no doubt is how exposed Ruth is: if anyone found a foreign widow on a threshing floor at night, she would have no defense at all.",
           src: "Sasson · Fewell & Gunn · Campbell",
         },
         misreading: {
           named:
-            "Nothing happened, and the scene only looks suggestive to a modern reader.",
-          why: "The suggestion is in the Hebrew, not in the reader. The narrator chose words that can carry two meanings and declined to close them, and Boaz's own instruction before dawn, that nobody is to know a woman came to the threshing floor, tells you what the night would have cost her if it were known. Settling it in either direction is a decision the text refuses to make for you. What the book is not vague about is that she asked, and that what she asked for was not a night.",
+            "Nothing happened that night, and the scene only looks suggestive to modern readers.",
+          why: "The suggestion comes from the Hebrew, not from modern readers. The writer chose words that can carry two meanings and left them open. Boaz’s own instruction before dawn, that no one must know a woman came to the threshing floor, shows what the night would have cost Ruth if anyone had found out. The writer refuses to settle the question for us. What he makes perfectly clear is that Ruth asked Boaz for something, and that what she asked for was marriage, not a night.",
         },
         meaning:
-          "She does not follow the plan. Naomi told her to wait and let him say what to do, and instead she speaks first, and what she says is a legal claim. <b>Spread the corner of your garment over me, for you are a kinsman-redeemer.</b> That word for corner is the word Boaz used in the field for the wings of God. She takes the blessing he prayed over her and asks him to be the answer to it.",
+          "Ruth does not follow Naomi’s plan. Naomi told her to wait for Boaz to tell her what to do, but Ruth speaks first, and what she says is a legal claim: <b>“Spread the corner of your garment over me, for you are a kinsman-redeemer.”</b> The word she uses for corner is the same word Boaz used in the field for the wings of God. Ruth takes the blessing he prayed over her and asks him to become the answer to it.",
       },
       {
         label: "Three",
@@ -304,16 +304,16 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "She leaves before it is light, and Boaz says plainly that nobody is to know she was there. Then he loads her shawl with barley, six measures of it, and sends her back into town. Naomi's advice is to sit still, because the man will not rest until the matter is settled today.",
+          text: "Ruth leaves before it is light, and Boaz says plainly that no one must know she was there. Then he fills her shawl with six measures of barley and sends her back into town. Naomi tells her to sit and wait, because Boaz will not rest until he has settled the matter that very day.",
           src: "Campbell · Hubbard",
         },
         meaning:
-          "The line Boaz sends with the grain is the one that matters, and it is not addressed to Ruth. <b>Do not go back to your mother-in-law empty-handed.</b> Empty is Naomi's word, the one she used in front of the whole town when she asked them to stop calling her by her name. He has heard what she called herself. He answers it with about thirty pounds of barley and no comment at all.",
+          "Boaz sends a message with the grain, and he addresses it to Naomi, not to Ruth: <b>“Do not go back to your mother-in-law empty-handed.”</b> “Empty” is Naomi’s word. She used it in front of the whole town when she asked people to stop calling her by her name. Boaz has heard what she called herself, and he answers it with a heavy load of barley and no comment at all.",
         addr: {
           mode: "names",
-          text: "Somebody may have heard the thing you said when you were at your worst, taken it seriously, and gone away and done something about it without telling you. It rarely arrives as a speech. It arrives as something heavy, handed over at the door.",
+          text: "Someone may have heard the thing you said at your lowest point, taken it seriously, and gone off to do something about it without telling you. People rarely answer such a thing with a speech. More often they answer it with something heavy, handed over at the door.",
         },
-        ask: "Who has been quietly answering something you said out loud once and never repeated?",
+        ask: "Who has been quietly answering something you once said out loud and never repeated?",
       },
     ],
   },
@@ -325,8 +325,8 @@ export const RUTH: Reading[] = [
     chapterIndex: 4,
     title: "The gate",
     unitLabel: "Scene",
-    thread: "A property transaction settled in public, a child, and a list of names. What these four chapters have been building turns out to hold up most of the story that follows, and nobody inside it knows.",
-    closeEnd: "Five verses of fathers and sons, ending on a name every first reader knew before they got to it.",
+    thread: "Boaz settles the matter of the land in public, Ruth bears a child, and the writer ends with a list of names. Without anyone in the story knowing it, these four chapters have laid the groundwork for much of the history that follows.",
+    closeEnd: "The writer ends with five verses of fathers and sons, and the last name on the list is one that every first reader knew well: David.",
     passages: [
       {
         label: "One",
@@ -350,18 +350,18 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The gate was where legal business was done, in front of whoever was passing. Boaz seats ten elders as witnesses and opens with the land rather than the woman. The nearer redeemer agrees at once and withdraws the moment Ruth is added to the transaction, because a son born to her would inherit the field he has just paid for. The sandal is the local way of making a deal binding, and the narrator stops to explain it, which means the custom was already old when the book was written.",
+          text: "In an Israelite town, people did their legal business at the gate, in front of anyone who happened to be passing. Boaz seats ten elders there as witnesses and begins by speaking about the land, not the woman. The nearer redeemer agrees to buy the land at once, but he withdraws as soon as Boaz adds Ruth to the transaction, because a son born to her would inherit the very field he had just paid for. The men confirm the deal by handing over a sandal, which was the local way of making it binding. The writer stops to explain the custom, which tells us it was already old when he wrote.",
           src: "Campbell · Hubbard · Sasson",
         },
         misreading: {
           named:
             "Boaz marries Ruth because he has fallen in love with her.",
-          why: "The book never says so. What it says is that he is a redeemer, that he does the thing the nearer man will not, and that the transaction on the table is a dead man's field and a dead man's name. Affection may well be in it, and there is warmth in the field in chapter 2. But the machinery here is obligation, witnessed in public, and the book's interest is in a man who took on a duty that cost him something rather than a man who felt something. That is harder, and more use to anyone trying to work out what to do next.",
+          why: "The writer never says so. What he says is that Boaz is a redeemer, that he does what the nearer relative will not, and that the business on the table is a dead man’s field and a dead man’s name. Boaz may well feel affection for Ruth, and there is warmth between them in the field in chapter 2. But Boaz acts here out of obligation, in public, before witnesses, and the writer is more interested in a man who took on a costly duty than in a man who had strong feelings. That is a harder example to follow, and a more useful one for anyone trying to decide what to do next.",
         },
         meaning:
-          "Nobody in this scene consults Ruth. She is discussed by name, in public, as an item attached to a parcel of land, by men settling an inheritance. That is the machinery she has been working inside since the first chapter and the book does not pretend otherwise. What Boaz does inside it is refuse the loophole: he could have taken the field and left the widow, and the nearer man does exactly that and is not even given a name. Then the elders bless the house, and reach for Tamar, who got her rights out of Judah by a scheme at least as risky as a threshing floor.",
+          "No one in this scene asks Ruth anything. The men discuss her by name, in public, as if she came attached to a parcel of land, while they settle an inheritance. Ruth has been living inside that system since the first chapter, and the writer does not pretend otherwise. What Boaz does within it is refuse to take the easy way out. He could have taken the field and left the widow, and the nearer relative does exactly that, and the writer does not even give him a name. Then the elders bless Boaz’s household, and they mention Tamar, who won her rights from Judah with a scheme at least as risky as a night on a threshing floor.",
         lenses: {
-          theo: "The blessing asks that this house be like Rachel and Leah, who built Israel, and like the house of Perez, which began with a woman nobody would have chosen. The line this book is walking toward has never once run through the obvious people.",
+          theo: "The elders pray that this household will be like Rachel and Leah, who built up Israel, and like the house of Perez, whose family began with a woman no one would have chosen. As the writer traces the family line toward David, God never once works through the obvious people.",
         },
       },
       {
@@ -379,13 +379,13 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "God acts directly once in this book, in half of verse 13, and what he does is enable a conception. The blessing that follows is spoken to Naomi rather than to the mother, by the women of the town, and they are the ones who name the child. The name they give him means something like servant, or one who works.",
+          text: "In the whole book, the writer says only once that God acts directly, in half of verse 13, when the LORD enables Ruth to conceive. The women of the town then bless Naomi rather than Ruth, and they are the ones who name the child. The name they give him, Obed, means something like “servant” or “one who works.”",
           src: "Campbell · Trible · Hubbard",
         },
         meaning:
-          "Count what is given back. The women tell Naomi this child will renew her life and sustain her old age, and both are true, and neither of them is her husband or her sons. She is handed a grandchild, and she holds him. The thing they say about Ruth, that she is better to Naomi than seven sons, is the largest number that world had for saying it. It is a real thing to be told. It is not the same as being given back what was taken.",
+          "Count what Naomi is given back. The women tell her that this child will renew her life and care for her in her old age, and both things are true, but the child is neither her husband nor her sons. Naomi is handed a grandchild, and she holds him. The women also tell her that Ruth is better to her than seven sons, and seven was the largest number they had for saying such a thing. It is a real gift to hear that. It is not the same as being given back what she lost.",
         lenses: {
-          arch: "The life that comes after the one that ended, which is neither a replacement nor a consolation, and has to be lived anyway. (After, without instead of.)",
+          arch: "Many people have had to begin a second life after the first one ended, a life that neither replaces nor makes up for what they lost, and which they must live all the same. Naomi’s grandchild does not give her back her sons, and the writer never pretends that he does.",
         },
       },
       {
@@ -403,16 +403,16 @@ export const RUTH: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Five verses of fathers and sons, running from Perez to David.",
+          text: "The writer gives five verses of fathers and sons, tracing the line from Perez to David.",
           src: "Campbell · Sasson",
         },
         meaning:
-          "Read the fourth name from the end. A Moabite, from the people the law bars from the assembly to the tenth generation, is David's great-grandmother, and the book says so in its last line as a matter of record. Nobody inside the story knows it.",
+          "Read the fourth name from the end of the list. Ruth, a Moabite, from the people the law barred from the assembly to the tenth generation, is the great-grandmother of David, and the writer records it in the book’s last line as a plain matter of fact. No one inside the story knows it.",
         addr: {
           mode: "names",
-          text: "You are in the middle of something whose weight you cannot see from where you are standing, and the people who end up depending on it will not know your name either.",
+          text: "You may be in the middle of something whose importance you cannot see from where you stand, and the people who come to depend on it may never know your name either.",
         },
-        ask: "What are you doing now that will only make sense later, if at all?",
+        ask: "What are you doing now that may only make sense later, if it ever does?",
       },
     ],
   },
@@ -424,7 +424,7 @@ export const EMPTY_MOVEMENT: Movement = {
   title: "Coming back empty",
   range: "Ruth 1–2",
   throughline:
-    "A famine, a foreign country, and three funerals in five verses. What is left is an old woman with nothing to offer, and a daughter-in-law who will not take the offer of release, walking back to a town at harvest time.",
+    "A famine drives a family to a foreign country, and in five verses three of them die. What remains is an old woman who has nothing to offer, and a daughter-in-law who refuses to be released, the two of them walking back to Bethlehem at harvest time.",
   chapterStart: 1,
   chapterEnd: 2,
   situation: {
@@ -432,10 +432,10 @@ export const EMPTY_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ruth-moab.webp",
     paragraphs: [
-      "Moab sits across the Dead Sea from Bethlehem, near enough to walk to and foreign enough to matter. It is the neighbour Israel's texts treat worst: Numbers blames Moabite women for leading Israel into worship of another god, and Deuteronomy bars Moabites from the assembly of the LORD to the tenth generation. Going there to eat during a famine is what people did, and the book reports it without a word of comment.",
-      "A widow's position was a matter of property law rather than sympathy. Households held land, land passed through men, and a woman with no husband and no sons had no standing and no income of her own. When Naomi tells her daughters-in-law that she has nothing to offer them, she is not being dramatic. She is describing the arrangement accurately. What was left to a woman in that position was a household willing to take her in, or the leftovers of somebody else's harvest.",
-      "Those leftovers were legislated. Leviticus and Deuteronomy require a landowner to leave the corners of his field unharvested and to stop going back for what was dropped, and they name who it is for: the poor, the foreigner, the widow, the orphan. It is relief written as a restriction on the strong rather than as generosity from them, which is a different thing, and it depends entirely on the strong obeying it.",
-      "The book plays with its names and expects you to notice. Bethlehem is house of bread and has no bread. Naomi is close to the word for pleasant, and she asks the town to call her bitter. The two sons who die are named Mahlon and Chilion, which sound like the words for sickness and for wasting away. Reading the names is part of reading the book.",
+      "Moab lies across the Dead Sea from Bethlehem, near enough to walk to but foreign enough to matter. Israel’s writers treat Moab worse than any other neighbor. The book of Numbers blames Moabite women for leading Israel into the worship of another god, and Deuteronomy bars Moabites from the assembly of the LORD to the tenth generation. During a famine, people did go to Moab to find food, and the writer of Ruth reports that the family went there without a word of comment.",
+      "A widow’s position was a matter of property law, not sympathy. Households owned the land, land passed down through men, and a woman with no husband and no sons had no standing and no income of her own. When Naomi tells her daughters-in-law that she has nothing to offer them, she is not exaggerating. She is describing how things worked. A woman in that position could only hope for a household willing to take her in, or else gather the leftovers from someone else’s harvest.",
+      "Israel’s law required those leftovers. Leviticus and Deuteronomy command a landowner to leave the corners of his field unharvested and not to go back for what his workers dropped, and they name the people it is meant for: the poor, the foreigner, the widow, and the orphan. The lawgivers wrote this relief as a restriction on the strong rather than as a gift from them, which is a different thing, and it helped the poor only when the strong obeyed it.",
+      "The writer plays with names throughout the book and expects readers to notice. Bethlehem means “house of bread,” yet at the start it has no bread. Naomi’s name sounds like the word for pleasant, and she asks the town to call her bitter instead. The two sons who die are named Mahlon and Chilion, which sound like the words for sickness and for wasting away. Paying attention to the names is part of reading the book well.",
     ],
     sources: "Campbell · Hubbard · Meyers · Eskenazi & Frymer-Kensky",
   },
@@ -443,8 +443,8 @@ export const EMPTY_MOVEMENT: Movement = {
     kicker: "The second movement",
     title: "The redeemer",
     paragraphs: [
-      "The first half of this book is survival. A woman comes home with nothing, another woman goes out to work, and the day ends with about thirty pounds of barley and a name that turns out to matter. Nothing has been claimed yet, and nobody has asked anybody for anything.",
-      "What follows is a claim being pressed, by two women with no standing, using a piece of family property law that does not quite cover their case. It starts at night on a threshing floor, where the risk is entirely Ruth's, and it finishes in daylight at a town gate, in front of ten elders, in a conversation nobody thinks to include her in.",
+      "In the first half of the book, the two women are simply trying to survive. Naomi comes home with nothing, Ruth goes out to work, and the day ends with a heavy load of barley and the name of a man who turns out to matter. Neither woman has claimed anything yet, and no one has asked anyone for anything.",
+      "In the second half, the two women press a claim even though they have no standing, using a piece of family property law that does not quite fit their case. Ruth begins it at night on a threshing floor, where she alone takes the risk, and Boaz finishes it in daylight at the town gate, in front of ten elders, in a conversation that no one thinks to include her in.",
     ],
     nextMovementId: "the-redeemer",
   },
@@ -452,9 +452,9 @@ export const EMPTY_MOVEMENT: Movement = {
     kicker: "The first movement · Ruth 1–2",
     title: "What is left, and what it is worth",
     paragraphs: [
-      "Two chapters, and the arithmetic has barely moved. Naomi still has no husband and no sons, still has no land she can work, and has not taken back a word of what she said in the street. The book has not corrected her, argued with her, or arranged a moment where she sees things differently. It has let her sentence stand for two chapters.",
-      "What has changed is smaller than a rescue and is not nothing. Somebody would not leave. Somebody else noticed a woman in a field and chose to obey a law generously rather than minimally, which is what this book's key word means and the only thing it ever means. And an old woman who had stopped expecting anything said a blessing out loud about a living man.",
-      "That is the shape of the first half, and it is worth sitting with before the second half starts moving. Nothing was restored. Two people did more than they had to, and a day's work came home heavier than it should have been.",
+      "After two chapters, Naomi’s situation has barely changed. She still has no husband and no sons, she still has no land she can work, and she has not taken back a word of what she said in the street. The writer has not corrected her, argued with her, or arranged a moment when she sees things differently. For two chapters he has let her words stand.",
+      "What has changed is smaller than a rescue, but it is not nothing. Ruth would not leave Naomi. Boaz noticed a woman in his field and chose to keep the gleaning law generously rather than grudgingly, which is the kind of thing the book’s key word, hesed, describes: doing more than you owe. And an old woman who had stopped expecting anything spoke a blessing out loud over a living man.",
+      "That is the shape of the first half, and readers should pause over it before the second half begins. No one has been given back what they lost. Two people did more than they had to, and Ruth came home from a day’s work with more than she should have been able to carry.",
     ],
     sources: "Campbell · Hubbard · Trible",
   },
@@ -466,7 +466,7 @@ export const THE_REDEEMER_MOVEMENT: Movement = {
   title: "The redeemer",
   range: "Ruth 3–4",
   throughline:
-    "Naomi stops waiting and makes a plan, and Ruth takes it further than the plan went. What follows is a legal claim pressed by people with no standing, and settled at a town gate by men who never think to ask her a question.",
+    "Naomi stops waiting and makes a plan, and Ruth goes further than the plan went. The two of them press a legal claim even though they have no standing, and Boaz settles it at the town gate among men who never think to ask Ruth a question.",
   chapterStart: 3,
   chapterEnd: 4,
   situation: {
@@ -474,10 +474,10 @@ export const THE_REDEEMER_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ruth-redeemer.webp",
     paragraphs: [
-      "A redeemer, in this law, is a relative with both the right and the duty to buy back what a family has lost: land it was forced to sell, or a relative sold into debt slavery. It is a family safety net written into property law, and it exists because land was not supposed to leave a family permanently. The word runs through the second half of this book and it is a legal term before it is anything else.",
-      "There is a separate obligation, in Deuteronomy, that a dead man's brother should marry his widow so that the first son carries the dead man's name and keeps his portion. It applies to brothers living on the same property. Boaz is not a brother, and neither is the nearer man.",
-      "What happens in this book is not exactly either law. It combines buying back the land with taking on the widow, in a case neither statute covers, and ten elders at a gate agree to it. Whether the book is describing a custom we have no other record of, or constructing what it thinks the law ought to have said, is genuinely argued. Saying so is more honest than tidying it into a statute that fits.",
-      "And the threshing floor is a working site, not a house. At the end of harvest the grain is beaten out and thrown into the wind on a hard floor, usually on high ground, and the men sleep beside the heap to guard it. It is at the edge of town, in the open, at night. That is where Naomi sends her.",
+      "Under Israel’s law, a redeemer was a relative who had both the right and the duty to buy back what a family had lost, whether that was land the family had been forced to sell or a relative who had been sold into slavery for debt. The law worked as a family safety net, and it existed because Israelites believed that land should never leave a family for good. The word “redeemer” runs through the second half of this book, and the first readers would have heard it as a legal term before anything else.",
+      "Deuteronomy sets out a separate duty: when a man died without a son, his brother was to marry the widow, so that their first son would carry on the dead man’s name and inherit his share of the land. That law applied to brothers living on the same family property. Boaz is not the dead man’s brother, and neither is the nearer relative.",
+      "What happens in Ruth does not exactly match either law. Boaz combines buying back the land with marrying the widow, in a case that neither law covers, and ten elders at the town gate agree to it. Scholars genuinely disagree about whether the writer is describing a custom we have no other record of, or showing what he thought the law ought to require. It is more honest to admit the disagreement than to force the story to fit a single law.",
+      "The threshing floor was a place of work, not a house. At the end of the harvest, farmers beat the grain on a hard floor, usually on high ground, and tossed it into the wind to separate it from the chaff, and the men slept beside the heap to guard it. It lay at the edge of town, out in the open, and Naomi sends Ruth there at night.",
     ],
     sources: "Leviticus 25 · Deuteronomy 25:5–10 · Campbell · Hubbard · Sasson",
   },
@@ -485,9 +485,9 @@ export const THE_REDEEMER_MOVEMENT: Movement = {
     kicker: "The second movement · Ruth 3–4",
     title: "A claim pressed, and a name carried",
     paragraphs: [
-      "Everything in the second half turns on people using what little standing they have, all the way up. Naomi uses the only leverage available to her, which is knowing the law and knowing the family. Ruth uses the only thing she has, which is her willingness to be the one exposed. Boaz uses what he actually has, which is money, position and the right to speak first at a gate.",
-      "It is worth noticing how unromantic the machinery is. The claim is made at night in words that could ruin her. It is settled in the morning over a field, with a sandal, in front of witnesses, in a conversation she is not part of. The nearer redeemer, who takes the land and drops the widow the moment she is mentioned, is never given a name in a book that names everybody.",
-      "And at the end the women of the town hand a baby to a woman who lost two sons, and say a thing that is true and is not the same as what she lost. The book does not pretend those are the same. It just refuses to end anywhere else.",
+      "In the second half of the book, each person uses whatever standing they have. Naomi uses the only leverage available to her, which is her knowledge of the law and of the family. Ruth uses the only thing she has, which is her willingness to be the one exposed. Boaz uses what he actually has, which is money, position, and the right to speak first at the town gate.",
+      "Readers should notice how unromantic all of this is. Ruth makes her claim at night, in words that could ruin her. Boaz settles it the next morning over a field, with a sandal, in front of witnesses, in a conversation she takes no part in. The nearer relative, who wants the land but drops the widow the moment Boaz mentions her, is the only person in the book whom the writer never names.",
+      "At the end, the women of the town hand a baby to a woman who lost two sons, and they tell her something that is true but is not the same as what she lost. The writer does not pretend the two are the same. He simply refuses to end the book anywhere else.",
     ],
     sources: "Campbell · Sasson · Fewell & Gunn · Trible",
   },
@@ -498,31 +498,31 @@ export const RUTH_INTRO: Panel = {
   kicker: "An introduction · Ruth 1–4",
   title: "The book of the two widows",
   paragraphs: [
-    "Ruth is four chapters and 85 verses, one of only two books in the Bible named for a woman, and the only one whose central relationship is between two of them. It is set in the time of the judges, the period the book of Judges presents as violent and coming apart, and it contains no battle, no miracle and no villain. In the Hebrew Bible it sits among the Writings and is read at Shavuot, in the harvest season the story turns on. Its position after Judges in Christian Bibles is a later arrangement, and it changes how the book reads.",
-    "When it was written is genuinely disputed. One case puts it in the Persian period, the fifth or fourth century, and reads it as an argument against the campaign in Ezra and Nehemiah to dissolve marriages to foreign women. Another argues for a much earlier date, holding that its Hebrew carries old forms and that the closing genealogy may have been added to a story already in circulation. The linguistic evidence gets used by both sides, which is worth knowing before anyone tells you the question is settled.",
-    "What is not disputed is that the book knows exactly what it is doing with its Moabite. It takes a woman from the people the law bars from the assembly, makes her the most faithful person in the story, has her swear loyalty in the LORD's name, and then ends by naming her as the great-grandmother of David, in the last line, as if daring the reader to do the arithmetic.",
-    "And it is a book with almost no God in it. He acts directly once, in a single clause in the last chapter, about a conception. Everything else that happens is people deciding what they owe each other and then doing more than that, which is what the book's key word means. Whatever Ruth is claiming about how rescue arrives, it is not claiming that it arrives from the sky.",
+    "Ruth is a short book of four chapters and eighty-five verses. It is one of only two books in the Bible named for a woman, the other being Esther, and it is the only one whose central relationship is between two women. The writer sets it in the time of the judges, a period the book of Judges portrays as violent and falling apart, yet Ruth contains no battle, no miracle, and no villain. In the Hebrew Bible it stands among the Writings, and Jews read it at Shavuot, the harvest festival, because the story takes place during the harvest. Christian Bibles place it after Judges, a later arrangement that changes how readers experience the book.",
+    "Scholars genuinely disagree about when Ruth was written. Some place it in the Persian period, in the fifth or fourth century BCE, and read it as a protest against the campaign in Ezra and Nehemiah to break up marriages to foreign women. Others argue for a much earlier date, pointing to old forms in its Hebrew, and suggest that someone added the closing genealogy to a story people were already telling. Both sides use the same language evidence, and readers should know that before anyone tells them the question is settled.",
+    "What no one disputes is that the writer knew exactly what he was doing with his Moabite heroine. He took a woman from the people the law barred from the assembly, made her the most faithful person in the story, had her swear loyalty in the LORD’s name, and then named her in the book’s last line as the great-grandmother of David, as if daring readers to work out what that means.",
+    "God also does very little in this book. The writer credits him with only two acts: sending bread to Bethlehem, which Naomi hears about secondhand, and enabling Ruth to conceive, in a single clause near the end. Everything else happens because people decide what they owe one another and then do more than that, which is what the book’s key word, hesed, means. Whatever the writer believes about how rescue comes, he does not show it coming from the sky.",
   ],
   timeline: [
     {
       tag: "c. 1200–1000 BCE",
-      text: "The period the story is set in: the time of the judges, before Israel has a king.",
+      text: "The time in which the writer sets the story: the period of the judges, before Israel had a king.",
     },
     {
       tag: "c. 1000 BCE",
-      text: "David, whom the closing genealogy exists to reach.",
+      text: "The reign of David, the king the closing genealogy is written to reach.",
     },
     {
       tag: "586 BCE",
-      text: "Jerusalem falls. Questions about who counts as Israel stop being theoretical.",
+      text: "The Babylonians destroy Jerusalem, and the question of who counts as an Israelite becomes urgent.",
     },
     {
       tag: "c. 450 BCE",
-      text: "Ezra and Nehemiah move to dissolve marriages to foreign women. Many read this book as the reply.",
+      text: "Ezra and Nehemiah order Israelite men to break up their marriages to foreign women. Many scholars read the book of Ruth as a reply.",
     },
     {
       tag: "Disputed",
-      text: "The date of writing. The arguments run from the monarchy to the Persian period, and the same evidence is used by both sides.",
+      text: "Possible dates for the writing of Ruth. Scholars argue for dates ranging from the time of the kings to the Persian period, and both sides use the same evidence.",
     },
   ],
   sources: "Campbell · Hubbard · Sasson · Eskenazi & Frymer-Kensky · Trible",
@@ -533,20 +533,20 @@ export const RUTH_CAPSTONE: Capstone = {
   kicker: "The whole book · Ruth 1–4",
   title: "Not given back, and built anyway",
   paragraphs: [
-    "Start with how little God does here. In eighty-five verses the narrator credits him with two things: bread arriving in Bethlehem, which Naomi hears about second-hand in a foreign country, and a conception in half a verse near the end. Everything else is people. A daughter-in-law who will not go home. A landowner who obeys a law generously when he could have obeyed it minimally. An old woman who knows the law and makes a plan. Ten elders who agree to a transaction the statutes do not quite cover. The book's key word appears three times and every time it means somebody doing more than they owed. Whatever this book claims about how rescue arrives, it does not claim it arrives from the sky.",
-    "Then what it refuses to do. Naomi does not get her husband back and does not get her sons back. The women tell her the child will renew her life and sustain her old age, and that is true, and it is a grandchild. She asked the town to call her bitter in chapter 1 and the book never records her taking it back, never stages the moment where she sees it differently, and never has anyone correct her. What she gets instead is a different life, arriving slowly, through work and through other people, and the book is completely clear that a different life is what it is.",
-    "And then the last line, which is the whole argument. A Moabite, from the people Deuteronomy bars from the assembly of the LORD to the tenth generation, is named as David's great-grandmother, without comment, as a matter of record. Nobody inside the story knows it. Read against a later campaign to send foreign wives away, this is not a warm story about inclusion. It is an argument, made in the form of a story, by somebody who knew exactly which law they were standing on and put the Moabite in the genealogy anyway.",
+    "Begin with how little God does in this book. In eighty-five verses the writer credits him with only two things: sending bread to Bethlehem, which Naomi hears about secondhand in a foreign country, and enabling Ruth to conceive, in half a verse near the end. People do everything else. A daughter-in-law refuses to go home. A landowner keeps a law generously when he could have kept it grudgingly. An old woman who knows the law makes a plan. Ten elders approve an arrangement that the written laws do not quite cover. The key word hesed appears three times, and each time someone uses it for doing more than was owed. Whatever the writer believes about how rescue comes, he does not show it coming from the sky.",
+    "Then notice what the writer refuses to do. Naomi does not get her husband back, and she does not get her sons back. The women tell her that the child will renew her life and care for her in old age, and that is true, but the child is a grandchild. In chapter 1 Naomi asked the town to call her bitter, and the writer never shows her taking it back, never stages a moment when she sees things differently, and never has anyone correct her. Instead she receives a different life, which comes slowly, through work and through other people, and the writer is completely clear that it is a different life and not the old one restored.",
+    "And then comes the last line, which carries the writer’s whole argument. He names a Moabite, from the people Deuteronomy barred from the assembly of the LORD to the tenth generation, as David’s great-grandmother, without comment, as a matter of record. No one inside the story knows it. If we read the book against the later campaign to send foreign wives away, we see that the writer has not written a warm story about inclusion. He has made an argument in the form of a story, knowing exactly which law he was standing against, and he put the Moabite into the genealogy anyway.",
   ],
   tensions: [
     {
       claim:
-        "Israel is to keep itself separate. No Moabite may enter the assembly of the LORD, even to the tenth generation, and foreign wives are to be sent away.",
+        "Israel is to keep itself separate: no Moabite may enter the assembly of the LORD, even to the tenth generation, and Israelite men are to send their foreign wives away.",
       counter:
-        "This book makes a Moabite the most faithful person in it and the great-grandmother of David, and puts it in the last line without arguing for it.",
+        "The writer of Ruth makes a Moabite the most faithful person in his book and the great-grandmother of David, and he states it in the last line without arguing for it.",
       where:
         "Deuteronomy 23:3 · Ezra 9–10 · Nehemiah 13:23–27 · Ruth 4:17–22",
     },
   ],
   sources: "Campbell · Hubbard · Sasson · Trible · Eskenazi & Frymer-Kensky",
-  ask: "What is being built in your life right now that will only make sense to somebody who comes after you?",
+  ask: "What are you building in your life right now that may only make sense to someone who comes after you?",
 };
