@@ -10,23 +10,23 @@ const TOP_ID = "signin-top";
 const WHYS = [
   {
     title: "An AI companion",
-    body: "Draws out the meaning, turn and question for a reading. Strata Plus.",
+    body: "Strata Plus adds a companion that drafts the meaning, turn and question.",
   },
   {
     title: "History comes first",
-    body: "Who wrote it, when, and what was happening then.",
+    body: "Each reading begins with who wrote it and when.",
   },
   {
     title: "Honest about tensions",
-    body: "Open questions are shown, not boiled down to a tidy lesson.",
+    body: "Strata shows open questions instead of tidying them away.",
   },
   {
     title: "A question for you",
-    body: "Each reading ends with one to answer in your own words.",
+    body: "Each reading ends with a question for you to answer.",
   },
   {
     title: "Free to start",
-    body: "Genesis 1 to 11 is free, with no account.",
+    body: "Genesis 1 to 11 is free to read without an account.",
   },
 ];
 
@@ -35,19 +35,19 @@ const FEATURES = [
     src: "/images/signin-home.jpg",
     alt: "Strata home screen with Genesis and Exodus.",
     title: "A library, read in movements",
-    body: "Short daily readings, grouped into movements with an introduction and a capstone.",
+    body: "Daily readings are grouped into movements, each with an introduction and a capstone.",
   },
   {
     src: "/images/signin-history.jpg",
     alt: "A reading of Genesis 1 opening with the history layer about the Babylonian exile.",
     title: "History behind every passage",
-    body: "Each reading opens with who wrote it and what was happening then.",
+    body: "Every reading opens by saying who wrote it and what was happening then.",
   },
   {
     src: "/images/signin-turn.jpg",
     alt: "The meaning and the turn layers of a reading, ending with a question to answer.",
     title: "Meaning, the turn, your response",
-    body: "Then what it means, how it speaks to you now, and a question to answer.",
+    body: "Then you see what it means, how it speaks to you, and a question to answer.",
   },
 ];
 
@@ -121,8 +121,7 @@ export function SignInTour() {
           Read the Bible with its history.
         </p>
         <p className="mt-4 text-center font-body text-[14.5px] leading-[1.7] text-parchment-2">
-          Every passage opens with its history, then its meaning, its turn to
-          you, and a question.
+          Every passage opens with its history and ends with a question for you.
         </p>
 
         <h3 className="mt-12 font-display text-[17px] font-medium text-parchment">
