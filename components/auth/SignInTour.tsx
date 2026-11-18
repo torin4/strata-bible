@@ -35,7 +35,7 @@ const FEATURES = [
     src: "/images/signin-home.jpg",
     alt: "Strata home screen with Genesis and Exodus.",
     title: "Short daily readings",
-    body: "Readings are grouped by theme, and each group starts with an introduction.",
+    body: "Readings are grouped into sections, and each section starts with an introduction.",
   },
   {
     src: "/images/signin-history.jpg",
