@@ -13,9 +13,9 @@ export const GENESIS: Reading[] = [
     chapterIndex: 1,
     title: 'Creation',
     unitLabel: 'Day',
-    thread: 'The exiles open their story by answering Babylon. Where the empire’s gods made the world through war, here one God speaks it into being, and calls it good.',
+    thread: 'The priests who wrote this chapter were living as exiles in Babylon, among people who told how their gods had made the world through a great war. Genesis 1 answers that story. In it one God makes the world by speaking, without a battle or a rival, and he calls what he makes good.',
     closeMid: 'There was evening and there was morning.',
-    closeEnd: 'That is the seventh day. The creation account is complete.',
+    closeEnd: 'With the seventh day, the writer finishes the first account of creation.',
     passages: [
       {
         label: 'One',
@@ -47,17 +47,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Priests wrote this during the Babylonian exile, around the 500s BCE. Their conquerors had a creation story in which the world was made through a war between gods. Genesis answers it: one God makes everything by speaking. No battle, no rival.',
+          text: 'Priests wrote this chapter during the Babylonian exile, in the 500s BCE, after the Babylonians had destroyed Jerusalem and carried many of its people away. Their conquerors told a creation story, the Enuma Elish, in which the god Marduk made the world out of the body of a defeated rival. Genesis answers that story directly. Here one God makes everything simply by speaking, and he has no battle to fight and no rival to defeat.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Wellhausen · the Enuma Elish'
         },
-        meaning: 'God creates by <b>speaking</b>, not by force. And light is made on day one, before the sun on day four, so this “light” is really the first act of separating one thing from another. God calls it <b>good</b> before any human exists to use it. Creation is good in itself.',
+        meaning: 'God creates by <b>speaking</b>, and he uses no force at all. He makes light on the first day, three days before he makes the sun, so the writer cannot mean sunlight. The first light is God’s first act of separating one thing from another, light from darkness. God then calls the light good before any human exists to make use of it, which tells us that creation is good in itself and not only because it serves us.',
         lenses: {
-          theo: 'In the traditional reading the key word is <b>good</b>, said before any human exists or anything is useful. So the world is good in itself, a gift, not something earned. That is the floor the rest of the Bible stands on. (Heschel, God in Search of Man.)',
-          arch: 'Older than Genesis, and far more widespread, is the image of a world drawn out of formless water by separation, chaos parted into an ordered cosmos. It surfaces in the myths of many peoples, and it keeps surfacing because it names something no one stops doing: every act of making begins by dividing, this from that, the kept from the let go, until a shapeless thing takes form. The chapter speaks that ancient grammar in its own key, and the pattern it traces is one any maker still walks. (Eliade, The Sacred and the Profane.)'
+          theo: 'Traditional Jewish and Christian readers have given great weight to the word <b>good</b>, because God says it before any human exists and before anything has been put to use. On this reading the world is good in itself, and people receive it as a gift rather than something they have earned. The later writers of the Bible build on that foundation. (Heschel, God in Search of Man.)',
+          arch: 'Long before Genesis was written, many peoples told of a world drawn out of shapeless water, as a god separated one part of the chaos from another until an ordered world appeared. Scholars of religion such as Mircea Eliade found the image in the myths of peoples all over the world. Perhaps people keep telling it because every maker works the same way, dividing this from that and keeping some things while letting others go, until a shapeless thing takes form. The writer of Genesis tells the old story in his own way, and anyone who makes something still follows the pattern he describes. (Eliade, The Sacred and the Profane.)'
         },
         addr: {
           mode: 'names',
-          text: 'There is probably something in your life that feels unformed or stuck, waiting on you to act. Genesis says creation began not with force, but with a decision said out loud.'
+          text: 'Most of us have something in our lives that feels unformed or stuck, waiting for us to act. In Genesis, God does not begin creation with force. He begins it by deciding what will be and saying it out loud.'
         },
         ask: 'What is one thing you could decide and say out loud this week?'
       },
@@ -83,15 +83,15 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Ancient readers pictured the sky as a solid dome holding back an ocean above, with rain falling through its windows. Genesis uses that shared picture, but with no gods in it, only God making room.',
+          text: 'People in the ancient Near East pictured the sky as a solid dome that held back an ocean above it, and they believed rain fell through windows in that dome. The writer of Genesis uses the same picture of the world that his neighbors used, but he leaves out their gods. In his account, God alone makes room for the world by holding the waters apart.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Keel · Walton'
         },
-        meaning: 'The act here is <b>separation, making space</b>. God holds the waters back to open a livable middle. Order isn’t control for its own sake. It’s carving out room for life.',
+        meaning: 'On the second day God <b>makes space</b>. He separates the waters above from the waters below and so opens a middle region where living things can survive. When God brings order to the world, he is not controlling it for the sake of control. He is making room for life.',
         addr: {
           mode: 'names',
-          text: 'Living things need space that something has to hold open for them. Sometimes the loving move is a boundary, not more activity.'
+          text: 'Living things need space, and someone has to hold that space open for them. Sometimes the most loving thing we can do for another person is to set a boundary rather than to do more.'
         },
-        ask: 'Where do you need to make space, or hold a line, so something can breathe this week?'
+        ask: 'Where do you need to make room, or hold a line, this week so that someone you care for has space to grow?'
       },
       {
         label: 'Three',
@@ -123,13 +123,13 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Notice the design: days one to three build the realms (light, sky, land), days four to six fill them. It’s structured like a poem, not a lab report.',
+          text: 'The writer arranged the six days with care. On the first three days God makes the realms of the world, light, sky, and land, and on the next three he fills them with lights, with birds and fish, and with animals and people. The writer built the chapter like a poem, and he did not mean it to be read as a laboratory report.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Wenham'
         },
-        meaning: 'God says, “Let the earth bring forth.” He doesn’t make the plants directly. He <b>invites the ground to bring them out</b>. Creation is handed the power to keep creating.',
+        meaning: 'God says, “Let the earth bring forth vegetation.” He does not make the plants directly, but <b>invites the earth to bring them out</b>. In this way God shares his work with what he has made, and gives it the power to go on producing life.',
         addr: {
           mode: 'names',
-          text: 'Some things can’t be forced into being. You can only make the conditions and let them grow.'
+          text: 'Some good things cannot be forced into being. We can only prepare the right conditions and then wait for them to grow, as a farmer does.'
         },
         ask: 'What have you been trying to force that might just need room and time?'
       },
@@ -167,18 +167,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In Babylon the sun and moon were gods, Shamash and Sin. Genesis refuses to name them. It calls them only “the greater” and “the lesser light,” demoted to lamps and clocks. The stars, the heart of Babylonian astrology, get an afterthought: “And He made the stars as well.” A deliberate snub.',
+          text: 'The Babylonians worshipped the sun and the moon as gods, named Shamash and Sin. The writer of Genesis refuses even to use the ordinary words for sun and moon. He calls them only “the greater light” and “the lesser light,” as if they were lamps and clocks. He mentions the stars, which Babylonian astrologers studied to read the future, almost in passing: “And He made the stars as well.” He meant his readers to notice the slight.',
           src: 'Smith, The Origins of Biblical Monotheism · The Priestly Vision of Genesis 1'
         },
-        meaning: 'The sky is <b>switched off as a set of powers</b>. The lights don’t rule your fate. They keep time. You are not at the mercy of the heavens.',
+        meaning: 'In this scene the writer <b>takes away the sky’s power</b>. God places the lights in the sky to keep time, not to rule over human lives, so no one needs to live at the mercy of the heavens.',
         lenses: {
-          arch: 'Across the ancient world the lights overhead were powers to be feared and read for fate. To turn them into a calendar, lamps that keep time rather than gods that govern it, is one of the oldest demotions humans have performed, and one they keep performing on whatever they once let rule them. (The sky brought down from ruler to instrument.)'
+          arch: 'Across the ancient world, people feared the lights in the sky as powers and studied them to learn their fate. When the writer of Genesis turns them into a calendar, he does something people have done many times since: he takes a thing they once let rule them and puts it back in its place as a tool.'
         },
         addr: {
           mode: 'names',
-          text: 'Most of us let something quietly govern us. Fear, other people’s opinions, the markets, what the future might do. Genesis takes the things people worshipped and turns them into furniture.'
+          text: 'Most of us let something quietly govern our lives, whether fear, other people’s opinions, money, or worry about the future. The writer of Genesis took the things his neighbors worshipped and treated them as household furniture.'
         },
-        ask: 'What have you been treating like a god that’s really just a lamp? What changes if you demote it?'
+        ask: 'What have you been treating like a god that is really only a lamp? How would you live differently if you put it back in its place?'
       },
       {
         label: 'Five',
@@ -206,13 +206,13 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Notice “the great sea creatures.” Elsewhere in the ancient world those are dread chaos-monsters. Here they’re just animals God makes and calls good. The monsters get demythologized too.',
+          text: 'Elsewhere in the ancient world, people told of great sea monsters who stood for chaos and fought against the gods. The writer of Genesis mentions “the great sea creatures” only as animals that God makes and calls good. He treats the old monsters the way he treated the sun and moon, and takes away their power to frighten.',
           src: 'Smith, The Priestly Vision of Genesis 1 · John Day, God’s Conflict with the Dragon and the Sea'
         },
-        meaning: 'The <b>first blessing</b> in the Bible lands here: be fruitful, multiply, fill. Life is given the power to make more life. The note is abundance, not scarcity.',
+        meaning: 'Here God gives the <b>first blessing</b> in the Bible, when he tells the creatures to be fruitful, multiply, and fill the seas and the sky. He gives living things the power to make more life, and he gives it out of abundance, not scarcity.',
         addr: {
           mode: 'names',
-          text: 'The first thing God blesses is increase. More life, given freely.'
+          text: 'The first thing God blesses is increase. He gives more life freely, without anyone asking for it or earning it.'
         },
         ask: 'Where could you act from abundance instead of fear this week?'
       },
@@ -250,18 +250,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In the ancient Near East, the king was called the “image” of a god, a living stand-in for divine authority. Genesis takes that royal title and gives it to every human being, male and female alike. A buried revolution.',
+          text: 'In the ancient Near East, people called their king the “image” of a god, meaning that he stood on earth in the god’s place and carried the god’s authority. The writer of Genesis takes that royal title and gives it to every human being, male and female alike. He makes the claim quietly, but his first readers would have heard how radical it was.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Middleton, The Liberating Image'
         },
-        meaning: '<b>Everyone carries the image of God.</b> Dignity isn’t earned or ranked. It’s given, and given equally. And only here, at the end, does God call it not just good but “very good.”',
+        meaning: 'According to Genesis, <b>everyone carries the image of God</b>. No one earns that dignity, and God does not hand it out by rank. He gives it to every person equally. Only at this point, after he has made human beings, does God call his work not just good but “very good.”',
         lenses: {
-          theo: 'This verse is the root of human dignity in the Western tradition: the claim that every person has a worth no status, usefulness, or failure can cancel. It runs through Jewish and Christian ethics ever since.'
+          theo: 'Many thinkers trace the Western belief in human dignity back to this verse. It teaches that every person has a worth that no status, usefulness, or failure can cancel, and Jewish and Christian teachers have built their ethics on that belief ever since.'
         },
         addr: {
           mode: 'names',
-          text: 'The hardest place to believe this is usually a specific face. Someone you can’t stand, or your own in the mirror.'
+          text: 'We usually find this hardest to believe about one particular person, perhaps someone we cannot stand, or perhaps the face we see in the mirror.'
         },
-        ask: 'Who is one person, maybe yourself, you struggle to see as carrying it? Sit with that today.'
+        ask: 'Who is one person, perhaps yourself, whom you find it hard to see as carrying God’s image? Spend some time today thinking about why.'
       },
       {
         label: 'Seven',
@@ -285,13 +285,13 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'For exiles who had lost their temple and their land, this was everything: holiness you could keep anywhere, in time rather than place. A day you carry with you.',
+          text: 'The exiles in Babylon had lost their temple and their land, the places where they had always met God. The Sabbath gave them a kind of holiness they could keep anywhere, because God had set it in time rather than in a place. Wherever their captors took them, they could still keep the seventh day.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Heschel, The Sabbath'
         },
-        meaning: 'The whole week of making is built toward <b>stopping</b>. Rest is the goal of creation, not a reward for finishing the work but the point of it. And it is the first thing God calls holy.',
+        meaning: 'God builds the whole week of creation toward <b>rest</b>. He does not rest as a reward for finishing his work. The rest is the point of the work, and the seventh day is the first thing in the Bible that God calls holy.',
         addr: {
           mode: 'names',
-          text: 'Notice it doesn’t end with humanity. It ends with rest. Most of us collapse, few of us rest as if it were sacred.'
+          text: 'The writer does not end the account of creation with the making of human beings. He ends it with God resting. Most of us work until we collapse, and very few of us rest as though rest were sacred.'
         },
         ask: 'What would it take to set one day, or even one hour, genuinely apart this week?'
       }
@@ -305,8 +305,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 2,
     title: 'The garden',
     unitLabel: 'Scene',
-    thread: 'The same exilic library turns from sky to soil. An older hand asks what a human is, and hands him a garden, a task, and a single limit he is trusted with.',
-    closeEnd: 'They stand together, unashamed. It is the last calm before the serpent.',
+    thread: 'Genesis 2 comes from a different and older writer than Genesis 1, and the editors placed it right after the first account. This writer turns from the sky to the soil and asks what a human being is. In his telling, God gives the first man a garden, work to do there, and a single limit that God trusts him to keep.',
+    closeEnd: 'The man and the woman stand together and feel no shame. They will not have that peace for long, because in the next chapter the serpent appears.',
     passages: [
       {
         label: 'One',
@@ -334,17 +334,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the second creation account, and an older hand wrote it. The order runs backwards from chapter 1: here the human comes first, before plants and animals. The editors kept both stories side by side rather than smoothing them into one. And the name is a pun: adam, the human, is formed from adamah, the ground. An earthling, out of earth.',
+          text: 'This is the second account of creation, and an older writer composed it. He tells things in a different order from chapter 1, since here God makes the human first, before any plants or animals. The editors of Genesis kept both accounts side by side instead of blending them into one. The writer also plays on words: God forms adam, the human, from adamah, the ground, so we might call the first human an earthling, made out of earth.',
           src: 'Wellhausen · Friedman · Smith'
         },
-        meaning: 'The human being is dust and breath in the same instant. Mortal, earthy stuff, and the breath of God, held together. Not a soul trapped in a body, not merely an animal, but both at once: ground that God breathed into.',
+        meaning: 'God makes the human being out of two things at once: the dust of the ground, which is mortal and earthy, and his own breath. The writer does not picture a soul trapped inside a body, and he does not picture a mere animal either. He pictures earth that God has breathed into, so that a human being is both.',
         lenses: {
-          theo: 'The two halves are a built-in humility and a built-in dignity. You are dust, so you can’t take yourself too seriously or imagine you are your own source. And you are God-breathed, so you can’t despise yourself either. Lose track of either half and something goes wrong.',
-          arch: 'The forming of a human from clay or dust, then quickened by a god’s breath, is one of the most widespread images in the ancient world, from the potter-gods of Egypt to the clay and divine blood of Mesopotamia. What recurs is the double nature it insists on: the creature is earth and more than earth, matter that has been breathed into. You are being told, in the oldest terms there are, what kind of thing you are. (The dust quickened by breath, told the world over.)'
+          theo: 'Many readers have found in these two halves both a reason for humility and a reason for dignity. Because we are dust, we cannot take ourselves too seriously or imagine that we made ourselves. Because God breathed into us, we cannot despise ourselves either. When we forget either half, we go wrong.',
+          arch: 'Peoples across the ancient world told how a god formed the first humans from clay or dust and then gave them life. In Egypt the god Khnum shaped people on a potter’s wheel, and in Mesopotamia the gods made them from clay mixed with the blood of a slain god. These stories agree that a human being is made of earth and yet is more than earth. In the oldest terms they had, the storytellers were telling their hearers what kind of creature they were.'
         },
         addr: {
           mode: 'names',
-          text: 'Most days you forget one half of yourself. Some days you live as if you were only dust. Other days you act as if you were only breath, above your own limits.'
+          text: 'Most of us forget one half of ourselves on most days. Sometimes we live as if we were only dust, and at other times we act as if we were only breath and had no limits at all.'
         },
         ask: 'Which half are you forgetting today?'
       },
@@ -398,18 +398,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The man is placed in the garden “to cultivate and keep it,” the same pair of verbs later used for serving and guarding the temple. Eden is a sanctuary and the human is its gardener-priest, given real work, not idle ease. The rivers, the Tigris and Euphrates among them, root the garden in the actual map of the ancient world. And the command is mostly permission: eat from any tree, with one exception.',
+          text: 'God places the man in the garden “to cultivate and keep it,” and later writers in the Bible use the same pair of verbs for the priests who served and guarded the temple. In this picture Eden is a sanctuary, and God gives the man real work there as its gardener and priest, not a life of idle ease. The writer names rivers his readers knew, among them the Tigris and the Euphrates, to set the garden on the real map of their world. And God’s command is mostly permission, since he lets the man eat from every tree but one.',
           src: 'Walton · Wenham'
         },
-        meaning: 'Freedom and a limit arrive together. He is handed a whole garden and one “no.” That single boundary is what makes him free rather than a kept animal, there is something he could do and chooses not to. A world with no limit at all isn’t paradise. It’s a place where nothing you do can mean anything.',
+        meaning: 'God gives the man freedom and a limit at the same time. He hands him a whole garden and only one “no.” That single limit is what makes the man free rather than a kept animal, because now there is something he could do and can choose not to do. If God had set no limit at all, the garden would not be a paradise, because nothing the man did could mean anything.',
         lenses: {
-          theo: 'The one forbidden tree is not God being stingy. It is the room a real relationship needs: an actual choice, a trust that can be kept or broken. Without it the man would be a pet in a beautiful cage. The limit is what makes him a partner.'
+          theo: 'God does not forbid the one tree out of stinginess. He forbids it because a real relationship needs room for a real choice, a trust that the man can keep or break. Without that choice, the man would be like a pet in a beautiful cage. By giving him a limit, God makes him a partner.'
         },
         addr: {
           mode: 'names',
-          text: 'You tend to stare at the single “no” in your life until it blots out the whole garden of “yes” around it.'
+          text: 'Most of us tend to stare at the one “no” in our lives until we can no longer see the whole garden of “yes” around it.'
         },
-        ask: 'What one limit are you fixated on, and what is the garden you’re ignoring around it?'
+        ask: 'Which one limit have you been fixed on, and what good things around it have you been ignoring?'
       },
       {
         label: 'Three',
@@ -433,18 +433,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Here is the first thing in the Bible called “not good.” In chapter 1 everything was good; the lone exception in this whole telling is solitude. The word for “helper” carries no hint of inferiority, it is used elsewhere of God himself helping Israel, and “suitable” means a counterpart, his match. Watch him name every animal and find that none of them answer back.',
+          text: 'Here God calls something “not good” for the first time in the Bible. In chapter 1 God called everything good, and in this account the one thing he finds lacking is that the man is alone. The Hebrew word translated “helper” does not suggest that the helper is lesser, since biblical writers use the same word for God when he helps Israel. The word “suitable” means a counterpart, someone who matches the man. Then watch what happens as the man names every animal: he finds that none of them can answer him.',
           src: 'Westermann'
         },
-        meaning: 'Loneliness is the first flaw in a finished world. Not sin, not danger, just being unaccompanied. He has authority over every creature and an equal among none of them. You can be surrounded, and in charge, and still alone.',
+        meaning: 'In a world God has otherwise finished, the first thing he finds wrong is loneliness. The man has not sinned and is not in danger. He is simply without a companion. He has authority over every creature, but none of them is his equal. A person can be surrounded by others, and in charge of them, and still be alone.',
         lenses: {
-          theo: 'The human is made for communion, not only for work. The text quietly insists that even in a perfect garden, even with God himself walking there, a person is built to need another person. That is not a defect to be fixed. It is how we are made.'
+          theo: 'God made human beings for companionship, and not only for work. The writer quietly insists that even in a perfect garden, with God himself walking there, a person needs another person. That need is not a defect that God must fix. It is part of how he made us.'
         },
         addr: {
           mode: 'names',
-          text: 'You can be capable, busy, in charge of everything in your care, and still come home to no one who truly answers you.'
+          text: 'We can be capable and busy, responsible for everything in our care, and still come home to no one who truly answers us.'
         },
-        ask: 'Where are you alone in a way you’ve quietly stopped admitting?'
+        ask: 'Is there a way in which you are alone that you have quietly stopped admitting, even to yourself?'
       },
       {
         label: 'Four',
@@ -476,17 +476,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The word usually rendered “rib” really means “side,” the man’s whole flank, his other half. It may carry an old Sumerian pun in which the lady of the rib is also the lady of life. She is made not from his head or his foot but from his side, the same substance, level with him. “Bone of my bones” is the first human poetry in the Bible.',
+          text: 'The Hebrew word that English Bibles usually translate “rib” more often means “side,” and some scholars think it refers to a whole side of the man, as though the woman were his other half. Some also hear an echo of an old Sumerian wordplay, in which one word could mean both “rib” and “life.” God makes the woman neither from the man’s head nor from his foot but from his side, out of the same substance, so that she stands level with him. The man’s cry, “bone of my bones,” is the first human poetry in the Bible.',
           src: 'Smith · Kramer'
         },
-        meaning: 'The partner is not shaped from dust a second time but taken from the man’s own side, his equal and his like. His first words are a cry of recognition: at last, one of my own kind. And the two stand fully exposed to each other and feel no shame, the last clear glimpse of the world before the hiding begins.',
+        meaning: 'God does not shape the man’s partner from the dust a second time. He takes her from the man’s own side, so that she is his equal and his like. The man’s first words are a cry of recognition, as if to say, “At last, here is one of my own kind.” The two of them stand fully exposed to each other and feel no shame. This is the last clear picture the writer gives us of the world before the hiding begins.',
         lenses: {
-          theo: 'Made from his side, she stands beside him, not beneath. “One flesh” is the language of a new kinship, a bond reckoned as strong as blood. The chapter ends with two people wholly seen and wholly unafraid, which is exactly what the next chapter takes from them.',
-          arch: 'The memory of a first wholeness, a time before shame when the human stood unhidden, runs through the world’s oldest stories as the lost golden age, the paradise before the breaking. What recurs is the ache it leaves behind, the sense of living east of some earlier ease, and the longing to be met again by your own kind without having to cover. (Eliade, on the nostalgia for paradise.)'
+          theo: 'Because God made the woman from the man’s side, she stands beside him and not beneath him. When the writer says the two become “one flesh,” he is describing a new kind of family bond, which he counts as being as strong as blood. At the end of the chapter the writer leaves us with two people who are completely seen by each other and completely unafraid, and in the next chapter they lose exactly that.',
+          arch: 'Many of the world’s oldest stories remember a first age of wholeness, before shame, when human beings had nothing to hide. People have called it the golden age, or the paradise that was lost. Mircea Eliade noticed how often these stories leave their hearers with a longing for that earlier ease, and a wish to be met again by someone of their own kind without having to cover themselves. (Eliade, on the nostalgia for paradise.)'
         },
         addr: {
           mode: 'names',
-          text: 'There is a deep relief in being recognized by someone as their own kind, and a deep fear of being that unguarded in front of anyone. The garden holds both, for one more verse.'
+          text: 'We feel deep relief when someone recognizes us as one of their own, and deep fear at the thought of being that unguarded in front of anyone. The man and the woman feel only the relief, and they will feel it for one more verse.'
         },
         ask: 'Where do you most want to be seen without having to cover, and what makes that feel dangerous?'
       }
@@ -723,8 +723,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 4,
     title: 'Cain and Abel',
     unitLabel: 'Scene',
-    thread: 'The break spreads. What split the first couple from God now splits brother from brother, and the first death in the story is a killing.',
-    closeEnd: 'Violence has entered the world, and so has worship. The story will follow both lines down.',
+    thread: 'In Genesis 3 the man and the woman broke their trust with God. In Genesis 4 their sons break with each other, when Cain kills his brother Abel, and the first death in the Bible is a murder.',
+    closeEnd: 'By the end of the chapter, people have begun both to kill one another and to worship God. The writer follows both of these lines through the chapters that come next.',
     passages: [
       {
         label: 'One',
@@ -756,15 +756,15 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The text pointedly never says why one offering was received and the other was not. Readers have filled the silence for centuries, Abel brought his best and Cain did not, or it was a matter of the heart, but Genesis leaves the gap open. Notice the old pairing underneath: Cain the farmer, Abel the herder, the rivalry of field and flock that a herding people told about itself.',
+          text: 'The writer never says why God accepted Abel’s offering and not Cain’s. Readers have tried to fill the silence for centuries, some saying that Abel brought his best and Cain did not, others that the difference lay in their hearts, but Genesis leaves the question open. Beneath the story lies an old rivalry between Cain the farmer and Abel the herder, the kind of tale herding peoples told about the conflict between field and flock.',
           src: 'Westermann'
         },
-        meaning: 'The story refuses to hand Cain a clean reason. Sometimes you bring what you have and it doesn’t land the way you hoped, and no explanation arrives. What the text watches is not the slight itself but what a person does with it.',
+        meaning: 'The writer does not give Cain a clear reason for what happened. Sometimes we bring what we have, and other people do not receive it as we hoped, and no one ever explains why. The writer is less interested in the slight itself than in what Cain does with it.',
         addr: {
           mode: 'names',
-          text: 'You know the feeling of bringing your effort and watching it fall flat while someone else’s is received.'
+          text: 'Most of us know what it is like to put real effort into something, only to watch it fall flat while someone else’s effort is welcomed.'
         },
-        ask: 'What did you offer that wasn’t received the way you hoped, and what is it doing to you?'
+        ask: 'What have you offered that was not received as you hoped, and how has that disappointment been affecting you?'
       },
       {
         label: 'Two',
@@ -784,19 +784,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'God speaks to Cain before the murder, not after, a warning rather than a verdict. “Sin is crouching at your door” pictures sin as a predator at the threshold, an image that echoes a Mesopotamian word for a demon that waited at doorways. And “it desires you, but you must master it” are almost exactly the words spoken to the woman one chapter earlier, now turned on sin itself.',
+          text: 'God speaks to Cain before the murder, not after it, so his words are a warning rather than a verdict. When he says that “sin is crouching at your door,” he pictures sin as a predator waiting at the threshold, and the Hebrew word may echo a Mesopotamian name for a demon that lurked in doorways. God then tells Cain that sin “desires you, but you must master it,” using almost the same words he spoke to the woman one chapter earlier.',
           src: 'Smith · Walton'
         },
-        meaning: 'There is a gap between the anger and the act, and God meets Cain inside it. Sin is drawn as an animal at the threshold, wanting in. The feeling is not yet the sin. What you do with the door is.',
+        meaning: 'Between Cain’s anger and his act of murder there is a gap, and God meets him inside it. God describes sin as an animal at the door, wanting to get in. Cain’s anger is not yet a sin. What matters is what he does when sin comes to the door.',
         lenses: {
-          theo: 'This is the chapter’s mercy, and it’s easy to miss. Before Cain lifts a hand, God comes to him, names the danger, and tells him plainly that he can still master it. The warning is grace. The freedom is real.',
-          arch: 'What a person refuses to face does not stay outside them; it comes back to rule them as if it were fate. The appetite crouching like a beast at the threshold, waiting to be either mastered or fed, is an image drawn in every age, and it names a permanent fork: the thing turned toward and ruled, or turned from and obeyed. Cain is told to face it while he still can. (Jung, on the shadow that rules you until you turn and face it.)'
+          theo: 'Readers can easily miss the mercy in this scene. Before Cain lifts a hand against his brother, God comes to him, names the danger, and tells him plainly that he can still master it. God’s warning is an act of grace, and the freedom he gives Cain is real.',
+          arch: 'Carl Jung taught that whatever a person refuses to face in themselves does not go away, but returns to rule them as if it were fate. People in every age have drawn the same picture Genesis draws here, of an appetite crouching like a beast at the door, which a person must either master or feed. God tells Cain to face it while he still can. (Jung, on the shadow that rules you until you turn and face it.)'
         },
         addr: {
           mode: 'names',
-          text: 'There is a door in you with something crouching at it right now, a resentment, a habit, a rage you have been quietly feeding. You are nearer the threshold than the deed. That is the whole point of the warning.'
+          text: 'Most of us have something crouching at our own door, whether a resentment, a habit, or an anger we have been quietly feeding. Like Cain, we are still closer to the threshold than to the deed, and that is why God’s warning matters.'
         },
-        ask: 'What is crouching at your door, and what would ruling it, instead of feeding it, look like today?'
+        ask: 'What is crouching at your door, and what would it look like for you to master it today instead of feeding it?'
       },
       {
         label: 'Three',
@@ -820,18 +820,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The Hebrew of verse 8 is broken: Cain says something to Abel and the words have dropped out of the oldest text, so the murder happens in a blank. “Am I my brother’s keeper?” is the first evasion in the Bible. And the victim is not silent, the word for blood is plural, and it cries from the ground that drank it.',
+          text: 'Part of verse 8 is missing from the Hebrew text that has come down to us. Cain says something to Abel, but his words are lost, though some ancient translations supply them, so in the Hebrew the murder happens in a blank. Cain’s reply to God, “Am I my brother’s keeper?”, is the first evasion in the Bible. Abel does not stay silent either, because God says that his brother’s blood cries out from the ground, and the Hebrew word for blood here is plural.',
           src: 'Westermann'
         },
-        meaning: 'The first death in the story is not natural. It is a killing, and it is a brother. Cain’s question expects the answer no. The rest of the Bible spends itself answering yes. And notice the spilled blood has a voice. Violence does not stay buried; the ground itself testifies.',
+        meaning: 'The first person to die in the Bible does not die naturally. His own brother kills him. Cain asks his question expecting God to answer no, but the later writers of the Bible answer yes. God also hears Abel’s spilled blood crying out, which tells us that God does not let violence stay buried.',
         lenses: {
-          theo: '“Am I my brother’s keeper?” is the question the whole law and the prophets exist to answer. The God of this scene hears the victim from the dirt. Wherever someone is harmed and hidden away, the text insists, the cry still reaches him.'
+          theo: 'One way to read the law and the prophets is as a long answer to Cain’s question, “Am I my brother’s keeper?” In this scene God hears the victim’s cry from the ground. The writer insists that wherever someone is harmed and hidden away, God still hears.'
         },
         addr: {
           mode: 'names',
-          text: '“Am I my brother’s keeper” is the line you reach for whenever you would rather not be responsible for someone you have failed.'
+          text: 'We tend to ask Cain’s question, “Am I my brother’s keeper?”, whenever we would rather not take responsibility for someone we have failed.'
         },
-        ask: 'Whose keeping have you been telling yourself is not yours?'
+        ask: 'Who have you been telling yourself is not your responsibility?'
       },
       {
         label: 'Four',
@@ -867,17 +867,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The “mark of Cain” has been read monstrously, twisted for centuries into a brand of inferiority and used to defend slavery and racism. The text says the opposite. The mark is protection, a sign God places on Cain so that no one will kill him. Even the first murderer is shielded from the violence he set loose. And he settles in Nod, a name that means “wandering”: he becomes the restlessness he is sentenced to.'
+          text: 'For centuries some readers twisted the “mark of Cain” into a sign of inferiority, and used it to defend slavery and racism. The writer says the opposite. God places the mark on Cain to protect him, so that no one will kill him, and in this way God shields even the first murderer from the violence he started. Cain then settles in the land of Nod, a name that means “wandering,” so the place where he lives matches the restless life God sentenced him to.'
         },
-        meaning: 'The sentence is exile and unrest, not death. And then mercy moves: God guards the life of the guilty man. A story that could have ended in execution ends instead with a mark of protection laid on the murderer. Justice and mercy arrive in the same breath.',
+        meaning: 'God sentences Cain to exile and restlessness, but not to death. Then God shows mercy by guarding the life of the guilty man. The story could have ended with an execution, but instead God marks the murderer for protection, and so he acts with justice and mercy at the same time.',
         lenses: {
-          theo: 'Cain is cursed and Cain is kept, at once. The God of this chapter neither excuses the murder nor abandons the murderer. That double note, real consequence and stubborn protection, runs from here through the whole story.'
+          theo: 'God curses Cain and keeps him at the same time. He does not excuse the murder, and he does not abandon the murderer. From this chapter onward, the writers of the Bible keep showing God this way, giving real consequences and yet stubbornly protecting the people who suffer them.'
         },
         addr: {
           mode: 'names',
-          text: 'You carry the weight of things you have done. You may also be carried, protected in ways you never earned, right in the middle of them.'
+          text: 'We carry the weight of the wrongs we have done. Yet, like Cain, we may also be protected in the middle of those consequences, in ways we never earned.'
         },
-        ask: 'Where are you being protected inside consequences you brought on yourself?'
+        ask: 'In what ways has someone protected you while you lived with the consequences of your own choices?'
       },
       {
         label: 'Five',
@@ -905,19 +905,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Between the mark and these verses the text races through Cain’s descendants. He builds the first city, and his line invents herding, music, and metalwork; civilization is born east of Eden, in the murderer’s family. Seven generations down comes Lamech, who sings the first poem in the Bible, and it is a boast: Cain was avenged sevenfold, Lamech seventy-sevenfold. The appetite for vengeance compounds down the line. Then, abruptly, another line begins.',
+          text: 'Between the mark and these verses, the writer quickly lists Cain’s descendants. Cain builds the first city, and his descendants are the first to herd livestock, play music, and work metal, so the writer places the beginnings of civilization east of Eden, in the murderer’s family. Seven generations after Adam comes Lamech, who sings the first poem in the Bible, and his poem is a boast: if Cain would be avenged sevenfold, Lamech will be avenged seventy-sevenfold. Each generation in this line wants more revenge than the last. Then, quite suddenly, the writer begins another family line, through Adam’s son Seth.',
           src: 'Westermann'
         },
-        meaning: 'Two trajectories fork here. One line builds and makes and grows a louder and louder hunger for revenge. The other simply starts to call on the name of God. The primeval history is asking, this early, which line a person is standing in.',
+        meaning: 'Here the writer shows two families going in different directions. Cain’s line builds and makes things, and grows hungrier and hungrier for revenge. Seth’s line simply begins to call on the name of God. Even this early in Genesis, the writer is asking his readers which of the two lines they belong to.',
         lenses: {
-          theo: 'The Bible keeps drawing this line: violence that escalates on one side, and on the other a people who, having little else, call on the name of the LORD. Both descend from the same wounded family. The difference is not bloodline. It is which way you turn.',
-          arch: 'A wound passed down as more harm, vengeance compounding generation on generation, is among the oldest engines of human history, and Lamech’s boast is its anthem: wound me and I answer sevenfold, then seventy-sevenfold. Against it the story sets the other line, the chain broken by turning outward for help instead of striking back. Whole cultures run on one current or the other. (Girard, on the escalation of vengeance.)'
+          theo: 'The writers of the Bible draw this contrast again and again. On one side, people answer violence with more violence. On the other, people who have little else call on the name of the LORD. Both lines descend from the same wounded family, so the difference between them is not a matter of birth but of which way a person turns.',
+          arch: 'One of the oldest patterns in human history is a wound passed down as more harm, with each generation taking more vengeance than the last. René Girard wrote at length about this kind of escalation, and Lamech’s boast is a perfect example of it: if you wound me, I will answer sevenfold, and then seventy-sevenfold. Against that pattern the writer sets the other line, the people who break the chain by calling out for help instead of striking back. Whole cultures have lived by one pattern or the other. (Girard, on the escalation of vengeance.)'
         },
         addr: {
           mode: 'names',
-          text: 'Both lines are open to you: the one where a wound compounds into more harm, and the one that turns and calls out for help.'
+          text: 'Both of these lines are open to us. We can let a wound turn into more harm, or we can turn and call out for help.'
         },
-        ask: 'Which line are you continuing right now?'
+        ask: 'Which of these two lines are you following right now?'
       }
     ]
   },
@@ -1066,7 +1066,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'These impossibly long lives echo the Sumerian King List, which gave its kings before the flood reigns of tens of thousands of years. Genesis keeps the shape but shrinks the scale, and it breaks its own rhythm once, for Enoch, who does not die but is simply taken.',
+          text: 'The ages in this chapter are enormous, and they resemble the Sumerian King List, an ancient record that credited the kings who ruled before the flood with reigns of tens of thousands of years. The writer of Genesis keeps that pattern of long lives but makes the numbers far smaller. The writer also breaks the chapter’s steady rhythm once, for Enoch, who does not die like the others; instead, the writer says, God took him.',
           src: 'The Sumerian King List · Smith'
         }
       }
@@ -1080,8 +1080,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 6,
     title: 'The flood begins',
     unitLabel: 'Scene',
-    thread: 'The violence that began with one murder has filled the whole earth. God looks at what the world has become, grieves, and resolves to start again with one man who still walks with him.',
-    closeEnd: 'The covenant is spoken before a drop has fallen. Beyond this chapter the rain begins.',
+    thread: 'In Genesis 4 Cain murdered his brother Abel, and since then people have filled the whole earth with violence. God looks at what the world has become and grieves over it, and he decides to begin again with Noah, the one man who still walks with him.',
+    closeEnd: 'God makes his covenant with Noah before any rain has fallen. In the next chapter the flood begins.',
     passages: [
       {
         label: 'One',
@@ -1109,18 +1109,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the strangest fragment in the primeval history, and the editors kept it almost raw. Divine beings, “sons of God”, take human women, and the children are the Nephilim, the “fallen ones”, giants, “the mighty men of old”. It is a shard of older myth, the kind of demigod-hero story told all across the ancient Near East, where Gilgamesh himself is two-thirds god. The hundred-and-twenty-year limit is God drawing a hard line between the divine and the human after that line had been crossed.',
+          text: 'This is the strangest passage in the early chapters of Genesis, and the editors kept it almost unaltered. Divine beings, called “sons of God,” take human women as wives, and their children are the Nephilim, a name that probably means “fallen ones,” whom the writer calls “the mighty men of old.” The passage preserves a piece of older myth. Peoples across the ancient Near East told stories of heroes who were partly divine, and in the Epic of Gilgamesh the hero himself is two-thirds god. When God limits human life to a hundred and twenty years, he is drawing a firm line between the divine and the human after these beings had crossed it.',
           src: 'Westermann · Smith'
         },
-        meaning: 'The scene is about a boundary blurring, heaven and earth bleeding into each other, and God answering by setting a limit. Right before the flood the text shows a world where the categories are coming undone. There is not much to moralize here. Mostly it sets a tone: things have gotten strange, and out of bounds.',
+        meaning: 'In this scene heavenly beings cross into the human world, and God answers by setting a <b>limit</b> on human life. The writer places the episode just before the flood to show a world in which no one is keeping even the line between heaven and earth. The passage offers little in the way of a lesson. The writer’s main purpose is to show the reader how far things have gone wrong.',
         lenses: {
-          theo: 'The text guards the difference between the maker and the made. The trouble in these verses is not desire, it is the erasing of a line that was meant to hold. Much of what follows is God re-establishing the boundary between creator and creature.'
+          theo: 'The writer is concerned to keep clear the difference between God, who makes, and the creatures he has made. The wrong in these verses is not desire as such. It is that these beings erased a line God meant to stand. Much of what God does in the chapters that follow is to set that line between creator and creature in place again.'
         },
         addr: {
           mode: 'names',
-          text: 'You live inside a limit you never chose, the same line that makes you a creature and not a god. At bottom that limit is your own mortality, and the steady temptation is to treat it as an insult to rage against, rather than the plain shape of being finite.'
+          text: 'Every one of us lives within a limit we never chose, the limit that makes us creatures and not gods, and at bottom that limit is our own mortality. We are always tempted to treat it as an insult and rage against it, rather than accept it as the ordinary condition of a finite life.'
         },
-        ask: 'Which of your limits have you been fighting as though they were enemies?'
+        ask: 'Which of your limits have you been fighting as if it were an enemy?'
       },
       {
         label: 'Two',
@@ -1148,18 +1148,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the Yahwist’s voice, raw and unguarded. God “regrets”; his heart is “grieved”. This is not the untroubled, impassive deity of later philosophy. It is a God who can be wounded by what the world becomes. The bleakest verdict in Genesis, that the human heart inclines only to evil, sits right beside God’s grief, not his rage.',
+          text: 'This passage comes from the Yahwist, the older source in Genesis, who speaks about God with unusual directness. The writer says that God “regretted” making humankind and that his heart was “grieved.” Later philosophers would describe God as untroubled and beyond feeling, but this writer pictures a God whom the world can wound. The writer sets the darkest judgment in Genesis, that every inclination of the human heart is only evil, right beside God’s grief, not his rage.',
           src: 'Friedman'
         },
-        meaning: 'Notice what God feels first. Not anger. Grief. Regret. The maker is heartbroken over the made. And in the very same breath, a single exception: Noah found favor. Even at the darkest verdict in the book, the story leaves one door open.',
+        meaning: 'The first thing God feels in this passage is not anger but grief and <b>regret</b>, the sorrow of a maker over what he made. In the same breath the writer adds a single exception: Noah found favor in God’s eyes. Even as God gives the darkest verdict in the book, he leaves one way open.',
         lenses: {
-          theo: 'The flood begins in heartbreak, not fury. A God who grieves is a God who is not above being hurt by us, who has staked something on how this goes. That changes what the judgment is. It is the pain of a maker, not the spite of a tyrant.'
+          theo: 'God begins the flood in heartbreak, not in fury. A God who grieves is a God who allows us to hurt him, because he has staked something of himself on how the world turns out. That changes how we should understand his judgment. When God judges here, he acts out of the pain of a maker, not the spite of a tyrant.'
         },
         addr: {
           mode: 'names',
-          text: 'There is a difference between being raged at and being grieved over. The text says God grieves.'
+          text: 'Most of us know the difference between someone who is angry with us and someone who is grieved by what we have done. The writer tells us that God grieves.'
         },
-        ask: 'Where in your life are you more grieved than angry, and what is that grief trying to tell you?'
+        ask: 'Where in your life do you feel more grieved than angry, and what do you think you are grieving?'
       },
       {
         label: 'Three',
@@ -1187,16 +1187,16 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Walked with God” is said of only two men in Genesis, Enoch and Noah. “Blameless” translates a word that means whole, of integrity, not sinless. And the earth is “full of violence”, the same word for the brutality that began with Cain and compounded through Lamech’s boast. The flood is, in a sense, the violence of the world finally coming back on itself.',
+          text: 'The writer of Genesis says of only two men that they “walked with God”: Enoch and Noah. The Hebrew word translated “blameless” means whole, a person of integrity, rather than someone who never sinned. The writer also says that the earth was “full of violence,” the kind of brutality that began when Cain killed Abel and grew worse when Lamech boasted of killing a man. In a sense, the writer presents the flood as the moment when the world’s violence finally comes back upon the people who committed it.',
           src: 'Westermann'
         },
-        meaning: 'One man, out of step with his entire generation, simply walks with God. Not perfect. Whole. The text never says Noah argued or preached or won anyone over. It says he walked. Sometimes faithfulness is just continuing in a direction after everyone around you has turned off it.',
+        meaning: 'Noah stands apart from his entire generation because he keeps walking with God. The writer does not call him perfect but whole, and never says that he argued, preached, or persuaded anyone. The writer says only that he <b>walked</b> with God. Sometimes faithfulness simply means that we keep going in the same direction after everyone around us has turned away.',
         lenses: {
-          theo: 'Righteousness here is not a scorecard. It is relational, a matter of walking with. And it is the remnant of one. The whole rescue that follows hangs on a single person who kept company with God when company was scarce.'
+          theo: 'The writer does not measure Noah’s righteousness by a tally of good deeds. Noah is righteous because of his relationship with God, because he walks with him. God’s whole rescue in the chapters that follow depends on this one man, who kept company with God when almost no one else did.'
         },
         addr: {
           mode: 'names',
-          text: 'You may be the one in your circle still walking a direction the others have abandoned, and from inside it can feel less like faithfulness and more like being wrong.'
+          text: 'You may be the one person in your circle who is still walking in a direction the others have abandoned, and from the inside, that can feel less like faithfulness and more like being wrong.'
         },
         ask: 'What are you still keeping faith with that almost everyone around you has let go of?'
       },
@@ -1242,18 +1242,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The ark instructions are precise, dimensions, decks, a door, pitch, and they track closely the flood stories Israel’s neighbors told. In the Mesopotamian versions, in Atrahasis and in Gilgamesh, a god warns one man to build a great boat and outlast a divine flood. Genesis takes the shared story and moves its center: the flood here is moral, not the whim of squabbling gods, and it arrives bound to a promise. The word “covenant” appears for the first time in the Bible right here, before the rain.',
+          text: 'God gives Noah precise instructions for the ark, down to its dimensions, its decks, its door, and the pitch that seals it, and these details closely follow the flood stories that Israel’s neighbors told. In the Mesopotamian versions, the poems of Atrahasis and Gilgamesh, a god warns one man to build a great boat so that he can survive a flood the gods have sent. The writer of Genesis takes this shared story and changes its center. In Genesis, God sends the flood because of human wickedness, not because quarrelling gods are annoyed, and he joins it to a promise. The word “covenant” appears for the first time in the Bible here, before any rain has fallen.',
           src: 'Walton · Smith'
         },
-        meaning: 'Before the water, a promise. God announces the judgment and the covenant in a single speech. The ark is not a clever escape, it is obedience built plank by plank, and the chapter ends not on a feeling but on a fact: Noah did everything God commanded. Faith, here, is carpentry.',
+        meaning: 'Before the water comes, God makes a promise. In a single speech he announces both the judgment and his <b>covenant</b> with Noah. Noah does not escape by being clever; he obeys, and he builds the ark one plank at a time. The writer ends the chapter not by describing how Noah felt but by stating what he did: Noah did everything God commanded him. In this chapter, faith looks a great deal like carpentry.',
         lenses: {
-          theo: 'Grace runs ahead of the flood. The covenant is spoken before a single drop falls, and it rests on God’s promise rather than on Noah’s worthiness. The rescue is announced first, then built. That order, promise before performance, is the shape of nearly every covenant that follows.'
+          theo: 'God offers his grace before the flood begins. He makes his covenant before a single drop falls, and he bases it on his own promise rather than on Noah’s worthiness. God announces the rescue first, and only then does Noah build the ark. That order, in which God promises before anyone performs, is the pattern of nearly every covenant God makes in the rest of the Bible.'
         },
         addr: {
           mode: 'names',
-          text: 'When everything feels like it is coming apart, the work in front of you is often unglamorous and slow: build the thing, plank by plank, before you can see why it matters.'
+          text: 'When everything around us seems to be coming apart, the work God gives us is often slow and unremarkable. We have to build the thing plank by plank, often before we can see why it matters.'
         },
-        ask: 'What is the plank-by-plank work in front of you right now, the thing simply to do before it makes sense?'
+        ask: 'What slow, practical work is in front of you right now, something you need to do before you can see why it matters?'
       }
     ]
   },
@@ -1370,7 +1370,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Read closely and two accounts show through each other here. One pair of every animal in one breath, seven pairs of the clean ones in the next; forty days in one line, a hundred and fifty in another. Source critics read this as two flood stories, the older Yahwist and the later Priestly, woven into a single thread.',
+          text: 'If we read this chapter closely, we can see two accounts woven through each other. In one place Noah brings the animals in pairs, and in another he brings seven pairs of every clean animal. One line says the flood lasted forty days, and another says the waters prevailed for a hundred and fifty. Source critics explain this by arguing that editors combined two flood stories, one from the older Yahwist and one from the later Priestly writer, into a single account.',
           src: 'Wellhausen · Friedman, Who Wrote the Bible?'
         }
       }
@@ -1481,19 +1481,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The closest parallel in all of Genesis sits here. In the Epic of Gilgamesh the flood hero sends birds out from his boat and offers a sacrifice the gods crowd around “like flies.” Genesis keeps the birds and the altar and strips out the hungry gods, leaving one God who resolves, never again.',
+          text: 'This passage has the closest parallel to another ancient text anywhere in Genesis. In the Epic of Gilgamesh, the hero of the flood sends birds out from his boat and then offers a sacrifice, and the gods, hungry after the flood, gather around it like flies. The writer of Genesis keeps the birds and the altar but leaves out the hungry gods. Instead there is one God, who smells the offering and resolves never to destroy the earth this way again.',
           src: 'The Epic of Gilgamesh · John Day'
         },
-        meaning: 'The whole flood turns on two words, <b>God remembered Noah</b>. Not that God had forgotten, but that the long water now bends from judgment back toward rescue. What comes up out of it is not a clean new world. It is the same earth with the same human heart in it, handed back anyway, under a promise never to drown it again.',
+        meaning: 'The whole flood story turns on the words <b>God remembered Noah</b>. The writer does not mean that God had forgotten him. The writer uses the phrase to mark the moment when God turns from judgment back toward rescue. When the earth comes up out of the water, God has not made a clean new world. He gives back the same earth, with the same human heart in it, and promises never to drown it again.',
         lenses: {
-          theo: 'The promise at the end is one-sided and clear-eyed. God reads the human heart as bent from its youth and chooses restraint anyway, not because the threat is gone but because patience will now carry what judgment used to. Mercy here is not a verdict that we improved. It is God deciding to bear a world that has not.',
-          arch: 'The deluge that washes the world back to water and then lifts it up again, dry, is one of the oldest shapes the imagination keeps. Eliade found it the world over as the cosmos sinking into the formless and being made a second time, the old order dissolved so a cleaner one can rise from the same flood. The dove sent out over the waters for somewhere to land is that hope in a single image, that something solid will surface to stand on. (The world dissolved to water and handed back, begun again.)'
+          theo: 'God makes this final promise on his own, and he makes it with his eyes open. He judges that the human heart has been bent toward evil from youth, and he chooses restraint anyway. He has not decided that the danger is gone. He has decided to bear with the world patiently where before he judged it. This mercy is not God’s verdict that we have improved. It is his decision to carry a world that has not.',
+          arch: 'Many peoples have told stories of a flood that returns the world to water, after which the land rises again, dry. The historian of religion Mircea Eliade found this pattern across the world’s myths: people imagined the world sinking back into formless water and then being made a second time, so that a cleaner order could rise from the same flood. When Noah sends out the dove to find a place to land, he acts out that same hope, that somewhere solid ground will appear to stand on.'
         },
         addr: {
           mode: 'names',
-          text: 'The flood is the part everyone remembers. The harder part is what comes after, the long wait in the ark while the water drops by inches, sending out a bird and getting it back, waiting seven more days, then seven more. You are often past the worst of a thing and still unable to step out of it, and that waiting, not the disaster, is what asks the most of you.'
+          text: 'Most people remember the flood itself. The harder part comes afterward, when Noah waits in the ark while the water drops a little at a time, sends out a bird and receives it back, and waits seven more days, then seven more. We are often past the worst of something and still unable to step out of it, and that waiting asks more of us than the disaster did.'
         },
-        ask: 'What in your life is past its worst but not yet solid enough to stand on, and how are you bearing the wait?'
+        ask: 'What in your life is past its worst but not yet steady enough to stand on, and how are you bearing the wait?'
       }
     ]
   },
@@ -1505,8 +1505,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 9,
     title: 'Noah’s covenant',
     unitLabel: 'Scene',
-    thread: 'The flood recedes. God binds himself to the whole earth with a one-sided promise, and the same human heart that filled the world with violence steps off the ark unchanged.',
-    closeEnd: 'The flood is over and the human heart is not. The story will gather, one more time, on a plain in the east.',
+    thread: 'After the flood, the waters go down and Noah’s family steps out of the ark onto a cleansed earth. In this chapter God makes a promise to the whole earth that asks nothing in return. Yet the people who walk out of the ark are no different at heart from the people the flood destroyed, and before the chapter ends Noah himself shows it.',
+    closeEnd: 'The flood is over, but the people who survived it have not changed. In the next two chapters their descendants spread out across the earth, and then gather once more on a plain in the east.',
     passages: [
       {
         label: 'One',
@@ -1534,18 +1534,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The blessing is a deliberate echo of Genesis 1, “be fruitful and multiply and fill the earth”, the very words spoken at creation. The flood was an un-creation, the waters of chaos let back in, and now the world is being remade. But the terms have shifted. Humans may now eat meat, which they could not in Eden, and one line is drawn around it: not the blood, because the blood is the life. This is the deep root of later kosher practice.',
+          text: 'When God blesses Noah’s family, he repeats the words he spoke at creation in Genesis 1: “be fruitful and multiply and fill the earth.” The writer saw the flood as creation running backward, with God letting the waters of chaos cover the land again, and here God begins the world a second time. Yet he changes the terms. In Eden the humans ate only plants, but now God allows them to eat meat, with one condition: they must not eat the blood, because the writer understood the blood to be the animal’s life. Jewish dietary law later built its rules about draining blood on this verse.',
           src: 'Smith · Walton'
         },
-        meaning: 'The world starts over with the same blessing it began with, but it is no longer Eden. Meat, the new fear between animals and people, these are concessions to a harder world. The fresh start is real, and it is not naive. It opens by admitting the new world will have blood in it.',
+        meaning: 'God starts the world over with the same blessing he gave it at the beginning, but he does not pretend it is Eden again. He allows people to eat meat, and he warns that animals will now fear them. These are allowances for a harder world, and God makes them knowingly. The fresh start is real, but God begins it by admitting that <b>blood</b> will be part of the new world.',
         lenses: {
-          theo: 'Grace hands the world back, but on honest terms. God works with the world as it now is, not as it was before. The re-creation does not pretend the fall never happened; it builds on the ground that is actually there.'
+          theo: 'Many readers see grace in this passage, but a grace that is honest about the world. God gives the earth back to people as it now is, not as it was before things went wrong. He does not act as though the trouble in Eden never happened. He builds the new world on the ground that is actually there.'
         },
         addr: {
           mode: 'names',
-          text: 'Second chances rarely set you back down in the garden. They hand you the same calling in a harder, bloodier world.'
+          text: 'When we are given a second chance, we rarely find ourselves back where we were before things went wrong. More often God hands us the same calling we had before, in a world that has become harder.'
         },
-        ask: 'Where have you been given a fresh start that isn’t a return to how things were, and are you grieving that or working with it?'
+        ask: 'Where have you been given a fresh start that is not a return to how things were? Are you grieving what you lost, or working with what you were given?'
       },
       {
         label: 'Two',
@@ -1569,18 +1569,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The image language here is the Priestly writers’ signature, the same word they used in Genesis 1, now carried into law. The Mesopotamian codes the exiles knew, Hammurabi and its kin, priced a life by rank: a noble’s death cost more than a commoner’s. Set against that, this line makes one measure for everyone. In Hebrew it is built as a tight mirror, blood and human folding back on human and blood, the penalty shaped to match the crime.',
+          text: 'The phrase “in the image of God” comes from the group of writers scholars call the Priestly source, the same writers who used it in Genesis 1. Here they carry it into law. The exiles who shaped this text knew the law codes of Mesopotamia, such as the code of Hammurabi, which set different penalties according to a victim’s rank, so that killing a noble cost more than killing a commoner. Against that background, this verse sets one standard for everyone. In Hebrew the writers built the sentence as a mirror, with the words for blood and for a human being repeated in reverse order, so that the shape of the sentence matches the punishment fitting the crime.',
           src: 'Middleton'
         },
-        meaning: 'Why does murder matter? The text does not say because it breaks a rule. It says because the one you killed looked like God. Every human carries that resemblance, the powerful and the powerless alike. The protection of a life is grounded in dignity, not in what the life can produce.',
+        meaning: 'Why is murder so serious? The writer does not answer that it breaks a rule. He answers that the person who was killed was made in God’s <b>image</b>. Every human being bears that likeness, the powerful and the powerless alike, so God protects each life because of its dignity, not because of what that person can produce.',
         lenses: {
-          theo: 'The image is universal here, stamped on everyone. This single verse is the seed of nearly every later claim about human dignity and human rights, and it cuts hard against every system that ranks some lives above others. If the worth is the image, no one outranks anyone.'
+          theo: 'Here God gives his image to every human being without exception. Many later thinkers have built their claims about human dignity and human rights on this verse, and it stands against every system that ranks some lives above others. If every person bears God’s image, no one can claim to be worth more than anyone else.'
         },
         addr: {
           mode: 'names',
-          text: 'You meet people every day whose worth you quietly rank by what they can do for you. The text says each one carries the image, the same as you.'
+          text: 'Most of us meet people every day whom we quietly rank by what they can do for us. This verse tells us that each of them bears God’s image, just as we do.'
         },
-        ask: 'Whose dignity have you been measuring by their usefulness?'
+        ask: 'Is there someone whose worth you have been measuring by how useful they are to you?'
       },
       {
         label: 'Three',
@@ -1616,18 +1616,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The covenant is made not only with Noah but with “every living creature”, the animals are party to it too, which is easy to miss and quietly radical. The sign is the rainbow, but the Hebrew word is simply “bow”, the war-bow. The picture is of God hanging up his weapon, its arc turned away from the earth. And the covenant is one-sided: it asks nothing of Noah. God binds himself, and the sign exists so that God will remember.',
+          text: 'God makes this covenant not only with Noah but with “every living creature,” so the animals are included too. Readers easily miss this, but it is a remarkable claim. The sign of the covenant is the rainbow, yet the Hebrew word is simply “bow,” the same word used for a warrior’s bow. The writer pictures God hanging up his weapon in the sky with its curve turned away from the earth. God also asks nothing of Noah in return. He binds only himself, and he says he will look at the bow so that he will remember his promise.',
           src: 'Westermann'
         },
-        meaning: 'This is the first covenant in the Bible, and it is pure gift. No conditions, no terms for people to keep. God simply promises and hangs up the bow. The sign in the sky is not there to remind you to behave; the text says it is there so God will remember his own promise. The whole relationship is held up from God’s side.',
+        meaning: 'This is the first covenant in the Bible, and God gives it freely. He sets no conditions and asks people to keep no terms. He simply makes a promise and hangs up his bow. According to the text, God placed the sign in the sky not to remind people to behave but so that he would remember his own promise. God alone carries the weight of this <b>covenant</b>.',
         lenses: {
-          theo: 'Grace that asks nothing back. A God who ties his own hands and points the weapon away. And notice the reach of it: the covenant is with all flesh, not only with people. The promise is as wide as the earth, and it rests entirely on the one who made it.'
+          theo: 'Here God shows a grace that asks nothing back. He ties his own hands and turns his weapon away from the earth. He also makes the promise to every living creature, not only to human beings, so his promise reaches as far as the earth itself, and he alone stands behind it.'
         },
         addr: {
           mode: 'names',
-          text: 'You may be carrying a relationship as if the whole thing depends on you keeping up your end. This covenant runs the other way, held from the other side.'
+          text: 'Some of us carry a relationship as if everything depended on our keeping up our end. In this covenant God carries the whole weight himself.'
         },
-        ask: 'Where are you straining to hold up something that was meant to be held from the other side?'
+        ask: 'Where are you straining to hold up something that God may have meant to hold up himself?'
       },
       {
         label: 'Four',
@@ -1663,19 +1663,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the chapter people skip, and the place where the worst misreading in the book has lived. For centuries the so-called “curse of Ham” was twisted to justify the enslavement of Black Africans. The text gives it no footing at all. The curse falls on Canaan, not Ham, and on no race, it is almost certainly an old story-behind-the-story explaining why Israel later subjugated the Canaanite peoples. There is nothing about skin color anywhere in it. The slavery reading is a monstrous later invention laid on top of the words. And underneath the controversy sits the quieter shock: the righteous man God saved gets drunk and is shamed in his own tent. To see a father uncovered was a grave dishonor in that world, a son standing over his father’s exposure and his loss of control. The Hebrew idiom for uncovering nakedness can elsewhere name a sexual act, so some read Ham’s offense as worse than a glance, which would help explain a curse this heavy, though the text stays deliberately veiled. What it shows plainly is the contrast: Ham exposes his father’s shame and spreads it, while Shem and Japheth back into the tent to cover him without looking.',
+          text: 'Many readers skip this passage, and others have badly misused it. For centuries, people who defended the slavery of Black Africans claimed that this passage placed a “curse of Ham” on them. The text gives them no support at all. Noah curses Canaan, not Ham, and he curses no race; the writer most likely included the story to explain why Israel later ruled over the Canaanite peoples. The writer says nothing about skin color. Later readers invented the slavery reading and forced it onto the words. Beneath that controversy lies a quieter shock: Noah, the righteous man God saved from the flood, gets drunk and is shamed in his own tent. In that culture, a son who looked on his father’s nakedness dishonored him gravely, because he saw his father exposed and out of control. Elsewhere in the Bible the Hebrew phrase for uncovering someone’s nakedness can describe a sexual act, so some readers think Ham did something worse than look, which would help explain why Noah’s curse is so severe. The writer, however, leaves the details unclear. What he does make plain is the contrast between the sons: Ham sees his father’s shame and tells others about it, while Shem and Japheth walk backward into the tent and cover their father without looking at him.',
           src: 'Westermann'
         },
-        meaning: 'Here is the quiet devastation under the flood story. God washed the whole earth, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and end up shamed in his own tent. The water cleaned the world. It did not clean the human heart. The very flaw the story blamed for the flood walks straight off the ark with him. You cannot drown your way to a better person.',
+        meaning: 'Under the flood story lies a sad discovery. God washed the whole earth clean, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and end up shamed in his own tent. The flood cleaned the world, but it did not change the human <b>heart</b>. The same flaw that the writer blamed for the flood came off the ark with Noah. No one can be made a better person simply by having the world around them washed.',
         lenses: {
-          theo: 'The flood was the most total fresh start imaginable, and at the level that matters it did not work, and the story is honest enough to say so. The trouble was never only out there in a wicked generation. It came through the ark in the heart of the best man aboard. That admission is what sets up everything after: a problem this deep will not be solved by washing the world. It will take something else.',
-          arch: 'The flood that dissolves the world back into the chaos-waters and lets it be remade is among the most widespread of all myths, a periodic washing-clean that many peoples imagined. But Genesis refuses the tidy version. The waters recede and the same fracture walks off the ark in the heart of the rescued man. The deepest thing the story says about renewal is that washing the world does not wash the one who survives it. (Eliade, on the deluge and cosmic renewal.)'
+          theo: 'The flood was the most complete fresh start anyone could imagine, and yet in the way that mattered most it failed, and the writer honestly says so. The trouble had never lain only with a wicked generation out in the world. Noah, the best man on the ark, carried it in his own heart. Many readers see this admission as preparation for the rest of the Bible: if the problem lies that deep, God will not solve it by washing the world. He will have to do something else.',
+          arch: 'Many ancient peoples told stories of a great flood in which the gods let the world dissolve back into the waters of chaos and then made it again, a periodic washing that renewed everything. The writer of Genesis refuses to tell the tidy version of that story. When the waters go down, the man God rescued brings the same flaw out of the ark in his own heart. The deepest thing the writer tells us about new beginnings is that when God washes the world, he does not thereby wash the person who survives it. (Eliade, on the flood and the renewal of the world.)'
         },
         addr: {
           mode: 'names',
-          text: 'You have tried to start clean before. A move, a breakup, a fresh resolution. And then you watched the very thing you were fleeing climb out of the boat right behind you. The point is not despair. It is that the fix you need runs deeper than a change of setting.'
+          text: 'Most of us have tried to start over at some point, by moving to a new place, ending a relationship, or making a firm resolution. And then we have found that the very thing we were running from came with us. The writer does not tell this story to make us despair. He tells it to show that we need a change deeper than a change of surroundings.'
         },
-        ask: 'What in yourself have you tried to escape by changing your circumstances, and found waiting for you on the other side?'
+        ask: 'Is there something in yourself that you tried to escape by changing your circumstances, only to find it waiting for you on the other side?'
       }
     ]
   },
@@ -1824,7 +1824,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is an ancient map of the known world, sorting every people the writers knew as one family descended from Noah. The names point at real places and powers, Egypt and Canaan, the cities of Nimrod, Babylon and Nineveh, which sets the stage for Babel in the next chapter.',
+          text: 'This chapter is an ancient map of the known world. The writers took every people they knew of and arranged them as one family descended from Noah’s three sons. The names refer to real places and powers, such as Egypt, Canaan, and the cities that Nimrod founded, including Babylon and Nineveh. By naming Babylon here, the writers prepare readers for the story of Babel in the next chapter.',
           src: 'Westermann · Walton'
         }
       }
@@ -1838,8 +1838,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 11,
     title: 'Babel',
     unitLabel: 'Scene',
-    thread: 'The opening movement closes where it began, at Babylon. Humanity gathers on one plain to build a name and a tower to the sky, and God scatters them, leaving the empire’s proudest city renamed for confusion.',
-    closeEnd: 'This is the end of the story of everyone. From here the camera narrows to one man, Abram, and a different kind of promise: not a name grasped, but a name given.',
+    thread: 'The first section of Genesis began with a creation story that answered the myths of Babylon, and it ends at Babylon too. In this chapter all of humanity gathers on one plain and sets out to build a city and a tower that reaches the sky, so that they can make a name for themselves. God scatters them across the earth, and the writer gives the empire’s proudest city a name that means “confusion.”',
+    closeEnd: 'Here the writer ends the story of all humanity. From the next chapter on, he follows one man, Abram, to whom God makes a different kind of promise. The builders of Babel tried to win a great name for themselves, but God offers to give Abram one.',
     passages: [
       {
         label: 'One',
@@ -1867,18 +1867,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Shinar” is Babylonia, and a tower with its top in the heavens is unmistakably a <fig>ziggurat</fig>, the stepped temple-towers of Mesopotamian cities, built of exactly the baked brick and bitumen the text names. Babylon’s own great ziggurat was called Etemenanki, “the house of the foundation of heaven and earth”. The exiles who shaped this story lived in the shadow of those towers, and “Babel” is simply the Hebrew name for Babylon. Notice the motive: a name, and a refusal to be scattered, which is the exact reverse of the command to fill the earth.',
+          text: '“Shinar” is the Bible’s name for Babylonia, and a tower “with its top in the heavens” would have made ancient readers think of a <fig>ziggurat</fig>, one of the stepped temple-towers that stood at the center of Mesopotamian cities. The Mesopotamians built them from baked brick and bitumen, exactly the materials the writer names. Babylon’s own great ziggurat was called Etemenanki, which means “the house of the foundation of heaven and earth.” The exiles who shaped this story lived in the shadow of such towers, and “Babel” is simply the Hebrew name for Babylon. The builders’ reasons are also worth noticing. They want to make a name for themselves and to avoid being scattered, which is the exact opposite of what God told Noah’s family to do when he commanded them to fill the earth.',
           src: 'Smith · Walton'
         },
-        meaning: 'The first empire’s project is to build up, gather in one place, and make a name, security and glory through height and concentration. The text does not draw it as cartoon villainy. It is ambition, the deeply human urge to be permanent, to be known, not to end up scattered and small. The trouble is what it reaches for, and why.',
+        meaning: 'The people of Babel set out to build upward, to stay gathered in one place, and to make a <b>name</b> for themselves, hoping to find safety and glory in height and in numbers. The writer does not draw them as cartoon villains. They act out of ambition, the very human wish to last, to be remembered, and not to end up scattered and forgotten. Their fault lies in what they reach for and in why they reach for it.',
         lenses: {
-          theo: 'Two ways to get a name run through the whole Bible: grasp one by building high, or receive one as a gift. Babel is the first way, the city organizing itself to secure its own glory as if no one above it gave names or kept people. The very next chapter answers it with the second way.'
+          theo: 'Throughout the Bible, people gain a name in one of two ways: they try to seize it by building high, or they receive it as a gift from God. The builders of Babel take the first way. They organize their city to secure their own glory, as though no one above them gave names to people or watched over them. In the very next chapter, God shows the second way when he promises Abram a great name.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the pull to build something tall enough that your name outlasts you, to secure yourself by your own achievement so you won’t be scattered or forgotten.'
+          text: 'Most of us know the urge to build something so great that our name will outlast us, and to make ourselves secure through our own achievements so that we will not be scattered or forgotten.'
         },
-        ask: 'What are you building mainly so that your name will last, and what is driving that, really?',
+        ask: 'Is there something you are building mainly so that your name will last? What is really driving you to build it?',
         figures: [
           {
             term: 'ziggurat',
@@ -1910,18 +1910,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The irony is deliberate and sharp. The tower’s top was meant to reach heaven, and the LORD has to come down to see it, the gap between the pretension and the reality played for a quiet, devastating laugh. “Come, let us go down” deliberately echoes the “let us make” of creation, the divine voice now turned toward undoing the project. And the danger God names, that nothing will be beyond them, reads less like jealousy than a sober verdict on unchecked, unified human power.',
+          text: 'The writer means the irony here to be sharp. The builders meant the top of their tower to reach heaven, yet the LORD has to come down even to see it, and the writer quietly laughs at the gap between what they claimed and what they actually built. When God says, “Come, let us go down,” the writer echoes God’s words at creation, “Let us make,” but now God speaks in order to undo a human project. And when God warns that nothing will be beyond them, he sounds less jealous than sober, as one who knows what united human power will do when nothing holds it back.',
           src: 'Westermann'
         },
-        meaning: 'God looks at a unity built on self-glory and judges it dangerous, not because height offends him, but because of what people unbound will do with it. There is a hidden mercy in the scattering. Sometimes the breaking-up of a project that was heading somewhere bad is not punishment. It is a brake.',
+        meaning: 'God looks at a people united in pursuit of their own glory and judges them dangerous. He does not object to the height of their tower; he objects to what people will do once nothing restrains them. When he scatters them, he also shows a hidden <b>mercy</b>. Sometimes, when God breaks up a project that was headed somewhere bad, he is not punishing the people involved but stopping them before they go further.',
         lenses: {
-          theo: 'The confusion is restraint, and arguably grace. The same God who set a limit on the human lifespan in the flood chapter now sets one on collective reach. He does not let the worst version of human power run all the way to its end. The limit is a kindness disguised as a defeat.'
+          theo: 'When God confuses their language, he restrains them, and many readers would say that he shows them grace. In the flood story God limited the length of a human life, and here he limits what humanity can achieve together. He does not allow human power at its worst to run all the way to its end. What looks to the builders like a defeat is in fact a kindness.'
         },
         addr: {
           mode: 'names',
-          text: 'Some unity you are part of, or some momentum you are building, can feel unstoppable, and the interruption you resent might be the thing saving you from where it was actually headed.'
+          text: 'We may belong to a group, or be pushing a plan forward, that feels unstoppable. When someone or something interrupts it, we may resent it, and yet the interruption may be saving us from where we were really headed.'
         },
-        ask: 'What stalled plan have you been treating as a setback that may have been a brake?'
+        ask: 'Is there a plan of yours that stalled, which you have treated as a setback but which may have kept you from going somewhere you should not have gone?'
       },
       {
         label: 'Three',
@@ -1941,19 +1941,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Babel” puns on the Hebrew balal, “to confuse”, but Babel is just the Hebrew word for Babylon. So the closing line is a pointed joke at the empire’s expense: the city whose Babylonian name meant “gate of the god” is renamed, in Hebrew, “confusion”. The exiles took the proudest name in their world and turned it into babble. This is the final panel of the whole primeval history, and it lands squarely on Babylon, the place they were sitting as they wrote.',
+          text: 'The name “Babel” sounds like the Hebrew word balal, which means “to confuse,” but “Babel” is also simply the Hebrew word for Babylon. So the writer ends with a pointed joke at the empire’s expense. In the Babylonians’ own language, the name of their city meant “gate of the god,” and the exiles, writing in Hebrew, turned it into a name for confusion. In this way they took the proudest name in their world and made it mean babble. This is the last scene of the whole primeval history in Genesis 1–11, and the writers set it in Babylon, the very city where they lived as they wrote.',
           src: 'Smith'
         },
-        meaning: 'The opening movement of the Bible ends with humanity scattered, its great project abandoned, its proud city renamed for confusion. It is a bleak close, and for the exiles it was also a strange comfort: the empire that conquered you is, in God’s longer telling, just Babel, just confusion, not permanent, not the last word. The tower never gets finished. The name they reached for is the one thing they lose.',
+        meaning: 'The first section of the Bible ends with humanity scattered across the earth, its great project abandoned, and its proud city renamed for confusion. It is a bleak ending, but for the exiles it also offered a strange comfort. In the longer story God was telling, the empire that had conquered them was only Babel, a place of confusion, neither permanent nor the last word. The builders never finish their tower, and they lose the very <b>name</b> they were reaching for.',
         lenses: {
-          theo: 'The whole arc opened with creation quietly answering Babylon’s myths, and it closes by naming Babylon for what the exiles believed it truly was: impressive, unfinished, and not eternal. The God of this story is the one who outlasts empires. That is the hope folded inside the bleakness. The conquering city is not the end of the world.',
-          arch: 'The tower that storms heaven is one of the images humanity keeps retelling: the ascent that overreaches and is brought down, Babel and Icarus and Prometheus and every empire that called itself eternal. The pattern returns because the temptation does, the reach for a name and a permanence that belong to no one who builds in brick. Each age raises its tower and learns again that the height it grasped was never its to keep. (The overreaching ascent, brought back down to human size.)'
+          theo: 'The writers began Genesis with a creation story that answered Babylon’s myths, and they close this section by naming Babylon for what they believed it truly was: impressive, unfinished, and not eternal. The God of their story outlasts every empire. Within the bleak ending, they found hope: the city that had conquered them would not have the last word over the world.',
+          arch: 'People have told many stories of someone who tries to climb to heaven and is brought down for reaching too high. Babel is one, and so are the Greek stories of Icarus and Prometheus, and so is the history of every empire that has called itself eternal. People keep telling these stories because people keep feeling the same temptation, to win a name and a permanence that no human builder can secure. In every age, people raise a new tower and learn again that they could never keep the height they seized.'
         },
         addr: {
           mode: 'names',
-          text: 'Whatever empire or certainty looms over your life right now as though it were permanent, this story insists it has a shelf life. It is Babel. It does not get finished.'
+          text: 'Some power or certainty may stand over your life now as though it will last forever. This story insists that it will not. In the writer’s eyes, every such power is another Babel, and no one will ever finish building it.'
         },
-        ask: 'What looks permanent and unanswerable in your life that this story would quietly call temporary?'
+        ask: 'What in your life looks permanent and impossible to challenge, which this story would call temporary?'
       }
     ]
   },
