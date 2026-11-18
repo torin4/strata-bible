@@ -1,6 +1,11 @@
 "use client";
 
 import { useAuth } from "@/components/auth/AuthProvider";
+import {
+  SignInTour,
+  SignInTourLink,
+  TOP_ID,
+} from "@/components/auth/SignInTour";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { type FormEvent, Suspense, useState } from "react";
@@ -60,33 +65,48 @@ export default function LoginPage() {
 
 // The page's static frame: the wordmark, the card, and the way back. Rendered empty as
 // the Suspense fallback, and around the live form.
-function LoginShell({ children }: { children?: React.ReactNode }) {
+function LoginShell({
+  children,
+  tour = false,
+}: {
+  children?: React.ReactNode;
+  tour?: boolean;
+}) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-shell px-4 py-12">
-      <div className="stagger-children w-full max-w-[24rem]">
-        <header className="mb-6 text-center">
-          <Link
-            href="/"
-            className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
-          >
-            STRATA
-          </Link>
-        </header>
+    <>
+      <main
+        id={TOP_ID}
+        tabIndex={-1}
+        className="flex min-h-screen flex-col items-center justify-center bg-shell px-4 py-12 focus:outline-none"
+      >
+        <div className="stagger-children w-full max-w-[24rem]">
+          <header className="mb-6 text-center">
+            <Link
+              href="/"
+              className="font-display text-[15px] font-semibold tracking-[.32em] text-gold-bright"
+            >
+              STRATA
+            </Link>
+          </header>
 
-        <div className="rounded-[18px] border border-line bg-deep px-6 py-7">
-          {children}
-        </div>
+          <div className="rounded-[18px] border border-line bg-deep px-6 py-7">
+            {children}
+          </div>
 
-        <div className="mt-5 text-center">
-          <Link
-            href="/"
-            className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
-          >
-            Back to the reader
-          </Link>
+          {tour ? <SignInTourLink /> : null}
+
+          <div className="mt-5 text-center">
+            <Link
+              href="/"
+              className="font-ui text-[11px] uppercase tracking-[.16em] text-mist transition-colors hover:text-gold-bright"
+            >
+              Back to the reader
+            </Link>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+      {tour ? <SignInTour /> : null}
+    </>
   );
 }
 
@@ -172,7 +192,7 @@ function LoginForm() {
   };
 
   return (
-    <LoginShell>
+    <LoginShell tour={!user && configured}>
       {user ? (
         <div className="text-center">
           <p className="font-body text-[15px] leading-[1.6] text-parchment-2">
