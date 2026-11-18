@@ -7,6 +7,31 @@
 const TOUR_ID = "what-strata-does";
 const TOP_ID = "signin-top";
 
+// Sources: the product page spdigitallabs.app/strata/, CLAUDE.md, companion-spec.md and the
+// /about page in this repo. Nothing here goes beyond them.
+const WHYS = [
+  {
+    title: "History comes first",
+    body: "Every reading opens with who wrote the passage, when, and what was happening to the people who first heard it. Sources are named and scholars summed up in plain words, never quoted at length.",
+  },
+  {
+    title: "Honest about tensions",
+    body: "Where the Bible holds different voices or open questions, Strata shows them instead of boiling them down to a tidy lesson.",
+  },
+  {
+    title: "A question for you to answer",
+    body: "Each reading ends with a question to answer in your own words, after the turn that speaks to your life today.",
+  },
+  {
+    title: "A companion, not a chat",
+    body: "With Strata Plus, an AI companion draws out the meaning, the turn and a question for a reading, and marks what it drafted. It is not a chat window, and signing in adds one free draw.",
+  },
+  {
+    title: "Free to start, plain text",
+    body: "Genesis 1 to 11 is free to read with no account. Scripture is the Berean Standard Bible, in the public domain.",
+  },
+];
+
 const FEATURES = [
   {
     src: "/images/signin-home.jpg",
@@ -92,13 +117,41 @@ export function SignInTour() {
           id="what-strata-title"
           className="text-center font-display text-[20px] font-medium text-parchment"
         >
-          What STRATA does
+          What is STRATA?
         </h2>
-        <p className="mt-2 text-center font-body text-[13px] italic text-mist-2">
-          Scripture grounded in the history it grew out of.
+        <p className="mt-3 text-center font-display text-[17px] leading-[1.4] text-gold-bright">
+          A Bible reading app that opens every passage in four layers.
+        </p>
+        <p className="mt-4 text-center font-body text-[14.5px] leading-[1.7] text-parchment-2">
+          Strata starts with the history behind a passage, then what it has
+          always carried, how it turns to address you now, and a question for
+          you to answer. It does not tidy open tensions into a neat lesson. It
+          starts with Genesis, read in movements and daily readings.
         </p>
 
-        <ul className="mt-10 flex flex-col gap-12">
+        <h3 className="mt-12 font-display text-[17px] font-medium text-parchment">
+          Why STRATA
+        </h3>
+        <ul className="mt-4 flex flex-col gap-3">
+          {WHYS.map((w) => (
+            <li
+              key={w.title}
+              className="rounded-[12px] border border-line border-l-2 border-l-gold/60 bg-deep px-4 py-3"
+            >
+              <h4 className="font-ui text-[13px] font-semibold tracking-[.02em] text-parchment">
+                {w.title}
+              </h4>
+              <p className="mt-1 font-body text-[14px] leading-[1.65] text-mist">
+                {w.body}
+              </p>
+            </li>
+          ))}
+        </ul>
+
+        <h3 className="mt-12 font-display text-[17px] font-medium text-parchment">
+          How it works
+        </h3>
+        <ul className="mt-8 flex flex-col gap-12">
           {FEATURES.map((f) => (
             <li key={f.title} className="flex flex-col items-center">
               <img
@@ -109,9 +162,9 @@ export function SignInTour() {
                 loading="lazy"
                 className="h-auto w-[13rem] rounded-[22px] border border-line"
               />
-              <h3 className="mt-5 text-center font-display text-[17px] font-medium text-parchment">
+              <h4 className="mt-5 text-center font-display text-[17px] font-medium text-parchment">
                 {f.title}
-              </h3>
+              </h4>
               <p className="mt-2 text-center font-body text-[14px] leading-[1.7] text-parchment-2">
                 {f.body}
               </p>
