@@ -500,7 +500,7 @@ export const GENESIS: Reading[] = [
     chapterIndex: 3,
     title: 'The serpent',
     unitLabel: 'Scene',
-    thread: 'The trust breaks. Not through a monster, but through a quiet suggestion that God’s one “no” was only ever meant to keep the human small.',
+    thread: 'In the garden God had given the man and the woman everything they needed, along with a single command: they were not to eat from the tree of the knowledge of good and evil. Genesis 3 tells how they stopped trusting God over that one command. They do not rebel in some dramatic way. A serpent asks the woman a question, and she begins to wonder whether God gave the command to keep something good from her.',
     closeEnd: 'They are sent out of the garden, and the first story ends east of Eden.',
     passages: [
       {
@@ -533,19 +533,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The serpent is not Satan. That reading comes centuries later. Here it is simply the most cunning of the animals, a talking creature in an old folk register. And the bait is not “do something evil.” It is “you will be like God, knowing good and evil,” which in Hebrew points at deciding good and evil for yourself.',
+          text: 'Many readers have taken the serpent to be Satan, but Jewish and Christian interpreters made that identification centuries after Genesis was written. In the story itself the serpent is simply the most cunning of the animals God had made, a talking creature of the kind people put in old folk tales. Readers also often misunderstand what it offers the woman. It does not tempt her to do something evil; it promises that she will become “like God, knowing good and evil,” and in Hebrew that phrase carries the sense of deciding for yourself what is good and what is evil.',
           src: 'Smith · Westermann'
         },
-        meaning: 'The lie is subtle. Not a flat “You will not surely die,” but the suggestion that God is holding out on you, that the limit exists to keep you small. Temptation almost always works by reframing a boundary as a deprivation.',
+        meaning: 'The serpent works carefully. It begins by asking whether God really forbade them to eat from any tree in the garden, which overstates the command and makes God sound harsher than he was. Only after the woman corrects it does the serpent contradict God directly, telling her she will not die, and then it adds the suggestion that does the real damage: that God gave the command because he wanted to keep something good from them. People are often tempted in the same way. We are seldom asked to want something wicked. Instead we are persuaded that a limit someone set for us is really a loss.',
         lenses: {
-          theo: 'In the older reading, the root of the trouble is distrust. The first move away from God is not lust or violence but the quiet thought that his goodness can’t be trusted and the rule is a cage. Everything else follows from that.',
-          arch: 'The forbidden act that ends the timeless garden and starts human history is a pattern the old stories keep telling, Prometheus stealing fire, Pandora opening the jar, the one threshold crossed that cannot be uncrossed. The serpent is the disturber every such tale needs, the voice that breaks a sleeping perfection. Whether the crossing is a fall or a beginning the stories rarely agree, and Genesis holds the ambivalence too. (The transgression that ends the garden and starts the story.)'
+          theo: 'Many Jewish and Christian readers have seen the root of the whole story in this moment of distrust. The humans first step away from God not by an act of lust or violence but by a change of belief, when they begin to think that God’s goodness cannot be relied on and that he gave his command to confine them rather than protect them. On this reading, every wrong the characters commit later in Genesis comes from that first doubt.',
+          arch: 'Many ancient peoples told stories of a single forbidden act that ended a time of innocence and began ordinary human life. The Greeks, for example, told of Prometheus stealing fire from the gods, and of Pandora opening the jar that let troubles into the world. In each of these stories no one can undo the act, and the storytellers often seem unsure whether it was a disaster or a necessary beginning. The writer of Genesis seems to share that uncertainty, because the humans lose the garden but also gain a knowledge they did not have before, and the writer never treats that knowledge as worthless.'
         },
         addr: {
           mode: 'names',
-          text: 'Somewhere a voice is telling you that a limit in your life is just someone keeping you small. It rarely says “do something wrong.” It says you’d be freer without the rule.'
+          text: 'Most of us have been tempted, as the woman was, to see a limit in our lives, whether a promise, a rule, or a commitment, as something that only holds us back. We seldom tell ourselves outright to do wrong. We tell ourselves that we would be freer without the limit, and we begin to suspect that whoever set it did not have our good in mind.'
         },
-        ask: 'Where are you being told that a boundary is really a cage?'
+        ask: 'Is there a limit in your life that you have started to resent? Who set it, and what would change if you trusted that they set it for your good?'
       },
       {
         label: 'Two',
@@ -565,17 +565,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Notice it is never an apple. That comes from a Latin pun centuries later. And the text never says “the fall” or “original sin” either. Those are Augustine reading Paul. In its own words this is a story about knowledge, shame, and exile, not a doctrine.'
+          text: 'Genesis never says what kind of fruit it was. Later Christians pictured an apple, partly because of a pun in Latin, where the word malum can mean both “apple” and “evil.” The writer also never uses the phrases “the fall” or “original sin.” Augustine developed those ideas around AD 400, as he read Genesis alongside the letters of Paul. If we read the chapter on its own terms, we find a story about knowledge, shame, and exile, which Israelites told for many centuries before anyone made it into a doctrine.'
         },
-        meaning: 'They get exactly what was promised. Their eyes open. And the very first thing the new knowledge shows them is their own exposure. Awareness arrives, and shame arrives with it.',
+        meaning: 'What the serpent promised does happen, though not in the way the humans hoped. Their eyes are opened, but the first thing they see is that they are naked, so at the same moment that they gain knowledge, they also feel <b>shame</b>. The first thing they do with their new understanding is sew fig leaves together and cover themselves from each other.',
         lenses: {
-          arch: 'The first covering, the leaves sewn the moment the eyes open, is the oldest image of shame entering the world, the discovery that one can be seen and judged. From it descends every mask and garment a person puts between themselves and watching eyes. The story marks a threshold everyone crosses, the day you first knew you were being looked at. (The first mask, and the birth of being seen.)'
+          arch: 'The fig leaves are the first clothing in the Bible, and the man and the woman make them because they are ashamed. Many peoples have told some version of this moment, when a person first realizes that others can see and judge them, and every child comes to it sooner or later. In that sense, every mask and covering people have worn since then goes back to this scene.'
         },
         addr: {
           mode: 'names',
-          text: 'You have had the experience of getting the thing you wanted and feeling smaller once you held it. The reach promised more of you. It delivered more of your exposure.'
+          text: 'Most of us have reached for something we were sure would make our lives larger, and found that once we had it we felt more exposed than before. People have been making the serpent’s bargain for as long as there have been people.'
         },
-        ask: 'What have you reached for that left you more exposed than before?'
+        ask: 'What have you reached for that left you feeling more exposed than before?'
       },
       {
         label: 'Three',
@@ -611,17 +611,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the older Yahwist’s God, who walks in a garden in the cool of the day and asks questions out loud. “Where are you?” is not a request for information. He knows. It is an opening, a chance to come out. Watch the blame travel: the man points at the woman and at God in one breath, “The woman whom You gave me,” and the woman points at the serpent.'
+          text: 'Scholars believe that editors assembled Genesis from several older sources, and that this chapter comes from the one they call the Yahwist, a writer who pictures God in very human terms. Here God walks in the garden in the evening breeze and calls out questions. When he asks “Where are you?” he is not looking for information, since he already knows, but giving the man a chance to come out and speak. Then follow where the blame goes: the man blames the woman, and in the same sentence blames God for giving her to him, while the woman in turn blames the serpent.'
         },
-        meaning: 'After shame comes hiding, and after hiding comes blame. Notice God asks rather than accuses, and leaves room for them to own it. And notice no one does.',
+        meaning: 'Because the humans are ashamed, they hide, and once God finds them, they <b>blame</b> someone else. God could have begun with an accusation, but instead he asks a series of questions, and each one gives them room to tell the truth. None of them does.',
         lenses: {
-          theo: '“Where are you” is the first question God asks a human being, and it is a pursuit, not an ambush. The tragedy of the scene is not that they were caught. It is that, handed the chance to step out and tell the truth, each of them pointed somewhere else.'
+          theo: '“Where are you?” is the first question God asks a human being in the Bible, and it is the question of someone searching for a person, not someone setting a trap. The sadness of the scene is not that the humans were caught. It is that when they were given the chance to come forward and admit what they had done, each of them pointed at someone else.'
         },
         addr: {
           mode: 'names',
-          text: 'When you are caught, the reflex is the same: hide first, then hand the blame somewhere. The partner, the circumstances, even God. It is older than you. It is in the first story.'
+          text: 'When we are caught in a wrong, we often do just what they did: we hide, and then we blame a partner, our circumstances, or even God. The writer put this habit into the very first story about human beings, as if to say that people have always done it.'
         },
-        ask: 'What are you blaming right now for something that is actually yours to own?'
+        ask: 'Is there something you are blaming on someone else that is really yours to own?'
       },
       {
         label: 'Four',
@@ -657,18 +657,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'These are the text’s answers to old questions: why snakes have no legs, why childbirth is agony, why farming breaks the body, why we die. Verse 16, “he will rule over you,” describes a broken order, it does not bless one. That distinction matters, because the line has been used for centuries to defend the very thing the story is mourning.',
+          text: 'In God’s words to the serpent, the woman, and the man, the first hearers would have found answers to questions about their own lives: why snakes crawl on the ground, why childbirth is so painful, why farming wears out the body, and why everyone dies. In verse 16, when God tells the woman that her husband “will rule over you,” he is describing what has gone wrong between them; he is not commanding it, and he does not approve of it. The difference matters, because people have used this verse for centuries to defend the very thing the writer is grieving.',
           src: 'Westermann'
         },
-        meaning: 'The sentences aren’t random punishments so much as the shape of life lived outside trust. Partnership strained into power. Work turned to toil. The body made mortal. The world doesn’t end. It just gets hard.',
+        meaning: 'God’s words here are less a list of punishments than a description of what life becomes once people stop trusting him. The man and the woman will struggle with each other for <b>power</b>, they will have to labor hard to make the ground yield food, and their bodies, which God took from the dust, will return to it. The world goes on, but they will find it a much harder place to live.',
         lenses: {
-          theo: 'Read closely, these are consequences more than curses, the natural weather of a broken trust. And even here mercy leaks in: the ground is cursed, but the human is not. They are told they will struggle, not that they are cast off.'
+          theo: 'If we read closely, we see that God is describing consequences more than pronouncing curses. He curses the serpent and the ground, but he never curses the man or the woman. He tells them their lives will be a struggle, not that he has cast them off, so even as he judges them he shows a measure of mercy.'
         },
         addr: {
           mode: 'names',
-          text: 'The fallout of a broken trust is rarely loud. It is the long friction afterward, the things that should give life, love, work, the body, now arriving with a cost.'
+          text: 'When people break trust with one another, they rarely pay for it all at once. More often they pay slowly, through years of friction, and find that love, work, and even their own health cost them more than they used to.'
         },
-        ask: 'Where has something that should be life-giving in your life turned into toil?'
+        ask: 'Where in your life has something you once enjoyed become hard work?'
       },
       {
         label: 'Five',
@@ -700,18 +700,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Cherubim are not the infants of later art. In the ancient Near East they were the great winged guardians, part lion, part eagle, part human, that flanked the gates of temples and the thrones of kings, and the flaming sword sets the same barred threshold at Eden’s gate. The name the man gives the woman, Chavah, puns on the Hebrew for living. And the garments of skin trade fig leaves for the era’s ordinary durable clothing, made at the cost of an animal.'
+          text: 'Later Christian artists often painted cherubim as chubby winged infants, but people in the ancient Near East pictured them as huge guardians, part lion, part eagle, and part human, and set their statues beside the gates of temples and the thrones of kings. Here God places cherubim, along with a flaming sword, to guard the way back into Eden. Two other details are worth knowing. The name the man gives the woman, Chavah, which English renders as Eve, sounds like the Hebrew word for “living.” And the garments of skin that God makes replace the fig leaves with real, lasting clothing, which cost an animal its life.'
         },
-        meaning: 'Exile, but not abandonment. They leave the garden clothed, named, and alive. The story that opened with “it is good” ends “east of Eden,” yet God walks them to the door rather than ending them. Even the locked gate is partly mercy, so they don’t live forever inside the break.',
+        meaning: 'God sends the humans out of the garden, but he does not abandon them. They leave clothed, named, and alive. The story began with God calling everything “good,” and now it ends east of Eden, yet God sends them away rather than destroying them. Even in guarding the gate he is partly showing <b>mercy</b>, because he is keeping them from eating from the tree of life and living forever in their broken state.',
         lenses: {
-          theo: 'The clothing is the hinge. The first instinct of the humans was to cover their own shame and hide. God’s response is to cover it better, with his own hands. The God of this chapter judges, and then dresses the ones he judges for the road ahead.',
-          arch: 'Every paradise story ends with a gate that shuts behind you, and the human story proper begins on the far side of it. The way back is barred on purpose; what is left is forward, into a world that has to be built rather than received. The expulsion from the garden is the door through which history, and the rest of the book, walks. (The shut gate that leaves only the road forward.)'
+          theo: 'The clothing is the turning point of the chapter. When the humans first felt their shame, they tried to cover it themselves with fig leaves and then hid among the trees. God answers by covering them properly, with garments he makes himself, so the same God who judges them also dresses them for the journey ahead.',
+          arch: 'Many peoples have told stories of a lost paradise, and in most of them someone shuts a gate behind the people who lived there. Their history begins on the far side of that gate. Whoever shuts it does so on purpose, so the people can only go forward, and must build a world for themselves instead of simply receiving one. In Genesis, everything else in the book takes place outside the garden.'
         },
         addr: {
           mode: 'names',
-          text: 'There are doors in a life that close behind you. You do not get back to the garden.'
+          text: 'Most of us have left something behind that we can never go back to. The writer of Genesis does not pretend otherwise, but shows that God did not send the man and the woman out alone.'
         },
-        ask: 'What can’t you return to, and what would it look like to walk forward instead of standing at the gate?'
+        ask: 'Is there something in your life that you cannot return to? What would it look like to walk forward instead of standing at the gate?'
       }
     ]
   },
