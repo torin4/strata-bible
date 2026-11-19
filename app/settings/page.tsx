@@ -92,9 +92,9 @@ export default function SettingsPage() {
                 AI companion
               </div>
               <p className="mt-1 font-body text-[13px] leading-[1.6] text-mist-2">
-                On grounded readings, draws out the meaning, the turn, and a
-                question. The reader stays whole with it off, and it never
-                speaks until you ask.
+                On grounded readings, the companion writes the meaning, the
+                turn, and a question. Every reading still works with it off, and
+                it writes nothing until you ask.
               </p>
             </div>
             <Toggle

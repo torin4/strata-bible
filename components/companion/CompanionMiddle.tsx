@@ -87,15 +87,15 @@ export function CompanionMiddle({
     return (
       <div className="mt-5 border-t border-line pt-4">
         <p className="font-body text-[13px] italic leading-[1.6] text-mist-2">
-          This reading carries the text and its history.{" "}
+          This reading has the Bible text and a note on its history.{" "}
           <Link
             href={`/login?next=${encodeURIComponent(pathname)}`}
             className="text-gold-bright hover:underline"
           >
             Sign in
           </Link>{" "}
-          and the companion, STRATA's AI reading guide, can draw out the
-          meaning, the turn, and a question for you.
+          and the companion, STRATA's AI reading guide, can write the meaning,
+          the turn, and a question for you.
         </p>
       </div>
     );
@@ -129,7 +129,7 @@ export function CompanionMiddle({
     return (
       <div className="mt-5 border-l-2 border-gold/30 pl-4">
         <div className="mb-1 font-ui text-[9px] font-semibold uppercase tracking-[.2em] text-gold/80">
-          Drawn out by the companion
+          Written by the companion
         </div>
         <Layer variant="meaning" label="Meaning" text={layer.meaning} />
         {layer.lenses?.theo || layer.lenses?.arch ? (
@@ -145,7 +145,8 @@ export function CompanionMiddle({
           passageRef={passage.ref}
         />
         <p className="mt-3 font-body text-[11px] italic text-mist-2">
-          Drafted for you, not authored. One reading, not the final word.
+          The AI companion wrote this for you. It is one way to read the
+          passage, not the final word.
         </p>
       </div>
     );
@@ -164,8 +165,8 @@ export function CompanionMiddle({
         <>
           <p className="mb-2 font-body text-[13px] italic leading-[1.6] text-mist">
             {companionLocked
-              ? "The companion is part of STRATA Plus. It draws out the meaning, the turn, and a question on every reading."
-              : "You have used your free draw. STRATA Plus opens the companion on every reading."}
+              ? "The companion is part of STRATA Plus. It writes the meaning, the turn, and a question for every reading."
+              : "You have used your free try. With STRATA Plus you can use the companion on every reading."}
           </p>
           <button
             type="button"
@@ -180,12 +181,13 @@ export function CompanionMiddle({
         <>
           {phase === "error" ? (
             <p className="mb-2 font-body text-[13px] italic text-psyche">
-              The companion could not draft this just now.
+              Something went wrong and the companion could not write this.
+              Please try again.
             </p>
           ) : (
             <p className="mb-2 font-body text-[13px] italic leading-[1.6] text-mist">
-              The history above is authored. Let the companion draw out the
-              meaning, the turn, and a question for you.
+              The history note above was written by hand. The companion can
+              write the meaning, the turn, and a question for you.
             </p>
           )}
           <button
@@ -195,12 +197,13 @@ export function CompanionMiddle({
             className="rounded-[10px] border border-gold/40 bg-gold-soft px-4 py-2.5 font-ui text-[11px] uppercase tracking-[.14em] text-gold-bright transition-colors hover:border-gold/[0.6] disabled:opacity-50"
           >
             {phase === "drafting"
-              ? "Drawing it out"
-              : "Draw out the deeper layers"}
+              ? "Writing"
+              : "Write the rest of this reading"}
           </button>
           {!isPlus ? (
             <p className="mt-2 font-body text-[11px] italic text-mist-2">
-              One free draw, then STRATA Plus.
+              You can try this once for free. After that it is part of STRATA
+              Plus.
             </p>
           ) : null}
         </>

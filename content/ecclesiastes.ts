@@ -23,8 +23,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 1",
     chapterIndex: 1,
     title: "Nothing new under the sun",
-    thread: "The book opens by announcing its own conclusion, spends eleven lines setting a human life beside the sun and the sea, and then points out that nobody will remember you either.",
-    closeEnd: "He is the wisest man in the story and he says the wisdom is the part that hurts. That is the last line of the chapter, and it is not a complaint.",
+    thread: "The writer of Ecclesiastes begins by announcing the conclusion he will spend the whole book testing. In a short poem he sets a human life beside the sun, the wind and the sea, which go on long after we are gone, and then he reminds the reader that no one will remember us either.",
+    closeEnd: "The Teacher is the wisest man in the story, and he ends the chapter by saying that his wisdom is what hurts. He means this as an honest report, not as a complaint.",
     passages: [
       {
         ref: "1:1–11",
@@ -46,18 +46,18 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "genre",
-          text: "The speaker calls himself Qoheleth, which the BSB gives as the Teacher. It is a role rather than a name, closer to the one who convenes an assembly. The Hebrew is late and carries Persian loanwords, placing the writing centuries after the Solomon the opening points at. And the key word, which the BSB gives as futility, is <b>hevel</b>. It means vapour, or breath. The thing you can see and cannot hold.",
+          text: "The speaker calls himself Qoheleth, a Hebrew title that the BSB translates “the Teacher.” It names a role rather than a person, and it means something like one who gathers an assembly and speaks to it. The Hebrew of the book is late and includes words borrowed from Persian, so scholars date the writing centuries after the time of Solomon, even though the opening lines point toward him. The key word, which the BSB translates “futility,” is <b>hevel</b>. It literally means vapor or breath, something you can see but cannot hold on to.",
           src: "Fox · Seow · Longman · Alter",
         },
         misreading: {
           named:
-            "Nothing new under the sun is world-weary cynicism, the shrug of a man who has seen it all.",
-          why: "The poem is not shrugging. It is describing a closed system, and every image in it is of something moving hard and arriving nowhere: generations coming and going, a sun that hurries back to where it started, wind circling, rivers pouring into a sea that never fills. That is not boredom, it is motion without accumulation, which is a far more unsettling claim. And the line the poem actually ends on is not about novelty at all. It is about being forgotten.",
+            "Readers often take “nothing new under the sun” as world-weary cynicism, the shrug of a man who has seen it all.",
+          why: "The Teacher is not shrugging. He is describing a closed system, and every image he uses is of something that moves hard and arrives nowhere: generations come and go, the sun hurries back to where it rose, the wind circles, and the rivers pour into a sea that never fills. He is not complaining of boredom. He is pointing out that all this motion adds up to nothing, which is a far more unsettling claim. And he ends the poem not on novelty at all but on being forgotten.",
         },
         meaning:
-          "The book opens by asking what a person gains, and the word is commercial: what is the profit, after costs. The poem answers by setting a human life beside the earth, the sun, the wind and the sea, all of which outlast it and none of which arrive anywhere. Then the sting in the last verse, which is not about the world but about you. There is no remembrance of those who came before. He has moved from cosmology to the thing that actually frightens people in about ten lines.",
+          "The Teacher opens with a question about what a person gains, and he uses a word from commerce: what profit is left once the costs are paid? He answers by setting a human life beside the earth, the sun, the wind and the sea, all of which outlast us and none of which ever arrive anywhere. In the last verse he turns from the world to the reader. No one remembers the people who came before, he says, and no one will remember us. In about ten lines he has moved from the order of the universe to the thing that actually frightens people, which is being <b>forgotten</b>.",
         lenses: {
-          theo: "Nothing here is said against God, and God is not mentioned. That is the book's method. It starts from what anybody can see, and refuses to reach for a consolation it has not earned yet.",
+          theo: "The Teacher says nothing against God here, and he does not even mention God. That is his method throughout the book. He starts from what anyone can observe, and he refuses to offer a comfort until he has earned it.",
         },
       },
       {
@@ -76,14 +76,14 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He takes up the royal voice here and then abandons it: after chapter two the book never speaks as a king again, which is why most readers take the crown as a device rather than a claim. The method he describes is deliberate investigation. And the phrase for what he finds, a pursuit of the wind, is a chasing or a herding of something that cannot be herded.",
+          text: "In this passage the Teacher speaks as a king, but after chapter two he never speaks as a king again, so most readers take the royal voice as a literary device rather than a claim to be Solomon. He describes his method as a deliberate investigation. His phrase for what he finds, “a pursuit of the wind,” pictures someone trying to chase or herd something that cannot be herded.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "The experiment is honest, and that is what makes the finding hard. He does not conclude that wisdom is worthless; later in the book he says plainly that wisdom beats folly the way light beats darkness. What he says here is narrower and worse. Understanding a thing does not fix it, and it costs. What is crooked cannot be straightened. With much wisdom comes much sorrow. That is not an argument against learning. It is a warning about what learning does not do.",
+          "The Teacher conducts his investigation honestly, and that is why his findings are hard to accept. He does not conclude that wisdom is worthless; later in the book he says plainly that wisdom is better than folly, as light is better than darkness. His claim here is narrower and harder. Understanding a problem does not fix it, and understanding comes at a cost: what is crooked cannot be made straight, and the more wisdom a person has, the more sorrow he has. The Teacher is not arguing against learning. He is warning us about what learning cannot do.",
         addr: {
           mode: "claims",
-          text: "You have wanted to understand a situation, on the working assumption that understanding it would give you some purchase on it. This book agrees that you can understand it, and tells you plainly that the purchase is not included.",
+          text: "Most of us have wanted to understand a hard situation, assuming that if we understood it we could do something about it. The Teacher agrees that we can understand it, but he tells us plainly that understanding will not give us control over it.",
         },
         ask: "What are you still hoping to think your way out of?",
       },
@@ -96,8 +96,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 2",
     chapterIndex: 2,
     title: "I denied myself nothing",
-    thread: "He runs the experiment properly: pleasure, then building, then wealth, then wisdom itself, with a verdict recorded after each. Then he does the arithmetic on what happens to all of it afterwards.",
-    closeEnd: "And then, with no transition at all, the first appearance of the sentence this book keeps coming back to. Eat, drink, and find something in the work.",
+    thread: "The Teacher sets out to test what makes a life worthwhile. He tries pleasure, then great building projects, then wealth, and finally wisdom itself, and he records a verdict after each one. Then he asks what will happen to all of it after he dies.",
+    closeEnd: "Then, without any transition, the Teacher says for the first time the sentence he will return to again and again: eat, drink, and find enjoyment in your work.",
     passages: [
       {
         ref: "2:1–11",
@@ -119,13 +119,13 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The list is a royal building programme as the ancient world understood one: houses, vineyards, gardens and parks, pools to water them, slaves born in the household, herds larger than anyone before him, silver and gold, singers. It reads like a royal inscription, the genre kings used to record their achievements, and it is imitating one on purpose. The difference is the last line, which no royal inscription ever carried.",
+          text: "The Teacher lists his achievements the way an ancient king would: houses, vineyards, gardens and parks, pools to water them, slaves born in his household, larger herds than anyone before him, silver and gold, and singers. Kings in the ancient Near East recorded their achievements in royal inscriptions, and the Teacher deliberately imitates that form. The difference comes in his last line, where he admits that none of it gained him anything, which no king would ever have carved in stone.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is an experiment, not a confession. He says twice that his wisdom stayed with him throughout, which means he is not describing a man losing himself in pleasure. He is describing a man testing pleasure while taking notes. And he does not report that it failed to please him: his heart took delight in all his labour, and that was his reward. The verdict is not that it was not enjoyable. The verdict is that there was nothing to be gained. Nothing left over, nothing that accumulated.",
+          "The Teacher is reporting an experiment, not confessing a sin. He says twice that his wisdom stayed with him the whole time, so he is not describing a man who lost himself in pleasure. He is describing a man who tested pleasure while taking notes. Nor does he say that pleasure failed to please him: his heart delighted in all his work, and that delight was his reward. His verdict is not that he did not enjoy it. His verdict is that he gained nothing from it, since nothing was left over and nothing built up.",
         lenses: {
-          arch: "The achievement recorded in full, in the voice of the man who built it, ending on the sentence he did not expect to write. (The inscription that undercuts itself.)",
+          arch: "Kings have always recorded their achievements in their own voice, listing what they built so that later generations would remember them. The Teacher writes such a record in full and then ends it with a sentence no king expected to write, that all of it was hevel, mere vapor. Many people who reach the top of something have found the same thing, that the achievement they worked for did not give them what they hoped.",
         },
       },
       {
@@ -143,11 +143,11 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The comparison is not between wisdom and folly on their merits. He grants the merit immediately: wisdom exceeds folly as light exceeds darkness, and the wise man has eyes in his head. The argument is about what survives, and the term he lands on is the one he used of generations in chapter one. Both are forgotten.",
+          text: "The Teacher is not weighing wisdom against folly on their merits. He grants at once that wisdom is better, as light is better than darkness, and that the wise man can see where he is going. His argument is about what lasts after death, and he reaches the same conclusion he reached about the generations in chapter one: both the wise man and the fool are forgotten.",
           src: "Fox · Seow",
         },
         meaning:
-          "Here is the move the whole book turns on, made for the first time. He does not deny that wisdom is better. He denies that being better changes the outcome. The wise man and the fool both die and neither is remembered, and the sentence he arrives at is the bleakest in the chapter: so I hated life. It is worth noticing that he says it and then keeps going. This is a book that records the low point and continues to the next paragraph, which is a kind of honesty most consolation cannot manage.",
+          "Here, for the first time, the Teacher makes the argument on which the whole book turns. He does not deny that wisdom is better than folly. He denies that being better changes how life ends. The wise man and the fool both die, no one remembers either of them, and so the Teacher reaches the bleakest sentence in the chapter: “So I hated life.” Yet having said it, he keeps writing. He records his lowest point and then goes on to the next paragraph, which is a kind of honesty that most people who offer comfort cannot manage.",
       },
       {
         ref: "2:18–26",
@@ -167,14 +167,14 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The problem in this passage is inheritance. Everything he built goes to somebody who did not build it, and he has no way of knowing whether that person will be wise or a fool. In a world where a household's holdings were a family's entire security, that is a concrete anxiety rather than a philosophical one.",
+          text: "The problem in this passage is inheritance. Everything the Teacher has built will go to someone who did not build it, and he has no way of knowing whether that person will be wise or a fool. In his world a family’s land and goods were its whole security, so this was a practical worry, not an abstract one.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "He is not complaining that he has to die. He is complaining that the work will belong to somebody who did not do it and may not deserve it, which is a much more specific grievance and a far more familiar one. Then, at the end, with no transition, the first of this book's six permissions. There is nothing better than to eat and drink and find enjoyment in your work. It arrives in chapter two, immediately after a paragraph about hating everything, and he says it is from the hand of God. Both halves are meant.",
+          "The Teacher is not complaining that he has to die. He is complaining that his work will belong to someone who did not do it and may not deserve it, which is a much more specific grievance and a far more familiar one. Then, with no transition, he gives the first of the permissions that run through the book, seven of them as many scholars count: there is nothing better for a person than to eat and drink and find <b>enjoyment</b> in his work. He says this in chapter two, right after a paragraph about hating everything, and he says that the enjoyment comes from the hand of God. He means both the despair and the permission.",
         addr: {
           mode: "claims",
-          text: "You are working on something that will outlast your control of it, and be handed to somebody who did not build it and may not keep it well. The book does not tell you to mind less about that. It tells you to eat while you are still the one doing the work.",
+          text: "You may be working on something that will outlast your control of it, and that you will one day hand to someone who did not build it and may not take care of it. The Teacher does not tell you to care less about that. He tells you to enjoy your food and your work while you are still the one doing it.",
         },
         ask: "What are you doing today that you are refusing to enjoy until you know it will last?",
       },
@@ -187,8 +187,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 3",
     chapterIndex: 3,
     title: "A time for everything",
-    thread: "The most quoted passage in the book, and half its pairs are things nobody wants. Then eternity in the human heart, and a sentence about beasts that has troubled readers for two thousand years.",
-    closeEnd: "He asks who can bring a man to see what comes after him. It is a real question, and the book does not answer it.",
+    thread: "This chapter opens with the most quoted passage in the book, a poem about “a time for everything,” although half of the times it lists are things no one wants. Then the Teacher says that God has set eternity in the human heart, and he writes a sentence comparing people to animals that readers have argued about for two thousand years.",
+    closeEnd: "The Teacher asks who can show a person what will happen after him. He means it as a real question, and he does not answer it.",
     passages: [
       {
         ref: "3:1–8",
@@ -207,16 +207,16 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "genre",
-          text: "Fourteen pairs, twenty-eight items, arranged as opposites. The form is a catalogue, a recognised wisdom device, and the arrangement is deliberate: the list opens on birth and death and closes on war and peace, so it begins and ends with the two things a person has least say in.",
+          text: "The poem lists fourteen pairs of opposites, twenty-eight items in all. Wisdom teachers in the ancient world often used catalogues like this, and the Teacher arranges his on purpose. He begins with birth and death and ends with war and peace, so the list opens and closes with the things a person has least control over.",
           src: "Fox · Seow · Alter",
         },
         misreading: {
           named:
-            "The poem is a consolation: everything has its proper season, so whatever you are in will pass.",
-          why: "Read the list. A time to kill. A time to tear down. A time to hate. A time for war. Half of these are things nobody chooses and nobody wants, and the poem gives them exactly the same standing as being born, and dancing, and embracing. It is not saying your bad season will pass. It is saying the bad seasons are part of the arrangement, on the same footing as the good ones. The verse immediately after it asks what the worker gains from any of it. The comfort people take from this poem is real, and it is not what the poem is doing.",
+            "Many readers take the poem as a comfort: everything has its proper season, so whatever season you are in will pass.",
+          why: "Read the list closely. It includes a time to kill, a time to tear down, a time to hate and a time for war. Half of these are things no one would choose, and the Teacher gives them exactly the same place as being born, dancing and embracing. He is not promising that your bad season will pass. He is saying that bad seasons are part of how the world is arranged, on the same footing as good ones. In the very next verse he asks what the worker gains from any of it. People do find real comfort in this poem, but comfort is not what the Teacher is offering.",
         },
         meaning:
-          "The poem's power is in what it does not say. There is no advice anywhere in it. It never tells you which time it currently is, or how you would know, which is the only thing a person in the middle of one actually wants. What it establishes is that the times are not yours, and that is the claim the rest of the chapter builds on.",
+          "The poem gets its force from what the Teacher leaves out. He gives no advice anywhere in it. He never says which time it is now, or how you could tell, and that is the one thing a person in the middle of a season most wants to know. What he establishes is that the times do not belong to us, and he builds the rest of the chapter on that claim.",
       },
       {
         ref: "3:9–15",
@@ -234,11 +234,11 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Verse 11 is among the hardest sentences in the book to translate, and the word given here as eternity has also been rendered world, ignorance, and a sense of past and future. What is not in doubt is the structure: something has been put into people that they cannot use to see the whole.",
+          text: "Verse 11 is among the hardest sentences in the book to translate. Translators have rendered the word given here as “eternity” in several other ways, including “the world,” “ignorance,” and “a sense of past and future.” Whatever the exact word, scholars agree on the shape of the sentence: God has put something into people that they cannot use to see the whole of what he is doing.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is the closest the book comes to explaining its own predicament. Something in a person reaches for the whole shape of things, and the reach does not work: they cannot fathom what God has done from beginning to end. That is not ignorance, which could be fixed by finding out. It is a mismatch, built in. And what he draws from it is not despair. It is the second of the six permissions, arriving here exactly as it did in chapter two, immediately after the hardest sentence in the paragraph.",
+          "Here the Teacher comes closest to explaining his own predicament. Something in us reaches for the whole shape of things, and yet we cannot grasp what God has done from beginning to end. That is not simple ignorance, which we could fix by finding out more. It is a mismatch that God built into us. And the Teacher does not draw despair from it. He gives the second of his permissions, just as he did in chapter two, right after the hardest sentence in the passage.",
       },
       {
         ref: "3:16–22",
@@ -256,23 +256,23 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The word for breath here is the one used of the breath of life on the second page of Genesis, and the sentence is built so that men and beasts share it without distinction. Verse 21 then asks who knows whether one rises and the other goes down, which is a question rather than a denial, and the earliest readers argued about it in exactly those terms.",
+          text: "The Hebrew word for “breath” here, ruach, is the word Genesis uses in the flood story for “the breath of life” that fills every living creature, people and animals alike, and the Teacher builds his sentence so that both share it equally. In verse 21 he asks who knows whether the human spirit rises and the animal’s spirit goes down. He is asking a question, not denying the possibility, and the earliest Jewish readers argued over the verse in exactly those terms.",
           src: "Genesis 2:7 · Fox · Seow",
         },
         meaning:
-          "He is not saying a human being is worth nothing. He is saying that on the evidence available under the sun the exit is the same, and that anybody claiming otherwise is claiming to know something they cannot see. That is a statement about the limits of the enquiry rather than a verdict about the world, and the book is careful with it: verse 21 is a question, not an answer. Then, for the third time in three chapters, the permission.",
+          "The Teacher is not saying that a human being is worth nothing. He is saying that, as far as anyone can see under the sun, people and animals leave the world the same way, and that anyone who claims otherwise is claiming to know something no one can see. He is describing the limits of what his investigation can find, not giving a final verdict about the world, and he is careful about it: verse 21 is a question, not an answer. Then, for the third time in three chapters, he gives his permission to enjoy one’s work.",
         tensions: [
           {
             claim:
-              "Man has no advantage over the animals. Both come from the dust and both return to it, and who knows whether one breath rises and the other goes down.",
+              "People have no advantage over the animals. Both come from the dust and both return to it, and no one knows whether the human spirit rises while the animal’s goes down.",
             counter:
-              "The first page of the same collection has a human being made in God's image and given charge of the animals, and later writing in it grows a hope this book will not assert.",
+              "In the opening chapter of Genesis, which belongs to the same collection of Scripture, God makes human beings in his own image and gives them charge over the animals. Later biblical writers also came to hope for life after death, a hope the Teacher will not assert.",
             where: "Ecclesiastes 3:19–21 · Genesis 1:26–28 · Daniel 12:2",
           },
         ],
         addr: {
           mode: "claims",
-          text: "You have been told, and have probably said, that a hard stretch is a season and will pass. This book will not give you that. What it offers instead is the day in front of you, and permission to take it seriously while it is there.",
+          text: "You have probably been told, and may have told others, that a hard stretch is only a season and will pass. The Teacher will not promise that. Instead he points you to the day in front of you, and invites you to take it seriously while you have it.",
         },
         ask: "What is in front of you today that you are treating as an interruption?",
       },
@@ -285,8 +285,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 4",
     chapterIndex: 4,
     title: "The tears of the oppressed",
-    thread: "The cold eye turns outward for the first time. Not what a life adds up to, but what people do to each other, and what it costs to face it alone.",
-    closeEnd: "A cord of three strands is not quickly broken. It is the warmest sentence in the book, and it is an argument from weakness rather than from hope.",
+    thread: "For the first time the Teacher turns his attention outward. Instead of asking what a single life adds up to, he looks at what people do to one another, and at what it costs to face the world alone.",
+    closeEnd: "“A cord of three strands is not quickly broken” is the warmest sentence in the book, but the Teacher bases it on human weakness rather than on hope.",
     passages: [
       {
         ref: "4:1–6",
@@ -303,11 +303,11 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The phrase they had no comforter appears twice in the same verse, which is unusual, and is the writer leaning on it. The conclusion he then draws is the most extreme in the book: that the dead are better off than the living, and better still are those not yet born, who have not seen the evil done under the sun.",
+          text: "The phrase “they had no comforter” appears twice in the same verse, which is unusual, and the writer repeats it for emphasis. The Teacher then draws the most extreme conclusion in the book: the dead are better off than the living, and better off still are those who have never been born, because they have not seen the evil done under the sun.",
           src: "Fox · Seow",
         },
         meaning:
-          "This is the book at its coldest, and the cause is not despair about existence in general. It is oppression, specifically, and the detail he cannot get past is that there was nobody to comfort them. Not that there was no justice, though there is none here. That there was nobody there. Then the sudden turn to a handful with tranquillity, which sits oddly after it until you notice both halves are about the same thing: what people will do to each other to get more.",
+          "This is the Teacher at his coldest, and what drives him to it is not a general despair about existence. It is oppression, and the detail he cannot get past is that the oppressed had no one to comfort them. He grieves not only that there was no justice but that no one was there for them at all. He then turns suddenly to a person who has a handful with quietness, which seems out of place until we notice that both passages are about the same thing: what people will do to one another to get more.",
       },
       {
         ref: "4:7–16",
@@ -328,14 +328,14 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The man with no son and no brother is a specific figure rather than a mood: in that society the household was the unit of security, and a man alone had no claim on anybody. The examples that follow are practical, not sentimental. If one falls, the other lifts him. If two lie down together they keep warm. Two can resist an attacker.",
+          text: "The man with no son and no brother is a specific kind of person in the Teacher’s world, not just a picture of loneliness. In that society the household kept people safe, and a man alone had no one he could call on. The Teacher’s examples are practical rather than sentimental. If one person falls, the other can lift him up. Two people lying down together keep warm. Two can stand against an attacker.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is the warmest passage in the book and it is built entirely on weakness. Not one word of it says that companionship is fulfilling. It says you will fall over, you will be cold, and somebody will come at you, and one person cannot manage any of the three. The cord of three strands is an argument from vulnerability, which makes it much harder to wave away than a sentiment would be. Then the chapter closes on a crowd that turns from an old king to a young one and will turn again, which is the same point about people made from the other side.",
+          "This is the warmest passage in the book, and the Teacher builds it entirely on weakness. He never says that companionship is fulfilling. He says that you will fall, you will be cold, and someone will attack you, and that one person cannot handle any of these alone. Because he argues from vulnerability, his point about the cord of three strands is much harder to dismiss than a sentiment would be. He then ends the chapter with a crowd that turns from an old king to a young one and will turn again, making the same point about people from the other side.",
         addr: {
           mode: "claims",
-          text: "You have been managing something alone that is not meant to be managed alone, and you have probably filed that under strength. This book files it under exposure, and its argument is not that company is pleasant. It is that you will fall over.",
+          text: "You may be managing something alone that no one is meant to manage alone, and you have probably counted that as strength. The Teacher counts it as exposure. He does not argue that company is pleasant. He argues that on your own, sooner or later, you will fall.",
         },
         ask: "What are you carrying by yourself that a second person could simply take one end of?",
       },
@@ -348,8 +348,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 5",
     chapterIndex: 5,
     title: "Your lot",
-    thread: "How to behave in a place of worship, which turns out to be mostly an instruction to say less. Then officials watching officials, money that will not fill anyone, and a man leaving exactly as he arrived.",
-    closeEnd: "And then, for the fourth time, the same sentence. Eat, drink, find something in the work. Here he calls it a gift.",
+    thread: "The Teacher begins with advice on how to behave in a place of worship, and most of it amounts to saying less. Then he describes officials watching over other officials, money that never satisfies the people who chase it, and a man who leaves the world exactly as he came into it.",
+    closeEnd: "At the end of the chapter, for the fourth time, the Teacher repeats his permission to eat, drink and find enjoyment in one’s work, and here he calls that enjoyment a gift from God.",
     passages: [
       {
         ref: "5:1–7",
@@ -367,13 +367,13 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The house of God is the temple, and this is advice about conduct inside it. A vow was a binding transaction: a person promised something to God in exchange for something they wanted, and the law treated a broken one seriously. The messenger in verse 6 is most likely a temple official who has come to collect. So this is practical guidance about a real institution and a real debt.",
+          text: "“The house of God” is the temple, and the Teacher is giving advice about how to behave there. A vow was a binding agreement: a person promised to give God something in return for something they wanted, and Israel’s law treated a broken vow seriously. The messenger in verse 6 was most likely a temple official who came to collect what had been promised. So the Teacher is giving practical guidance about a real institution and a real debt.",
           src: "Deuteronomy 23:21–23 · Fox · Seow",
         },
         meaning:
-          "The whole passage is about talking too much, and it is the only religious instruction in the book. Go to listen rather than to perform. Do not make promises you will regret. And once you are in one, do not tell the official it was a mistake. God is in heaven and you are on earth, so let your words be few. That is not piety. It is a warning about the distance between what people say in a religious moment and what they are willing to do on the Tuesday afterwards.",
+          "The whole passage is about talking too much, and it holds the only religious instruction in the book. The Teacher tells his readers to go to the temple to listen rather than to perform, not to make promises they will regret, and, once they have made one, not to tell the temple official it was a mistake. God is in heaven and you are on earth, he says, so let your words be few. He is not encouraging piety for its own sake. He is warning about the distance between what people say in a moment of religious feeling and what they are willing to do on an ordinary day afterward.",
         lenses: {
-          theo: "The one piece of worship advice in this book is to say less. Everywhere else it is sceptical about what people can know. Here it is sceptical about what they promise.",
+          theo: "Saying less is the only advice about worship the Teacher gives in the whole book. Everywhere else he doubts how much people can know. Here he doubts how much they should promise.",
         },
       },
       {
@@ -395,13 +395,13 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Verse 8 describes a chain of officials, each watched by a higher one, which is the administration of a province inside an empire. It is offered as a reason not to be astonished by injustice rather than as a defence of it. Then the money: income that does not satisfy, goods that attract people to consume them, wealth that keeps its owner awake, and a fortune lost in a bad venture leaving a son with nothing.",
+          text: "Verse 8 describes a chain of officials, each watched by another above him, which is how an empire governed one of its provinces. The Teacher mentions it to explain why his readers should not be surprised by injustice, not to defend it. Then he turns to money: income that never satisfies, possessions that draw others in to consume them, wealth that keeps its owner awake at night, and a fortune lost in a bad venture that leaves a son with nothing.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is the most practical stretch in the book and none of it has dated. A man who loves money is never satisfied by money. What you accumulate attracts people to consume it. The worker sleeps and the rich man does not. And at the centre, the accounting fact: he came naked and he leaves naked and takes nothing in his hands. That is not a moral about greed. It is stated flatly, and the paragraph around it is about what people do with entire lives in full knowledge of it.",
+          "This is the most practical stretch in the book, and none of it has gone out of date. A person who loves money is never satisfied with money. The more someone gathers, the more people come to consume it. The worker sleeps well, while the rich man lies awake. At the center of the passage the Teacher states the plain fact: a man comes into the world naked and leaves it naked, carrying nothing in his hands. The Teacher is not preaching against greed. He states this flatly, and around it he describes what people do with whole lives while knowing it perfectly well.",
         lenses: {
-          arch: "The thing acquired to produce security, which arrives and then has to be guarded, and takes the sleep it was bought to provide. (What you own, watching you.)",
+          arch: "People in every age have bought things to make themselves secure and then found that they had to guard what they bought. The rich man in this passage loses the very sleep his wealth was meant to give him. Many people today know the same pattern, when a possession that was meant to bring peace becomes one more thing to worry about.",
         },
       },
       {
@@ -416,14 +416,14 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The word given as lot is a portion: the share assigned to a person, the way land or food is apportioned. It describes what somebody gets rather than what they earn, and it is the term this book reaches for whenever it stops arguing.",
+          text: "The word translated “lot” means a portion, the share assigned to a person, as land or food was divided among a family. It names what someone receives rather than what they earn, and the Teacher reaches for it whenever he stops arguing and tells his readers how to live.",
           src: "Fox · Seow",
         },
         meaning:
-          "Fourth time, and the wording is stronger than before. Not merely that there is nothing better, but that this is good and fitting; that the ability to enjoy what you have is itself given; and that a man occupied with the joy of his heart does not spend his days counting them. That last line is close to a definition of contentment, and it has been arrived at from the bleakest available direction.",
+          "This is the fourth permission, and the Teacher words it more strongly than before. He says not only that there is nothing better, but that enjoying one’s food and work is good and fitting, that the ability to enjoy what one has is itself a gift from God, and that a person absorbed in the joy of his heart does not spend his days counting them. That last line comes close to defining <b>contentment</b>, and the Teacher has reached it from the bleakest possible starting point.",
         addr: {
           mode: "claims",
-          text: "You have probably been treating enjoyment as something earned first and permitted afterwards. This book puts it the other way round. The days are few, the enjoyment is the portion, and there is no version of this where you finish and then begin.",
+          text: "Many of us treat enjoyment as something we must earn first and may allow ourselves afterward. The Teacher puts it the other way around. Our days are few, enjoyment is the portion God gives, and no one gets to finish the work first and only then begin to enjoy life.",
         },
         ask: "What are you postponing until you have earned it?",
       },
@@ -436,8 +436,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 6",
     chapterIndex: 6,
     title: "A stranger will enjoy them",
-    thread: "The shortest chapter and the bleakest. A man given everything and denied the capacity to enjoy it, and a comparison with a stillborn child that the book does not soften.",
-    closeEnd: "It ends on two questions nobody can answer, which is where the first half of the book stops.",
+    thread: "This is the shortest chapter in the book and the bleakest. The Teacher describes a man who is given everything and yet cannot enjoy any of it, and he compares him to a stillborn child without softening the comparison.",
+    closeEnd: "The Teacher ends the chapter with two questions no one can answer, and with them he ends the first half of the book.",
     passages: [
       {
         ref: "6:1–6",
@@ -454,11 +454,11 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The affliction is precise, and it is the inverse of chapter five: not a man who lacks, but a man who has everything and is not given the capacity to enjoy it. The stillborn comparison uses a rhetorical form the ancient world knew. And the detail about not receiving a proper burial matters, because burial was the last thing a life could still get right.",
+          text: "The Teacher describes this man’s trouble precisely, and it is the reverse of the problem in chapter five. This man does not lack anything. He has everything, but God does not give him the ability to enjoy it. The comparison with a stillborn child follows a pattern of argument that ancient writers knew well. The detail that the man receives no proper burial also matters, because in the Teacher’s world a proper burial was the last thing that could still go right in a person’s life.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "The book has spent five chapters saying that enjoyment is the portion. Here it says the portion can be withheld, and it names God as the one withholding it, which is the most uncomfortable sentence in the chapter and is not softened. Then the comparison, which is meant to shock: a stillborn child, who never saw the sun and knew nothing, is better off than a man with a hundred children and a thousand years who could not enjoy any of it. He is not being provocative. He is measuring by his own standard, consistently, and that is where it comes out.",
+          "For five chapters the Teacher has said that enjoyment is a person’s portion. Here he says that the portion can be withheld, and he names God as the one who withholds it, which is the most uncomfortable sentence in the chapter, and he does not soften it. Then he makes a comparison meant to shock: a stillborn child, who never saw the sun and knew nothing, is better off than a man with a hundred children and a long life who could not enjoy any of it. The Teacher is not trying to provoke. He is applying his own standard consistently, and that is where it leads him.",
       },
       {
         ref: "6:7–12",
@@ -475,16 +475,16 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Verse 9 is a proverb, and it is the book's one piece of straightforward advice about wanting things: what is in front of you beats the wandering of appetite. The chapter then closes on two questions, which is how the first half of the book ends. Who knows what is good for a person, and who can say what comes after.",
+          text: "Verse 9 is a proverb, and it is the Teacher’s one piece of plain advice about desire: what you can see in front of you is better than an appetite that wanders. He then ends the chapter with two questions, and with them he ends the first half of the book. Who knows what is good for a person, and who can tell anyone what will come after him?",
           src: "Fox · Seow",
         },
         meaning:
-          "The appetite line is the practical version of everything said so far about accumulation. All a man's labour is for his mouth, and the mouth is never filled. And the two closing questions are not rhetorical dressing. They are the position the book has been arguing toward since chapter one: nobody can tell you what is good, and nobody can tell you what comes after. The second half is written from inside that rather than out of it.",
+          "The proverb about appetite is the practical form of everything the Teacher has said so far about gathering more. All of a person’s work is for his mouth, and yet his appetite is never satisfied. The two questions at the end are not decoration. They state the position the Teacher has been arguing toward since chapter one: no one can tell you what is good, and no one can tell you what comes after. He writes the second half of the book from inside that position rather than trying to escape it.",
         addr: {
           mode: "claims",
-          text: "You are carrying an idea of the life you would enjoy, and it is not the one in front of you, and the comparison is doing steady damage to the one you have. Better what the eye can see, says the book, and it is not counselling modesty. It is being practical.",
+          text: "You may be carrying a picture of the life you think you would enjoy, one that is not the life in front of you, and comparing the two may be quietly damaging the life you actually have. Better what the eye can see, the Teacher says. He is not urging you to lower your hopes. He is giving practical advice.",
         },
-        ask: "What is actually in front of you, that you have been treating as the wrong version?",
+        ask: "What is actually in front of you that you have been treating as the wrong version of your life?",
       },
     ],
   },
@@ -495,8 +495,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 7",
     chapterIndex: 7,
     title: "Better than",
-    thread: "A run of better-than sayings that recommend funerals over parties, and then the sentence that breaks the promise Proverbs makes.",
-    closeEnd: "He set out to be wise and reports that it was beyond him. Then one thing he says he did find, which is about people rather than about the world.",
+    thread: "In chapter 7 the Teacher gathers a run of sayings in the form “this is better than that,” and in them he recommends funerals over parties. Then he writes a sentence that contradicts a promise the book of Proverbs makes.",
+    closeEnd: "The Teacher set out to become wise and admits that wisdom was beyond him. Then he reports one thing he says he did find, and it concerns people rather than the world.",
     passages: [
       {
         ref: "7:1–14 (selected)",
@@ -518,36 +518,36 @@ export const ECCLESIASTES: Reading[] = [
         ],
         perItem: {
           1: {
-            note: "The second half is the surprise. A good name outlasting you is a conventional saying. Your death being better than your birth is not.",
+            note: "The second half of the verse is the surprise. People commonly said that a good name outlasts you, but nobody said that the day you die is better than the day you were born.",
           },
           2: {
-            note: "The reason given is not that grief improves you. It is that a funeral tells the truth about where this goes and a party does not.",
+            note: "The Teacher does not claim that grief makes you a better person. He claims that at a funeral people face the truth about where every life ends, and at a party they do not.",
           },
           10: {
             addr: {
               mode: "claims",
-              text: "Nostalgia is named here as a failure of wisdom rather than a harmless habit. Not because the past was bad, but because the comparison is unavailable to you and you are making it anyway.",
+              text: "The Teacher calls nostalgia a failure of wisdom rather than a harmless habit. He does not say the past was bad. He says you cannot really compare the old days with these, and you are comparing them anyway.",
             },
           },
           13: {
-            note: "The same image as chapter one, what is crooked cannot be straightened, and here it is put directly to God's account.",
+            note: "The Teacher uses the same image he used in chapter one, of something crooked that no one can straighten, and here he says plainly that God is the one who bent it.",
           },
           14: {
-            note: "The closest the book comes to naming its own method. Take the good day as good. On the bad one, consider that you were never given the pattern.",
+            note: "Here the Teacher comes closest to naming his own method. He tells us to take a good day as good, and on a bad day to remember that God never showed us the pattern.",
           },
         },
         ground: {
           kind: "genre",
-          text: "The better-than saying is a standard wisdom form and Ecclesiastes uses it more densely here than anywhere else. Proverbs uses it too. The difference is what this collection recommends: a house of mourning over a house of feasting, sorrow over laughter, the end of a thing over its beginning. Read as advice that sounds morbid. Read as a form it is doing what the form does, which is compare two goods and rank them.",
+          text: "Wisdom teachers often used the “better than” saying, and the writers of Proverbs use it too, but the Teacher uses it more densely here than anywhere else in his book. What sets him apart is what he recommends: a house of mourning over a house of feasting, sorrow over laughter, and the end of a thing over its beginning. If we read these as advice, they sound morbid. If we read them as the teachers meant them, we see that each saying compares two good things and ranks them.",
           src: "Fox · Seow · von Rad",
         },
         misreading: {
           named:
-            "The book is recommending gloom: mourning over feasting, sorrow over laughter, a funeral over a party.",
-          why: "The form compares two goods rather than condemning one, and the text gives its reason: death is the end of every man and the living should take it to heart. The house of mourning is recommended as information, not as a mood. And this is the same writer who has already told you four times to eat your bread and enjoy your work. He is not against the party. He is saying the party will not tell you anything and the funeral will.",
+            "Many readers assume the Teacher is recommending gloom, telling us to prefer mourning to feasting, sorrow to laughter, and a funeral to a party.",
+          why: "Each saying compares two good things rather than condemning one of them, and the Teacher gives his reason: death comes to everyone, and the living should take that to heart. He recommends the house of mourning because people learn something there, not because he wants them sad. He has also told us, four times already, to eat our bread and enjoy our work. He is not against the party. He is saying that we will learn nothing at the party and something at the funeral.",
         },
         meaning:
-          "The cluster's argument is that the unwelcome thing is usually the more useful one. A rebuke over a song. The end over the beginning. Patience over pride. And then verse 14, which is as close as this book comes to stating its method outright: be glad on the good day, and on the bad one consider that God made the one alongside the other, so that nobody can work out what is coming. That is not consolation. It is an instruction about where to put your attention on each kind of day.",
+          "In these sayings the Teacher argues that the unwelcome thing is usually the more useful one. He prefers a rebuke to a song, the end of a matter to its beginning, and patience to pride. Then in verse 14 he comes as close as he ever does to stating his method outright. On a good day, he says, be glad, and on a bad day remember that God made the one alongside the other, so that no one can work out what is coming. He is not offering comfort. He is telling us where to put our attention on each kind of day.",
       },
       {
         ref: "7:15–29",
@@ -573,26 +573,26 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Verse 15 is a report of something seen rather than a theory advanced. Verses 16 and 17, advising against being overly righteous or overly wicked, have troubled readers for a very long time and have been read as counsel of moderation, as irony, and as advice about staying alive under an unpredictable regime. And verse 28 is among the hardest sentences in the book, on which more below.",
+          text: "In verse 15 the Teacher reports something he has seen rather than proposing a theory. In verses 16 and 17 he advises against being overly righteous or overly wicked, and readers have puzzled over that advice for a very long time; they have taken it as a call to moderation, as irony, and as counsel for staying alive under an unpredictable ruler. Verse 28 is among the hardest sentences in the book, and the note below takes it up.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "Two hard things here, and the second is harder. The first is verse 15, the flat contradiction of what Proverbs promises, reported as an observation rather than argued as a position. The second is verses 26 to 28, where he writes of a woman as a snare and then reports finding one man in a thousand and not one woman among them all. That is misogyny, it is in the text, and it is not improved by explanation. What can be said is narrow and worth saying anyway: he attributes the search to a method he has just called a failure, he appears to be handling a saying that already existed, and the very next verse takes the charge off any category of person and puts it on mankind in general. None of that makes the sentence acceptable. It does show that the book does not rest on it.",
+          "The Teacher says two hard things in this passage, and the second is harder. In verse 15 he flatly contradicts what Proverbs promises, and he reports it as something he observed rather than arguing it as a position. In verses 26 to 28 he calls a woman a snare and says he found one upright man in a thousand but not one woman among them all. That is misogyny, the Teacher wrote it, and no explanation makes it better. We can say only a few narrow things. He says he found this by a method he has just called a failure, he seems to be quoting a saying that already existed, and in the very next verse he lays the blame on all humankind rather than on any one group. None of that makes the sentence acceptable, but it does show that his argument does not depend on it.",
         tensions: [
           {
             claim:
-              "A righteous man perishes in his righteousness and a wicked man lives long in his wickedness. He says he has seen both.",
+              "The Teacher says he has seen both things: a righteous man who perishes in his righteousness, and a wicked man who lives long in his wickedness.",
             counter:
-              "Proverbs, kept in the same collection, promises the opposite: the LORD does not let the righteous go hungry, and the fear of the LORD prolongs life. Job is built on the same wound from the other direction, one man's case instead of a survey.",
+              "The writers of Proverbs, whose book sits in the same Bible, promise the opposite: they say the LORD does not let the righteous go hungry, and that the fear of the LORD lengthens life. The writer of Job wrestles with the same problem from the other direction, through one man’s story instead of a survey.",
             where:
               "Ecclesiastes 7:15 · Proverbs 10:3 · Proverbs 10:27 · Job 1–2",
           },
         ],
         addr: {
           mode: "claims",
-          text: "You have probably kept a private ledger in which doing the right thing is supposed to produce a result, and noticed that it does not always, and not said so out loud. This book says it out loud, inside the collection, and nothing catches fire.",
+          text: "Many of us keep a private ledger in which doing the right thing should bring a good result. We notice that it does not always do so, and we do not say so out loud. The Teacher says it out loud, inside the Bible itself, and the heavens do not fall.",
         },
-        ask: "Where has the arrangement not paid out, and who have you not said that to?",
+        ask: "Where in your life has doing right not paid off, and whom have you not told?",
       },
     ],
   },
@@ -603,8 +603,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 8",
     chapterIndex: 8,
     title: "Nobody can find it out",
-    thread: "How to survive a king, why a delayed sentence makes people bolder, and three separate admissions that nobody can find out what is going on.",
-    closeEnd: "The wise man who claims to know is named specifically and disbelieved. That is the last word of the movement.",
+    thread: "In chapter 8 the Teacher advises his readers on how to survive a king, observes that people grow bolder when punishment is slow in coming, and admits three times that no one can find out what God is doing.",
+    closeEnd: "The Teacher singles out the wise man who claims to know what God is doing, and he says plainly that he does not believe him. With that, the Teacher ends this section of his book.",
     passages: [
       {
         ref: "8:1–9",
@@ -624,13 +624,13 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "This is court advice, a recognised wisdom subject: how to behave in front of a ruler whose word is final and who does whatever he pleases. The counsel is practical and unheroic. Do not be in a hurry to leave his presence, do not join a bad cause, and remember that nobody has authority over the day of their death. Written in a province, about power that could not be appealed.",
+          text: "Wisdom teachers often advised their students on how to behave before a ruler, and here the Teacher does the same. He has in mind a king whose word is final and who does whatever he pleases. His counsel is practical rather than heroic: do not hurry to leave the king’s presence, do not join a bad cause, and remember that no one has power over the day of his own death. The Teacher wrote in a small province, about rulers no one could appeal to.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "There is no politics here in the sense of a programme, and it would be easy to read that as quietism. What the passage does is describe the position of somebody with no leverage and then tell them the truth about it. The king does as he likes. There is no discharge from that war. And then verse 9, which is the sentence underneath all of it: a man lords it over another man to his own harm. That is offered as an observation, with no expectation that stating it will change anything.",
+          "The Teacher offers no political program here, and some readers take his advice as mere resignation. What he actually does is describe the position of someone with no power and then tell that person the truth about it. The king does as he likes, and no one is released from serving him. Then in verse 9 the Teacher writes the sentence that underlies the whole passage: one man rules over another to his own harm. He offers it as an observation, and he does not expect that saying it will change anything.",
         lenses: {
-          arch: "Advice for the powerless that does not pretend they have power, and does not tell them their patience is a virtue. (How to stand in the room.)",
+          arch: "People without power have always needed advice that does not pretend they have power and does not tell them that their patience is a virtue. Slaves, servants and subjects in many ages have passed down sayings of this kind, about how to stay alive in a room where someone else makes every decision. The Teacher writes in that tradition.",
         },
       },
       {
@@ -650,14 +650,14 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Verse 11 is social observation: when sentence is not carried out quickly, people grow bolder about doing wrong. Then the book does something it rarely does. It states the conventional position, that it will go well with those who fear God, and immediately reports the contrary evidence, that there are righteous men who get what the wicked deserve and wicked men who get what the righteous deserve.",
+          text: "In verse 11 the Teacher observes that when a sentence is not carried out quickly, people grow bolder about doing wrong. Then he does something he rarely does. He states the conventional belief, that things will go well for those who fear God, and at once he reports the evidence against it: he has seen righteous people receive what the wicked deserve, and wicked people receive what the righteous deserve.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is the movement's title arriving. Three times in a few verses he says nobody can find it out: however hard a man labours to seek it he will not find it, and even if a wise man claims to know, he cannot find it. That last clause is aimed squarely at his own profession. He is not saying there is nothing to find. He is saying the search does not terminate, that anyone telling you they have finished it is wrong, and that this holds for the wise as much as for anybody. And then, for the fifth time, the permission: eat, drink, and be glad.",
+          "Here the Teacher states the idea that gives this section of the book its title. Three times in a few verses he says that no one can find out what God is doing: however hard a person works to seek it, he will not find it, and even if a wise man claims to know, he cannot find it. With that last clause the Teacher takes aim at his own profession. He is not saying there is nothing to find. He is saying that the search never ends, that anyone who tells you they have finished it is wrong, and that this is as true for the wise as for anyone else. Then, for the fifth time in the book, he gives his permission: eat, drink, and be <b>glad</b>.",
         addr: {
           mode: "claims",
-          text: "Somebody has explained your situation to you with confidence, and it did not fit, and you assumed the failure was yours for not seeing it their way. This book puts the wise man who claims to have it worked out in the same sentence as everybody else who cannot.",
+          text: "Most of us have had someone explain our situation to us with great confidence, and found that the explanation did not fit. We assumed the fault was ours for not seeing it their way. The Teacher puts the wise man who claims to have everything worked out in the same sentence as everyone else who cannot.",
         },
         ask: "Whose confident account of your life have you been deferring to?",
       },
@@ -670,8 +670,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 9",
     chapterIndex: 9,
     title: "Go, eat your bread",
-    thread: "One fate for everyone, the dead knowing nothing, and then, four verses later, the most direct instruction in the book. Go. Eat. Drink. Wear white. Love somebody. Work hard.",
-    closeEnd: "A poor wise man saves a city and nobody remembers him. That is the last word on wisdom in this movement, and it is not a triumph.",
+    thread: "In chapter 9 the Teacher says that the same fate comes to everyone and that the dead know nothing. Four verses later he gives the most direct instructions in the book: go, eat, drink, wear white, love someone, and work hard.",
+    closeEnd: "A poor wise man saves a city, and afterward no one remembers him. With that story the Teacher has his last word on wisdom in this section of the book, and he does not tell it as a triumph.",
     passages: [
       {
         ref: "9:1–6",
@@ -688,17 +688,17 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The common fate is death, and the list of pairs it levels is deliberately provocative: righteous and wicked, clean and unclean, the one who sacrifices and the one who does not, the one who makes a vow and the one who refuses. Those are cultic categories, the distinctions that ordered religious life, and death is presented as indifferent to every one of them.",
+          text: "The common fate the Teacher means is death, and he lists the pairs of people it comes to in a deliberately provocative way: the righteous and the wicked, the clean and the unclean, the one who offers sacrifice and the one who does not, the one who makes vows and the one who refuses. Israel’s priests used these categories to order religious life, and the Teacher says that death pays attention to none of them.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "Verse 5 is the sentence that nearly kept this book out of the collection. The dead know nothing, have no further reward, and their memory is forgotten. There is no hedging anywhere in it. And verse 4 is the strangest consolation in Scripture: there is hope for anyone among the living, because a live dog is better than a dead lion. Dog was not an affectionate word in that world. He is saying that being alive and worthless beats being dead and magnificent, and he offers it as encouragement.",
+          "Verse 5 is one of the sentences that made some ancient readers doubt this book belonged in Scripture. The Teacher says without any hedging that the dead know nothing, receive no further reward, and are forgotten. In verse 4 he offers the strangest consolation in the Bible: anyone among the living still has hope, because a live dog is better than a dead lion. People in that world did not use the word dog with affection. The Teacher is saying that being alive and lowly is better than being dead and magnificent, and he means it as encouragement.",
         tensions: [
           {
             claim:
-              "The dead know nothing and have no further reward, and their love and hate and envy have already vanished.",
+              "The Teacher says the dead know nothing and have no further reward, and that their love, their hate, and their envy have already vanished.",
             counter:
-              "Later writing in the same collection refuses to leave it there, and the hope it grows is asserted rather than argued for. This book neither denies that hope nor makes room for it. It reports what can be seen under the sun, and stops.",
+              "Later writers in the same Bible refuse to leave it there. They hope for life beyond death, and they declare that hope rather than argue for it. The Teacher neither denies that hope nor makes room for it. He reports what anyone can see under the sun, and he stops.",
             where: "Ecclesiastes 9:5–6 · Daniel 12:2 · Isaiah 26:19",
           },
         ],
@@ -718,17 +718,17 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The instructions are specific and physical: bread, wine, white garments, oil on the head, a wife, work done with force. White clothing and oil were what people wore to a feast rather than to an ordinary day, so the instruction is to dress for a celebration on a normal Tuesday. And the reason given is not that life is good. It is that in Sheol there is no work or planning or knowledge or wisdom.",
+          text: "The Teacher gives specific, physical instructions: eat bread, drink wine, wear white clothes, put oil on your head, enjoy life with your wife, and work with all your strength. People wore white clothes and put oil on their heads for a feast, not for an ordinary day, so the Teacher is telling his readers to dress for a celebration on an ordinary Tuesday. He does not give life’s goodness as his reason. He gives death as his reason: in Sheol, the place of the dead, there is no work, no planning, no knowledge, and no wisdom.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is the sentence the book exists for, and the order it arrives in is the argument. It comes immediately after the bleakest paragraph in the book, and its grounds are that paragraph. Not in spite of the one fate: because of it. The clause people miss is in the middle, that God has already approved your works, which removes the condition. You are not being told you may enjoy things once you have earned the right. Then verse 11 makes the same point from the other side: the race is not to the swift, and time and chance happen to all. Nothing here is deserved, including the good parts.",
+          "The Teacher wrote his whole book toward this passage, and the order in which he places it is part of his argument. He sets it immediately after the bleakest paragraph in the book, and he builds it on that paragraph. He does not tell us to enjoy life in spite of death; he tells us to enjoy it because of death. Readers often miss the clause in the middle, where he says that God has already approved what you do. With that clause the Teacher removes every condition, so that no one has to earn the right to enjoy their bread. In verse 11 he makes the same point from the other side: the race does not go to the swift, and time and chance come to everyone. No one deserves anything here, including the good things.",
         lenses: {
-          theo: "The permission is granted rather than offered. He does not say you may. He says go. This is the only stretch of the book written in the imperative, which is worth noticing in twelve chapters that otherwise refuse to advise.",
+          theo: "The Teacher does not merely say that we may enjoy our lives. He tells us to go and do it. This is the longest run of direct commands anywhere in his book, and that is worth noticing in twelve chapters where he mostly observes and seldom advises.",
         },
         addr: {
           mode: "claims",
-          text: "You have been holding off on the ordinary pleasures until the situation resolves, and the situation is not going to resolve on the schedule you had in mind. This is not permission to enjoy yourself once things improve. It is an instruction to eat, today, on the grounds that the days are few.",
+          text: "Many of us put off ordinary pleasures until our situation is settled, and our situation does not settle on the schedule we had in mind. The Teacher does not tell us we may enjoy ourselves once things improve. He tells us to eat today, because our days are few.",
         },
         ask: "What have you been holding off on until things settle?",
       },
@@ -747,11 +747,11 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A short parable with no names and no date: a small city, a great king, siege ramps, and a poor wise man who saved it. Whether it happened or is an example is not stated, and probably does not matter to the point being made.",
+          text: "The Teacher tells a short parable with no names and no date. A great king besieges a small city and builds siege works against it, and a poor wise man saves it. The Teacher does not say whether this really happened or whether he is giving an example, and for his purpose it probably does not matter.",
           src: "Fox · Seow",
         },
         meaning:
-          "The story is told to praise wisdom and it ends by reporting that wisdom did not get paid. He saved the city and nobody remembered him, and the wisdom of a poor man is despised and his words go unheeded. Then, immediately after, the book says wisdom is better than weapons of war, and that one sinner destroys much good. Both are held at once. Wisdom works, and it is not rewarded, and the second fact is not allowed to cancel the first.",
+          "The Teacher tells the story to praise wisdom, and he ends it by admitting that no one rewarded the wise man. The poor man saved the city and no one remembered him, because people despise a poor man’s wisdom and ignore his words. Immediately afterward the Teacher says that wisdom is better than weapons of war, and that one sinner can destroy much good. He holds both truths at once: wisdom works, and people do not reward it, and he will not let the second truth cancel the first.",
       },
     ],
   },
@@ -762,8 +762,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 10",
     chapterIndex: 10,
     title: "A little folly",
-    thread: "The lighter of the two collections: dead flies in the perfume, a snake that bites before it is charmed, and a bird that carries what you said in your own bedroom.",
-    closeEnd: "It ends on the advice of somebody who has watched what happens to people who talk.",
+    thread: "Chapter 10 holds the lighter of the Teacher’s two collections of sayings. He writes of dead flies in the perfume, a snake that bites before anyone has charmed it, and a bird that carries what you said in your own bedroom.",
+    closeEnd: "The Teacher ends the chapter with advice from someone who has watched what happens to people who talk too much.",
     passages: [
       {
         ref: "10:1–20 (selected)",
@@ -785,34 +785,34 @@ export const ECCLESIASTES: Reading[] = [
         ],
         perItem: {
           1: {
-            note: "The image is the argument of the whole chapter. A little folly does not reduce wisdom proportionally. It contaminates the jar.",
+            note: "With this image the Teacher sums up the whole chapter. A little folly does not reduce a person’s wisdom by a little. Like a few dead flies in a jar of perfume, it spoils the whole thing.",
           },
           10: {
-            note: "The one piece of plain practical advice in the book: sharpen the axe. Skill is offered as a substitute for force.",
+            note: "This is one of the plainest pieces of practical advice in the book: sharpen the axe. The Teacher offers skill as a substitute for brute force.",
           },
           14: {
-            note: "The refrain from chapter eight, dropped into a saying about people who talk too much. Nobody knows what is coming, and the fool multiplies words anyway.",
+            note: "The Teacher repeats a refrain from chapter eight in the middle of a saying about people who talk too much. No one knows what is coming, he says, and yet the fool keeps multiplying words.",
           },
           19: {
             addr: {
               mode: "claims",
-              text: "This is not the cynicism it reads as. Money answering everything is an observation about what money does, made by a man who has already reported that it never satisfies anybody. Both are true, and you know both.",
+              text: "The saying is less cynical than it sounds. The Teacher observes what money can do, and he has already told us that money never satisfies anyone. Both observations are true, and most of us know that they are.",
             },
           },
           20: {
-            note: "Advice from somebody who has watched what happens to people who talk. The bird carrying your words is proverbial, and the point is that a bedroom is not private.",
+            note: "The Teacher has watched what happens to people who talk. People in his day already spoke of a bird that carries your words, and he uses the saying to warn us that even a bedroom is not private.",
           },
         },
         ground: {
           kind: "genre",
-          text: "The second and lighter collection, working differently from chapter seven's. Where those sayings compared two goods and ranked them, these mostly describe consequences: dig a pit and fall into it, breach a wall and meet a snake, quarry stone and be hurt by it. The form is observational rather than moral, and several of them are about work rather than about virtue.",
+          text: "This is the second and lighter of the Teacher’s collections of sayings, and it works differently from the one in chapter seven. There he compared two good things and ranked them. Here he mostly describes consequences: whoever digs a pit may fall into it, whoever breaks through a wall may be bitten by a snake, and whoever quarries stone may be hurt by it. He observes rather than moralizes, and several of the sayings concern work rather than virtue.",
           src: "Fox · Seow · von Rad",
         },
         meaning:
-          "The chapter reads as a grab-bag and has one argument running under it: small things are decisive. A few dead flies spoil the whole jar. A dull axe costs strength you did not need to spend. A word said in a bedroom travels. None of it is about grand failures of character. It is about the disproportionate cost of small carelessness, which is the observation of somebody who has watched competent people undone by things they did not think mattered.",
+          "The chapter can look like a jumble of sayings, but the Teacher pursues one argument throughout: small things decide a great deal. A few dead flies spoil a whole jar of perfume. A dull axe costs a worker strength he did not need to spend. A word spoken in a bedroom gets out. None of these sayings concerns a grand failure of character. They all concern the outsized cost of small carelessness, and the Teacher writes them as someone who has watched capable people undone by things they thought did not matter.",
         addr: {
           mode: "claims",
-          text: "Something small in your working life is costing you more than it should, and you have been treating it as beneath attention because the big things are handled. Sharpen the axe, says the book, which is the least spiritual sentence in Scripture and one of the most useful.",
+          text: "Most of us have some small thing in our working lives that costs us more than it should, and we ignore it because the big things seem to be under control. Sharpen the axe, the Teacher says. It may be the least spiritual sentence in the Bible, and it is one of the most useful.",
         },
         ask: "What have you been leaving blunt?",
       },
@@ -826,8 +826,8 @@ export const ECCLESIASTES: Reading[] = [
     chapterIndex: 11,
     crossesChapters: true,
     title: "Remember your Creator",
-    thread: "Sow in the morning and the evening because you do not know which will take. Then the finest writing in the book: a house falling quietly into disrepair, which is a body.",
-    closeEnd: "The last line returns the sentence the book opened with, closing the frame. Everything is vapour, and he has told you six times what to do about it.",
+    thread: "In chapter 11 the Teacher tells his readers to sow seed in the morning and again in the evening, because they cannot know which sowing will grow. Then in chapter 12 he writes the finest poem in the book, about a great house slowly falling into disrepair, and the house is a human body.",
+    closeEnd: "In the last line the Teacher repeats the sentence he opened the book with, and so closes the frame around it. Everything is a vapor, he says, and by now he has told us six times what to do about it.",
     passages: [
       {
         ref: "11:1–10",
@@ -848,13 +848,13 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Casting bread on the waters has been read as maritime trade, as sowing grain on flooded ground, and as ordinary generosity; the image survives all three readings. Dividing a portion among seven or eight is risk-spreading, stated as such: you do not know what disaster may come. And the instruction to sow morning and evening is agricultural advice being used as a general argument about acting without information.",
+          text: "Readers have understood casting bread on the waters in three ways: as trading by sea, as sowing grain on flooded fields, and as ordinary generosity. The image makes sense on all three readings. When the Teacher advises dividing a portion among seven or eight, he means spreading the risk, and he says so: you do not know what disaster may come. His advice to sow in the morning and the evening is a farmer’s advice, and he uses it to make a general point about acting when you cannot know the outcome.",
           src: "Fox · Seow · Krüger",
         },
         meaning:
-          "This is the practical conclusion of everything the book has established, and it is the opposite of paralysis. You cannot know which venture will succeed, so run more than one. You cannot read the weather, so stop watching it and sow. You do not understand how bones are formed in a womb and you will not understand the work of God either, so act anyway. Then the turn to a young man, told to rejoice and follow his heart and his eyes, with a clause attached about judgment that has been read as a later hand and reads just as well as this writer's own refusal to make it simple.",
+          "Here the Teacher draws the practical conclusion of everything he has argued, and it is the opposite of giving up. You cannot know which venture will succeed, he says, so start more than one. You cannot predict the weather, so stop watching the sky and sow your seed. You do not understand how bones form in a mother’s womb, and you will not understand God’s work either, so act anyway. Then he turns to a young man and tells him to rejoice and to follow his heart and his eyes, adding that God will bring him into <b>judgment</b> for it all. Some scholars think a later editor added that clause, but it reads just as well as the Teacher’s own refusal to make anything simple.",
         lenses: {
-          arch: "The decision taken without the information that would have settled it, which is every decision anybody has ever actually made. (Sowing in weather you cannot read.)",
+          arch: "Every decision any person has ever made, they made without the information that would have settled it. Farmers in every age have had to sow before they knew what the weather would do, and the Teacher takes their position as a picture of every human choice.",
         },
       },
       {
@@ -874,21 +874,21 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "genre",
-          text: "The imagery is a household running down. The keepers of the house tremble, the strong men stoop, those grinding cease because they are few, the ones watching through windows see dimly, the doors to the street are shut. Then four broken things at a well: a silver cord, a golden bowl, a pitcher, a wheel. And the almond blossoming, the grasshopper losing its spring, the caper berry shrivelling.",
+          text: "The Teacher pictures a household running down. The keepers of the house tremble, the strong men stoop, the women grinding grain stop because there are too few of them, the women looking through the windows see dimly, and the doors to the street are shut. Then he names four broken things at a well: a silver cord, a golden bowl, a pitcher, and a wheel. And he mentions the almond tree in blossom, the grasshopper that drags itself along, and the caper berry that no longer stirs desire.",
           src: "Fox · Seow · Alter",
         },
         misreading: {
           named:
-            "The poem is a coded anatomy of old age: the keepers are the hands, the grinders are the teeth, the windows are the eyes.",
-          why: "That decoding is ancient, ingenious, and mostly works, which is the problem. Read as a key the poem becomes a puzzle with a solution, and once you have the solution there is no reason to read it again. What is on the page is a great house in its last stage, the staff too few to keep it, the doors shut and the sound going out of it. That image does something the anatomy cannot. It makes the ending gradual, domestic and quiet, which is how it usually is.",
+            "Many readers treat the poem as a coded description of the aging body: the keepers of the house are the hands, the grinders are the teeth, and the windows are the eyes.",
+          why: "Readers worked out that decoding long ago, and it is clever and mostly works, which is exactly the problem. If we read the poem as a code, we turn it into a puzzle with a solution, and once we have the solution we have no reason to read it again. What the Teacher actually describes is a great house in its last days, with too few servants to keep it up, its doors shut, and the sound fading out of it. That picture does something the decoding cannot do. It lets us feel the end of a life as gradual, domestic and quiet, which is how it usually comes.",
         },
         meaning:
-          "The instruction is to remember now, and everything after it is the reason, laid out as one long before: before the light goes, before the house shuts, before the cord snaps and the pitcher goes at the spring. Then a line that is not despair but bookkeeping, the dust returning to the ground and the breath to God who gave it. And then the thesis again, word for word from chapter one, closing the frame. Nothing has been solved. Something has been recommended, six times.",
+          "The Teacher tells us to remember our Creator now, and everything that follows gives the reason, in one long series of befores: before the light goes, before the house is shut, before the cord snaps and the pitcher breaks at the spring. Then he writes a line that is not despair but simple accounting, that the dust returns to the ground and the breath returns to God who gave it. Finally he repeats, word for word, the sentence he began with in chapter one, and so closes the frame. He has not solved anything. He has recommended something, six times.",
         addr: {
           mode: "claims",
-          text: "You will be, at some point, a house with fewer people in it than it was built for. The book does not ask you to be brave about that. It asks you to remember now, while the light is still sweet, which is a thing that can only be done early.",
+          text: "Sooner or later each of us will be like a house with fewer people in it than it was built for. The Teacher does not ask us to be brave about that. He asks us to remember now, while life is still sweet, because we can only do that early.",
         },
-        ask: "What do you want to be in the habit of, before the days come that you take no pleasure in?",
+        ask: "What do you want to be in the habit of before the days come when you take no pleasure in them?",
       },
     ],
   },
@@ -899,8 +899,8 @@ export const ECCLESIASTES: Reading[] = [
     span: "Ecclesiastes 12:9–14",
     chapterIndex: 12,
     title: "The epilogue",
-    thread: "Six verses in a different voice, speaking about the Teacher from outside his own book, and closing on a sentence that lands like a door shutting.",
-    closeEnd: "Whether that is a later hand making a dangerous book keepable, or the author signing his own work, is genuinely argued, and this app is not going to settle it for you.",
+    thread: "In the last six verses of the book someone writes in a different voice, speaking about the Teacher from outside his book, and closes with a sentence that sounds like a door shutting.",
+    closeEnd: "Scholars genuinely disagree about whether a later editor wrote these verses to make a dangerous book acceptable, or whether the Teacher wrote them himself to sign his work, and we will not try to settle that question for you here.",
     passages: [
       {
         ref: "12:9–14",
@@ -917,14 +917,14 @@ export const ECCLESIASTES: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The voice changes here. For twelve chapters the book has spoken as I; these six verses speak of the Teacher as he, describe his method from outside it, and address a reader as my son, which is the standard address of instruction literature.",
+          text: "Here the voice changes. Apart from a few brief asides, the Teacher has spoken as “I” for twelve chapters. In these six verses someone speaks of the Teacher as “he,” describes his method from the outside, and addresses the reader as “my son,” the way teachers in the wisdom books commonly addressed their students.",
           src: "Fox · Seow · Longman · Barton",
         },
         meaning:
-          "Two readings, both serious. On the first this is a later editor doing what the book needed to survive: framing twelve dangerous chapters with a summary orthodox enough to keep, which is why we have it at all. On the second it is the author signing his own work, and the judgment clause is consistent with the one he attached to the young man two chapters earlier. What is not in doubt is the effect. After twelve chapters of vapour, fear God and keep his commandments lands like a door closing on a room somebody had just opened a window in.",
+          "Readers take this passage in two serious ways. On the first reading, a later editor did what the book needed in order to survive: he framed twelve dangerous chapters with a summary orthodox enough for the community to keep, and that is why we have the book at all. On the second reading, the Teacher signed his own work, and the warning about judgment fits the one he gave the young man in chapter 11. Either way, the effect is clear. After twelve chapters about vapor, the command to fear God and keep his commandments falls like a door shutting on a room in which someone had just opened a window.",
         addr: {
           mode: "claims",
-          text: "Somebody has summarised your situation for you in a sentence that was true and did not touch what you were actually asking about. This book keeps both: the summary, and the twelve chapters that will not fit inside it.",
+          text: "Most of us have had someone sum up our situation in a sentence that was true and still missed what we were really asking. The Teacher’s book keeps both things: the summary at the end, and the twelve chapters that will not fit inside it.",
         },
         ask: "What summary of your life is accurate and still does not describe it?",
       },
@@ -939,7 +939,7 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
   title: "Under the sun",
   range: "Ecclesiastes 1–4",
   throughline:
-    "A man with every resource available sets out to find what a life adds up to, and reports back honestly. The answer he keeps arriving at is vapour, and the first thing he does with it is tell you to eat your bread.",
+    "A man with every resource he could want sets out to discover what a human life adds up to, and he reports back honestly. Again and again he concludes that it is a vapor, and the first thing he does with that conclusion is tell us to eat our bread.",
   chapterStart: 1,
   chapterEnd: 4,
   situation: {
@@ -947,10 +947,10 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ecc-sun.webp",
     paragraphs: [
-      "Under the sun is the book's own phrase, used around thirty times, and it marks the boundary of the enquiry. It means the world as anyone can observe it, with no appeal to anything outside it. That is a deliberate limit rather than an oversight, and everything the book concludes is concluded inside it.",
-      "Wisdom writing was an international trade. Egypt and Mesopotamia produced instruction texts and sceptical dialogues for centuries, and some of them sound startlingly like this one: a man arguing with his own soul about whether living is worth it, or a servant agreeing with every contradictory thing his master proposes. Israel's contribution sits inside that conversation rather than apart from it.",
-      "And what Proverbs claims is the thing this book is testing. Proverbs offers a world that works: diligence produces plenty, righteousness produces long life, folly produces ruin. Ecclesiastes reports the exceptions and then refuses to treat them as exceptions. Job does the same from a different direction, with one man's case instead of a survey.",
-      "The economic detail is real too. Chapter 5 describes officials watching officials, absentee owners, and wealth that cannot be slept on. That is the world of a small province inside a large empire, where the money and the decisions are made a long way off.",
+      "The writer calls himself Qohelet, a Hebrew word that means something like “the one who gathers an assembly,” and English Bibles usually translate it “the Teacher.” His favorite word is hevel, which literally means vapor or breath, the kind of thing you can see but cannot hold. He also uses the phrase “under the sun” about thirty times, and with it he marks the limits of his search. He means the world as anyone can observe it, without appealing to anything beyond it. He sets that limit on purpose, and he reaches every conclusion in the book inside it.",
+      "The Teacher wrote within a wisdom tradition that stretched across the ancient Near East. For centuries Egyptian and Mesopotamian scribes had written books of instruction and skeptical dialogues, and some of them sound remarkably like this one. In one Egyptian text a man argues with his own soul about whether life is worth living, and in a Mesopotamian dialogue a servant agrees with every contradictory plan his master proposes. Israel’s wisdom writers took part in that conversation rather than standing apart from it.",
+      "The Teacher is also testing what the writers of Proverbs claimed. They described a world that works: diligence brings plenty, righteousness brings long life, and folly brings ruin. The Teacher reports the exceptions and refuses to treat them as rare. The writer of Job does the same from a different direction, through one man’s story instead of a survey.",
+      "The economic details are real as well. In chapter 5 the Teacher describes officials watched by higher officials, owners who live far from their land, and wealth that keeps its owner awake at night. That was the world of a small province inside a large empire, where other people made the decisions and spent the money a long way off.",
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },
@@ -958,8 +958,8 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
     kicker: "The second movement",
     title: "What cannot be found out",
     paragraphs: [
-      "The first movement asked what a life adds up to and answered vapour, interrupting itself three times to say eat your bread anyway.",
-      "What follows narrows. Money, worship, power, the man who has everything and cannot enjoy it, and then a long collection of sayings about what is better than what. It closes by admitting, three separate times, that nobody can find out what is actually being done under the sun, however confidently the wise claim to have looked.",
+      "In the first section the Teacher asked what a human life adds up to and answered that it is vapor, but three times he interrupted himself to say that we should eat our bread anyway.",
+      "In the next section he narrows his focus. He writes about money, worship and power, about a man who has everything and cannot enjoy it, and then he gives a long collection of sayings about what is better than what. He ends by admitting three separate times that no one can find out what God is doing under the sun, however confidently the wise claim to have looked.",
     ],
     nextMovementId: "not-found-out",
   },
@@ -967,9 +967,9 @@ export const UNDER_THE_SUN_MOVEMENT: Movement = {
     kicker: "The first movement · Ecclesiastes 1–4",
     title: "Vapour, and a handful with quiet",
     paragraphs: [
-      "Four chapters, and the case is made. A closed system that goes nowhere. An experiment run with every resource available and reported honestly. A catalogue of times nobody controls. And the tears of people who had no comforter. The word that keeps landing is the one for vapour, and the honest way to hear it is not meaningless, which is a translator's word, but unholdable. Everything in these chapters is real, and none of it stays.",
-      "What is easy to miss is that the answer is already here. Three times in four chapters he stops and says the same thing: eat, drink, find something in the work. It arrives in chapter two immediately after he says he hated life, and in chapter three immediately after he says nobody can see the whole. Each time it is attached to the bleakness rather than offered against it. This book does not cheer up. It hands you something to do.",
-      "And the last thing the movement does is turn outward. Chapters one to three ask what a life adds up to. Chapter four asks what people do to each other, and answers with a man alone and a cord of three strands. That is not an argument that company is fulfilling. It is an argument that you will fall over.",
+      "In these four chapters the Teacher makes his case. He describes a world that goes around in circles and gets nowhere. He reports an experiment he ran with every resource available, and he tells the truth about it. He lists the times and seasons that no one controls, and he records the tears of oppressed people who had no one to comfort them. The word he keeps returning to is hevel, vapor. Translators often render it “meaningless,” but a truer rendering is “impossible to hold.” Everything the Teacher describes in these chapters is real, and none of it lasts.",
+      "Readers can easily miss that the Teacher has already given his answer. Three times in four chapters he stops and says the same thing: eat, drink, and find something good in your work. He says it in chapter two immediately after he admits that he hated life, and in chapter three immediately after he says that no one can see the whole. Each time he ties the advice to the bleak observation rather than setting it against it. The Teacher does not cheer us up. He gives us something to do.",
+      "At the end of this section the Teacher turns outward. In chapters one to three he asks what a life adds up to. In chapter four he asks what people do to one another, and he answers with the picture of a man alone and with a cord of three strands. He is not arguing that company will make us happy. He is arguing that each of us will stumble, and will need someone to help us up.",
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },
@@ -981,7 +981,7 @@ export const NOT_FOUND_OUT_MOVEMENT: Movement = {
   title: "What cannot be found out",
   range: "Ecclesiastes 5–8",
   throughline:
-    "Money that will not fill anyone, a man denied the ability to enjoy what he has, a collection of sayings about what is better than what, and the repeated admission that nobody can find out what is done under the sun.",
+    "In this section the Teacher writes about money that never satisfies anyone, about a man whom God does not allow to enjoy what he has, and about what is better than what, and again and again he admits that no one can find out what God is doing under the sun.",
   chapterStart: 5,
   chapterEnd: 8,
   situation: {
@@ -989,10 +989,10 @@ export const NOT_FOUND_OUT_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ecc-search.webp",
     paragraphs: [
-      "The world of chapter five is a province inside an empire. One official watched by a higher one, and higher ones over them, is the administrative reality of Persian-period Judah: a small territory whose taxes and decisions travelled a long way off. The book offers that chain as a reason not to be astonished by injustice, which is a bleak sort of realism rather than an endorsement of it.",
-      "Money in that economy was silver by weight and land, not a number held somewhere safe. It was physical, on the premises and vulnerable, which is why the observation that a rich man cannot sleep is literal rather than figurative.",
-      "Vows were binding transactions with a real institution. A person promised something to God in exchange for something wanted, and the law took a broken vow seriously. When the book says do not tell the messenger it was a mistake, the messenger is somebody who has come to collect.",
-      "And the movement's title is the book's own claim, made three separate times in chapter eight. However hard a person works at it, and however confidently the wise say they have it, nobody can find out the work that is done under the sun. That is a limit on knowledge, stated by somebody who went and tried.",
+      "The Teacher wrote chapter five in a province inside an empire. When he describes one official watched by a higher one, with still higher ones above them, he is describing how Judah was governed under foreign rule, as a small territory whose taxes and decisions went a long way off. The Teacher points to that chain of officials as a reason not to be astonished by injustice. His realism is bleak, but he is not approving of what he describes.",
+      "In the Teacher’s world, wealth meant silver weighed out by hand, livestock and land, not a number kept somewhere safe. A rich man kept his wealth on his own property, where thieves could reach it, and so when the Teacher says that a rich man cannot sleep, he means it literally.",
+      "When people made vows, they made binding agreements with a real institution. A person promised God something in return for something he wanted, and Israel’s law treated a broken vow seriously. When the Teacher warns his readers not to tell the messenger that their vow was a mistake, he probably means a temple official who has come to collect what was promised.",
+      "The Teacher himself supplies the title of this section, in a claim he makes three times in chapter eight. However hard a person works at it, he says, and however confidently the wise say they have done it, no one can find out what God is doing under the sun. He sets a limit on human knowledge, and he does so as someone who went and tried.",
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },
@@ -1000,8 +1000,8 @@ export const NOT_FOUND_OUT_MOVEMENT: Movement = {
     kicker: "The third movement",
     title: "Eat your bread",
     paragraphs: [
-      "Eight chapters of looking, and the finding is that the looking does not finish. What follows does not solve that. It stops trying.",
-      "The last four chapters hold the bleakest sentence in the book and the most direct instruction in it, four verses apart. Then a second collection of sayings, a poem about a house falling into disrepair that is really about a body, and six verses in a different voice that somebody added at the end.",
+      "After eight chapters of searching, the Teacher has found that the search never ends. In the chapters that follow he does not solve that problem. He stops trying to.",
+      "In the last four chapters the Teacher writes the bleakest sentence in the book and, four verses later, its most direct instructions. Then he gives a second collection of sayings and a poem about a great house falling into disrepair, which is really about a body. Last comes a six-verse epilogue in a different voice, which someone added at the end.",
     ],
     nextMovementId: "eat-your-bread",
   },
@@ -1009,9 +1009,9 @@ export const NOT_FOUND_OUT_MOVEMENT: Movement = {
     kicker: "The second movement · Ecclesiastes 5–8",
     title: "Nobody has finished looking",
     paragraphs: [
-      "Four chapters narrowing from the shape of a life to the specifics of one. Money that will not fill anybody. A man given everything and denied the capacity to enjoy it. A collection of sayings that recommends the funeral over the party, for a stated reason. And a chapter of court advice for people with no leverage at all.",
-      "What holds it together is the claim in the movement's title, made three times in the last chapter and aimed squarely at the writer's own profession: nobody can find out the work that is done under the sun, and even a wise man who says he has, cannot. That is not an argument for ignorance. It is an argument against people selling completion, and it is made by somebody who went and looked.",
-      "And the permission has now landed five times in eight chapters, each time attached to the hardest sentence around it. By this point it is not an interruption of the argument. It is the conclusion the argument keeps producing.",
+      "In these four chapters the Teacher narrows his view from the shape of a whole life to its details. He writes about money that never satisfies anyone, about a man given everything but denied the ability to enjoy it, and about a collection of sayings that recommends the funeral over the party for a reason he states. He ends with a chapter of advice at court for people who have no power at all.",
+      "The Teacher holds the section together with the claim that gives it its title, and he makes it three times in the last chapter, aiming it squarely at his own profession: no one can find out what God is doing under the sun, and even a wise man who says he has done so cannot. He is not arguing for ignorance. He is arguing against anyone who claims to have the final answer, and he argues as someone who went and looked.",
+      "By now the Teacher has given his permission to enjoy life five times in eight chapters, and each time he ties it to the hardest sentence around it. By this point readers can see that the permission is not a break in his argument. It is the conclusion he keeps reaching.",
     ],
     sources: "Fox · Seow · Krüger",
   },
@@ -1023,7 +1023,7 @@ export const EAT_YOUR_BREAD_MOVEMENT: Movement = {
   title: "Eat your bread",
   range: "Ecclesiastes 9–12",
   throughline:
-    "One fate for everyone, and then the most direct instruction in the book, four verses later. Go. Eat. Drink. Wear white. Love somebody. Do the work with your might, because the days are few.",
+    "The Teacher says that the same fate comes to everyone, and four verses later he gives his most direct instructions: go, eat, drink, wear white, love someone, and do your work with all your strength, because your days are few.",
   chapterStart: 9,
   chapterEnd: 12,
   situation: {
@@ -1031,10 +1031,10 @@ export const EAT_YOUR_BREAD_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ecc-bread.webp",
     paragraphs: [
-      "Sheol is not hell. In the Hebrew Bible it is the grave, the place of the dead, and it is characterised by inactivity rather than by punishment: no work, no planning, no knowledge, no wisdom. When this book says the dead know nothing, that is what it is describing, not making a claim about judgement, and the hope that grows later in the collection is a development rather than a correction.",
-      "White garments and oil on the head were what people wore to a feast. Telling somebody to wear them always is telling them to dress for a celebration on an ordinary day, which is a stronger instruction than it looks in English.",
-      "The permission that has appeared five times so far arrives here in the imperative, for the only time in the book. Go, eat, drink, let, enjoy, do. This is the one stretch of Ecclesiastes that gives orders.",
-      "And the closing poem's imagery is drawn from a household. The keepers of the house tremble, the strong men stoop, the grinders cease because they are few, those looking through the windows grow dim, the door to the street is shut. Readers have decoded it line by line as an anatomy of aging, and it works as one. It also works simply as a house running down, which is what the poem actually describes.",
+      "Sheol is not hell. In the Hebrew Bible it is the grave, the place of the dead, and the writers describe it as a place of inactivity rather than punishment, where no one works, plans, knows or reasons. When the Teacher says that the dead know nothing, he is describing Sheol, not making a claim about God’s judgment. Later biblical writers came to hope for something more, and they developed that hope rather than correcting the Teacher.",
+      "People put on white clothes and oil for a feast. When the Teacher tells his readers to wear them always, he is telling them to dress for a celebration on an ordinary day, which is a stronger instruction than it sounds in English.",
+      "The Teacher has given his permission to enjoy life five times already, and here he gives it as a string of direct commands: go, eat, drink, let your clothes be white, enjoy life, and do your work. Nowhere else in the book does he give so many orders in a row.",
+      "In his closing poem the Teacher draws his images from a household. The keepers of the house tremble, the strong men stoop, the grinders stop because there are too few, the watchers at the windows grow dim, and the door to the street is shut. Readers have decoded the poem line by line as a description of the aging body, and the decoding works. But the poem also works simply as a picture of a house running down, which is what the Teacher actually describes.",
     ],
     sources: "Fox · Seow · Krüger · Barton",
   },
@@ -1042,9 +1042,9 @@ export const EAT_YOUR_BREAD_MOVEMENT: Movement = {
     kicker: "The third movement · Ecclesiastes 9–12",
     title: "Go, and then the house shuts",
     paragraphs: [
-      "The movement opens on the flattest statement of death in the collection and answers it four verses later with the only imperatives in the book. Go. Eat. Drink. Wear white. Love somebody. Do the work with your might. The grounds for the instruction are the sentence it follows, not a mitigation of it.",
-      "Then the second collection of sayings, mostly about how small carelessness undoes competent people, and the practical conclusion drawn from twelve chapters of not knowing: you cannot read the weather, so sow in the morning and again in the evening, because you do not know which will take.",
-      "And the closing poem, which is a house running down, with too few staff to keep it, the doors shut and the sound going out of it. It ends with the dust returning to the ground and the breath returning to God, and then the thesis again, word for word from chapter one. Nothing has been solved. Something has been recommended, six times.",
+      "The Teacher opens this section with the flattest statement about death in the whole Bible, and four verses later he answers it with his most direct commands: go, eat, drink, wear white, love someone, and do your work with all your strength. He grounds those commands in the sentence about death that comes before them. He does not soften that sentence.",
+      "Then he gives his second collection of sayings, mostly about how small carelessness undoes capable people, and he draws the practical conclusion from twelve chapters of not knowing: you cannot predict the weather, so sow in the morning and again in the evening, because you do not know which sowing will grow.",
+      "Last comes his closing poem, about a house running down, with too few servants to keep it, its doors shut and the sound fading out of it. The Teacher ends it with the dust returning to the ground and the breath returning to God, and then he repeats, word for word, the sentence he began with in chapter one. He has not solved anything. He has recommended something, six times.",
     ],
     sources: "Fox · Seow · Krüger",
   },
@@ -1055,27 +1055,27 @@ export const ECCLESIASTES_INTRO: Panel = {
   kicker: "An introduction · Ecclesiastes 1–12",
   title: "The book that argues with the rest",
   paragraphs: [
-    "Ecclesiastes is twelve chapters and 222 verses, and it is the strangest thing in the Hebrew Bible. It speaks in the first person, calls itself Qoheleth, which is a role rather than a name, and presents itself as a king in Jerusalem, which points at Solomon without ever saying the word. It abandons that pose after chapter two. Its Hebrew is late and carries Persian loanwords, which places the writing several centuries after any Solomon, most likely in the Persian period.",
-    "What it says is why it is remarkable. That the dead know nothing and have no further reward. That a man has no advantage over a beast, since both go to the same place. That he has seen a righteous man perish in his righteousness and a wicked man live long in his wickedness. These are not marginal remarks made in passing. They are the argument, and they contradict things said elsewhere in the same collection.",
-    "It nearly did not survive the cut. Ancient discussion records real dispute about whether it belonged, and the objection was exactly the one a modern reader raises: that it contradicts itself, and that it could be read as heresy. The six verses at the end, in a different voice, praising the Teacher from outside his own book and closing on fear God and keep his commandments, are widely read as the frame that made it keepable. Whether that is a later hand or the author signing his own work is genuinely argued.",
-    "And it is not, in the end, a book about despair, however often it is quoted that way. Six times it stops to say the same thing. Eat your bread. Drink your wine. Enjoy your work. Be with the person you love. It grants that permission on the basis of the bleakness rather than in spite of it, which is a harder thing than optimism and a good deal more use.",
+    "Ecclesiastes is twelve chapters and 222 verses long, and it is the strangest book in the Hebrew Bible. The writer speaks in the first person and calls himself Qohelet, a Hebrew title rather than a name, which means something like “the one who gathers an assembly” and which English Bibles usually render as “the Teacher.” He presents himself as a king in Jerusalem, which points to Solomon without naming him, and he drops that role after chapter two. He wrote in late Hebrew that borrows words from Persian, so most scholars date the book several centuries after Solomon, somewhere between about 450 and 250 BCE.",
+    "What the Teacher says is what makes the book remarkable. He says that the dead know nothing and have no further reward. He says that a man has no advantage over a beast, since both go to the same place. He says he has seen a righteous man perish in his righteousness and a wicked man live long in his wickedness. He does not make these remarks in passing. They are his argument, and they contradict things other biblical writers say.",
+    "The book nearly did not make it into the Bible. Ancient rabbis record a real dispute over whether it belonged, and they raised the same objection a modern reader raises: that the Teacher contradicts himself, and that people could read him as a heretic. In the six verses at the end someone speaks in a different voice, praises the Teacher from outside his book, and closes with the command to fear God and keep his commandments. Many scholars think those verses made the book acceptable to keep. They genuinely disagree about whether a later editor wrote them or the Teacher signed his own work.",
+    "In the end the Teacher has not written a book about despair, however often people quote him that way. Six times he stops to say the same thing: eat your bread, drink your wine, enjoy your work, and be with the person you love. He grants that permission because of the bleakness rather than in spite of it, which is harder than optimism and a good deal more useful.",
   ],
   timeline: [
     {
       tag: "c. 950 BCE",
-      text: "Solomon, whom the opening verses point at without naming him.",
+      text: "Solomon, whom the Teacher hints at in his opening verses without naming him.",
     },
     {
       tag: "c. 450–200 BCE",
-      text: "The window most place the writing in, on the evidence of the language.",
+      text: "Most scholars date the writing to this period, on the evidence of its Hebrew.",
     },
     {
       tag: "c. 200 BCE",
-      text: "Ben Sira writes, and the wisdom tradition this book argues inside is well established.",
+      text: "Ben Sira writes his book of wisdom, and by now the wisdom tradition the Teacher argued within is well established.",
     },
     {
       tag: "100s CE",
-      text: "Rabbinic discussion records real dispute over whether the book belonged in the collection at all.",
+      text: "Rabbis record a real dispute over whether the book belonged in the Bible at all.",
     },
   ],
   sources: "Fox · Seow · Longman · Krüger · Barton",
@@ -1085,20 +1085,20 @@ export const ECCLESIASTES_CAPSTONE: Capstone = {
   kicker: "The whole book · Ecclesiastes 1–12",
   title: "It is in the collection, and it says this",
   paragraphs: [
-    "The most interesting fact about this book is that it is here at all. A text saying that the same fate comes to the righteous and the wicked, that the dead know nothing and have no further reward, that a man has no advantage over a beast, and that nobody can find out what is done under the sun, including the wise, was kept, copied, argued over and read aloud. Ancient discussion records the dispute plainly, on exactly the grounds a modern reader raises.",
-    "It was not kept by being tamed, though the last six verses tried. The epilogue is orthodox and it is six verses long, and the twelve chapters in front of it are not adjusted to fit. Whatever the collection decided when it kept this book, it did not decide to make it agree.",
-    "And what it claims is narrower than its reputation. Not that life is meaningless, which is a translator's word doing work the Hebrew does not do. Hevel is vapour: real, visible, and impossible to hold. Everything in these chapters is real and none of it stays, and the book is precise about the difference between those two things.",
-    "It does not end in despair, because it never was despair. Six times in twelve chapters, always immediately after the hardest sentence in its paragraph, it stops and says the same thing. Eat your bread. Drink your wine. Wear white. Enjoy the work while your hand is still on it. Be with the person you love, all the days of your fleeting life. That is not offered as compensation and it is not offered as a distraction. It is offered as the portion, which is this book's word for what a person actually gets.",
+    "The most interesting fact about this book is that it is in the Bible at all. The Teacher wrote that the same fate comes to the righteous and the wicked, that the dead know nothing and have no further reward, that a man has no advantage over a beast, and that no one, not even the wise, can find out what God is doing under the sun. Yet Jews kept his book, copied it, argued over it, and read it aloud. The ancient rabbis record their dispute over it plainly, on exactly the grounds a modern reader would raise.",
+    "The people who kept the book did not tame it, though whoever wrote the last six verses tried. Those verses are orthodox, and there are only six of them, while the twelve chapters before them remain unchanged. Whatever the rabbis decided when they kept this book, they did not decide to make the Teacher agree with everyone else.",
+    "The Teacher also claims less than his reputation suggests. He does not say that life is meaningless; translators chose that word, and it says more than the Hebrew does. His word hevel means vapor, something real and visible that no one can hold. The Teacher insists that everything he describes is real and that none of it lasts, and he keeps those two claims carefully apart.",
+    "The Teacher does not end in despair, because he never was in despair. Six times in twelve chapters, always right after the hardest sentence in the passage, he stops and says the same thing: eat your bread, drink your wine, wear white, enjoy your work while your hand is still on it, and be with the person you love all the days of your fleeting life. He does not offer this as compensation or as a distraction. He calls it our portion, the word he uses for what a person actually receives.",
   ],
   tensions: [
     {
       claim:
-        "The conclusion of the matter is to fear God and keep his commandments, for this is the whole duty of man, and God will bring every deed into judgment.",
+        "The writer of the epilogue says that the conclusion of the matter is to fear God and keep his commandments, because this is the whole duty of man, and God will bring every deed into judgment.",
       counter:
-        "The twelve chapters it is appended to say that one fate comes to the righteous and the wicked alike, that the dead know nothing, and that nobody can find out the work done under the sun. Whether the epilogue is a later hand making a dangerous book keepable, or the author signing his own, is argued and unsettled.",
+        "In the twelve chapters before the epilogue, the Teacher says that one fate comes to the righteous and the wicked alike, that the dead know nothing, and that no one can find out what God is doing under the sun. Scholars still argue over whether a later editor added the epilogue to make a dangerous book acceptable, or whether the Teacher signed his own work.",
       where: "Ecclesiastes 12:13–14 · Ecclesiastes 9:2–5 · Ecclesiastes 8:17",
     },
   ],
   sources: "Fox · Seow · Longman · Krüger · Barton",
-  ask: "This book was kept because somebody decided the collection needed a voice that would say all of it out loud. What are you not saying, that the people around you might need said?",
+  ask: "The people who kept this book decided that the Bible needed a voice willing to say all of this out loud. What are you not saying that the people around you might need to hear?",
 };

@@ -26,8 +26,8 @@ export const MARK: Reading[] = [
     chapterIndex: 1,
     title: "The beginning",
     unitLabel: "Scene",
-    thread: "The earliest gospel starts with no birth, no genealogy and no childhood. It starts with a man in a desert who says he is not the point, and inside twenty verses four men have walked away from a working business.",
-    closeEnd: "Nobody in the book has asked yet who he is. Before long it will be the only question anybody has, and almost nobody in these sixteen chapters will get it right.",
+    thread: "Mark wrote the earliest of the four gospels, and he begins it without any account of Jesus’ birth, ancestry or childhood. He opens instead with John the Baptist preaching in the desert and insisting that he himself is not the one who matters, and within twenty verses Jesus has called four fishermen away from a working business.",
+    closeEnd: "So far no one in Mark’s account has asked who Jesus is. Before long everyone will be asking it, and across these sixteen chapters almost no one will answer it correctly.",
     passages: [
       {
         label: "One",
@@ -47,18 +47,18 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "No birth, no genealogy, no childhood. The book starts with a grown man in a desert. The quotation in verses 2 and 3 is credited to Isaiah and is actually two texts spliced together, a line from Malachi about a messenger sent ahead laid in front of a line from Isaiah about a voice in the wilderness. John's clothing is Elijah's, described the same way in 2 Kings, and his food is what the desert gives.",
+          text: "Mark tells us nothing of Jesus’ birth or childhood; he starts with a grown man in a desert. He credits the quotation in verses 2 and 3 to Isaiah, but he has actually joined two passages together, setting a line about a messenger sent ahead (from Malachi, echoing Exodus) in front of Isaiah’s line about a voice in the wilderness. Mark describes John’s clothing in the same words that 2 Kings uses for the prophet Elijah, and John eats what the desert provides.",
           src: "Marcus · Collins · France",
         },
         misreading: {
           named:
-            "The first sentence is a devotional opening, the sort of thing a religious book begins with.",
-          why: "Both of its main words belonged to the empire. Gospel was the word for an official announcement out of Rome, a victory or the accession of an emperor, and son of God was a title Augustus used of himself. Mark puts both on a Galilean labourer the state is going to execute. Read as devotion it is pious throat-clearing. Read in its own century it is a sentence you could be arrested for.",
+            "Readers often take the first sentence as a devotional opening, the kind of pious phrase a religious book begins with.",
+          why: "Mark’s first readers would have heard both of its key words as belonging to the empire. Romans used the word “gospel” for official good news, such as a military victory or the birth or accession of an emperor, and Augustus called himself the son of a god, because the Senate had declared his adoptive father Julius Caesar divine. Mark gives both titles to a Galilean laborer whom the Roman state is going to execute. A modern reader may hear the sentence as pious throat-clearing, but in its own century someone could have been arrested for saying it.",
         },
         meaning:
-          "Notice where he begins. Not in Bethlehem and not in eternity, but in a desert, with somebody else. John gets eight verses, and the man the book is about does not appear until verse nine. When he is announced, it is by someone whose whole speech is about not being the point. Mark is in a hurry everywhere else in this book. Here he waits.",
+          "Mark does not begin in Bethlehem or in eternity. He begins in a desert, with someone other than Jesus. He gives John eight verses, and Jesus, the man the book is about, does not appear until verse nine, announced by a man whose whole message is that he himself is not the point. Everywhere else in his gospel Mark hurries, but here he takes his time.",
         lenses: {
-          theo: "The wilderness is where this people has always been re-formed, and anyone who knew Isaiah 40 knew that the voice in it was announcing the end of an exile. The book opens by standing inside that sentence.",
+          theo: "Throughout Israel’s history God had met and remade his people in the wilderness, and anyone who knew Isaiah 40 knew that the voice crying there was announcing the end of the exile in Babylon. By quoting that passage first, Mark places his whole account inside Isaiah’s promise.",
         },
       },
       {
@@ -76,17 +76,17 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He comes from Nazareth, a village of a few hundred. The Greek for what happens to the heavens is the word for tearing rather than opening, and Mark uses it once more in this book, at the temple curtain when he dies.",
+          text: "Jesus comes from Nazareth, a village of a few hundred people. When Mark describes the heavens at his baptism, he uses a Greek word that means tearing rather than opening, and he uses it only once more in the gospel, when the curtain of the temple tears at Jesus’ death.",
           src: "Marcus · Collins",
         },
         meaning:
-          "The wilderness gets two verses and no conversation. No bargaining over bread, no city wall, no kingdoms of the world: those belong to Matthew and Luke, written later, and most readers are remembering their scene rather than this one. Mark gives forty days, a tempter, wild animals nobody else mentions, and angels.",
+          "Mark gives the temptation in the wilderness two verses and no dialogue. The argument over bread, the temple pinnacle and the kingdoms of the world all come from Matthew and Luke, who wrote later, and most readers remember their version rather than Mark’s. Mark records only forty days, Satan the tempter, wild animals that no other gospel mentions, and angels who serve Jesus.",
         tensions: [
           {
             claim:
-              "He goes into the river with everyone else, in a baptism the text has just called one for the forgiveness of sins.",
+              "Jesus goes into the river along with everyone else, to receive a baptism that Mark has just described as being for the forgiveness of sins.",
             counter:
-              "The three gospels written after this one all handle that sentence carefully. Matthew has John try to refuse him, Luke reports it without putting John in the scene, and the fourth gospel drops the baptism.",
+              "The three gospel writers who came after Mark all handle this moment carefully. Matthew has John try to refuse to baptize him, Luke reports the baptism only after telling us John was in prison, and John’s gospel never narrates the baptism at all.",
             where: "Matthew 3:13–15 · Luke 3:19–22 · John 1:29–34",
           },
         ],
@@ -108,19 +108,19 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "John has been arrested, and that is when he starts. Kingdom, spoken in a province under Roman administration, is the word an empire uses of itself. And the men he calls are not destitute. Verse 20 leaves Zebedee in the boat with the hired men, which means a business with employees.",
+          text: "Jesus begins preaching only after John has been arrested. In a province under Roman rule, the word “kingdom” was the word the empire used for itself. The men he calls are not poor, either: in verse 20 James and John leave their father Zebedee in the boat with the hired men, which tells us the family ran a business with employees.",
           src: "Marcus · Bond · Horsley",
         },
         meaning:
-          "There is no argument in this scene and no explanation. He walks past, says a few words, and they go. Mark does not tell us they had heard him before, or what they were weighing, because he is not interested in the decision. He is interested in what it costs, and that he gives you precisely: the nets, then the boat, then the father sitting in it.",
+          "Mark gives no argument and no explanation in this scene. Jesus walks past, says a few words, and the men follow him. Mark does not tell us whether they had heard him before or what they were weighing, because he is not interested in how they decided. He is interested in what it cost them, and he tells us exactly: first the nets, then the boat, then their father sitting in it.",
         lenses: {
-          arch: "The summons that arrives while you are working and does not wait for you to finish the job. (Called off the boat.)",
+          arch: "In many old stories the call to a new life comes in the middle of ordinary work, and the person called has to leave the job unfinished. Simon, Andrew, James and John receive their call while they are mending and casting nets, and they leave the nets where they lie.",
         },
         addr: {
           mode: "names",
-          text: "You have been walked past by something that asked for more than you had reason to give, and you have probably done the arithmetic afterward rather than at the time. What you left is always easier to name than why you went.",
+          text: "Most of us have met someone or something that asked more of us than we had any good reason to give. Often we only work out the cost afterward, and we find it easier to name what we left behind than to explain why we went.",
         },
-        ask: "What are you still holding on to, that you would have to put down before you could understand why?",
+        ask: "What are you still holding on to that you might have to put down before you could understand why?",
       },
     ],
   },
@@ -132,8 +132,8 @@ export const MARK: Reading[] = [
     chapterIndex: 1,
     title: "A day in Capernaum",
     unitLabel: "Scene",
-    thread: "One day, told without a gap in it. A synagogue, a house, the whole town at the door after dark, and a man before dawn trying to get out of the building he has just filled.",
-    closeEnd: "He tells the man to say nothing. The man says everything, and the result is that Jesus can no longer walk into a town.",
+    thread: "Mark tells the story of a single day without a break: Jesus teaches in a synagogue, heals in a house, and receives the whole town at the door after dark. Then, before dawn, he slips away from the place he has just filled with people.",
+    closeEnd: "Jesus tells the healed man to say nothing. The man tells everyone, and as a result Jesus can no longer enter a town openly.",
     passages: [
       {
         label: "One",
@@ -153,18 +153,18 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A scribe taught by citing the chain of authorities behind him, and the crowd's word for this man is that he does not. The unclean spirit speaks before anyone else does, names him, and is told to be quiet. That silencing starts a pattern that runs the length of the book.",
+          text: "A scribe taught by citing the authorities who had taught before him, and the crowd notices that Jesus does not do this. Before anyone else speaks, the unclean spirit names him, and Jesus orders it to be quiet. With that command Jesus begins a pattern of silencing that continues to the end of the gospel.",
           src: "Marcus · Collins · France",
         },
         misreading: {
           named:
-            "The unclean spirits are either literal demons, or primitive superstition a modern reader should quietly skip past.",
-          why: "Both readings stop the book. In this world, illness, madness and misfortune were understood as something having taken up residence where it did not belong, and people described what they saw in the vocabulary they had. You do not have to adopt that vocabulary to read the scene, which is a man screaming in a synagogue who is afterwards sitting quietly. It is also worth noticing how close that vocabulary runs to the language of occupation, in a book written for people whose country had something in it that did not belong.",
+            "Many readers assume the unclean spirits must be either literal demons or primitive superstition that a modern reader should quietly skip.",
+          why: "Either assumption stops a reader from hearing what Mark is saying. People in this world understood illness, madness and misfortune as something that had moved in where it did not belong, and they described what they saw with the words they had. You do not need to adopt their vocabulary to follow the scene, in which a man who was screaming in a synagogue is afterwards sitting quietly. It is also worth noticing how closely that vocabulary resembles the language of military occupation, since Mark wrote for people whose country was occupied by a foreign power.",
         },
         meaning:
-          "Two things happen here and only one of them is a miracle. The crowd says <b>authority</b> twice, and what they mean is that he is not quoting anybody. And the first character in the book to say who he is, is the thing being thrown out. Not the crowd, not the scribes, not the men who just left their nets. The book keeps that arrangement for fifteen chapters.",
+          "Two things happen in this scene, and only one of them is a miracle. The crowd twice says that Jesus teaches with <b>authority</b>, by which they mean that he quotes no one. And the first character in the gospel to say who he is turns out to be the spirit he is driving out. Neither the crowd, nor the scribes, nor the men who have just left their nets recognize him. Mark keeps that arrangement for fifteen chapters.",
         lenses: {
-          arch: "The one who names you correctly turns out to be the one you are in the middle of getting rid of. (Recognised by the wrong mouth.)",
+          arch: "Many stories have a character who sees the hero clearly but is the very one the hero is fighting. In this scene Jesus is driving out the spirit when it names him correctly, while the people who ought to recognize him do not.",
         },
       },
       {
@@ -188,13 +188,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The house is Simon's, and the fever is dealt with in one sentence: he takes her hand and lifts her. The town waits until after sunset because that is when the sabbath ends and carrying a sick person stops being work. Then before dawn he goes out to a deserted place, and the word Mark uses for it is the same one he used for the wilderness John was preaching in.",
+          text: "The house belongs to Simon, and Mark tells the healing of his mother-in-law’s fever in one sentence: Jesus takes her hand and raises her up. The townspeople wait until after sunset to bring their sick, because the sabbath ends then, and carrying a sick person no longer counts as work. Before dawn Jesus goes out to a deserted place, and Mark uses the same word for it that he used for the wilderness where John preached.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The pace is the argument. Synagogue, house, whole town at the door, and then a man getting up in the dark to be somewhere nobody is. When they find him, notice that Simon's sentence is a complaint dressed as news: everyone is looking for you. The answer is not to go back. It is to leave. Whatever this book thinks he came for, being wanted by a town is not it.",
+          "Mark tells this day at a fast pace on purpose. Jesus goes from the synagogue to the house, the whole town gathers at the door, and then he gets up in the dark to be somewhere no one is. When Simon finds him, he says “Everyone is looking for you,” which is really a complaint dressed up as news. Jesus does not go back; he leaves for other towns. Whatever Jesus came to do, Mark makes clear that being wanted by one town is not it.",
         lenses: {
-          theo: "The first thing he does after a day that worked is remove himself from it. Mark keeps putting him alone after a success, and every time, somebody comes to fetch him back.",
+          theo: "After a day of success, the first thing Jesus does is withdraw. Mark repeatedly shows him going off alone after a success, and each time someone comes to fetch him back.",
         },
       },
       {
@@ -213,16 +213,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Leprosy in Leviticus is a category of ritual impurity rather than one disease, and its consequence is exclusion: the person lives outside the camp, and contact passes the state on. Which is what makes verse 41 the sentence in the scene. He touched him. Under the law the uncleanness travels toward the clean person, not the other way. Then he sends him to a priest, because only a priest can certify that anything has changed.",
+          text: "In Leviticus, “leprosy” refers to a range of skin conditions that made a person ritually impure rather than to a single disease, and it meant exclusion: the person had to live outside the camp, and anyone who touched him became impure too. That is why verse 41 matters so much. Jesus touched him. Under the law, impurity passed from the unclean person to the clean one, but here Jesus’ touch makes the unclean man clean. Then Jesus sends him to a priest, because only a priest could certify that he was healed.",
           src: "Leviticus 13–14 · Marcus · Collins",
         },
         meaning:
-          "The man's line is not about ability. It is about willingness. He has been told, or has worked out for himself, that his condition is a verdict, and the only open question is whether anyone wants it lifted. The answer is two words and a hand. Then the joke Mark keeps making: the man is told to say nothing, says everything, and by the end the one who could not enter a town can go anywhere, and the one who could go anywhere cannot enter a town. They have changed places.",
+          "The man does not doubt that Jesus can heal him. He doubts that Jesus wants to. Others have told him, or he has concluded for himself, that his condition is a verdict against him, and the only open question is whether anyone wants it lifted. Jesus answers with two words and a touch. Then Mark points out a reversal: Jesus tells the man to say nothing, the man tells everyone, and so the man who could not enter a town can now go anywhere, while Jesus, who could go anywhere, can no longer enter a town openly. The two have changed places.",
         addr: {
           mode: "names",
-          text: "You have probably decided somewhere that a thing about you is not only true but deserved, and stopped asking about it on those grounds. The man in this scene does not doubt the power. He doubts the willingness.",
+          text: "Many of us have decided that something about ourselves is not only true but deserved, and so we have stopped asking for it to change. The man in this scene did not doubt that Jesus had the power. He doubted that Jesus was willing.",
         },
-        ask: "What have you stopped asking for, because somewhere you decided you had it coming?",
+        ask: "What have you stopped asking for because you decided somewhere along the way that you had it coming?",
       },
     ],
   },
@@ -235,8 +235,8 @@ export const MARK: Reading[] = [
     crossesChapters: true,
     title: "Five arguments",
     unitLabel: "Scene",
-    thread: "Five arguments in a row, each closer to the bone than the last. At the end of the fifth, two groups who agree about nothing else agree that he has to die. Mark gets there by chapter three.",
-    closeEnd: "The Pharisees and the Herodians go out together. It is the only thing in the book they ever do together.",
+    thread: "Mark sets five arguments in a row, each more serious than the last. At the end of the fifth, two groups who agree on nothing else agree that Jesus must die, and Mark has brought us there by the start of chapter three.",
+    closeEnd: "The Pharisees and the Herodians go out together to plot against Jesus. This is the first time Mark shows them working together, and they will do it again in chapter 12.",
     passages: [
       {
         label: "One",
@@ -260,13 +260,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A village house had a flat roof of beams, brush and packed mud, reached by an outside stair and diggable by hand. Four men do real damage to somebody's house. What Jesus answers is <b>their</b> faith, plural, which in the sentence is the faith of the carriers rather than the man on the mat. And the blasphemy charge is not invented: forgiveness was God's to give, and the scribes are stating the ordinary position correctly.",
+          text: "A village house had a flat roof of beams, brush and packed mud, which people reached by an outside stair and could dig through by hand. The four friends do real damage to someone’s house. Mark says that Jesus saw <b>their</b> faith, which means the faith of the men carrying the mat as well as the man lying on it. The scribes are not inventing their charge of blasphemy, either: they are stating the ordinary belief of their day, that only God could forgive sins.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "He is asked for nothing and gives something nobody requested. The man was brought for his legs. Then the argument, and notice its shape: he does not defend the claim, he demonstrates it, and he does it by proving the easier case. Anyone can say your sins are forgiven, because nobody can check. So he does the one that can be checked. The scribes are not being slow here. They have understood him exactly, which is why the temperature keeps rising for the rest of the chapter.",
+          "No one asked Jesus to forgive this man, and he does it anyway; the friends brought the man for his legs. Then comes the argument, and the way Jesus makes it is worth following. He does not defend his claim to forgive. He demonstrates it by doing the easier thing to check. Anyone can say “your sins are forgiven,” because no one can see whether it is true, so Jesus does the thing that everyone can see. The scribes are not slow here. They understand him exactly, and that is why their hostility keeps growing through the rest of the chapter.",
         lenses: {
-          theo: "Forgiveness arrives before the request and with no condition attached, and the first people to object are the ones who care most about God's prerogatives. Both halves of that recur.",
+          theo: "Jesus forgives the man before he asks and without any condition, and the first people to object are those who care most about protecting what belongs to God alone. Mark shows both of these things happening again and again in the chapters ahead.",
         },
       },
       {
@@ -289,13 +289,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A booth on the road by the lake collected tolls for Herod Antipas, and the locals who staffed them worked for the occupation's revenue. That is why the word arrives paired with sinners, and why nobody at that table has a reputation left to lose. Eating together was not a social nicety in that world. It was the public statement of who you counted as your own.",
+          text: "Tax collectors in Galilee sat in booths along the roads and collected tolls for Herod Antipas, so the local men who did the work were seen as serving the occupying powers for money. That is why the gospel writers pair them with “sinners,” and why no one at that table had a reputation left to lose. In that world, eating with someone was not a matter of politeness. It was a public statement about whom you counted as your own.",
           src: "Marcus · Bond · Horsley",
         },
         meaning:
-          "The complaint is not about doctrine, it is about the guest list, which is where most complaints of this kind actually live. His answer is a doctor's, and it sounds generous until you notice that it concedes their category rather than disputing it. He is not saying these people are fine. He is saying that is where the work is. Then the images pile up and they are all about strain: a patch that tears the coat worse than the hole did, wine that splits the skin holding it. The problem is not the wine.",
+          "The Pharisees object not to Jesus’ teaching but to his guest list, which is where most complaints of this kind really lie. Jesus answers like a doctor, and his answer sounds generous until we notice that he accepts their description of these people rather than disputing it. He is not saying that these people are fine. He is saying that they are where his work is. Then he gives a series of images, and every one of them is about strain: a new patch that tears an old coat worse than the hole did, and new wine that bursts the old wineskin holding it. Jesus means that the trouble lies with the old containers, not with the new wine.",
         lenses: {
-          arch: "The table as the actual statement, whatever is said anywhere else. (Known by who you eat with.)",
+          arch: "In almost every culture, people judge one another by whom they eat with, more than by anything they say. Jesus makes his own statement at Levi’s table, and the Pharisees understand exactly what he means by it.",
         },
       },
       {
@@ -314,17 +314,17 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Picking grain by hand as you walked through a field was legal. The objection is that doing it on the sabbath turns it into harvesting. The story he cites is in 1 Samuel 21, and the priest there is Ahimelech, not Abiathar. Readers have noticed since antiquity, and both Matthew and Luke quietly drop the name when they retell it.",
+          text: "The law allowed a traveler to pick grain by hand as he walked through someone else’s field. The Pharisees object that doing it on the sabbath turns it into harvesting, which was work. Jesus cites a story from 1 Samuel 21, where the priest is actually Ahimelech, not Abiathar as Mark has it. Readers have noticed this since ancient times, and both Matthew and Luke quietly leave out the name when they retell the story.",
           src: "1 Samuel 21:1–6 · Marcus · Collins",
         },
         meaning:
-          "The principle is stated as flatly as anything in the book. The sabbath was made for the person, not the person for the sabbath. It is not an argument against the sabbath, which he keeps. It is an argument about what any rule is for, and it is the kind of sentence that sounds obvious right up until you apply it to a rule you are currently enforcing on somebody else.",
+          "Jesus states his principle as plainly as anything in the gospel: the sabbath was made for people, not people for the sabbath. He is not arguing against the sabbath, which he keeps. He is arguing about what any rule is for, and his sentence sounds obvious until we apply it to a rule we are currently enforcing on someone else.",
         tensions: [
           {
             claim:
-              "The sabbath command is absolute. It is grounded in the creation account, and the law attaches death to profaning it.",
+              "The sabbath command is absolute. Exodus grounds it in God’s rest at creation, and the law commands death for anyone who profanes it.",
             counter:
-              "Here it is made subordinate to the person it was given for, and the case is settled by appeal to a story in which the rule was broken and the man who broke it was David.",
+              "Here Jesus places the sabbath below the people it was given for, and he settles the case by citing a story in which the rule was broken, and the man who broke it was David.",
             where: "Exodus 20:8–11 · Exodus 31:14–15 · 1 Samuel 21:1–6",
           },
         ],
@@ -345,16 +345,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "They are watching to see whether he will heal, which means they already take it for granted that he can. A withered hand is not an emergency. The man could be treated tomorrow at no cost to anyone, and everyone in the room knows it, which is what makes the question a trap and the answer a decision. This is also the one place in the four gospels where the narrator says outright that he was angry, and Matthew and Luke both remove it.",
+          text: "Jesus’ opponents watch to see whether he will heal, which shows that they already take for granted that he can. A withered hand is not an emergency, and everyone in the room knows that Jesus could heal the man the next day at no cost to anyone. That is why their silent question is a trap, and why his answer is a deliberate decision. This is also one of the very few places where a gospel writer says outright that Jesus was angry, and Matthew and Luke both leave the word out when they tell the story.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "He does not need to do this today, and he does it in the middle of the room, having first made the man stand up where everyone can see him. The question he asks has no safe answer, and they give none. Then the sentence that closes the sequence: two groups who agree about nothing, the Pharisees and the Herodians, go out together and start planning how to kill him. Over a hand.",
+          "Jesus does not need to heal the man today, but he does it in the middle of the room, after first telling the man to stand up where everyone can see him. Jesus asks a question that has no safe answer, and his opponents give none. Then Mark closes this series of arguments: the Pharisees and the Herodians, two groups who agree about nothing else, go out together and begin to plan how to kill Jesus, all over a healed hand.",
         addr: {
           mode: "names",
-          text: "The decision to do the decent thing on the inconvenient day is rarely about the decent thing. It is about whether you are willing to be seen deciding. He made the man stand up first.",
+          text: "When we choose to do the decent thing on an inconvenient day, the hard part is rarely the decent thing itself. The hard part is being willing to let others watch us decide. Jesus made the man stand up first.",
         },
-        ask: "What are you waiting for a better day to do, and who is that timing actually for?",
+        ask: "What are you waiting for a better day to do, and whose comfort is that waiting really serving?",
       },
     ],
   },
@@ -366,8 +366,8 @@ export const MARK: Reading[] = [
     chapterIndex: 3,
     title: "Out of His mind",
     unitLabel: "Scene",
-    thread: "The crowds get large enough to be a problem, he appoints twelve men, and then the two verdicts arrive: his family says he is mad, and the scribes say he is possessed.",
-    closeEnd: "He answers by drawing the family again around whoever does the will of God, while his mother is standing in the road outside.",
+    thread: "The crowds grow so large that they become a problem, and Jesus appoints twelve men to be with him. Then two verdicts arrive: his family says he is out of his mind, and the scribes say he is possessed.",
+    closeEnd: "Jesus answers by naming as his family everyone who does the will of God, while his own mother is standing in the road outside.",
     passages: [
       {
         label: "One",
@@ -392,13 +392,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The places the crowd comes from include Tyre, Sidon and the far side of the Jordan, which is a way of saying the map is already larger than Galilee. He keeps a boat ready so he is not crushed. The unclean spirits go on naming him and go on being silenced, the pattern from chapter 1 still running. Then he appoints twelve, which is not a number anybody in that audience heard as arbitrary.",
+          text: "Mark tells us the crowd came from Tyre, Sidon and the far side of the Jordan, places outside Galilee, so Jesus’ reputation has already spread well beyond his home region. He keeps a boat ready so that the crowd will not crush him. The unclean spirits keep naming him, and he keeps silencing them, as he did in chapter 1. Then he appoints twelve men, and no one in Mark’s audience would have heard that number as an accident, since Israel had twelve tribes.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "Two things are set here that the rest of the book pays off. The twelve are appointed to be with him and to be sent out, in that order, so the being with comes first and most of what follows is them failing at it. And the list ends with the man who hands him over, named as such the moment he is introduced. Mark gives away the ending in a subordinate clause in chapter three and then carries straight on.",
+          "Mark sets up two things here that he will return to throughout the gospel. First, Jesus appoints the twelve to be with him and to be sent out, in that order, so being with him comes first, and much of what follows shows them failing at it. Second, Mark ends the list with Judas Iscariot and tells us at once that Judas will betray Jesus. Mark reveals the ending in a passing phrase in chapter three and then carries straight on.",
         lenses: {
-          theo: "Twelve is not a staffing decision. It is a claim about what is being started again, made by a man who has not yet been accused of anything and shortly will be accused of everything.",
+          theo: "When Jesus chooses twelve, he is not simply organizing a staff. He is claiming that Israel, the people of the twelve tribes, is being gathered and started again, and he makes that claim before anyone has accused him of anything, though soon they will accuse him of everything.",
         },
       },
       {
@@ -422,16 +422,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two verdicts arrive in one scene, and Mark puts one inside the other, which is his standard move: the family sets out, the scribes make their charge, the family arrives. The scribes have come down from Jerusalem, so the capital is now paying attention. Their accusation concedes that the exorcisms happen and disputes only the source, which is the shape most serious opposition takes.",
+          text: "Mark gives two verdicts on Jesus in one scene and places one inside the other, as he often does: Jesus’ family sets out to fetch him, the scribes make their accusation, and then the family arrives. The scribes have come down from Jerusalem, which tells us that the authorities in the capital are now paying attention. Their accusation admits that Jesus really does drive out spirits and disputes only where his power comes from, which is how most serious opponents argue.",
           src: "Marcus · Collins · France",
         },
         misreading: {
           named:
-            "The unforgivable sin is a trap door, and a person might fall through it by accident or by having the wrong thought.",
-          why: "Read what it is attached to. The sentence arrives immediately after men have watched someone set free and called it the work of the devil, and Mark adds the note himself: he said this because they were saying he had an unclean spirit. What is named is a settled determination to look straight at something good and call it evil. The anxiety this verse usually produces, in people afraid they have committed it, is close to evidence that they have not. The state being described does not worry about itself.",
+            "Many readers fear that the unforgivable sin is a kind of trap door, through which a person might fall by accident or by thinking the wrong thought.",
+          why: "We should read the saying in its setting. Jesus speaks it just after the scribes have watched him set people free and called it the work of the devil, and Mark adds his own note to explain: Jesus said this because they were saying he had an unclean spirit. Jesus is describing people who have settled on looking straight at something good and calling it evil. People who worry that they have committed this sin show by their worry that they almost certainly have not, because the people Jesus describes do not worry about it at all.",
         },
         meaning:
-          "The family scene is the harshest thing any gospel says about them, and Matthew and Luke both drop it. His own people go out to seize him, and the verb is the one used elsewhere for making an arrest. Their explanation is that he is out of his mind, which is the kind thing to think. The scribes' is that he is possessed, which is not. Between them they cover the whole range of what people say about someone they cannot account for. He is ill, or he is dangerous.",
+          "This scene with his family is the harshest thing any gospel writer says about them, and both Matthew and Luke leave it out. Jesus’ relatives go out to seize him, and Mark uses the same verb that he later uses for Jesus’ arrest. They say he is out of his mind, which is the kinder explanation. The scribes say he is possessed, which is not kind at all. Between them they cover what people usually say about someone they cannot explain: either he is ill, or he is dangerous.",
       },
       {
         label: "Three",
@@ -448,16 +448,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "They do not come in. They stand outside and send word in, and the crowd sitting around him is what he gestures at when he answers. His family is outside the circle and strangers are inside it.",
+          text: "Jesus’ family does not come in. They stand outside and send a message in, and when he answers, he points to the crowd sitting around him. His family is outside the circle, and strangers are inside it.",
           src: "Marcus · Collins",
         },
         meaning:
-          "It is not a rejection of his family, and it is not the warm redefinition it usually gets read as either. It is a hard sentence delivered while his mother is standing in the road. Whoever does the will of God: the qualification is doing, not believing and not being related.",
+          "Jesus is not rejecting his family here, but he is not offering the warm, comforting redefinition that readers often find in this passage either. He says something hard while his mother is standing in the road outside. When he says “whoever does the will of God,” he makes doing God’s will the test, rather than believing the right things or being related to him.",
         addr: {
           mode: "names",
-          text: "The people who have known you longest are often the most certain that what you are doing now is a symptom. They are using the only category they have for it.",
+          text: "Often the people who have known us longest are the most certain that what we are doing now is a sign that something is wrong with us. They are using the only explanation they have.",
         },
-        ask: "Who has decided your direction is something to be managed rather than heard?",
+        ask: "Who has decided that your direction in life is a problem to be managed rather than something to be heard?",
       },
     ],
   },
@@ -469,8 +469,8 @@ export const MARK: Reading[] = [
     chapterIndex: 4,
     title: "Parables, and the storm",
     unitLabel: "Scene",
-    thread: "He teaches from a boat, and what he teaches is that the teaching is meant to be difficult. Then the same evening, on the same water, the men who have had it all explained privately are terrified.",
-    closeEnd: "They ask each other who this is. It is the question the whole book is built on, and nobody in the boat can answer it.",
+    thread: "Jesus teaches the crowd from a boat, and he tells them that his teaching is meant to be hard to understand. Then, that same evening on the same lake, the disciples, to whom he has explained everything in private, are terrified.",
+    closeEnd: "The disciples ask one another who Jesus is. Mark builds his whole gospel around that question, and no one in the boat can answer it.",
     passages: [
       {
         label: "One",
@@ -502,18 +502,18 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Sowing in that agriculture went before ploughing rather than after, so a man broadcasting seed across a path, rocky ground and thorns is not being careless. He is doing the job the way it was done. The quotation in verse 12 is Isaiah 6, from a passage where a prophet is told at the outset that his preaching will harden the people who hear it. And Mark's phrase for those outside is literal: outside is where the family was standing in the previous chapter.",
+          text: "Some scholars think that farmers in Galilee sowed before they plowed, so that a man scattering seed over a path, rocky ground and thorns was not being careless but doing the job the usual way. The quotation in verse 12 comes from Isaiah 6, where God tells the prophet at the very start that his preaching will harden the people who hear it. And when Mark speaks of “those outside,” he means it literally: outside is where Jesus’ family was standing in the previous chapter.",
           src: "Isaiah 6:9–10 · Marcus · Collins",
         },
         misreading: {
           named:
-            "The parables are homely illustrations, told to make hard ideas easy for ordinary people.",
-          why: "This chapter says the opposite, in his own mouth, which is why most readers slide past verse 12. The stated purpose is that those outside may look and not see and hear and not understand, in case they should turn and be forgiven. Softening that into a teaching method loses what Mark is doing with it. Parables sort people, and the sorting is the point. Whether that reads as terrible or as merciful depends on what you think a person does with a story they cannot immediately cash out.",
+            "Many readers assume that Jesus told parables as simple illustrations, to make hard ideas easy for ordinary people to grasp.",
+          why: "In this chapter Jesus himself says the opposite, which is why most readers pass quickly over verse 12. He says he speaks in parables so that those outside may look and not see, and listen and not understand, so that they will not turn and be forgiven. If we soften that into a teaching method, we lose what Mark is doing. In Mark’s account the parables sort people, and that sorting is their purpose. Whether this seems terrible or merciful depends on what we think a person does with a story they cannot immediately make sense of.",
         },
         meaning:
-          "The parable is about failure, three quarters of it, and it is told to a crowd so large he has to get into a boat to be heard. Then he explains it privately to the twelve, which sets the rest of the book up: they are inside, they get the explanation, and by chapter eight they still do not understand. Notice what the explanation does not contain. There is no advice for the path, the rocks or the thorns. The soil is never asked to improve. What is promised is only that some of it lands, and that where it does the yield is out of all proportion to the loss.",
+          "Three quarters of the parable is about failure, and Jesus tells it to a crowd so large that he has to sit in a boat to be heard. Then he explains it privately to the twelve, and Mark sets up the rest of the gospel: the twelve are on the inside, they receive the explanation, and by chapter eight they still do not understand. It is worth noticing what Jesus leaves out of his explanation. He gives no advice to the path, the rocks or the thorns, and he never asks the soil to improve. He promises only that some of the seed will land on good soil, and that where it does, the harvest will be far greater than everything that was lost.",
         lenses: {
-          arch: "The word that goes out indiscriminately and mostly does not take, thrown by someone who keeps throwing it. (Sowing before you know the ground.)",
+          arch: "Many teachers have had to keep working while most of what they said fell on deaf ears. The sower in Jesus’ parable throws his seed everywhere, knowing that most of it will not take root, and he keeps sowing anyway.",
         },
       },
       {
@@ -540,13 +540,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Three short sayings and two seed parables. The seed growing secretly is unique to Mark; neither Matthew nor Luke keeps it. And the mustard seed is not literally the smallest seed anyone knew, which ancient readers understood as well as we do. It was a stock phrase for something proverbially tiny, the way we say a grain of sand.",
+          text: "Here Mark collects three short sayings and two parables about seeds. Only Mark tells the parable of the seed that grows secretly; neither Matthew nor Luke includes it. Ancient readers knew as well as we do that the mustard seed was not literally the smallest seed in the world. People used it as a common figure of speech for something tiny, much as we speak of a grain of sand.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The two seed parables make the same argument from opposite ends. In the first a man scatters seed and then sleeps and rises, night and day, and it grows, and he does not know how. In the second the smallest thing in the proverb becomes the largest thing in the garden. Both are arguments against measuring where you happen to be standing. And both sit in a chapter that has just said plainly that most of what is sown fails, which stops either of them hardening into a promise.",
+          "Jesus makes the same point with the two seed parables from opposite directions. In the first, a man scatters seed, then sleeps and gets up, night and day, and the seed grows, though he does not know how. In the second, the smallest seed in the proverb grows into the largest plant in the garden. Both parables warn us against judging by what we can see at the moment. And because Jesus has just said plainly that most of what is sown fails, neither parable can be read as a promise that every seed will flourish.",
         lenses: {
-          theo: "Verse 27 is the most restful sentence in the gospel. He sleeps and rises, night and day, and the seed sprouts and grows, and he does not know how. Whatever the kingdom is doing, it is not waiting for him to watch it.",
+          theo: "Verse 27 may be the most restful sentence in the gospel. The farmer sleeps and rises, night and day, and the seed sprouts and grows without his knowing how. Jesus is telling his hearers that God is at work in his kingdom whether or not they stay awake to watch.",
         },
       },
       {
@@ -566,16 +566,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The lake sits low in a ring of hills and squalls come down onto it fast, so the storm is local and unremarkable. What is not unremarkable is where he is: asleep on the cushion in the stern, the kind of detail an eyewitness account keeps and a legend does not. And the word he uses on the wind is the one he used on the unclean spirit in the synagogue. Be silent.",
+          text: "The Sea of Galilee lies low in a ring of hills, and sudden squalls rush down onto it, so a storm like this was common there. What is remarkable is where Jesus is: asleep on a cushion in the stern, the kind of small detail that some readers take as a sign of an eyewitness’s memory. And when Jesus speaks to the wind, he uses the same command he gave the unclean spirit in the synagogue: be silent.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "Their complaint is not do something. It is do you not care. That is what people say when they already believe he could and are not sure he will, which is the leper's doubt from chapter one in a different mouth. And his question back is harder than it sounds, because they have just watched him do it and the thing he asks about is the fear. Then the sentence the book is built on, asked by the people closest to him, in a boat, in the dark. Who is this?",
+          "The disciples do not ask Jesus to do something. They ask him whether he cares. People say that when they already believe someone could help and are not sure he will, which is the same doubt the leper voiced in chapter one. Jesus’ question in return is harder than it sounds, because they have just watched him calm the sea, and what he asks about is their fear. Then the disciples ask the question that Mark builds the whole gospel around, and they ask it in a boat, in the dark: who is this?",
         addr: {
           mode: "names",
-          text: "You may have already decided that the silence means indifference. The people in the boat had a whole chapter of evidence behind them and still reached for that reading first.",
+          text: "We may have already decided that God’s silence means he does not care. The disciples in the boat had a whole chapter of evidence to the contrary, and they still jumped to that conclusion first.",
         },
-        ask: "Where have you started reading a delay as proof that you are not cared about?",
+        ask: "Where have you begun to treat a delay as proof that no one cares about you?",
       },
     ],
   },
@@ -587,8 +587,8 @@ export const MARK: Reading[] = [
     chapterIndex: 5,
     title: "Legion",
     unitLabel: "Scene",
-    thread: "Three healings, and the first is the one this whole apparatus exists for. A man with a Roman military unit for a name, a herd going into the sea, and a town that asks the healer to leave.",
-    closeEnd: "He tells them to tell nobody, and then tells them to give her something to eat, which is the most human sentence in the chapter.",
+    thread: "Mark tells three healings in this chapter, and the first is the one his whole account of Jesus’ power has been leading to. A man calls himself by the name of a Roman military unit, a herd of pigs rushes into the sea, and the townspeople ask the healer to leave.",
+    closeEnd: "Jesus tells the girl’s parents to tell no one, and then he tells them to give her something to eat, which is the most human thing anyone says in the chapter.",
     passages: [
       {
         label: "One",
@@ -620,18 +620,18 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "This is Gentile territory, which is why there are pigs in it at all. The man lives among the tombs, has broken every chain put on him, and cuts himself with stones. Asked his name, he answers with a Roman military unit of several thousand men. The herd is about two thousand, and a boar was carried on the standards of the Tenth Legion, which garrisoned Judea in the years around when this book was written. They go down the bank into the sea and drown.",
+          text: "Jesus has crossed into Gentile territory, which is why anyone there is keeping pigs at all. The man lives among the tombs, has broken every chain the townspeople put on him, and cuts himself with stones. When Jesus asks his name, he answers “Legion,” the name of a Roman military unit of several thousand men. The herd numbers about two thousand, and the Tenth Legion, which was stationed in Judea around the time Mark wrote, carried a wild boar on its standards. The pigs rush down the bank into the sea and drown.",
           src: "Marcus · Horsley · Collins",
         },
         misreading: {
           named:
-            "This is either a straight account of demon expulsion, or ancient credulity with nothing in it for a modern reader.",
-          why: "Neither reading survives the details Mark chose. The name is a military unit. The herd is the size of a legion at strength. They beg not to be sent out of the country, and then go into the sea and drown, which is what the exodus did to an army and what everyone in that audience wanted done to Rome. And the town's response to a man restored is to ask the healer to leave, because what has just happened is more frightening than the arrangement they had. You do not have to settle the metaphysics to hear what is being said about occupation.",
+            "Readers often assume this must be either a straightforward account of driving out demons, or ancient superstition with nothing to offer a modern reader.",
+          why: "Neither reading fits the details Mark chose to include. The spirits’ name is a military unit, and the herd is about the size of a Roman legion at full strength. The spirits beg not to be sent out of the country, and then they rush into the sea and drown, just as Pharaoh’s army drowned in the exodus, and as everyone in Mark’s audience wished the Romans would. The townspeople respond to a man restored to health by asking the healer to leave, because what Jesus has done frightens them more than the arrangement they had before. We do not have to settle the question of demons to hear what Mark is saying about occupation.",
         },
         meaning:
-          "The quietly devastating line is the town's. A man they had been chaining is sitting there dressed and in his right mind, and they ask the one who did it to go. An arrangement everybody hates can still be the arrangement everybody is used to, and whoever breaks it is not thanked for it. Then the ending inverts the pattern the book has been building. Everywhere else he tells people to say nothing. Here, in Gentile country, he tells the man to go home and say everything.",
+          "The most devastating response in the story comes from the townspeople. A man they had kept in chains is sitting there clothed and in his right mind, and they ask the one who healed him to leave. People can grow used to an arrangement that everyone hates, and they seldom thank the person who breaks it. Then Jesus reverses his own pattern. Everywhere else he tells people to say nothing, but here, in Gentile country, he tells the man to go home and tell everyone.",
         lenses: {
-          arch: "The one everybody has stopped trying to help, chained where the dead are kept, and a town's relief at having somewhere to put him. (The man outside the wall.)",
+          arch: "Every society has people whom everyone else has stopped trying to help, and it finds somewhere out of sight to put them. The townspeople had chained this man among the tombs, where the dead were kept, and they seem relieved to have had a place for him.",
         },
       },
       {
@@ -658,13 +658,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "One story goes inside another again. A synagogue official kneels in public, which costs him something in front of his colleagues, and then while his daughter is dying the account stops for a woman who has been bleeding twelve years. Under the purity laws that condition made her continuously unclean, and passed the state to whatever she touched. A crowded street is the last place she should be, and a stranger's cloak the last thing she should take hold of.",
+          text: "Once again Mark places one story inside another. A synagogue leader named Jairus kneels before Jesus in public, which costs him standing with his colleagues, and while his daughter lies dying, Mark interrupts the account with a woman who has been bleeding for twelve years. Under the purity laws her condition made her continually unclean, and anything she touched became unclean too. A crowded street was the last place she was supposed to be, and a stranger’s cloak was the last thing she was supposed to touch.",
           src: "Leviticus 15:25–27 · Marcus · Collins",
         },
         meaning:
-          "Twelve years of her illness, twelve years of the girl's entire life, and Mark sets the two numbers side by side deliberately. She takes what she needs without asking, from behind, and the thing she most wanted to avoid, being known, is exactly what he insists on: he stops a dying child's rescue to make her say it out loud in front of everyone. That looks cruel until you see what she gets from it. She came for the cloak. She leaves having been called daughter, in public, in a street where nobody was supposed to touch her.",
+          "The woman has been ill for twelve years, and the girl has lived for twelve years, and Mark sets the two numbers side by side on purpose. The woman takes what she needs without asking, from behind, and Jesus then insists on the very thing she most wanted to avoid, being known: he stops on his way to a dying child to make her tell her story in front of everyone. That seems cruel until we see what she gains from it. She came only to touch his cloak, and she leaves having been called “daughter” in public, on a street where no one was supposed to touch her.",
         lenses: {
-          theo: "He does not tell her that the touch worked because of anything he did. He tells her that her faith has healed her, which puts the thing she did furtively at the centre of the account and leaves it standing there.",
+          theo: "Jesus does not tell the woman that her touch worked because of his power. He tells her that her faith has healed her, and so he honors the very thing she did in secret and in fear.",
         },
       },
       {
@@ -686,16 +686,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The news arrives while he is still speaking to the woman. The professional mourners are already at the house, which was normal and immediate. The words he speaks to the child are Aramaic, and Mark keeps them and then translates them, as he does throughout this gospel for readers who did not have the language. The last instruction in the scene is not about secrecy. It is to give her something to eat.",
+          text: "Messengers bring the news of the girl’s death while Jesus is still speaking to the woman. The professional mourners are already at the house, as was normal, since mourning began immediately after a death. Jesus speaks to the child in Aramaic, and Mark records his words and then translates them, as he does throughout the gospel for readers who did not know the language. Jesus’ last instruction in the scene is not about keeping a secret. He tells them to give her something to eat.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The delay caused by the woman is the reason the child is dead by the time he arrives, and Mark lets that stand without smoothing it over. Then he clears out everyone whose job was to grieve professionally, takes three men and two parents, and says four ordinary words to a child in her own language. Little girl, get up. Whatever else Mark is doing with the secrecy here, the thing he leaves in your hand is that after the miracle somebody had to remember she has not eaten.",
+          "Because Jesus stopped for the woman, the child is dead by the time he arrives, and Mark lets that fact stand without softening it. Then Jesus sends away the professional mourners, takes with him three disciples and the girl’s parents, and speaks a few ordinary words to the child in her own language: little girl, get up. Whatever Mark means by Jesus’ secrecy here, he leaves us with a homely detail: after the miracle, Jesus remembers that the girl has not eaten.",
         addr: {
           mode: "names",
-          text: "Two people needed him at once, and one of them was by any reasonable measure the more urgent. The book does not resolve that. It just refuses to let the less urgent one go unattended while it happens.",
+          text: "Two people needed Jesus at the same time, and by any reasonable measure one of them was more urgent. Mark does not explain why Jesus stopped. He simply shows Jesus refusing to leave the less urgent person unattended while the urgent need waited.",
         },
-        ask: "Who is quietly waiting while you deal with the urgent thing, and what would it cost to stop?",
+        ask: "Who is quietly waiting while you deal with something urgent, and what would it cost you to stop for them?",
       },
     ],
   },
@@ -707,8 +707,8 @@ export const MARK: Reading[] = [
     chapterIndex: 6,
     title: "What He could not do there",
     unitLabel: "Scene",
-    thread: "He goes home and it does not work. Then he sends the twelve out with nothing, a king kills a prophet at a birthday party, five thousand people are fed, and the men in the boat still do not understand.",
-    closeEnd: "Mark says it flatly at the end: they had not understood about the loaves, and their hearts were hardened. It is his own disciples he is describing.",
+    thread: "Jesus goes back to his hometown, and his visit fails. Then he sends the twelve out with almost nothing, King Herod has John the Baptist killed at a birthday banquet, Jesus feeds five thousand people, and the disciples in the boat still do not understand who he is.",
+    closeEnd: "Mark says it plainly at the end: the disciples had not understood about the loaves, because their hearts were hardened. He is describing Jesus’ own followers.",
     passages: [
       {
         label: "One",
@@ -733,22 +733,22 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "In his own village he is placed by his trade and by his mother, which is unusual: a man was normally named as his father's son, and the phrasing has been read both as an insult and as a sign that Joseph was dead. Then he sends the twelve out with a staff and nothing else. No bread, no bag, no money.",
+          text: "In his own village the people identify Jesus by his trade and by his mother, which was unusual, since a man was normally called his father’s son. Readers have taken the phrase both as an insult and as a sign that Joseph had died. Then Jesus sends the twelve out with a staff and nothing else: no bread, no bag and no money.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The people who have known him longest are the ones who cannot hear him, and the reason given is that they know exactly who he is. The carpenter. Mary's son. His sisters are right here. Familiarity is not neutral in this book; it obstructs with the same weight as opposition does. And the instructions to the twelve are about travelling light enough to be dependent, with no strategy for winning anybody over: if a place will not have you, leave, and shake its dust off your feet.",
+          "The people who have known Jesus longest are the ones who cannot hear him, and they cannot hear him because they think they know exactly who he is: the carpenter, Mary’s son, whose sisters live right here. In Mark’s account, familiarity blocks people from seeing Jesus as surely as hostility does. Then Jesus tells the twelve to travel so lightly that they must depend on others, and he gives them no plan for winning anyone over. If a place will not receive them, they are to leave and shake its dust off their feet.",
         tensions: [
           {
             claim:
-              "He could not do any miracle there, and he was amazed at their unbelief.",
+              "Mark writes that Jesus could do no miracle there, and that he was amazed at their unbelief.",
             counter:
-              "Matthew, retelling this scene from Mark, changes the sentence. He did not do many miracles there, because of their unbelief. An inability becomes a decision.",
+              "Matthew, retelling this scene from Mark, changes the sentence to say that Jesus did not do many miracles there, because of their unbelief. In Matthew’s version, what Mark presented as an inability becomes a choice.",
             where: "Mark 6:5–6 · Matthew 13:58",
           },
         ],
         lenses: {
-          arch: "The prophet who cannot work at home, because home decided long ago what he is. (Known too well to be heard.)",
+          arch: "Many people have found that they cannot do their work among those who knew them as children, because their old neighbors decided long ago who they are. Jesus meets that same refusal in Nazareth, where the people know him too well to listen to him.",
         },
       },
       {
@@ -777,13 +777,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "This is the only story in the gospel where Jesus does not appear. It is a flashback, triggered by Herod hearing about him and concluding that John has come back. Herod here is Antipas, a client ruler rather than a king, and Mark gives him the title anyway. Josephus also records that Antipas executed John, but gives a different reason: fear of the crowd John could raise. The detail that Herod feared him, protected him and liked listening to him is Mark's own.",
+          text: "This is the only extended story in Mark’s gospel in which Jesus never appears. Mark tells it as a flashback: Herod hears about Jesus and concludes that John the Baptist has come back from the dead. This Herod is Herod Antipas, who ruled Galilee under Rome and was never actually a king, though Mark calls him one. The Jewish historian Josephus also records that Antipas executed John, but he gives a different reason, that Antipas feared John could raise a rebellion. Only Mark tells us that Herod feared John, protected him and liked to listen to him.",
           src: "Marcus · Collins · Josephus, Antiquities 18",
         },
         meaning:
-          "It is placed here for a reason. Mark has just sent the twelve out to preach, and immediately shows what happens to a man who preaches. The flashback is the shape of the ending, told early, about somebody else. And Herod is the most recognisable figure in it. He is not a monster. He is a man who liked the preacher, protected him, made a stupid promise in front of guests, and could not face what taking it back would cost him in the room. He kills a man he admired because he is embarrassed.",
+          "Mark places this story here on purpose. He has just told how Jesus sent the twelve out to preach, and he immediately shows what happens to a man who preaches. In telling John’s death, Mark gives us an early picture of how Jesus’ own story will end. Herod is the most recognizable person in it. He is not a monster. He liked the preacher and protected him, but he made a foolish promise in front of his guests and could not bear what it would cost him to take it back before them. He kills a man he admired because he is embarrassed.",
         lenses: {
-          theo: "The forerunner goes ahead in this too. What happens to John at the hands of a weak ruler swayed by the people watching is a small rehearsal of chapter 15.",
+          theo: "John goes ahead of Jesus in his death as well as in his preaching. A weak ruler, swayed by the people watching him, puts John to death, and in chapter 15 Mark will show Pilate doing the same to Jesus.",
         },
       },
       {
@@ -811,13 +811,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "They come back from the mission and he tries to take them somewhere quiet, and the crowd gets there first on foot. Sheep without a shepherd is a phrase out of Numbers and Ezekiel with political weight: it is what gets said about a people whose leaders have failed them. Two hundred denarii is roughly two hundred days of a labourer's wages. And they are seated in groups of hundreds and fifties, which is how Israel was ordered in the wilderness.",
+          text: "When the twelve return from their mission, Jesus tries to take them somewhere quiet, but the crowd gets there first on foot. “Sheep without a shepherd” is a phrase from Numbers and Ezekiel, and it carried political weight, because the prophets used it for a people whose leaders had failed them. Two hundred denarii was about two hundred days’ wages for a laborer. And Jesus has the people sit down in groups of hundreds and fifties, the way Moses organized Israel in the wilderness.",
           src: "Numbers 27:17 · Ezekiel 34 · Marcus · Collins",
         },
         meaning:
-          "The instruction is the part that gets skipped. <b>You</b> give them something to eat. Their answer is a costing, which is reasonable and entirely beside the point, and his next question is not how much money do you have but how many loaves have you got. The scene is arranged as a wilderness scene throughout: a crowd with no leadership, food in a deserted place, people seated in ranks. Anyone who knew Exodus knew what was being echoed. Twelve baskets are left over, one for each of the men who said it could not be done.",
+          "Readers often pass over Jesus’ instruction: <b>you</b> give them something to eat. The disciples answer with a calculation of the cost, which is reasonable and entirely beside the point. Jesus does not ask them how much money they have. He asks how many loaves they have. Mark tells the whole scene as a wilderness story, with a crowd that has no leader, food in a deserted place, and people seated in ranks, and anyone who knew Exodus would have recognized the echo. Afterward the disciples gather twelve baskets of leftovers, one for each of the men who said it could not be done.",
         lenses: {
-          theo: "The question is not what do you need. It is what do you have. That is a smaller question, and it is the one that gets an answer.",
+          theo: "Jesus does not ask the disciples what they need. He asks them what they have. That is a smaller question, and it is the one he can work with.",
         },
       },
       {
@@ -842,25 +842,25 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He sends them ahead and goes up the mountain alone to pray, the second of these in the book. Verse 48 says he intended to pass by them, which reads oddly until you notice the phrase: passing by is what God does in front of Moses on the mountain and in front of Elijah at the cave. What he calls out to them, translated flatly, is I am.",
+          text: "Jesus sends the disciples ahead in the boat and goes up the mountain alone to pray, the second time Mark shows him praying alone. In verse 48 Mark says that Jesus meant to pass by them, which sounds odd until we recognize the phrase. In the Old Testament, God “passes by” Moses on the mountain and Elijah at the cave. And what Jesus calls out to the disciples, translated literally, is “I am.”",
           src: "Exodus 33:19–22 · 1 Kings 19:11 · Marcus · Collins",
         },
         meaning:
-          "That he meant to pass by them is not indifference. It is the vocabulary of a showing: something a person is given to see, rather than something done for them. Then the ending, which is the hardest sentence about the disciples in any gospel. They were utterly astounded, because they had not understood about the loaves, and their hearts had been hardened. Hardened is the word this book has been using for the opposition.",
+          "When Mark says that Jesus meant to pass by them, he does not mean that Jesus was indifferent to them. He is using the language of a revelation, something God gives a person to see rather than something he does for them. Then Mark ends with one of the hardest sentences about the disciples in any gospel: they were utterly astounded, because they had not understood about the loaves, and their hearts had been hardened. Until now Mark has used the word “hardened” for Jesus’ opponents.",
         tensions: [
           {
             claim:
-              "The men who handled the loaves and then watched him walk on the water are amazed and uncomprehending, and their hearts are hardened.",
+              "In Mark, the disciples who handed out the loaves and then watched Jesus walk on the water are amazed but do not understand, and their hearts are hardened.",
             counter:
-              "Matthew ends the same scene with the same men worshipping him in the boat and confessing him as the Son of God.",
+              "Matthew ends the same scene with the same disciples worshiping Jesus in the boat and confessing that he is the Son of God.",
             where: "Mark 6:51–52 · Matthew 14:32–33",
           },
         ],
         addr: {
           mode: "names",
-          text: "You have had a thing explained to you, and then shown to you, and then been caught out by the next instance of it as though it were new. Mark does not call that stupidity. He calls it a hardened heart, and he uses the word about his own side.",
+          text: "Most of us have had something explained to us, and then shown to us, and still been caught off guard the next time it happened, as though it were new. Mark does not call that stupidity. He calls it a hardened heart, and he uses the phrase for Jesus’ own followers.",
         },
-        ask: "What keeps taking you by surprise that you have already been through?",
+        ask: "What keeps taking you by surprise, even though you have been through it before?",
       },
     ],
   },
@@ -872,8 +872,8 @@ export const MARK: Reading[] = [
     chapterIndex: 7,
     title: "What comes out",
     unitLabel: "Scene",
-    thread: "An argument about washing hands turns into a claim about where defilement actually comes from. Then he leaves the country and loses an argument to a foreign woman.",
-    closeEnd: "He tells them to say nothing, and they say it more. By this point the instruction is not even slowing anyone down.",
+    thread: "In this chapter the Pharisees challenge Jesus about why his disciples eat without washing their hands, and he turns the argument into a claim about where uncleanness really comes from. Then he leaves Jewish territory, and a foreign woman wins an argument with him.",
+    closeEnd: "Jesus tells the people to say nothing about the healing, and they talk about it all the more. By this point his orders to keep quiet are not slowing anyone down.",
     passages: [
       {
         label: "One",
@@ -907,16 +907,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Mark stops the story to explain ceremonial handwashing to readers who would not have known the custom, which is one of the plainest signs of who this gospel was for. Corban was a real vow formula: property declared as dedicated could not then be transferred, and the complaint is that the vow was being used to put assets beyond the reach of an obligation to parents. The numbering here jumps from 15 to 17, which is not an error. Verse 16 is absent from the earliest manuscripts, as this book's introduction explains.",
+          text: "Mark stops the story to explain the custom of ceremonial handwashing, because his readers would not have known it, and that is one of the plainest signs that he was writing for Gentiles. Corban was a real vow formula. A man could declare his property dedicated to God, and after that he could not give it to anyone else. Jesus complains that people were using the vow to put their money out of reach of their duty to support their parents. The verse numbers here jump from 15 to 17, and that is not a mistake. Verse 16 is missing from the earliest manuscripts, as the introduction to this book explains.",
           src: "Marcus · Collins · France",
         },
         misreading: {
           named:
-            "Verse 19 abolishes the food laws, and it says so in brackets.",
-          why: "The bracket is the narrator's comment, not a line in the argument. Mark is drawing out what he takes the saying to imply for his own Gentile readers, which was exactly the live question in his community. What Jesus is answering is a question about handwashing, a tradition of the elders rather than a command in Torah. Read the scene as a ruling on diet and you lose what it actually does, which is move defilement from what happens to a person to what comes out of one. The list at the end is not about food at all.",
+            "In verse 19 Jesus abolishes the food laws, and Mark says so in brackets.",
+          why: "The words in brackets are Mark’s own comment, not part of what Jesus says in the argument. Mark is drawing out what he believes the saying means for his Gentile readers, because whether they had to keep the food laws was exactly the question his community was facing. Jesus himself is answering a question about handwashing, which was a tradition of the elders and not a command in the Law of Moses. If we read the scene as a ruling about diet, we miss what Jesus actually does in it, which is to move uncleanness from what happens to a person to what comes out of a person. The list of sins at the end has nothing to do with food.",
         },
         meaning:
-          "The structure is an accusation returned. They arrive with a question about tradition; he answers with Isaiah and then a worked example of a tradition that lets a man look devout while leaving his parents unsupported. And then the principle, which is far more disruptive than the argument carrying it: nothing entering a person from outside can defile them. In a world organised around contact, contamination and boundary, that sentence moves the entire problem inward. Every item on the list he gives comes from the inside.",
+          "The Pharisees come with an accusation, and Jesus turns it back on them. They ask him about a tradition, and he answers with a passage from Isaiah and then with an example: a tradition that lets a man look devout while he leaves his own parents without support. Then he states the principle, which unsettles far more than the argument around it. Nothing that enters a person from outside can make them <b>unclean</b>. His hearers lived in a world organized around contact, contamination and boundaries, and with that sentence Jesus moves the whole problem inside the person. Every sin on the list he gives comes from within.",
       },
       {
         label: "Two",
@@ -935,13 +935,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He has left Jewish territory for the region of Tyre, and the woman is marked twice as an outsider, Greek and Syrophoenician. Tyre was a wealthy coastal city that drew grain from the Galilean countryside, so children's bread and dogs is not purely an abstraction; there is an economic edge under it. She is the only person in the gospel who wins an argument with him.",
+          text: "Jesus has left Jewish territory and gone to the region of Tyre, and Mark marks the woman as an outsider twice, calling her both a Greek and a Syrophoenician. Tyre was a wealthy city on the coast that bought grain from the farms of Galilee, so when Jesus speaks of the children’s bread and the dogs, his hearers may have heard an economic edge in it as well. She is the only person in Mark’s gospel who wins an argument with Jesus.",
           src: "Marcus · Collins · Bond",
         },
         meaning:
-          "The scene is not rescued here. He calls her people dogs, in a diminutive, and the diminutive has been used to soften it for centuries. It is still what he says. She does not dispute the frame. She takes it and works inside it: even the dogs under the table get the children's crumbs. And what changes his answer is named in the text as her answer, not her faith and not her need. Because of this word, go. A Gentile woman argues a Jewish teacher out of a boundary, and Mark sets it immediately after a paragraph about what actually defiles a person.",
+          "Mark does not soften this scene. Jesus calls her people dogs, using a diminutive form of the word, and for centuries readers have pointed to the diminutive to make it sound gentler. It is still what he says. The woman does not dispute the comparison. She accepts it and argues from inside it: even the dogs under the table eat the children’s crumbs. Mark is careful to say what changes Jesus’ answer. It is not her faith or her need but her reply, for Jesus tells her that because of this answer she may go. A Gentile woman argues a Jewish teacher out of a boundary, and Mark places the scene right after Jesus’ teaching about what really makes a person unclean.",
         lenses: {
-          arch: "The one outside the arrangement who does not dispute its terms but uses them, and turns out to have read them more carefully than the people inside. (Arguing from under the table.)",
+          arch: "Many old stories tell of an outsider who does not argue with the rules of those in power but uses them, and turns out to understand them better than the insiders do. The Syrophoenician woman does exactly this. She accepts the picture of herself under the table and argues from there, and she wins.",
         },
       },
       {
@@ -961,16 +961,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The route in verse 31 is geographically strange, a long way round through Gentile country, and readers have argued about it since antiquity. The healing is physical in a way the later gospels tend to trim: fingers in the ears, spit, a touch on the tongue, a sigh. The Aramaic is kept and then translated, as with talitha koum. And the crowd's verdict, he has done all things well, echoes the creation account.",
+          text: "In verse 31 Mark gives Jesus a strange route, a long way round through Gentile country, and readers have argued about it since ancient times. Mark describes this healing in physical detail that the later gospels tend to leave out: Jesus puts his fingers in the man’s ears, spits, touches his tongue, and sighs. Mark keeps the Aramaic word Jesus speaks and then translates it, as he did with talitha koum. When the crowd says that Jesus has done all things well, many readers hear an echo of the creation account, where God sees that all he has made is very good.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "He takes the man away from the crowd first, the second time in two chapters that a healing happens out of sight of an audience. Then the sigh, which Mark gives him twice in this stretch and never explains. And the ending is the running joke going sour: the more he tells them to be quiet, the more they proclaim it. The secrecy is failing in every direction by now, and what is spreading is a reputation for wonders, which is precisely the thing that will make him impossible to explain.",
+          "Jesus first takes the man away from the crowd, the second time in two chapters that he heals someone out of sight of an audience. Then he sighs, as Mark twice reports him doing in this part of the gospel without ever explaining why. At the end Mark’s running joke turns sour: the more Jesus tells the people to be quiet, the more they spread the news. By now his attempts at secrecy are failing on every side, and the people are spreading a reputation for wonders, which is exactly what will make it impossible for them to understand who he is.",
         addr: {
           mode: "names",
-          text: "Somewhere you keep a line between the people who count and the people who are an exception to be handled, and you would never put it in writing. The woman in this chapter had it said to her face, argued from underneath it, and won.",
+          text: "Most of us keep a quiet line between the people who count and the people we treat as exceptions to be handled, though we would never write it down. The woman in this chapter heard that line spoken to her face, argued from the wrong side of it, and won.",
         },
-        ask: "Who are you treating as an exception rather than as one of the people who count?",
+        ask: "Is there someone you treat as an exception instead of as one of the people who count?",
       },
     ],
   },
@@ -982,8 +982,8 @@ export const MARK: Reading[] = [
     chapterIndex: 8,
     title: "Do you still not understand?",
     unitLabel: "Scene",
-    thread: "He feeds a crowd again, refuses to produce a sign, and then asks the men in the boat the question the whole first half of the book has been building toward.",
-    closeEnd: "The movement ends on the question, and the question is not answered.",
+    thread: "Jesus feeds a crowd a second time and refuses to give the Pharisees a sign. Then, in the boat, he asks his disciples the question that Mark has been building toward through the whole first half of the gospel.",
+    closeEnd: "This section of the book ends with Jesus’ question to his disciples, and Mark does not record their answer.",
     passages: [
       {
         label: "One",
@@ -1005,13 +1005,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "A second feeding, this time in Gentile territory, with seven loaves and seven baskets left over rather than twelve. Critics have long read the two feedings as one event reaching Mark twice through different lines of tradition. Mark has both, and in the next scene has Jesus refer to both separately, with their numbers. However the tradition got there, the book as it stands means them as two.",
+          text: "This second feeding takes place in Gentile territory, with seven loaves and seven baskets of leftovers instead of twelve. Many scholars have long thought the two feedings were one event that reached Mark twice through different lines of tradition. Mark, however, keeps both, and in the next scene he has Jesus refer to each of them separately, with their numbers. Whatever the history of the tradition, Mark means us to read them as two events.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The disciples' question is the part worth staring at. They have done this before, with more people and less bread, and they ask where anyone would get enough bread out here. It is not stupidity. It is the ordinary way a person handles something that has already happened to them and for which they have no category: it gets filed as an incident rather than as a fact about the world. Mark is not mocking them. He is describing something the reader will recognise.",
+          "The disciples’ question deserves a close look. They have seen Jesus do this before, with more people and less bread, and yet they ask where anyone could find enough bread out here. They are not stupid. They are doing what people ordinarily do with something that has happened to them when they have no way to make sense of it: they treat it as a one-time event instead of as a fact about the world. Mark is not mocking them. He is describing something his readers will <b>recognize</b> in themselves.",
         lenses: {
-          arch: "The thing that already happened to you once, filed as an incident rather than as evidence. (Forgetting the last time.)",
+          arch: "Most of us have had something happen once that should have changed how we see the world, and then filed it away as a one-time event instead of treating it as evidence. The disciples do this with the first feeding. When the same need comes round again, they reason as though nothing had ever happened.",
         },
       },
       {
@@ -1035,14 +1035,14 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "They ask for a sign from heaven and the refusal is flat: no sign will be given to this generation. That is worth weighing in a book already full of miracles. The works are not signs in the sense being demanded, which is a proof arriving from outside that settles the question for you. Then the remark about leaven, which they take to be about having forgotten the bread.",
+          text: "The Pharisees ask Jesus for a sign from heaven, and he refuses flatly: no sign will be given to this generation. That refusal is worth pausing over, since Mark’s gospel is already full of miracles. The Pharisees want a proof from outside that would settle the question for them, and Jesus does not count his works as that kind of sign. Then Jesus warns the disciples about the leaven of the Pharisees, and they think he is talking about the bread they forgot to bring.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The interrogation at the end is the harshest speech he makes to anybody in this book, and it is aimed at his own side. Having eyes, do you not see, and having ears, do you not hear. The words are Isaiah's, out of the same passage he quoted in chapter four about those on the outside, and he has now turned it on the twelve. That is the movement's argument arriving. Being inside, having the private explanation, and having carried the baskets yourself does not produce sight.",
+          "The questions Jesus fires at the disciples at the end are the harshest words he speaks to anyone in Mark’s gospel, and he aims them at his own followers. He asks whether, having eyes, they do not see, and having ears, they do not hear. The words echo the prophets Jeremiah and Ezekiel, and they recall the passage from Isaiah that Jesus quoted in chapter four about those on the outside. Now he turns them on the twelve. With these questions Mark makes the main point of this whole section: being an insider, hearing the private explanations, and carrying the baskets yourself do not give a person <b>sight</b>.",
         addr: {
           mode: "names",
-          text: "You are not short of evidence. You have handled the thing yourself, more than once, and still find yourself doing the arithmetic from nothing every time, as though none of it had happened.",
+          text: "Most of us are not short of evidence. We have seen what God can do, sometimes more than once, and still we work out every new problem from nothing, as if none of it had ever happened.",
         },
         ask: "What have you already been shown that you keep treating as though it never happened?",
       },
@@ -1057,8 +1057,8 @@ export const MARK: Reading[] = [
     movementId: "the-way",
     title: "Trees walking",
     unitLabel: "Scene",
-    thread: "A blind man sees people as trees walking and needs a second touch. Four verses later Peter names him correctly and is called Satan for what he says next. The movement opens on partial sight.",
-    closeEnd: "Then the sentence that has been softened harder than anything else in the book, and the crowd is called over to hear it.",
+    thread: "Jesus heals a blind man who at first sees people as trees walking and needs a second touch. A few verses later Peter names Jesus correctly, and then Jesus calls him Satan for what he says next. Mark opens this new section of his gospel with a man who can only half see.",
+    closeEnd: "Then Jesus calls the crowd over and speaks the saying that readers have softened more than anything else in the book.",
     passages: [
       {
         label: "One",
@@ -1075,11 +1075,11 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The only healing in the gospels that takes two attempts. He leads the man out of the village first, uses spit and his hands, and then asks him what he can see. The answer is that people look like trees walking. He puts his hands on him again and the man sees clearly. Then he is sent home rather than back into the village.",
+          text: "This is the only healing in the gospels that takes two attempts. Jesus leads the man out of the village, uses spit and his hands, and then asks him what he can see. The man answers that people look like trees walking. Jesus puts his hands on him a second time, and the man sees clearly. Then Jesus sends him home instead of back into the village.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "Whether Mark had this as reportage or as construction, its position does the work. Four verses later Peter names him correctly, and then in the same conversation is called Satan for what he does with the name. Partial sight is not blindness and it is not sight. It is the state nearly everyone in this book is in, including the ones who have the answer right.",
+          "Whether Mark received this story as a report or shaped it himself, he places it with great care. A few verses later Peter names Jesus correctly, and then, in the same conversation, Jesus calls him Satan for what he does with that name. Mark wants us to see that partial sight is neither blindness nor true sight. It is the state nearly everyone in his gospel is in, including the people who have the right answer.",
       },
       {
         label: "Two",
@@ -1098,11 +1098,11 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Caesarea Philippi is Gentile territory in the far north, about as far from Jerusalem as this story travels, and the question is asked there rather than at home. Peter's answer is correct, and it is the first time a human being in this book says it. He is immediately told to say nothing about it, which is the secrecy pattern arriving at the least expected moment.",
+          text: "Caesarea Philippi was a Gentile city in the far north, about as far from Jerusalem as Jesus travels in Mark’s gospel, and Jesus asks his question there instead of at home. Peter’s answer is correct, and he is the first human being in the book to say it. Jesus immediately tells him to say nothing about it, so Mark’s pattern of secrecy appears at the moment we would least expect it.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The order matters. Peter gets it right, then comes the first plain statement of what is coming, then Peter takes him aside and rebukes him, and the verb Mark uses is the one used for silencing spirits. The reply is the harshest sentence anyone in the gospel receives, and it goes to the man who just answered correctly. Notice what is condemned. Not a wrong answer about who he is, but a wrong idea of what that means. Peter has the title right and the job description wrong, and the book treats that as more dangerous than not knowing.",
+          "Mark is careful about the order of events. Peter gets the answer right, and then Jesus says plainly for the first time what is going to happen to him. Peter takes him aside and rebukes him, and Mark uses the same verb he uses for Jesus silencing evil spirits. Jesus’ reply is the harshest sentence anyone receives in the gospel, and he speaks it to the man who has just answered correctly. Jesus does not condemn Peter for being wrong about who he is. He condemns Peter for a wrong idea of what that means. Peter has the title right and the job description wrong, and Mark treats that as more <b>dangerous</b> than not knowing at all.",
       },
       {
         label: "Three",
@@ -1119,19 +1119,19 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "He calls the crowd over, so this is not said privately to the twelve. It is said to anybody listening.",
+          text: "Jesus calls the crowd over, so he is not saying this privately to the twelve. He says it to anyone who is listening.",
           src: "Marcus · Collins · Bond",
         },
         misreading: {
           named:
-            "Taking up your cross means bearing a hardship: a difficult marriage, a chronic illness, a burden you did not choose.",
-          why: "The people hearing it had watched it done. It was a specific method of public execution used by an occupying power, and the condemned carried the beam to the site through a crowd on purpose. What it names is not an affliction that happens to you. It is a decision, taken in public, that everyone watching understands to be the end of you. Softened into hardship it becomes a consolation. As spoken it is a warning.",
+            "When Jesus says to take up your cross, he means bearing a hardship, such as a difficult marriage, a chronic illness, or a burden you did not choose.",
+          why: "The people who heard Jesus had watched crucifixions. The Romans used the cross as a method of public execution in the lands they occupied, and they made the condemned carry the beam to the place of execution through a crowd on purpose. So Jesus is not talking about something that happens to you. He is talking about a decision, made in public, that everyone watching would understand to be the end of you. If we soften his words into a saying about hardship, they become a comfort. As Jesus spoke them, they were a warning.",
         },
         meaning:
-          "The arithmetic in verse 35 only works if the terms are meant. Saving your life is the thing that loses it. And what is put at stake is being ashamed of him and of his words, which is public rather than private.",
+          "Jesus’ reasoning in verse 35 only works if he means exactly what he says: whoever tries to save their life will lose it. And what he names as the danger is being ashamed of him and of his words, which is something people do in public, not in private.",
         addr: {
           mode: "claims",
-          text: "This one is not describing you. It is asking something of you, and it was said to a crowd rather than to professionals. The question is not what you believe but what you would still be seen doing.",
+          text: "In this saying Jesus is not describing you. He is asking something of you, and he said it to a crowd, not to a group of religious professionals. The question he puts to us is not what we believe but what we would still be seen doing.",
         },
         ask: "What would you stop doing tomorrow if the people whose opinion you value found out?",
       },
@@ -1145,7 +1145,7 @@ export const MARK: Reading[] = [
     chapterIndex: 9,
     title: "Listen to Him",
     unitLabel: "Scene",
-    thread: "Three of them see him lit up on a mountain and are told to listen to him. Then they come down, cannot help a boy, argue about rank, and are told what to do with a hand that keeps offending.",
+    thread: "Three of the disciples see Jesus shining on a mountain, and a voice tells them to listen to him. Then they come down, fail to help a boy, argue about which of them is greatest, and hear Jesus tell them what to do with a hand that causes them to sin.",
     closeEnd: "Two verse numbers in this chapter are empty, and the introduction to this book explains why.",
     passages: [
       {
@@ -1171,13 +1171,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Six days later, three of them, a high mountain: the furniture of Sinai, where Moses went up with named companions and the cloud covered the mountain for six days. Moses and Elijah are the two figures in the tradition who did not have ordinary endings. Peter's offer of three shelters is the vocabulary of the Feast of Tabernacles, and Mark notes that he did not know what to say. The voice repeats what was said at the river and adds one instruction.",
+          text: "Mark tells us that this happened six days later, that Jesus took three companions, and that they went up a high mountain. Each detail recalls Sinai, where Moses went up with named companions and the cloud covered the mountain for six days. Moses and Elijah are the two figures in Israel’s tradition who did not die ordinary deaths. When Peter offers to build three shelters, he uses the language of the Feast of Tabernacles, and Mark notes that Peter did not know what to say. The voice repeats what it said at Jesus’ baptism in the river and adds one instruction.",
           src: "Exodus 24:15–18 · Marcus · Collins",
         },
         meaning:
-          "The addition is the whole point. At the river the voice spoke to him. Here it speaks to them, and what it says is not look at him but <b>listen to him</b>, six verses after he told them what was coming and Peter refused to have it. Then the descent, where they argue about what rising from the dead could possibly mean. That is the ordinary state of this book. They have had a vision, and it has not made them able to hear a sentence.",
+          "That added instruction is the whole point. At the river the voice spoke to Jesus. Here it speaks to the disciples, and it does not tell them to look at him but to <b>listen</b> to him, only six verses after Jesus told them what was coming and Peter refused to accept it. Then, on the way down, they argue about what rising from the dead could possibly mean. That is the ordinary state of the disciples in Mark’s gospel. They have seen a vision, and they still cannot hear a single sentence.",
         lenses: {
-          theo: "The mountain settles nothing. It confirms who he is to three men who already had the answer, and then tells them to listen to the part they cannot accept.",
+          theo: "The vision on the mountain does not settle anything for the disciples. God confirms who Jesus is to three men who already had the answer, and then tells them to listen to the part they cannot accept.",
         },
       },
       {
@@ -1206,13 +1206,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "They come down into an argument. The nine who stayed behind have failed at something they were given authority to do in chapter six. The father's description of the boy is clinical and Mark keeps every detail of it. And his request is hedged in a way nobody else's is: if you can do anything, have compassion and help us.",
+          text: "Jesus and the three come down into an argument. The nine disciples who stayed behind have failed to do something Jesus gave them authority to do in chapter six. Mark records every detail of the father’s clinical description of his son. And the father asks for help more cautiously than anyone else in the gospel: if you can do anything, have compassion on us and help us.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "Verse 24 is the most useful sentence in the gospel for anyone who has tried to believe something on purpose. The father does not resolve his doubt and is never asked to. He says both halves in one breath, I believe, help my unbelief, and that is the condition on which it happens. And note what the disciples are told afterward in private: this kind comes out only by prayer. They had done it before. Having been able to once is not the same as being able.",
+          "Verse 24 may be the most useful sentence in the gospel for anyone who has tried to make themselves believe something. The father never resolves his doubt, and Jesus never asks him to. He says both halves in one breath, I believe, help my unbelief, and on those terms Jesus heals his son. Notice also what Jesus tells the disciples afterward in private: this kind can come out only by prayer. They had cast out spirits before. Mark wants us to see that having done something once is not the same as being <b>able</b> to do it.",
         lenses: {
-          arch: "The father who says the true thing rather than the confident thing, and is not corrected for it. (Both halves, out loud.)",
+          arch: "Many stories honor the person who speaks the honest truth about themselves instead of the confident thing they are expected to say. The father tells Jesus that he believes and that he also doubts, and Jesus does not correct him. He answers the prayer as the father prayed it.",
         },
       },
       {
@@ -1233,11 +1233,11 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The second passion prediction, given privately, and Mark says they did not understand it and were afraid to ask. Then the argument on the road, which they will not admit to when he asks about it. The child he sets among them is not a picture of innocence. In that world a child had no standing, no legal weight, and no capacity to advance anybody's position.",
+          text: "Jesus predicts his death a second time, privately, and Mark says the disciples did not understand him and were afraid to ask. Then come the disciples’ argument on the road, which they will not admit to when he asks about it. The child Jesus places among them is not a picture of innocence. In their world a child had no standing, no legal weight, and no way to help anyone get ahead.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The sequence is the point, and it runs three times in this movement. He says what is coming, they answer with a status question, and he replies with a reversal. Here the reversal is embodied: he puts his arms around somebody with nothing to offer, and says that welcoming that person is welcoming him. No advice about ambition is attached. There is only a demonstration of who you would have to start noticing.",
+          "Mark repeats the same sequence three times in this section. Jesus says what is coming, the disciples respond with a question about status, and Jesus answers by turning their expectations upside down. Here he acts out the reversal. He puts his arms around a child who has nothing to offer and says that whoever welcomes such a child welcomes him. Jesus gives them no advice about ambition. He simply shows them whom they would have to start <b>noticing</b>.",
       },
       {
         label: "Four",
@@ -1260,19 +1260,19 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "John's complaint is that somebody outside the group is doing the work, and the answer is the widest sentence in the book: whoever is not against us is for us. Then the millstone, and the sayings about hand, foot and eye. Two verse numbers here, 44 and 46, are empty. They repeat a line from Isaiah about the worm and the fire and are absent from the earliest manuscripts, which is why the numbering jumps twice.",
+          text: "John complains that someone outside their group is casting out demons in Jesus’ name, and Jesus answers with the most generous sentence in the book: whoever is not against us is for us. Then come the saying about the millstone and the sayings about the hand, the foot and the eye. Two verse numbers here, 44 and 46, are empty. They repeated a line from Isaiah about the worm and the fire, and because they are missing from the earliest manuscripts, the numbering jumps twice.",
           src: "Isaiah 66:24 · Marcus · Collins",
         },
         meaning:
-          "These sayings have done real damage read as instructions, and they are not instructions. They are hyperbole of a kind the tradition used freely, and nobody in the movement is recorded acting on them. What they do is put a price on the people the previous scene said had no standing. Better to go maimed than to trip up one of these little ones, and the little ones are exactly who the disciples have just been arguing about ranking above.",
+          "Readers who have taken these sayings as literal instructions have done real harm, and Jesus did not mean them as instructions. He is using exaggeration of a kind Jewish teachers used freely, and Mark never records any follower acting them out. What Jesus does with them is put a high value on the people the previous scene said had no standing. It is better to go through life maimed than to cause one of these little ones to stumble, and the little ones are exactly the people the disciples have just been arguing about ranking above.",
         lenses: {
-          arch: "The rule you would enforce on an outsider, applied first to your own hand. (Starting the cutting at home.)",
+          arch: "Most people are quicker to enforce a rule on outsiders than on themselves. Jesus reverses that habit. He tells the disciples to leave alone the outsider who is doing good work, and to begin any cutting with their own hand.",
         },
         addr: {
           mode: "claims",
-          text: "You keep a list of people you would apply a standard to, and it does not start with you. The sequence here runs the other way. The outsider doing good work is left alone, and the cutting begins at your own hand.",
+          text: "Most of us keep a list of people we would hold to a high standard, and we are not at the top of it. Jesus runs the order the other way. He tells his disciples to leave alone the outsider who is doing good work, and to begin the cutting with their own hand.",
         },
-        ask: "Which standard are you enforcing outward that you have never once turned around?",
+        ask: "Is there a standard you enforce on others that you have never once applied to yourself?",
       },
     ],
   },
@@ -1284,8 +1284,8 @@ export const MARK: Reading[] = [
     chapterIndex: 10,
     title: "One thing you lack",
     unitLabel: "Scene",
-    thread: "Divorce, children, and a man who has kept every commandment since he was young. The chapter is about what people are holding on to, and who gets counted.",
-    closeEnd: "The last will be first. It is said to men who have just been promised that everything they gave up comes back, with persecutions.",
+    thread: "In this chapter Jesus is asked about divorce, welcomes children, and meets a man who has kept every commandment since he was young. Mark’s concern throughout is what people hold on to, and whom they count as important.",
+    closeEnd: "Jesus tells the disciples that the last will be first, and he says it to men he has just promised will receive back everything they gave up, along with persecutions.",
     passages: [
       {
         label: "One",
@@ -1313,11 +1313,11 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The question is a test, and it lands in a live dispute: one school allowed divorce on wide grounds and another on narrow ones, and either way it was a right men had and women largely did not. He answers by going behind Moses to Genesis. Then verse 12 extends the ruling to a woman divorcing her husband, which was not possible in Jewish law and was in Roman law, which tells you something about who Mark is writing for.",
+          text: "The Pharisees ask their question to test Jesus, and they place him in the middle of a live dispute. The followers of the teacher Hillel allowed divorce for many reasons and the followers of Shammai for very few, but in either case divorce was a right men had and women largely did not. Jesus answers by going behind Moses to Genesis. Then in verse 12 he applies the ruling to a woman who divorces her husband. Jewish law generally did not allow a woman to do that, but Roman law did, which tells us something about the readers Mark was writing for.",
           src: "Deuteronomy 24:1–4 · Genesis 1–2 · Marcus · Collins",
         },
         meaning:
-          "It is worth being clear about what is being protected. In a system where a man could dismiss a wife and leave her with no standing and no income, a hard line on divorce is not first of all a rule about marriage. It is a limit on the power of the person holding all of it. Then the children, immediately after, and the disciples turning them away, and the second reversal in two chapters: the kingdom is received the way somebody with no standing receives things, which is the only way they can.",
+          "We should be clear about whom Jesus is protecting. In a system where a man could dismiss his wife and leave her with no standing and no income, a strict line on divorce is not first of all a rule about marriage. It is a limit on the <b>power</b> of the person who holds all of it. Right after this the disciples turn away the children, and Jesus reverses their expectations for the second time in two chapters: people must receive the kingdom the way a person with no standing receives anything, as a gift, because that is the only way they can.",
       },
       {
         label: "Two",
@@ -1344,19 +1344,19 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The man runs and kneels, which is not how anyone approached a teacher, and his opening is flattering. The reply is the strangest line in the exchange: why do you call me good, no one is good but God alone. The commandments he lists are the ones about other people, and he adds one that is not among the ten: do not defraud. And Mark alone reports that Jesus looked at him and loved him.",
+          text: "The man runs up and kneels, which was not how anyone approached a teacher, and he opens with flattery. Jesus’ reply is the strangest line in the exchange: why do you call me good, when no one is good except God alone. The commandments Jesus lists are the ones about how we treat other people, and he adds one that is not among the ten, do not defraud. Only Mark reports that Jesus looked at the man and loved him.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "This is the only person in the gospel called to follow who does not, and Mark makes him as sympathetic as possible. He is sincere, he has kept them, and he is loved. What he is asked for is not moral improvement. It is the removal of the thing his life is built on. The disciples' reaction shows how unexpected that was, because wealth was widely read as evidence of God's favour, which is why the question that follows is who then can be saved. The answer is nobody, and that this is not the relevant question. The camel is not a gate.",
+          "This man is the only person in Mark’s gospel whom Jesus calls to follow him who does not do it, and Mark makes him as sympathetic as he can. The man is sincere, he has kept the commandments, and Jesus loves him. Jesus does not ask him to improve morally. He asks him to give up the thing his whole life is built on. The disciples are astonished, because most people of their time took wealth as a sign of God’s favor, and so they ask who then can be saved. Jesus answers that no one can save themselves, but that God can do what people cannot. Some preachers have claimed that the eye of the needle was a narrow gate in Jerusalem, but there is no evidence for such a gate, and Jesus meant the saying to sound <b>impossible</b>.",
         lenses: {
-          theo: "He looked at him and loved him, and then asked for the one thing he would not give, and let him walk away without going after him. The love and the letting go are in the same sentence.",
+          theo: "Jesus looked at the man and loved him, then asked him for the one thing he would not give, and let him walk away without going after him. Mark puts the love and the letting go side by side.",
         },
         addr: {
           mode: "claims",
-          text: "There is one thing your life is arranged around, and you would call it a responsibility rather than a possession. He did not ask the man to hold it more lightly. He asked him to get rid of it, and then let him go.",
+          text: "Most of us have one thing our lives are arranged around, and we would call it a responsibility rather than a possession. Jesus did not ask the man to hold his wealth more loosely. He asked him to give it away, and then he let him go.",
         },
-        ask: "What is the one thing you would want left out of the question?",
+        ask: "What is the one thing you would want Jesus to leave out of the question?",
       },
     ],
   },
@@ -1368,8 +1368,8 @@ export const MARK: Reading[] = [
     chapterIndex: 10,
     title: "On the road",
     unitLabel: "Scene",
-    thread: "The third and most detailed statement of what is coming, answered with a request for the best seats. Then a blind beggar who will not be quiet.",
-    closeEnd: "He throws off his cloak, which for a beggar is the thing he sits on and collects in, and follows him up the road.",
+    thread: "Jesus tells the disciples a third time, and in the most detail yet, what is going to happen to him, and two of them answer by asking for the best seats. Then a blind beggar refuses to be quiet.",
+    closeEnd: "Bartimaeus throws off his cloak, which for a beggar was the thing he sat on and spread out to collect coins, and follows Jesus up the road.",
     passages: [
       {
         label: "One",
@@ -1395,17 +1395,17 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Verse 32 is one of the most vivid sentences in the gospel: they are going up to Jerusalem, he is walking ahead of them, they are amazed, and those following are afraid. The third prediction is the most detailed of the three, naming the mocking, the spitting and the flogging.",
+          text: "Verse 32 is one of the most vivid sentences in the gospel. Jesus and his followers are going up to Jerusalem, he is walking ahead of them, the disciples are amazed, and those following behind are afraid. This third prediction of his death is the most detailed of the three, and in it Jesus names the mocking, the spitting and the flogging.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "Three times now: he says what is coming, and they answer with position. The reply does not scold them for ambition. It changes the currency. The cup, the baptism, and then a flat comparison with how authority works everywhere else, where the great exercise it over people. Not so among you. And the last verse is the only place in this gospel where he says what the death is for, in one clause, with no theory attached.",
+          "This is the third time the pattern has appeared: Jesus says what is coming, and the disciples answer with a request for position. Jesus does not scold them for their ambition. Instead he changes what counts as greatness. He speaks of the cup and the baptism he must undergo, and then compares his way with how authority works everywhere else, where the great rule over others. It shall not be so among you, he tells them. In the last verse Jesus says, in a single clause and with no theory attached, that he came to give his life as a <b>ransom</b> for many, one of only two places in this gospel where he says what his death is for.",
         tensions: [
           {
             claim:
-              "James and John come to him themselves and ask for the seats at his right and left in his glory.",
+              "James and John come to Jesus themselves and ask for the seats at his right and left in his glory.",
             counter:
-              "Matthew, retelling the same scene, hands the request to their mother and leaves the two of them standing there.",
+              "Matthew, retelling the same scene, has their mother make the request and leaves the two brothers standing there.",
             where: "Mark 10:35–37 · Matthew 20:20–21",
           },
         ],
@@ -1427,14 +1427,14 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Jericho is the last stop before the climb to Jerusalem. Bartimaeus is named, which is rare for someone healed, and he calls him son of David, the first time anyone in the book uses a title like that in public and is not silenced for it. The crowd tells him to be quiet and he shouts louder. The cloak he throws off is a beggar's working equipment, the thing he spreads out to collect on.",
+          text: "Jericho was the last town before the climb to Jerusalem. Mark gives the beggar’s name, Bartimaeus, which is rare for someone Jesus heals, and Bartimaeus calls Jesus Son of David, the first time in the book that anyone uses such a title in public without being silenced. The crowd tells him to be quiet, and he shouts louder. The cloak he throws off was a beggar’s working equipment, the thing he spread out to collect coins.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The question he is asked is word for word the question James and John were asked eleven verses earlier. What do you want me to do for you. They asked for thrones. He asks to see. And this is the only healing in the gospel where the person healed is last seen following on the road, which is the word this whole movement has been built on. It opened with a blind man who needed two touches and was sent home. It closes with one who sees, and goes up the road.",
+          "Jesus asks Bartimaeus the very question he asked James and John eleven verses earlier: what do you want me to do for you? They asked for thrones. Bartimaeus asks to see. His is the only healing in the gospel after which Mark last shows the person following Jesus on the road, and the road is the image Mark has built this whole section around. Mark opened the section with a blind man who needed two touches and was sent home. He closes it with a man who <b>sees</b> and goes up the road with Jesus.",
         addr: {
           mode: "names",
-          text: "You have probably been told, by people who meant well, that the thing you keep asking for is not worth making a scene about. He shouted louder, and the man who mattered stopped walking.",
+          text: "Many of us have been told, by people who meant well, that the thing we keep asking for is not worth making a scene about. Bartimaeus shouted louder, and Jesus stopped walking.",
         },
         ask: "What have you gone quiet about because the people around you were embarrassed by it?",
       },
@@ -1448,8 +1448,8 @@ export const MARK: Reading[] = [
     chapterIndex: 11,
     title: "Not the season for figs",
     unitLabel: "Scene",
-    thread: "A staged arrival, a tree that had done nothing wrong, an afternoon in the temple courts, and a delegation asking who gave him permission.",
-    closeEnd: "They work out which answer costs them least and say they do not know. He declines to answer them, which is what a question asked in bad faith is owed.",
+    thread: "Jesus arranges his arrival in Jerusalem, curses a fig tree that had done nothing wrong, spends an afternoon in the temple courts, and is met by a delegation asking who gave him permission.",
+    closeEnd: "The religious leaders work out which answer will cost them least and say they do not know. Jesus refuses to answer them in return, which is all that a question asked in bad faith deserves.",
     passages: [
       {
         label: "One",
@@ -1472,13 +1472,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The entry is arranged rather than spontaneous: he sends for a specific animal and the arrangement is already made. The shouting is from Psalm 118, a pilgrim psalm sung on the way up. And the anticlimax is Mark's own. He goes into the temple courts, looks around at everything, and because it is late, leaves. Matthew and Luke both have the temple action happen the same day.",
+          text: "Jesus plans his entry instead of letting it happen: he sends for a particular animal, and someone has already arranged for it. The crowd’s shouting comes from Psalm 118, a psalm pilgrims sang on the way up to Jerusalem. Then Mark gives his own anticlimax. Jesus goes into the temple courts, looks around at everything, and leaves because it is late. Matthew and Luke both have Jesus clear the temple on the same day he arrives.",
           src: "Psalm 118:25–26 · Zechariah 9:9 · Marcus · Collins",
         },
         meaning:
-          "A staged entry on a colt, into a city packed for Passover, with a crowd shouting about the kingdom of David, is not a devotional gesture. It is a claim made in public in front of an occupying garrison in the most sensitive week of the year. And then Mark does the thing no other gospel does. He walks in, looks around at everything, and goes back to Bethany because it is late. The survey comes first, which means what happens the next day is not a loss of temper.",
+          "When a man rides a colt into a city crowded for Passover while a crowd shouts about the kingdom of David, he is not making a private act of devotion. He is making a public <b>claim</b> in front of an occupying garrison during the most sensitive week of the year. Then Mark does something no other gospel writer does. Jesus walks into the temple, looks around at everything, and goes back to Bethany because it is late. He inspects the temple first, so what he does the next day is not a loss of temper.",
         lenses: {
-          arch: "The arrival everybody reads as a triumph, made by the only person who has already seen where it ends. (Riding in with the survey done.)",
+          arch: "Many stories tell of a hero who rides in to cheers that he knows will not last. Jesus enters Jerusalem as the crowd hails a king, but he has already told his disciples three times that the city will reject and kill him, and he rides in knowing it.",
         },
       },
       {
@@ -1505,16 +1505,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Mark wraps the temple action inside the fig tree, his standard construction: he curses the tree, he clears the courts, they find the tree withered on the way back. And he includes the detail that makes the cursing look unreasonable. It was not the season for figs. The quotation is Isaiah and Jeremiah, and den of robbers comes from a passage about people who commit crimes elsewhere and then shelter in the building.",
+          text: "Mark wraps the temple scene inside the fig tree story, his usual way of building a narrative: Jesus curses the tree, he clears the temple courts, and on the way back the disciples find the tree withered. Mark includes the detail that makes the cursing seem unreasonable, that it was not the season for figs. Jesus quotes Isaiah and Jeremiah, and the phrase den of robbers comes from a passage in Jeremiah about people who commit crimes elsewhere and then take shelter in the temple.",
           src: "Isaiah 56:7 · Jeremiah 7:11 · Marcus · Collins",
         },
         misreading: {
           named:
-            "He lost his temper: with a tree that had done nothing, and then with the traders.",
-          why: "The line about the season is Mark's, and he chose to put it in. A version where the tree is at fault would work better and he declined to write it. The two halves are one act: a tree in full leaf, advertising fruit and having none, and an institution in full operation doing the same. And the temple action is not a protest against commerce, which was required to run the sacrifices the law commanded. The quotation he uses is about a building being treated as a safe house by people whose conduct happens somewhere else.",
+            "Jesus lost his temper, first with a tree that had done nothing wrong and then with the traders in the temple.",
+          why: "Mark wrote the line about the season himself, and he chose to include it. He could have told a version in which the tree was at fault, and he decided not to. Mark presents the two halves as one act: a tree in full leaf, advertising fruit and having none, and a temple in full operation doing the same. Nor is Jesus protesting against trade in the temple, which the priests needed in order to offer the sacrifices the Law required. The passage Jesus quotes is about people who treat the temple as a hiding place while they do wrong somewhere else.",
         },
         meaning:
-          "The sandwich tells you how to read both halves, and neither is about a tree or about traders. Take the sequence as it stands: he inspects, he acts, and the verdict is delivered the next morning on something withered from the roots. Then, immediately after, the sayings about a mountain thrown into the sea and about forgiving whatever you hold against anyone, spoken within sight of a mountain with a temple on it.",
+          "By placing one story inside the other, Mark tells us how to read both halves, and neither is really about a tree or about traders. Follow the order of events: Jesus inspects, he acts, and the next morning the disciples find the tree withered from the roots. Right after this Jesus speaks of a mountain thrown into the sea and of forgiving whatever you hold against anyone, and he says it within sight of a mountain with the temple on top of it.",
       },
       {
         label: "Three",
@@ -1533,16 +1533,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The delegation is the full leadership, chief priests and scribes and elders, which is also the composition of the council that will try him. Their question is legitimate and procedural: who authorised this. His counter-question about John is not evasion. It puts them in the position of having to say in public what they think of a prophet the crowd revered.",
+          text: "The delegation includes the whole leadership, the chief priests, the scribes and the elders, the same groups who will make up the council that tries Jesus. Their question is fair and procedural: who authorized you to do this? Jesus’ counter-question about John the Baptist is not a dodge. It forces them to say in public what they think of a prophet the crowd revered.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The exchange is political arithmetic done out loud, and Mark lets you watch them do it. They weigh the crowd, arrive at the answer that costs them least, and say they do not know. He then declines to answer, which is not a dodge but what a question asked in bad faith is owed. Notice that the whole conversation is about authority, which is the word the crowd reached for in chapter one. Nobody is astonished by it any more.",
+          "Mark lets us watch the leaders do their political arithmetic out loud. They weigh the mood of the crowd, settle on the answer that will cost them least, and say they do not know. Jesus then refuses to answer them, and this is not a dodge but the only answer a question asked in bad faith deserves. The whole conversation turns on <b>authority</b>, the word the crowd reached for in amazement in chapter one. By now no one is amazed by it.",
         addr: {
           mode: "names",
-          text: "You have worked out mid-conversation which answer would cost you least, and given that one instead of the one you hold. It is rarely a lie. It is a calculation, done fast, and it arrives feeling like prudence.",
+          text: "Most of us have worked out in the middle of a conversation which answer would cost us least, and given that answer instead of the one we actually hold. It is rarely a lie. It is a quick calculation, and it feels like prudence while we make it.",
         },
-        ask: "Where have you answered for the room rather than for what you actually think?",
+        ask: "Where have you answered for the room instead of saying what you actually think?",
       },
     ],
   },
@@ -1554,8 +1554,8 @@ export const MARK: Reading[] = [
     chapterIndex: 12,
     title: "The stone the builders rejected",
     unitLabel: "Scene",
-    thread: "A parable they understand perfectly, three questions designed so that either answer destroys him, one honest question, and a widow with two coins.",
-    closeEnd: "The next thing anybody says is an admiring remark about the masonry of the building she has just paid into.",
+    thread: "Jesus tells a parable the leaders understand perfectly. Then three groups ask him questions designed so that either answer will ruin him, one scribe asks an honest question, and Jesus watches a widow put in two small coins.",
+    closeEnd: "As they leave the temple, a disciple’s next words are an admiring remark about the stonework of the building the widow has just paid into.",
     passages: [
       {
         label: "One",
@@ -1579,13 +1579,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The parable opens with the vineyard of Isaiah 5, wall and winepress and tower, which his audience knew meant Israel and knew ended in judgement. The chain of beaten and killed servants is the prophetic tradition. And the quotation about the rejected stone is Psalm 118, the same psalm the crowd was shouting from three days earlier. Mark says plainly that they knew the parable was about them.",
+          text: "Jesus begins the parable with the vineyard from Isaiah 5, with its wall, winepress and tower. His hearers knew that Isaiah’s vineyard stood for Israel and that Isaiah’s song ended in judgment. The servants the tenants beat and kill stand for the prophets. The saying about the rejected stone comes from Psalm 118, the same psalm the crowd shouted when Jesus entered the city two days before. Mark says plainly that the leaders knew Jesus had told the parable against them.",
           src: "Isaiah 5:1–7 · Psalm 118:22–23 · Marcus · Collins",
         },
         meaning:
-          "This is the only parable in the gospel decoded inside the story, and it is decoded by the people it condemns. What makes it hard is the ending, where the vineyard is given to others, which has been read for centuries as a transfer from one people to another and used to justify a great deal. Read inside its own scene, the tenants are a named leadership in one city in one week, not a nation. The vineyard is not taken from Israel. It is taken from the men who were running it.",
+          "This is the only parable in Mark that the people inside the story work out for themselves, and the people who work it out are the ones it condemns. The difficult part is the ending, where the owner gives the vineyard to others. For centuries Christians read that as God transferring his favor from one people to another, and they used that reading to justify a great deal of harm. Within the scene, though, the tenants are a particular group of leaders in one city in one week, not a whole nation. The owner does not take the vineyard from Israel. He takes it from the <b>men</b> who were running it.",
         lenses: {
-          theo: "The owner sends the son last, expecting the tenants to respect him, and is wrong. It is a parable in which God miscalculates, and nobody in the tradition has been comfortable with that.",
+          theo: "The owner sends his son last, expecting the tenants to respect him, and he is wrong. In this parable Jesus pictures God as one who miscalculates, and Christian interpreters have never been comfortable with that.",
         },
       },
       {
@@ -1620,13 +1620,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Three questions in a row from three different groups, each a trap of a different shape. The tax question is genuinely dangerous: the tribute was paid in a coin carrying the emperor's image and a title claiming divine sonship, which is why asking them to produce one is itself part of the argument. The Sadducees, who held no resurrection, bring a case built to make it absurd. And then a scribe asks a real question.",
+          text: "Three different groups question Jesus one after another, and each sets a trap of a different kind. The question about taxes is truly dangerous. People paid the tribute in a coin that carried the emperor’s image and a title calling him the son of a god, which is why Jesus asks them to produce one: the coin itself becomes part of his argument. The Sadducees, who did not believe in the resurrection, bring a case designed to make it look absurd. Then a scribe asks a real question.",
           src: "Deuteronomy 6:4–5 · Leviticus 19:18 · Marcus · Collins",
         },
         meaning:
-          "The famous line is regularly used to divide life into two domains, which is not what it does. He asks whose image is on the coin, and the answer is Caesar's, and anyone who knew the first page of Genesis heard the second half of that sentence land very differently. Then the scribe, who is the only member of the opposition in this book treated with respect. He asks without a trap, agrees out loud, adds that loving God and neighbour is worth more than all the offerings, and is told he is not far from the kingdom.",
+          "People often use Jesus’ famous saying to divide life into two separate areas, one for Caesar and one for God, but that is not what Jesus does with it. He asks whose image is on the coin, and they answer that it is Caesar’s. Anyone who knew the first page of Genesis, where God makes human beings in his own image, would have heard the second half of Jesus’ sentence very differently. Then comes the scribe, one of the very few members of the opposition whom Mark treats with <b>respect</b>. He asks without setting a trap, agrees with Jesus out loud, adds that loving God and neighbor is worth more than all the offerings, and Jesus tells him he is not far from the kingdom.",
         lenses: {
-          arch: "The question built so that either answer destroys you, and the reply that refuses the frame instead of picking a side. (Whose head is on it?)",
+          arch: "Many stories tell of someone handed a question built so that either answer will destroy them, who escapes by refusing the terms of the question instead of choosing a side. Jesus does this with the coin. He does not answer yes or no. He asks whose head is on it.",
         },
       },
       {
@@ -1649,21 +1649,21 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two things are placed together on purpose. He warns about scribes who like the greetings and the front seats and who devour widows' houses. Then he sits down opposite the treasury and watches a widow put in two of the smallest coins in circulation. The treasury stood in the court of the women, with trumpet-shaped receptacles, and a large gift was audible.",
+          text: "Mark sets two scenes side by side on purpose. Jesus warns the crowd about scribes who love greetings and the best seats and who devour widows’ houses. Then he sits down opposite the treasury and watches a widow put in two of the smallest coins in circulation. According to later Jewish sources, the treasury stood in the Court of the Women and had trumpet-shaped collection boxes, and some scholars think the crowd could hear a large gift as it went in.",
           src: "Marcus · Collins · France",
         },
         misreading: {
           named:
-            "The widow is a model of generous giving, and the lesson is to give sacrificially.",
-          why: "That reading is available, and it has to ignore the sentence immediately before it, where he condemns the men who devour widows' houses. Taken in sequence, the scene is at least as likely to be a lament: here is what that devouring looks like, a woman with two coins putting in both, into a building he is about to say will be pulled down. Mark does not tell you which reading is right. He sets the two beside each other and moves straight into chapter 13.",
+            "The widow is a model of generous giving, and Jesus is teaching us to give sacrificially.",
+          why: "Readers can take the scene that way only by ignoring the sentence just before it, where Jesus condemns the men who devour widows’ houses. If we read the scenes in order, Jesus may well be lamenting instead: this is what that devouring looks like, a woman with two coins putting in both, into a building he is about to say will be torn down. Mark does not tell us which reading is right. He places the two scenes side by side and moves straight on to chapter 13.",
         },
         meaning:
-          "He says she put in more than all of them, which is a statement about proportion and is true on either reading. What the sequence does not do is praise the arrangement that leaves her with nothing. And the very next thing that happens is a disciple admiring the stonework of the building she has just paid into.",
+          "Jesus says the widow put in more than all the others, which is a statement about proportion and is true on either reading. But Jesus does not praise the system that leaves her with nothing. And the very next thing Mark reports is a disciple admiring the stonework of the <b>building</b> she has just paid into.",
         addr: {
           mode: "names",
-          text: "Somebody is paying for something you benefit from, and paying a larger share of what they have than you are paying of yours. He did not praise the arrangement and he did not fix it. He sat down opposite it and watched.",
+          text: "Somebody is probably paying for something you benefit from, and paying a larger share of what they have than you pay of yours. Jesus did not praise that arrangement, and he did not fix it. He sat down opposite it and watched.",
         },
-        ask: "Who is funding something in your life at a cost you would not accept for yourself?",
+        ask: "Who is paying for something in your life at a cost you would not accept for yourself?",
       },
     ],
   },
@@ -1675,8 +1675,8 @@ export const MARK: Reading[] = [
     chapterIndex: 13,
     title: "Not one stone",
     unitLabel: "Scene",
-    thread: "A remark about the masonry gets an answer nobody wanted, and four of them ask when, sitting on the hill opposite the building in question.",
-    closeEnd: "The last word of the speech is the instruction the whole chapter has been aiming at, and it is not calculate.",
+    thread: "On the way out of the temple in Jerusalem, one of the disciples admires its huge stones, and Jesus answers that every one of them will be thrown down. Later, sitting on the Mount of Olives across the valley from the temple, four of the disciples ask him privately when this will happen.",
+    closeEnd: "Jesus ends the speech with the instruction he has been building toward all along. He does not tell his followers to calculate when the end will come. He tells them to stay awake.",
     passages: [
       {
         label: "One",
@@ -1701,13 +1701,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The temple Herod rebuilt was among the largest religious complexes in the ancient world, and the stones were genuinely enormous, so the disciple's remark is what any visitor said. The reply is a specific prediction about a specific building. Four of them ask when, privately, sitting on the hill opposite it. Most datings of this gospel put it within a few years either side of 70, when that building came down, which is the whole difficulty of the chapter.",
+          text: "King Herod the Great had rebuilt the temple on a vast scale, and it was among the largest religious complexes in the ancient world. Its stones really were enormous, so the disciple says what any visitor might have said. Jesus answers with a specific prediction about a specific building, and four of the disciples later ask him privately when it will happen, as they sit on the hill opposite. Most scholars date Mark’s gospel within a few years of AD 70, the year the Romans destroyed that temple, and that timing is the central difficulty of the chapter. Readers have to decide whether Mark wrote before the destruction, while it was under way, or soon after it.",
           src: "Marcus · Collins · Bond",
         },
         meaning:
-          "What he warns them about first is not catastrophe but people offering to interpret it. Many will come in my name. Wars, earthquakes and famines are named and then explicitly discounted as indicators: these are the beginning of birth pains, not the end. And the concrete content is about them, not about the world. Councils, floggings, standing in front of governors, and families handing each other over. The chapter is far more interested in how to behave than in what will happen.",
+          "Jesus does not begin by warning the disciples about catastrophe. He warns them about people who will claim to explain it, saying that many will come in his name. He mentions wars, earthquakes and famines, and then tells the disciples not to treat them as signs of the end, since they are only the beginning of the birth pains. Most of what he says concerns the disciples themselves: they will be brought before councils, beaten, made to stand before governors, and betrayed by their own families. Jesus cares far more here about how his followers will behave than about the timetable of what will happen.",
         lenses: {
-          theo: "The instruction in a crisis is not to calculate but to endure, and the sign the chapter refuses to give is exactly the one everybody keeps trying to extract from it.",
+          theo: "In a crisis, Jesus asks his followers to endure rather than to calculate. Readers have tried for centuries to draw a sign of the end from this chapter, and it is exactly the sign Jesus refuses to give.",
         },
       },
       {
@@ -1734,16 +1734,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The abomination of desolation is a phrase out of Daniel, used there of what Antiochus IV set up in the temple in 167 BCE. The aside, let the reader understand, is the narrator speaking directly to you, and it is the only place in this gospel where that happens. What follows is practical and local: get out of Judea, do not go back for your cloak, pray it is not winter. And sun, moon and stars going dark is standard prophetic language for a political order collapsing, used elsewhere of Babylon and of Egypt.",
+          text: "“The abomination of desolation” is a phrase from the book of Daniel, where it refers to the pagan altar that the Greek king Antiochus IV set up in the Jerusalem temple in 167 BC. The aside “let the reader understand” is Mark speaking directly to the person reading his book, and it is the only place in the gospel where he does so. What follows is practical, local advice: leave Judea, do not go back for your cloak, and pray that it does not happen in winter. When Jesus speaks of the sun, moon and stars going dark, he is using language the prophets had used for the collapse of a kingdom, as Isaiah did of Babylon and Ezekiel of Egypt.",
           src: "Daniel 9:27 · Isaiah 13:10 · Ezekiel 32:7 · Marcus · Collins",
         },
         misreading: {
           named:
-            "Chapter 13 is a timetable for the end of the world, and the job is to work out where we are on it.",
-          why: "Almost everything in it is local and dated. Flee to the mountains, do not come down for your coat, hope it is not winter: that is evacuation advice for people in one province. The cosmic imagery is the standard prophetic vocabulary for the fall of a political order and is used elsewhere of Babylon and Egypt. And the chapter says flatly that nobody knows the day, including him. Reading it as a calendar requires ignoring both its geography and its own refusal, and the cost of that reading has never been theoretical.",
+            "Many readers take Mark 13 as a timetable for the end of the world and think their task is to work out where we stand on it.",
+          why: "Almost everything Jesus says here is local and tied to its time. When he tells people to flee to the mountains, not to come down for a coat, and to hope it is not winter, he is giving evacuation advice to the people of one province. The prophets used the images of a darkened sun and falling stars for the fall of particular kingdoms, such as Babylon and Egypt. And Jesus says plainly that no one knows the day, not even he himself. To read the chapter as a calendar, a reader has to ignore both its geography and Jesus’ own refusal to give a date, and people who have read it that way have done real harm.",
         },
         meaning:
-          "The centre of the chapter is an instruction to leave, which is not how this kind of writing usually goes. There is no call to defend the city and no promise that the building survives. And the gathering at the end is of the scattered, from the four winds, which takes for granted that the scattering has already happened.",
+          "At the center of this part of the speech, Jesus tells his followers to leave, which is not what speeches of this kind usually say. He does not call on them to defend the city, and he does not promise that the temple will survive. When he speaks of the angels gathering God’s chosen people from the four winds, he assumes that they have already been scattered.",
       },
       {
         label: "Three",
@@ -1765,25 +1765,25 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Two sayings that have caused more trouble than anything else in the chapter. This generation will not pass away until all these things have happened. And then, four verses later, that nobody knows the day or the hour, not the angels, nor the Son. Copyists were uncomfortable enough with the second that some manuscripts of Matthew drop the phrase about the Son.",
+          text: "Two of Jesus’ sayings here have troubled readers more than anything else in the chapter. First he says that this generation will not pass away until all these things have happened. Then, four verses later, he says that no one knows the day or the hour, not the angels and not even the Son. Some early copyists were so uncomfortable with the second saying that they left out the words about the Son when they copied the same saying in Matthew.",
           src: "Marcus · Collins · Ehrman",
         },
         meaning:
-          "What the chapter actually asks for is in its last word, repeated through the closing verses: stay awake. Not calculate, not prepare, not identify. The parable attached is about a household whose master is away and who do not know when he is coming back, and the instruction goes to the doorkeeper. It is addressed to people living in the interval, which is everyone who has ever read it.",
+          "Jesus states what he really wants from his followers in the last word of the speech, which he repeats through the closing verses: stay awake. He does not ask them to calculate, to draw up plans, or to identify the signs. He tells a short parable about a household whose master has gone away without saying when he will return, and he gives the order to keep watch to the doorkeeper. Jesus is speaking to people who live in the meantime, before the master returns, and every reader of the gospel has lived in that meantime.",
         tensions: [
           {
             claim:
-              "All these things will happen within this generation.",
+              "Jesus says that all these things will happen within this generation.",
             counter:
-              "Four verses later nobody knows the day or the hour, not the angels in heaven and not the Son. The same speech sets a limit and issues a disclaimer, and never reconciles them.",
+              "Four verses later he says that no one knows the day or the hour, not the angels in heaven and not the Son. In the same speech Jesus sets a time limit and then disclaims any knowledge of the time, and Mark makes no attempt to reconcile the two.",
             where: "Mark 13:30 · Mark 13:32",
           },
         ],
         addr: {
           mode: "names",
-          text: "You have probably wanted a date, or a sign, or anything that would let you stop holding the situation open. The chapter refuses to give one, twice, and asks instead that you stay awake in the meantime.",
+          text: "Most of us have wanted a date or a sign at some point, something that would let us stop waiting with the outcome still open. Jesus twice refuses to give one, and asks us instead to stay awake while we wait.",
         },
-        ask: "What are you refusing to live in until you know how it turns out?",
+        ask: "Is there some part of your life you are refusing to live fully until you know how things will turn out?",
       },
     ],
   },
@@ -1795,8 +1795,8 @@ export const MARK: Reading[] = [
     chapterIndex: 14,
     title: "Take this cup",
     unitLabel: "Scene",
-    thread: "A woman pours out a year's wages, a friend agrees a price, and in a garden he asks to be let off and is not.",
-    closeEnd: "Verse 50 is four words long. Everyone deserted him and fled. The twelve appointed in chapter three are gone by the end of chapter fourteen.",
+    thread: "In a house in Bethany, a woman pours perfume worth a year’s wages over Jesus’ head. Then Judas, one of the twelve, agrees on a price for betraying him, and that night, in a garden called Gethsemane, Jesus asks God to spare him what is coming and receives no answer.",
+    closeEnd: "Verse 50 is only a few words long: everyone deserted him and fled. The twelve men Jesus appointed in chapter three have all left him by the end of chapter fourteen.",
     passages: [
       {
         label: "One",
@@ -1819,13 +1819,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Another sandwich: the leaders plot, the woman anoints, Judas goes to the leaders. The ointment is valued at more than three hundred denarii, about a year's wages for a labourer, and the objection about the poor is a reasonable one. Anointing the head is what is done to a king, and the word for anointed is where the title comes from. She is not named. Mark says her act will be told wherever the gospel goes, and then does not record her name.",
+          text: "Mark tells this story as another of his “sandwiches,” placing one story inside another, as he does throughout the gospel. First the leaders plot against Jesus, then the woman anoints him, then Judas goes to the leaders. The perfume was worth more than three hundred denarii, about a year’s wages for a laborer, so the guests’ objection that the money could have gone to the poor is a reasonable one. In Israel people anointed the head of a king, and the Hebrew word for “anointed one” is messiah, which in Greek became christos, or Christ. Mark does not name the woman. He reports that Jesus said her act would be told wherever the gospel is preached, and yet he never records her name.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "She is the only person in the book who does something to him rather than asking something of him, and the only one who behaves as though she has understood what is about to happen. He says as much: she has anointed my body in advance of my burial. The disciples, who have been told three times, raise a budget objection. And Mark closes the sandwich by putting Judas at the priests' door immediately after, so the extravagant act and the transaction sit on the same page.",
+          "The woman is one of the very few people in Mark who does something for Jesus rather than asking something of him, and she is the only one who acts as if she understands what is about to happen to him. Jesus says as much when he tells the guests that she has anointed his body in advance for burial. The disciples, whom he has told three times that he will be killed, object to the cost. Mark then closes the sandwich by sending Judas to the chief priests immediately afterward, so that the woman’s extravagant gift and Judas’s bargain sit side by side on the same page.",
         lenses: {
-          theo: "The anointing of the king is done by an unnamed woman with a jar, in a private house, days before an execution. It is the only coronation this book gives him.",
+          theo: "An unnamed woman anoints Jesus as king with a jar of perfume, in a private house, two days before his execution. It is the only coronation Mark gives him.",
         },
       },
       {
@@ -1858,17 +1858,17 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "In Mark's chronology the meal is a Passover meal, which puts the execution on the festival day itself. The words over the bread and the cup stand alongside Paul's as the earliest form we have. And the hymn they sing on the way out is the Hallel, sung at Passover, which ends in Psalm 118, the psalm the crowd was shouting on the way in.",
+          text: "Mark presents this meal as a Passover meal, which places Jesus’ execution on the festival day itself. The words Jesus speaks over the bread and the cup, together with Paul’s account of them in 1 Corinthians 11, are the earliest versions we have. The hymn they sing as they leave is the Hallel, Psalms 113 to 118, which Jews sang at Passover. It ends with Psalm 118, the same psalm the crowd shouted when Jesus rode into Jerusalem.",
           src: "Marcus · Collins · 1 Corinthians 11:23–25",
         },
         meaning:
-          "The table talk is entirely about failure and it is addressed to everybody at the table. One of you will betray me, and each of them asks surely not I, which is the right question. Then the prediction that all of them will fall away, which Peter denies loudly and specifically, and the others join in: Mark writes that they all said the same. So the meal the church has kept ever since is instituted at a table where the host says plainly that every guest is about to abandon him, and hands them the bread anyway.",
+          "All the talk at this meal concerns failure, and Jesus addresses it to everyone at the table. When he says that one of them will betray him, each of them asks, “Surely not I?”, which is the right question to ask. On the way out to the Mount of Olives he goes further and tells them that all of them will fall away. Peter denies it loudly, and Mark says the others all said the same. So Jesus gave the church the meal it has kept ever since on a night when he knew every guest would abandon him, and he handed them the bread anyway.",
         tensions: [
           {
             claim:
-              "The last supper is a Passover meal, and the execution falls on the festival day itself.",
+              "Mark presents the Last Supper as a Passover meal, so that Jesus is executed on the festival day itself.",
             counter:
-              "John's gospel puts the meal before Passover and has him die as the lambs are being killed, the day before. The two chronologies cannot both be right, and neither has ever been reconciled to the other.",
+              "John’s gospel places the meal before Passover and has Jesus die on the day before the festival, at the hour when the Passover lambs were being killed. Both timelines cannot be right, and scholars have never agreed on a way to reconcile them.",
             where: "Mark 14:12–16 · John 13:1 · John 19:14",
           },
         ],
@@ -1904,19 +1904,19 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Gethsemane means oil press. He takes the three who were on the mountain, and Mark's verb for his distress is strong enough that later writers softened it. Abba is the Aramaic, kept and then translated, and it is the only prayer of his this gospel records in his own language. And then the young man in the linen cloth, who appears in no other gospel, is never named, and is never explained.",
+          text: "Gethsemane means “oil press.” Jesus takes with him the three disciples who were with him on the mountain in chapter 9, Peter, James and John, and Mark describes his distress with a verb so strong that later writers softened it. Mark keeps Jesus’ word Abba, Aramaic for “father,” and then translates it. It is one of only two prayers of Jesus that Mark records in Jesus’ own language; the other is his cry from the cross. Then Mark mentions a young man wearing only a linen cloth, who appears in no other gospel and whom Mark never names or explains.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "This is the least composed portrait of him in the four gospels and it is left that way here. He asks for the cup to be taken away. He asks three times. Nothing answers, and he goes anyway, which is a different thing from not minding. Then the arrest, the desertion, and the detail nobody has satisfactorily explained: a young man following in a linen cloth, grabbed, who leaves the cloth and runs away naked. Whatever it is, Mark thought it worth two verses at the moment his book empties of everybody.",
+          "Of the four gospels, Mark gives the least composed portrait of Jesus here, and he does not tidy it. Jesus asks God to take the cup of suffering away from him, and he asks three times. Mark records no answer, and Jesus goes forward anyway, which is a different thing from not minding. Then come the arrest and the disciples’ flight, and a detail no one has explained to everyone’s satisfaction: a young man following Jesus is seized, leaves his linen cloth in their hands, and runs away naked. Whatever Mark meant by it, he thought it worth two verses at the moment when everyone in his story abandons Jesus.",
         lenses: {
-          arch: "The prayer that is not answered, prayed by someone who then goes and does the thing. (Asked three times, and got up.)",
+          arch: "Many people have prayed for something to be taken from them, received no answer, and then gone and done the hard thing anyway. Jesus does exactly this in Gethsemane. He asks three times, and when no answer comes, he gets up and goes to meet the men who have come to arrest him.",
         },
         addr: {
           mode: "names",
-          text: "You have asked for something to be taken away and it was not taken away. The book does not treat that as a failure of the asking, and it does not tell you what to feel about it. It records that he asked three times, and then got up.",
+          text: "Most of us have asked God to take something away and found that he did not. Mark does not treat that as a failure in our asking, and he does not tell us what to feel about it. He simply records that Jesus asked three times and then got up.",
         },
-        ask: "What have you asked for that has not come, and what would getting up look like?",
+        ask: "What have you asked for that has not come, and what would it look like for you to get up and go on?",
       },
     ],
   },
@@ -1928,8 +1928,8 @@ export const MARK: Reading[] = [
     chapterIndex: 14,
     title: "Outside in the courtyard",
     unitLabel: "Scene",
-    thread: "Two hearings in one building. Inside, a man is condemned for saying who he is. Outside in the yard, another man swears he does not know him.",
-    closeEnd: "The rooster goes a second time and he breaks down. It is the last this gospel sees of Peter.",
+    thread: "Mark tells of two hearings in the same building. Inside, the high priest’s council condemns Jesus for saying who he is. Outside in the courtyard, Peter swears that he does not know him.",
+    closeEnd: "When the rooster crows a second time, Peter breaks down and weeps. It is the last time Mark shows him in the story.",
     passages: [
       {
         label: "One",
@@ -1954,13 +1954,13 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "The proceedings have problems as a legal process and readers have noticed for a long time: a capital case at night, on the eve of a festival, with a verdict in the same session. Mark may be describing a hearing rather than a formal trial, or writing at a distance from the procedure. The testimony collapses because the witnesses do not agree, which was a requirement. Then the high priest asks directly, and gets the only unhedged answer in the book.",
+          text: "Readers have long noticed problems with this hearing as a legal process. The council tries a capital case at night, on the eve of a festival, and reaches its verdict in a single session, all of which the rules later recorded in the Mishnah forbid. Mark may be describing an informal hearing rather than a formal trial, or he may have been writing at some distance from the details of procedure. The case against Jesus collapses because the witnesses do not agree, and the law required that they agree. Then the high priest asks Jesus directly who he is, and Jesus gives the only plain answer he gives anywhere in the book.",
           src: "Marcus · Collins · Bond",
         },
         meaning:
-          "Fourteen chapters of telling people to be quiet end here. Asked plainly, in the one setting where the answer will kill him, he says <b>I am</b>, and adds the line from Daniel about the Son of Man coming with clouds. The secrecy was never modesty and was never suspense. It held until the only moment at which the title could not be misheard as a career. He says it when saying it is indistinguishable from a death sentence.",
+          "For fourteen chapters Jesus has told people to keep quiet about who he is, and here that silence ends. When the high priest asks him plainly, in the one setting where the answer will cost him his life, Jesus says <b>I am</b>, and adds the words from Daniel about the Son of Man coming with the clouds of heaven. His secrecy was never modesty, and he did not keep it to build suspense. He kept it until the moment when no one could mistake his title for a claim to power or success, and he speaks it when speaking it amounts to a death sentence.",
         lenses: {
-          theo: "He is condemned on the truth and not on any of the charges. The witnesses fail, and the case against him is made by his own answer.",
+          theo: "The council condemns Jesus for telling the truth, not on any of the charges brought against him. The witnesses fail, and in the end Jesus himself supplies the case against him by answering honestly.",
         },
       },
       {
@@ -1980,16 +1980,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Mark cuts between the two rooms deliberately, the last sandwich in the book. A servant girl, then the bystanders, then his accent gives him away. And the rooster crowing twice is Mark's alone; Matthew, Luke and John all have it once.",
+          text: "Mark deliberately cuts back and forth between the two scenes, in the last of the “sandwiches” in his gospel. First a servant girl questions Peter, then the bystanders, and finally his Galilean accent gives him away. Only Mark has the rooster crow twice; Matthew, Luke and John each mention a single crowing.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "It happens in the yard of the building where the other conversation is going on, and Mark has arranged them so that you cannot read one without the other. Inside, a man says who he is and it kills him. Outside, a man says he is not who he is and it saves him. That is the whole cost of chapter eight put into one piece of staging. And then the last thing this gospel says about its most prominent human being: he broke down and wept. He does not appear again.",
+          "Peter’s denial takes place in the courtyard of the same building where the council is questioning Jesus, and Mark has arranged the two scenes so that we cannot read one without the other. Inside, Jesus says who he is, and it costs him his life. Outside, Peter denies who he is, and it saves his life. In this single piece of staging Mark sets out everything Jesus said in chapter eight about the cost of following him. Then Mark tells us the last thing he will show us of Peter, the most prominent of the disciples: he broke down and wept. After this Peter is mentioned only once more, by name, in the message the young man gives the women at the tomb.",
         addr: {
           mode: "names",
-          text: "You know what you would say if the cost were high enough and the room unfriendly enough, because you have probably already said it once, in a smaller way, and been relieved that nobody noticed.",
+          text: "Most of us know what we would say if the cost were high enough and the room unfriendly enough, because we have probably said it already, in some smaller way, and felt relieved that nobody noticed.",
         },
-        ask: "Where have you let something pass because saying otherwise would have made the room difficult?",
+        ask: "Where have you let something pass because speaking up would have made things difficult for you?",
       },
     ],
   },
@@ -2001,8 +2001,8 @@ export const MARK: Reading[] = [
     chapterIndex: 15,
     title: "Truly this man",
     unitLabel: "Scene",
-    thread: "A governor who can see it is envy, a crowd that has been worked, a flogging, and six hours. The only person who says plainly who he is, is the officer running the execution.",
-    closeEnd: "Two women watch where he is laid. Mark names them, because they are the ones who come back.",
+    thread: "Pilate, the Roman governor, can see that the chief priests have handed Jesus over out of envy. The priests stir up the crowd, the soldiers flog Jesus, and he hangs on the cross for six hours. The only person who says plainly who he is turns out to be the officer in charge of the execution.",
+    closeEnd: "Two women watch where Joseph of Arimathea lays Jesus’ body. Mark names them, because they are the ones who come back to the tomb.",
     passages: [
       {
         label: "One",
@@ -2034,11 +2034,11 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Pilate governed Judea for about a decade, and other sources describe him as inflexible and brutal, which does not match the hesitant figure in the gospels; the gap is one of the standard problems here. The custom of releasing a prisoner at the festival is recorded nowhere outside the gospels. Barabbas was held for murder committed in an uprising, which makes this a choice between two kinds of answer to Rome. And the mocking is a soldiers' game, with a purple cloak and a crown of thorns.",
+          text: "Pontius Pilate governed Judea for about ten years, and other ancient writers, such as Philo and Josephus, describe him as stubborn and brutal. That picture does not match the hesitant governor in the gospels, and historians count the difference as one of the standing problems of this passage. No source outside the gospels records a custom of releasing a prisoner at the festival. Barabbas had been imprisoned for a murder committed during an uprising, so the crowd is choosing between two different answers to Roman rule. The soldiers’ mockery, with a purple cloak and a crown of thorns, is a game they play with a prisoner accused of claiming to be a king.",
           src: "Marcus · Collins · Bond · Josephus",
         },
         meaning:
-          "Mark says plainly why the priests handed him over: envy. And plainly why Pilate did what he did: wishing to satisfy the crowd. Neither is a theological explanation. They are the two most ordinary motives in public life and between them they are enough. The crowd is a real crowd, and it is also, six days after a different crowd was shouting on the road, a demonstration of how quickly a crowd becomes a different crowd. The soldiers' game is what an army does with a prisoner once the paperwork is finished.",
+          "Mark tells us plainly why the chief priests handed Jesus over: they acted out of envy. He tells us just as plainly why Pilate gave in: he wanted to satisfy the crowd. Neither is a theological explanation. They are two of the most ordinary motives in public life, and together they are enough to kill an innocent man. The crowd is a real crowd, but Mark also lets us see how quickly a crowd can change, since only a few days earlier another crowd had cheered Jesus on the road into Jerusalem. And once the legal business is done, the soldiers treat their prisoner the way soldiers have often treated prisoners.",
       },
       {
         label: "Two",
@@ -2061,11 +2061,11 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Simon of Cyrene is named, and so are his sons, which reads like a reference to men the first readers might have known. The drugged wine is refused. The charge on the placard is political: King of the Jews is the crime Rome executed people for, not a theological complaint. Verse 28 is one of the empty numbers in this book, absent from the earliest manuscripts, which is why the count jumps here.",
+          text: "Mark names Simon of Cyrene, whom the soldiers force to carry the cross, and also names his sons, Alexander and Rufus, which suggests that Mark’s first readers knew them. Jesus refuses the wine mixed with myrrh that the soldiers offer him to dull the pain. The charge written on the placard is political: Rome executed people for claiming to be King of the Jews, and the charge has nothing to do with a religious complaint. Verse 28 is one of the verse numbers in this book with no words in modern translations, because the verse does not appear in the earliest manuscripts, which is why the numbering skips here.",
           src: "Marcus · Collins · France",
         },
         meaning:
-          "The mocking is theologically precise, and that is what makes it unbearable. He saved others; he cannot save himself. Everybody in the scene offers that as a refutation, and the book has spent ten chapters arguing that it is the definition. Come down from the cross and we will believe: it is the demand for a sign from chapter eight, made one last time, and refused one last time in the only way left.",
+          "The mockers at the cross speak with theological precision, and that is what makes the scene so hard to bear. “He saved others,” they say, “but he cannot save himself.” Everyone at the cross means this as proof that Jesus is a fraud, but since chapter eight Mark has been arguing that it is the very definition of who Jesus is. When the priests say, “Let him come down from the cross, so that we may see and believe,” they are making one last time the demand for a sign that the Pharisees made in chapter eight, and Jesus refuses it one last time in the only way left to him, by staying on the cross.",
       },
       {
         label: "Three",
@@ -2092,19 +2092,19 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "Darkness from noon to three. The cry is in Aramaic, kept and then translated, and it is the first line of Psalm 22. The curtain torn in two is described with the same verb Mark used in chapter one for the heavens at the baptism, and those are the only two places in the gospel where he uses it. The centurion is the Roman officer commanding the execution detail. And the women are named here for the first time, with the note that they had followed him and provided for him in Galilee.",
+          text: "Darkness covers the land from noon until three in the afternoon. Jesus’ cry is in Aramaic, which Mark keeps and then translates, and it is the first line of Psalm 22. To describe the temple curtain being torn in two, Mark uses the same verb he used in chapter one for the heavens being torn open at Jesus’ baptism, and those are the only two places in the gospel where he uses it. The centurion is the Roman officer in command of the execution squad. Mark names the women here for the first time, and tells us that they had followed Jesus in Galilee and provided for him.",
           src: "Psalm 22:1 · Marcus · Collins",
         },
         misreading: {
           named:
-            "The cry from the cross is not despair, because Psalm 22 ends in vindication and he is quoting the whole psalm.",
-          why: "That is a real reading with a long history, and it is doing work the text does not ask for. Mark gives one line, and gives it in Aramaic, which he does only when he wants the words themselves heard. He does not quote the psalm's ending and neither does anyone in the scene; the bystanders mishear it as a call for Elijah. Luke replaces the cry with into your hands I commit my spirit, and John with it is finished, which tells you how uncomfortable it made the tradition. Mark's Jesus dies asking why.",
+            "Many readers say that Jesus’ cry from the cross is not a cry of despair, because Psalm 22 ends in rescue and he is quoting the whole psalm.",
+          why: "That reading has a long history behind it, but it goes further than Mark does. Mark gives only one line of the psalm, and he gives it in Aramaic, which he does only when he wants us to hear the words themselves. He does not quote the end of the psalm, and no one at the cross refers to it; the bystanders even mishear the cry as a call for Elijah. Luke replaces the cry with “Into your hands I commit my spirit,” and John with “It is finished,” which shows how uncomfortable the cry made later Christian writers. In Mark, Jesus dies asking why.",
         },
         meaning:
-          "The two torn things are the frame of the whole book. At the river the heavens are torn open and a voice says this is my Son, and nobody in the story hears it. At the death the curtain is torn and a Roman officer says this man was the Son of God, and he is the only human being in sixteen chapters to say it and not be told to be quiet. He says it having watched him die, which is the only vantage from which this book will let anybody see it.",
+          "Mark frames his whole book with these two tearings. At the Jordan the heavens are torn open and a voice says, “You are my beloved Son,” and no one else in the story seems to hear it. At Jesus’ death the temple curtain is torn, and a Roman officer says, “Truly this man was the Son of God.” He is the only human being in sixteen chapters who says this and is not told to be quiet, and he says it after watching Jesus die. Mark will not let anyone recognize who Jesus is from anywhere but the foot of the cross.",
         addr: {
           mode: "names",
-          text: "The one person in sixteen chapters who says it plainly has no stake in the answer, and says it having watched a man die badly from close up. This book will not let anyone see it from a comfortable distance, which is worth knowing before you ask why it is not clearer.",
+          text: "The one person in Mark who says plainly who Jesus is has nothing to gain from the answer, and he says it after watching a man die a painful death from close by. Mark will not let anyone see who Jesus is from a comfortable distance, and that is worth remembering before we complain that the gospel is not clearer.",
         },
         ask: "What have you only ever looked at from a safe distance?",
       },
@@ -2118,8 +2118,8 @@ export const MARK: Reading[] = [
     chapterIndex: 16,
     title: "They said nothing to anyone",
     unitLabel: "Scene",
-    thread: "Three women bring spices to finish a burial, find the stone moved, are given a message, and run.",
-    closeEnd: "Two of the oldest complete manuscripts of this gospel stop here.",
+    thread: "Early on Sunday morning, three women bring spices to finish preparing Jesus’ body for burial. They find the stone already rolled away, a young man gives them a message, and they run from the tomb.",
+    closeEnd: "The two oldest complete manuscripts of Mark’s gospel end at this point.",
     passages: [
       {
         ref: "16:1–8",
@@ -2138,16 +2138,16 @@ export const MARK: Reading[] = [
         ],
         ground: {
           kind: "historical",
-          text: "They come to anoint a body, which means not one of them is expecting anything. Their practical worry on the way is who will move the stone. The young man in white sitting on the right is the second young man in this gospel, and Mark explains neither. The message names Peter separately from the disciples, after everything in chapter fourteen. And verse 8 is where the two oldest complete manuscripts of this gospel end.",
+          text: "The women come to anoint a dead body, which shows that none of them expects anything else. On the way their only worry is a practical one: who will roll the stone away for them. The young man dressed in white, sitting on the right side of the tomb, is the second young man in this gospel, and Mark explains neither of them. The message he gives names Peter separately from the other disciples, after everything Peter did in chapter fourteen. Verse 8 is where the two oldest complete manuscripts of Mark’s gospel end.",
           src: "Marcus · Collins · Ehrman",
         },
         meaning:
-          "Everything is arranged for the scene that does not happen. He is going ahead of you into Galilee, there you will see him: the book points forward and then stops before the seeing. The last verb is fear and the last clause is that they said nothing to anyone. In Greek it ends on a conjunction, which is a strange way to end a sentence and a stranger way to end a book, and it is why people have argued for centuries about whether the ending was lost. Whatever the history, the text that has been read for two thousand years does this. It names the failure of everybody, including the last three people left, and then hands the telling to whoever is holding it.",
+          "Mark sets everything up for a scene that he never shows. The young man tells the women that Jesus is going ahead of them into Galilee and that they will see him there, and then Mark stops before anyone sees him. The last words of the book are that the women said nothing to anyone, because they were afraid. In Greek the final sentence ends on a small connecting word, gar, meaning “for,” which is a strange way to end a sentence and a stranger way to end a book, and that is why scholars have argued for centuries about whether the original ending was lost. Whatever happened to the manuscript, the book Christians have read for nearly two thousand years ends this way. Mark records the failure of everyone, including the last three people still with Jesus, and then leaves the telling of the news to whoever is reading.",
         addr: {
           mode: "names",
-          text: "Everyone in this book who was given something to say either misunderstood it, denied it, or ran. The account you are holding was written anyway, which means somebody eventually spoke. The book stops at the point where that becomes your problem rather than theirs.",
+          text: "Everyone in Mark’s gospel who was given something to say either misunderstood it, denied it, or ran away. Yet someone wrote this account, which means that eventually somebody did speak. Mark stops at the point where the responsibility for speaking passes from the people in the story to you.",
         },
-        ask: "What have you been given to say that you have so far said nothing about, to anyone?",
+        ask: "What have you been given to say that you have not yet said to anyone?",
       },
     ],
   },
@@ -2161,7 +2161,7 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
   title: "The authority",
   range: "Mark 1:1–8:21",
   throughline:
-    "A man arrives with no birth, no childhood and no genealogy, and starts giving orders that things obey. The crowds grow, the authorities decide by chapter three that he has to go, and nobody watching can say what they are looking at.",
+    "Mark introduces Jesus as a grown man, with no account of his birth or childhood and no family tree, and Jesus begins giving commands that even storms and spirits obey. The crowds around him grow, the religious authorities decide by chapter three that he must be killed, and no one who watches him can say who he is.",
   chapterStart: 1,
   chapterEnd: 8,
   situation: {
@@ -2169,10 +2169,10 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/mark-authority.webp",
     paragraphs: [
-      "Galilee was not governed from Rome directly. It was run by Herod Antipas, a client ruler who kept his position by keeping Rome satisfied, and who was building two cities, Sepphoris and Tiberias, out of the region's taxes while this story is set. The lake was a working fishery, licensed and taxed, and the collection apparatus of that system is what the book means when it says tax collectors. These are not villains in a morality tale. They are the visible end of an occupation's revenue.",
-      "In this world, illness, madness and misfortune were widely understood as something having taken up residence where it did not belong. Reporting that accurately is not the same as endorsing it, and sneering at it makes the book unreadable. It is worth noticing how close the vocabulary of possession runs to the vocabulary of occupation, and that the book was written for people living under one.",
-      "It was written for readers outside Judaism. It stops to explain Jewish handwashing custom to an audience that would not have known it, and it translates every Aramaic phrase it uses. The Greek is rough and fast, mostly in the present tense, and it says immediately more than forty times. Nobody has ever mistaken it for literary prose.",
-      "And it was written into a war. The window most scholars give runs either side of the Jewish revolt against Rome and the destruction of the temple in 70. Whatever else it is, it is an account of a Galilean executed by the Roman state, written for people who were watching that same state level Jerusalem.",
+      "Rome did not govern Galilee directly. The region was ruled by Herod Antipas, a son of Herod the Great, who kept his position by keeping Rome satisfied, and while the events of this story take place he was building two cities, Sepphoris and Tiberias, with the taxes he collected from the region. The Sea of Galilee was a working fishery, licensed and taxed, and the tax collectors Mark mentions were the local agents of that system. Mark does not present them as villains in a morality tale. People saw them as the visible face of an occupying power’s demand for revenue.",
+      "People in this world widely understood illness, madness and misfortune as the work of something that had taken up residence in a person where it did not belong. To report that belief accurately is not to endorse it, but if we sneer at it, we will not be able to read the book. It is also worth noticing how closely the language of possession resembles the language of military occupation, and remembering that Mark wrote for people living under an occupation.",
+      "Mark wrote for readers outside Judaism. He stops to explain the Jewish custom of ritual handwashing to an audience that would not have known it, and he translates the Aramaic phrases he quotes. His Greek is rough and fast, told mostly in the present tense, and he uses the word “immediately” more than forty times. No one has ever mistaken his writing for polished literary prose.",
+      "Mark also wrote in the shadow of a war. Most scholars date the book to the years just before or just after the Jewish revolt against Rome and the destruction of the Jerusalem temple in AD 70. Whatever else it is, Mark’s gospel is an account of a Galilean executed by the Roman state, written for people who were watching that same state destroy Jerusalem.",
     ],
     sources: "Marcus · Collins · Bond · Horsley",
   },
@@ -2180,8 +2180,8 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
     kicker: "The second movement",
     title: "The way",
     paragraphs: [
-      "Eight chapters of authority end in a question nobody in the boat can answer. What follows does not answer it either, exactly. It changes it.",
-      "From here the book has a direction and a destination, and he begins saying out loud what is waiting at the end of the road. Three times. And three times the men walking with him hear something else entirely, because what he is describing is not what any of them came for.",
+      "After eight chapters in which Jesus shows his authority, the first section ends with a question that no one in the boat can answer. In the next section Jesus does not exactly answer it either. Instead he changes the question.",
+      "From this point Mark gives his story a direction and a destination, and Jesus begins to say openly what will happen to him when he reaches Jerusalem. He says it three times, and three times the men walking with him hear something else entirely, because what he describes is not what any of them came for.",
     ],
     nextMovementId: "the-way",
   },
@@ -2189,9 +2189,9 @@ export const THE_AUTHORITY_MOVEMENT: Movement = {
     kicker: "The first movement · Mark 1:1–8:21",
     title: "Everyone has seen it, and nobody can say what it is",
     paragraphs: [
-      "Count who has named him correctly in eight chapters. A voice at the river. The unclean spirits, repeatedly, and every time they are told to be quiet. That is the whole list. The crowds are astonished and reach for wonder. The scribes reach for possession. His family reaches for madness. And the twelve, who have had the private explanation since chapter four, are asked at the end of the movement whether they have eyes.",
-      "The movement is built out of authority: over teaching, over spirits, over disease, over the sabbath, over a storm, over bread twice. And every exercise of it makes the question harder rather than easier, because none of it fits a category anyone has. A man who forgives sins is either God or a blasphemer, and the scribes are not wrong that those are the options.",
-      "It ends on a question and does not answer it. Do you still not understand. The people it is put to have been with him since the first chapter, have been sent out with authority of their own, and have twice picked up the baskets afterward. If proximity and evidence were going to be enough, they would have been by now.",
+      "Count the voices that name Jesus correctly in these eight chapters. A voice from heaven speaks at the Jordan, and the unclean spirits name him again and again, and each time Jesus orders them to be quiet. No one else gets it right. The crowds are amazed and call what they see a wonder. The scribes say he is possessed, and his own family say he is out of his mind. And the twelve disciples, to whom Jesus has explained everything privately since chapter four, are asked at the end of this section whether they have eyes to see.",
+      "Mark builds this section out of scenes of Jesus’ authority: over teaching, over evil spirits, over disease, over the sabbath, over a storm, and over bread, which he multiplies twice. Each time Jesus shows that authority, the question of who he is becomes harder rather than easier, because none of it fits any category people already had. A man who forgives sins must be either God or a blasphemer, and the scribes are right that those are the only options.",
+      "The section ends with a question that Jesus puts to his disciples and does not answer: “Do you still not understand?” These men have been with him since the first chapter. He has sent them out with authority of their own, and twice they have gathered up the leftover bread after he fed the crowds. If being near Jesus and seeing the evidence were enough, they would have understood by now.",
     ],
     sources: "Marcus · Collins · Bond · France",
   },
@@ -2203,7 +2203,7 @@ export const THE_WAY_MOVEMENT: Movement = {
   title: "The way",
   range: "Mark 8:22–10:52",
   throughline:
-    "Between two blind men who are given their sight, he says three times what is coming, and three times the people closest to him hear something else. The book stops asking who he is and starts asking what following him costs.",
+    "Mark places a blind man who receives his sight at each end of this section. Between them, Jesus says three times what is going to happen to him, and three times the people closest to him hear something else. Mark stops asking who Jesus is and starts asking what it costs to follow him.",
   chapterStart: 9,
   chapterEnd: 10,
   situation: {
@@ -2211,10 +2211,10 @@ export const THE_WAY_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/mark-way.webp",
     paragraphs: [
-      "This stretch is bracketed by the only two blind men in the gospel. At Bethsaida, where the healing takes two attempts, and at Jericho, where a man throws off his cloak and follows on the road. Between them, three times, he says plainly what is going to happen to him, and three times the people closest to him hear something else: Peter rebukes him, they argue about who is greatest, and James and John ask for the best seats. Each misunderstanding is followed by teaching about what following actually costs. That is the construction, and most readers have never been shown it.",
-      "The road is literal as well as thematic. From Caesarea Philippi in the far north to Jericho is most of the length of the country, and the final stretch climbs from below sea level to around seven hundred and fifty metres. Mark says they were going up to Jerusalem and that he was walking ahead of them, and every reader knew what was waiting at the top.",
-      "Son of Man is the title he uses of himself here, and it settles nothing. It can mean simply a human being, and it is also the figure in Daniel 7 who is given dominion. Mark has him use it of the one with authority to forgive sins and of the one who will be handed over and killed, and never explains the gap between them.",
-      "The two-stage healing at Bethsaida is the only one in the gospels that takes more than one attempt, and it opens the movement. Whether that is medical realism or literary construction is worth deciding for yourself. The man who sees people as trees walking, and then sees clearly, sits four verses before Peter half-sees who Jesus is and is rebuked for the other half.",
+      "Mark frames this section with the only two healings of blind men in his gospel. The first takes place at Bethsaida, where the healing takes two attempts, and the second at Jericho, where a blind man named Bartimaeus throws off his cloak and follows Jesus along the road. Between them, Jesus says plainly three times what is going to happen to him, and three times the people closest to him hear something else. Peter rebukes him, the disciples argue about which of them is greatest, and James and John ask for the best seats in his kingdom. After each misunderstanding Jesus teaches them what following him really costs. That is the shape of the section, though most readers have never had it pointed out to them.",
+      "The road is a real road as well as a theme. From Caesarea Philippi in the far north to Jericho runs most of the length of the country, and the last stretch climbs from below sea level at Jericho to about 2,500 feet at Jerusalem. Mark says that they were going up to Jerusalem and that Jesus was walking ahead of them, and every one of Mark’s readers knew what was waiting for him at the top.",
+      "In this section Jesus calls himself the Son of Man, and the title does not settle the question of who he is. The phrase can simply mean a human being, but it is also the name of the figure in Daniel 7 to whom God gives everlasting dominion. Mark has Jesus use it both for the one who has authority to forgive sins and for the one who will be handed over and killed, and Mark never explains how the two belong together.",
+      "The two-stage healing at Bethsaida is the only healing in the gospels that takes more than one attempt, and Mark places it at the start of this section. Readers can decide for themselves whether Mark records it as medical realism or tells it for its literary meaning. The man first sees people who look like trees walking and then sees clearly, and only a few verses later Peter sees part of who Jesus is and is rebuked for failing to see the rest.",
     ],
     sources: "Marcus · Collins · France · Bond",
   },
@@ -2222,8 +2222,8 @@ export const THE_WAY_MOVEMENT: Movement = {
     kicker: "The third movement",
     title: "The temple",
     paragraphs: [
-      "The road ends. What has been coming since chapter eight arrives at a city packed for Passover, with a garrison in it and a leadership that has been planning this since chapter three.",
-      "Six days, most of them spent arguing in a courtyard. He rides in, shuts the temple down for an afternoon, wins every argument they bring him, and then sits on the hill opposite and says the whole thing is coming down.",
+      "Jesus and his disciples reach the end of the road. He arrives in Jerusalem, as he has said he would since chapter eight, in a city crowded for Passover, with a Roman garrison in it and religious leaders who have been planning his death since chapter three.",
+      "Mark’s account of the next six days is mostly a series of arguments in the temple courtyard. Jesus rides into the city, shuts down the temple trade for an afternoon, wins every argument his opponents bring to him, and then sits on the hill opposite the temple and says that the whole building will come down.",
     ],
     nextMovementId: "the-temple",
   },
@@ -2231,9 +2231,9 @@ export const THE_WAY_MOVEMENT: Movement = {
     kicker: "The second movement · Mark 8:22–10:52",
     title: "Three times told, three times misheard",
     paragraphs: [
-      "The movement is one shape repeated. He says what is coming. Somebody answers with status. He replies with a reversal. Peter rebukes him and is called Satan. They argue on the road about who is greatest and are handed a child. James and John ask for the thrones and are told about a cup. Three times, and the third comes straight after the most detailed description of all.",
-      "What is being corrected is not ignorance. Peter had the title right. The problem, every time, is that they have understood him as a route to something, and he keeps describing an ending. The book is unusually clear that this is not stupidity: he is walking ahead of them up a road everyone knows leads to the authorities, and Mark says that those following were afraid.",
-      "It is bracketed by two men given their sight, and the difference between them is worth holding. The first needed two touches and was sent home. The second threw off the thing he made his living on and went up the road. Between them, nobody with working eyes sees anything at all.",
+      "Mark builds this section from one pattern, repeated three times. Jesus says what is coming, someone answers with a concern about status, and Jesus replies by turning their values upside down. Peter rebukes him and is called Satan. The disciples argue on the road about who is greatest, and Jesus sets a child in front of them. James and John ask for the seats of honor and are told about the cup Jesus must drink. The third time comes immediately after Jesus has given his most detailed description of what will happen to him.",
+      "Jesus is not correcting his disciples’ ignorance, since Peter had the title right. The problem, each time, is that they see Jesus as a route to something they want, while he keeps describing his death. Mark is careful to show that this is not stupidity. Jesus is walking ahead of them up a road that everyone knows leads to the authorities, and Mark says that those who followed were afraid.",
+      "Mark places a man given his sight at each end of the section, and the difference between the two is worth noticing. The first needed Jesus to touch him twice and was sent home. The second, Bartimaeus, threw off the cloak he used for begging and followed Jesus up the road. Between them, none of the men who could see with their eyes understood anything at all.",
     ],
     sources: "Marcus · Collins · France",
   },
@@ -2245,7 +2245,7 @@ export const THE_TEMPLE_MOVEMENT: Movement = {
   title: "The temple",
   range: "Mark 11–13",
   throughline:
-    "Six days in Jerusalem. He rides in, shuts the temple down for an afternoon, wins every argument they bring him, and then sits on the hill opposite and says not one stone will be left on another.",
+    "Mark gives six days to Jesus in Jerusalem. Jesus rides into the city, shuts down the temple trade for an afternoon, wins every argument his opponents bring to him, and then sits on the hill opposite the temple and says that not one stone of it will be left on another.",
   chapterStart: 11,
   chapterEnd: 13,
   situation: {
@@ -2253,10 +2253,10 @@ export const THE_TEMPLE_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/mark-temple.webp",
     paragraphs: [
-      "The temple was not a church. It was a working institution, the largest building project in the region, employing thousands, and the centre of a sacrificial economy the law required. Pilgrims arriving for Passover needed unblemished animals and had to pay a temple tax in an acceptable coinage, so the money changing and the animal selling in the outer court were not corruption. They were the mechanism.",
-      "Herod's rebuilding of it was still going on within living memory of these events and was finished only a few years before the whole thing was destroyed. The stones a disciple points at in chapter 13 were genuinely enormous, some of them weighing many tons, and pointing at them is what visitors did.",
-      "The week matters too. Jerusalem's population multiplied at Passover, a festival commemorating a liberation from an empire, which is precisely why the Roman governor came up from Caesarea with troops for it. That is the room this argument is happening in.",
-      "And then the dating problem, which is chapter 13's whole difficulty. Most placings of this gospel put it within a few years either side of 70, the year the temple was destroyed. Whether chapter 13 is prediction, or a text shaped by an event already under way, or both at once, is genuinely argued, and it cannot be settled by preferring one answer.",
+      "The temple was not like a church building. It was a working institution and the largest building project in the region, employing thousands of people, and it stood at the center of a system of sacrifice that the law of Moses required. Pilgrims arriving for Passover needed animals without blemish for sacrifice and had to pay the temple tax in an approved coin, so the money changers and animal sellers in the outer court were not a corruption of the system. They were how the system worked.",
+      "Herod the Great began rebuilding the temple about fifteen years before Jesus was born, and workers were still finishing it during and after Jesus’ lifetime; they completed it only a few years before the Romans destroyed it. The stones a disciple points to in chapter 13 really were enormous, some weighing many tons, and pointing at them was what visitors did.",
+      "The time of year matters too. Jerusalem’s population swelled many times over at Passover, a festival that remembered Israel’s liberation from an empire, and for exactly that reason the Roman governor came up from his headquarters at Caesarea with troops. That is the setting in which these arguments take place.",
+      "Then there is the question of dating, which is the central difficulty of chapter 13. Most scholars date Mark’s gospel within a few years of AD 70, the year the Romans destroyed the temple. Scholars still argue about whether Jesus’ words in chapter 13 are a prediction, or whether Mark shaped them in light of events already under way, or both, and no one can settle the question simply by preferring one answer.",
     ],
     sources: "Marcus · Collins · Bond · Josephus, Jewish War",
   },
@@ -2264,8 +2264,8 @@ export const THE_TEMPLE_MOVEMENT: Movement = {
     kicker: "The fourth movement",
     title: "Handed over",
     paragraphs: [
-      "The arguing is finished. What follows is the longest continuous stretch in the gospel, told almost hour by hour, from a woman with a jar to a stone rolled across a door.",
-      "The verb running through it is handed over. Judas hands him to the priests, the priests hand him to Pilate, Pilate hands him to the soldiers. Nobody in the chain has to decide very much. Each of them passes him on.",
+      "Once the arguments are over, Mark slows his story down. The next section is the longest continuous stretch in the gospel, told almost hour by hour, from a woman with a jar of perfume to a stone rolled across the door of a tomb.",
+      "The verb Mark uses again and again in this section is “handed over.” Judas hands Jesus over to the priests, the priests hand him over to Pilate, and Pilate hands him over to the soldiers. No one in the chain has to make much of a decision. Each of them simply passes him on.",
     ],
     nextMovementId: "handed-over",
   },
@@ -2273,9 +2273,9 @@ export const THE_TEMPLE_MOVEMENT: Movement = {
     kicker: "The third movement · Mark 11–13",
     title: "Six days, and a building coming down",
     paragraphs: [
-      "He wins every exchange in these three chapters. The authority question, the tax, the resurrection, the greatest commandment, David's son. By the end the opposition has stopped asking. And winning the arguments settles nothing, because the decision to kill him was taken in chapter three and none of this was ever going to change it.",
-      "What is judged here is not a religion. It is an institution: in full leaf and bearing nothing, taking two coins off a widow, run by men who like the greetings in the marketplace. The fig tree says what the temple action means. The widow says what it costs.",
-      "And then he sits down opposite it and says it will all come down, which within a lifetime of the writing it had. The chapter that follows refuses twice to be a calendar, and asks for something much harder than calculation.",
+      "Jesus wins every argument in these three chapters: about his authority, about paying taxes to Caesar, about the resurrection, about the greatest commandment, and about how the Messiah can be David’s son. By the end, Mark says, no one dared to ask him any more questions. But winning the arguments changes nothing, because the authorities decided to kill him back in chapter three, and nothing he says in Jerusalem was ever going to change their minds.",
+      "Jesus is not passing judgment on a religion here. He is judging an institution, which Mark compares to a fig tree in full leaf with no fruit on it, an institution that takes a poor widow’s last two coins and is run by men who love to be greeted with respect in the marketplace. Mark uses the fig tree to show what Jesus’ action in the temple means, and the widow to show what the institution costs the poor.",
+      "Then Jesus sits down opposite the temple and says that all of it will come down, and within a lifetime of his saying so, the Romans had destroyed it. In the chapter that follows, Jesus twice refuses to give his followers a calendar of the end, and asks them for something much harder than calculation.",
     ],
     sources: "Marcus · Collins · Bond",
   },
@@ -2287,7 +2287,7 @@ export const HANDED_OVER_MOVEMENT: Movement = {
   title: "Handed over",
   range: "Mark 14–16:8",
   throughline:
-    "A woman pours out oil, a friend sells him, the rest run, and he dies asking why he has been abandoned. The only person who says plainly who he is, is the officer who killed him. Then the book stops.",
+    "A woman pours perfume over Jesus, one of his friends sells him, the rest of the disciples run, and Jesus dies asking God why he has abandoned him. The only person who says plainly who Jesus is turns out to be the officer who oversaw his death. Then Mark ends his book.",
   chapterStart: 14,
   chapterEnd: 16,
   situation: {
@@ -2295,10 +2295,10 @@ export const HANDED_OVER_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/mark-handed-over.webp",
     paragraphs: [
-      "Crucifixion was not primarily a way of killing people, which could be done faster and more cheaply. It was a public deterrent, used by Rome on slaves and on provincials convicted of sedition, carried out beside roads and outside city gates so that it would be seen. The placard naming the charge was part of the mechanism. King of the Jews is a sedition charge, not a theological one.",
-      "Judea was governed by a Roman prefect who held the power of execution, which the council did not, which is why there are two hearings rather than one. The council's problem was to produce a charge Rome would act on, and a claim to kingship was the charge that worked.",
-      "The week is the reason for the tension in it. Jerusalem's population multiplied at Passover, a festival commemorating liberation from an empire, and the governor came up from Caesarea with troops for exactly that reason. Arresting somebody at night, away from the crowd, is what the text says they were trying to do, and it is what anybody would have done.",
-      "And the burial is unusual. Crucified bodies were often left where they were, which was part of the point, so a body released to a member of the council is irregular enough that Mark has Pilate check first whether he is already dead.",
+      "Crucifixion was not mainly a way of killing people, since the Romans could kill people faster and more cheaply in other ways. They used it as a public warning, mostly against slaves and against provincials convicted of rebellion, and they carried it out beside roads and outside city gates so that as many people as possible would see it. The placard naming the charge was part of the warning. “King of the Jews” was a charge of rebellion against Rome, not a religious accusation.",
+      "A Roman prefect governed Judea and held the power to execute, and most historians think the Jewish council did not have that power, which explains why Jesus faces two hearings rather than one. The council needed to bring a charge that Rome would act on, and a claim to be king was a charge that worked.",
+      "The time of year explains the tension in these chapters. Jerusalem’s population swelled at Passover, a festival that remembered Israel’s liberation from an empire, and the governor came up from Caesarea with troops for exactly that reason. Mark says that the authorities wanted to arrest Jesus quietly, away from the crowds, and anyone in their position would have done the same.",
+      "The burial is also unusual. The Romans often left crucified bodies where they hung, as part of the warning, so when Pilate releases Jesus’ body to Joseph of Arimathea, a member of the council, he does something irregular enough that Mark has him first check whether Jesus is already dead.",
     ],
     sources: "Marcus · Collins · Bond · Josephus",
   },
@@ -2306,9 +2306,9 @@ export const HANDED_OVER_MOVEMENT: Movement = {
     kicker: "The fourth movement · Mark 14–16:8",
     title: "Everyone runs, and the officer speaks",
     paragraphs: [
-      "Count who is left. The twelve are gone by 14:50. Judas has sold him, Peter has denied him three times in a courtyard, and a young man has run out of his own clothes to get away. What remains at the cross is a group of women watching from a distance, whom Mark names here for the first time and says had been following him since Galilee. They were there for all of it, and he has not mentioned them until now.",
-      "And the answer, when it finally comes, comes from the wrong mouth. Not from the disciples, who had the private explanations. Not from the crowd. From the officer commanding the execution detail, who says it having just watched him die. Mark has arranged sixteen chapters so that the only place the sentence can be said truthfully is at the foot of a cross, by somebody with nothing invested in it.",
-      "Then the women, who are the only ones who did not run, run. The last verb in the book is fear.",
+      "Count who is left at the end. All twelve disciples have fled by 14:50. Judas has sold Jesus, Peter has denied him three times in a courtyard, and a young man has run out of his own clothes to get away. At the cross only a group of women remains, watching from a distance. Mark names them here for the first time and tells us that they had been following Jesus since Galilee. They had been present the whole time, and Mark has not mentioned them until now.",
+      "When someone finally says who Jesus is, the words come from the least likely person. The disciples, who received the private explanations, do not say it, and neither does the crowd. The Roman officer in command of the execution says it, after he has watched Jesus die. Mark has arranged sixteen chapters so that the only place anyone can say the truth about Jesus is at the foot of the cross, and the only person who says it is someone with nothing to gain from it.",
+      "Then the women, the only followers who did not run, run as well. The last words of Mark’s book are that they were afraid.",
     ],
     sources: "Marcus · Collins · Bond",
   },
@@ -2319,35 +2319,35 @@ export const MARK_INTRO: Panel = {
   kicker: "An introduction · Mark 1–16",
   title: "The book that stops mid-sentence",
   paragraphs: [
-    "Mark is the earliest of the four gospels, and the other three knew it. Matthew and Luke both had it in front of them and used most of it, often word for word, which is the plainest reason to read this one first: it is the account the others were working from, before it was tidied. The Greek is rough and urgent, largely in the present tense, and the writer says immediately more than forty times.",
-    "It is anonymous. The name comes from a tradition recorded early in the second century, quoted much later by Eusebius, which ties the book to Peter's preaching. The claim is old and it is contested, and nothing in the book itself names its author. What the book does show is its audience: it stops to explain Jewish custom and translates every Aramaic phrase, so it was not written for readers who already knew either.",
-    "Then the ending, which almost no reader has had put to them plainly. The two oldest complete copies of this book stop at 16:8, with women running from an empty tomb and telling nobody, because they were afraid. The twelve verses printed after that in most Bibles are a later addition. Some manuscripts carry a different, shorter ending instead, and a few carry both. Five more verse numbers in this book, 7:16, 9:44, 9:46, 11:26 and 15:28, are empty for the same reason: the numbering was fixed before the earliest manuscripts were consulted, and the words in them were never in the earliest copies.",
-    "None of that is a scandal being reported. It is in the footnotes of most study Bibles. What is unusual is being shown it while you read rather than after, and being left to notice what it does to the book. An account in which nobody recognises the man it is about, whose closest followers fail at every turn, and whose one clear statement of who he is comes from the officer running his execution, ends by refusing to finish.",
+    "Most scholars think Mark is the earliest of the four gospels. Matthew and Luke both had Mark’s book in front of them and used most of it, often word for word, and that is the plainest reason to read Mark first: Mark wrote the account that the others worked from, before anyone tidied it. His Greek is rough and urgent, mostly in the present tense, and he uses the word “immediately” more than forty times.",
+    "Mark’s gospel is anonymous. The tradition behind its title comes from Papias, a bishop writing early in the second century, whose words the historian Eusebius quoted much later; Papias connected the book to the preaching of Peter. The claim is old, but scholars dispute it, and the book itself never names its author. What the book does reveal is its audience. Mark stops to explain Jewish customs and translates the Aramaic phrases he uses, so he was not writing for readers who already knew either.",
+    "Then there is the ending, which few readers have had explained to them plainly. The two oldest complete copies of Mark stop at 16:8, with the women running from the empty tomb and telling no one, because they were afraid. The twelve verses printed after that in most Bibles were added later. One early manuscript has a different, shorter ending instead, and several have both. Five other verse numbers in Mark, 7:16, 9:44, 9:46, 11:26 and 15:28, have no words in most modern translations for a similar reason. Printers fixed the verse numbers in the sixteenth century, before scholars had studied the earliest manuscripts, and the words once printed in those verses do not appear in the earliest copies.",
+    "None of this is a scandal. Most study Bibles mention it in their footnotes. What is unusual is to be shown it while you read rather than afterward, and to be left to consider what it does to the book. Mark tells of a man whom no one recognizes, whose closest followers fail at every turn, and whose identity is stated plainly only by the officer in charge of his execution, and then Mark ends his book without finishing the story.",
   ],
   timeline: [
     {
       tag: "c. 30 CE",
-      text: "The events as the book arranges them: about a year in Galilee, and one week in Jerusalem.",
+      text: "Mark arranges the events into a period of work in Galilee followed by a single week in Jerusalem.",
     },
     {
       tag: "66–70 CE",
-      text: "The Jewish revolt against Rome, ending with the destruction of the temple.",
+      text: "The Jewish revolt against Rome, which ends when the Romans destroy the temple.",
     },
     {
       tag: "c. 65–75 CE",
-      text: "The window most place the writing in, which is what makes chapter 13 the argument it is.",
+      text: "The period in which most scholars place the writing of Mark, which is why readers debate chapter 13 so much.",
     },
     {
       tag: "Early 100s CE",
-      text: "The tradition tying the book to Peter's preaching is recorded. It is old, and it is contested.",
+      text: "Papias records the tradition connecting Mark’s book to Peter’s preaching. The tradition is old, but scholars dispute it.",
     },
     {
       tag: "c. 80–90 CE",
-      text: "Matthew and Luke are written, both using this book, both softening its portrait of the disciples.",
+      text: "Matthew and Luke write their gospels, both drawing on Mark, and both soften his portrait of the disciples.",
     },
     {
       tag: "300s CE",
-      text: "Sinaiticus and Vaticanus, the oldest complete copies. Both stop at 16:8.",
+      text: "Scribes copy Codex Sinaiticus and Codex Vaticanus, the oldest complete copies of Mark. Both end at 16:8.",
     },
   ],
   sources: "Marcus · Collins · Bond · France · Ehrman",
@@ -2357,21 +2357,21 @@ export const MARK_CAPSTONE: Capstone = {
   kicker: "The whole book · Mark 1–16:8",
   title: "It stops before anybody understands",
   paragraphs: [
-    "Start with the manuscripts, because almost no reader is shown them. Two of the oldest complete copies of this gospel end at 16:8, with women running from a tomb and telling nobody. The twelve verses printed after that in most Bibles are a later addition, in a different vocabulary and a different style, gathering up appearances from the other three gospels. A different, shorter ending circulated as well. And a few manuscripts carry both, one after the other, which is the clearest evidence there is that people did not know what to do about it. Five verse numbers elsewhere in this book are empty for the same reason. None of this is contested; it sits in the footnotes of most study Bibles. What is unusual is being shown it while you read rather than afterward.",
-    "Then what everybody in the book does, which is fail to see him. The unclean spirits name him correctly and are silenced every time. His family come to take him home because they think he has lost his mind. The scribes say he is possessed. His own village cannot hear him. The twelve, who get the private explanations, are asked in chapter 8 whether they have eyes, are told three times what is coming and answer each time with a question about rank, and have all run by chapter 14. Peter, who gets the title right and is called Satan four verses later, ends the book weeping in a courtyard. The one human being who says it plainly is the Roman officer who has just killed him.",
-    "That failure is the earliest version, not an embarrassment in it. Matthew and Luke both had this book in front of them and both softened it. Mark's he could not do any miracle there becomes he did not do many. Mark's disciples, hardened and uncomprehending in the boat, become worshippers. Mark's cry of abandonment becomes into your hands, and it is finished. The direction of the editing is consistent every time, and it tells you what the first account was like before anybody smoothed it: harder on everyone, including its hero's closest friends, and unwilling to end well.",
-    "And the stop is arranged. The young man says he is going ahead of you into Galilee, there you will see him, and the seeing never happens on the page. Every promise the book makes at the end is made to people who are running. The last clause is that they said nothing to anyone, because they were afraid. And yet the account exists, which means that at some point somebody did speak. That is the only argument this gospel makes for itself, and it makes it by leaving something out. It refuses to show you a single person succeeding, and then stops, and leaves the telling with whoever is holding it.",
+    "Begin with the manuscripts, since few readers are ever shown them. Two of the oldest complete copies of Mark’s gospel end at 16:8, with the women running from the tomb and telling no one. The twelve verses printed after that in most Bibles were added later by another writer, who used different vocabulary and a different style and gathered appearances of the risen Jesus from the other gospels. A shorter ending also circulated, and a few manuscripts include both endings, one after the other, which shows clearly that the scribes did not know what to do. Five verse numbers elsewhere in Mark have no words for a similar reason. Few scholars dispute any of this, and most study Bibles mention it in their footnotes. What is unusual is to be shown it while you read rather than afterward.",
+    "Then consider what everyone in the book does: they fail to see who Jesus is. The unclean spirits name him correctly, and he silences them every time. His family come to take him home because they think he has lost his mind. The scribes say he is possessed, and the people of his own village refuse to listen to him. The twelve disciples, who receive the private explanations, are asked in chapter 8 whether they have eyes. Jesus tells them three times what is coming, they answer each time with a question about rank, and by chapter 14 they have all run away. Peter, who gets the title right and is called Satan a few verses later, last appears weeping in a courtyard. The one human being who says plainly who Jesus is, is the Roman officer who has just put him to death.",
+    "This failure belongs to the earliest account; no one slipped it in by mistake. Matthew and Luke both had Mark’s book in front of them, and both softened it. Where Mark says that in his hometown Jesus could not do any miracle there, Matthew says that he did not do many. Mark’s disciples, whose hearts are hardened in the boat, worship Jesus in Matthew’s version of the scene. And Mark’s cry of abandonment becomes “Into your hands I commit my spirit” in Luke and “It is finished” in John. The later writers edited in the same direction every time, and their edits tell us what the first account was like before anyone smoothed it: harder on everyone, including Jesus’ closest friends, and unwilling to end well.",
+    "Many scholars think Mark ended his book here on purpose. The young man at the tomb tells the women that Jesus is going ahead of them into Galilee and that they will see him there, but Mark never shows the meeting. He makes every final promise to people who are running away, and his last clause is that they said nothing to anyone, because they were afraid. Yet the account exists, which means that at some point somebody did speak. That is the only argument Mark makes for his gospel, and he makes it by leaving something out. He refuses to show a single person succeeding, and then he stops and leaves the telling to whoever is reading.",
   ],
   tensions: [
     {
       claim:
-        "The gospel of Mark ends at 16:8, with the women saying nothing to anyone because they were afraid.",
+        "Mark’s gospel ends at 16:8, with the women saying nothing to anyone because they were afraid.",
       counter:
-        "The church did not leave it there. Twelve verses were added in a different style, gathering appearances from the other gospels; a shorter ending circulated as well; and some manuscripts carry both, one after the other.",
+        "The early church did not leave it there. Later scribes added twelve verses in a different style, gathering appearances of the risen Jesus from the other gospels. A shorter ending circulated as well, and some manuscripts include both, one after the other.",
       where:
         "Mark 16:8 · Mark 16:9–20 · the shorter ending · Codex Sinaiticus and Codex Vaticanus",
     },
   ],
   sources: "Marcus · Collins · Bond · France · Ehrman · Metzger",
-  ask: "Every person in this book was looking straight at him and could not say what they were looking at. What are you looking straight at?",
+  ask: "Everyone in Mark’s gospel looked straight at Jesus and could not say who he was. What are you looking straight at without seeing?",
 };

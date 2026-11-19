@@ -41,7 +41,7 @@ export function Lenses({ lenses }: { lenses: LensesData }) {
           <div className="px-[14px] pb-[14px] font-body text-[13.5px] leading-[1.62] text-parchment-2">
             <Rich text={lenses.arch} />
             <span className="mt-2 block font-body text-[10.5px] italic text-mist-2">
-              One way to hear it, not the final word.
+              This is one way to read it, not the final word.
             </span>
           </div>
         </details>

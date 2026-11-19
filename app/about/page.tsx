@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 // About STRATA: the vision and the origin. A quiet, authored page, no interactivity.
-// The through-line: the book stands on its own, and its history enriches rather than
-// threatens it. Scholars named here are the ones actually cited across the readings.
+// The through-line: the book is whole as it is, and knowing its history enriches rather
+// than threatens it. Scholars named here are the ones actually cited across the readings.
 export const metadata = {
   title: "About STRATA",
   alternates: { canonical: "/about" },
@@ -33,11 +33,11 @@ export default function AboutPage() {
 
         <article className="stagger-children mt-8 flex flex-col gap-9">
           <p className="font-body text-[17px] leading-[1.8] text-parchment-2">
-            The Bible is a beautiful story as it is. STRATA does not set out to
-            improve it, or to defend it, or to argue it away. It sets out to
-            read it the way it was actually made, as a library written and
-            gathered across centuries, by many hands, in real places, under real
-            pressure.
+            The Bible is a beautiful story as it is. I did not make STRATA to
+            improve it, to defend it, or to argue it away. I made it to help
+            people read the Bible the way it was actually made: as a library
+            that many people wrote and gathered over many centuries, in real
+            places and under real pressure.
           </p>
 
           <section>
@@ -45,11 +45,12 @@ export default function AboutPage() {
               A curated book
             </h2>
             <p className="font-body text-[15.5px] leading-[1.85] text-mist">
-              What we hold today is a carefully curated book. It was gathered,
-              weighed, ordered, and handed down with enormous care, and it
-              stands on its own as one of the great works of human making. None
-              of that is in question here. STRATA begins from the book as it is,
-              and it stays close to it.
+              The Bible we hold today is a carefully curated book. Generations
+              of people gathered its writings, weighed them, put them in order,
+              and handed them down with enormous care, and the result is one of
+              the great works that human beings have ever made. Nothing on this
+              site questions that. STRATA starts from the book as we have it,
+              and every reading stays close to it.
             </p>
           </section>
 
@@ -58,23 +59,24 @@ export default function AboutPage() {
               The history beneath it
             </h2>
             <p className="font-body text-[15.5px] leading-[1.85] text-mist">
-              But every page came from somewhere. Someone wrote it, in a
-              particular century, carrying a particular grief, or hope, or
-              quarrel. Knowing who they were, and what they were living through
-              when they wrote, does not flatten the text. It opens it. The
-              history behind a passage often turns out to be the key to what it
-              means, why it was written, and what it was for.
+              But every page came from somewhere. Someone wrote it in a
+              particular century, while carrying a particular grief, hope, or
+              quarrel. When we know who those writers were and what they were
+              living through, we do not lose anything in the text. We understand
+              it better. The history behind a passage is often the key to what
+              the writer meant, why he wrote it, and what he wanted it to do.
             </p>
             <p className="mt-4 font-body text-[15.5px] leading-[1.85] text-mist">
-              For a long time that history felt like a threat, as though naming
-              the seams might pull the whole thing apart. The work of scholars
-              like Robert Alter, Richard Elliott Friedman, Claus Westermann,
-              John Walton, Mark S. Smith, Gerhard von Rad, and Carol Newsom,
-              among many others cited throughout these readings, has shown
-              something closer to the reverse. The seams are not damage. They
-              are the marks of a living tradition thinking out loud, and arguing
-              with itself, across a very long time. Seen clearly, that history
-              tends to enrich the meaning, not diminish it.
+              For a long time I felt that history as a threat, as though
+              pointing out the places where different writers and sources were
+              joined together might pull the whole thing apart. Scholars such as
+              Robert Alter, Richard Elliott Friedman, Claus Westermann, John
+              Walton, Mark S. Smith, Gerhard von Rad, and Carol Newsom, along
+              with many others cited throughout these readings, have shown
+              something closer to the reverse. Those joins are not damage. They
+              show us generations of believers thinking out loud and arguing
+              with one another over a very long time. When we see that history
+              clearly, we usually find more meaning in the text, not less.
             </p>
           </section>
 
@@ -83,23 +85,25 @@ export default function AboutPage() {
               The recurring image
             </h2>
             <p className="font-body text-[15.5px] leading-[1.85] text-mist">
-              There is a second way the history reaches forward. Some of these
-              images do not stay in their own century. A world drawn out of
-              chaos, a garden lost, a flood that unmakes and remakes, a brother
-              wronged and a brother restored, a descent into a pit and the long
-              climb out of it, these recur across the stories of many peoples,
-              and they keep their hold long after the world that first told them
-              is gone. Where a reading opens a second lens, it is following one
-              of those patterns, not to reduce the text to psychology, but to
-              show how an old image goes on speaking, and why it can still find
-              you. It is offered quietly, alongside the history and never in
-              place of it.
+              There is a second way the history reaches into our own time.
+              People have kept returning to some of these images long after the
+              century that produced them. Many peoples have told stories of a
+              world drawn out of chaos, a garden lost, a flood that destroys the
+              world and makes it new, a brother wronged and later restored, or a
+              person thrown into a pit who slowly climbs out. People kept
+              telling these stories long after the world that first told them
+              was gone. When a reading offers a second lens, I am following one
+              of those patterns. I do not mean to reduce the text to psychology.
+              I want to show why people have kept returning to an old image, and
+              why it may still speak to you. I offer that lens quietly, beside
+              the history and never in place of it.
             </p>
             <p className="mt-4 font-body text-[15.5px] leading-[1.85] text-mist">
-              Readers like Mircea Eliade, Joseph Campbell, and Northrop Frye
-              spent their lives tracing these returns, and the Bible does the
-              same from the inside, reading its own images forward as types that
-              come back.
+              Scholars such as Mircea Eliade, Joseph Campbell, and Northrop Frye
+              spent their lives tracing these recurring images. The biblical
+              writers did something similar themselves, because later writers
+              took up the images of earlier ones and read them as patterns that
+              would come back again.
             </p>
           </section>
 
@@ -108,18 +112,21 @@ export default function AboutPage() {
               Why now
             </h2>
             <p className="font-body text-[15.5px] leading-[1.85] text-mist">
-              We live in a moment that asks for transparency, and that is what
-              STRATA tries to give. It does not set out to prove the Christian
-              story, and it does not set out to disprove it. It lays the history
-              down beside the text, in four layers, and lets you take in all of
-              it at once. What a passage meant then. What it carries always. How
-              it turns to address you now. And what it asks of you in return.
+              Many readers today want to see how things were made, and I have
+              tried to give them that. I did not build STRATA to prove the
+              Christian story, and I did not build it to disprove it. I set the
+              history beside the text in four layers, so that you can take in
+              all of it at once. The first layer explains what a passage meant
+              to its first readers. The second explains what it has meant in
+              every age since. The third asks what it means for your life now,
+              and the fourth gives you a question to answer in return.
             </p>
             <p className="mt-4 font-body text-[15.5px] leading-[1.85] text-mist">
-              Some readings carry only the text and its history for now. There,
-              the companion, STRATA's AI reading guide, can draw out the rest
-              for you, and everything it drafts is marked as drafted, one
-              reading and never the final word.
+              For now, some readings have only the Bible text and a note on its
+              history. On those readings the companion, STRATA's AI reading
+              guide, can write the rest for you. Everything it writes is marked
+              as written by the companion, because it is one way to read the
+              passage and never the final word.
             </p>
           </section>
 
@@ -128,18 +135,18 @@ export default function AboutPage() {
               How it came together
             </h2>
             <p className="font-body text-[15.5px] leading-[1.85] text-parchment-2">
-              I began this on my own, in one of the hardest stretches of my
-              life. Reading the Bible this way, slowly, and without reaching for
-              the tidy answer, was part of how I found my footing again. I
-              finished it on steadier ground. STRATA is the thing I needed in
-              that season, made in the hope that it finds someone else in
-              theirs.
+              I began this on my own, during one of the hardest stretches of my
+              life. Reading the Bible this way, slowly and without reaching for
+              the tidy answer, was part of how I found my footing again, and by
+              the time I finished I was on steadier ground. STRATA is what I
+              needed in that season, and I made it in the hope that it will help
+              someone else in theirs.
             </p>
           </section>
 
           <p className="border-t border-line pt-7 text-center font-scripture text-[18px] italic leading-[1.6] text-parchment-2">
-            History, meaning, the turn, and response. Four layers beneath every
-            passage, and the book left whole.
+            Every passage has four layers beneath it: history, meaning, the
+            turn, and response. And through all of it, the book stays whole.
           </p>
         </article>
 

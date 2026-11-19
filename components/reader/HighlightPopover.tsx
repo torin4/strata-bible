@@ -295,7 +295,8 @@ export function HighlightPopover({
                     {answer}
                   </p>
                   <p className="mt-2 font-body text-[10.5px] italic leading-[1.5] text-mist-2">
-                    Drawn for you, not the last word.
+                    The AI companion wrote this. It is one reading, not the
+                    final word.
                   </p>
                 </div>
 

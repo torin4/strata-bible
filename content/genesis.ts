@@ -13,9 +13,9 @@ export const GENESIS: Reading[] = [
     chapterIndex: 1,
     title: 'Creation',
     unitLabel: 'Day',
-    thread: 'The exiles open their story by answering Babylon. Where the empire’s gods made the world through war, here one God speaks it into being, and calls it good.',
+    thread: 'The priests who wrote this chapter were living as exiles in Babylon, among people who told how their gods had made the world through a great war. Genesis 1 answers that story. In it one God makes the world by speaking, without a battle or a rival, and he calls what he makes good.',
     closeMid: 'There was evening and there was morning.',
-    closeEnd: 'That is the seventh day. The creation account is complete.',
+    closeEnd: 'With the seventh day, the writer finishes the first account of creation.',
     passages: [
       {
         label: 'One',
@@ -47,17 +47,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Priests wrote this during the Babylonian exile, around the 500s BCE. Their conquerors had a creation story in which the world was made through a war between gods. Genesis answers it: one God makes everything by speaking. No battle, no rival.',
+          text: 'Priests wrote this chapter during the Babylonian exile, in the 500s BCE, after the Babylonians had destroyed Jerusalem and carried many of its people away. Their conquerors told a creation story, the Enuma Elish, in which the god Marduk made the world out of the body of a defeated rival. Genesis answers that story directly. Here one God makes everything simply by speaking, and he has no battle to fight and no rival to defeat.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Wellhausen · the Enuma Elish'
         },
-        meaning: 'God creates by <b>speaking</b>, not by force. And light is made on day one, before the sun on day four, so this “light” is really the first act of separating one thing from another. God calls it <b>good</b> before any human exists to use it. Creation is good in itself.',
+        meaning: 'God creates by <b>speaking</b>, and he uses no force at all. He makes light on the first day, three days before he makes the sun, so the writer cannot mean sunlight. The first light is God’s first act of separating one thing from another, light from darkness. God then calls the light good before any human exists to make use of it, which tells us that creation is good in itself and not only because it serves us.',
         lenses: {
-          theo: 'In the traditional reading the key word is <b>good</b>, said before any human exists or anything is useful. So the world is good in itself, a gift, not something earned. That is the floor the rest of the Bible stands on. (Heschel, God in Search of Man.)',
-          arch: 'Older than Genesis, and far more widespread, is the image of a world drawn out of formless water by separation, chaos parted into an ordered cosmos. It surfaces in the myths of many peoples, and it keeps surfacing because it names something no one stops doing: every act of making begins by dividing, this from that, the kept from the let go, until a shapeless thing takes form. The chapter speaks that ancient grammar in its own key, and the pattern it traces is one any maker still walks. (Eliade, The Sacred and the Profane.)'
+          theo: 'Traditional Jewish and Christian readers have given great weight to the word <b>good</b>, because God says it before any human exists and before anything has been put to use. On this reading the world is good in itself, and people receive it as a gift rather than something they have earned. The later writers of the Bible build on that foundation. (Heschel, God in Search of Man.)',
+          arch: 'Long before Genesis was written, many peoples told of a world drawn out of shapeless water, as a god separated one part of the chaos from another until an ordered world appeared. Scholars of religion such as Mircea Eliade found the image in the myths of peoples all over the world. Perhaps people keep telling it because every maker works the same way, dividing this from that and keeping some things while letting others go, until a shapeless thing takes form. The writer of Genesis tells the old story in his own way, and anyone who makes something still follows the pattern he describes. (Eliade, The Sacred and the Profane.)'
         },
         addr: {
           mode: 'names',
-          text: 'There is probably something in your life that feels unformed or stuck, waiting on you to act. Genesis says creation began not with force, but with a decision said out loud.'
+          text: 'Most of us have something in our lives that feels unformed or stuck, waiting for us to act. In Genesis, God does not begin creation with force. He begins it by deciding what will be and saying it out loud.'
         },
         ask: 'What is one thing you could decide and say out loud this week?'
       },
@@ -83,15 +83,15 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Ancient readers pictured the sky as a solid dome holding back an ocean above, with rain falling through its windows. Genesis uses that shared picture, but with no gods in it, only God making room.',
+          text: 'People in the ancient Near East pictured the sky as a solid dome that held back an ocean above it, and they believed rain fell through windows in that dome. The writer of Genesis uses the same picture of the world that his neighbors used, but he leaves out their gods. In his account, God alone makes room for the world by holding the waters apart.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Keel · Walton'
         },
-        meaning: 'The act here is <b>separation, making space</b>. God holds the waters back to open a livable middle. Order isn’t control for its own sake. It’s carving out room for life.',
+        meaning: 'On the second day God <b>makes space</b>. He separates the waters above from the waters below and so opens a middle region where living things can survive. When God brings order to the world, he is not controlling it for the sake of control. He is making room for life.',
         addr: {
           mode: 'names',
-          text: 'Living things need space that something has to hold open for them. Sometimes the loving move is a boundary, not more activity.'
+          text: 'Living things need space, and someone has to hold that space open for them. Sometimes the most loving thing we can do for another person is to set a boundary rather than to do more.'
         },
-        ask: 'Where do you need to make space, or hold a line, so something can breathe this week?'
+        ask: 'Where do you need to make room, or hold a line, this week so that someone you care for has space to grow?'
       },
       {
         label: 'Three',
@@ -123,13 +123,13 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Notice the design: days one to three build the realms (light, sky, land), days four to six fill them. It’s structured like a poem, not a lab report.',
+          text: 'The writer arranged the six days with care. On the first three days God makes the realms of the world, light, sky, and land, and on the next three he fills them with lights, with birds and fish, and with animals and people. The writer built the chapter like a poem, and he did not mean it to be read as a laboratory report.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Wenham'
         },
-        meaning: 'God says, “Let the earth bring forth.” He doesn’t make the plants directly. He <b>invites the ground to bring them out</b>. Creation is handed the power to keep creating.',
+        meaning: 'God says, “Let the earth bring forth vegetation.” He does not make the plants directly, but <b>invites the earth to bring them out</b>. In this way God shares his work with what he has made, and gives it the power to go on producing life.',
         addr: {
           mode: 'names',
-          text: 'Some things can’t be forced into being. You can only make the conditions and let them grow.'
+          text: 'Some good things cannot be forced into being. We can only prepare the right conditions and then wait for them to grow, as a farmer does.'
         },
         ask: 'What have you been trying to force that might just need room and time?'
       },
@@ -167,18 +167,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In Babylon the sun and moon were gods, Shamash and Sin. Genesis refuses to name them. It calls them only “the greater” and “the lesser light,” demoted to lamps and clocks. The stars, the heart of Babylonian astrology, get an afterthought: “And He made the stars as well.” A deliberate snub.',
+          text: 'The Babylonians worshipped the sun and the moon as gods, named Shamash and Sin. The writer of Genesis refuses even to use the ordinary words for sun and moon. He calls them only “the greater light” and “the lesser light,” as if they were lamps and clocks. He mentions the stars, which Babylonian astrologers studied to read the future, almost in passing: “And He made the stars as well.” He meant his readers to notice the slight.',
           src: 'Smith, The Origins of Biblical Monotheism · The Priestly Vision of Genesis 1'
         },
-        meaning: 'The sky is <b>switched off as a set of powers</b>. The lights don’t rule your fate. They keep time. You are not at the mercy of the heavens.',
+        meaning: 'In this scene the writer <b>takes away the sky’s power</b>. God places the lights in the sky to keep time, not to rule over human lives, so no one needs to live at the mercy of the heavens.',
         lenses: {
-          arch: 'Across the ancient world the lights overhead were powers to be feared and read for fate. To turn them into a calendar, lamps that keep time rather than gods that govern it, is one of the oldest demotions humans have performed, and one they keep performing on whatever they once let rule them. (The sky brought down from ruler to instrument.)'
+          arch: 'Across the ancient world, people feared the lights in the sky as powers and studied them to learn their fate. When the writer of Genesis turns them into a calendar, he does something people have done many times since: he takes a thing they once let rule them and puts it back in its place as a tool.'
         },
         addr: {
           mode: 'names',
-          text: 'Most of us let something quietly govern us. Fear, other people’s opinions, the markets, what the future might do. Genesis takes the things people worshipped and turns them into furniture.'
+          text: 'Most of us let something quietly govern our lives, whether fear, other people’s opinions, money, or worry about the future. The writer of Genesis took the things his neighbors worshipped and treated them as household furniture.'
         },
-        ask: 'What have you been treating like a god that’s really just a lamp? What changes if you demote it?'
+        ask: 'What have you been treating like a god that is really only a lamp? How would you live differently if you put it back in its place?'
       },
       {
         label: 'Five',
@@ -206,13 +206,13 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Notice “the great sea creatures.” Elsewhere in the ancient world those are dread chaos-monsters. Here they’re just animals God makes and calls good. The monsters get demythologized too.',
+          text: 'Elsewhere in the ancient world, people told of great sea monsters who stood for chaos and fought against the gods. The writer of Genesis mentions “the great sea creatures” only as animals that God makes and calls good. He treats the old monsters the way he treated the sun and moon, and takes away their power to frighten.',
           src: 'Smith, The Priestly Vision of Genesis 1 · John Day, God’s Conflict with the Dragon and the Sea'
         },
-        meaning: 'The <b>first blessing</b> in the Bible lands here: be fruitful, multiply, fill. Life is given the power to make more life. The note is abundance, not scarcity.',
+        meaning: 'Here God gives the <b>first blessing</b> in the Bible, when he tells the creatures to be fruitful, multiply, and fill the seas and the sky. He gives living things the power to make more life, and he gives it out of abundance, not scarcity.',
         addr: {
           mode: 'names',
-          text: 'The first thing God blesses is increase. More life, given freely.'
+          text: 'The first thing God blesses is increase. He gives more life freely, without anyone asking for it or earning it.'
         },
         ask: 'Where could you act from abundance instead of fear this week?'
       },
@@ -250,18 +250,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In the ancient Near East, the king was called the “image” of a god, a living stand-in for divine authority. Genesis takes that royal title and gives it to every human being, male and female alike. A buried revolution.',
+          text: 'In the ancient Near East, people called their king the “image” of a god, meaning that he stood on earth in the god’s place and carried the god’s authority. The writer of Genesis takes that royal title and gives it to every human being, male and female alike. He makes the claim quietly, but his first readers would have heard how radical it was.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Middleton, The Liberating Image'
         },
-        meaning: '<b>Everyone carries the image of God.</b> Dignity isn’t earned or ranked. It’s given, and given equally. And only here, at the end, does God call it not just good but “very good.”',
+        meaning: 'According to Genesis, <b>everyone carries the image of God</b>. No one earns that dignity, and God does not hand it out by rank. He gives it to every person equally. Only at this point, after he has made human beings, does God call his work not just good but “very good.”',
         lenses: {
-          theo: 'This verse is the root of human dignity in the Western tradition: the claim that every person has a worth no status, usefulness, or failure can cancel. It runs through Jewish and Christian ethics ever since.'
+          theo: 'Many thinkers trace the Western belief in human dignity back to this verse. It teaches that every person has a worth that no status, usefulness, or failure can cancel, and Jewish and Christian teachers have built their ethics on that belief ever since.'
         },
         addr: {
           mode: 'names',
-          text: 'The hardest place to believe this is usually a specific face. Someone you can’t stand, or your own in the mirror.'
+          text: 'We usually find this hardest to believe about one particular person, perhaps someone we cannot stand, or perhaps the face we see in the mirror.'
         },
-        ask: 'Who is one person, maybe yourself, you struggle to see as carrying it? Sit with that today.'
+        ask: 'Who is one person, perhaps yourself, whom you find it hard to see as carrying God’s image? Spend some time today thinking about why.'
       },
       {
         label: 'Seven',
@@ -285,13 +285,13 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'For exiles who had lost their temple and their land, this was everything: holiness you could keep anywhere, in time rather than place. A day you carry with you.',
+          text: 'The exiles in Babylon had lost their temple and their land, the places where they had always met God. The Sabbath gave them a kind of holiness they could keep anywhere, because God had set it in time rather than in a place. Wherever their captors took them, they could still keep the seventh day.',
           src: 'Smith, The Priestly Vision of Genesis 1 · Heschel, The Sabbath'
         },
-        meaning: 'The whole week of making is built toward <b>stopping</b>. Rest is the goal of creation, not a reward for finishing the work but the point of it. And it is the first thing God calls holy.',
+        meaning: 'God builds the whole week of creation toward <b>rest</b>. He does not rest as a reward for finishing his work. The rest is the point of the work, and the seventh day is the first thing in the Bible that God calls holy.',
         addr: {
           mode: 'names',
-          text: 'Notice it doesn’t end with humanity. It ends with rest. Most of us collapse, few of us rest as if it were sacred.'
+          text: 'The writer does not end the account of creation with the making of human beings. He ends it with God resting. Most of us work until we collapse, and very few of us rest as though rest were sacred.'
         },
         ask: 'What would it take to set one day, or even one hour, genuinely apart this week?'
       }
@@ -305,8 +305,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 2,
     title: 'The garden',
     unitLabel: 'Scene',
-    thread: 'The same exilic library turns from sky to soil. An older hand asks what a human is, and hands him a garden, a task, and a single limit he is trusted with.',
-    closeEnd: 'They stand together, unashamed. It is the last calm before the serpent.',
+    thread: 'Genesis 2 comes from a different and older writer than Genesis 1, and the editors placed it right after the first account. This writer turns from the sky to the soil and asks what a human being is. In his telling, God gives the first man a garden, work to do there, and a single limit that God trusts him to keep.',
+    closeEnd: 'The man and the woman stand together and feel no shame. They will not have that peace for long, because in the next chapter the serpent appears.',
     passages: [
       {
         label: 'One',
@@ -334,17 +334,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the second creation account, and an older hand wrote it. The order runs backwards from chapter 1: here the human comes first, before plants and animals. The editors kept both stories side by side rather than smoothing them into one. And the name is a pun: adam, the human, is formed from adamah, the ground. An earthling, out of earth.',
+          text: 'This is the second account of creation, and an older writer composed it. He tells things in a different order from chapter 1, since here God makes the human first, before any plants or animals. The editors of Genesis kept both accounts side by side instead of blending them into one. The writer also plays on words: God forms adam, the human, from adamah, the ground, so we might call the first human an earthling, made out of earth.',
           src: 'Wellhausen · Friedman · Smith'
         },
-        meaning: 'The human being is dust and breath in the same instant. Mortal, earthy stuff, and the breath of God, held together. Not a soul trapped in a body, not merely an animal, but both at once: ground that God breathed into.',
+        meaning: 'God makes the human being out of two things at once: the dust of the ground, which is mortal and earthy, and his own breath. The writer does not picture a soul trapped inside a body, and he does not picture a mere animal either. He pictures earth that God has breathed into, so that a human being is both.',
         lenses: {
-          theo: 'The two halves are a built-in humility and a built-in dignity. You are dust, so you can’t take yourself too seriously or imagine you are your own source. And you are God-breathed, so you can’t despise yourself either. Lose track of either half and something goes wrong.',
-          arch: 'The forming of a human from clay or dust, then quickened by a god’s breath, is one of the most widespread images in the ancient world, from the potter-gods of Egypt to the clay and divine blood of Mesopotamia. What recurs is the double nature it insists on: the creature is earth and more than earth, matter that has been breathed into. You are being told, in the oldest terms there are, what kind of thing you are. (The dust quickened by breath, told the world over.)'
+          theo: 'Many readers have found in these two halves both a reason for humility and a reason for dignity. Because we are dust, we cannot take ourselves too seriously or imagine that we made ourselves. Because God breathed into us, we cannot despise ourselves either. When we forget either half, we go wrong.',
+          arch: 'Peoples across the ancient world told how a god formed the first humans from clay or dust and then gave them life. In Egypt the god Khnum shaped people on a potter’s wheel, and in Mesopotamia the gods made them from clay mixed with the blood of a slain god. These stories agree that a human being is made of earth and yet is more than earth. In the oldest terms they had, the storytellers were telling their hearers what kind of creature they were.'
         },
         addr: {
           mode: 'names',
-          text: 'Most days you forget one half of yourself. Some days you live as if you were only dust. Other days you act as if you were only breath, above your own limits.'
+          text: 'Most of us forget one half of ourselves on most days. Sometimes we live as if we were only dust, and at other times we act as if we were only breath and had no limits at all.'
         },
         ask: 'Which half are you forgetting today?'
       },
@@ -398,18 +398,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The man is placed in the garden “to cultivate and keep it,” the same pair of verbs later used for serving and guarding the temple. Eden is a sanctuary and the human is its gardener-priest, given real work, not idle ease. The rivers, the Tigris and Euphrates among them, root the garden in the actual map of the ancient world. And the command is mostly permission: eat from any tree, with one exception.',
+          text: 'God places the man in the garden “to cultivate and keep it,” and later writers in the Bible use the same pair of verbs for the priests who served and guarded the temple. In this picture Eden is a sanctuary, and God gives the man real work there as its gardener and priest, not a life of idle ease. The writer names rivers his readers knew, among them the Tigris and the Euphrates, to set the garden on the real map of their world. And God’s command is mostly permission, since he lets the man eat from every tree but one.',
           src: 'Walton · Wenham'
         },
-        meaning: 'Freedom and a limit arrive together. He is handed a whole garden and one “no.” That single boundary is what makes him free rather than a kept animal, there is something he could do and chooses not to. A world with no limit at all isn’t paradise. It’s a place where nothing you do can mean anything.',
+        meaning: 'God gives the man freedom and a limit at the same time. He hands him a whole garden and only one “no.” That single limit is what makes the man free rather than a kept animal, because now there is something he could do and can choose not to do. If God had set no limit at all, the garden would not be a paradise, because nothing the man did could mean anything.',
         lenses: {
-          theo: 'The one forbidden tree is not God being stingy. It is the room a real relationship needs: an actual choice, a trust that can be kept or broken. Without it the man would be a pet in a beautiful cage. The limit is what makes him a partner.'
+          theo: 'God does not forbid the one tree out of stinginess. He forbids it because a real relationship needs room for a real choice, a trust that the man can keep or break. Without that choice, the man would be like a pet in a beautiful cage. By giving him a limit, God makes him a partner.'
         },
         addr: {
           mode: 'names',
-          text: 'You tend to stare at the single “no” in your life until it blots out the whole garden of “yes” around it.'
+          text: 'Most of us tend to stare at the one “no” in our lives until we can no longer see the whole garden of “yes” around it.'
         },
-        ask: 'What one limit are you fixated on, and what is the garden you’re ignoring around it?'
+        ask: 'Which one limit have you been fixed on, and what good things around it have you been ignoring?'
       },
       {
         label: 'Three',
@@ -433,18 +433,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Here is the first thing in the Bible called “not good.” In chapter 1 everything was good; the lone exception in this whole telling is solitude. The word for “helper” carries no hint of inferiority, it is used elsewhere of God himself helping Israel, and “suitable” means a counterpart, his match. Watch him name every animal and find that none of them answer back.',
+          text: 'Here God calls something “not good” for the first time in the Bible. In chapter 1 God called everything good, and in this account the one thing he finds lacking is that the man is alone. The Hebrew word translated “helper” does not suggest that the helper is lesser, since biblical writers use the same word for God when he helps Israel. The word “suitable” means a counterpart, someone who matches the man. Then watch what happens as the man names every animal: he finds that none of them can answer him.',
           src: 'Westermann'
         },
-        meaning: 'Loneliness is the first flaw in a finished world. Not sin, not danger, just being unaccompanied. He has authority over every creature and an equal among none of them. You can be surrounded, and in charge, and still alone.',
+        meaning: 'In a world God has otherwise finished, the first thing he finds wrong is loneliness. The man has not sinned and is not in danger. He is simply without a companion. He has authority over every creature, but none of them is his equal. A person can be surrounded by others, and in charge of them, and still be alone.',
         lenses: {
-          theo: 'The human is made for communion, not only for work. The text quietly insists that even in a perfect garden, even with God himself walking there, a person is built to need another person. That is not a defect to be fixed. It is how we are made.'
+          theo: 'God made human beings for companionship, and not only for work. The writer quietly insists that even in a perfect garden, with God himself walking there, a person needs another person. That need is not a defect that God must fix. It is part of how he made us.'
         },
         addr: {
           mode: 'names',
-          text: 'You can be capable, busy, in charge of everything in your care, and still come home to no one who truly answers you.'
+          text: 'We can be capable and busy, responsible for everything in our care, and still come home to no one who truly answers us.'
         },
-        ask: 'Where are you alone in a way you’ve quietly stopped admitting?'
+        ask: 'Is there a way in which you are alone that you have quietly stopped admitting, even to yourself?'
       },
       {
         label: 'Four',
@@ -476,17 +476,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The word usually rendered “rib” really means “side,” the man’s whole flank, his other half. It may carry an old Sumerian pun in which the lady of the rib is also the lady of life. She is made not from his head or his foot but from his side, the same substance, level with him. “Bone of my bones” is the first human poetry in the Bible.',
+          text: 'The Hebrew word that English Bibles usually translate “rib” more often means “side,” and some scholars think it refers to a whole side of the man, as though the woman were his other half. Some also hear an echo of an old Sumerian wordplay, in which one word could mean both “rib” and “life.” God makes the woman neither from the man’s head nor from his foot but from his side, out of the same substance, so that she stands level with him. The man’s cry, “bone of my bones,” is the first human poetry in the Bible.',
           src: 'Smith · Kramer'
         },
-        meaning: 'The partner is not shaped from dust a second time but taken from the man’s own side, his equal and his like. His first words are a cry of recognition: at last, one of my own kind. And the two stand fully exposed to each other and feel no shame, the last clear glimpse of the world before the hiding begins.',
+        meaning: 'God does not shape the man’s partner from the dust a second time. He takes her from the man’s own side, so that she is his equal and his like. The man’s first words are a cry of recognition, as if to say, “At last, here is one of my own kind.” The two of them stand fully exposed to each other and feel no shame. This is the last clear picture the writer gives us of the world before the hiding begins.',
         lenses: {
-          theo: 'Made from his side, she stands beside him, not beneath. “One flesh” is the language of a new kinship, a bond reckoned as strong as blood. The chapter ends with two people wholly seen and wholly unafraid, which is exactly what the next chapter takes from them.',
-          arch: 'The memory of a first wholeness, a time before shame when the human stood unhidden, runs through the world’s oldest stories as the lost golden age, the paradise before the breaking. What recurs is the ache it leaves behind, the sense of living east of some earlier ease, and the longing to be met again by your own kind without having to cover. (Eliade, on the nostalgia for paradise.)'
+          theo: 'Because God made the woman from the man’s side, she stands beside him and not beneath him. When the writer says the two become “one flesh,” he is describing a new kind of family bond, which he counts as being as strong as blood. At the end of the chapter the writer leaves us with two people who are completely seen by each other and completely unafraid, and in the next chapter they lose exactly that.',
+          arch: 'Many of the world’s oldest stories remember a first age of wholeness, before shame, when human beings had nothing to hide. People have called it the golden age, or the paradise that was lost. Mircea Eliade noticed how often these stories leave their hearers with a longing for that earlier ease, and a wish to be met again by someone of their own kind without having to cover themselves. (Eliade, on the nostalgia for paradise.)'
         },
         addr: {
           mode: 'names',
-          text: 'There is a deep relief in being recognized by someone as their own kind, and a deep fear of being that unguarded in front of anyone. The garden holds both, for one more verse.'
+          text: 'We feel deep relief when someone recognizes us as one of their own, and deep fear at the thought of being that unguarded in front of anyone. The man and the woman feel only the relief, and they will feel it for one more verse.'
         },
         ask: 'Where do you most want to be seen without having to cover, and what makes that feel dangerous?'
       }
@@ -500,7 +500,7 @@ export const GENESIS: Reading[] = [
     chapterIndex: 3,
     title: 'The serpent',
     unitLabel: 'Scene',
-    thread: 'The trust breaks. Not through a monster, but through a quiet suggestion that God’s one “no” was only ever meant to keep the human small.',
+    thread: 'In the garden God had given the man and the woman everything they needed, along with a single command: they were not to eat from the tree of the knowledge of good and evil. Genesis 3 tells how they stopped trusting God over that one command. They do not rebel in some dramatic way. A serpent asks the woman a question, and she begins to wonder whether God gave the command to keep something good from her.',
     closeEnd: 'They are sent out of the garden, and the first story ends east of Eden.',
     passages: [
       {
@@ -533,19 +533,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The serpent is not Satan. That reading comes centuries later. Here it is simply the most cunning of the animals, a talking creature in an old folk register. And the bait is not “do something evil.” It is “you will be like God, knowing good and evil,” which in Hebrew points at deciding good and evil for yourself.',
+          text: 'Many readers have taken the serpent to be Satan, but Jewish and Christian interpreters made that identification centuries after Genesis was written. In the story itself the serpent is simply the most cunning of the animals God had made, a talking creature of the kind people put in old folk tales. Readers also often misunderstand what it offers the woman. It does not tempt her to do something evil; it promises that she will become “like God, knowing good and evil,” and in Hebrew that phrase carries the sense of deciding for yourself what is good and what is evil.',
           src: 'Smith · Westermann'
         },
-        meaning: 'The lie is subtle. Not a flat “You will not surely die,” but the suggestion that God is holding out on you, that the limit exists to keep you small. Temptation almost always works by reframing a boundary as a deprivation.',
+        meaning: 'The serpent works carefully. It begins by asking whether God really forbade them to eat from any tree in the garden, which overstates the command and makes God sound harsher than he was. Only after the woman corrects it does the serpent contradict God directly, telling her she will not die, and then it adds the suggestion that does the real damage: that God gave the command because he wanted to keep something good from them. People are often tempted in the same way. We are seldom asked to want something wicked. Instead we are persuaded that a limit someone set for us is really a loss.',
         lenses: {
-          theo: 'In the older reading, the root of the trouble is distrust. The first move away from God is not lust or violence but the quiet thought that his goodness can’t be trusted and the rule is a cage. Everything else follows from that.',
-          arch: 'The forbidden act that ends the timeless garden and starts human history is a pattern the old stories keep telling, Prometheus stealing fire, Pandora opening the jar, the one threshold crossed that cannot be uncrossed. The serpent is the disturber every such tale needs, the voice that breaks a sleeping perfection. Whether the crossing is a fall or a beginning the stories rarely agree, and Genesis holds the ambivalence too. (The transgression that ends the garden and starts the story.)'
+          theo: 'Many Jewish and Christian readers have seen the root of the whole story in this moment of distrust. The humans first step away from God not by an act of lust or violence but by a change of belief, when they begin to think that God’s goodness cannot be relied on and that he gave his command to confine them rather than protect them. On this reading, every wrong the characters commit later in Genesis comes from that first doubt.',
+          arch: 'Many ancient peoples told stories of a single forbidden act that ended a time of innocence and began ordinary human life. The Greeks, for example, told of Prometheus stealing fire from the gods, and of Pandora opening the jar that let troubles into the world. In each of these stories no one can undo the act, and the storytellers often seem unsure whether it was a disaster or a necessary beginning. The writer of Genesis seems to share that uncertainty, because the humans lose the garden but also gain a knowledge they did not have before, and the writer never treats that knowledge as worthless.'
         },
         addr: {
           mode: 'names',
-          text: 'Somewhere a voice is telling you that a limit in your life is just someone keeping you small. It rarely says “do something wrong.” It says you’d be freer without the rule.'
+          text: 'Most of us have been tempted, as the woman was, to see a limit in our lives, whether a promise, a rule, or a commitment, as something that only holds us back. We seldom tell ourselves outright to do wrong. We tell ourselves that we would be freer without the limit, and we begin to suspect that whoever set it did not have our good in mind.'
         },
-        ask: 'Where are you being told that a boundary is really a cage?'
+        ask: 'Is there a limit in your life that you have started to resent? Who set it, and what would change if you trusted that they set it for your good?'
       },
       {
         label: 'Two',
@@ -565,17 +565,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Notice it is never an apple. That comes from a Latin pun centuries later. And the text never says “the fall” or “original sin” either. Those are Augustine reading Paul. In its own words this is a story about knowledge, shame, and exile, not a doctrine.'
+          text: 'Genesis never says what kind of fruit it was. Later Christians pictured an apple, partly because of a pun in Latin, where the word malum can mean both “apple” and “evil.” The writer also never uses the phrases “the fall” or “original sin.” Augustine developed those ideas around AD 400, as he read Genesis alongside the letters of Paul. If we read the chapter on its own terms, we find a story about knowledge, shame, and exile, which Israelites told for many centuries before anyone made it into a doctrine.'
         },
-        meaning: 'They get exactly what was promised. Their eyes open. And the very first thing the new knowledge shows them is their own exposure. Awareness arrives, and shame arrives with it.',
+        meaning: 'What the serpent promised does happen, though not in the way the humans hoped. Their eyes are opened, but the first thing they see is that they are naked, so at the same moment that they gain knowledge, they also feel <b>shame</b>. The first thing they do with their new understanding is sew fig leaves together and cover themselves from each other.',
         lenses: {
-          arch: 'The first covering, the leaves sewn the moment the eyes open, is the oldest image of shame entering the world, the discovery that one can be seen and judged. From it descends every mask and garment a person puts between themselves and watching eyes. The story marks a threshold everyone crosses, the day you first knew you were being looked at. (The first mask, and the birth of being seen.)'
+          arch: 'The fig leaves are the first clothing in the Bible, and the man and the woman make them because they are ashamed. Many peoples have told some version of this moment, when a person first realizes that others can see and judge them, and every child comes to it sooner or later. In that sense, every mask and covering people have worn since then goes back to this scene.'
         },
         addr: {
           mode: 'names',
-          text: 'You have had the experience of getting the thing you wanted and feeling smaller once you held it. The reach promised more of you. It delivered more of your exposure.'
+          text: 'Most of us have reached for something we were sure would make our lives larger, and found that once we had it we felt more exposed than before. People have been making the serpent’s bargain for as long as there have been people.'
         },
-        ask: 'What have you reached for that left you more exposed than before?'
+        ask: 'What have you reached for that left you feeling more exposed than before?'
       },
       {
         label: 'Three',
@@ -611,17 +611,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the older Yahwist’s God, who walks in a garden in the cool of the day and asks questions out loud. “Where are you?” is not a request for information. He knows. It is an opening, a chance to come out. Watch the blame travel: the man points at the woman and at God in one breath, “The woman whom You gave me,” and the woman points at the serpent.'
+          text: 'Scholars believe that editors assembled Genesis from several older sources, and that this chapter comes from the one they call the Yahwist, a writer who pictures God in very human terms. Here God walks in the garden in the evening breeze and calls out questions. When he asks “Where are you?” he is not looking for information, since he already knows, but giving the man a chance to come out and speak. Then follow where the blame goes: the man blames the woman, and in the same sentence blames God for giving her to him, while the woman in turn blames the serpent.'
         },
-        meaning: 'After shame comes hiding, and after hiding comes blame. Notice God asks rather than accuses, and leaves room for them to own it. And notice no one does.',
+        meaning: 'Because the humans are ashamed, they hide, and once God finds them, they <b>blame</b> someone else. God could have begun with an accusation, but instead he asks a series of questions, and each one gives them room to tell the truth. None of them does.',
         lenses: {
-          theo: '“Where are you” is the first question God asks a human being, and it is a pursuit, not an ambush. The tragedy of the scene is not that they were caught. It is that, handed the chance to step out and tell the truth, each of them pointed somewhere else.'
+          theo: '“Where are you?” is the first question God asks a human being in the Bible, and it is the question of someone searching for a person, not someone setting a trap. The sadness of the scene is not that the humans were caught. It is that when they were given the chance to come forward and admit what they had done, each of them pointed at someone else.'
         },
         addr: {
           mode: 'names',
-          text: 'When you are caught, the reflex is the same: hide first, then hand the blame somewhere. The partner, the circumstances, even God. It is older than you. It is in the first story.'
+          text: 'When we are caught in a wrong, we often do just what they did: we hide, and then we blame a partner, our circumstances, or even God. The writer put this habit into the very first story about human beings, as if to say that people have always done it.'
         },
-        ask: 'What are you blaming right now for something that is actually yours to own?'
+        ask: 'Is there something you are blaming on someone else that is really yours to own?'
       },
       {
         label: 'Four',
@@ -657,18 +657,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'These are the text’s answers to old questions: why snakes have no legs, why childbirth is agony, why farming breaks the body, why we die. Verse 16, “he will rule over you,” describes a broken order, it does not bless one. That distinction matters, because the line has been used for centuries to defend the very thing the story is mourning.',
+          text: 'In God’s words to the serpent, the woman, and the man, the first hearers would have found answers to questions about their own lives: why snakes crawl on the ground, why childbirth is so painful, why farming wears out the body, and why everyone dies. In verse 16, when God tells the woman that her husband “will rule over you,” he is describing what has gone wrong between them; he is not commanding it, and he does not approve of it. The difference matters, because people have used this verse for centuries to defend the very thing the writer is grieving.',
           src: 'Westermann'
         },
-        meaning: 'The sentences aren’t random punishments so much as the shape of life lived outside trust. Partnership strained into power. Work turned to toil. The body made mortal. The world doesn’t end. It just gets hard.',
+        meaning: 'God’s words here are less a list of punishments than a description of what life becomes once people stop trusting him. The man and the woman will struggle with each other for <b>power</b>, they will have to labor hard to make the ground yield food, and their bodies, which God took from the dust, will return to it. The world goes on, but they will find it a much harder place to live.',
         lenses: {
-          theo: 'Read closely, these are consequences more than curses, the natural weather of a broken trust. And even here mercy leaks in: the ground is cursed, but the human is not. They are told they will struggle, not that they are cast off.'
+          theo: 'If we read closely, we see that God is describing consequences more than pronouncing curses. He curses the serpent and the ground, but he never curses the man or the woman. He tells them their lives will be a struggle, not that he has cast them off, so even as he judges them he shows a measure of mercy.'
         },
         addr: {
           mode: 'names',
-          text: 'The fallout of a broken trust is rarely loud. It is the long friction afterward, the things that should give life, love, work, the body, now arriving with a cost.'
+          text: 'When people break trust with one another, they rarely pay for it all at once. More often they pay slowly, through years of friction, and find that love, work, and even their own health cost them more than they used to.'
         },
-        ask: 'Where has something that should be life-giving in your life turned into toil?'
+        ask: 'Where in your life has something you once enjoyed become hard work?'
       },
       {
         label: 'Five',
@@ -700,18 +700,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Cherubim are not the infants of later art. In the ancient Near East they were the great winged guardians, part lion, part eagle, part human, that flanked the gates of temples and the thrones of kings, and the flaming sword sets the same barred threshold at Eden’s gate. The name the man gives the woman, Chavah, puns on the Hebrew for living. And the garments of skin trade fig leaves for the era’s ordinary durable clothing, made at the cost of an animal.'
+          text: 'Later Christian artists often painted cherubim as chubby winged infants, but people in the ancient Near East pictured them as huge guardians, part lion, part eagle, and part human, and set their statues beside the gates of temples and the thrones of kings. Here God places cherubim, along with a flaming sword, to guard the way back into Eden. Two other details are worth knowing. The name the man gives the woman, Chavah, which English renders as Eve, sounds like the Hebrew word for “living.” And the garments of skin that God makes replace the fig leaves with real, lasting clothing, which cost an animal its life.'
         },
-        meaning: 'Exile, but not abandonment. They leave the garden clothed, named, and alive. The story that opened with “it is good” ends “east of Eden,” yet God walks them to the door rather than ending them. Even the locked gate is partly mercy, so they don’t live forever inside the break.',
+        meaning: 'God sends the humans out of the garden, but he does not abandon them. They leave clothed, named, and alive. The story began with God calling everything “good,” and now it ends east of Eden, yet God sends them away rather than destroying them. Even in guarding the gate he is partly showing <b>mercy</b>, because he is keeping them from eating from the tree of life and living forever in their broken state.',
         lenses: {
-          theo: 'The clothing is the hinge. The first instinct of the humans was to cover their own shame and hide. God’s response is to cover it better, with his own hands. The God of this chapter judges, and then dresses the ones he judges for the road ahead.',
-          arch: 'Every paradise story ends with a gate that shuts behind you, and the human story proper begins on the far side of it. The way back is barred on purpose; what is left is forward, into a world that has to be built rather than received. The expulsion from the garden is the door through which history, and the rest of the book, walks. (The shut gate that leaves only the road forward.)'
+          theo: 'The clothing is the turning point of the chapter. When the humans first felt their shame, they tried to cover it themselves with fig leaves and then hid among the trees. God answers by covering them properly, with garments he makes himself, so the same God who judges them also dresses them for the journey ahead.',
+          arch: 'Many peoples have told stories of a lost paradise, and in most of them someone shuts a gate behind the people who lived there. Their history begins on the far side of that gate. Whoever shuts it does so on purpose, so the people can only go forward, and must build a world for themselves instead of simply receiving one. In Genesis, everything else in the book takes place outside the garden.'
         },
         addr: {
           mode: 'names',
-          text: 'There are doors in a life that close behind you. You do not get back to the garden.'
+          text: 'Most of us have left something behind that we can never go back to. The writer of Genesis does not pretend otherwise, but shows that God did not send the man and the woman out alone.'
         },
-        ask: 'What can’t you return to, and what would it look like to walk forward instead of standing at the gate?'
+        ask: 'Is there something in your life that you cannot return to? What would it look like to walk forward instead of standing at the gate?'
       }
     ]
   },
@@ -723,8 +723,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 4,
     title: 'Cain and Abel',
     unitLabel: 'Scene',
-    thread: 'The break spreads. What split the first couple from God now splits brother from brother, and the first death in the story is a killing.',
-    closeEnd: 'Violence has entered the world, and so has worship. The story will follow both lines down.',
+    thread: 'In Genesis 3 the man and the woman broke their trust with God. In Genesis 4 their sons break with each other, when Cain kills his brother Abel, and the first death in the Bible is a murder.',
+    closeEnd: 'By the end of the chapter, people have begun both to kill one another and to worship God. The writer follows both of these lines through the chapters that come next.',
     passages: [
       {
         label: 'One',
@@ -756,15 +756,15 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The text pointedly never says why one offering was received and the other was not. Readers have filled the silence for centuries, Abel brought his best and Cain did not, or it was a matter of the heart, but Genesis leaves the gap open. Notice the old pairing underneath: Cain the farmer, Abel the herder, the rivalry of field and flock that a herding people told about itself.',
+          text: 'The writer never says why God accepted Abel’s offering and not Cain’s. Readers have tried to fill the silence for centuries, some saying that Abel brought his best and Cain did not, others that the difference lay in their hearts, but Genesis leaves the question open. Beneath the story lies an old rivalry between Cain the farmer and Abel the herder, the kind of tale herding peoples told about the conflict between field and flock.',
           src: 'Westermann'
         },
-        meaning: 'The story refuses to hand Cain a clean reason. Sometimes you bring what you have and it doesn’t land the way you hoped, and no explanation arrives. What the text watches is not the slight itself but what a person does with it.',
+        meaning: 'The writer does not give Cain a clear reason for what happened. Sometimes we bring what we have, and other people do not receive it as we hoped, and no one ever explains why. The writer is less interested in the slight itself than in what Cain does with it.',
         addr: {
           mode: 'names',
-          text: 'You know the feeling of bringing your effort and watching it fall flat while someone else’s is received.'
+          text: 'Most of us know what it is like to put real effort into something, only to watch it fall flat while someone else’s effort is welcomed.'
         },
-        ask: 'What did you offer that wasn’t received the way you hoped, and what is it doing to you?'
+        ask: 'What have you offered that was not received as you hoped, and how has that disappointment been affecting you?'
       },
       {
         label: 'Two',
@@ -784,19 +784,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'God speaks to Cain before the murder, not after, a warning rather than a verdict. “Sin is crouching at your door” pictures sin as a predator at the threshold, an image that echoes a Mesopotamian word for a demon that waited at doorways. And “it desires you, but you must master it” are almost exactly the words spoken to the woman one chapter earlier, now turned on sin itself.',
+          text: 'God speaks to Cain before the murder, not after it, so his words are a warning rather than a verdict. When he says that “sin is crouching at your door,” he pictures sin as a predator waiting at the threshold, and the Hebrew word may echo a Mesopotamian name for a demon that lurked in doorways. God then tells Cain that sin “desires you, but you must master it,” using almost the same words he spoke to the woman one chapter earlier.',
           src: 'Smith · Walton'
         },
-        meaning: 'There is a gap between the anger and the act, and God meets Cain inside it. Sin is drawn as an animal at the threshold, wanting in. The feeling is not yet the sin. What you do with the door is.',
+        meaning: 'Between Cain’s anger and his act of murder there is a gap, and God meets him inside it. God describes sin as an animal at the door, wanting to get in. Cain’s anger is not yet a sin. What matters is what he does when sin comes to the door.',
         lenses: {
-          theo: 'This is the chapter’s mercy, and it’s easy to miss. Before Cain lifts a hand, God comes to him, names the danger, and tells him plainly that he can still master it. The warning is grace. The freedom is real.',
-          arch: 'What a person refuses to face does not stay outside them; it comes back to rule them as if it were fate. The appetite crouching like a beast at the threshold, waiting to be either mastered or fed, is an image drawn in every age, and it names a permanent fork: the thing turned toward and ruled, or turned from and obeyed. Cain is told to face it while he still can. (Jung, on the shadow that rules you until you turn and face it.)'
+          theo: 'Readers can easily miss the mercy in this scene. Before Cain lifts a hand against his brother, God comes to him, names the danger, and tells him plainly that he can still master it. God’s warning is an act of grace, and the freedom he gives Cain is real.',
+          arch: 'Carl Jung taught that whatever a person refuses to face in themselves does not go away, but returns to rule them as if it were fate. People in every age have drawn the same picture Genesis draws here, of an appetite crouching like a beast at the door, which a person must either master or feed. God tells Cain to face it while he still can. (Jung, on the shadow that rules you until you turn and face it.)'
         },
         addr: {
           mode: 'names',
-          text: 'There is a door in you with something crouching at it right now, a resentment, a habit, a rage you have been quietly feeding. You are nearer the threshold than the deed. That is the whole point of the warning.'
+          text: 'Most of us have something crouching at our own door, whether a resentment, a habit, or an anger we have been quietly feeding. Like Cain, we are still closer to the threshold than to the deed, and that is why God’s warning matters.'
         },
-        ask: 'What is crouching at your door, and what would ruling it, instead of feeding it, look like today?'
+        ask: 'What is crouching at your door, and what would it look like for you to master it today instead of feeding it?'
       },
       {
         label: 'Three',
@@ -820,18 +820,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The Hebrew of verse 8 is broken: Cain says something to Abel and the words have dropped out of the oldest text, so the murder happens in a blank. “Am I my brother’s keeper?” is the first evasion in the Bible. And the victim is not silent, the word for blood is plural, and it cries from the ground that drank it.',
+          text: 'Part of verse 8 is missing from the Hebrew text that has come down to us. Cain says something to Abel, but his words are lost, though some ancient translations supply them, so in the Hebrew the murder happens in a blank. Cain’s reply to God, “Am I my brother’s keeper?”, is the first evasion in the Bible. Abel does not stay silent either, because God says that his brother’s blood cries out from the ground, and the Hebrew word for blood here is plural.',
           src: 'Westermann'
         },
-        meaning: 'The first death in the story is not natural. It is a killing, and it is a brother. Cain’s question expects the answer no. The rest of the Bible spends itself answering yes. And notice the spilled blood has a voice. Violence does not stay buried; the ground itself testifies.',
+        meaning: 'The first person to die in the Bible does not die naturally. His own brother kills him. Cain asks his question expecting God to answer no, but the later writers of the Bible answer yes. God also hears Abel’s spilled blood crying out, which tells us that God does not let violence stay buried.',
         lenses: {
-          theo: '“Am I my brother’s keeper?” is the question the whole law and the prophets exist to answer. The God of this scene hears the victim from the dirt. Wherever someone is harmed and hidden away, the text insists, the cry still reaches him.'
+          theo: 'One way to read the law and the prophets is as a long answer to Cain’s question, “Am I my brother’s keeper?” In this scene God hears the victim’s cry from the ground. The writer insists that wherever someone is harmed and hidden away, God still hears.'
         },
         addr: {
           mode: 'names',
-          text: '“Am I my brother’s keeper” is the line you reach for whenever you would rather not be responsible for someone you have failed.'
+          text: 'We tend to ask Cain’s question, “Am I my brother’s keeper?”, whenever we would rather not take responsibility for someone we have failed.'
         },
-        ask: 'Whose keeping have you been telling yourself is not yours?'
+        ask: 'Who have you been telling yourself is not your responsibility?'
       },
       {
         label: 'Four',
@@ -867,17 +867,17 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The “mark of Cain” has been read monstrously, twisted for centuries into a brand of inferiority and used to defend slavery and racism. The text says the opposite. The mark is protection, a sign God places on Cain so that no one will kill him. Even the first murderer is shielded from the violence he set loose. And he settles in Nod, a name that means “wandering”: he becomes the restlessness he is sentenced to.'
+          text: 'For centuries some readers twisted the “mark of Cain” into a sign of inferiority, and used it to defend slavery and racism. The writer says the opposite. God places the mark on Cain to protect him, so that no one will kill him, and in this way God shields even the first murderer from the violence he started. Cain then settles in the land of Nod, a name that means “wandering,” so the place where he lives matches the restless life God sentenced him to.'
         },
-        meaning: 'The sentence is exile and unrest, not death. And then mercy moves: God guards the life of the guilty man. A story that could have ended in execution ends instead with a mark of protection laid on the murderer. Justice and mercy arrive in the same breath.',
+        meaning: 'God sentences Cain to exile and restlessness, but not to death. Then God shows mercy by guarding the life of the guilty man. The story could have ended with an execution, but instead God marks the murderer for protection, and so he acts with justice and mercy at the same time.',
         lenses: {
-          theo: 'Cain is cursed and Cain is kept, at once. The God of this chapter neither excuses the murder nor abandons the murderer. That double note, real consequence and stubborn protection, runs from here through the whole story.'
+          theo: 'God curses Cain and keeps him at the same time. He does not excuse the murder, and he does not abandon the murderer. From this chapter onward, the writers of the Bible keep showing God this way, giving real consequences and yet stubbornly protecting the people who suffer them.'
         },
         addr: {
           mode: 'names',
-          text: 'You carry the weight of things you have done. You may also be carried, protected in ways you never earned, right in the middle of them.'
+          text: 'We carry the weight of the wrongs we have done. Yet, like Cain, we may also be protected in the middle of those consequences, in ways we never earned.'
         },
-        ask: 'Where are you being protected inside consequences you brought on yourself?'
+        ask: 'In what ways has someone protected you while you lived with the consequences of your own choices?'
       },
       {
         label: 'Five',
@@ -905,19 +905,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Between the mark and these verses the text races through Cain’s descendants. He builds the first city, and his line invents herding, music, and metalwork; civilization is born east of Eden, in the murderer’s family. Seven generations down comes Lamech, who sings the first poem in the Bible, and it is a boast: Cain was avenged sevenfold, Lamech seventy-sevenfold. The appetite for vengeance compounds down the line. Then, abruptly, another line begins.',
+          text: 'Between the mark and these verses, the writer quickly lists Cain’s descendants. Cain builds the first city, and his descendants are the first to herd livestock, play music, and work metal, so the writer places the beginnings of civilization east of Eden, in the murderer’s family. Seven generations after Adam comes Lamech, who sings the first poem in the Bible, and his poem is a boast: if Cain would be avenged sevenfold, Lamech will be avenged seventy-sevenfold. Each generation in this line wants more revenge than the last. Then, quite suddenly, the writer begins another family line, through Adam’s son Seth.',
           src: 'Westermann'
         },
-        meaning: 'Two trajectories fork here. One line builds and makes and grows a louder and louder hunger for revenge. The other simply starts to call on the name of God. The primeval history is asking, this early, which line a person is standing in.',
+        meaning: 'Here the writer shows two families going in different directions. Cain’s line builds and makes things, and grows hungrier and hungrier for revenge. Seth’s line simply begins to call on the name of God. Even this early in Genesis, the writer is asking his readers which of the two lines they belong to.',
         lenses: {
-          theo: 'The Bible keeps drawing this line: violence that escalates on one side, and on the other a people who, having little else, call on the name of the LORD. Both descend from the same wounded family. The difference is not bloodline. It is which way you turn.',
-          arch: 'A wound passed down as more harm, vengeance compounding generation on generation, is among the oldest engines of human history, and Lamech’s boast is its anthem: wound me and I answer sevenfold, then seventy-sevenfold. Against it the story sets the other line, the chain broken by turning outward for help instead of striking back. Whole cultures run on one current or the other. (Girard, on the escalation of vengeance.)'
+          theo: 'The writers of the Bible draw this contrast again and again. On one side, people answer violence with more violence. On the other, people who have little else call on the name of the LORD. Both lines descend from the same wounded family, so the difference between them is not a matter of birth but of which way a person turns.',
+          arch: 'One of the oldest patterns in human history is a wound passed down as more harm, with each generation taking more vengeance than the last. René Girard wrote at length about this kind of escalation, and Lamech’s boast is a perfect example of it: if you wound me, I will answer sevenfold, and then seventy-sevenfold. Against that pattern the writer sets the other line, the people who break the chain by calling out for help instead of striking back. Whole cultures have lived by one pattern or the other. (Girard, on the escalation of vengeance.)'
         },
         addr: {
           mode: 'names',
-          text: 'Both lines are open to you: the one where a wound compounds into more harm, and the one that turns and calls out for help.'
+          text: 'Both of these lines are open to us. We can let a wound turn into more harm, or we can turn and call out for help.'
         },
-        ask: 'Which line are you continuing right now?'
+        ask: 'Which of these two lines are you following right now?'
       }
     ]
   },
@@ -1066,7 +1066,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'These impossibly long lives echo the Sumerian King List, which gave its kings before the flood reigns of tens of thousands of years. Genesis keeps the shape but shrinks the scale, and it breaks its own rhythm once, for Enoch, who does not die but is simply taken.',
+          text: 'The ages in this chapter are enormous, and they resemble the Sumerian King List, an ancient record that credited the kings who ruled before the flood with reigns of tens of thousands of years. The writer of Genesis keeps that pattern of long lives but makes the numbers far smaller. The writer also breaks the chapter’s steady rhythm once, for Enoch, who does not die like the others; instead, the writer says, God took him.',
           src: 'The Sumerian King List · Smith'
         }
       }
@@ -1080,8 +1080,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 6,
     title: 'The flood begins',
     unitLabel: 'Scene',
-    thread: 'The violence that began with one murder has filled the whole earth. God looks at what the world has become, grieves, and resolves to start again with one man who still walks with him.',
-    closeEnd: 'The covenant is spoken before a drop has fallen. Beyond this chapter the rain begins.',
+    thread: 'In Genesis 4 Cain murdered his brother Abel, and since then people have filled the whole earth with violence. God looks at what the world has become and grieves over it, and he decides to begin again with Noah, the one man who still walks with him.',
+    closeEnd: 'God makes his covenant with Noah before any rain has fallen. In the next chapter the flood begins.',
     passages: [
       {
         label: 'One',
@@ -1109,18 +1109,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the strangest fragment in the primeval history, and the editors kept it almost raw. Divine beings, “sons of God”, take human women, and the children are the Nephilim, the “fallen ones”, giants, “the mighty men of old”. It is a shard of older myth, the kind of demigod-hero story told all across the ancient Near East, where Gilgamesh himself is two-thirds god. The hundred-and-twenty-year limit is God drawing a hard line between the divine and the human after that line had been crossed.',
+          text: 'This is the strangest passage in the early chapters of Genesis, and the editors kept it almost unaltered. Divine beings, called “sons of God,” take human women as wives, and their children are the Nephilim, a name that probably means “fallen ones,” whom the writer calls “the mighty men of old.” The passage preserves a piece of older myth. Peoples across the ancient Near East told stories of heroes who were partly divine, and in the Epic of Gilgamesh the hero himself is two-thirds god. When God limits human life to a hundred and twenty years, he is drawing a firm line between the divine and the human after these beings had crossed it.',
           src: 'Westermann · Smith'
         },
-        meaning: 'The scene is about a boundary blurring, heaven and earth bleeding into each other, and God answering by setting a limit. Right before the flood the text shows a world where the categories are coming undone. There is not much to moralize here. Mostly it sets a tone: things have gotten strange, and out of bounds.',
+        meaning: 'In this scene heavenly beings cross into the human world, and God answers by setting a <b>limit</b> on human life. The writer places the episode just before the flood to show a world in which no one is keeping even the line between heaven and earth. The passage offers little in the way of a lesson. The writer’s main purpose is to show the reader how far things have gone wrong.',
         lenses: {
-          theo: 'The text guards the difference between the maker and the made. The trouble in these verses is not desire, it is the erasing of a line that was meant to hold. Much of what follows is God re-establishing the boundary between creator and creature.'
+          theo: 'The writer is concerned to keep clear the difference between God, who makes, and the creatures he has made. The wrong in these verses is not desire as such. It is that these beings erased a line God meant to stand. Much of what God does in the chapters that follow is to set that line between creator and creature in place again.'
         },
         addr: {
           mode: 'names',
-          text: 'You live inside a limit you never chose, the same line that makes you a creature and not a god. At bottom that limit is your own mortality, and the steady temptation is to treat it as an insult to rage against, rather than the plain shape of being finite.'
+          text: 'Every one of us lives within a limit we never chose, the limit that makes us creatures and not gods, and at bottom that limit is our own mortality. We are always tempted to treat it as an insult and rage against it, rather than accept it as the ordinary condition of a finite life.'
         },
-        ask: 'Which of your limits have you been fighting as though they were enemies?'
+        ask: 'Which of your limits have you been fighting as if it were an enemy?'
       },
       {
         label: 'Two',
@@ -1148,18 +1148,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the Yahwist’s voice, raw and unguarded. God “regrets”; his heart is “grieved”. This is not the untroubled, impassive deity of later philosophy. It is a God who can be wounded by what the world becomes. The bleakest verdict in Genesis, that the human heart inclines only to evil, sits right beside God’s grief, not his rage.',
+          text: 'This passage comes from the Yahwist, the older source in Genesis, who speaks about God with unusual directness. The writer says that God “regretted” making humankind and that his heart was “grieved.” Later philosophers would describe God as untroubled and beyond feeling, but this writer pictures a God whom the world can wound. The writer sets the darkest judgment in Genesis, that every inclination of the human heart is only evil, right beside God’s grief, not his rage.',
           src: 'Friedman'
         },
-        meaning: 'Notice what God feels first. Not anger. Grief. Regret. The maker is heartbroken over the made. And in the very same breath, a single exception: Noah found favor. Even at the darkest verdict in the book, the story leaves one door open.',
+        meaning: 'The first thing God feels in this passage is not anger but grief and <b>regret</b>, the sorrow of a maker over what he made. In the same breath the writer adds a single exception: Noah found favor in God’s eyes. Even as God gives the darkest verdict in the book, he leaves one way open.',
         lenses: {
-          theo: 'The flood begins in heartbreak, not fury. A God who grieves is a God who is not above being hurt by us, who has staked something on how this goes. That changes what the judgment is. It is the pain of a maker, not the spite of a tyrant.'
+          theo: 'God begins the flood in heartbreak, not in fury. A God who grieves is a God who allows us to hurt him, because he has staked something of himself on how the world turns out. That changes how we should understand his judgment. When God judges here, he acts out of the pain of a maker, not the spite of a tyrant.'
         },
         addr: {
           mode: 'names',
-          text: 'There is a difference between being raged at and being grieved over. The text says God grieves.'
+          text: 'Most of us know the difference between someone who is angry with us and someone who is grieved by what we have done. The writer tells us that God grieves.'
         },
-        ask: 'Where in your life are you more grieved than angry, and what is that grief trying to tell you?'
+        ask: 'Where in your life do you feel more grieved than angry, and what do you think you are grieving?'
       },
       {
         label: 'Three',
@@ -1187,16 +1187,16 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Walked with God” is said of only two men in Genesis, Enoch and Noah. “Blameless” translates a word that means whole, of integrity, not sinless. And the earth is “full of violence”, the same word for the brutality that began with Cain and compounded through Lamech’s boast. The flood is, in a sense, the violence of the world finally coming back on itself.',
+          text: 'The writer of Genesis says of only two men that they “walked with God”: Enoch and Noah. The Hebrew word translated “blameless” means whole, a person of integrity, rather than someone who never sinned. The writer also says that the earth was “full of violence,” the kind of brutality that began when Cain killed Abel and grew worse when Lamech boasted of killing a man. In a sense, the writer presents the flood as the moment when the world’s violence finally comes back upon the people who committed it.',
           src: 'Westermann'
         },
-        meaning: 'One man, out of step with his entire generation, simply walks with God. Not perfect. Whole. The text never says Noah argued or preached or won anyone over. It says he walked. Sometimes faithfulness is just continuing in a direction after everyone around you has turned off it.',
+        meaning: 'Noah stands apart from his entire generation because he keeps walking with God. The writer does not call him perfect but whole, and never says that he argued, preached, or persuaded anyone. The writer says only that he <b>walked</b> with God. Sometimes faithfulness simply means that we keep going in the same direction after everyone around us has turned away.',
         lenses: {
-          theo: 'Righteousness here is not a scorecard. It is relational, a matter of walking with. And it is the remnant of one. The whole rescue that follows hangs on a single person who kept company with God when company was scarce.'
+          theo: 'The writer does not measure Noah’s righteousness by a tally of good deeds. Noah is righteous because of his relationship with God, because he walks with him. God’s whole rescue in the chapters that follow depends on this one man, who kept company with God when almost no one else did.'
         },
         addr: {
           mode: 'names',
-          text: 'You may be the one in your circle still walking a direction the others have abandoned, and from inside it can feel less like faithfulness and more like being wrong.'
+          text: 'You may be the one person in your circle who is still walking in a direction the others have abandoned, and from the inside, that can feel less like faithfulness and more like being wrong.'
         },
         ask: 'What are you still keeping faith with that almost everyone around you has let go of?'
       },
@@ -1242,18 +1242,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The ark instructions are precise, dimensions, decks, a door, pitch, and they track closely the flood stories Israel’s neighbors told. In the Mesopotamian versions, in Atrahasis and in Gilgamesh, a god warns one man to build a great boat and outlast a divine flood. Genesis takes the shared story and moves its center: the flood here is moral, not the whim of squabbling gods, and it arrives bound to a promise. The word “covenant” appears for the first time in the Bible right here, before the rain.',
+          text: 'God gives Noah precise instructions for the ark, down to its dimensions, its decks, its door, and the pitch that seals it, and these details closely follow the flood stories that Israel’s neighbors told. In the Mesopotamian versions, the poems of Atrahasis and Gilgamesh, a god warns one man to build a great boat so that he can survive a flood the gods have sent. The writer of Genesis takes this shared story and changes its center. In Genesis, God sends the flood because of human wickedness, not because quarrelling gods are annoyed, and he joins it to a promise. The word “covenant” appears for the first time in the Bible here, before any rain has fallen.',
           src: 'Walton · Smith'
         },
-        meaning: 'Before the water, a promise. God announces the judgment and the covenant in a single speech. The ark is not a clever escape, it is obedience built plank by plank, and the chapter ends not on a feeling but on a fact: Noah did everything God commanded. Faith, here, is carpentry.',
+        meaning: 'Before the water comes, God makes a promise. In a single speech he announces both the judgment and his <b>covenant</b> with Noah. Noah does not escape by being clever; he obeys, and he builds the ark one plank at a time. The writer ends the chapter not by describing how Noah felt but by stating what he did: Noah did everything God commanded him. In this chapter, faith looks a great deal like carpentry.',
         lenses: {
-          theo: 'Grace runs ahead of the flood. The covenant is spoken before a single drop falls, and it rests on God’s promise rather than on Noah’s worthiness. The rescue is announced first, then built. That order, promise before performance, is the shape of nearly every covenant that follows.'
+          theo: 'God offers his grace before the flood begins. He makes his covenant before a single drop falls, and he bases it on his own promise rather than on Noah’s worthiness. God announces the rescue first, and only then does Noah build the ark. That order, in which God promises before anyone performs, is the pattern of nearly every covenant God makes in the rest of the Bible.'
         },
         addr: {
           mode: 'names',
-          text: 'When everything feels like it is coming apart, the work in front of you is often unglamorous and slow: build the thing, plank by plank, before you can see why it matters.'
+          text: 'When everything around us seems to be coming apart, the work God gives us is often slow and unremarkable. We have to build the thing plank by plank, often before we can see why it matters.'
         },
-        ask: 'What is the plank-by-plank work in front of you right now, the thing simply to do before it makes sense?'
+        ask: 'What slow, practical work is in front of you right now, something you need to do before you can see why it matters?'
       }
     ]
   },
@@ -1370,7 +1370,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Read closely and two accounts show through each other here. One pair of every animal in one breath, seven pairs of the clean ones in the next; forty days in one line, a hundred and fifty in another. Source critics read this as two flood stories, the older Yahwist and the later Priestly, woven into a single thread.',
+          text: 'If we read this chapter closely, we can see two accounts woven through each other. In one place Noah brings the animals in pairs, and in another he brings seven pairs of every clean animal. One line says the flood lasted forty days, and another says the waters prevailed for a hundred and fifty. Source critics explain this by arguing that editors combined two flood stories, one from the older Yahwist and one from the later Priestly writer, into a single account.',
           src: 'Wellhausen · Friedman, Who Wrote the Bible?'
         }
       }
@@ -1481,19 +1481,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The closest parallel in all of Genesis sits here. In the Epic of Gilgamesh the flood hero sends birds out from his boat and offers a sacrifice the gods crowd around “like flies.” Genesis keeps the birds and the altar and strips out the hungry gods, leaving one God who resolves, never again.',
+          text: 'This passage has the closest parallel to another ancient text anywhere in Genesis. In the Epic of Gilgamesh, the hero of the flood sends birds out from his boat and then offers a sacrifice, and the gods, hungry after the flood, gather around it like flies. The writer of Genesis keeps the birds and the altar but leaves out the hungry gods. Instead there is one God, who smells the offering and resolves never to destroy the earth this way again.',
           src: 'The Epic of Gilgamesh · John Day'
         },
-        meaning: 'The whole flood turns on two words, <b>God remembered Noah</b>. Not that God had forgotten, but that the long water now bends from judgment back toward rescue. What comes up out of it is not a clean new world. It is the same earth with the same human heart in it, handed back anyway, under a promise never to drown it again.',
+        meaning: 'The whole flood story turns on the words <b>God remembered Noah</b>. The writer does not mean that God had forgotten him. The writer uses the phrase to mark the moment when God turns from judgment back toward rescue. When the earth comes up out of the water, God has not made a clean new world. He gives back the same earth, with the same human heart in it, and promises never to drown it again.',
         lenses: {
-          theo: 'The promise at the end is one-sided and clear-eyed. God reads the human heart as bent from its youth and chooses restraint anyway, not because the threat is gone but because patience will now carry what judgment used to. Mercy here is not a verdict that we improved. It is God deciding to bear a world that has not.',
-          arch: 'The deluge that washes the world back to water and then lifts it up again, dry, is one of the oldest shapes the imagination keeps. Eliade found it the world over as the cosmos sinking into the formless and being made a second time, the old order dissolved so a cleaner one can rise from the same flood. The dove sent out over the waters for somewhere to land is that hope in a single image, that something solid will surface to stand on. (The world dissolved to water and handed back, begun again.)'
+          theo: 'God makes this final promise on his own, and he makes it with his eyes open. He judges that the human heart has been bent toward evil from youth, and he chooses restraint anyway. He has not decided that the danger is gone. He has decided to bear with the world patiently where before he judged it. This mercy is not God’s verdict that we have improved. It is his decision to carry a world that has not.',
+          arch: 'Many peoples have told stories of a flood that returns the world to water, after which the land rises again, dry. The historian of religion Mircea Eliade found this pattern across the world’s myths: people imagined the world sinking back into formless water and then being made a second time, so that a cleaner order could rise from the same flood. When Noah sends out the dove to find a place to land, he acts out that same hope, that somewhere solid ground will appear to stand on.'
         },
         addr: {
           mode: 'names',
-          text: 'The flood is the part everyone remembers. The harder part is what comes after, the long wait in the ark while the water drops by inches, sending out a bird and getting it back, waiting seven more days, then seven more. You are often past the worst of a thing and still unable to step out of it, and that waiting, not the disaster, is what asks the most of you.'
+          text: 'Most people remember the flood itself. The harder part comes afterward, when Noah waits in the ark while the water drops a little at a time, sends out a bird and receives it back, and waits seven more days, then seven more. We are often past the worst of something and still unable to step out of it, and that waiting asks more of us than the disaster did.'
         },
-        ask: 'What in your life is past its worst but not yet solid enough to stand on, and how are you bearing the wait?'
+        ask: 'What in your life is past its worst but not yet steady enough to stand on, and how are you bearing the wait?'
       }
     ]
   },
@@ -1505,8 +1505,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 9,
     title: 'Noah’s covenant',
     unitLabel: 'Scene',
-    thread: 'The flood recedes. God binds himself to the whole earth with a one-sided promise, and the same human heart that filled the world with violence steps off the ark unchanged.',
-    closeEnd: 'The flood is over and the human heart is not. The story will gather, one more time, on a plain in the east.',
+    thread: 'After the flood, the waters go down and Noah’s family steps out of the ark onto a cleansed earth. In this chapter God makes a promise to the whole earth that asks nothing in return. Yet the people who walk out of the ark are no different at heart from the people the flood destroyed, and before the chapter ends Noah himself shows it.',
+    closeEnd: 'The flood is over, but the people who survived it have not changed. In the next two chapters their descendants spread out across the earth, and then gather once more on a plain in the east.',
     passages: [
       {
         label: 'One',
@@ -1534,18 +1534,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The blessing is a deliberate echo of Genesis 1, “be fruitful and multiply and fill the earth”, the very words spoken at creation. The flood was an un-creation, the waters of chaos let back in, and now the world is being remade. But the terms have shifted. Humans may now eat meat, which they could not in Eden, and one line is drawn around it: not the blood, because the blood is the life. This is the deep root of later kosher practice.',
+          text: 'When God blesses Noah’s family, he repeats the words he spoke at creation in Genesis 1: “be fruitful and multiply and fill the earth.” The writer saw the flood as creation running backward, with God letting the waters of chaos cover the land again, and here God begins the world a second time. Yet he changes the terms. In Eden the humans ate only plants, but now God allows them to eat meat, with one condition: they must not eat the blood, because the writer understood the blood to be the animal’s life. Jewish dietary law later built its rules about draining blood on this verse.',
           src: 'Smith · Walton'
         },
-        meaning: 'The world starts over with the same blessing it began with, but it is no longer Eden. Meat, the new fear between animals and people, these are concessions to a harder world. The fresh start is real, and it is not naive. It opens by admitting the new world will have blood in it.',
+        meaning: 'God starts the world over with the same blessing he gave it at the beginning, but he does not pretend it is Eden again. He allows people to eat meat, and he warns that animals will now fear them. These are allowances for a harder world, and God makes them knowingly. The fresh start is real, but God begins it by admitting that <b>blood</b> will be part of the new world.',
         lenses: {
-          theo: 'Grace hands the world back, but on honest terms. God works with the world as it now is, not as it was before. The re-creation does not pretend the fall never happened; it builds on the ground that is actually there.'
+          theo: 'Many readers see grace in this passage, but a grace that is honest about the world. God gives the earth back to people as it now is, not as it was before things went wrong. He does not act as though the trouble in Eden never happened. He builds the new world on the ground that is actually there.'
         },
         addr: {
           mode: 'names',
-          text: 'Second chances rarely set you back down in the garden. They hand you the same calling in a harder, bloodier world.'
+          text: 'When we are given a second chance, we rarely find ourselves back where we were before things went wrong. More often God hands us the same calling we had before, in a world that has become harder.'
         },
-        ask: 'Where have you been given a fresh start that isn’t a return to how things were, and are you grieving that or working with it?'
+        ask: 'Where have you been given a fresh start that is not a return to how things were? Are you grieving what you lost, or working with what you were given?'
       },
       {
         label: 'Two',
@@ -1569,18 +1569,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The image language here is the Priestly writers’ signature, the same word they used in Genesis 1, now carried into law. The Mesopotamian codes the exiles knew, Hammurabi and its kin, priced a life by rank: a noble’s death cost more than a commoner’s. Set against that, this line makes one measure for everyone. In Hebrew it is built as a tight mirror, blood and human folding back on human and blood, the penalty shaped to match the crime.',
+          text: 'The phrase “in the image of God” comes from the group of writers scholars call the Priestly source, the same writers who used it in Genesis 1. Here they carry it into law. The exiles who shaped this text knew the law codes of Mesopotamia, such as the code of Hammurabi, which set different penalties according to a victim’s rank, so that killing a noble cost more than killing a commoner. Against that background, this verse sets one standard for everyone. In Hebrew the writers built the sentence as a mirror, with the words for blood and for a human being repeated in reverse order, so that the shape of the sentence matches the punishment fitting the crime.',
           src: 'Middleton'
         },
-        meaning: 'Why does murder matter? The text does not say because it breaks a rule. It says because the one you killed looked like God. Every human carries that resemblance, the powerful and the powerless alike. The protection of a life is grounded in dignity, not in what the life can produce.',
+        meaning: 'Why is murder so serious? The writer does not answer that it breaks a rule. He answers that the person who was killed was made in God’s <b>image</b>. Every human being bears that likeness, the powerful and the powerless alike, so God protects each life because of its dignity, not because of what that person can produce.',
         lenses: {
-          theo: 'The image is universal here, stamped on everyone. This single verse is the seed of nearly every later claim about human dignity and human rights, and it cuts hard against every system that ranks some lives above others. If the worth is the image, no one outranks anyone.'
+          theo: 'Here God gives his image to every human being without exception. Many later thinkers have built their claims about human dignity and human rights on this verse, and it stands against every system that ranks some lives above others. If every person bears God’s image, no one can claim to be worth more than anyone else.'
         },
         addr: {
           mode: 'names',
-          text: 'You meet people every day whose worth you quietly rank by what they can do for you. The text says each one carries the image, the same as you.'
+          text: 'Most of us meet people every day whom we quietly rank by what they can do for us. This verse tells us that each of them bears God’s image, just as we do.'
         },
-        ask: 'Whose dignity have you been measuring by their usefulness?'
+        ask: 'Is there someone whose worth you have been measuring by how useful they are to you?'
       },
       {
         label: 'Three',
@@ -1616,18 +1616,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The covenant is made not only with Noah but with “every living creature”, the animals are party to it too, which is easy to miss and quietly radical. The sign is the rainbow, but the Hebrew word is simply “bow”, the war-bow. The picture is of God hanging up his weapon, its arc turned away from the earth. And the covenant is one-sided: it asks nothing of Noah. God binds himself, and the sign exists so that God will remember.',
+          text: 'God makes this covenant not only with Noah but with “every living creature,” so the animals are included too. Readers easily miss this, but it is a remarkable claim. The sign of the covenant is the rainbow, yet the Hebrew word is simply “bow,” the same word used for a warrior’s bow. The writer pictures God hanging up his weapon in the sky with its curve turned away from the earth. God also asks nothing of Noah in return. He binds only himself, and he says he will look at the bow so that he will remember his promise.',
           src: 'Westermann'
         },
-        meaning: 'This is the first covenant in the Bible, and it is pure gift. No conditions, no terms for people to keep. God simply promises and hangs up the bow. The sign in the sky is not there to remind you to behave; the text says it is there so God will remember his own promise. The whole relationship is held up from God’s side.',
+        meaning: 'This is the first covenant in the Bible, and God gives it freely. He sets no conditions and asks people to keep no terms. He simply makes a promise and hangs up his bow. According to the text, God placed the sign in the sky not to remind people to behave but so that he would remember his own promise. God alone carries the weight of this <b>covenant</b>.',
         lenses: {
-          theo: 'Grace that asks nothing back. A God who ties his own hands and points the weapon away. And notice the reach of it: the covenant is with all flesh, not only with people. The promise is as wide as the earth, and it rests entirely on the one who made it.'
+          theo: 'Here God shows a grace that asks nothing back. He ties his own hands and turns his weapon away from the earth. He also makes the promise to every living creature, not only to human beings, so his promise reaches as far as the earth itself, and he alone stands behind it.'
         },
         addr: {
           mode: 'names',
-          text: 'You may be carrying a relationship as if the whole thing depends on you keeping up your end. This covenant runs the other way, held from the other side.'
+          text: 'Some of us carry a relationship as if everything depended on our keeping up our end. In this covenant God carries the whole weight himself.'
         },
-        ask: 'Where are you straining to hold up something that was meant to be held from the other side?'
+        ask: 'Where are you straining to hold up something that God may have meant to hold up himself?'
       },
       {
         label: 'Four',
@@ -1663,19 +1663,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the chapter people skip, and the place where the worst misreading in the book has lived. For centuries the so-called “curse of Ham” was twisted to justify the enslavement of Black Africans. The text gives it no footing at all. The curse falls on Canaan, not Ham, and on no race, it is almost certainly an old story-behind-the-story explaining why Israel later subjugated the Canaanite peoples. There is nothing about skin color anywhere in it. The slavery reading is a monstrous later invention laid on top of the words. And underneath the controversy sits the quieter shock: the righteous man God saved gets drunk and is shamed in his own tent. To see a father uncovered was a grave dishonor in that world, a son standing over his father’s exposure and his loss of control. The Hebrew idiom for uncovering nakedness can elsewhere name a sexual act, so some read Ham’s offense as worse than a glance, which would help explain a curse this heavy, though the text stays deliberately veiled. What it shows plainly is the contrast: Ham exposes his father’s shame and spreads it, while Shem and Japheth back into the tent to cover him without looking.',
+          text: 'Many readers skip this passage, and others have badly misused it. For centuries, people who defended the slavery of Black Africans claimed that this passage placed a “curse of Ham” on them. The text gives them no support at all. Noah curses Canaan, not Ham, and he curses no race; the writer most likely included the story to explain why Israel later ruled over the Canaanite peoples. The writer says nothing about skin color. Later readers invented the slavery reading and forced it onto the words. Beneath that controversy lies a quieter shock: Noah, the righteous man God saved from the flood, gets drunk and is shamed in his own tent. In that culture, a son who looked on his father’s nakedness dishonored him gravely, because he saw his father exposed and out of control. Elsewhere in the Bible the Hebrew phrase for uncovering someone’s nakedness can describe a sexual act, so some readers think Ham did something worse than look, which would help explain why Noah’s curse is so severe. The writer, however, leaves the details unclear. What he does make plain is the contrast between the sons: Ham sees his father’s shame and tells others about it, while Shem and Japheth walk backward into the tent and cover their father without looking at him.',
           src: 'Westermann'
         },
-        meaning: 'Here is the quiet devastation under the flood story. God washed the whole earth, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and end up shamed in his own tent. The water cleaned the world. It did not clean the human heart. The very flaw the story blamed for the flood walks straight off the ark with him. You cannot drown your way to a better person.',
+        meaning: 'Under the flood story lies a sad discovery. God washed the whole earth clean, and the first thing the rescued, righteous man does is plant a vineyard, get drunk, and end up shamed in his own tent. The flood cleaned the world, but it did not change the human <b>heart</b>. The same flaw that the writer blamed for the flood came off the ark with Noah. No one can be made a better person simply by having the world around them washed.',
         lenses: {
-          theo: 'The flood was the most total fresh start imaginable, and at the level that matters it did not work, and the story is honest enough to say so. The trouble was never only out there in a wicked generation. It came through the ark in the heart of the best man aboard. That admission is what sets up everything after: a problem this deep will not be solved by washing the world. It will take something else.',
-          arch: 'The flood that dissolves the world back into the chaos-waters and lets it be remade is among the most widespread of all myths, a periodic washing-clean that many peoples imagined. But Genesis refuses the tidy version. The waters recede and the same fracture walks off the ark in the heart of the rescued man. The deepest thing the story says about renewal is that washing the world does not wash the one who survives it. (Eliade, on the deluge and cosmic renewal.)'
+          theo: 'The flood was the most complete fresh start anyone could imagine, and yet in the way that mattered most it failed, and the writer honestly says so. The trouble had never lain only with a wicked generation out in the world. Noah, the best man on the ark, carried it in his own heart. Many readers see this admission as preparation for the rest of the Bible: if the problem lies that deep, God will not solve it by washing the world. He will have to do something else.',
+          arch: 'Many ancient peoples told stories of a great flood in which the gods let the world dissolve back into the waters of chaos and then made it again, a periodic washing that renewed everything. The writer of Genesis refuses to tell the tidy version of that story. When the waters go down, the man God rescued brings the same flaw out of the ark in his own heart. The deepest thing the writer tells us about new beginnings is that when God washes the world, he does not thereby wash the person who survives it. (Eliade, on the flood and the renewal of the world.)'
         },
         addr: {
           mode: 'names',
-          text: 'You have tried to start clean before. A move, a breakup, a fresh resolution. And then you watched the very thing you were fleeing climb out of the boat right behind you. The point is not despair. It is that the fix you need runs deeper than a change of setting.'
+          text: 'Most of us have tried to start over at some point, by moving to a new place, ending a relationship, or making a firm resolution. And then we have found that the very thing we were running from came with us. The writer does not tell this story to make us despair. He tells it to show that we need a change deeper than a change of surroundings.'
         },
-        ask: 'What in yourself have you tried to escape by changing your circumstances, and found waiting for you on the other side?'
+        ask: 'Is there something in yourself that you tried to escape by changing your circumstances, only to find it waiting for you on the other side?'
       }
     ]
   },
@@ -1824,7 +1824,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is an ancient map of the known world, sorting every people the writers knew as one family descended from Noah. The names point at real places and powers, Egypt and Canaan, the cities of Nimrod, Babylon and Nineveh, which sets the stage for Babel in the next chapter.',
+          text: 'This chapter is an ancient map of the known world. The writers took every people they knew of and arranged them as one family descended from Noah’s three sons. The names refer to real places and powers, such as Egypt, Canaan, and the cities that Nimrod founded, including Babylon and Nineveh. By naming Babylon here, the writers prepare readers for the story of Babel in the next chapter.',
           src: 'Westermann · Walton'
         }
       }
@@ -1838,8 +1838,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 11,
     title: 'Babel',
     unitLabel: 'Scene',
-    thread: 'The opening movement closes where it began, at Babylon. Humanity gathers on one plain to build a name and a tower to the sky, and God scatters them, leaving the empire’s proudest city renamed for confusion.',
-    closeEnd: 'This is the end of the story of everyone. From here the camera narrows to one man, Abram, and a different kind of promise: not a name grasped, but a name given.',
+    thread: 'The first section of Genesis began with a creation story that answered the myths of Babylon, and it ends at Babylon too. In this chapter all of humanity gathers on one plain and sets out to build a city and a tower that reaches the sky, so that they can make a name for themselves. God scatters them across the earth, and the writer gives the empire’s proudest city a name that means “confusion.”',
+    closeEnd: 'Here the writer ends the story of all humanity. From the next chapter on, he follows one man, Abram, to whom God makes a different kind of promise. The builders of Babel tried to win a great name for themselves, but God offers to give Abram one.',
     passages: [
       {
         label: 'One',
@@ -1867,18 +1867,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Shinar” is Babylonia, and a tower with its top in the heavens is unmistakably a <fig>ziggurat</fig>, the stepped temple-towers of Mesopotamian cities, built of exactly the baked brick and bitumen the text names. Babylon’s own great ziggurat was called Etemenanki, “the house of the foundation of heaven and earth”. The exiles who shaped this story lived in the shadow of those towers, and “Babel” is simply the Hebrew name for Babylon. Notice the motive: a name, and a refusal to be scattered, which is the exact reverse of the command to fill the earth.',
+          text: '“Shinar” is the Bible’s name for Babylonia, and a tower “with its top in the heavens” would have made ancient readers think of a <fig>ziggurat</fig>, one of the stepped temple-towers that stood at the center of Mesopotamian cities. The Mesopotamians built them from baked brick and bitumen, exactly the materials the writer names. Babylon’s own great ziggurat was called Etemenanki, which means “the house of the foundation of heaven and earth.” The exiles who shaped this story lived in the shadow of such towers, and “Babel” is simply the Hebrew name for Babylon. The builders’ reasons are also worth noticing. They want to make a name for themselves and to avoid being scattered, which is the exact opposite of what God told Noah’s family to do when he commanded them to fill the earth.',
           src: 'Smith · Walton'
         },
-        meaning: 'The first empire’s project is to build up, gather in one place, and make a name, security and glory through height and concentration. The text does not draw it as cartoon villainy. It is ambition, the deeply human urge to be permanent, to be known, not to end up scattered and small. The trouble is what it reaches for, and why.',
+        meaning: 'The people of Babel set out to build upward, to stay gathered in one place, and to make a <b>name</b> for themselves, hoping to find safety and glory in height and in numbers. The writer does not draw them as cartoon villains. They act out of ambition, the very human wish to last, to be remembered, and not to end up scattered and forgotten. Their fault lies in what they reach for and in why they reach for it.',
         lenses: {
-          theo: 'Two ways to get a name run through the whole Bible: grasp one by building high, or receive one as a gift. Babel is the first way, the city organizing itself to secure its own glory as if no one above it gave names or kept people. The very next chapter answers it with the second way.'
+          theo: 'Throughout the Bible, people gain a name in one of two ways: they try to seize it by building high, or they receive it as a gift from God. The builders of Babel take the first way. They organize their city to secure their own glory, as though no one above them gave names to people or watched over them. In the very next chapter, God shows the second way when he promises Abram a great name.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the pull to build something tall enough that your name outlasts you, to secure yourself by your own achievement so you won’t be scattered or forgotten.'
+          text: 'Most of us know the urge to build something so great that our name will outlast us, and to make ourselves secure through our own achievements so that we will not be scattered or forgotten.'
         },
-        ask: 'What are you building mainly so that your name will last, and what is driving that, really?',
+        ask: 'Is there something you are building mainly so that your name will last? What is really driving you to build it?',
         figures: [
           {
             term: 'ziggurat',
@@ -1910,18 +1910,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The irony is deliberate and sharp. The tower’s top was meant to reach heaven, and the LORD has to come down to see it, the gap between the pretension and the reality played for a quiet, devastating laugh. “Come, let us go down” deliberately echoes the “let us make” of creation, the divine voice now turned toward undoing the project. And the danger God names, that nothing will be beyond them, reads less like jealousy than a sober verdict on unchecked, unified human power.',
+          text: 'The writer means the irony here to be sharp. The builders meant the top of their tower to reach heaven, yet the LORD has to come down even to see it, and the writer quietly laughs at the gap between what they claimed and what they actually built. When God says, “Come, let us go down,” the writer echoes God’s words at creation, “Let us make,” but now God speaks in order to undo a human project. And when God warns that nothing will be beyond them, he sounds less jealous than sober, as one who knows what united human power will do when nothing holds it back.',
           src: 'Westermann'
         },
-        meaning: 'God looks at a unity built on self-glory and judges it dangerous, not because height offends him, but because of what people unbound will do with it. There is a hidden mercy in the scattering. Sometimes the breaking-up of a project that was heading somewhere bad is not punishment. It is a brake.',
+        meaning: 'God looks at a people united in pursuit of their own glory and judges them dangerous. He does not object to the height of their tower; he objects to what people will do once nothing restrains them. When he scatters them, he also shows a hidden <b>mercy</b>. Sometimes, when God breaks up a project that was headed somewhere bad, he is not punishing the people involved but stopping them before they go further.',
         lenses: {
-          theo: 'The confusion is restraint, and arguably grace. The same God who set a limit on the human lifespan in the flood chapter now sets one on collective reach. He does not let the worst version of human power run all the way to its end. The limit is a kindness disguised as a defeat.'
+          theo: 'When God confuses their language, he restrains them, and many readers would say that he shows them grace. In the flood story God limited the length of a human life, and here he limits what humanity can achieve together. He does not allow human power at its worst to run all the way to its end. What looks to the builders like a defeat is in fact a kindness.'
         },
         addr: {
           mode: 'names',
-          text: 'Some unity you are part of, or some momentum you are building, can feel unstoppable, and the interruption you resent might be the thing saving you from where it was actually headed.'
+          text: 'We may belong to a group, or be pushing a plan forward, that feels unstoppable. When someone or something interrupts it, we may resent it, and yet the interruption may be saving us from where we were really headed.'
         },
-        ask: 'What stalled plan have you been treating as a setback that may have been a brake?'
+        ask: 'Is there a plan of yours that stalled, which you have treated as a setback but which may have kept you from going somewhere you should not have gone?'
       },
       {
         label: 'Three',
@@ -1941,19 +1941,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“Babel” puns on the Hebrew balal, “to confuse”, but Babel is just the Hebrew word for Babylon. So the closing line is a pointed joke at the empire’s expense: the city whose Babylonian name meant “gate of the god” is renamed, in Hebrew, “confusion”. The exiles took the proudest name in their world and turned it into babble. This is the final panel of the whole primeval history, and it lands squarely on Babylon, the place they were sitting as they wrote.',
+          text: 'The name “Babel” sounds like the Hebrew word balal, which means “to confuse,” but “Babel” is also simply the Hebrew word for Babylon. So the writer ends with a pointed joke at the empire’s expense. In the Babylonians’ own language, the name of their city meant “gate of the god,” and the exiles, writing in Hebrew, turned it into a name for confusion. In this way they took the proudest name in their world and made it mean babble. This is the last scene of the whole primeval history in Genesis 1–11, and the writers set it in Babylon, the very city where they lived as they wrote.',
           src: 'Smith'
         },
-        meaning: 'The opening movement of the Bible ends with humanity scattered, its great project abandoned, its proud city renamed for confusion. It is a bleak close, and for the exiles it was also a strange comfort: the empire that conquered you is, in God’s longer telling, just Babel, just confusion, not permanent, not the last word. The tower never gets finished. The name they reached for is the one thing they lose.',
+        meaning: 'The first section of the Bible ends with humanity scattered across the earth, its great project abandoned, and its proud city renamed for confusion. It is a bleak ending, but for the exiles it also offered a strange comfort. In the longer story God was telling, the empire that had conquered them was only Babel, a place of confusion, neither permanent nor the last word. The builders never finish their tower, and they lose the very <b>name</b> they were reaching for.',
         lenses: {
-          theo: 'The whole arc opened with creation quietly answering Babylon’s myths, and it closes by naming Babylon for what the exiles believed it truly was: impressive, unfinished, and not eternal. The God of this story is the one who outlasts empires. That is the hope folded inside the bleakness. The conquering city is not the end of the world.',
-          arch: 'The tower that storms heaven is one of the images humanity keeps retelling: the ascent that overreaches and is brought down, Babel and Icarus and Prometheus and every empire that called itself eternal. The pattern returns because the temptation does, the reach for a name and a permanence that belong to no one who builds in brick. Each age raises its tower and learns again that the height it grasped was never its to keep. (The overreaching ascent, brought back down to human size.)'
+          theo: 'The writers began Genesis with a creation story that answered Babylon’s myths, and they close this section by naming Babylon for what they believed it truly was: impressive, unfinished, and not eternal. The God of their story outlasts every empire. Within the bleak ending, they found hope: the city that had conquered them would not have the last word over the world.',
+          arch: 'People have told many stories of someone who tries to climb to heaven and is brought down for reaching too high. Babel is one, and so are the Greek stories of Icarus and Prometheus, and so is the history of every empire that has called itself eternal. People keep telling these stories because people keep feeling the same temptation, to win a name and a permanence that no human builder can secure. In every age, people raise a new tower and learn again that they could never keep the height they seized.'
         },
         addr: {
           mode: 'names',
-          text: 'Whatever empire or certainty looms over your life right now as though it were permanent, this story insists it has a shelf life. It is Babel. It does not get finished.'
+          text: 'Some power or certainty may stand over your life now as though it will last forever. This story insists that it will not. In the writer’s eyes, every such power is another Babel, and no one will ever finish building it.'
         },
-        ask: 'What looks permanent and unanswerable in your life that this story would quietly call temporary?'
+        ask: 'What in your life looks permanent and impossible to challenge, which this story would call temporary?'
       }
     ]
   },
@@ -1965,8 +1965,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 12,
     title: 'The call of Abram',
     unitLabel: 'Scene',
-    thread: 'At Babel humanity grasped at a name and was scattered. Now God does the reverse. He calls one man, promises to make his name great, and to bless through him all the families the world just lost.',
-    closeEnd: 'The promise is given, and already tested. What it costs, and whether Abram can trust it, will fill the chapters ahead.',
+    thread: 'At Babel, in Genesis 11, people tried to make a name for themselves, and God scattered them across the earth. In Genesis 12 God does the reverse. He calls one man, Abram, promises to make his name great himself, and promises to bless through him all the families of the earth that had been scattered.',
+    closeEnd: 'God has given Abram the promise, and before the chapter ends Abram has already put it at risk. The chapters that follow tell what the promise will cost him, and whether he can learn to trust the God who made it.',
     passages: [
       {
         label: 'One',
@@ -1990,19 +1990,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the hinge of the whole Bible. After eleven chapters whose subject is all humanity, the camera settles on one man and stays there. The flood had already shrunk the cast to a single family, Noah’s, but that story was still about the whole world, unmade and remade, with Noah only the thread it survived on. Here the narrowing is the point itself: from now on the story follows one family, and the particular takes over from the universal. The command is lech lecha, “go”, and the promise comes in three parts: a great nation, a great name, and blessing. Then the last line turns outward, all the families of the earth will be blessed through him, the same word, families, for the clans just scattered at Babel. And notice the reversal: where Babel’s builders said “let us make a name for ourselves,” here God says “I will make your name great.”',
+          text: 'Many readers see this chapter as the turning point of the whole Bible. For eleven chapters the writer has told the story of all humanity, and even the flood story, though it narrowed the cast to Noah’s family, was still about the whole world being unmade and remade. From here on the writer follows a single family, and he tells the rest of the story through it. God’s command to Abram is lech lecha in Hebrew, which means “go,” and God attaches a promise with three parts: a great nation, a great name, and blessing. In the last line God turns outward and says that all the families of the earth will be blessed through Abram, using the same word for families that the writer used in Genesis 10 for the peoples spread across the world. The writer also sets up a pointed contrast. The builders at Babel said, “let us make a name for ourselves,” but here God tells Abram, “I will make your name great.”',
           src: 'von Rad · Alter'
         },
-        meaning: 'Everything begins with a leaving. Abram is told to cut loose from country, people, and father’s house, the three things that told an ancient person who they were, and walk toward a land he cannot see, on nothing but a promise. Faith here is not agreeing to a doctrine. It is leaving on a word.',
+        meaning: 'Abram’s story begins when God tells him to leave. He must leave his country, his people, and his father’s house, the three things that told an ancient person who he was, and walk toward a land he has never seen with nothing to go on but God’s promise. For Abram, then, faith does not mean agreeing to a set of ideas. It means <b>leaving</b> because God has spoken.',
         lenses: {
-          theo: 'The call is pure initiative. Abram does nothing to earn it, and the blessing is not for him alone, he is blessed in order to be a blessing, a channel for the whole scattered world. The answer to Babel is not another flood or another scattering. It is one chosen man through whom everyone is meant to be reached.',
-          arch: 'This is the call that opens every hero’s road: leave the country, the kin, the father’s house, all that told you who you were, and walk out toward a destiny you cannot yet see. Storytellers in a hundred cultures begin the same way, with a summons that breaks the old life open. What recurs is the shape of beginning itself, the threshold crossed with nothing in hand but a promise. (Campbell, The Hero with a Thousand Faces.)'
+          theo: 'God makes the first move. Abram does nothing to earn the call, and God does not bless him for his own sake alone; he blesses Abram so that Abram can be a blessing to the whole scattered world. Jewish and Christian readers have long seen this as God’s answer to Babel. Instead of sending another flood or scattering the nations again, God chooses one man and means to reach everyone through him.',
+          arch: 'The scholar Joseph Campbell noticed that hero stories in many cultures begin in much the same way. A summons comes, and the hero must leave home, family, and everything familiar to set out toward a destiny he cannot yet see. Abram’s call has the same shape. He crosses the threshold with nothing in hand but a promise, and he cannot go back to the life he leaves behind.'
         },
         addr: {
           mode: 'names',
-          text: 'You know both the pull and the dread of a call that asks you to leave something settled for something you cannot yet see.'
+          text: 'Most of us have felt both the pull and the dread of a call to leave something settled for something we cannot yet see.'
         },
-        ask: 'What are you being asked to leave, and what would have to be true about the promise for you to actually go?'
+        ask: 'What do you sense you are being asked to leave? What would you need to believe about the one who made the promise before you could actually go?'
       },
       {
         label: 'Two',
@@ -2038,18 +2038,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: '“So Abram departed.” He is seventy-five. He reaches Canaan, and the text drops a quiet, loaded line: the Canaanites were already in the land. The promised land is full of other people from the first day. Promise and fact are in tension immediately. Abram answers by building altars at Shechem and Bethel, marking with worship a land he has been promised but does not own.',
+          text: 'The writer says simply, “So Abram departed,” and adds that he was seventy-five years old. When Abram reaches Canaan, the writer slips in a quiet line with a great deal riding on it: the Canaanites were already living in the land. From the first day, then, Abram finds the land God promised him full of other people, and he has to live with the distance between what God has said and what he can see. He responds by building altars at Shechem and near Bethel, marking with worship a land that God has promised him but that he does not own.',
           src: 'Westermann · Alter'
         },
-        meaning: 'He obeyed, and the reward was not arrival. It was a land that was not yet his, among people already there. The promise did not erase the difficulty; it sent him into it. And his response was to build altars, to stake worship in ground he held only by a word.',
+        meaning: 'Abram obeyed, but he did not arrive anywhere he could call his own. He found himself in a land that was not yet his, among people who were already there. God did not remove the difficulty when he made the promise; he led Abram into it. Abram responded by building <b>altars</b>, claiming the ground for worship when he held it only by God’s word.',
         lenses: {
-          theo: 'Faith lives in the gap between the promise and the having. Abram does not own a handful of this soil, and he builds altars on it anyway. That is what trust looks like before anything is fulfilled: worship in the middle of the unkept promise.'
+          theo: 'Abram lives in the gap between what God has promised and what he actually has. He does not own a handful of this soil, yet he builds altars on it anyway. This is what trust looks like before God has fulfilled anything: Abram worships while he is still waiting.'
         },
         addr: {
           mode: 'names',
-          text: 'You may be standing inside something you were sure you were led to, and finding it already occupied, harder and less yours than you expected.'
+          text: 'Some of us have followed what we were sure was God’s leading, only to find the place already occupied, and harder and less our own than we expected.'
         },
-        ask: 'Where did following lead you somewhere harder than you expected, and what would building an altar there look like?'
+        ask: 'Where has following God led you somewhere harder than you expected? What would it look like to build an altar there?'
       },
       {
         label: 'Three',
@@ -2101,18 +2101,18 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The promise is barely spoken before a famine drives Abram to Egypt and he panics. He tells Sarai to call herself his sister, afraid he will be killed for her. She is taken into Pharaoh’s house and Abram is enriched for it. God afflicts Pharaoh, who discovers the deceit and sends them away. It is a jarring story to set right after the call: the chosen man lies, endangers his wife, and nearly hands the mother of the promise to another man. The text does not excuse him.',
+          text: 'God has barely finished making his promise when a famine drives Abram down to Egypt, and there he panics. Afraid that the Egyptians will kill him to take his wife, he tells Sarai to say she is his sister. Pharaoh takes her into his house, and Abram grows rich from the arrangement. Then God strikes Pharaoh’s household with plagues, and Pharaoh discovers the deception and sends them away. Readers are often jarred to find this story placed right after the call. The man God has chosen lies, puts his wife in danger, and nearly hands the future mother of the promised child to another man, and the writer makes no excuse for him.',
           src: 'Alter'
         },
-        meaning: 'The promise has hardly left God’s mouth before the man carrying it almost wrecks it out of fear. And here is the strange grace: God protects the promise from Abram himself. The covenant does not rest on Abram being admirable. It survives his worst moment.',
+        meaning: 'God has hardly made the promise before Abram, out of fear, almost ruins it. Yet God protects the promise from Abram himself. God does not make his commitment depend on Abram behaving well, and he keeps it even through Abram’s worst moment. This is a strange and undeserved kind of <b>grace</b>.',
         lenses: {
-          theo: 'This early the Bible tells you what kind of grace this is. The promise is guarded even from the failures of the one who carries it. It rests on God’s faithfulness, not on Abram’s courage or character, which is the only reason it survives at all.'
+          theo: 'Very early in Abram’s story, the writer shows what kind of grace God offers. God guards his promise even against the failures of the man who carries it. Everything rests on God’s faithfulness rather than on Abram’s courage or character, and that is the only reason Abram does not lose the promise altogether.'
         },
         addr: {
           mode: 'names',
-          text: 'You can be genuinely called and still act out of fear in a way that endangers the very thing you were given. The promise was kept anyway. It did not depend on him being brave.'
+          text: 'A person can be truly called by God and still act out of fear in a way that endangers the very thing God gave them. God kept his promise to Abram anyway, even though Abram had not been brave.'
         },
-        ask: 'Where has fear made you protect yourself at someone else’s cost, and what would it mean to trust that what you’re guarding does not rest on you alone?'
+        ask: 'Where has fear led you to protect yourself at someone else’s cost? What would it mean to trust that what you are guarding does not depend on you alone?'
       }
     ]
   },
@@ -2205,7 +2205,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This quiet chapter sets up a disaster four chapters away. The narrator pauses to tell us the Jordan plain was lush “before the LORD destroyed Sodom and Gomorrah,” and that its people were already wicked, so Lot’s choice, made entirely by the eye, is visibly aimed at ruin, while Abram keeps living by a promise he cannot see. The detail that the land was “unable to support both of them” reflects the real strain of large herding clans competing for limited grazing and water in the Canaanite hill country.',
+          text: 'This quiet chapter prepares for a disaster that comes four chapters later. The writer stops to tell us that the Jordan plain was lush “before the LORD destroyed Sodom and Gomorrah,” and that the people of Sodom were already wicked. So when Lot chooses that plain because it looks good to him, readers can see that he is heading toward ruin, while Abram goes on living by a promise he cannot see. When the writer says the land “was unable to support both of them,” he is describing a real strain: large herding families in the hill country of Canaan had to compete for limited grazing land and water.',
           src: 'Alter · Westermann'
         }
       }
@@ -2324,7 +2324,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Chapter 14 sits oddly in the Abraham story. Its style, its archaic-sounding eastern kings, and its picture of Abram as a desert war-leader chasing armies with a private militia appear nowhere else in Genesis, and it reads like a separate old tradition pulled in here. Its strangest figure is Melchizedek, priest-king of Salem (an early name for Jerusalem), who serves God Most High, El Elyon, a Canaanite high-god title the story quietly identifies with the LORD. Centuries later this shadowy priest-king would be reread as the shadow of an eternal priesthood (Psalm 110, and the letter to the Hebrews), but here he is simply a local king who blesses Abram and receives a tenth.',
+          text: 'Chapter 14 does not fit easily with the rest of the Abraham story. Its style, its old-sounding list of eastern kings, and its picture of Abram as a war leader chasing armies with his own small force appear nowhere else in Genesis, and many scholars think an editor drew the chapter from a separate old tradition. Its strangest figure is Melchizedek, the priest-king of Salem, which was an early name for Jerusalem. He serves God Most High, in Hebrew El Elyon, a title the Canaanites used for their own high god, and the writer quietly identifies that God with the LORD. Centuries later, the writer of Psalm 110 and then the author of the letter to the Hebrews saw in this shadowy priest-king a picture of an eternal priesthood. In Genesis, though, he is simply a local king who blesses Abram and receives a tenth of the plunder.',
           src: 'Westermann · Day'
         }
       }
@@ -2338,8 +2338,8 @@ export const GENESIS: Reading[] = [
     chapterIndex: 15,
     title: 'The covenant',
     unitLabel: 'Scene',
-    thread: 'The promise was made three chapters ago, and Abram is still childless and still landless. Here God answers the two doubts head on: a sky full of stars for the children, and a covenant cut in the dark for the land.',
-    closeEnd: 'God has fastened the whole promise to his own life, sworn it while Abram slept. What that costs, and how badly the waiting will be handled, is still ahead.',
+    thread: 'God first made his promise to Abram in chapter 12, and three chapters later Abram still has no child and no land of his own. In Genesis 15 God answers both of Abram’s doubts directly. For the children, he shows Abram a sky full of stars, and for the land, he makes a covenant with him in the dark.',
+    closeEnd: 'God has bound his own life to the promise, swearing it while Abram slept. The chapters ahead tell what that costs, and how badly Abram and Sarai handle the waiting.',
     passages: [
       {
         label: 'One',
@@ -2375,19 +2375,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Verse 6 is one of the most argued-over sentences in the Bible. Abram, old and childless, is taken out under the night sky, told his descendants will outnumber the stars, and he believes, and that trust is “credited to him as righteousness.” Centuries later Paul built an entire theology of faith on this one line (Romans 4, Galatians 3); James pushed back on that reading (James 2); and the Reformation was fought partly over what “credited as righteousness” means. In its own setting the line is simpler and stranger than any of those fights: a relationship is set right not by anything Abram achieves, but by his willingness to trust a promise that every visible fact contradicts. The “shield” and “reward” of verse 1 still carry a faint echo of the battle in the chapter before.',
+          text: 'Verse 6 is one of the most debated sentences in the Bible. God takes Abram, old and childless, out under the night sky and tells him his descendants will outnumber the stars. Abram believes him, and God credits that belief “to him as righteousness.” Centuries later Paul built much of his teaching on faith on this one line, in Romans 4 and Galatians 3; James argued against a one-sided reading of it in James 2; and during the Reformation Protestants and Catholics disagreed sharply over what “credited as righteousness” means. In its own setting the line is simpler and stranger than any of those debates. God sets things right between himself and Abram not because of anything Abram achieves, but because Abram is willing to trust a promise that every visible fact contradicts. When God calls himself Abram’s “shield” and “reward” in verse 1, he may also be recalling the battle of the previous chapter.',
           src: 'von Rad · Alter'
         },
-        meaning: 'Abram does the most honest thing in the chapter first: he argues. He tells God the promise is empty as long as he has no child. God does not rebuke the complaint, he answers it, walks him outside, and hands him the stars. And Abram believes, not because the evidence changed, he is still old and Sarai still barren, but because he decides to trust the one making the promise. That decision, the text says, is what sets him right.',
+        meaning: 'Abram starts with the most honest thing anyone does in the chapter: he argues. He tells God that the promise means nothing as long as he has no child. God does not rebuke him for complaining. Instead he answers him, takes him outside, and shows him the stars. Abram believes, not because the evidence has changed, since he is still old and Sarai still cannot bear children, but because he decides to <b>trust</b> the one who is making the promise. According to the writer, that decision is what sets Abram right with God.',
         lenses: {
-          theo: 'This is the seedbed of grace. Abram is counted righteous before he has done one thing to deserve it, on the strength of trust alone. The relationship is set right by God’s promise and Abram’s yes to it, not by Abram’s record. Everything Paul will later say about faith is already folded into this single line.',
-          arch: 'The night sky is the oldest screen humans have cast their longing and their fate upon. Led out under it and told to count the uncountable, the childless man is asked to read his own future in the stars, to credit a promise the daylight facts deny. The image returns wherever someone is asked to trust what cannot yet be seen against everything that can. (Believing the promise against the evidence of the eyes.)'
+          theo: 'Christian readers have often found in this verse the beginning of the teaching on grace. God counts Abram righteous before Abram has done anything to deserve it, because Abram trusts him. God sets the relationship right through his own promise and Abram’s yes to it, not through Abram’s record. Paul would later find in this single line nearly everything he wanted to say about faith.',
+          arch: 'People in many ancient cultures looked to the night sky to learn their fate, and Babylonian astrologers in particular studied the stars for signs of what was coming. Here God leads a childless man out under that same sky and tells him to count what cannot be counted. Instead of reading his fate in the stars, Abram must decide whether to trust a promise that everything he can see by daylight seems to deny. Readers ever since have found in this scene a picture of anyone who has to trust what they cannot yet see, against all the evidence they can.'
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to be handed a promise that every fact in front of you flatly contradicts, and to have to decide whether to trust it anyway.'
+          text: 'Most of us know what it is to receive a promise that every fact in front of us contradicts, and to have to decide whether to trust it anyway.'
         },
-        ask: 'Where are you being asked to trust something you can see no evidence for yet, and what would actually believing it change about how you live now?'
+        ask: 'Where are you being asked to trust something you can see no evidence for yet? If you truly believed it, what would you do differently now?'
       },
       {
         label: 'Two',
@@ -2443,19 +2443,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'When Abram asks how he can be sure of the land, God answers not with proof but with a ritual older than Israel. Animals are cut in half and laid in two facing rows, and the parties to an agreement would walk between the pieces, as if to say, “let me be torn apart like these if I break my word.” This is where the Hebrew idiom comes from: a covenant is literally “cut.” But here the rite breaks its own rules. Abram falls into a deep, dreadful sleep, and only God, as a smoking firepot and a blazing torch, passes between the pieces. The oath is one-sided. God alone binds himself, on pain of being torn apart, while Abram only watches. Woven through it is a dark prophecy, four hundred years of slavery in a foreign land before the promise lands: the exile and the exodus seen in advance.',
+          text: 'When Abram asks how he can be sure that the land will be his, God answers him with a ritual older than Israel instead of with proof. In such a ritual, people cut animals in half and laid the pieces in two facing rows, and the parties to an agreement walked between them, as if to say, “let me be torn apart like these animals if I break my word.” The prophet Jeremiah describes the same ceremony, and it explains a Hebrew idiom: the Israelites spoke of “cutting” a covenant. In this scene, though, God breaks the usual pattern. Abram falls into a deep and dreadful sleep, and God alone, appearing as a smoking firepot and a blazing torch, passes between the pieces. God binds himself to the oath, while Abram only watches. During the ritual God also gives Abram a dark prophecy: his descendants will be enslaved in a foreign land for four hundred years before they receive what God has promised. Later readers heard in this a forecast of the slavery in Egypt and the exodus.',
           src: 'von Rad · Westermann · Alter'
         },
-        meaning: 'Abram asks for certainty, and what he gets is a covenant where he carries none of the risk. He sleeps; God walks the bloody path alone. The promise is fastened entirely to God’s own life, not to Abram’s performance, and that is the only reason it can survive everything Abram and his children are about to do to it. And the certainty comes wrapped in darkness: the road to the promise runs straight through four centuries of slavery. Being sure of the end is not the same as being spared the middle.',
+        meaning: 'Abram asks God for certainty, and God gives him a covenant in which Abram carries none of the risk. Abram sleeps while God walks the bloody path alone. God binds the promise entirely to his own life rather than to how well Abram performs, and that is why Abram’s family can still hope in it after everything they are about to do. Yet God gives this certainty in the dark, and he tells Abram plainly that the way to the promise leads through four centuries of slavery. Abram can now be sure of how the story will end, but God does not spare his descendants the <b>suffering</b> in the middle.',
         lenses: {
-          theo: 'A covenant where only one party passes through the pieces is a one-sided oath. God stakes his own existence on keeping a promise to a man who is asleep. This is grace at its most extreme, a commitment that does not hang on the other side holding up its end, which is exactly why it cannot finally fail.',
-          arch: 'The deep sleep and the “great terror and darkness” are the threshold the daylight self cannot cross on its own. The binding oath is sworn in the dark, by a fire that moves untended, the human passive while the sacred acts. The oldest stories know that what holds a life most deeply is sealed at the dread edge of the holy, below the level of waking choice. (Otto, on the holy as terror and fascination.)'
+          theo: 'When only one party passes through the pieces, the covenant becomes a one-sided oath. God stakes his own existence on keeping a promise to a man who is asleep. Many readers see here grace at its most extreme: God makes a commitment that does not depend on the other side keeping its part, and for that reason nothing Abram does can finally undo it.',
+          arch: 'The scholar Rudolf Otto described the holy as something that both terrifies people and draws them in, and this scene fits his description closely. Abram falls into a deep sleep, and “great terror and darkness” come over him. While he lies helpless, God moves between the pieces as fire, with no human hand guiding it. The writer sets the most binding moment of Abram’s life at night, at the frightening edge of the holy, where Abram can do nothing but receive what God does.'
         },
         addr: {
           mode: 'names',
-          text: 'You may have wanted a guarantee and been handed instead a darkness to walk into, with the word that someone has bound themselves to you on the far side of it. The oath did not rest on Abram. He slept through the part that mattered most, and it held.'
+          text: 'Some of us have wanted a guarantee and received instead a darkness to walk into, along with the assurance that someone has bound himself to us on the far side of it. Abram did nothing to hold the oath together. He slept through the part that mattered most, and God kept his word.'
         },
-        ask: 'Where did you ask for certainty and get only a promise, and whose keeping of it would you have to trust to walk into the dark?'
+        ask: 'Where have you asked for certainty and received only a promise? Whose faithfulness would you have to trust in order to walk into the dark?'
       }
     ]
   },
@@ -2463,8 +2463,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-16', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 16', chapterIndex: 16,
     title: 'Hagar', unitLabel: 'Scene',
-    thread: 'God swore the covenant in chapter 15, and still there is no child. So Sarai stops waiting and arranges one herself, the way the whole world arranges things, and a powerless woman pays for it.',
-    closeEnd: 'The promised son is still not here, and the first attempt to force him has wounded everyone it touched. The covenant will be sealed in the body before it is ever fulfilled in a child.',
+    thread: 'God swore his covenant to Abram in chapter 15, and still Abram and Sarai have no child. So Sarai stops waiting and arranges for a child herself, in a way that people of her world commonly did, and Hagar, a slave woman with no power to refuse, pays the price.',
+    closeEnd: 'Abram and Sarai still do not have the son God promised, and their first attempt to force his arrival has wounded everyone involved. In the next chapter God will seal the covenant in the bodies of Abram and his household through circumcision, long before he gives them the child.',
     passages: [
       {
         label: 'One', ref: '16:1–6', kind: 'scene', form: 'prose', title: 'The scheme',
@@ -2475,14 +2475,14 @@ export const GENESIS: Reading[] = [
           { n: 5, text: 'Then Sarai said to Abram, “May the wrong done to me be upon you! I delivered my servant into your arms, and ever since she saw that she was pregnant, she has treated me with contempt. May the LORD judge between you and me.”' },
           { n: 6, text: '“Here,” said Abram, “your servant is in your hands. Do whatever you want with her.” Then Sarai treated Hagar so harshly that she fled from her.' }
         ],
-        ground: { kind: 'historical', text: 'Using a slave as a surrogate was a recognized legal arrangement in the ancient Near East, spelled out in the law codes of the time. The text records the custom without endorsing the cruelty that follows. It is the same pattern as the lie in Egypt: the promise stalls, impatience takes over, and the people with the least power get hurt.', src: 'Speiser · Westermann' },
-        meaning: 'The covenant was sworn one chapter ago, and already the waiting is unbearable, so they reach for the ordinary human fix. Sarai’s plan is legal, reasonable, and a disaster. The promise grasped instead of trusted turns three people against each other, and the one with no power in the arrangement is the one driven into the desert.',
+        ground: { kind: 'historical', text: 'In the ancient Near East a childless wife could legally give her slave to her husband as a surrogate, and law codes of the time, such as the Code of Hammurabi, deal with similar arrangements. The writer records the custom without approving the cruelty that follows. He also repeats the pattern of the lie in Egypt: when God seems slow to keep his promise, the people involved grow impatient, and those with the least power get hurt.', src: 'Speiser · Westermann' },
+        meaning: 'Only one chapter after God swore the covenant, Abram and Sarai find the waiting unbearable, so they reach for the ordinary human solution. Sarai’s plan is legal and reasonable, and it ends in disaster. Because they grasp at the promise instead of <b>trusting</b> God to keep it, the three of them turn against one another, and Sarai treats Hagar, who had no say in the arrangement, so harshly that Hagar flees into the desert.',
         lenses: {
-          theo: 'The promise does not need to be helped along by a scheme, and every time someone tries, it costs. Grace keeps its own clock, and the attempt to force its hand here produces not the son of the promise but a wound that will run for generations.',
-          arch: 'The impatience that cannot bear the gap between a promise and its keeping, and grabs to close it by force, is among the oldest ways the thing most wanted is sabotaged. Hurry the harvest and you trample the field. (Forcing the outcome you were asked to wait for.)'
+          theo: 'God does not need anyone to help his promise along with a scheme, and whenever someone in Genesis tries, people get hurt. God keeps his own timetable. When Abram and Sarai try to force his hand, they produce not the son of the promise but a wound that their descendants will carry for generations.',
+          arch: 'People have always found it hard to bear the gap between a promise and its fulfillment. Again and again, someone who cannot wait grabs at the thing they most want and ruins it in the process, like a farmer who tramples his own field trying to hurry the harvest. Here Sarai and Abram do exactly that.'
         },
-        addr: { mode: 'names', text: 'You know the pull to force a thing you were told to wait for, and the way the shortcut tends to hurt whoever is standing closest with the least say.' },
-        ask: 'Where are you reaching for control because the waiting has become unbearable, and who pays for the shortcut?'
+        addr: { mode: 'names', text: 'Most of us know the pull to force something we were told to wait for. We also know that when we take the shortcut, the person who gets hurt is often the one standing closest to us with the least say.' },
+        ask: 'Where are you reaching for control because you can no longer bear to wait? Who will pay for the shortcut?'
       },
       {
         label: 'Two', ref: '16:7–16', kind: 'scene', form: 'prose', title: 'The God who sees',
@@ -2494,14 +2494,14 @@ export const GENESIS: Reading[] = [
           { n: 13, text: 'So Hagar gave this name to the LORD who had spoken to her: “You are the God who sees me,” for she said, “Here I have seen the One who sees me!”' },
           { n: 14, text: 'Therefore the well was called Beer-lahai-roi. It is located between Kadesh and Bered.' }
         ],
-        ground: { kind: 'historical', text: 'This is the first time in the Bible anyone gives God a name, and it is not a patriarch who does it. It is a pregnant, runaway, foreign slave woman, alone in the desert. The promise of descendants too many to count, language used until now only for Abram, is spoken over her son.', src: 'Trible · Westermann' },
-        meaning: 'God goes after the one who was thrown away, not the one who holds the promise. He finds Hagar in the wilderness, calls her by name, and hears her misery. The instruction to return is hard, almost unbearable, but she does not go back the same. She goes back having been seen by God when no one else saw her at all, and she, the slave, is the one who gets to name him.',
+        ground: { kind: 'historical', text: 'Hagar is the first person in the Bible to give God a name, and she is not a patriarch but a pregnant, runaway, foreign slave woman, alone in the desert. The angel also promises her that her descendants will be too many to count, words that until now God had spoken only to Abram.', src: 'Trible · Westermann' },
+        meaning: 'God goes looking for the woman everyone else has thrown away, rather than for the people who hold the promise. He finds Hagar in the wilderness, calls her by name, and hears her misery. He tells her to go back, which is a hard command, but she does not return the same. She goes back knowing that God <b>saw</b> her when no one else did, and she, a slave, is the one who gives God a name.',
         lenses: {
-          theo: 'The God of this story is not only the God of the chosen line. He is the God who sees the discarded, hears the powerless, and meets them where they ran to. The covenant has a center, but its God keeps showing up at the margins.',
-          arch: 'The wilderness, the place stripped of every familiar support, is where the old stories set the meeting that changes everything. Hagar, a slave with nowhere left to run, is the first person in the Bible to give God a name, and she does it in the desert she fled to. What recurs is the pattern that you often meet what truly sees you only after you have run out of everywhere else. (Found in the place you fled to.)'
+          theo: 'In this story God is not only the God of Abram’s chosen family. He sees the people others discard, hears the powerless, and meets them in the places they have run to. God has made his covenant with one family, but he keeps appearing to those on its edges.',
+          arch: 'Many old stories set their life-changing meetings in the wilderness, where a person has lost every familiar support. Hagar, a slave with nowhere left to run, names God in the very desert she fled to. Readers have recognized in her a common human experience: often we meet the one who truly sees us only after we have run out of every other place to go.'
         },
-        addr: { mode: 'names', text: 'You may know what it is to be the one overlooked in someone else’s arrangement, and to be seen, really seen, only after you had run as far as you could. She was seen. In the one place she thought she was most alone, she was the one who got to name God.' },
-        ask: 'Where do you most need to be seen, and what would change if you trusted that you already have been?'
+        addr: { mode: 'names', text: 'Some of us know what it is to be overlooked in someone else’s plans, and to be truly seen only after we had run as far as we could. Hagar was seen. In the place where she thought she was most alone, she was the one who gave God a name.' },
+        ask: 'Where do you most need to be seen? What would change if you trusted that God has already seen you?'
       }
     ]
   },
@@ -2525,7 +2525,7 @@ export const GENESIS: Reading[] = [
           { n: 19, text: 'But God replied, “Your wife Sarah will indeed bear you a son, and you are to name him Isaac. I will establish My covenant with him as an everlasting covenant for his descendants after him.' },
           { n: 23, text: 'On that very day Abraham took his son Ishmael and all those born in his household or purchased with his money—every male among the members of Abraham’s household—and he circumcised them, just as God had told him.' }
         ],
-        ground: { kind: 'historical', text: 'This is the priestly counterpart to chapter 15’s covenant: the same promise sealed a second time, in a different voice, now with a sign cut into the body. Abram becomes Abraham and Sarai becomes Sarah, new names for a remade identity. Circumcision becomes the mark that says whose you are, and it mattered most much later, in exile, when a people with no land and no temple still carried the covenant on their bodies. Notice too that Abraham laughs at the promise here, one chapter before Sarah does; the son’s name, Isaac, means “he laughs.”', src: 'Friedman · Smith' }
+        ground: { kind: 'historical', text: 'Scholars attribute this chapter to the Priestly writer, and they read it as his version of the covenant that an older writer described in chapter 15. God makes the same promise to Abram a second time, and now he gives a sign that every man in the family will carry in his own body. God also renames the couple: Abram becomes Abraham and Sarai becomes Sarah, as a mark of who they now are. Israelites came to treat circumcision as the sign of whose people they were, and they held to it most closely centuries later, in exile, when they had no land and no temple left. Abraham also laughs at the promise in this chapter, one chapter before Sarah does, and the son’s name, Isaac, means “he laughs.”', src: 'Friedman · Smith' }
       }
     ]
   },
@@ -2533,8 +2533,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-18', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 18', chapterIndex: 18,
     title: 'The visitors', unitLabel: 'Scene',
-    thread: 'The covenant has a sign now and the son has a name. Here the promise finally gets a deadline, and Sarah laughs at it, and then Abraham turns and argues with God to spare a city.',
-    closeEnd: 'Two strangers walk on toward Sodom, and the question Abraham pressed, whether the Judge of all the earth will do right, is about to be answered in fire.',
+    thread: 'In chapter 17 God gave Abraham a sign of the covenant and told him the name of the son he would have. Now three visitors come to Abraham’s tent, and God tells him the son will be born within a year. Sarah overhears and laughs at the idea, and later in the chapter Abraham stands before God and argues for the lives of the people of Sodom.',
+    closeEnd: 'The two strangers walk on toward Sodom. Abraham has asked whether the Judge of all the earth will do what is right, and in the next chapter God answers him with fire.',
     passages: [
       {
         label: 'One', ref: '18:1–15', kind: 'scene', form: 'prose', title: 'Sarah laughs',
@@ -2548,14 +2548,14 @@ export const GENESIS: Reading[] = [
           { n: 14, text: 'Is anything too difficult for the LORD? At the appointed time I will return to you—in about a year—and Sarah will have a son.”' },
           { n: 15, text: 'But Sarah was afraid, so she denied it and said, “I did not laugh.” “No,” replied the LORD, “but you did laugh.”' }
         ],
-        ground: { kind: 'setting', text: 'The scene runs on the iron law of desert hospitality: a stranger at your tent must be fed and protected, and Abraham’s frantic generosity is exactly what the code demanded. The promise that has hung in the air for chapters finally gets a date, by this time next year. The son’s name, Isaac, means “he laughs,” and nearly everyone in these chapters laughs at the promise before it arrives.', src: 'Alter · Westermann' },
-        meaning: 'The promise has been spoken so many times, to a couple now far too old, that the only honest response left is a tired laugh behind the tent flap. And God does not punish the laugh. He names it, gently, and asks the question the whole book turns on: is anything too hard for the LORD? The son will be called Laughter, as if to keep the disbelief and the joy in the same word forever.',
+        ground: { kind: 'setting', text: 'Everything in this scene depends on the rules of desert hospitality. A family who found a stranger at their tent was bound to feed him and protect him, and Abraham hurries to do everything those rules required. God has promised Abraham a son for several chapters now, and here, for the first time, he names a date: by this time next year. The son’s name, Isaac, means “he laughs,” and nearly everyone in these chapters laughs at God’s promise before the boy is born.', src: 'Alter · Westermann' },
+        meaning: 'God has promised Abraham and Sarah a son so many times, and they are now so old, that when Sarah hears it again, all she can do is laugh quietly to herself inside the tent. God does not punish her for laughing. He gently points it out, and then he asks the question on which the whole book turns: <b>is anything too hard for the LORD?</b> When the son is born, his parents will call him Laughter, a name that holds both their old disbelief and their new joy.',
         lenses: {
-          theo: 'God meets the laugh of exhausted hope not with anger but with a date. The promise does not depend on Sarah believing it; it depends on the One who made it, and it will arrive on his calendar, carrying her laughter in its name.',
-          arch: 'The laugh is the sound of the part of a person that has quietly given up, hearing the old hope named out loud again. To be caught in that disbelief and not condemned for it is its own kind of mercy, and the child, when he comes, will carry the laugh as his name. (The disbelief that hope has to pass through.)'
+          theo: 'God answers Sarah’s tired laugh not with anger but with a date. He does not make the birth depend on whether Sarah believes him. He makes it depend on himself, and he will give her the son at the time he has set, with her own laughter in the boy’s name.',
+          arch: 'Many of us know what it is to give up quietly on a hope, and then to hear someone speak of it again as if it were still alive. Sarah laughs as a person in that position laughs. God catches her in her disbelief, but he does not condemn her for it, and when her son is born, she will carry the memory of that laugh in his name.'
         },
-        addr: { mode: 'names', text: 'You know the tired, private laugh at a hope you stopped letting yourself believe, and maybe the fear of being caught still wanting it.' },
-        ask: 'What promise have you quietly laughed off because the waiting wore you out, and what if it were still coming?'
+        addr: { mode: 'names', text: 'You may know the tired, private laugh you give at a hope you stopped allowing yourself to believe in, and the fear of being caught still wanting it.' },
+        ask: 'Is there a hope you quietly laughed off because you grew tired of waiting? What would you do if you learned it was still coming?'
       },
       {
         label: 'Two', ref: '18:16–33', kind: 'scene', form: 'prose', title: 'Abraham bargains',
@@ -2570,14 +2570,14 @@ export const GENESIS: Reading[] = [
           { n: 32, text: 'Finally, Abraham said, “May the Lord not be angry, but let me speak once more. Suppose ten are found there?” And He answered, “On account of the ten, I will not destroy it.”' },
           { n: 33, text: 'When the LORD had finished speaking with Abraham, He departed, and Abraham returned home.' }
         ],
-        ground: { kind: 'historical', text: 'Abraham haggles with God like a man bargaining in a market, and God lets him, all the way down from fifty to ten. The argument assumes something radical: that the fate of a city is a real question of justice God can be held to, and that a human being may press him on it.', src: 'von Rad · Brueggemann' },
-        meaning: 'A man stands in front of God and argues, on behalf of strangers, that mercy should outweigh judgment, and God does not strike him down for it. He welcomes the bargaining. The same book that praised Abram’s silent trust now honors his loud objection, because both are ways of taking God seriously. Abraham pleads for a wicked city, and the floor keeps dropping, because the question he asks, will the Judge of all the earth do right, is one God seems glad to be asked.',
+        ground: { kind: 'historical', text: 'Abraham bargains with God the way a man would bargain in a market, and God lets him lower the number from fifty righteous people to ten. Abraham bargains on a bold assumption: that whether God destroys a city is a real question of justice, that God can be held to justice, and that a human being may press him about it.', src: 'von Rad · Brueggemann' },
+        meaning: 'Abraham stands in front of God and argues, on behalf of strangers, that God should let mercy outweigh judgment, and God does not strike him down for it. He welcomes the argument. Earlier the writer praised Abram for trusting God in silence, and now he honors Abraham for objecting out loud, because both are ways of taking God seriously. Abraham pleads for a wicked city, and he keeps lowering the number, because he has asked a question God seems glad to hear: <b>will the Judge of all the earth do right?</b>',
         lenses: {
-          theo: 'Intercession is treated here as something God invites, not endures. To argue with God for mercy on others is not irreverence; it is one of the truest things a person can do, and the book stages it as a kind of friendship.',
-          arch: 'To stand before overwhelming power and plead for the undeserving, refusing to let might be the last word, is a role the tradition keeps casting and recasting, Abraham here, Moses at Sinai, Job before the storm. It is conscience grown large enough to argue with its own God. (Pleading for mercy against the logic of judgment.)'
+          theo: 'The writer presents prayer for others as something God invites rather than something he merely puts up with. A person who argues with God for mercy on someone else is not being irreverent; he is doing one of the truest things a person can do, and the writer presents it as a kind of friendship between Abraham and God.',
+          arch: 'Again and again the biblical writers tell of a person who stands before overwhelming power and pleads for people who do not deserve mercy, refusing to let force have the last word. Abraham does it here, Moses does it at Mount Sinai after the people worship the golden calf, and Job does it, in his own way, when he demands an answer from God. In each case a person’s conscience grows bold enough to argue with God himself.'
         },
-        addr: { mode: 'claims', text: 'You may know the difference between accepting a verdict and daring to argue it, and how much more it asks of you to stand up for people who cannot stand up for themselves.' },
-        ask: 'Where could you press for mercy on behalf of someone who has none coming, and what stops you from making the case?'
+        addr: { mode: 'claims', text: 'You may know the difference between accepting a verdict and daring to argue against it, and how much more it asks of you to stand up for people who cannot stand up for themselves.' },
+        ask: 'Is there someone with no claim on mercy for whom you could still ask it? What stops you from making the case?'
       }
     ]
   },
@@ -2585,8 +2585,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-19', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 19', chapterIndex: 19,
     title: 'Sodom', unitLabel: 'Scene',
-    thread: 'Abraham bargained God down to ten righteous people. The story now goes down into the city to count, and what it finds is the exact opposite of the hospitality Abraham showed the same three visitors.',
-    closeEnd: 'The fire was real, and so was the injustice it answered. What the fire was not about is the thing this chapter is most often made to say.',
+    thread: 'In chapter 18 Abraham persuaded God to spare Sodom if he found even ten righteous people there. Now two of the visitors go down into the city, and the men of Sodom treat them in exactly the opposite way from the way Abraham treated them at his tent.',
+    closeEnd: 'God’s fire was real, and so was the injustice he sent it to punish. But readers have often made this chapter say something the writer never meant, as the note on its common misreading explains.',
     passages: [
       {
         label: 'One', ref: '19:1–11', kind: 'scene', form: 'prose', title: 'The city at the door',
@@ -2600,15 +2600,15 @@ export const GENESIS: Reading[] = [
           { n: 9, text: '“Get out of the way!” they replied. And they declared, “This one came here as a foreigner, and he is already acting like a judge! Now we will treat you worse than them.” And they pressed in on Lot and moved in to break down the door.' },
           { n: 11, text: 'And they struck the men at the entrance, young and old, with blindness, so that they wearied themselves trying to find the door.' }
         ],
-        ground: { kind: 'historical', text: 'The chapter is built as the dark mirror of the one before it. Abraham met three strangers with frantic generosity; the men of Sodom meet two strangers with a mob at the door demanding to violate them. In the ancient world, protecting the vulnerable traveler was close to sacred, and assault on a guest was its absolute violation. Lot’s own offer of his daughters is monstrous, and the text reports it without a word of approval; it shows a man whose sense of honor has rotted along with his city.', src: 'Westermann · Alter' },
-        misreading: { named: 'Sodom was destroyed for homosexuality, and the story is God’s verdict on gay people.', why: 'The narrative stages a mob attempting gang rape, an act of violent domination set as the opposite of the hospitality Abraham just showed. When the Bible itself later names Sodom’s sin, it points elsewhere: Ezekiel says Sodom was arrogant, overfed, and unconcerned for the poor and needy. The chapter judges cruelty, injustice, and the violation of the vulnerable. Reading it as a verdict on whom a person loves both misses the text and turns it into the very harm to the vulnerable that the text condemns.' },
-        meaning: 'It is worth being plain, because this is one of the most misread chapters in the Bible. The sin the story stages is violence and the violation of the helpless, a whole city moving as one to assault strangers who came under the protection of a roof. The threatened act is rape, which is about domination, not desire. The measure the chapter applies is the one Abraham passed and Sodom failed: how the powerful treat the powerless stranger at the gate.',
+        ground: { kind: 'historical', text: 'The writer built this chapter as a dark mirror of the one before it. Abraham met three strangers with eager generosity, but the men of Sodom meet two strangers by surrounding the house and demanding to rape them. In the ancient world people treated the protection of a traveler as close to a sacred duty, and they regarded an assault on a guest as the worst violation of it. Lot’s offer of his own daughters to the mob is monstrous, and the writer reports it without a word of approval. He shows us a man whose sense of honor has rotted along with his city.', src: 'Westermann · Alter' },
+        misreading: { named: 'God destroyed Sodom for homosexuality, and the story is his verdict on gay people.', why: 'The writer describes a mob attempting gang rape, an act of violent domination, and he sets it against the hospitality Abraham has just shown. When later biblical writers name the sin of Sodom, they point elsewhere: the prophet Ezekiel says the people of Sodom were proud, overfed, and unconcerned for the poor and needy. The writer of Genesis condemns cruelty, injustice, and the abuse of the vulnerable. Readers who turn the chapter into a verdict on whom a person loves miss what the writer said, and they end up using his words to harm vulnerable people, the very thing he condemns.' },
+        meaning: 'Because readers so often misread this chapter, it is worth stating plainly what happens in it. The sin the writer describes is violence against the helpless: the men of a whole city gather to assault strangers who have come under the protection of Lot’s roof. What they threaten is rape, which is an act of domination, not of desire. The writer judges Sodom by the standard Abraham met and Sodom failed, namely <b>how the powerful treat the powerless stranger</b> at their gate.',
         lenses: {
-          theo: 'The judgment falls on a city that had made cruelty to outsiders its ordinary way of life. The fire is terrible, and what it answers is a settled, communal injustice, not a private identity.',
-          arch: 'Hospitality to the stranger was among the most sacred duties of the ancient world, and its violation among the gravest crimes, the same horror the Greeks told in their tales of guests abused. The walled city that turns on the ones at its gate, that destroys what it will not welcome, is the recurring image of a people closed hard against the outside. (The city that devours what it should welcome.)'
+          theo: 'God judges a city whose people had made cruelty to outsiders their ordinary way of life. The fire he sends is terrible, but he sends it to answer a settled, shared injustice, not anyone’s private identity.',
+          arch: 'Ancient peoples counted hospitality to strangers among their most sacred duties and its violation among their gravest crimes. The Romans told a story with the same horror, the tale of Baucis and Philemon, in which two gods visit a town in disguise, every household but one turns them away, and the gods flood the town. In stories like these, the people of a city who turn on the travelers at their gate show that they have closed themselves against everyone outside.'
         },
-        addr: { mode: 'names', text: 'You have felt the difference between a place that opens to the stranger and a place that closes against them, and maybe the pull of the crowd that wants to make the outsider pay.' },
-        ask: 'Where do you meet the outsider with the door open, and where with the mob, and which city are you building?'
+        addr: { mode: 'names', text: 'You have felt the difference between a place whose people welcome the stranger and a place whose people shut him out, and perhaps you have also felt the pull of a crowd that wants to make an outsider pay.' },
+        ask: 'Where do you meet outsiders with an open door, and where do you join the crowd against them? Which kind of city are you helping to build?'
       },
       {
         label: 'Two', ref: '19:15–29', kind: 'scene', form: 'prose', title: 'Don’t look back',
@@ -2621,14 +2621,14 @@ export const GENESIS: Reading[] = [
           { n: 26, text: 'But Lot’s wife looked back, and she became a pillar of salt.' },
           { n: 29, text: 'So when God destroyed the cities of the plain, He remembered Abraham, and He brought Lot out of the catastrophe that destroyed the cities where he had lived.' }
         ],
-        ground: { kind: 'historical', text: 'The destruction reads like the strange, lifeless landscape around the Dead Sea, a place of sulfur, salt, and tar pits, and the pillar of salt is the kind of story told to explain the salt formations that still stand there. The chapter even says the rescue had nothing to do with Lot’s merit: God remembered Abraham. The disturbing coda that follows, Lot’s daughters and the origin of Moab and Ammon, is a pointed origin story for two of Israel’s rival neighbors.', src: 'Alter · Westermann' },
-        meaning: 'Even the rescue is not about the one rescued. Lot is dragged out by the hand because God remembered Abraham, the man who stood on the ridge and bargained for the city. The bargain held: there were not even ten righteous, and Sodom fell. But the one connection to a praying friend was enough to pull a flawed family out by force. And Lot’s wife, looking back at the only world she knew, becomes a monument to the cost of being unable to leave what is already lost.',
+        ground: { kind: 'historical', text: 'The writer’s description of the destruction matches the strange, lifeless country around the Dead Sea, with its sulfur, salt, and tar pits, and people told the story of the pillar of salt to explain the salt formations that still stand there. The writer also says plainly that God did not rescue Lot for Lot’s own sake; God remembered Abraham. In the disturbing scene that follows, Lot’s daughters bear sons by their father, and through it Israelites told the origin of Moab and Ammon, two neighboring peoples who were often their rivals.', src: 'Alter · Westermann' },
+        meaning: 'Lot does nothing to earn his rescue. The angels drag him out by the hand because God remembered Abraham, the man who stood on the ridge and bargained for the city. God kept the terms of that bargain: he did not find even ten righteous people, and Sodom fell. But because one man had prayed for him, God pulled Lot’s flawed family out by force. Lot’s wife looks back at the only world she has known, and she becomes a monument to <b>the cost of being unable to leave</b> what is already lost.',
         lenses: {
-          theo: 'Grace here runs through relationship. Lot is saved not because he earned it but because someone interceded for him. The chapter quietly answers Abraham’s bargaining: the ten were not found, and yet the pleading was not wasted. It reached the one household it could.',
-          arch: 'The forbidden backward glance is one of the oldest and most haunting images there is, told again in Orpheus turning to look at Eurydice and losing her at the threshold. To be told not to look back and to look anyway is the pull toward the thing you cannot stop loving even as it destroys you, and it can fix you in place. (Orpheus and Lot’s wife, the look that costs everything.)'
+          theo: 'God saves Lot through his relationship with Abraham. Lot does not earn his rescue; someone else prays for him. In this way God answers Abraham’s bargaining after all. He did not find ten righteous people, yet Abraham did not plead in vain, because his prayer reached the one household it could.',
+          arch: 'Many peoples have told stories of someone forbidden to look back who looks anyway. The best known outside the Bible is the Greek story of Orpheus, who went down to the land of the dead to bring back his wife Eurydice and lost her forever because he turned to look at her before they reached the upper world. In both stories the person who looks back cannot stop loving something already lost, and the look costs everything.'
         },
-        addr: { mode: 'names', text: 'You know the backward look, the inability to stop turning toward something already gone, and how it can freeze you where you stand. He was pulled out by the hand. Sometimes you are saved not by your own strength but because someone refused to stop pleading for you.' },
-        ask: 'What are you still looking back at that you cannot afford to keep facing, and who has a hand out to pull you forward?'
+        addr: { mode: 'names', text: 'You may know what it is to keep turning back toward something already gone, and how that looking can freeze you where you stand. The angels pulled Lot out by the hand. Sometimes we are saved not by our own strength but because someone refused to stop praying for us.' },
+        ask: 'What are you still looking back at that you can no longer afford to keep facing? Who has been holding out a hand to pull you forward?'
       }
     ]
   },
@@ -2651,7 +2651,7 @@ export const GENESIS: Reading[] = [
           { n: 14, text: 'So Abimelech brought sheep and cattle, menservants and maidservants, and he gave them to Abraham and restored his wife Sarah to him.' },
           { n: 17, text: 'Then Abraham prayed to God, and God healed Abimelech and his wife and his maidservants, so that they could again bear children—' }
         ],
-        ground: { kind: 'historical', text: 'This is the third time a patriarch passes his wife off as his sister to a foreign king, after Genesis 12 and before Genesis 26. Three versions of one story is strong evidence that the traditions behind Genesis circulated in variant forms the editors kept side by side rather than smoothing into one. The sharpest detail here is that Abimelech, the pagan king, behaves more honorably than Abraham, the man of the promise, and God still calls Abraham a prophet.', src: 'Friedman · Westermann' }
+        ground: { kind: 'historical', text: 'This is the second time Abraham passes his wife off as his sister to a foreign king, after chapter 12, and in chapter 26 Isaac will do the same with Rebekah. Scholars take these three versions of one story as strong evidence that the traditions behind Genesis circulated in different forms, and that the editors kept the versions side by side rather than merging them. The sharpest detail in this version is that Abimelech, the foreign king, behaves more honorably than Abraham, the man God chose, and yet God still calls Abraham a prophet.', src: 'Friedman · Westermann' }
       }
     ]
   },
@@ -2659,8 +2659,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-21', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 21', chapterIndex: 21,
     title: 'Isaac born', unitLabel: 'Scene',
-    thread: 'The promise finally arrives, a son named Laughter, and on the same page the cost of the old shortcut comes due: Hagar and her boy are sent into the desert a second time.',
-    closeEnd: 'The son of the promise is here, and the son of the scheme is spared in the wilderness. What the promise will yet ask of Abraham, it has not asked. That comes next.',
+    thread: 'After twenty-five years of waiting, Sarah gives birth to the son God promised, and she names him Isaac, which means Laughter. But on the same page Abraham and Sarah pay for the shortcut they took in chapter 16, when Sarah gave her slave Hagar to Abraham to bear a child for her: now they send Hagar and her son Ishmael into the desert.',
+    closeEnd: 'Isaac, the son God promised, has been born, and God has saved Ishmael, the son of Sarah’s scheme, in the wilderness. God has not yet asked anything of Abraham concerning Isaac, but in the next chapter he will.',
     passages: [
       {
         label: 'One', ref: '21:1–7', kind: 'scene', form: 'prose', title: 'Laughter',
@@ -2671,14 +2671,14 @@ export const GENESIS: Reading[] = [
           { n: 6, text: 'Then Sarah said, “God has made me laugh, and everyone who hears of this will laugh with me.”' },
           { n: 7, text: 'She added, “Who would have told Abraham that Sarah would nurse children? Yet I have borne him a son in his old age.”' }
         ],
-        ground: { kind: 'historical', text: 'Isaac means “he laughs.” Across these chapters the name gathers up every laugh aimed at the promise: Abraham’s in chapter 17, Sarah’s behind the tent in chapter 18, and now Sarah’s again, only this time it is joy instead of disbelief. The same word held the doubt and now holds the delight.', src: 'Alter' },
-        meaning: 'The promise that was sworn, signed, dated, and laughed at finally arrives, and it arrives as a baby and a laugh. Sarah’s bitter laugh from behind the tent flap comes back transformed: God has brought me laughter. The thing held against every impossibility for twenty-five years is here, ordinary and astonishing, nursing at an old woman’s breast.',
+        ground: { kind: 'historical', text: 'Isaac means “he laughs.” Over these chapters the writer gathers into the name every laugh anyone aimed at God’s promise: Abraham’s in chapter 17, Sarah’s behind the tent in chapter 18, and now Sarah’s once more, though this time she laughs for joy instead of disbelief. The same word that once held her doubt now holds her delight.', src: 'Alter' },
+        meaning: 'God swore the promise, sealed it with a sign, named a date, and bore Abraham’s and Sarah’s laughter, and now he keeps it in the form of a baby. Sarah, who once laughed bitterly behind the tent, now says that God has brought her laughter. For twenty-five years she and Abraham held on to God’s word against every impossibility, and now their son is here, <b>ordinary and astonishing</b>, nursing at an old woman’s breast.',
         lenses: {
-          theo: 'The promise kept does not erase the long wait, it redeems it. The years of barrenness and doubt are not deleted; they are gathered into a joy that knows exactly what it cost to arrive. Grace fulfilled still carries the memory of grace delayed.',
-          arch: 'The child long despaired of, arriving after the hope has curdled into a tired laugh, is a pattern the book will tell again and again, Rebekah, Rachel, Hannah, on to Elizabeth far down the line. The new life comes, in these stories, only on the far side of giving up the demand to force it. (The promised child, born past hope.)'
+          theo: 'When God finally keeps his promise, he does not erase the long wait; he redeems it. Sarah does not forget her years of barrenness and doubt. Instead, those years become part of her joy, and she knows exactly what it cost to reach this day. Even after God has given what he promised, Sarah remembers how long he delayed.',
+          arch: 'The biblical writers tell this story again and again: a woman who has long despaired of having a child gives birth after she has stopped hoping. Rebekah, Rachel, and Hannah all bear sons this way, and much later, in the Gospel of Luke, so does Elizabeth, the mother of John the Baptist. In each of these stories God gives the child at a point when no one can pretend to have brought it about.'
         },
-        addr: { mode: 'names', text: 'You know what it is to want something so long that you laughed it off to protect yourself, and what it would be to have it arrive anyway, late, real, and yours.' },
-        ask: 'What long-deferred hope would you barely let yourself name, and what would receiving it ask you to feel?'
+        addr: { mode: 'names', text: 'You may know what it is to want something for so long that you laughed it off to protect yourself, and you can imagine what it would be to receive it anyway, late, real, and yours.' },
+        ask: 'Is there a long-deferred hope you barely let yourself name? What would you have to let yourself feel if it came?'
       },
       {
         label: 'Two', ref: '21:8–21', kind: 'scene', form: 'prose', title: 'Cast out',
@@ -2694,14 +2694,14 @@ export const GENESIS: Reading[] = [
           { n: 19, text: 'Then God opened her eyes, and she saw a well of water. So she went and filled the skin with water and gave the boy a drink.' },
           { n: 20, text: 'And God was with the boy, and he grew up and settled in the wilderness and became a great archer.' }
         ],
-        ground: { kind: 'historical', text: 'This is Hagar’s second exile, and it is harder than the first. Last time she ran; this time she is sent, with a child and a single skin of water, into a desert where she expects to bury her son. The text does not soften Abraham’s act or Sarah’s demand. It simply records that God hears the boy and does not let him die.', src: 'Trible · Westermann' },
-        meaning: 'The arrival of the promised son and the casting out of the other son happen on the same page, and the book refuses to pretend the second is clean. A child is sent toward death by thirst so an inheritance can stay whole. And again, as in chapter 16, the God of the covenant turns toward the discarded ones: he hears the boy, opens the mother’s eyes to water already there, and keeps a promise to a child who was never the chosen one. The chosen line has a shadow, and God does not abandon the shadow.',
+        ground: { kind: 'historical', text: 'This is Hagar’s second exile, and it is harder than her first. In chapter 16 she ran away; now Abraham sends her away, with her son and a single skin of water, into a desert where she expects to watch her son die. The writer does not soften what Abraham did or what Sarah demanded. He simply records that God heard the boy and did not let him die.', src: 'Trible · Westermann' },
+        meaning: 'Isaac’s birth and Ishmael’s expulsion happen on the same page, and the writer does not pretend that the expulsion was blameless. Abraham sends a child toward death by thirst so that Isaac’s inheritance can stay whole. And once again, as in chapter 16, the God of the covenant turns toward the people others have thrown away. He hears the boy, he opens Hagar’s eyes to a well that was already there, and he makes a promise to a child he did not choose to carry the covenant. God chose Isaac’s line, but he <b>does not abandon</b> the people outside it.',
         lenses: {
-          theo: 'Election in this book is never the same as God’s care running out for everyone else. Isaac carries the covenant, but God hears Ishmael cry, saves him, and promises him a future too. The center is chosen; the margin is not forsaken.',
-          arch: 'The one cast out to keep the chosen story clean does not vanish from it. Ishmael is heard in the wilderness and made a nation of his own, as Esau will be, the book refusing to let the rejected son be erased. What you exile to protect the inheritance remains, in the story and on the conscience. (The cast-out son the book will not forget.)'
+          theo: 'In Genesis, God’s choosing of one person never means that he stops caring for everyone else. Isaac carries the covenant, but God hears Ishmael cry, saves him, and promises him a future as well. God chooses a center, but he does not forsake the people at the margins.',
+          arch: 'In Genesis the son whom a family casts out does not disappear from the story. God hears Ishmael in the wilderness and makes him a nation of his own, and later he will do the same for Esau, so the writer never lets the rejected son be erased. Whatever a family drives out to protect its inheritance stays with them, both in their story and on their conscience.'
         },
-        addr: { mode: 'names', text: 'You may know the uncomfortable side of getting what you longed for, the someone or something pushed out of the frame so the picture could stay clean. God heard the boy. The one cast out to the edge of the story was not outside the reach of being heard.' },
-        ask: 'Who or what got pushed to the margins so your own story could hold together, and what would it mean to believe they were still heard?'
+        addr: { mode: 'names', text: 'You may know the uncomfortable side of getting what you longed for, when someone or something had to be pushed out of the picture so the rest could stay neat. God heard the boy. Hagar and Ishmael were pushed to the edge of the story, but they were not beyond God’s hearing.' },
+        ask: 'Who or what got pushed to the margins so that your own life could hold together? What would it mean to believe that God still heard them?'
       }
     ]
   },
@@ -2709,8 +2709,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-22', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 22', chapterIndex: 22,
     title: 'The binding of Isaac', unitLabel: 'Scene',
-    thread: 'The son took twenty-five years to arrive. In the next breath God asks Abraham to give him back, on an altar, by his own hand. This is the chapter the whole movement has been walking toward.',
-    closeEnd: 'A ram dies instead of a boy, and the promise is sworn again. But Abraham and God never speak again in the book, and Sarah is dead by the next chapter. The story does not tell you how to feel about a God who would ask. It shows you a father who went, and a knife that stopped.',
+    thread: 'Abraham and Sarah waited twenty-five years for their son Isaac. Now God tells Abraham to give the boy back, as a sacrifice on an altar, by his own hand. The whole story of Abraham has been leading to this chapter.',
+    closeEnd: 'Abraham sacrifices a ram instead of his son, and God swears his promise once more. But Abraham and God never speak to each other again in the book, and Sarah dies in the next chapter. The writer does not tell us how to feel about a God who would ask such a thing. He shows us a father who went, and a knife that God stopped.',
     passages: [
       {
         label: 'One', ref: '22:1–8', kind: 'scene', form: 'prose', title: 'Take your son',
@@ -2723,14 +2723,14 @@ export const GENESIS: Reading[] = [
           { n: 7, text: 'Then Isaac said to his father Abraham, “My father!” “Here I am, my son,” he replied. “The fire and the wood are here,” said Isaac, “but where is the lamb for the burnt offering?”' },
           { n: 8, text: 'Abraham answered, “God Himself will provide the lamb for the burnt offering, my son.” And the two walked on together.' }
         ],
-        ground: { kind: 'historical', text: 'The command is monstrous by the book’s own standards. Child sacrifice is something the Bible elsewhere condemns with horror, and God has just spent chapters insisting Isaac is the one through whom everything comes. The Hebrew piles on the knife: your son, your only son, whom you love. And the man who argued God down over Sodom, who haggled for strangers, says nothing. He gets up early and goes, and the narrator gives us not one word of his inner life across a three-day walk.', src: 'von Rad · Alter · Spiegel' },
-        meaning: 'This is the chapter the whole movement has climbed toward, and it refuses to be comfortable. The line that breaks you is the small one, repeated twice: the two of them went on together. A father walks his son to an altar, the boy carrying the wood, and they talk. There is no clean lesson here. There is a command no one should obey, a silence where a protest should be, and a question from a child, where is the lamb, that the father cannot answer straight.',
+        ground: { kind: 'historical', text: 'By the Bible’s own standards the command is monstrous. Other biblical writers condemn child sacrifice with horror, and God has spent chapters insisting that everything he promised will come through Isaac. In Hebrew God piles up the words like blows: your son, your only son, whom you love. And Abraham, the man who argued with God over Sodom and bargained for strangers, says nothing. He gets up early and goes, and across the three days of the journey the writer tells us nothing of what he thought or felt.', src: 'von Rad · Alter · Spiegel' },
+        meaning: 'Everything in the story of Abraham has been leading to this chapter, and the writer will not let it be comfortable. The line that hurts most is a small one, which he repeats twice: <b>the two of them went on together</b>. A father walks his son to an altar while the boy carries the wood, and they talk. The writer offers no clean lesson. He gives us a command no one should obey, a silence where we expect a protest, and a child’s question, “Where is the lamb?”, that his father cannot answer directly.',
         lenses: {
-          theo: 'Readers have fought over this forever. Some hear the supreme act of faith, trust extended past the edge of sense. Some hear the story that ends child sacrifice, the ram replacing the son once and for all. Some cannot get past the horror of a God who would ask, or a father who would go. The book holds all of it and resolves none of it, and that refusal is part of its honesty.',
-          arch: 'The asking-back of the beloved child touches the oldest terror in religion, that the god who gave may demand the gift returned. The ancient world was full of firstborns offered on altars; this story walks to the very edge of that horror and then stops the hand, a ram in the thicket instead. What recurs is both the dread and its interruption. (Levenson, The Death and Resurrection of the Beloved Son.)'
+          theo: 'Readers have argued over this chapter for as long as anyone has read it. Some see in it the greatest act of faith, a trust that goes past the edge of reason. Some see the moment when God ended child sacrifice, giving a ram in place of the son once and for all. Others cannot get past the horror of a God who would ask, or of a father who would go. The writer leaves all of these readings open and settles none of them, and that is part of his honesty.',
+          arch: 'God’s command touches the oldest fear in religion, that the god who gave a gift might demand it back. Some peoples of the ancient Near East did sacrifice children, and here the writer takes Abraham to the very edge of that horror before God stops his hand and provides a ram in the thicket. The scholar Jon Levenson has shown how often the biblical writers return to this pattern, in which a father gives up a beloved son for lost and then receives him back.'
         },
-        addr: { mode: 'names', text: 'You may know the dread of the thing you love most being the thing at risk, and the silence that falls when there is no good answer to give the person walking beside you.' },
-        ask: 'Where have you walked toward something unbearable in silence, and what did you say to the people beside you who did not know?'
+        addr: { mode: 'names', text: 'You may know the dread of seeing the thing you love most put at risk, and the silence that falls when you have no good answer for the person walking beside you.' },
+        ask: 'Have you ever walked toward something unbearable in silence? What did you say to the people beside you who did not know?'
       },
       {
         label: 'Two', ref: '22:9–19', kind: 'scene', form: 'prose', title: 'The knife',
@@ -2743,14 +2743,14 @@ export const GENESIS: Reading[] = [
           { n: 14, text: 'And Abraham called that place The LORD Will Provide. So to this day it is said, “On the mountain of the LORD it will be provided.”' },
           { n: 19, text: 'Abraham went back to his servants, and they got up and set out together for Beersheba. And Abraham settled in Beersheba.' }
         ],
-        ground: { kind: 'historical', text: 'The knife is raised, and a voice stops it, and a ram is caught in the thicket. Many read the whole episode as the moment Israel’s God breaks with the surrounding practice of sacrificing children: the animal replaces the son, and never again. Notice what the text says and does not say at the end. Abraham returns to his servants. Isaac is not mentioned coming down the mountain with him. The two who walked up together are not said to walk down together.', src: 'Spiegel · Levenson · Alter' },
-        meaning: 'The hand stops. A ram dies instead of a boy, the place is named The LORD Will Provide, and the promise is sworn one more time, stars and sand. And still the story will not let you exhale all the way. Abraham passes the test, but something is spent. He and God never speak again in the book. He comes down the mountain alone in the text. Sarah dies at the start of the next chapter, and the old readers, unable to bear the gap, told stories that she died of the news. The promise survives. The cost is left unmeasured.',
+        ground: { kind: 'historical', text: 'Abraham raises the knife, God’s voice stops him, and Abraham finds a ram caught in a thicket. Many readers take this as the moment when Israel’s God breaks with the surrounding practice of child sacrifice, accepting an animal in place of the son and never asking for a child again. Look closely, though, at how the writer ends the scene. He says that Abraham returned to his servants, but he does not mention Isaac coming down the mountain with him. The writer never says that the two who walked up together walked down together.', src: 'Spiegel · Levenson · Alter' },
+        meaning: 'God stops Abraham’s hand. Abraham sacrifices a ram instead of his son, names the place The LORD Will Provide, and hears God swear the promise once more, of descendants like the stars and the sand. Even so, the writer will not let us relax entirely. Abraham passes the test, but something in him is spent. He and God never speak again in the book, and the writer describes him coming down the mountain alone. Sarah dies at the start of the next chapter, and the ancient rabbis, unable to bear the gap, told stories that she died when she heard what had happened. Abraham’s family survives, but <b>the writer never measures the cost</b>.',
         lenses: {
-          theo: 'If there is good news here it is the ram: that God stops the hand, that the thing demanded is not finally taken, that provision arrives at the last second from outside. But the book does not hand you that comfort cleanly. It makes you walk all the way up the mountain first, and it does not undo what the walk cost.',
-          arch: 'To go to the very edge of losing the irreplaceable thing, and to have it handed back, is not the same as never having faced the loss. You come down the mountain changed, and not everything that climbed it comes back down with you. The descent that returns what it nearly took is one of the deepest patterns of initiation. (What the mountain keeps.)'
+          theo: 'If there is good news in this chapter, it is the ram. God stops Abraham’s hand, he does not finally take what he demanded, and at the last moment he provides a sacrifice from outside. But the writer does not hand us that comfort cleanly. He makes us walk all the way up the mountain first, and he does not undo what the walk cost Abraham.',
+          arch: 'A person who comes to the very edge of losing something irreplaceable, and then has it handed back, is not the same as a person who never faced the loss. Many traditions tell of this kind of ordeal, in which someone goes up a mountain or down into darkness and returns changed. Abraham comes down the mountain a different man, and he does not bring back everything he took up with him.'
         },
-        addr: { mode: 'names', text: 'You may know the strange aftermath of a dread lifted at the last moment, the relief that does not quite cancel what the fear already took from you. The hand was stopped. Whatever it cost, the boy came down off the mountain alive.' },
-        ask: 'What have you been asked to hold so loosely that you might lose it, and what did the holding cost you, even when it was given back?'
+        addr: { mode: 'names', text: 'You may know the strange aftermath of a fear lifted at the last moment, when your relief does not quite cancel what the fear already took from you. God stopped Abraham’s hand, and whatever the walk cost him, his son lived.' },
+        ask: 'Have you been asked to hold something so loosely that you might lose it? What did that cost you, even if you were given it back?'
       }
     ]
   },
@@ -2771,7 +2771,7 @@ export const GENESIS: Reading[] = [
           { n: 19, text: 'After this, Abraham buried his wife Sarah in the cave of the field at Machpelah near Mamre (that is, Hebron) in the land of Canaan.' },
           { n: 20, text: 'So the field and its cave were deeded by the Hittites to Abraham as a burial site.' }
         ],
-        ground: { kind: 'historical', text: 'Abraham buys a cave at Machpelah from Ephron the Hittite to bury Sarah, and the long, formal haggling over the price is exactly how property changed hands in the ancient Near East, witnesses at the city gate and all. The quiet point is the chapter’s heart: the man promised the whole land dies owning none of it except a grave. The first piece of the promise he can actually hold is a tomb.', src: 'Sarna · Westermann' }
+        ground: { kind: 'historical', text: 'Abraham buys a cave at Machpelah from Ephron the Hittite so that he can bury Sarah, and the long, formal haggling over the price is exactly how people transferred property in the ancient Near East, with witnesses gathered at the city gate. At the center of the chapter the writer makes a quiet point: God promised Abraham the whole land, yet Abraham dies owning nothing in it but a grave. The first piece of the promised land he can actually hold is a tomb.', src: 'Sarna · Westermann' }
       }
     ]
   },
@@ -2792,7 +2792,7 @@ export const GENESIS: Reading[] = [
           { n: 19, text: 'After she had given him a drink, she said, “I will also draw water for your camels, until they have had enough to drink.”' },
           { n: 67, text: 'And Isaac brought her into the tent of his mother Sarah and took Rebekah as his wife. And Isaac loved her and was comforted after his mother’s death.' }
         ],
-        ground: { kind: 'historical', text: 'This is the longest single scene in Genesis, told with a leisure the book usually denies itself, and it is built on a pattern you will see again: a man meets his future bride at a well (Jacob will, and Moses will too). Abraham sends his servant back to the family in Mesopotamia, since marriage was meant to stay within the kin, and the chapter watches providence work not through miracles but through ordinary hospitality, a girl who offers to water the camels.', src: 'Alter · Sarna' }
+        ground: { kind: 'historical', text: 'This is the longest chapter in Genesis, and the writer tells it at a leisurely pace he rarely allows himself. He builds it on a pattern that will appear again, in which a man, or someone sent on his behalf, finds a future wife at a well, as Jacob will later, and as Moses will in Exodus. Abraham sends his servant back to his relatives in Mesopotamia to find a wife for Isaac, because families expected marriages to stay within the clan. Throughout the chapter the writer shows God guiding events not through miracles but through ordinary kindness, when a young woman named Rebekah offers to water a stranger’s camels.', src: 'Alter · Sarna' }
       }
     ]
   },
@@ -2812,7 +2812,7 @@ export const GENESIS: Reading[] = [
           { n: 10, text: 'This was the field that Abraham had bought from the Hittites. Abraham was buried there with his wife Sarah.' },
           { n: 17, text: 'Ishmael lived a total of 137 years. Then he breathed his last and died, and was gathered to his people.' }
         ],
-        ground: { kind: 'historical', text: 'The Abraham story ends mid-chapter. Verses 1 to 18 close his life: his other sons by Keturah, his death at a hundred and seventy-five, and the quiet, remarkable detail that Isaac and Ishmael, the chosen son and the cast-out son, stand together to bury their father. Then at verse 19 the camera shifts to Isaac’s sons and the Jacob story begins. The book does not break at the chapter line; the seam runs through the middle of chapter 25.', src: 'Sarna · Westermann' }
+        ground: { kind: 'historical', text: 'The story of Abraham ends in the middle of this chapter. In verses 1 to 18 the writer closes Abraham’s life: he lists Abraham’s other sons by his wife Keturah, records his death at the age of a hundred and seventy-five, and adds a quiet, remarkable detail, that Isaac and Ishmael, the chosen son and the son who was sent away, stand together to bury their father. Then at verse 19 the writer turns to Isaac’s sons, and the story of Jacob begins. Scribes added the chapter numbers in our Bibles in the Middle Ages, and here the break between the two stories falls in the middle of a chapter.', src: 'Sarna · Westermann' }
       }
     ]
   },
@@ -2821,8 +2821,8 @@ export const GENESIS: Reading[] = [
     span: 'Genesis 25:19–34', chapterIndex: 25,
     title: 'Jacob and Esau',
     unitLabel: 'Scene',
-    thread: 'The struggle starts in the womb. Before either twin has done a thing, an oracle reverses the order of the world, and the younger, the heel-grabber, is the one the promise will run through.',
-    closeEnd: 'The birthright has changed hands, and not one hand is clean. The chosen son is a schemer, and the story knows it.',
+    thread: 'Isaac’s wife Rebekah is pregnant with twins, and the two boys struggle with each other even in her womb. Before either of them has done anything, God tells Rebekah that the older will serve the younger, which overturns the order of the ancient world. The younger twin is Jacob, whose name means “heel-grabber,” and God will carry his promise forward through him.',
+    closeEnd: 'By the end of the chapter Jacob has taken his brother’s birthright, and neither brother comes out of it with clean hands. The writer knows that the son God chose is a schemer, and he does not hide it.',
     passages: [
       {
         label: 'One', ref: '25:19–26', kind: 'scene', form: 'prose', title: 'Two nations',
@@ -2835,19 +2835,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'genre',
-          text: 'The oracle says the quiet thing out loud: the older will serve the younger, which turns the whole ancient world upside down, where everything went to the firstborn. The twins are also two nations, Israel and Edom, and the writers are reading their own long rivalry back into a shared womb. Jacob means something close to he grasps the heel, which is also an idiom for a cheat. He is named for what he does before he can even speak.',
+          text: 'God’s word to Rebekah says something startling: the older will serve the younger. In the ancient world the firstborn son inherited nearly everything, so God’s word turned the normal order upside down. The twins also stand for two nations, Israel and Edom, and the writers trace the long rivalry between those peoples back to a shared womb. The name Jacob means something close to “he grabs the heel,” an expression that could also describe a cheat. His parents name him for what he does before he can even speak.',
           src: 'Sarna · Alter · Westermann'
         },
-        meaning: 'The choice lands before either child has done anything, good or bad. Jacob is not picked because he is better, he is the grasping one, and Esau is not rejected for some crime. The promise simply runs through the younger, against the rule that says it should not. Election here is not a reward for merit. It is a freedom that owes the favored nothing and the passed-over an answer it never gives.',
+        meaning: 'God makes his choice before either child has done anything, good or bad. He does not choose Jacob because Jacob is better, since Jacob is the grasping one, and he does not reject Esau for any crime. God simply carries his promise through the younger son, against the rule that says he should not. In Genesis, God’s choosing is <b>not a reward for merit</b>. God is free; he owes nothing to the one he favors, and he does not explain himself to the one he passes over.',
         lenses: {
-          theo: 'Grace that comes before merit is the hardest kind to accept, because it cannot be earned and it cannot be explained. God chooses the younger, the weaker, the one with no claim, and the only honest response is not pride but bewilderment. If it could be deserved it would not be grace.',
-          arch: 'Struggling twins, rival brothers born to fight, are one of the most widespread images in human story, Cain and Abel before them, Romulus and Remus far away, the two who cannot both be first. The pattern carries a hard claim the book keeps pressing, that which brother a people or a person turns out to be is contested from the very start. (The warring twins, told the world over.)'
+          theo: 'People find it hardest to accept God’s favor when he gives it before anyone has earned it, because no one can earn it and no one can explain it. God chooses the younger son, the weaker one, the one with no claim, and the only honest response is not pride but bewilderment. If anyone could deserve such favor, it would not be grace.',
+          arch: 'Stories of twins or brothers who fight from birth appear all over the world. Genesis has already told of Cain and Abel, and the Romans told of Romulus and Remus, twin brothers who quarreled over the founding of Rome until one killed the other. People tell such stories because they sense that a family or a nation is divided against itself from the start, and that its members must struggle to decide which of them will come first.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the sense of being set inside a struggle you did not start, a rivalry or a role handed to you from before you could choose it.'
+          text: 'You may know what it is to find yourself inside a struggle you did not start, a rivalry or a role that someone handed you before you were old enough to choose it.'
         },
-        ask: 'What part of your story was set before you could choose it, and how have you been carrying it?'
+        ask: 'What part of your life was settled before you could choose it, and how have you been carrying it?'
       },
       {
         label: 'Two', ref: '25:27–34', kind: 'scene', form: 'prose', title: 'The red stew',
@@ -2861,19 +2861,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The birthright was the double share and the headship of the family, the future itself. Esau trades it for a bowl of red stew while his appetite is loud, and the narrator drily notes that this is why his nation was called Edom, the red. Jacob, for his part, does not share food with a starving brother, he charges him everything he has for it. The scene flatters no one.',
+          text: 'The birthright gave the eldest son a double share of the inheritance and made him the head of the family; in effect, it was his future. Esau trades it for a bowl of red stew while he is ravenous, and the writer remarks dryly that this is why Esau’s people were called Edom, which means “red.” Jacob, for his part, will not simply share food with his starving brother; he charges him everything he has for it. The writer flatters neither of them.',
           src: 'Sarna · Alter'
         },
-        meaning: 'Watch what each brother is willing to lose. Esau hands over the long future for the thing his body wants in this exact minute, and the text says he despised the birthright, treated the lasting thing as worthless next to a craving. And Jacob will not feed his own brother without a deed of sale. The promise moves, but it moves through a cold transaction between a man who sells his future and a man who exploits a hunger.',
+        meaning: 'Look at what each brother is willing to lose. Esau gives up his whole future for what his body wants at that very moment, and the writer says that Esau <b>despised his birthright</b>, treating something lasting as worthless next to a craving. Jacob, meanwhile, will not feed his own brother without a deed of sale. Jacob gains the right to carry God’s promise, but he gains it through a cold bargain between a man who sells his future and a man who exploits his brother’s hunger.',
         misreading: {
-          named: 'Jacob is the hero here and Esau is the fool who got what he deserved.',
-          why: 'The story is harder than that. Esau is reckless, but Jacob is a manipulator who corners a starving man, and the book never pretends otherwise. Being chosen is not the same as being good. The whole point of the Jacob cycle is that grace falls on someone who keeps having to be changed.'
+          named: 'Jacob is the hero of this scene, and Esau is a fool who got what he deserved.',
+          why: 'The writer tells a harder story than that. Esau is reckless, but Jacob is a manipulator who takes advantage of a starving man, and the writer never pretends otherwise. Being chosen by God is not the same as being good. Throughout the story of Jacob the writer shows God favoring a man who has to be changed again and again.'
         },
         addr: {
           mode: 'names',
-          text: 'You know both moves in this scene: trading something that lasts for something you wanted right now, and the colder one, using another person’s need as your leverage. Appetite is loud and the future is quiet. The trade rarely feels like a trade while you are making it.'
+          text: 'You may recognize both moves in this scene. One is trading something lasting for something you wanted right away. The colder one is using another person’s need as your leverage. Our appetites are loud and our future is quiet, so we rarely notice that we are making a trade while we make it.'
         },
-        ask: 'What lasting thing have you been tempted to spend on an immediate hunger, and what is the hunger really?'
+        ask: 'Is there something lasting that you have been tempted to spend on an immediate hunger? What is that hunger really for?'
       }
     ]
   },
@@ -2893,7 +2893,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'This is the one chapter that is Isaac’s own, and it is built almost entirely from his father’s material: the same famine, the same lie that his wife is his sister, the same wells, re-dug and given back their old names. Isaac is the quiet patriarch, the heir who mostly re-walks the road already walked, holding the promise in place rather than advancing it. Even the reassurance he gets, do not be afraid, comes for the sake of Abraham. The promise passes through a passive man, and passes through intact.',
+          text: 'Genesis 26 is the only chapter in which Isaac is the main character, and almost everything in it repeats what happened to his father. There is a famine, as there was in Abraham’s day; Isaac tells the local king that his wife is his sister, as Abraham did; and he reopens the wells his father had dug, which the Philistines had filled in, and gives them back the names Abraham had given them. Isaac is the quietest of the patriarchs, and for the most part he walks the road his father already walked, keeping the promise alive rather than carrying it further. Even when God reassures him and tells him not to be afraid, God says he will bless Isaac for the sake of Abraham. Through all of this God keeps his promise intact, even though the man who carries it does very little.',
           src: 'Sarna · Westermann'
         }
       }
@@ -2904,8 +2904,8 @@ export const GENESIS: Reading[] = [
     span: 'Genesis 27', chapterIndex: 27,
     title: 'The stolen blessing',
     unitLabel: 'Scene',
-    thread: 'The oracle said the older would serve the younger. Rebekah and Jacob decide not to wait for God to arrange it, and steal the blessing from a blind old man with their own hands.',
-    closeEnd: 'Jacob has the blessing and has lost his home. He leaves with everything promised and nothing he can stay for.',
+    thread: 'Before Jacob and Esau were born, God told their mother Rebekah that the older twin would serve the younger. In Genesis 27 Rebekah and Jacob decide not to wait for God to bring that about. Instead they trick Isaac, who is old and blind, into giving Jacob the blessing he meant for Esau.',
+    closeEnd: 'Jacob now has the blessing, but he has lost his home. He leaves with everything God promised him and with no place where he can stay.',
     passages: [
       {
         label: 'One', ref: '27:11–29', kind: 'scene', form: 'prose', title: 'The disguise',
@@ -2919,23 +2919,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'A father’s deathbed blessing was treated as a binding act, a word that, once spoken, set the future and could not be recalled. Jacob’s own worry is not that the deceit is wrong but that it might be caught, what if my father touches me. Rebekah engineers the whole thing, perhaps holding the old oracle that the older would serve the younger and steering it home by fraud. Isaac, blind and old, hears the seam in it, the voice is the voice of Jacob, and blesses him anyway.',
+          text: 'In the ancient Near East people treated a father’s deathbed blessing as binding: once he had spoken it, it shaped the future, and he could not take it back. When Rebekah tells Jacob her plan, he does not object that it is wrong. He only worries that he might be caught, since his father might touch him and feel smooth skin where Esau’s was hairy. Rebekah plans the whole deception, perhaps because she remembers what God told her before the boys were born and has decided to make it happen herself. Isaac, blind and old, senses that something is wrong and says that the voice is Jacob’s voice, but he gives the blessing anyway.',
           src: 'von Rad · Alter · Sarna'
         },
-        meaning: 'The blessing was God’s to give, and the family grabs it by fraud. Jacob gets exactly what was promised in the womb, and gets it by lying to his blind father with his brother’s clothes on his back. The story will not let the chosen line be the clean line. What was meant to come as gift is taken as theft, and the taking will cost Jacob the next twenty years of his life.',
+        meaning: 'The blessing was God’s to give, and this family takes it by <b>fraud</b>. Jacob gets exactly what God promised before he was born, but he gets it by lying to his blind father while wearing his brother’s clothes. The writer does not pretend that the family God chose was an honest one. Jacob takes as a theft what God meant to give him as a gift, and he will spend the next twenty years of his life paying for it.',
         lenses: {
-          theo: 'God’s purpose moves forward here through a deception God never blesses. The text holds together two things we like to keep apart: the promise is real, and the people carrying it are liars. Grace is not a reward for good behavior. It is the thing that keeps working on people who have not earned it and will spend years being humbled into it.',
-          arch: 'Jacob is the trickster, the figure a hundred cultures tell of, Hermes and Loki, Coyote and Anansi, who wins by cunning what he could never win by strength, and who must, in the end, be broken of the trick. The blessing stolen in disguise will have to be re-earned in the open, on a riverbank, in the dark, years later. (The trickster who must lose the mask.)'
+          theo: 'God’s purpose moves forward in this chapter, but God never approves of the lie that carries it. The writer asks us to hold together two things we would rather keep apart: God’s promise is real, and the people carrying it are liars. In the Christian tradition this is what grace means. God does not give it as a reward for good behavior. He goes on working with people who have not earned it, and he spends years humbling them until they can receive it.',
+          arch: 'Jacob is a trickster, a kind of character that people all over the world have told stories about. The Greeks had Hermes, the Norse had Loki, many Native American peoples tell of Coyote, and storytellers in West Africa and the Caribbean tell of Anansi the spider. Each of them wins by cunning what he could never win by strength. In many of these stories the trickster’s cleverness eventually catches up with him, and that happens to Jacob too. He steals the blessing in disguise here, and years later, at a river in the dark, he will have to struggle for a blessing openly, as himself.'
         },
         misreading: {
-          named: 'It worked out in the end, so Rebekah and Jacob were right to deceive Isaac.',
-          why: 'The chapter ends in wreckage: a father betrayed, a brother who wants to kill, a mother who will never see her favorite son again, and a fugitive on the run. The text records the cost in full. It shows the promise advancing and the deceit costing everything in the same breath, and refuses to call the means good because the end arrived.'
+          named: 'Because everything worked out in the end, Rebekah and Jacob were right to deceive Isaac.',
+          why: 'By the end of the chapter the family lies in ruins. Isaac has been betrayed, Esau wants to kill his brother, Jacob has to run for his life, and the writer never tells us that Rebekah saw her favorite son again. The writer records the whole cost. He shows God’s promise moving forward and the deception costing the family almost everything, and he never suggests that the good outcome made the lie good.'
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to want a blessing badly enough to take it by a means you would rather not say out loud, and to tell yourself the outcome will settle the question of how you got it. The thing taken by force still has to be lived with afterward, and it rarely sits quiet.'
+          text: 'Most of us have wanted something badly enough to get it by means we would not want to admit, and then told ourselves that a good outcome would justify how we got it. But we still have to live with what we took, and we rarely find peace with it.'
         },
-        ask: 'Where have you reached to grab something you could not wait to be given, and what did the grabbing cost?'
+        ask: 'Have you ever grabbed something you could not wait to be given? What did it cost you, or the people near you?'
       },
       {
         label: 'Two', ref: '27:30–38', kind: 'scene', form: 'prose', title: 'The cry',
@@ -2948,15 +2948,15 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In the logic of the story a blessing once spoken is spent. It cannot be taken back and re-given, and so Esau, who did nothing wrong this time, is simply too late. His name for his brother is the truest line in the chapter, is he not rightly named Jacob, the cheat. The blessing Esau is finally given is a thinner thing, a life by the sword, away from the richness.',
+          text: 'In the world of this story, once a father had spoken his blessing he could not take it back and give it to someone else. So Esau, who has done nothing wrong this time, is simply too late. He says bitterly that his brother is rightly named Jacob, because the name sounds like the Hebrew word for cheating someone by grabbing at his heel, and Jacob has now cheated him twice. When Isaac finally blesses Esau, he can only give him a lesser blessing: Esau will live by the sword, far from the rich land his brother will have.',
           src: 'Westermann · Alter'
         },
-        meaning: 'The chapter’s most human moment belongs to the brother who lost. Esau, who is no innocent himself, lets out a loud and bitter cry and begs, bless me too, my father, as though surely there had to be more than one. The story does not look away from him. It lets the cost of the chosen line be a real person standing in the doorway, weeping, asking for something that has already been given to someone else.',
+        meaning: 'The most human moment in the chapter belongs to the brother who lost. Esau is no innocent himself, since he once sold his birthright for a bowl of stew, but here he cries out loudly and bitterly and begs his father, “Bless me too, my father!” as though there must surely be more than one blessing to give. The writer does not look away from him. He makes us see that God’s choice of Jacob cost a real person something, and he shows us that person standing before his father, weeping and asking for what has already gone to someone else.',
         addr: {
           mode: 'names',
-          text: 'You know the cry of arriving too late, of asking for the blessing only to be told, gently or not, that it has already gone to someone else. Being passed over is its own grief, and the one who lost is not always the one who was wrong.'
+          text: 'Many of us know what it is to arrive too late and ask for something, only to be told that it has already gone to someone else. Being passed over brings its own grief, and the person who loses out is not always the person who did wrong.'
         },
-        ask: 'Where have you been the one in the doorway, too late, and what would it mean to grieve it honestly instead of pretending it did not land?'
+        ask: 'When have you been the one who came too late? What would it mean to grieve that honestly instead of pretending it did not hurt?'
       }
     ]
   },
@@ -2964,8 +2964,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-28', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 28:10–22', chapterIndex: 28,
     title: 'The ladder at Bethel',
-    thread: 'A fugitive runs from a brother who wants him dead, lies down in open country with a stone for a pillow, and meets God in the last place he expected, before he has said one word of sorry.',
-    closeEnd: 'Grace finds Jacob on the run, undeserving, and renews the whole promise to him in the dark. He wakes changed, and his road is still long.',
+    thread: 'Jacob is running from Esau, who has sworn to kill him. On his first night alone he lies down in open country with a stone for a pillow, and there God meets him, before Jacob has said a word of apology for what he did.',
+    closeEnd: 'God finds Jacob on the run, with nothing to recommend him, and renews the whole promise to him in the dark. Jacob wakes up changed, but he still has a long road ahead of him.',
     passages: [
       {
         ref: '28:10–22', kind: 'scene', form: 'prose', title: 'The stairway',
@@ -2979,19 +2979,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The dream is set at Bethel, a real and ancient holy place, and the picture is not a household ladder but a great stairway, the kind that climbed the side of a Mesopotamian temple-tower to join earth and heaven. The traffic on it runs both ways, heaven busy with the earth. And the promise spoken from the top is unconditional: I am with you, I will watch over you, I will bring you back. Not if you behave. Just, I will.',
+          text: 'Jacob has his dream at Bethel, a real and ancient holy place in Israel. What he sees is probably not a ladder of the kind we keep at home but a great stairway, like the ramps that climbed the sides of Mesopotamian temple towers, which people believed joined earth to heaven. The angels on it go both up and down, so heaven and earth are in constant contact. And the promise God speaks from the top has no conditions attached. God tells Jacob that he will be with him, watch over him, and bring him back to this land. He does not say “if you behave.” He simply says that he will do it.',
           src: 'Sarna · Walton · Westermann'
         },
-        meaning: 'God meets Jacob at his lowest and least deserving. He is a fugitive who has just cheated his father and robbed his brother, sleeping rough on a stone in the middle of nowhere, and this is the moment heaven opens over him. There is no repentance first, no apology, no deal struck. The promise is simply renewed to the man on the run, before he has done one thing to earn it back. Surely the LORD is in this place, he says, and I did not know it, which may be the truest thing anyone says in the whole cycle.',
+        meaning: 'God meets Jacob when he is at his lowest and least deserving. Jacob has just cheated his father and robbed his brother, and he is sleeping on the ground with a stone under his head, far from anyone, when God opens heaven above him. Jacob has not repented, apologized, or made any bargain. God simply renews the promise to a man on the run, <b>before</b> Jacob has done anything to earn it. When Jacob wakes up, he says, “Surely the LORD is in this place, and I was not aware of it,” and that may be the truest thing anyone says in the whole story of Jacob.',
         lenses: {
-          theo: 'This is grace that arrives before the turning, not after it. We tend to assume God meets us once we have cleaned ourselves up, on the far side of our sorrow. Here he comes to the deceiver mid-flight, in the dark, and binds himself to him anyway. The repentance, when it finally comes, will be the response to the grace, not its price.',
-          arch: 'The stairway joining earth to heaven is the axis mundi, the sacred center where the worlds touch, an image cultures raised in every ziggurat and temple and world-tree. Jacob stumbles onto one in his sleep, in open country he took for empty, and wakes to say the LORD was in this place and he did not know it. What recurs is the discovery that the gate of heaven can stand in the bleakest waystation. (Eliade, on the axis mundi and the sacred center.)'
+          theo: 'Here God gives his grace before Jacob turns back to him, not after. We tend to assume that God meets us once we have cleaned ourselves up and said we are sorry. In this chapter he comes to a liar in the middle of his escape, in the dark, and binds himself to him anyway. When Jacob does finally change, he will be responding to the grace God has already given him, not paying for it.',
+          arch: 'The historian of religion Mircea Eliade used the Latin phrase axis mundi, “the axis of the world,” for the sacred center where people believed heaven and earth touched. Many cultures marked such a place with a temple tower, a holy mountain, or a great tree reaching to the sky. Jacob comes upon one in his sleep, in a stretch of country he thought was empty, and he wakes to say that God was in this place and he did not know it. People in many ages have made the same discovery, that they could meet God at the bleakest stopping place along the road.'
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to be running from something you did, bedded down in the bleakest stretch of the road, and to find you were not as alone there as you were certain you were. God was in the place, and he did not know it. The not-knowing did not make it any less true.'
+          text: 'Many of us know what it is to run from something we did, and to find ourselves in the bleakest stretch of the road, sure that we are alone. Jacob found that God was there with him, though he had not known it, and his not knowing did not make it any less true.'
         },
-        ask: 'Where is a bleak place you are only trying to get through, and what would change if you looked for God to be already in it?'
+        ask: 'Is there a bleak place in your life that you are only trying to get through? What would change if you looked for God there?'
       }
     ]
   },
@@ -3000,8 +3000,8 @@ export const GENESIS: Reading[] = [
     span: 'Genesis 29', chapterIndex: 29,
     title: 'Leah and Rachel',
     unitLabel: 'Scene',
-    thread: 'The deceiver meets his match. Jacob, who put the younger before the elder, is handed the elder sister in the dark and made to honor the very rule he once broke. And Leah, the unwanted one, names her ache into her sons.',
-    closeEnd: 'The chosen line will run through Leah, the wife nobody chose. Judah, her fourth son, is the one it goes through.',
+    thread: 'Jacob, who has deceived others all his life, now meets a man who deceives him. His uncle Laban gives him the older daughter, Leah, in the dark, when Jacob expected the younger, Rachel, and so Laban makes him honor the very custom Jacob broke when he took his older brother’s blessing. Meanwhile Leah, the wife Jacob did not want, pours her longing into the names she gives her sons.',
+    closeEnd: 'God’s promise will pass through Leah, the wife no one chose. Her fourth son, Judah, is the one through whom it will run.',
     passages: [
       {
         label: 'One', ref: '29:18–30', kind: 'scene', form: 'prose', title: 'The wrong sister',
@@ -3015,19 +3015,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The trick turns on the same hinge Jacob once used. He stole the rights of the firstborn; now Laban hands him the firstborn daughter under cover of dark and a wedding veil, and answers his outrage with a line that lands like a verdict: it is not our custom to put the younger before the older. The man who put the younger before the older hears his own crime read back to him as law. A bride was bought with years of labor, and Jacob pays twice.',
+          text: 'Laban tricks Jacob in the same way Jacob once tricked his own family. Jacob took the rights that belonged to the firstborn son; now Laban gives him the firstborn daughter, hidden by the dark and a wedding veil. When Jacob protests, Laban answers that in their country people do not give the younger daughter in marriage before the older. Jacob, the younger son who put himself ahead of his older brother, now hears his own wrong described back to him as a law. In that culture a man paid a price for his bride, and Jacob had agreed to work seven years for Rachel. Now he must work seven more to have her as well.',
           src: 'Alter · Sarna'
         },
-        meaning: 'The trickster is tricked, and the story savors the symmetry. Jacob, who exploited his father’s blindness and his brother’s hunger, wakes in the morning to find that he is the one who was fooled in the dark. Why have you deceived me, he demands, which is almost word for word the charge his own father and brother could have laid on him. What you do to other people has a way of coming back to you wearing a different face, and being on the receiving end is the first thing that ever slows Jacob down.',
+        meaning: 'Now the trickster is tricked, and the writer clearly enjoys the symmetry. Jacob took advantage of his father’s blindness and his brother’s hunger, and now he wakes in the morning to find that he is the one who was fooled in the dark. He demands of Laban, “Why have you deceived me?” and those are almost the very words his father and brother could have said to him. People who deceive others are often deceived in turn, and being <b>deceived</b> himself is the first thing that ever slows Jacob down.',
         lenses: {
-          theo: 'There is a kind of moral physics running under the Jacob story. The deceiver has to be deceived before he can be changed. It is not so much God punishing him as God letting the consequence circle back, holding a mirror up to him until the man who only ever took begins, slowly, to be undone and remade.',
-          arch: 'What you do to others has a way of returning to you wearing a stranger’s face. The trickster is out-tricked, the man who exploited a father’s blindness and a brother’s hunger is fooled in the dark by a craftier man, and this is the moral physics the old stories run on. A person begins to grow up not by winning but by finally losing at their own game. (The deceiver deceived, justice as recoil.)'
+          theo: 'Readers have long noticed a kind of moral law at work in the Jacob story: before God can change the deceiver, Jacob has to be deceived himself. God is not so much punishing him as letting him suffer the consequences of his own behavior. In this way God holds up a mirror to Jacob until the man who has only ever taken begins, slowly, to be broken down and remade.',
+          arch: 'In many old stories a trickster is finally outwitted by someone more cunning than he is, and storytellers have always enjoyed that kind of justice. Jacob took advantage of his father’s blindness and his brother’s hunger, and now a craftier man fools him in the dark. The storytellers seem to believe that a person begins to grow up not by winning but by finally losing at their own game.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the strange justice of having done to you the exact thing you once did to someone else, and the way it can stop you cold. The mirror is rarely flattering, but it is usually fair.'
+          text: 'Some of us have had done to us the very thing we once did to someone else, and found that it stopped us cold. When that happens, we see ourselves in a mirror that is seldom flattering but usually fair.'
         },
-        ask: 'Where has something you did to someone come back around to you, and what is it trying to teach you?'
+        ask: 'Has something you did to someone come back around to you? What might God be teaching you through it?'
       },
       {
         label: 'Two', ref: '29:31–35', kind: 'scene', form: 'prose', title: 'Leah’s sons',
@@ -3040,19 +3040,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In a world where a woman’s standing hung on the sons she bore, Leah names hers like diary entries. The first three reach toward the husband who will not turn: see my pain, now he will love me, now he will stay. The fourth lets go of him entirely, this time I will praise the LORD, and that one is Judah, the son the royal line and, far down the road, the Messiah will run through. The unwanted wife mothers the chosen tribe.',
+          text: 'In Leah’s world a woman’s standing depended on the sons she bore, and she names hers almost as if she were writing in a diary. She names her first three sons with hopes about her husband: that God has seen her misery, that now Jacob will love her, that now at last he will be attached to her. With her fourth son she lets go of Jacob altogether and says, “This time I will praise the LORD,” and she names him Judah. Israel’s royal line will descend from Judah, and so, Christians believe, will the Messiah. The wife Jacob did not want becomes the mother of the tribe God chooses to rule.',
           src: 'Alter · Sarna · Westermann'
         },
-        meaning: 'You can read Leah’s whole inner life in the names she gives her children. The first three are pleas aimed at her husband: look at my affliction, surely now he will love me, now at last he will be attached to me. And then, with the fourth, something quietly breaks open. This time I will praise the LORD. She stops naming her sons after a love that is not coming and names one after God instead. And it is that son, born the moment she stops bargaining, through whom the whole promise goes. The line does not run through the loved wife. It runs through the one nobody chose.',
+        meaning: 'We can read Leah’s whole inner life in the names she gives her children. She aims the first three names at her husband, as pleas: the LORD has seen my misery, surely my husband will love me now, now at last he will be attached to me. With the fourth, something quietly changes, and she says, “This time I will <b>praise</b> the LORD.” She stops naming her sons after a love that is not coming and names this one in praise of God instead. And it is through this son, born when she stops bargaining for her husband’s love, that God carries his promise forward. God does not choose the line of the wife Jacob loved. He chooses the line of the wife nobody chose.',
         lenses: {
-          theo: 'God’s attention in this chapter is fixed on the unloved one. He saw that Leah was unloved, the text says plainly, and opened her womb. The story’s sympathy, and its future, belong to the overlooked sister, not the favored one, which is the pattern the whole Bible keeps repeating: the last become first, the rejected stone becomes the cornerstone.',
-          arch: 'The ache to be chosen is one of the most common wounds there is, and Leah names it into her first three sons, each a plea to a husband who will not turn. The fourth name lets the plea go, this time I will praise the LORD, and that is the son the promise runs through. What recurs here is the freedom that arrives the moment you stop auditioning for a love that is not coming. (The freedom past the ache to be chosen.)'
+          theo: 'In this chapter God pays attention to the sister no one loves. The writer says plainly that when the LORD saw that Leah was unloved, he enabled her to have children. The writer’s sympathy, and Israel’s future, belong to the overlooked sister rather than the favored one. Readers of the whole Bible will recognize the pattern, because God keeps repeating it: the last become first, and the stone the builders rejected becomes the cornerstone.',
+          arch: 'The longing to be chosen is one of the most common wounds people carry, and Leah puts that longing into the names of her first three sons, each one a plea to a husband who will not turn to her. With the fourth name she lets the plea go and praises the LORD instead, and that is the son through whom God will carry the promise. Many people have found the same freedom Leah found, which comes when they stop trying to earn a love that is not going to come.'
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to keep performing for a love that does not arrive, and you may know the quieter freedom of finally stopping and being held by something else.'
+          text: 'Some of us have kept performing for a love that never came, and some of us know the quieter freedom of finally stopping and resting in God’s love instead.'
         },
-        ask: 'Whose love have you been performing for, and what would it free in you to stop?'
+        ask: 'Whose love have you been working to earn? What would it free in you to stop?'
       }
     ]
   },
@@ -3071,7 +3071,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The chapter is a baby war between two sisters, fought through their maidservants and bargained over with mandrakes, until twelve children, the future tribes of Israel, are born out of envy and longing and competition. Then Jacob out-schemes Laban over the breeding of the flocks and leaves rich. It is worth seeing how unsentimental the text is about its own founding family. The tribes of Israel are born into a bitter, scheming, loveless rivalry, and the book lets that stand without a word of tidying.',
+          text: 'In Genesis 30 the two sisters, Leah and Rachel, compete to give Jacob children. Each gives him her maidservant as a surrogate, and at one point Rachel trades Leah a night with Jacob for some mandrakes, a plant people believed helped a woman conceive. By the end of the chapter Jacob has eleven sons and a daughter, and those sons, together with Benjamin, who is born later, will become the ancestors of the tribes of Israel. Then Jacob outwits Laban in breeding the flocks and grows rich. The writer is not at all sentimental about Israel’s founding family. He shows the tribes of Israel being born out of a bitter, scheming, loveless rivalry, and he does nothing to tidy it up.',
           src: 'Sarna · Westermann'
         }
       }
@@ -3092,7 +3092,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'After twenty years Jacob runs, with his wives, his children, and the flocks he has bred away from Laban. Rachel steals her father’s household gods on the way out, and Laban gives chase. What they finally build at Mizpah is not a reconciliation but a boundary, a heap of stones and the famous line, may the LORD watch between you and me, which sounds like a blessing and is really a fence: two men who do not trust each other agreeing on where the line is. Jacob leaves the long school of Laban changed, his cunning worn down, on his way to a harder appointment at the river.',
+          text: 'After twenty years with Laban, Jacob runs away with his wives, his children, and the flocks he has bred away from Laban’s. On the way out Rachel steals her father’s household gods, small figures that families kept in the home, and Laban chases after them. When the two men finally make an agreement at a place called Mizpah, they do not truly reconcile. They pile up a heap of stones as a boundary marker, and Laban says, “May the LORD watch between you and me when we are absent from each other.” People often quote the line as a blessing, but Laban meant it as a warning: two men who do not trust each other are agreeing on a line that neither will cross. Jacob leaves Laban’s household changed, his cunning worn down by twenty hard years, and he goes on toward a harder meeting at the river.',
           src: 'Sarna · Alter'
         }
       }
@@ -3102,8 +3102,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-32', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 32:22–32', chapterIndex: 32,
     title: 'Wrestling at the Jabbok',
-    thread: 'On the night before he must face the brother he cheated, Jacob is left utterly alone, and a man wrestles him until dawn. He comes out of it renamed, blessed, and limping for the rest of his life.',
-    closeEnd: 'He crosses the river as Israel, the one who strives with God, walking into the dreaded reunion wounded and, for the first time, unable to run.',
+    thread: 'On the night before he must face Esau, the brother he cheated, Jacob is left completely alone, and a man wrestles with him until dawn. Jacob comes out of the struggle with a new name and a blessing, and he limps for the rest of his life.',
+    closeEnd: 'Jacob crosses the river as Israel, a name that means “he strives with God.” He walks toward the reunion he dreads with a wound in his hip, and for the first time in his life he cannot run.',
     passages: [
       {
         ref: '32:22–32', kind: 'scene', form: 'prose', title: 'The night at the river',
@@ -3118,23 +3118,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'It is the night before the reunion he has dreaded for twenty years, and Jacob, having sent everyone he loves across the ford ahead of him, is left alone in the dark. The text is deliberately strange about the assailant: it calls him only a man, and then Jacob names the place for having seen God face to face. The new name Israel means something like he strives with God, or God strives. The wound to the hip and the blessing come from the same hands, and the people who carry that name will not eat the hip’s tendon ever after, a scar woven into a nation.',
+          text: 'Jacob has dreaded meeting Esau for twenty years, and on the night before, he sends everyone he loves across the river ahead of him and stays behind alone in the dark. The writer is deliberately mysterious about who attacks him. He calls the attacker only “a man,” but afterward Jacob names the place Peniel, meaning “face of God,” because he says he has seen God face to face. The new name the man gives him, Israel, means something like “he strives with God” or “God strives.” The same hands that wound Jacob’s hip also bless him, and the writer adds that the Israelites still do not eat the tendon attached to the hip socket, so the whole nation carries a reminder of Jacob’s wound.',
           src: 'von Rad · Westermann · Alter'
         },
-        meaning: 'The man who always won by cunning finally meets someone he cannot trick, only hold. He wrestles all night, and even after his hip is wrenched he will not let go, until he is blessed, and the blessing he wins is a new name and a permanent limp. This is the hinge of the whole cycle. The one who stole a blessing in the dark, in disguise, now wins one in the dark, in the open, by refusing to release his grip. He walks away blessed and damaged in the same motion. You do not come through a real encounter with God unmarked.',
+        meaning: 'All his life Jacob has won by cunning, and now he meets someone he cannot trick, only hold onto. He wrestles all night, and even after the man wrenches his hip he will not let go until the man blesses him. The blessing he receives is a new name and a limp that never heals. This night is the turning point of Jacob’s whole story. Years ago he stole a blessing in the dark by disguising himself; now he wins one in the dark as himself, by refusing to let go. He walks away both <b>blessed</b> and wounded. No one comes through a real encounter with God unmarked.',
         lenses: {
-          theo: 'The blessing and the wound arrive together, from the same grip. God does not bless Jacob by making him stronger; he blesses him by laming him, ending the long career of grasping so that Israel limps ever after on a leg that remembers the night. The name is new and the swagger is gone. That is what being blessed by this God can cost, and what it can heal.',
-          arch: 'This is the supreme ordeal every hero’s road bends toward, the night struggle with the figure at the threshold who will not be passed until he is held through the dark. The wound is the initiation, the mark you carry out of it; the river is crossed only by the one willing to wrestle until dawn. And the adversary, by morning, wears the face of God. (Campbell, on the threshold ordeal.)'
+          theo: 'Jacob receives the blessing and the wound together, from the same grip. God does not bless him by making him stronger. He blesses him by laming him, so that Jacob can no longer live by grasping, and for the rest of his life he limps on a leg that reminds him of that night. He has a new name, and he has lost his swagger. Being blessed by this God can cost that much, and it can heal that much.',
+          arch: 'The scholar Joseph Campbell, who compared hero stories from around the world, observed that many of them include a struggle with a guardian at a threshold, a figure the hero must face before he can pass into the next stage of his journey. Jacob’s night at the river fits that pattern. A mysterious figure blocks his way, Jacob must hold on through the dark, and he comes out wounded, with a mark he will carry for the rest of his life. But in Genesis, when morning comes, Jacob realizes that the one he has been wrestling is God himself.'
         },
         misreading: {
-          named: 'Jacob beats God in a fair fight and wins by being the stronger man.',
-          why: 'He prevails only because he will not let go, not because he overpowers anyone, and the moment the man touches his hip the contest is plainly not about strength. The victory is his refusal to face tomorrow unblessed, and its price is a wound he carries for life. It is not a triumph over God. It is a refusal to be left without him.'
+          named: 'Jacob defeats God in a fair fight because he is the stronger man.',
+          why: 'Jacob prevails only because he will not let go, not because he overpowers anyone, and as soon as the man touches his hip it is plain that strength has nothing to do with it. What Jacob wins is a blessing, because he refuses to face the next day without one, and he pays for it with a wound he carries all his life. He does not triumph over God. He refuses to go on without him.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the night before the thing you dread, alone in the dark, holding on to something you will not release until it blesses you, and the way the holding can leave its mark on you. The blessing and the limp came out of the same grip. Most real ones do.'
+          text: 'Many of us know the night before something we dread, when we are alone in the dark and holding on to God, refusing to let go until he blesses us. Jacob came away from that night both blessed and limping, and many people who have truly wrestled with God would say the same of themselves.'
         },
-        ask: 'What are you refusing to let go of until it blesses you, and what might holding on cost you?'
+        ask: 'What are you holding on to, refusing to let go until you are blessed? What might holding on cost you?'
       }
     ]
   },
@@ -3142,8 +3142,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-33', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 33', chapterIndex: 33,
     title: 'The reunion',
-    thread: 'Jacob braces for the brother who once swore to kill him, dividing his family in case of slaughter. And Esau runs to meet him, not with an army but with open arms.',
-    closeEnd: 'The dread of twenty years dissolves in an embrace, and then the brothers part and never live together again. A real peace, and a limited one.',
+    thread: 'Jacob braces himself to meet the brother who once swore to kill him, and he arranges his family so that some of them might escape if Esau attacks. Esau comes with four hundred men, but he runs to meet Jacob with open arms.',
+    closeEnd: 'After twenty years of dread, the brothers meet and embrace, and then they part and never live together again. Their peace is real, but it has limits.',
     passages: [
       {
         ref: '33:1–11', kind: 'scene', form: 'prose', title: 'Esau runs',
@@ -3155,23 +3155,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Jacob has spent the night wrestling and the dawn arranging his family by how much he can bear to lose, bracing for a brother coming with four hundred men. Esau, who two decades earlier swore to kill him, runs, throws his arms around his neck, and weeps. Jacob’s words for it deliberately echo the night before, to see your face is like seeing the face of God: he has just survived seeing God’s face at Peniel, and now survives his brother’s. And the gift he presses on Esau he calls, in the Hebrew, a blessing, the very word for what he stole, as if to hand it back.',
+          text: 'Jacob has spent the night wrestling, and at dawn he lines up his family in the order of how much he can bear to lose, with Rachel and Joseph at the back, because Esau is coming with four hundred men. But Esau, who twenty years earlier swore to kill him, runs to Jacob, throws his arms around his neck, and weeps. Jacob’s words to him deliberately echo the night before: “to see your face is like seeing the face of God.” He has just survived seeing God’s face at Peniel, and now he survives seeing his brother’s. And when he presses a gift on Esau, he calls it, in Hebrew, a blessing, the same word for what he once stole, as though he were trying to give it back.',
           src: 'Alter · Sarna · Westermann'
         },
-        meaning: 'The thing Jacob dreaded most for twenty years comes undone the instant it arrives. The brother he cheated does not want revenge; he wants his brother, and he runs. And Jacob, fresh from seeing God’s face at the river, says he sees it again in Esau’s, because the face of the person you wronged, choosing to forgive you, can look an awful lot like the face of God. He even tries to give back the blessing, calling his gift by its name, as though the theft could be undone by a return. The forgiveness he has no right to expect is exactly what meets him.',
+        meaning: 'Jacob has dreaded this meeting for twenty years, and his fear vanishes the moment Esau arrives. The brother he cheated does not want revenge; he wants his brother back, and he runs to him. Jacob has just seen God’s face at the river, and now he says he sees it again in Esau’s, because when the person we wronged chooses to <b>forgive</b> us, that face can look very much like the face of God. Jacob even tries to give back the blessing, calling his gift by that name, as though he could undo the theft by returning it. He has no right to expect forgiveness, and it is exactly what he receives.',
         lenses: {
-          theo: 'Grace wears a human face here. After the vertical encounter at Peniel comes the horizontal one, and the text rhymes them on purpose: you meet God, and then you meet the brother you wronged, and they can look strangely alike. To be forgiven by someone who had every right to ruin you is one of the nearest things there is to standing in front of God and being received.',
-          arch: 'The brother fled and feared for twenty years turns out, at the meeting, not to be the monster the dread had painted. What you run from grows teeth in the imagination; faced, it is often a weeping man with his arms open. The reckoning you brace for is rarely the reckoning you get. (The dreaded face that turns out to be weeping.)'
+          theo: 'In this chapter God’s grace comes to Jacob through a human face. First Jacob meets God at Peniel, and then he meets the brother he wronged, and the writer deliberately makes the two meetings echo each other. When someone who had every right to ruin us forgives us instead, we come about as close as we can on earth to standing before God and being welcomed.',
+          arch: 'For twenty years Jacob has feared his brother, and when they finally meet, Esau turns out not to be the monster Jacob imagined. People often find the same thing. The longer we run from someone, the more frightening we imagine them to be, and when we finally face them, we may find a person weeping with open arms. The reckoning we brace for is rarely the one we get.'
         },
         misreading: {
-          named: 'They are fully reconciled and the family is healed for good.',
-          why: 'They embrace and weep, and then immediately go separate ways, and Jacob even slips back into half-truth about following Esau. The text gives a peace that is real and incomplete, the dread broken but the brothers still apart. It refuses the fairy-tale ending, and means the refusal.'
+          named: 'Jacob and Esau are fully reconciled, and the family is healed for good.',
+          why: 'The brothers embrace and weep, but then they go their separate ways at once, and Jacob even tells Esau a half-truth, promising to follow him to Seir and then settling somewhere else. The writer gives us a peace that is real but incomplete: Jacob’s fear is gone, but the brothers still live apart. The writer refuses to give the story a fairy-tale ending, and he means that refusal.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the dread of facing someone you wronged, the bracing for the blow, and you may know the stranger grace of being met instead with open arms. What you flee grows teeth in the dark. Faced, it is often smaller, and sometimes weeping.'
+          text: 'Many of us know the dread of facing someone we have wronged, and the way we brace ourselves for the blow. Some of us also know the surprise of being met with open arms instead. The longer we run from someone, the more frightening we make them in our minds. When we finally face them, they are often less fearsome than we expected, and sometimes they are weeping.'
         },
-        ask: 'Who are you bracing to face, and what would it change to imagine being met with open arms?'
+        ask: 'Who are you bracing yourself to face? What would change if you imagined them meeting you with open arms?'
       }
     ]
   },
@@ -3179,8 +3179,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-34', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 34', chapterIndex: 34,
     title: 'Dinah',
-    thread: 'A daughter is violated, and from that moment the story is about everyone but her. The men negotiate, deceive, and kill in her name, and Dinah herself never speaks a single word.',
-    closeEnd: 'No one in this chapter is clean, and the one it is supposedly about is never heard from. The Bible records the whole thing and blesses none of it.',
+    thread: 'Shechem, the son of a local ruler, rapes Jacob’s daughter Dinah, and from that moment the men around her talk about everyone except her. They negotiate, deceive, and kill in her name, and Dinah herself never says a single word.',
+    closeEnd: 'No one in this chapter acts rightly, and the writer never lets us hear from the woman the chapter is supposedly about. He records the whole story and approves of none of it.',
     passages: [
       {
         ref: '34 (selected)', kind: 'scene', form: 'prose', title: 'Spoken for',
@@ -3195,23 +3195,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The chapter is built out of deceit, the same weapon that has run through the whole cycle, now turned to butchery. The brothers answer deceitfully, talk the men of the city into circumcision, and fall on them while they are still in pain. And notice who never speaks. Dinah is named in the first verse and then vanishes into the third person, acted upon, argued over, avenged, but never once heard. Jacob, for his part, reacts not to her suffering but to the danger the killing has put him in.',
+          text: 'The men in this chapter use deceit, the same weapon Jacob’s family has used throughout his story, and this time it leads to a massacre. Jacob’s sons answer Shechem’s family deceitfully and persuade all the men of the city to be circumcised. Then, on the third day, while the men are still in pain, Simeon and Levi attack the city and kill them. We should also see who never speaks. The writer names Dinah in the first verse, and after that other people act on her, argue over her, and avenge her, but we never hear her voice. Jacob, for his part, reacts not to his daughter’s suffering but to the danger the killing has brought on him.',
           src: 'Alter · Westermann · Trible'
         },
-        meaning: 'This is a story about how a woman’s violation becomes everyone else’s narrative. Dinah is raped, and from that moment every man around her takes up her cause and erases her in the same motion. The brothers turn her pain into a license for slaughter; Jacob turns the slaughter into a worry about his own reputation; the chapter ends with men still arguing over her honor while she has not said a word since the first verse. The text holds two horrors side by side, the assault and the revenge, and refuses to let either one stand as the clean answer to the other.',
+        meaning: 'In this chapter the men around a woman turn her violation into a story about themselves. After Shechem rapes Dinah, every man around her takes up her cause and, in doing so, pushes her out of the story. Her brothers use her pain as an excuse for slaughter; Jacob worries about his own reputation; and at the end of the chapter the men are still arguing about her honor, while she has not said a word since the first verse. The writer sets two horrors side by side, the rape and the revenge, and he will not let us treat either one as the answer to the other.',
         lenses: {
-          theo: 'Scripture does not look away from this, and it does not tidy it. There is no verdict from heaven in the chapter, no rescue, no neat justice, and that silence is its own kind of testimony. The Bible is willing to record the world exactly as brutal as it is, including inside the chosen family, and to let the reader feel the wrongness without being handed a moral that makes it sit easier. Jacob does not forget it; on his deathbed he curses the violence of Simeon and Levi by name.',
-          arch: 'Watch how fast a real wound is conscripted into other people’s causes. Everyone claims to act for Dinah; no one asks her. It is one of the oldest ways there is of silencing a person, to speak so loudly on her behalf that she disappears, and to call it honor. (The victim spoken for until she vanishes.)'
+          theo: 'The writer does not look away from what happened to Dinah, and he does not tidy it up. God says nothing in this chapter, he rescues no one, and no one receives a fitting justice, and the writer’s silence about God is itself a kind of testimony. The writers of the Bible were willing to record the world as brutal as it is, even inside the family God chose, and to let readers feel how wrong it is without handing them a moral that makes it easier to bear. Jacob does not forget what his sons did. On his deathbed he curses the violence of Simeon and Levi by name.',
+          arch: 'In this chapter we can watch how quickly other people take up a real wound for their own causes. Everyone claims to act for Dinah, and no one asks her what she wants. People have silenced others this way for as long as there have been stories: they speak so loudly on someone’s behalf that the person disappears, and they call it honor.'
         },
         misreading: {
-          named: 'The brothers are the heroes here, righteously avenging their sister.',
-          why: 'The text flags their answer as deceit, ends on their self-justifying question rather than any word of approval, and has Jacob condemn them on the spot and curse them again at the end of his life. The chapter stages the revenge as one more atrocity, not a triumph, and keeps its sympathy with the girl who is never allowed to speak, not with the men killing in her name.'
+          named: 'Dinah’s brothers are the heroes of the chapter, rightly avenging their sister.',
+          why: 'The writer says plainly that the brothers answered deceitfully. He ends the chapter with their self-justifying question rather than any word of approval, and he has Jacob rebuke them at once and curse them again at the end of his life. The writer presents the revenge as one more atrocity, not a triumph, and his sympathy stays with the young woman who is never allowed to speak, not with the men who kill in her name.'
         },
         addr: {
           mode: 'names',
-          text: 'You may know what it is to have your own pain taken up as someone else’s cause, spoken for so loudly that you disappear from your own story. Being avenged is not the same as being heard, and the two are easily confused.'
+          text: 'Some of us know what it is to have our own pain taken up by others as a cause, and to have them speak for us so loudly that we disappear from our own story. Being avenged is not the same as being heard, and people easily confuse the two.'
         },
-        ask: 'Where has pain, yours or someone else’s, been turned into a banner for a fight that stopped being about the person who was hurt?'
+        ask: 'Have you seen someone’s pain, yours or another person’s, used as a banner in a fight that stopped being about the person who was hurt?'
       }
     ]
   },
@@ -3231,7 +3231,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Jacob comes back to Bethel, the place of the stairway, decades older, and God confirms the new name there in plain daylight, the blessing the river gave him in the dark now spoken openly. But the homecoming is laced with graves. Rachel dies bearing Benjamin and names him Ben-oni, son of my sorrow, with her last breath; his father quietly renames him son of my right hand. And Isaac dies, buried by both his sons, Esau and Jacob standing together at the grave the way Isaac and Ishmael once stood at Abraham’s. The cycle closes the way it opened, with estranged brothers meeting again over their father’s body.',
+          text: 'Jacob returns to Bethel, where decades earlier he dreamed of the stairway to heaven, and there God confirms his new name, Israel, in broad daylight. At the river the mysterious man gave him that name in the dark; now God speaks it to him openly. But Jacob’s homecoming is full of graves. Rachel dies giving birth to her second son, and with her last breath she names him Ben-oni, “son of my sorrow.” Jacob quietly renames him Benjamin, “son of my right hand.” Then Isaac dies, and his sons Esau and Jacob bury him together, just as Isaac and Ishmael once buried Abraham together. The writer closes this part of Jacob’s story the way he opened it, with the two brothers who were rivals from birth standing together at their father’s grave.',
           src: 'Sarna · Alter'
         }
       }
@@ -3251,7 +3251,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Before the story leaves Esau for good, it gives him a whole chapter, a long roll of his descendants, the chiefs and kings of Edom. It is the book’s quiet way of honoring the brother who was passed over. The rejected son is not erased; he becomes a nation in his own right, with kings of its own long before Israel had any. The promise ran through Jacob, but Esau was not nothing. The text closes his account with dignity, and then turns, for the rest of Genesis, to the sons of Israel.',
+          text: 'Before the writer leaves Esau behind for good, he gives him a whole chapter, a long list of his descendants and of the chiefs and kings of Edom, the nation that came from him. In this quiet way the writer honors the brother who was passed over. He does not erase the son who lost the blessing. He shows Esau becoming a nation in his own right, one that had kings long before Israel did. God carried his promise through Jacob, but he did not treat Esau as nothing. The writer ends Esau’s account with dignity and then turns, for the rest of Genesis, to the sons of Israel.',
           src: 'Sarna · Westermann'
         }
       }
@@ -3262,8 +3262,8 @@ export const GENESIS: Reading[] = [
     span: 'Genesis 37', chapterIndex: 37,
     title: 'Joseph sold',
     unitLabel: 'Scene',
-    thread: 'A father’s favoritism, a boy’s dreams, and brothers who hate him enough to throw him in a pit and sell him. The deceit that ran through this family comes back on Jacob through his own sons, with a bloodied coat.',
-    closeEnd: 'Jacob, who fooled his blind father with a goat and a garment, is now fooled by his sons with a goat and a garment. The favored son is gone, and heaven says nothing.',
+    thread: 'Jacob loves his son Joseph more than his other sons and gives him an ornate robe to show it, and Joseph makes things worse by telling his brothers dreams in which they bow down to him. The brothers come to hate him so much that they throw him into a pit and sell him as a slave. Jacob once deceived his own father, and now his sons deceive him in the same way, with a goat and Joseph’s robe dipped in its blood.',
+    closeEnd: 'Years ago Jacob fooled his blind father Isaac with a goat and a borrowed garment, and now his sons fool him with a goat and Joseph’s garment. Jacob believes his favorite son is dead, and through all of it God says nothing.',
     passages: [
       {
         label: 'One', ref: '37:3–11', kind: 'scene', form: 'prose', title: 'The dreamer',
@@ -3276,19 +3276,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The garment is a ketonet passim, and no one is sure exactly what the phrase means, a coat of many colors in the old Greek, more likely a long ornamented robe with sleeves. Either way it is the dress of someone exempt from field labor, a son marked as heir over his older brothers. Shepherding families like this one lived as semi-nomads on the edges of Canaan, moving their flocks between grazing grounds, which is why the brothers are days away at Dothan when the story turns.',
+          text: 'The Hebrew phrase for Joseph’s garment is ketonet passim, and no one is sure exactly what it means. The old Greek translation rendered it as a coat of many colors, but most scholars now think it was a long robe with sleeves, the kind of garment that 2 Samuel says the king’s daughters wore. Either way, no one who wore it was expected to work in the fields, so Jacob was marking Joseph as his heir over his older brothers. Families like this one lived as semi-nomadic shepherds on the edges of Canaan and moved their flocks from one grazing ground to another, which is why the brothers are days away from home, at Dothan, when Joseph comes looking for them.',
           src: 'Alter · Sarna · Westermann'
         },
-        meaning: 'Favoritism is this family’s inherited disease, and Jacob, of all people, should know what it does. He was the favored son who tore his own family in half. And here he is dressing one boy in a coat that says, out loud, that he matters more than his brothers. The text does not make Joseph innocent either: he is gifted and insufferable, dreaming aloud of the others bowing to him. What it shows is a wound handed down a third time, and a household that has forgotten how to be kind.',
+        meaning: 'Favoritism has run through this family for generations, and Jacob of all people should know the harm it does. His father Isaac favored Esau, his mother Rebekah favored Jacob, and the rivalry that followed tore the family apart. Yet here Jacob dresses one son in a robe that tells everyone Joseph matters more than his brothers. The writer does not make Joseph innocent either. Joseph is gifted, but he is also insufferable, and he tells his brothers his dreams of them bowing down to him. Jacob has passed the old <b>wound</b> to a third generation, and no one in his household remembers how to be kind.',
         lenses: {
-          theo: 'The patterns we hated in our parents we tend to repeat on our children, unless something costly breaks them. Jacob’s favoritism is Isaac’s favoritism is the same poison passed down the line, and it will take the near-destruction of this family to begin to drain it. Grace, in this story, works slowly, through generations, and through wreckage.',
-          arch: 'Joseph is the marked child, the one singled out and dressed to show it, carrying a real gift and the unbearable pride that rides along with it. The favored one becomes the family’s lightning rod, and the very gift that sets him apart is what gets him thrown down. The set-apart child is a figure the old stories return to again and again. (The marked one the gift makes a target.)'
+          theo: 'We tend to repeat on our children the patterns we hated in our parents, unless someone pays a real price to break them. Isaac played favorites, and now Jacob does the same, and before this family begins to heal, its members will very nearly destroy one another. In this story God works slowly, across generations, and he works through the wreckage the family makes.',
+          arch: 'Many old stories feature a child whom a parent singles out and marks as special, and whose brothers or sisters resent the favor. The child usually has a real gift, along with the pride that tends to come with it, and the others turn their anger on him. Joseph fits that pattern closely. Jacob marks him with the robe, Joseph flaunts his dreams, and the brothers use the robe itself as part of their revenge.'
         },
         addr: {
           mode: 'names',
-          text: 'You know a family pattern you swore you would never repeat, and the way it can show up in your own hands anyway. The wounds we carry have a way of becoming the wounds we hand on, unless we catch them.'
+          text: 'Most of us carry a family pattern we swore we would never repeat, and many of us have caught ourselves repeating it anyway. Unless we notice what we are doing, we tend to pass on to others the wounds that others passed on to us.'
         },
-        ask: 'What pattern from the family that made you are you most afraid of repeating, and where do you already see it?'
+        ask: 'Which pattern from the family that raised you are you most afraid of repeating, and where do you already see it in yourself?'
       },
       {
         label: 'Two', ref: '37:18–34', kind: 'scene', form: 'prose', title: 'The pit',
@@ -3304,19 +3304,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Twenty pieces of silver was a real price, about the going rate for a young slave in this era’s records. The traders are a caravan on the great trade road that ran from Gilead down to Egypt, carrying gum, balm, and myrrh, the costly resins of the spice trade, with a sold boy now among the cargo. Egypt’s appetite for foreign slaves is well attested, and a Semite could end up in an Egyptian household exactly as Joseph does.',
+          text: 'Twenty pieces of silver was a realistic price for a young slave, close to the rates recorded in documents from the early second millennium BCE. The brothers sell Joseph to a caravan of traders on the great trade road from Gilead down to Egypt, carrying gum, balm, and myrrh, the costly resins of the spice trade. From Egyptian records, historians know that Egyptian households bought many foreign slaves, and a young man from Canaan could well have ended up in an official’s household, as Joseph does.',
           src: 'Alter · Sarna'
         },
-        meaning: 'The family’s signature move comes all the way home. Jacob fooled his blind father with a goat and a borrowed garment; now his sons fool him with a goat and Joseph’s garment, and it costs him the son he loved most. The lie he built his life on is handed back to him whole. And over the entire catastrophe, for the first time in the cycle, heaven is silent. No dream, no voice, no angel, no rescue. Joseph goes down into Egypt and God does not say a word, for years.',
+        meaning: 'The members of this family have deceived one another for generations, and now Jacob’s sons turn that deceit on him. Jacob once fooled his blind father with a goat and a borrowed garment, and now his sons fool him with a goat and Joseph’s garment, and he loses the son he loved most. Jacob built his life on a lie, and his sons hand the same lie back to him. Through the whole disaster, and for the first time in Jacob’s story, God is <b>silent</b>. He sends no dream, no voice, no angel, and no rescue. Joseph goes down into Egypt, and God does not speak for years.',
         lenses: {
-          theo: 'This is the start of the strangest providence in Genesis. There is no miracle in this chapter, no intervention, only a vicious human crime and a long silence. The God who walked and spoke openly with Abraham and Jacob goes quiet here, and works, if he is working at all, hidden inside the wreckage, in a direction no one in the scene can see.',
-          arch: 'The pit is the descent every hero’s story seems to require, the going-under that has to come before any rising. The favored one is stripped of the coat, thrown into the dark, sold and carried off, and only that downward road leads anywhere at all. You do not reach the heights of this story except by way of the empty cistern. (Campbell, the descent that has to come before the rise.)'
+          theo: 'Here begins the strangest account of God’s providence in Genesis. God performs no miracle in this chapter and does not intervene. The brothers commit a vicious crime, and God says nothing for a long time. He walked and spoke openly with Abraham and Jacob, but here he goes quiet, and if he is at work, he is working hidden inside the wreckage, toward an end that no one in the scene can see.',
+          arch: 'The scholar Joseph Campbell observed that hero stories around the world send their hero down into some dark place, a cave, the belly of a beast, or an underworld, before he can rise again. Joseph’s brothers strip him of his robe, throw him into an empty cistern, and sell him to strangers who carry him away, and this is the first stage of his descent. Before the writer raises Joseph up, he takes him all the way down.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the silence of heaven in the worst stretch, when the very thing you dreaded happens and no voice arrives to explain it.'
+          text: 'Many of us have lived through a stretch when the thing we most dreaded happened and God seemed to say nothing at all to explain it.'
         },
-        ask: 'Where has heaven gone quiet on you, and what would it change to trust that silence is not the same as absence?'
+        ask: 'Is there a place in your life where God seems to have gone quiet? What would change if you trusted that his silence does not mean he is absent?'
       }
     ]
   },
@@ -3324,8 +3324,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-38', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 38', chapterIndex: 38,
     title: 'Judah and Tamar',
-    thread: 'The story leaves Joseph for a chapter to follow Judah, who fails a widow named Tamar, until the wronged woman with no power left takes justice into her own hands and is called more righteous than he is.',
-    closeEnd: 'She is more righteous than I. The man who sold his brother learns what righteousness is from a woman he tried to burn, and the line of David runs straight through her gamble.',
+    thread: 'The writer leaves Joseph for one chapter to follow his brother Judah. Judah wrongs his widowed daughter-in-law Tamar by withholding what the custom of the time owed her. Tamar, who has no power left, takes justice into her own hands, and in the end Judah admits that she is more righteous than he is.',
+    closeEnd: 'Judah says, “She is more righteous than I.” The man who sold his brother learns what righteousness means from a woman he tried to burn, and through her bold plan Tamar becomes an ancestor of King David.',
     passages: [
       {
         ref: '38:6–26', kind: 'scene', form: 'prose', title: 'She is more righteous than I',
@@ -3340,23 +3340,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Levirate custom obliged a dead man’s brother to give his widow a son to carry on the dead man’s line and secure her future. Judah fails Tamar at it twice over and then strands her, a childless widow with no standing, no protector, and no legal move. So she takes the only path left: she disguises herself, secures Judah’s own seal as proof, and waits. When he condemns her to be burned for exactly the thing he did, she produces the seal. And from this scandalous union comes Perez, an ancestor of David, and far down the line, of Jesus.',
+          text: 'Under an ancient custom that later appears in Israel’s law as levirate marriage, when a man died without a son, his brother was expected to father a son with the widow, to carry on the dead man’s name and secure her future. Judah fails Tamar twice and then leaves her stranded, a childless widow with no standing, no protector, and no legal way forward. So Tamar takes the only course left to her. She disguises herself, sleeps with Judah, and keeps his seal and staff as proof. When Judah condemns her to be burned for becoming pregnant, the very thing he himself took part in, she produces his seal. Their son Perez becomes an ancestor of David, and the Gospel of Matthew names Tamar in the family line of Jesus.',
           src: 'Alter · Sarna · Westermann'
         },
-        meaning: 'Tamar is wronged by a powerful man who owes her a future and quietly withholds it, and the law hands her nothing. So she takes justice the only way left to her, by cunning and at the risk of her life, and when Judah moves to have her killed for immorality, she holds up his own seal and stops him cold. She is more righteous than I, he says, and it is the first true thing he has said in the whole story. The woman with no power schools the man with all of it, and the chosen line runs not through the respectable man but through the widow he tried to destroy.',
+        meaning: 'Judah is a powerful man who owes Tamar a future and quietly withholds it, and the law gives her no way to make him pay. So she seeks justice the only way left to her, by cunning and at the risk of her life. When Judah orders her killed for immorality, she holds up his own seal and stops him. “She is more righteous than I,” he says, and these are the first true words he speaks in the whole story. The woman with no <b>power</b> teaches the man who holds all of it, and God carries the chosen family line forward not through the respectable man but through the widow he tried to destroy.',
         lenses: {
-          theo: 'The Bible keeps putting its full weight on the powerless one who refuses to vanish quietly. Tamar has no standing and is the righteous one; Judah has everything and is in the wrong, and he is honest enough, finally, to say so. The promise does not run through the strong and proper here. It runs through a wronged woman’s desperate, righteous gamble.',
-          arch: 'This is cunning turned to its rightful use, not grasping at what is not yours, like Jacob, but forcing your way back into a story you were quietly written out of and claiming what you are owed. The wronged woman who takes justice by her wits is a figure the Bible keeps returning to, Tamar here, Ruth to come. The one cast to the margins refuses the margins. (The outsider who forces her way back in.)'
+          theo: 'Again and again the biblical writers side with the powerless person who refuses to disappear quietly. Tamar has no standing and yet she is the righteous one, while Judah has everything and is in the wrong, and in the end he is honest enough to say so. God does not carry his promise forward here through the strong and proper. He carries it through a wronged woman’s desperate and righteous gamble.',
+          arch: 'Jacob used cunning to take what was not his, but Tamar uses cunning to claim what she is owed, after Judah has quietly pushed her out of the family’s future. The Bible tells several stories of a wronged or vulnerable woman who wins justice by her wits, and in the book of Ruth the townspeople even name Tamar when they bless Ruth’s marriage. Like Ruth after her, Tamar is an outsider pushed to the margins who refuses to stay there.'
         },
         misreading: {
-          named: 'This chapter is a sordid detour that interrupts the real Joseph story.',
-          why: 'It is set here on purpose. Judah, who just engineered the sale of his brother, is the man who learns righteousness from Tamar, and it is the beginning of his turning. The same Judah will later step forward and offer his own life in place of Benjamin’s. The interruption is where his change starts.'
+          named: 'This chapter is an unpleasant detour that interrupts the real story of Joseph.',
+          why: 'The editor placed it here on purpose. Judah has just arranged for his brother Joseph to be sold, and in this chapter he learns what righteousness is from Tamar and begins to change. Later the same Judah will step forward and offer his own life in place of his youngest brother Benjamin’s. His change begins in the chapter that only looks like an interruption.'
         },
         addr: {
           mode: 'names',
-          text: 'You know what it is to be owed something by someone with power over you, and to have no clean or easy way to claim it. The one everyone wrote off is often the one telling the truth.'
+          text: 'Some of us know what it is to be owed something by a person who has power over us, with no clean or easy way to claim it. Often the person everyone has written off is the one telling the truth.'
         },
-        ask: 'Where have you been quietly written out of something you were owed, and what would claiming it honestly require of you?'
+        ask: 'Is there something you were owed that someone quietly kept from you, and what would it take for you to claim it honestly?'
       }
     ]
   },
@@ -3364,8 +3364,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-39', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 39', chapterIndex: 39,
     title: 'Potiphar’s wife',
-    thread: 'A slave in Egypt, Joseph rises by his integrity and is brought down by it. He refuses his master’s wife, she lies, and he goes to prison for doing the right thing, with the LORD still, somehow, with him.',
-    closeEnd: 'He does the right thing and it costs him his freedom. And the one line that frames the whole disaster does not change: the LORD was with him, in the fine house and in the prison alike.',
+    thread: 'In Egypt Joseph is a slave, and his honesty and skill raise him to the head of his master’s household. Then his integrity brings him down. He refuses the advances of his master’s wife, she accuses him falsely, and he goes to prison for doing the right thing, yet the writer insists that the LORD was still with him.',
+    closeEnd: 'Joseph does the right thing, and it costs him his freedom. The writer begins and ends the chapter with the same words, that the LORD was with Joseph, and he says them about the prison just as firmly as about the fine house.',
     passages: [
       {
         ref: '39:2–21', kind: 'scene', form: 'prose', title: 'The cloak left behind',
@@ -3380,23 +3380,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The chapter is framed at both ends by a single refrain, the LORD was with him, said as plainly over the prison as over the master’s house. In between, Joseph rises to run Potiphar’s entire estate, refuses the master’s wife on the grounds not of getting caught but of sinning against God, and is destroyed by her lie when she is spurned. The cloak left in her hand becomes the false evidence, the second time a garment of Joseph’s is used to tell a lie about him.',
+          text: 'The writer frames the chapter at both ends with the same plain statement, that the LORD was with Joseph, and he says it about the prison as clearly as about his master’s house. Between those two statements Joseph rises to run the whole estate of Potiphar, an officer of Pharaoh. When Potiphar’s wife tries to seduce him, Joseph refuses, not because he fears being caught but because it would be a sin against God. Angry at being refused, she lies about him and keeps his cloak as false evidence. This is the second time someone has used a garment of Joseph’s to tell a lie about him.',
           src: 'Sarna · Alter · Westermann'
         },
-        meaning: 'Joseph does exactly the right thing and is punished for it. He refuses, not out of fear of discovery but because it would be a sin against God, and his integrity costs him the cloak off his back and lands him in a cell on a lie. The story flatly refuses the bargain we keep wanting, that doing right will keep you safe. It does not. And yet the sentence that brackets the whole disaster never wavers: the LORD was with him, in the house where he rose and in the prison where he fell. God’s presence, the text insists, is not the same as God’s protection, and it will not pretend otherwise.',
+        meaning: 'Joseph does exactly the right thing and is punished for it. He refuses his master’s wife because giving in would be a sin against God, and for his integrity he loses his cloak and lands in a cell on the strength of her lie. Most of us want to believe that doing right will keep us safe, and the writer will not let us believe it. Yet he begins and ends the disaster with the same sentence: the LORD was with Joseph, in the house where he rose and in the prison where he fell. The writer wants us to see that God’s <b>presence</b> is not the same as God’s protection.',
         lenses: {
-          theo: 'The LORD was with him is said as loudly over the prison as over the palace, and that is the book quietly redefining what it means to be blessed: not exempt from injustice, but accompanied through it. Joseph’s faithfulness is real and it is not rewarded with safety. It is met with company in the dark, which turns out to be a different and harder kind of grace.',
-          arch: 'A garment of Joseph’s is turned into a lie about him for the second time, first the bloodied coat and now the seized cloak, the same motif the story keeps folding back on itself. The descent is not finished; the gifted one is stripped again and sent lower still, because in this kind of story you go down twice before you come up. (The repeated garment, the second descent.)'
+          theo: 'The writer says “the LORD was with him” as firmly about the prison as about the house, and in doing so he quietly changes what it means to be blessed. God does not spare Joseph from injustice; he goes with him through it. Joseph stays faithful, and God does not reward him with safety. God gives him company in the dark instead, which is a harder kind of grace and, in its way, a deeper one.',
+          arch: 'Scholars have long compared this scene to an Egyptian story called the Tale of Two Brothers, in which a married woman tries to seduce her husband’s younger brother and, when he refuses her, accuses him falsely. The Greeks told similar stories, such as the tale of Phaedra and Hippolytus. In Genesis the scene also continues Joseph’s descent. His brothers used his robe to deceive their father, and now Potiphar’s wife uses his cloak to deceive her husband. Joseph went down into the pit, and now he goes lower still, into prison, before God raises him up.'
         },
         misreading: {
-          named: 'If Joseph had really been faithful, God would have kept him out of prison.',
-          why: 'The text says the opposite in the very same breath: the LORD was with him, and he went to prison. The faithfulness and the suffering are both true at once. The story is built specifically to deny that doing the right thing buys you safety, and to claim something stranger and sturdier instead.'
+          named: 'If Joseph had truly been faithful, God would have kept him out of prison.',
+          why: 'The writer says the opposite in the same breath: the LORD was with Joseph, and Joseph went to prison. Joseph’s faithfulness and his suffering are both true at once. The writer built this chapter to deny that doing the right thing buys us safety, and to claim something stranger and sturdier instead, that God stays with the faithful even when they suffer for it.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the bitter version of doing the right thing, the kind that costs you and is not rewarded, and the question of whether God is really with you when it does. Being accompanied is not the same as being spared. It may be the better promise.'
+          text: 'Many of us have done the right thing and paid for it, with no reward to show, and have wondered whether God was really with us. If he was, he was with us in a way that did not spare us, and that may be the better promise.'
         },
-        ask: 'Where has doing the right thing cost you, and what would change if presence, not protection, were what God was offering in it?'
+        ask: 'When has doing the right thing cost you? What would change if you believed that God was offering you his presence in it, rather than protection from it?'
       }
     ]
   },
@@ -3414,7 +3414,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'In prison Joseph reads the dreams of two of Pharaoh’s officials, the cupbearer and the baker, and reads them truly: one restored, one hanged. He asks for one thing in return, to be remembered. And the cupbearer walks out free and forgets him for two more years. It is the floor of the whole story. Joseph does the one thing he can, accurately and generously, and is forgotten, the gift that will one day save a nation sitting useless in a cell while the one man who could free him puts him out of his mind.',
+          text: 'In prison Joseph interprets the dreams of two of Pharaoh’s officials, his cupbearer and his baker, and his interpretations come true: Pharaoh restores the cupbearer to his post and hangs the baker. Joseph asks only one thing in return, that the cupbearer remember him to Pharaoh. The cupbearer walks out free and forgets him for two more years. This is the lowest point of Joseph’s story. He does the one thing he can, accurately and generously, and the one man who could free him puts him out of mind, while Joseph, whose gift will one day save a nation, sits forgotten in a cell.',
           src: 'Sarna · Alter'
         }
       }
@@ -3424,8 +3424,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-41', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 41 (selected)', chapterIndex: 41,
     title: 'From the pit to the palace',
-    thread: 'Two years late, the cupbearer finally remembers, and the forgotten prisoner is rushed from the dungeon to stand before Pharaoh, reads the dream no one else can, and is set over all Egypt in a single day.',
-    closeEnd: 'The dreamer they threw in a pit now stands second only to Pharaoh, and names his sons not for being healed but for being made fruitful in the very land of his affliction.',
+    thread: 'Two years after his release, the cupbearer finally remembers Joseph. Pharaoh has dreamed dreams that no one in Egypt can explain, so his servants rush Joseph out of the dungeon to stand before him. Joseph interprets the dreams, and Pharaoh sets him over all Egypt in a single day.',
+    closeEnd: 'Joseph’s brothers threw the dreamer into a pit, and now he stands second only to Pharaoh. When his sons are born, he names them not for being healed but for being made fruitful in the very land where he suffered.',
     passages: [
       {
         ref: '41:15–52', kind: 'scene', form: 'prose', title: 'Pharaoh’s dreams',
@@ -3439,19 +3439,19 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The rise from dungeon to vizier in a single day is the old rags-to-power court tale, with one difference: Joseph deflects the credit to God in his first breath before the throne, I cannot, but God will. The two son-names are a quiet autobiography. Manasseh means God made me forget, and Ephraim, fruitful in the land of my affliction. He does not say healed. He says he bore fruit in the place that hurt him.',
+          text: 'Many ancient peoples told stories of a captive or servant who rose to power at a foreign court by solving a problem the king’s own wise men could not, and Joseph’s rise from the dungeon to the second seat in Egypt follows that pattern. Joseph changes it in one way, because the first thing he tells Pharaoh is that he cannot interpret the dream himself, but God will give the answer. The names he gives his sons tell his own story in brief. Manasseh means “God has made me forget,” and Ephraim means “God has made me fruitful in the land of my affliction.” Joseph does not say that God healed him. He says that he bore fruit in the place that hurt him.',
           src: 'Sarna · Alter · Westermann'
         },
-        meaning: 'The forgotten man is remembered and rises in a day, and the first thing he does with the gift is refuse the credit for it: I cannot, but God will. Then he names his children, which is how this book lets a person say what a season meant. Not Manasseh, God undid the harm, but God made me forget, the harm is still real, it has only loosened its grip. And not Ephraim, God took me out of the affliction, but God made me fruitful in the land of my affliction. He bore fruit in the very place that wounded him, not after it, in it. That is the whole theology of suffering in two baby names.',
+        meaning: 'Pharaoh’s cupbearer finally remembers Joseph, and Joseph rises in a single day. The first thing he does with his gift is refuse the credit for it, telling Pharaoh that God, not Joseph, will give the answer. Later Joseph names his sons, which in Genesis is how a person says what a season of life has meant. He does not name the first “God has undone the harm,” but “God has made me forget,” because the harm was real, though it no longer grips him as it did. He does not name the second “God has taken me out of my affliction,” but “God has made me <b>fruitful</b> in the land of my affliction.” Joseph bore fruit in the very place that wounded him, not after he left it but while he was still there. In those two names he sets out a whole understanding of suffering.',
         lenses: {
-          theo: 'The rise is not the reward for the suffering; it is simply the next thing after it, and Joseph reads God in both. He never gets an explanation for the pit and the prison. He gets a vantage, late, from which he can finally see that he was being carried even through the silence. Fruitful in the land of affliction is not the same as rescued from it, and the book means the difference.',
-          arch: 'This is the return from the underworld, the one who went down into the pit climbing back up carrying what the dark taught him. The descent turns out to have been the making of him, not the ruin of him, and the hero of a hundred stories comes home from the depths changed and bearing a gift. (Campbell, the return from the descent.)'
+          theo: 'God does not raise Joseph as a reward for his suffering; he simply raises him after it, and Joseph sees God at work in both. No one ever explains to Joseph why he had to endure the pit and the prison. Instead, late in his life, God gives him a place to stand from which he can see that God was carrying him even while God was silent. To be made fruitful in the land of affliction is not the same as being rescued from it, and the writer wants us to notice the difference.',
+          arch: 'Joseph Campbell observed that after the hero of a myth goes down into the depths, he usually comes back carrying something he could only have gained there. Joseph fits that pattern. He went down into the pit and the prison, and he comes back up with the wisdom and skill to rule Egypt and to save it from famine. What looked like his ruin turns out to have been his training.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the difference between being healed of a hard season and being made, somehow, fruitful inside it.'
+          text: 'There is a difference between being healed of a hard season and being made fruitful in the middle of it, and many of us have known the second without the first.'
         },
-        ask: 'Where might you be asked not to be rescued from a hard place, but to grow something in it?'
+        ask: 'Is there a hard place in your life that you may be meant not to escape, but to grow something in?'
       }
     ]
   },
@@ -3460,8 +3460,8 @@ export const GENESIS: Reading[] = [
     span: 'Genesis 42–44', chapterIndex: 42, crossesChapters: true,
     title: 'The brothers come',
     unitLabel: 'Scene',
-    thread: 'Famine drives the brothers to Egypt to beg for grain, and they bow, without knowing it, to the brother they sold. He tests them to the breaking point, until Judah, who once proposed the sale, offers his own life in the place of Benjamin.',
-    closeEnd: 'The brother who said “let us sell him” now says “let me be the slave in his place.” The family’s deceit has finally turned into its opposite, and the disguise cannot hold.',
+    thread: 'A famine drives Joseph’s brothers to Egypt to buy grain, and without knowing it they bow down to the brother they sold. Joseph tests them severely, until Judah, who once proposed selling Joseph, offers to become a slave himself in place of their youngest brother, Benjamin.',
+    closeEnd: 'Years ago Judah said, “Let us sell him.” Now he asks to stay in Egypt as a slave in place of the boy. The members of this family have deceived one another for generations, and now one of them offers himself for his brother. Joseph can no longer keep up his disguise.',
     passages: [
       {
         label: 'One', ref: '42:6–24', kind: 'scene', form: 'prose', title: 'The dream comes true',
@@ -3473,15 +3473,15 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Egypt was the region’s granary. Its harvest leaned on the Nile’s flood rather than on rain, so when drought starved Canaan, Egypt could still have grain, and hungry peoples came down to buy it. Egyptian sources record exactly this, among them a tomb painting at Beni Hasan of a band of Asiatics arriving with their goods. The famine office Joseph runs, storing through the good years against the lean, fits what is known of how the Egyptian state managed its surplus.',
+          text: 'Egypt was the granary of the region. Its harvests depended on the yearly flooding of the Nile rather than on rain, so when drought starved Canaan, Egypt could still have grain, and hungry neighbors came down to buy it. Historians have Egyptian evidence that such outsiders came. In one letter a border official reports that he let shepherd tribes from Edom pass into Egypt to keep themselves and their flocks alive, and a tomb painting at Beni Hasan shows a band of travelers from Canaan arriving with their goods. Joseph’s work of storing grain in the good years against the lean ones fits what historians know of how the Egyptian state managed its surplus.',
           src: 'Alter · Sarna'
         },
-        meaning: 'The brothers stand before the one man who can feed them or starve them, and they do not know he is the boy they threw in a pit. The test Joseph runs is not only cruelty; it is the real question of whether they are the same men. And he hears them, at last, say out loud the thing they buried, the anguish they would not listen to, and he has to leave the room to weep. The reckoning this family needs is not revenge. It is whether the men who sold one brother would now protect another.',
+        meaning: 'The brothers stand before the one man who can feed them or let them starve, and they do not know he is the boy they threw into a pit. Joseph tests them, but he is not only being cruel. He is asking the real question, whether they are still the same men who sold him. During the test he hears them admit aloud the guilt they had buried, that they ignored his anguish when he pleaded with them, and he has to leave the room to weep. This family does not need revenge. Its members need to learn whether the men who sold one brother will now <b>protect</b> another.',
         addr: {
           mode: 'names',
-          text: 'You know the strange position of suddenly holding power over people who once held it over you, and the question of what you will do with it. Old guilt has a way of surfacing in the one season you cannot afford it.'
+          text: 'Some of us have suddenly found ourselves with power over people who once had power over us, and have had to decide what to do with it. Many of us have also found that old guilt comes back to us at the very moment we can least afford it.'
         },
-        ask: 'What buried guilt of yours still surfaces under pressure, and what is it asking you to finally face?'
+        ask: 'What guilt of yours still comes back when you are under pressure, and what do you need to face about it?'
       },
       {
         label: 'Two', ref: '44:18–34', kind: 'scene', form: 'prose', title: 'Judah offers himself',
@@ -3492,21 +3492,21 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The planted cup is a divining cup. Joseph’s steward says his master reads the future by it, and divination from a cup, watching how oil or fragments move in the liquid, was a recognized art in Egypt and Mesopotamia. To the brothers it marks Joseph as fully an Egyptian official, a man whose sight they cannot get around.',
+          text: 'Joseph has his steward hide his silver cup in Benjamin’s sack, and the steward tells the brothers that his master uses the cup for divination. In Egypt and Mesopotamia people tried to read the future by pouring oil or other substances into a cup of liquid and watching how they moved. To the brothers, the cup marks Joseph as a full Egyptian official, a man whose insight they cannot hope to escape.',
           src: 'Alter · von Rad'
         },
-        meaning: 'The hinge of the whole story belongs to Judah, not Joseph. The brother who once said let us sell him now says let me be the slave in his place. He cannot bear to watch his father grieve a second lost son, so he offers up his own freedom for the boy’s. The deceit that has run through four generations of this family finally turns into its opposite: a man laying himself down for his brother. That is the change Joseph has been testing for, and the moment it appears in front of him, the disguise breaks.',
+        meaning: 'The turning point of the whole story belongs to Judah, not Joseph. Years ago Judah proposed selling Joseph, and now he offers to stay in Egypt as a slave in place of Benjamin. He cannot bear to watch his father grieve the loss of another son, so he offers up his own freedom for the boy’s. For four generations the members of this family deceived one another, and now one of them lays down his life for his brother. This is the change Joseph has been testing for, and as soon as he sees it, he can no longer keep up his <b>disguise</b>.',
         lenses: {
-          theo: 'The family is not healed by Joseph’s power; it is healed by Judah’s repentance, by one brother willing to take the place of the brother in danger. The book has quietly carried Judah from the man who sold a brother to the man who would be enslaved for one, and it is through Judah, not through the favored Joseph, that the royal line and the Messiah will run. Repentance, not power, is what mends this house.',
-          arch: 'Here is substitution, one stepping bodily into the place of another, and it is the deepest turn the family makes: the brother who once sold a brother now offers to be enslaved for one. The image of the one who takes the place of the condemned runs forward through the whole Bible, the ram for Isaac and on. The very part that committed the betrayal is the part that, changed, redeems it. (Substitution, the place taken for another.)'
+          theo: 'Joseph’s power does not heal this family. Judah heals it, by repenting and by being willing to take the place of the brother in danger. Over many chapters the writer has carried Judah from the man who sold one brother to the man who would become a slave for another. Later, Israel’s royal line will run through Judah, not through the favored Joseph, and Christians have traced the line of the Messiah through him as well. In this family, the brother who repents does what the brother with power cannot.',
+          arch: 'Judah offers himself as a substitute, stepping into the place of someone who has been condemned. Readers find this idea again and again in the Bible, beginning with the ram that God provided in place of Isaac and continuing through the sacrifices of Israel’s worship, and Christians have seen it fulfilled in Jesus. What makes Judah’s offer so striking is that the man who once betrayed one brother is the same man who, now changed, offers to save another.'
         },
         misreading: {
-          named: 'Joseph’s testing is just him toying with his brothers to savor his revenge.',
-          why: 'He keeps leaving the room to weep, and the testing is the only way to learn whether the brothers have actually changed. The instant Judah proves they have, by offering himself, Joseph can no longer hold the disguise and breaks down. It is discernment, and it costs him to do it, not cruelty.'
+          named: 'Joseph tests his brothers only to toy with them and enjoy his revenge.',
+          why: 'Joseph keeps leaving the room to weep, and testing his brothers is the only way he can learn whether they have truly changed. As soon as Judah proves that they have, by offering himself, Joseph can no longer keep up the disguise and breaks down. Joseph is being discerning, not cruel, and the testing costs him dearly.'
         },
         addr: {
           mode: 'names',
-          text: 'You know the weight of stepping into the gap for someone, taking the loss onto yourself so the person you love does not have to bear it. The one who did the worst thing is sometimes the one who can finally undo it.'
+          text: 'Some of us know what it is to step into the gap for someone, taking a loss on ourselves so that a person we love does not have to bear it. Sometimes the person who did the worst wrong becomes the one who can finally help set it right.'
         },
         ask: 'Where could you step into the gap for someone, and what would it cost you to do it?'
       }
@@ -3516,8 +3516,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-45', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 45', chapterIndex: 45,
     title: 'I am Joseph',
-    thread: 'Joseph can no longer hold it. He sends the Egyptians out, weeps so loudly they hear it through the walls, and tells his terrified brothers the thing that reframes the whole story without excusing any of it.',
-    closeEnd: 'He does not deny what they did, he names it plainly, you sold me, and in the same breath refuses to let it be the last word. God sent me ahead of you, to save lives.',
+    thread: 'Joseph can no longer hold back. He sends the Egyptians out of the room and weeps so loudly that they hear him through the walls. Then he tells his terrified brothers who he is, and he says something that changes how they, and we, understand everything that has happened, without excusing any of it.',
+    closeEnd: 'Joseph does not deny what his brothers did. He names it plainly, telling them that they sold him, and in the same breath he refuses to let their crime have the last word. God, he tells them, sent him ahead of them to save lives.',
     passages: [
       {
         ref: '45:3–8', kind: 'scene', form: 'prose', title: 'It was not you, but God',
@@ -3529,23 +3529,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'The Joseph story stands apart from the rest of Genesis, a single sustained novella rather than a chain of episodes, and many read it as a later telling shaped by Israel’s wisdom tradition. Its hero is the Hebrew who rises in a foreign court and keeps faith there, the same shape later given to Daniel and Esther, stories told for a people learning to live under empires not their own. The providence it turns on, harm bent toward survival, is that tradition’s signature.',
+          text: 'The Joseph story stands apart from the rest of Genesis. It is one long, continuous tale rather than a chain of separate episodes, and many scholars think later writers shaped it in the spirit of Israel’s wisdom tradition. Its hero is a Hebrew who rises at a foreign court and stays faithful there, the same pattern that the writers of Daniel and Esther later used for a people learning to live under empires that were not their own. Those writers shared the belief at the center of Joseph’s story, that God can turn harm toward survival.',
           src: 'von Rad · Westermann · Alter'
         },
-        meaning: 'The first thing Joseph says is I am Joseph, and the second is the one you sold. He does not pretend it did not happen; he says the betrayal to their faces. And then he does the thing that can take a lifetime to learn: he refuses to let the betrayal be the whole truth. It was not you who sent me here, but God. He does not say what they did was good, it was evil. He says God was at work inside it anyway, bending even their crime toward the saving of lives. That is not denial and it is not excuse. It is a man who has found a frame large enough to hold the worst thing that ever happened to him without being destroyed by it.',
+        meaning: 'The first thing Joseph says is “I am Joseph,” and the next is that he is the brother they sold into Egypt. He does not pretend their betrayal never happened; he names it to their faces. Then he does something that can take a lifetime to learn: he refuses to let the betrayal be the whole truth. He tells them that it was not they who sent him there, but God. He does not call what they did good, because it was evil. He tells them that God was at work inside it anyway, turning even their crime toward saving lives. Joseph is not denying the wrong or excusing it. He has found a way of understanding his life that is large enough to hold the worst thing that ever happened to him without letting it <b>destroy</b> him.',
         lenses: {
-          theo: 'This is providence as Genesis understands it: not a God who prevents the evil, and not a God who pulls the strings so that no one is really guilty, but a God who is not defeated by the evil, who works through the wreckage toward life without ever once calling the wreckage good. They sold him, and God sent him. The book refuses to drop either half of that sentence.',
-          arch: 'This is the reframe that heals, the hard-won power to hold your own story so the wound stays real and stops being the whole of it. The betrayal is taken up into a life that has grown larger than it, neither denied nor allowed to be the last word. It is among the oldest kinds of wisdom there is, and one of the most costly to reach. (Naming the wound and refusing it the final say.)'
+          theo: 'This is how the writer of Genesis understands God’s providence. God does not prevent the evil, and he does not pull the strings so that no one is really guilty. Instead, he refuses to let the evil have the final word, and he works through the wreckage toward life without ever once calling the wreckage good. The brothers sold Joseph, and God sent him, and the writer will not let go of either half of that sentence.',
+          arch: 'People who have recovered from deep harm often describe learning to tell their own story differently, so that the wound stays real but no longer defines everything else. Joseph does exactly this. He neither denies his brothers’ betrayal nor lets it have the last word, because he has come to see it as one part of a larger life that God has been shaping. People have tried to teach this kind of wisdom for as long as there have been teachers, and it remains one of the hardest things to learn.'
         },
         misreading: {
-          named: 'So it was all God’s plan, which means the brothers did nothing really wrong.',
-          why: 'Joseph names their evil twice and never softens it, and at the very end of the book he says it again to their faces: you meant evil. Providence here does not erase guilt; it overrules the outcome. To use the line to excuse the harm is to miss the whole point the story is making.'
+          named: 'So it was all God’s plan, and the brothers did nothing really wrong.',
+          why: 'Joseph names their evil twice and never softens it, and at the very end of Genesis he says it to their faces again, telling them that they meant it for evil. When God brings good out of their crime, he does not erase their guilt; he only overrules the outcome of what they did. Anyone who uses Joseph’s words to excuse the harm has missed his whole point.'
         },
         addr: {
           mode: 'reframes',
-          text: 'You may be holding a real betrayal, and the question is whether you can name it honestly and still refuse to let it be the only thing your life is allowed to mean. Naming the wrong and refusing its last word are not opposites. They are the same act of freedom.'
+          text: 'Some of us carry a real betrayal, and we face the question of whether we can name it honestly and still refuse to let it be the only thing our lives mean. Naming the wrong and refusing to give it the last word are not opposites. When we do both, we use the same freedom that Joseph found.'
         },
-        ask: 'What wound are you being asked to name honestly and, at the same time, to stop letting define you?'
+        ask: 'Is there a wound you need to name honestly, while also refusing to let it define you?'
       }
     ]
   },
@@ -3564,7 +3564,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'God meets Jacob at the border with the promise given to all the fathers, do not be afraid, I am with you, I will bring you back. The reunion of father and son after twenty-two years of grief is one of the tenderest scenes in the book. But a long shadow lies across it. The family goes down to Egypt to survive a famine, and the descent that saves them is the very one that becomes, in the next book, four hundred years of slavery. The going-down that rescues is also the bondage that will have to be redeemed.',
+          text: 'As Jacob sets out for Egypt, God meets him at Beersheba, on the southern edge of Canaan, and repeats the promise he gave to Abraham and Isaac. God tells Jacob not to be afraid, because God will go down with him into Egypt and will bring his family back again. The reunion of Jacob and Joseph after twenty-two years of grief is one of the tenderest scenes in Genesis. Yet readers who know what comes next will see a long shadow over it. The family goes down to Egypt to survive a famine, and in the book of Exodus their descendants become slaves there. The journey that saves them also leads them into the bondage from which God will later have to rescue them.',
           src: 'Sarna · Alter'
         }
       }
@@ -3585,7 +3585,7 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Blind old Jacob, like his blind old father before him, blesses the next generation, and crosses his hands to set the younger ahead of the elder one final time, the pattern the whole book has run on. He curses the cruelty of Simeon and Levi, still remembering Dinah decades later, and he hands the scepter not to the favored Joseph but to Judah, the brother who offered himself. Then he gathers his feet into the bed and dies, and is carried back to the cave of Machpelah, to lie with Abraham and Sarah, Isaac and Rebekah, and Leah, the wife he did not choose.',
+          text: 'Jacob is old and nearly blind, as his father Isaac was, and he blesses the next generation. When he blesses Joseph’s sons, he crosses his hands to put the younger one ahead of the elder, following one last time the pattern that runs through the whole book. Speaking to his own sons, he condemns the cruelty of Simeon and Levi, still remembering decades later what they did at Shechem after their sister Dinah was violated. He gives the scepter not to his favorite, Joseph, but to Judah, the brother who offered himself in Benjamin’s place. Then Jacob draws his feet up into the bed and dies, and his sons carry him back to the cave of Machpelah, where Abraham and Sarah, Isaac and Rebekah, and Leah, the wife Jacob did not choose, are buried.',
           src: 'Sarna · Westermann · Alter'
         }
       }
@@ -3595,8 +3595,8 @@ export const GENESIS: Reading[] = [
     id: 'gen-50', bookId: 'genesis', tier: 'sitting',
     span: 'Genesis 50', chapterIndex: 50,
     title: 'You meant it for evil',
-    thread: 'With their father dead, the brothers are certain Joseph has only been waiting to take his revenge. And Joseph weeps, and says the line the whole book has been walking toward.',
-    closeEnd: 'Genesis ends in Egypt, with a coffin and a promise: God will surely visit you, and bring you up. The book that opened with God’s breath over the waters closes far from home, waiting for a rescue that has not yet come.',
+    thread: 'Now that their father Jacob is dead, the brothers are sure that Joseph has only been waiting for the chance to take revenge on them. Joseph weeps, and then he says the words that the whole book of Genesis has been leading up to.',
+    closeEnd: 'Genesis ends in Egypt, with a coffin and a promise. Before he dies, Joseph tells his brothers that God will surely come to their aid and bring them up out of Egypt. The writer began the book with the Spirit of God hovering over the waters, and he ends it far from home, with God’s people still waiting for a rescue that has not yet come.',
     passages: [
       {
         ref: '50:15–26', kind: 'scene', form: 'prose', title: 'Am I in the place of God?',
@@ -3611,23 +3611,23 @@ export const GENESIS: Reading[] = [
         ],
         ground: {
           kind: 'historical',
-          text: 'Genesis ends on Egyptian soil and in an Egyptian custom: Joseph is embalmed and laid in a coffin, the mummification the Egyptians practiced and Israel did not. The book closes not in the promised land but in that coffin, with a sworn promise that the bones will be carried up when God brings the people out. Exodus will open on the far side of four hundred years, and the bones are still waiting.',
+          text: 'Genesis ends on Egyptian soil and with an Egyptian custom. The Egyptians embalm Joseph’s body and lay it in a coffin, following their practice of mummification, which Israel did not adopt. The writer ends the book not in the promised land but beside that coffin, with Joseph’s family sworn to carry his bones home when God brings the people out. Generations pass between the end of Genesis and the exodus, and through all of them the Israelites keep Joseph’s bones in Egypt, waiting to carry them home.',
           src: 'von Rad · Westermann · Alter'
         },
-        meaning: 'After everything, the brothers still cannot believe they are forgiven, and they reach one last time for a lie to protect themselves. And Joseph weeps, because they still do not trust the grace. Then he says it as plainly as the book ever says anything: you meant it for evil, but God meant it for good. Not the evil was secretly good, it was evil, you meant it. But God meant something through it that you never did, and the proof is the bread in your children’s mouths. He will not take the place of God and settle the score. He forgives the unforgivable and feeds them. And then Genesis closes the way exile itself feels, far from home, in a coffin, holding a promise that has not yet come true.',
+        meaning: 'Even after everything, the brothers cannot believe that Joseph has forgiven them. They send him a message, which they may well have invented, claiming that their father asked Joseph to forgive them. Joseph weeps, because they still do not trust his mercy. Then he says it as plainly as anyone in Genesis says anything: they meant to harm him, but God meant it for good. He does not say that the evil was secretly good. They meant it, and it was evil. But God meant something through it that they never intended, and the proof is the bread their children are eating. Joseph refuses to take God’s place and settle the score. He <b>forgives</b> what seemed unforgivable, and he feeds them. Then the writer closes Genesis the way exile feels, far from home, beside a coffin, with a promise that has not yet come true.',
         lenses: {
-          theo: 'This is the whole book’s last word, and it holds the two halves to the very end: you meant evil, God meant good, human guilt and divine providence in a single sentence, neither one cancelling the other. And it ends unresolved on purpose, with a body in Egypt and a promise of return, because the people who assembled Genesis were themselves in exile, holding exactly that kind of promise, and the open ending was the faith they were reaching for.',
-          arch: 'Forgiveness here is the refusal to take the place of God, to be the one who settles the score; it is the release of a debt you are genuinely owed. And the book ends not in arrival but in trust, a bone waiting in a coffin to be carried home, one of the oldest and deepest images there is of a hope held past the end of a life. (The unpaid debt released, the bone that waits for home.)'
+          theo: 'Joseph’s words are the last great statement of Genesis, and he holds both halves together to the very end. His brothers meant evil, and God meant good, so that human guilt and God’s providence stand side by side in a single sentence, and neither cancels the other. The editors also left the ending open on purpose, with a body in Egypt and a promise of return, because they were themselves in exile, holding exactly that kind of promise and reaching for exactly that kind of faith.',
+          arch: 'Here forgiveness means refusing to take God’s place as the one who settles the score, and releasing a debt that you are truly owed. The writer then ends the book not with arrival but with trust. Joseph asks his family to carry his bones home one day, and many peoples have honored this kind of hope, the wish to be buried among one’s own people, as a way of holding on to home even past the end of a life.'
         },
         misreading: {
-          named: '“You meant evil but God meant good” means the suffering was worth it, or that God caused it.',
-          why: 'Joseph says they meant the evil, the guilt stays theirs, and God worked through it, not that God authored it or that the pain was secretly a good thing. The line refuses both bitterness and cheap comfort at once. It names the evil as evil and trusts God past it, and that balance, held to the end, is the book’s whole achievement.'
+          named: '“You meant evil, but God meant good” means that the suffering was worth it, or that God caused it.',
+          why: 'Joseph says that his brothers meant the evil, so the guilt remains theirs, and that God worked through it. He does not say that God was the author of it, or that the pain was secretly a good thing. In this way Joseph refuses both bitterness and cheap comfort. He calls the evil what it is and trusts God beyond it, and the writer holds that balance to the very end of the book.'
         },
         addr: {
           mode: 'reframes',
-          text: 'You may be carrying something someone meant for your harm, and the slow, unfinished work of trusting that it is not the last word, without ever pretending it was not real. He meant it for evil. God meant it for good. The book makes you hold both, and so will a life.'
+          text: 'Some of us carry harm that another person meant for us, and we are still doing the slow, unfinished work of trusting that it will not have the last word, without pretending it was not real. Joseph’s brothers meant it for evil, and God meant it for good. Joseph had to hold both of those truths together, and most of us, sooner or later, will have to do the same.'
         },
-        ask: 'What harm done to you are you being asked to name honestly and still entrust to a good you cannot yet see?'
+        ask: 'Is there harm someone did to you that you can name honestly and still entrust to God, for a good you cannot yet see?'
       }
     ]
   }
@@ -3636,16 +3636,16 @@ export const GENESIS: Reading[] = [
 // The Abraham movement: its grounding, its look-back capstone, and the doorway into Jacob.
 export const ABRAHAM_MOVEMENT: Movement = {
   id: 'abraham', index: 2, title: 'Abraham', range: 'Genesis 12–25',
-  throughline: 'A promise made to a childless old man, held against every impossibility and every attempt to force it, until it arrives as laughter and is then asked back on a mountain.',
+  throughline: 'God promises a childless old man that he will have a son and become a great nation. Abraham holds on to that promise for decades, sometimes faithfully and sometimes by trying to force it, until the son finally arrives, and then God asks Abraham to give him back on a mountain.',
   chapterStart: 12, chapterEnd: 25,
   situation: {
     kicker: 'The ground beneath the Abraham story',
     title: 'A family memory, told long after',
     image: '/images/gen-abram.webp',
     paragraphs: [
-      'The stories of Abraham are set in the Bronze Age but were written down much later, and they carry small anachronisms, domesticated camels, Philistines, that point to the hand of later tellers shaping an old memory.',
-      'Much of the cycle works as a family origin story for a whole region: where Moab and Ammon came from, where the Ishmaelite tribes came from, why Israel and its neighbors are kin and rivals at once.',
-      'And one note runs under all of it for the people who edited it. Abraham came out of Mesopotamia, out of Ur and Harran, on nothing but a promise, and walked toward a land he did not yet have. To exiles who had been carried off to Babylon, that was not ancient history. That was their own road, read backward.',
+      'The stories of Abraham are set in the Bronze Age, roughly the early second millennium BCE, but Israelite writers put them in their final form many centuries later. Those later writers left small details from their own time in the stories, such as domesticated camels and the Philistines, neither of which belonged to Abraham’s world, and these details show us that later hands shaped an old family memory.',
+      'Much of what the writers tell about Abraham also served as a family history for the whole region. Through these stories Israelites explained where the neighboring peoples of Moab and Ammon came from, where the Ishmaelite tribes came from, and why Israel and its neighbors were at once relatives and rivals.',
+      'The editors who gave these stories their final shape also had a reason of their own to care about them. According to Genesis, Abraham left Mesopotamia, first Ur and then Harran, with nothing but God’s promise, and walked toward a land he did not yet own. For Judeans whom the Babylonians had carried off into exile, that was not ancient history. They saw their own journey in his, only in reverse.',
     ],
     sources: 'Speiser · Westermann · Friedman',
   },
@@ -3653,12 +3653,12 @@ export const ABRAHAM_MOVEMENT: Movement = {
     kicker: 'The shape of the Abraham story',
     title: 'Learning to hold the promise open-handed',
     paragraphs: [
-      'It begins with a command to leave everything on the strength of a promise, and a childless old man who goes. The whole arc is the slow, failing, relearned lesson of how to carry a promise you cannot make come true: by waiting, not grasping. Every time Abraham reaches to force it, a lie in Egypt, a slave woman, a lie again to Abimelech, it costs someone, usually the one with the least power.',
-      'The promise arrives anyway, late and impossible, as a baby named Laughter. And then, in the chapter the movement was built to reach, God asks for him back. Abraham, who once argued God down over a wicked city, says nothing and climbs the mountain. The hand is stopped. A ram dies instead. The promise is sworn one last time.',
-      'What the movement teaches is not that faith is rewarded with comfort. It is that the promise was never Abraham’s to hold tight. It was always held open-handed, given and nearly taken and given back, and the man who learned that is buried by both his sons, the chosen one and the cast-out one, in the only patch of the promised land he ever owned: a grave.',
+      'At the start of the Abraham story God tells a childless old man to leave everything he has on the strength of a promise, and Abraham goes. The rest of his story shows him learning, failing, and learning again how to carry a promise he cannot make come true himself, which means waiting for God rather than grabbing. Each time Abraham tries to force the promise, he hurts someone, usually the person with the least power. He lies about his wife in Egypt, he takes the slave woman Hagar to bear him a son, and he lies about his wife again to King Abimelech.',
+      'God keeps his promise anyway. When Abraham and Sarah are far too old to have children, Sarah gives birth to a son, and they name him Isaac, which means “he laughs.” Then, in the chapter toward which the writers built the whole story, God asks Abraham to sacrifice Isaac. Abraham, who once argued boldly with God to spare the wicked city of Sodom, says nothing this time and climbs the mountain. An angel stops his hand, Abraham offers a ram in his son’s place, and God swears the promise to him one last time.',
+      'These chapters do not teach that God rewards faith with comfort. They show a man learning that the promise was never his to clutch. God gave it, nearly took it back, and gave it again, and Abraham had to learn to hold it with an open hand. When he dies, both of his sons, Isaac the chosen one and Ishmael the one who was sent away, bury him together. They bury him in the only piece of the promised land he ever owned, which is a grave.',
     ],
     tensions: [
-      { claim: 'God forbids the sacrifice of children and condemns it with horror.', counter: 'And then God asks Abraham to do exactly that to the son of the promise, and praises him for not refusing.', where: 'Genesis 22 against Leviticus 18:21, Deuteronomy 12:31' },
+      { claim: 'In the laws of Israel, God forbids the sacrifice of children and condemns it as a horror.', counter: 'Yet in Genesis 22 God asks Abraham to do exactly that to the son of the promise, and then praises him for not refusing.', where: 'Genesis 22 against Leviticus 18:21, Deuteronomy 12:31' },
     ],
     sources: 'von Rad · Levenson · Alter',
   },
@@ -3666,9 +3666,9 @@ export const ABRAHAM_MOVEMENT: Movement = {
     kicker: 'The threshold into the next movement',
     title: 'A promise for a heel-grabber',
     paragraphs: [
-      'Abraham is buried, and the promise passes down: to Isaac, quiet and almost passive, and then to his sons, where it gets interesting again.',
-      'The question changes here. With Abraham it was, will the promise ever come? With Jacob it becomes, what kind of person can carry it? Because the next man to hold it is a deceiver from the womb, a heel-grabber who cheats his brother and tricks his father, and grace lands on him before he has done one thing to deserve it.',
-      'The God who chose an old man for his faith now chooses a younger man for no visible reason at all, and that is the scandal the Jacob story is about.',
+      'After Abraham dies, God’s promise passes to his son Isaac, a quiet and almost passive figure, and then to Isaac’s twin sons, where the story becomes dramatic again.',
+      'At this point the writers turn to a new question. In Abraham’s story the question was whether God would ever keep his promise. In Jacob’s story the question is what kind of person can carry it. Jacob comes out of the womb grabbing his twin brother’s heel, and he grows up to cheat that brother and to trick their blind father. Yet God chooses him before he has done anything to deserve it.',
+      'God chose Abraham, an old man who trusted him. Now God chooses Jacob, a younger son, for no reason that anyone can see, and the Jacob story is about how scandalous that choice is.',
     ],
     nextMovementId: 'jacob',
   },
@@ -3678,24 +3678,24 @@ export const ABRAHAM_MOVEMENT: Movement = {
 // the same situation, capstone, and doorway treatment as Abraham.
 export const PRIMEVAL_MOVEMENT: Movement = {
   id: 'primeval', index: 1, title: 'The primeval history', range: 'Genesis 1–11',
-  throughline: 'The whole world: made good, gone wrong, the wrong spreading outward, until one grasped name at Babel is answered by one given name in Abraham.',
+  throughline: 'God makes the whole world good, and then human beings go wrong, and their wrongdoing spreads outward until the builders of Babel try to make a name for themselves. God answers them by giving a name, and a promise, to one man, Abraham.',
   chapterStart: 1, chapterEnd: 11,
   situation: {
     kicker: 'The ground beneath the primeval history',
     title: 'The situation',
     image: '/images/gen-prime.webp',
     paragraphs: [
-      'The primeval history was given its shape by Judean priests and scribes in exile, after Babylon stormed Jerusalem and burned its temple in 586 BCE and marched its people east. They had lost the temple, the land, the king. Around them stood the greatest empire on earth, with its own towering myths: a world made through a war of gods, humanity formed to be the gods’ slaves, Babylon the navel of creation.',
-      'These writers took older traditions of their own and edited them into a quiet answer. Not an argument shouted, but a story told. One God, who makes by speaking, who calls it good, who forms the human in his own image rather than as a slave. Two older sources run all through it, the vivid Yahwist and the ordered Priestly, woven together rather than smoothed into one.',
-      'Chapters 1 to 11 are a single movement. They open by answering Babylon and they close at Babel, which is Babylon again, named and scattered, just before the story narrows to one family and the promise made to it.',
-      'One honesty about the dates. The events these chapters reach for, creation, the flood, Babel, sit before history, in deep time that cannot be dated. What can be pinned is not the story but the desk it was written at, and the older myths it was written against.',
+      'Judean priests and scribes gave these first chapters their shape while they were in exile. In 586 BCE the Babylonian army stormed Jerusalem, burned its temple, and marched much of its population east to Babylon. The exiles had lost their temple, their land, and their king. All around them stood the greatest empire on earth, and that empire had its own grand myths: the Babylonians told how the gods made the world through a war, how they formed human beings to be their slaves, and how Babylon itself stood at the center of creation.',
+      'The Judean writers took older traditions of their own and edited them into a quiet answer to Babylon. They did not shout an argument; they told a story. In their story one God makes the world by speaking, calls what he has made good, and forms human beings in his own image rather than as slaves. Scholars find two older sources woven through these chapters, a vivid storyteller they call the Yahwist and an orderly priestly writer, and the editors set the two side by side rather than smoothing them into one voice.',
+      'Chapters 1 to 11 form a single section. The writers open it by answering Babylon’s creation story, and they close it at Babel, which is the Hebrew name for Babylon, where God scatters the builders. Immediately afterward the writers narrow the story to one family and to the promise God makes to it.',
+      'A word about dates is needed here. The events these chapters describe, the creation, the flood, and the tower of Babel, lie before recorded history, and no one can put a date on them. What historians can date is the time when the writers composed these chapters, and the older myths they were answering.',
     ],
     timeline: [
-      { tag: 'c. 1800 BCE', text: 'The Sumerian King List records kings reigning tens of thousands of years.' },
-      { tag: 'c. 1100 BCE', text: 'Babylon’s Enuma Elish and the Epic of Gilgamesh carry the myths Genesis will answer: creation by war, a great flood.' },
-      { tag: '586 BCE', text: 'Babylon burns Jerusalem and its temple. The exile begins. This is the desk these chapters are written from.' },
-      { tag: '539 BCE', text: 'Persia takes Babylon; the exiles are allowed to go home.' },
-      { tag: 'c. 450 BCE', text: 'The traditions reach their final, edited shape.' },
+      { tag: 'c. 1800 BCE', text: 'Scribes compile the Sumerian King List, which credits early kings with reigns of tens of thousands of years.' },
+      { tag: 'c. 1100 BCE', text: 'Babylonian scribes are copying the Enuma Elish and the Epic of Gilgamesh, the myths the writers of Genesis will answer, with their stories of creation through war and of a great flood.' },
+      { tag: '586 BCE', text: 'The Babylonians burn Jerusalem and its temple and carry its people into exile. The writers of these chapters are working in the shadow of this event.' },
+      { tag: '539 BCE', text: 'The Persian king Cyrus conquers Babylon and allows the exiles to return home.' },
+      { tag: 'c. 450 BCE', text: 'Editors bring these traditions into their final form.' },
     ],
     sources: 'Wellhausen · Friedman · Westermann',
   },
@@ -3703,11 +3703,11 @@ export const PRIMEVAL_MOVEMENT: Movement = {
     kicker: 'The first movement · Genesis 1–11',
     title: 'The primeval history',
     paragraphs: [
-      'This is the only part of the Bible about everyone. Before the story narrows to one family, it tells the story of the whole world: made good, gone wrong, and the wrong spreading outward. Read together, the eleven chapters move in one rhythm. A break, then a mercy. Again. And again.',
-      'In Eden the trust breaks, and yet the couple are clothed, not destroyed. Cain kills his brother, and yet Cain is marked and protected. The flood drowns a world gone violent, and yet one family is carried through and a bow is hung over the sky. Each break closes with a mercy.',
-      'Then Babel. A city, a tower, a grasp at a name, and the break spreads to all civilization. And this time it closes with no mercy named. Humanity is scattered, the project abandoned, the page gone quiet. That silence is the point.',
-      'The withheld mercy is the next thing God does. He calls one man, Abram, and promises that through him all the scattered families of the earth will be blessed. The diagnosis was the whole world. The cure begins with one person.',
-      'And the people who assembled this, in exile under the shadow of Babylon, were making a claim with it. The broken, scattered, empire-shadowed world is real. It is not the last word.',
+      'These chapters are the only part of the Bible that is about everyone. Before the writers narrow their story to one family, they tell the story of the whole world: God makes it good, people turn it wrong, and the wrong spreads. If you read the eleven chapters together, you find the same pattern repeating. People break something, and God answers with mercy, and then it happens again, and again.',
+      'In Eden the man and the woman stop trusting God, yet God clothes them rather than destroying them. Cain kills his brother, yet God puts a mark on Cain to protect him. God sends a flood on a world full of violence, yet he carries one family through it and sets a rainbow in the sky as a promise. Each time people break something, God closes the episode with a mercy.',
+      'Then come the builders of Babel, who build a city and a tower to make a name for themselves, and this time the whole of human civilization takes part in the wrong. At the end of this episode the writers name no mercy at all. God scatters the people, they abandon their building, and the writers say nothing more. The writers meant that silence to be felt.',
+      'The mercy the reader is waiting for comes in the very next thing God does. He calls one man, Abram, and promises that through him all the scattered families of the earth will be blessed. The writers have shown that the whole world is sick, and now they show God beginning the cure with one person.',
+      'The people who assembled these chapters, living in exile under the power of Babylon, were making a claim of their own. They admitted that the world is broken and scattered and overshadowed by empires, but they insisted that God would not leave it that way.',
     ],
     sources: 'von Rad · Clines',
   },
@@ -3715,8 +3715,8 @@ export const PRIMEVAL_MOVEMENT: Movement = {
     kicker: 'The second movement',
     title: 'Abraham',
     paragraphs: [
-      'The flood had already narrowed to one family, Noah’s, but that was still a story about all humanity, with Noah only the thread it survived on. Here the change runs deeper. The story stops being about everyone and settles on one man, and it will stay with his family from now on. God calls Abram out of everything that defined him, country, kin, and father’s house, and makes him a promise with no collateral but his own word.',
-      'Where Babel grasped at a name, Abram is given one. The cure for the broken world begins here, with a single act of trust and a long, imperfect walk toward something he will never fully see.',
+      'In the flood story God had already narrowed his attention to one family, Noah’s, but that was still a story about all humanity, and Noah mattered as the one through whom humanity survived. Now the writers make a deeper change. They stop telling the story of everyone and settle on one man, and from here to the end of Genesis they stay with his family. God calls Abram to leave everything that has defined him, his country, his relatives, and his father’s household, and he makes Abram a promise backed by nothing except God’s own word.',
+      'The builders of Babel tried to seize a name for themselves, but God gives Abram a name as a gift. With Abram God begins to heal the broken world, and Abram begins it by trusting God and setting out on a long, imperfect journey toward something he will never fully see.',
     ],
     nextMovementId: 'abraham',
   },
@@ -3726,16 +3726,16 @@ export const PRIMEVAL_MOVEMENT: Movement = {
 // the doorway into Joseph.
 export const JACOB_MOVEMENT: Movement = {
   id: 'jacob', index: 3, title: 'Jacob', range: 'Genesis 25–36',
-  throughline: 'A grasper takes the blessing by fraud and spends twenty years being humbled into it, until a night of wrestling leaves him renamed and limping, and the brother he cheated runs to embrace him.',
+  throughline: 'Jacob takes his brother’s blessing by fraud and then spends twenty years being humbled. One night by a river he wrestles with God, who gives him a new name and leaves him limping, and the next day the brother he cheated runs to embrace him.',
   chapterStart: 26, chapterEnd: 36,
   situation: {
     kicker: 'The ground beneath the Jacob story',
     title: 'How two nations remember a shared womb',
     image: '/images/gen-jacob.webp',
     paragraphs: [
-      'The Jacob cycle is, among other things, a family explanation of a map. Jacob is Israel; his twin Esau is Edom, the rival just to the southeast; Laban and his daughters stand for the Aramean kin to the northeast. The quarrels in the tents are the quarrels between peoples, told as one fractious household.',
-      'It is also the most morally tangled stretch of Genesis. The hero is a deceiver who grasps from the womb, and the story never tidies him up. It lets grace fall on a man who has done nothing to deserve it, then spends the whole cycle wearing him down, deceived in turn by Laban, until the trickster is finally broken open in the dark by a river.',
-      'For the exiles who shaped it, the shape would have been familiar to the bone: a man driven from home, made to serve a hard master in a far country for long years, and brought back at last to the land he was promised. Jacob’s road out and home is Israel’s own road, read backward.',
+      'Among other things, the writers used the Jacob stories to explain the map of Israel’s world. Jacob stands for Israel, and his twin brother Esau stands for Edom, Israel’s rival just to the southeast. Laban and his daughters stand for the Arameans, Israel’s relatives to the northeast. When the writers tell of quarrels inside one family’s tents, they are also telling of quarrels between whole peoples.',
+      'These are also the most morally tangled chapters in Genesis. Their hero is a deceiver who grabs at what he wants from the moment he is born, and the writers never clean him up. God shows Jacob favor that he has done nothing to deserve, and then, over the whole course of his story, God wears him down. Laban deceives Jacob as Jacob deceived others, until at last, alone in the dark beside a river, Jacob is broken open.',
+      'The exiles who shaped these stories would have recognized Jacob’s life as their own. Jacob is driven from home, made to serve a hard master in a distant country for many years, and finally brought back to the land God promised him. The exiles saw in Jacob’s journey away and back the journey they hoped to make themselves.',
     ],
     sources: 'Sarna · Westermann · Alter',
   },
@@ -3743,12 +3743,12 @@ export const JACOB_MOVEMENT: Movement = {
     kicker: 'The shape of the Jacob story',
     title: 'The grasper who had to be lamed',
     paragraphs: [
-      'Grace falls on Jacob before he has earned a thing, a heel-grabber chosen in the womb, and then the whole cycle is the long work of making him into someone who can carry it. He takes the birthright by leverage and the blessing by fraud, and spends the next twenty years being paid back in his own coin: deceived by Laban in the dark, handed the wrong sister, cheated of his wages, slowly worn down.',
-      'The turn comes at a river, alone, the night before the reckoning he dreads. He wrestles a stranger who is somehow God, refuses to let go until he is blessed, and is given two things in the same grip: a new name and a permanent limp. The man who always won by grasping is finally blessed by being broken of it. He crosses over as Israel, the one who strives with God, and he crosses over walking wounded.',
-      'Then the dreaded brother runs to embrace him, and the face Jacob braced to meet as an enemy looks to him like the face of God. But the story will not round itself off sweet. The same family carries a daughter’s violation answered by massacre, and Rachel’s grave by the roadside, and an old blind father buried by the two sons he set against each other. The promise goes forward through all of it, not because the people are good, but because grace, once given, does not let go, even of a cheat, even after it has had to lame him to keep him.',
+      'God chooses Jacob before Jacob has earned anything; he was already grabbing his brother’s heel in the womb. The rest of his story shows God slowly making him into a man who can carry that choice. Jacob gets his brother’s birthright by bargaining and their father’s blessing by fraud, and then for twenty years he is paid back in his own coin. In the dark, his uncle Laban gives him the wrong sister as his bride, then cheats him of his wages again and again, and slowly wears him down.',
+      'The change comes on the night before Jacob must face the brother he wronged, when he is alone by a river. A stranger wrestles with him all night, and Jacob comes to understand that he is somehow wrestling with God. Jacob refuses to let go until the stranger blesses him, and the stranger gives him two things in the same grip: a new name and a limp he will carry for the rest of his life. Jacob had always won by grabbing, and now God blesses him by breaking him of it. He crosses the river with the name Israel, which means “he strives with God,” and he crosses it limping.',
+      'Then Esau, the brother Jacob dreaded, runs to embrace him, and Jacob says that seeing Esau’s face is like seeing the face of God. But the writers do not give the story a sweet ending. Jacob’s sons answer the rape of their sister Dinah by massacring a whole town, Jacob buries his beloved Rachel beside the road, and Isaac, the old blind father Jacob once deceived, is buried by the two sons he had set against each other. Through all of this God carries his promise forward. He does so not because these people are good, but because he does not let go of those he has chosen, not even a cheat, and not even when he has to lame him to keep him.',
     ],
     tensions: [
-      { claim: 'Jacob is the blessed one, chosen by God and carried by grace.', counter: 'Jacob is a liar who steals, is justly deceived in return, and fathers a household that deceives and slaughters. The chosen line is the crooked line.', where: 'Genesis 27 and 34 against 28 and 32' },
+      { claim: 'In some chapters the writers present Jacob as the blessed one, chosen by God and carried by his favor.', counter: 'In others they show him as a liar and a thief whom others rightly deceive in return, and as the father of a household that lies and kills. God’s chosen line is a crooked one.', where: 'Genesis 27 and 34 against 28 and 32' },
     ],
     sources: 'von Rad · Westermann · Alter',
   },
@@ -3756,9 +3756,9 @@ export const JACOB_MOVEMENT: Movement = {
     kicker: 'The threshold into the next movement',
     title: 'From the cheat to the dreamer',
     paragraphs: [
-      'Jacob is Israel now, and the camera, which has followed one man, widens to take in his twelve sons, the tribes to be. But it narrows again almost at once, onto one boy: Joseph, the favored son, the dreamer in the coat his father should have known better than to give him.',
-      'The question shifts once more. With Abraham it was, will the promise ever come? With Jacob, what kind of person can carry it? With Joseph it becomes, what is God doing in the wreckage, when the brothers who hated their father’s favoritism throw the favored son into a pit and sell him into Egypt, and no voice from heaven says a word for thirteen years.',
-      'The deceit that has run through three generations is about to be done to Jacob one last time, by his own sons, with the same prop, a brother’s bloodied coat. And the answer the next movement gives is the strangest in Genesis: not a rescue, but a long, hidden providence that works through the betrayal rather than around it.',
+      'Jacob now bears the name Israel, and the writers widen their view from one man to his twelve sons, whose families will become the twelve tribes. Almost at once, however, they narrow it again to one boy, Joseph. Jacob favors Joseph above his brothers, gives him a richly decorated coat that he should have known better than to give, and Joseph dreams of ruling over his family.',
+      'Once again the writers turn to a new question. In Abraham’s story they asked whether God would ever keep his promise, and in Jacob’s story they asked what kind of person could carry it. In Joseph’s story they ask what God is doing when everything falls apart. Joseph’s brothers, who resent their father’s favoritism, throw Joseph into a pit and sell him as a slave into Egypt, and for thirteen years God says nothing from heaven.',
+      'For three generations members of this family have deceived one another, and now Jacob’s own sons deceive him, using the same kind of trick he once used. They show him their brother’s coat dipped in blood. In the chapters that follow, the writers give the strangest answer in Genesis. God does not rescue Joseph from his suffering. Instead, quietly and over many years, God works through the betrayal itself rather than around it.',
     ],
     nextMovementId: 'joseph',
   },
@@ -3768,16 +3768,16 @@ export const JACOB_MOVEMENT: Movement = {
 // a capstone but no doorway out.
 export const JOSEPH_MOVEMENT: Movement = {
   id: 'joseph', index: 4, title: 'Joseph', range: 'Genesis 37–50',
-  throughline: 'The favored son is thrown in a pit and sold into Egypt, rises and falls and rises again by reading dreams, and at last faces the brothers who betrayed him and chooses to read the whole wreckage as a providence that meant it for good.',
+  throughline: 'Joseph’s brothers throw him into a pit and sell him into Egypt, where he rises, falls, and rises again by interpreting dreams. At last he faces the brothers who betrayed him, and he chooses to see everything that happened to him as the work of a God who meant it for good.',
   chapterStart: 37, chapterEnd: 50,
   situation: {
     kicker: 'The ground beneath the Joseph story',
     title: 'A different kind of story, told to exiles',
     image: '/images/gen-joseph.webp',
     paragraphs: [
-      'The Joseph narrative reads unlike anything before it in Genesis. It is one long, artfully built novella rather than a chain of episodes, a single plot running unbroken from the pit to the deathbed, its foreshadowing and reversals and recognitions all worked out with a novelist’s control.',
-      'And God acts in it differently. There are no more night visions or voices from the fire, no walking in the garden in the cool of the day. For chapters at a stretch heaven is silent, and the providence is hidden inside ordinary events, a sold slave, a false charge, a forgotten promise, a famine, until at the very end a single character names what was going on underneath all along.',
-      'For a people who had themselves been carried off to Egypt and Babylon, a story about an Israelite enslaved in Egypt, who rises in a foreign court, keeps his family alive through catastrophe, and insists that God was at work in the disaster the whole time, was not a tale about the distant past. It was a way to read their own exile, and to dare to trust it.',
+      'The Joseph story reads unlike anything earlier in Genesis. The writer tells it as one long, carefully built tale, much like a short novel, rather than as a chain of separate episodes. A single plot runs without a break from the pit to Jacob’s deathbed, and the writer handles the hints of what is coming, the reversals, and the moments of recognition with a novelist’s control.',
+      'God also acts differently in this story. He no longer speaks in visions at night or from fire, and he no longer walks in a garden in the evening breeze. For chapters at a time he says nothing at all, and the writer leaves God’s work hidden inside ordinary events: a boy sold as a slave, a false accusation, a promise someone forgets, a famine. Only at the very end does Joseph name what God was doing beneath it all.',
+      'The first readers of this story were people whom conquerors had themselves carried off to Egypt and to Babylon. In Joseph they met an Israelite enslaved in Egypt who rose in a foreign court, kept his family alive through disaster, and insisted that God had been at work in that disaster the whole time. For them it was not a tale about the distant past. It gave them a way to understand their own exile, and the courage to trust God within it.',
     ],
     sources: 'von Rad · Alter · Westermann',
   },
@@ -3785,12 +3785,12 @@ export const JOSEPH_MOVEMENT: Movement = {
     kicker: 'The shape of the Joseph story',
     title: 'You meant it for evil, God meant it for good',
     paragraphs: [
-      'The favored son is stripped, pitted, and sold by his own brothers, and for the length of the story heaven says nothing. No voice, no rescue, no explanation. God works, if he works at all, hidden inside a string of ordinary disasters: a slave sold, a woman’s lie, a forgotten promise, a famine. The whole movement is a study in a providence that never once announces itself.',
-      'And it asks to be read forward and backward at the same time. Lived forward, it is a chain of catastrophes a man simply has to survive. Read backward, from the top of Egypt, the very same events line up into a road that kept a whole family alive through famine. Joseph names it twice and never softens the crime: you meant evil against me; God meant it for good. Both halves stand. The brothers are guilty and God is not defeated, and the book will not release either one.',
-      'It is the hardest and most grown-up thing Genesis says. Not that the evil was secretly fine, and not that the suffering meant nothing, but that a real wound and a real providence can occupy the same history. And it ends, on purpose, unresolved: not in the promised land but in a coffin in Egypt, the family fed but far from home, holding a promise that God will one day carry them up.',
+      'Joseph’s own brothers strip him of his coat, throw him into a pit, and sell him, and for the length of the story God says nothing. He sends no voice, no rescue, and no explanation. If God is at work, he works hidden inside a string of ordinary disasters: Joseph is sold as a slave, his master’s wife lies about him, a man he helped forgets his promise to help him, and a famine comes. Through all these chapters the writer studies a kind of care from God that never once announces itself.',
+      'The writer invites us to read this story both forward and backward. If we follow it forward, as Joseph lived it, it is a chain of disasters that he simply has to survive. If we look back from the end, when Joseph rules over Egypt, the same events line up into a road that kept a whole family alive through famine. Joseph says so twice, and he never makes light of what his brothers did. He tells them that they meant to harm him, but God meant it for good. The writer keeps both parts of that sentence. The brothers are guilty, and God has not been defeated, and the writer will not let the reader drop either truth.',
+      'This is the hardest and most mature thing the writers of Genesis say. They do not claim that the evil was secretly fine, and they do not claim that the suffering meant nothing. They claim that a real wound and a real providence can belong to the same history. And they end the book unresolved, on purpose. It closes not in the promised land but with Joseph’s body in a coffin in Egypt, and with his family fed but far from home, holding on to a promise that God will one day bring them back.',
     ],
     tensions: [
-      { claim: 'God meant it for good; the whole ordeal was a providence working toward the saving of many lives.', counter: 'You meant it for evil; the brothers are never excused, the crime is named to their faces, and Genesis ends not in rescue but in a coffin and a promise not yet kept.', where: 'Genesis 50:20, and the book ending in Egypt' },
+      { claim: 'Joseph tells his brothers that God meant everything that happened for good, and that God was working through the whole ordeal to save many lives.', counter: 'In the same breath Joseph tells them that they meant it for evil. The writer never excuses the brothers, Joseph names their crime to their faces, and Genesis ends not with a rescue but with a coffin and a promise God has not yet kept.', where: 'Genesis 50:20, and the book ending in Egypt' },
     ],
     sources: 'von Rad · Westermann · Alter',
   },
@@ -3803,15 +3803,15 @@ export const GENESIS_CAPSTONE: Capstone = {
   kicker: 'The whole book · Genesis 1–50',
   title: 'Blessing given, broken, and carried through',
   paragraphs: [
-    'Genesis is one long story about a blessing, and what keeps happening to it. It opens with a world spoken into being and called good, a blessing poured out over everything, and almost at once the blessing fractures: trust broken in a garden, a brother killed, a tower raised in pride, until the whole world is scattered and the page goes quiet. The first eleven chapters diagnose the entire human condition, and then narrow, hard, to a single cure.',
-    'From there the blessing travels through one crooked family. It is promised to a childless old man and held against every impossibility, and learned, slowly, to be carried open-handed rather than grasped. It falls on a heel-grabber who has to be wrestled down and lamed before he can bear it. And it survives a betrayal that should have ended it, when a favored son is sold by his brothers and rises, in silence, to keep them all alive. Four movements, one promise, handed down through liars and rivals and the wronged, never because the people were good, only because grace would not let go.',
-    'And it does not end in arrival. The book that began with God’s breath over the waters closes with a body in a coffin in Egypt and a promise not yet kept: God will surely visit you, and bring you up. The people who assembled Genesis were themselves in exile, far from home, holding the same kind of unfinished promise, and they built a book that ends exactly where they were standing, in the middle, between the promise and its keeping, and told to trust the One who made it.',
+    'Genesis is one long story about a blessing and what keeps happening to it. At the beginning God speaks the world into being, calls it good, and blesses everything he has made. Almost at once people break that blessing. The man and the woman stop trusting God in the garden, Cain kills his brother, and the builders of Babel raise a tower out of pride, until God scatters the whole world and the writers fall silent. In the first eleven chapters the writers describe what is wrong with the whole human race, and then they turn sharply to the one cure God begins.',
+    'From then on God carries the blessing through one deeply flawed family. He promises it to a childless old man, Abraham, who holds on to it against every impossibility and slowly learns to carry it with an open hand instead of grabbing at it. God gives it next to Jacob, who grabbed his brother’s heel in the womb and whom God must wrestle to the ground and leave limping before Jacob can carry it. And the blessing survives a betrayal that should have ended it, when Joseph’s brothers sell him and Joseph rises, while God stays silent, to keep them all alive. Across these four sections God hands one promise down through liars, rivals, and people who have been wronged. He does not do it because they are good. He does it because he will not let them go.',
+    'Genesis does not end with the family arriving home. The book began with God’s Spirit moving over the waters, and it closes with Joseph’s body in a coffin in Egypt and a promise God has not yet kept. Before he dies, Joseph tells his brothers that God will surely come to them and bring them up out of Egypt. The people who assembled Genesis were themselves in exile, far from home, holding on to the same kind of unfinished promise. They built a book that ends exactly where they stood, between the promise and its keeping, and they told their readers to trust the God who made it.',
   ],
   tensions: [
-    { claim: 'The blessing always wins through; the promise survives every fracture and every betrayal.', counter: 'Genesis ends not in the promised land but in Egypt, in a coffin, the rescue still only a word, and the book holds its completion deliberately out of reach.', where: 'Genesis 1:1 against 50:26' },
+    { claim: 'Again and again in Genesis, God keeps his blessing alive, and his promise survives every break and every betrayal.', counter: 'Yet Genesis ends not in the promised land but in Egypt, with a coffin, and the rescue exists only as a promise. The writers deliberately leave the story unfinished.', where: 'Genesis 1:1 against 50:26' },
   ],
   sources: 'von Rad · Westermann · Clines · Alter',
-  ask: 'Genesis ends in the middle, between a promise made and a promise not yet kept. Where in your own life are you being asked to live in that gap, and to trust the One who made the promise?',
+  ask: 'Genesis ends in the middle, after God has made a promise and before he has kept it. Where in your own life are you being asked to live in that gap, and to trust the God who made the promise?',
 };
 
 // The introduction to the whole book: what Genesis is and how to read it, shown at the
@@ -3821,8 +3821,8 @@ export const GENESIS_INTRO: Panel = {
   kicker: 'An introduction · Genesis 1–50',
   title: 'The book of beginnings',
   paragraphs: [
-    'Genesis is the first book of the Bible, and the word means beginning. It is the book of origins: of the world and the sky and the sea, of humanity, of work and rest, of the first wrong and the first death, and of the family through whom the rest of the story will come. Almost everything the Bible says later starts somewhere in here.',
-    'It comes in two parts. Chapters 1 to 11 are about everyone, the whole human story painted in broad, deep-time strokes: creation, the garden, Cain and Abel, the flood, the tower of Babel. Then from chapter 12 the lens narrows to one family across four generations, Abraham, Isaac, Jacob, and Joseph, and follows them all the way down to the end.',
-    'The story runs from the first light over the waters to a coffin in Egypt: a world made and broken, a promise made to one old man, and a family carried through famine and betrayal toward a homecoming that has still not arrived when the book closes. From beginning to end it is one long story about a blessing, and what keeps happening to it.',
+    'Genesis is the first book of the Bible, and its name means “beginning.” In it the writers tell how things began: the world, the sky and the sea, human beings, work and rest, the first wrongdoing and the first death, and the family through whom the rest of the Bible’s story will come. Almost everything the Bible says later has its starting point somewhere in this book.',
+    'The book has two parts. Chapters 1 to 11 are about everyone. In them the writers tell the story of the whole human race in broad strokes, reaching back before recorded history: the creation, the garden, Cain and Abel, the flood, and the tower of Babel. From chapter 12 onward the writers narrow their view to one family over four generations, Abraham, Isaac, Jacob, and Joseph, and they stay with that family to the end of the book.',
+    'The book runs from the first light over the waters to a coffin in Egypt. God makes a world, and people break it. God makes a promise to one old man, and then he carries that man’s family through famine and betrayal toward a homecoming they still have not reached when the writer ends the book. From beginning to end, Genesis tells one long story about a blessing and what keeps happening to it.',
   ],
 };
