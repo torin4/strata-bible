@@ -24,7 +24,7 @@ interface Adjacent {
 // What "Grounded" means, for the tier chip's tooltip and screen readers. The reading body
 // says the same thing in place (see CompanionMiddle's empty-middle line).
 const GROUNDED_GLOSS =
-  "This reading carries the text and its history. The companion can draw out the rest.";
+  "This reading has the Bible text and a note on its history. The companion can write the rest for you: the meaning, the turn, and a question.";
 
 // One Reading, paginated a scene at a time. Each passage (a "scene") is its own screen
 // with the four layers; the bottom nav steps scene to scene, then flows into the

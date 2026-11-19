@@ -5,9 +5,10 @@ export function SpanBanner({ span }: { span: string }) {
     <div className="mb-[18px] flex items-start gap-[9px] rounded-[11px] border border-lapis/30 bg-lapis/[0.06] px-[13px] py-[11px]">
       <div className="text-[13px] leading-[1.2] text-lapis">&#10231;</div>
       <div className="font-body text-[12.5px] leading-[1.5] text-mist">
-        One reading, <b className="font-semibold text-lapis">{span}</b>. It
-        crosses the chapter line on purpose. The chapter numbers are a later
-        overlay; the argument is the unit.
+        This reading covers <b className="font-semibold text-lapis">{span}</b>,
+        which crosses a chapter break on purpose. Scribes added the chapter
+        numbers many centuries later, so we follow the writer’s argument
+        instead.
       </div>
     </div>
   );

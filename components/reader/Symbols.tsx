@@ -6,7 +6,7 @@ export function Symbols({ symbols }: { symbols: SymbolGloss[] }) {
   return (
     <div className="mt-[18px] rounded-[12px] border border-lapis/25 bg-lapis/[0.05] px-4 py-[14px]">
       <div className="mb-[11px] font-ui text-[9.5px] font-semibold uppercase tracking-[.18em] text-lapis">
-        What the images meant
+        What the images meant to the first readers
       </div>
       {symbols.map((symbol, idx) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: static authored list, no reordering

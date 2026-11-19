@@ -7,7 +7,7 @@ export function Tensions({ tensions }: { tensions: Tension[] }) {
   return (
     <div className="mt-[18px] rounded-[12px] border border-psyche/[0.28] bg-psyche/[0.06] px-4 py-[14px]">
       <div className="mb-[11px] font-ui text-[9.5px] font-semibold uppercase tracking-[.18em] text-psyche">
-        Where the canon argues back
+        Where other parts of the Bible disagree
       </div>
       {tensions.map((tension, idx) => (
         // biome-ignore lint/suspicious/noArrayIndexKey: static authored list, no reordering

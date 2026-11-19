@@ -22,7 +22,7 @@ export function TheTurn({
       </div>
       {introduce ? (
         <div className="mb-[6px] font-body text-[11px] italic text-mist-2">
-          How the passage turns to address you now. {MODE_GLOSS[addr.mode]}.
+          What this passage means for your life now. {MODE_GLOSS[addr.mode]}.
         </div>
       ) : null}
       <div className="font-body text-[14.5px] leading-[1.66] text-parchment-2">

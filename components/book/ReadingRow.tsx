@@ -33,7 +33,7 @@ function lengthLabel(reading: Reading): string {
 
 // What "Grounded" means, for the tier chip's tooltip and screen readers.
 const GROUNDED_GLOSS =
-  "This reading carries the text and its history. The companion can draw out the rest.";
+  "This reading has the Bible text and a note on its history. The companion can write the rest for you: the meaning, the turn, and a question.";
 
 // One reading in a movement's (or a book's) list. Links into the reader, resuming the scene
 // the reader left off on when there is one (the marker tells them where they will land, so
