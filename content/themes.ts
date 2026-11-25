@@ -6,6 +6,8 @@
 // review; edit freely. Only the fully-authored sittings are indexed; grounded readings
 // join once the companion drafts their middles.
 
+import { PSALMS_READING_THEMES } from "@/content/psalms-notes";
+
 export type ThemeKey =
   | "grief"
   | "god-feels-absent"
@@ -194,6 +196,8 @@ export interface ReadingThemes {
 // Per-sitting tags and the "speaks to" line. Keyed by reading id. Drafted from the
 // authored layers; review and edit.
 export const READING_THEMES: Record<string, ReadingThemes> = {
+  // The psalm sittings carry their entries beside their notes, in content/psalms-notes/.
+  ...PSALMS_READING_THEMES,
   "gen-1": {
     themes: ["starting-over", "waiting", "limits"],
     speaksTo:

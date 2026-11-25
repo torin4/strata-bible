@@ -70,6 +70,23 @@ describe("Psalms", () => {
     expect(getAdjacent("psalms", "ps-119a").next?.id).toBe("ps-119b");
   });
 
+  it("authors all of Book I, with the spec's twelve sittings", () => {
+    const bookOne = PSALMS.filter((r) => r.chapterIndex <= 41);
+    expect(bookOne).toHaveLength(40);
+    expect(bookOne.filter((r) => r.tier === "plain")).toEqual([]);
+    expect(
+      bookOne.filter((r) => r.tier === "sitting").map((r) => r.chapterIndex),
+    ).toEqual([1, 2, 8, 13, 19, 22, 23, 27, 29, 30, 32, 39]);
+    // A grounded psalm carries a ground note and a title of its own, not the BSB's.
+    for (const r of bookOne) {
+      expect(
+        r.passages.every((p) => p.ground?.text),
+        r.id,
+      ).toBe(true);
+      expect(r.title, r.id).not.toBe(PSALMS_TEXT[r.chapterIndex].title);
+    }
+  });
+
   it("places every reading in one of the Psalter's five books", () => {
     expect(PSALMS[0].id).toBe("ps-1");
     expect(PSALMS[PSALMS.length - 1].id).toBe("ps-150");

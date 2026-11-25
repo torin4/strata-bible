@@ -5,13 +5,15 @@
 // This file decides only how the 150 psalms are grouped into readings and movements, and it is
 // where the commentary for each reading is layered on, movement by movement, as it is written.
 //
-// Until a psalm is authored it reads at the plain tier: the lineated text and nothing more, under
-// the BSB's own section title as a working title. See .scratch/psalms/spec.md.
+// The commentary lives in content/psalms-notes/, keyed by reading id, and is laid over the text
+// here. Until a psalm is authored it reads at the plain tier: the lineated text and nothing more,
+// under the BSB's own section title as a working title. See .scratch/psalms/spec.md.
 //
 // The book is unpublished until all five movements are written, exactly as every book before it
 // was: reachable by direct URL, absent from the landing page and the find index.
+import { PSALM_NOTES } from "@/content/psalms-notes";
 import { PSALMS_TEXT, PSALM_119_LETTERS } from "@/content/psalms-text";
-import type { Movement, Passage, Reading } from "@/lib/types";
+import type { Movement, Panel, Passage, Reading } from "@/lib/types";
 
 // One psalm as a single poem passage, authored whole (ADR 0001).
 function psalmPassage(
@@ -100,7 +102,32 @@ function plainReadings(): Reading[] {
   return readings;
 }
 
-export const PSALMS: Reading[] = plainReadings();
+// Lays a reading's authored notes over its text. A single-psalm reading's passage takes the
+// reading's title; a passage of a joined pair or a stanza of Psalm 119 keeps its own unless the
+// notes name one.
+function withNotes(reading: Reading): Reading {
+  const notes = PSALM_NOTES[reading.id];
+  if (!notes) return reading;
+  if (notes.passages.length !== reading.passages.length)
+    throw new Error(
+      `${reading.id}: notes cover ${notes.passages.length} passage(s), the reading has ${reading.passages.length}`,
+    );
+  const single = reading.passages.length === 1;
+  return {
+    ...reading,
+    tier: notes.tier,
+    title: notes.title,
+    ...(notes.thread ? { thread: notes.thread } : {}),
+    ...(notes.closeEnd ? { closeEnd: notes.closeEnd } : {}),
+    passages: reading.passages.map((passage, i) => ({
+      ...passage,
+      ...(single ? { title: notes.title } : {}),
+      ...notes.passages[i],
+    })),
+  };
+}
+
+export const PSALMS: Reading[] = plainReadings().map(withNotes);
 
 // ---------------------------------------------------------------------------------------
 // Movements: the Psalter's own five books. Each ends in a short blessing (41:13, 72:18–19,
@@ -121,16 +148,41 @@ export const PSALMS_BOOK_I_MOVEMENT: Movement = {
     kicker: "Book one of five",
     title: "The situation",
     paragraphs: [
-      "The editors who arranged the Psalter divided it into five books, and each of the first four closes with a short blessing of God. The first book runs from Psalm 1 to Psalm 41, and almost every psalm in it after the first two is headed as David’s.",
+      "The editors who arranged the Psalter divided it into five books, and the first runs from Psalm 1 to Psalm 41. Psalms 1 and 2 have no headings, and most scholars think the editors set them at the front as an introduction to the whole collection. Almost every psalm after them is headed as David’s.",
+      "The Hebrew phrase behind “of David” can mean that David wrote the psalm, that someone wrote it for him, or that it belonged to a collection kept under his name. Israel remembered David as a musician and a poet from early on, and some of these poems may well go back to him, but scholars cannot show it for any single psalm. A few headings go further and name a moment in his life, and most scholars think that later editors added those as a way of reading the psalms beside his story.",
+      "Most of the psalms in this book are the prayers of one person in trouble. The poet is ill, or falsely accused, or surrounded by enemies, and he calls on God by name, which the BSB prints as “the LORD.” He almost never says who his enemies are or what exactly has happened to him, and because he leaves those details out, people in very different kinds of trouble have been able to pray his words as their own.",
+      "The poets also write with an older view of death than many readers expect. They speak of Sheol, the grave, as a silent place where all the dead go and where no one praises God, and they do not yet hope for a life beyond it. When a poet in this book begs God to save his life, he is asking for more days on earth, because he does not expect any others.",
     ],
+    sources: "Childs · Kraus · Mays · Alter",
   },
   doorway: {
     kicker: "The second book",
     title: "Book II",
     paragraphs: [
-      "The first book closes at Psalm 41 with a blessing: “Blessed be the LORD, the God of Israel, from everlasting to everlasting. Amen and Amen.”",
+      "The first book closes at Psalm 41 with a blessing that the editors added: “Blessed be the LORD, the God of Israel, from everlasting to everlasting. Amen and Amen.”",
+      "In the second book other voices join David’s. Its opening psalms are headed as the work of the sons of Korah, a family of temple singers, and the poets of this book usually call God by the general Hebrew word for God rather than by his name, which leads scholars to think that a different circle of editors gathered it. The book opens with a poet who is far from the temple and who longs for God as a deer longs for streams of water.",
     ],
     nextMovementId: "psalms-book-2",
+  },
+  capstone: {
+    kicker: "The first book · Psalms 1–41",
+    title: "The promise and the prayers",
+    paragraphs: [
+      "The editors opened the Psalter with a promise. The poet of Psalm 1 says that the person who delights in God’s teaching will prosper like a tree beside a stream, and that the wicked will blow away like chaff. Then, beginning with Psalm 3, the editors set out one prayer after another from people for whom that promise does not seem to be holding. These poets are sick, slandered, hunted and afraid, and they say so to God at length.",
+      "The editors do not seem to have seen a contradiction there that they needed to remove. The poets of the laments complain because they believe the promise, and they hold God to it. The poet of Psalm 13 asks God four times how long he must wait, and the poet of Psalm 22 asks why God has forsaken him, and both of them are still speaking to God when they ask. The editors treated these complaints as prayers, and they kept far more of them in this book than hymns of praise.",
+      "Most of the poets turn before they finish. Without saying that anything has changed, a poet begins to speak of trust or to promise a thanksgiving, as the poet of Psalm 13 does in his last two verses. Scholars have long argued over what happened at that point in the prayer, and some think that a priest spoke a word of assurance which no one wrote down. Not every poet turns, however. The poet of Psalm 39 ends by asking God to look away from him, so that he can have a little peace before he dies.",
+      "The editors ended the book where they began it. The poet of Psalm 41 opens with the same word as the poet of Psalm 1, “Blessed,” although he is lying on a sickbed and a friend he trusted has turned against him. After his last line the editors added a blessing of their own to mark the end of the first book.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 37 says that in a long life he has never seen God abandon a righteous person.",
+        counter:
+          "The poet of Psalm 22 begins by asking God why he has forsaken him, and he says that he cries out by day and by night and gets no answer. The editors placed both psalms in the first book, fifteen psalms apart.",
+        where: "Psalm 37:25 · Psalm 22:1–2",
+      },
+    ],
+    sources: "Westermann · Brueggemann · Wilson · Mays",
   },
 };
 
@@ -229,6 +281,42 @@ export const PSALMS_BOOK_V_MOVEMENT: Movement = {
       "The fifth book runs from Psalm 107 to Psalm 150. It includes the fifteen Songs of Ascents (120–134), and its last five psalms each begin and end with the Hebrew call “Hallelujah,” which means “praise the LORD.”",
     ],
   },
+};
+
+// The book-level composition overlay.
+export const PSALMS_INTRO: Panel = {
+  kicker: "An introduction · Psalms 1–150",
+  title: "Israel’s book of prayers",
+  paragraphs: [
+    "The book of Psalms is a collection of 150 poems. Israel’s singers and poets wrote them over several hundred years, from the time of the first kings to the years after the exile in Babylon, and the people sang and prayed them at the temple in Jerusalem and at home. The Hebrew name of the book means “praises,” although the largest single group of psalms in it are laments, in which a poet complains to God about his trouble and asks for help.",
+    "No one wrote the book in the way an author writes a book. Editors gathered it in stages from older collections, and readers can still see the seams. Some collections carry the name of David, others the names of Asaph and of the sons of Korah, two guilds of temple singers, and fifteen psalms in a row are headed as songs for pilgrims going up to Jerusalem. The editors divided the whole into five books, each closing with a short blessing, and an old Jewish tradition says that they did so to match the five books of Moses.",
+    "The headings come from those editors too. In the BSB, 116 psalms have one, and they name a person, a kind of song, a tune or an instrument, and sometimes a moment in David’s life. Many of the musical terms were already obscure to the Jewish scholars who translated the psalms into Greek before the time of Jesus. Most scholars think that the headings were added well after the poems were written, so they are poor evidence of who wrote a psalm, but they are good evidence of how ancient Israel read it.",
+    "Hebrew poets did not use rhyme or a fixed meter. They wrote in pairs of short lines, in which the second line repeats the thought of the first in other words, or sharpens it, or answers it. A reader who knows this can follow a psalm much more easily, because each pair of lines makes one statement rather than two.",
+    "The scholar Gerald Wilson argued that the editors arranged the five books to tell a story. On his reading, the first three books follow the kingship of David’s line from its founding to its collapse, which the poet of Psalm 89 mourns at the end of Book III, and the last two books answer that loss by declaring that the LORD himself is king. Not every scholar accepts the whole of his argument, but most agree that the editors chose with care where the book begins and where it ends. They opened it with a poem about studying God’s teaching, and they closed it with five psalms of praise.",
+  ],
+  timeline: [
+    {
+      tag: "c. 1000 BCE",
+      text: "David reigns in Jerusalem. Israel remembered him as a musician and poet, and the oldest psalms may come from about this time.",
+    },
+    {
+      tag: "586 BCE",
+      text: "The Babylonians destroy Jerusalem and its temple, which the poets of Psalms 74 and 137 mourn.",
+    },
+    {
+      tag: "515 BCE",
+      text: "The returned exiles finish a second temple, where singers go on using and collecting the psalms.",
+    },
+    {
+      tag: "c. 200s BCE",
+      text: "Jewish scholars translate the psalms into Greek. They count Psalms 9 and 10 as one poem, and so their numbering differs from the Hebrew.",
+    },
+    {
+      tag: "c. 150 BCE–70 CE",
+      text: "Scribes copy the psalm scrolls later found near the Dead Sea. Some of them set the last third of the book in a different order, which suggests that its arrangement was not yet fixed.",
+    },
+  ],
+  sources: "Gunkel · Wilson · Childs · Alter · Mays",
 };
 
 export const PSALMS_MOVEMENTS: Movement[] = [

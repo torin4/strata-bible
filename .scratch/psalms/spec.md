@@ -59,7 +59,7 @@ One reading per psalm, `ps-<n>`, with three exceptions:
 
 ### Depth: two tiers
 
-**Sittings (45 psalms, 48 readings).** Written in full, at the depth of a Genesis sitting:
+**Sittings (45 psalms, 47 readings).** Written in full, at the depth of a Genesis sitting:
 thread, ground, meaning, lenses, the turn, an ask, a prayer, and a misreading or tensions where
 the psalm earns them. Chosen by the owner's brief, as C.S. Lewis and J.R.R. Tolkien would likely
 choose (decided 2026-11-25):
@@ -122,8 +122,9 @@ commentary should be plainer here, not more lyrical, and let the psalm be the po
 
 ## Build order
 
-1. Book I: ground notes and titles for all 40 readings, the 13 sittings, the situation, capstone
+1. Book I: ground notes and titles for all 40 readings, the 12 sittings, the situation, capstone
    and doorway, and the book-level introduction. The largest movement and the proof of the method.
+   **Done**: commentary in `content/psalms-notes/book-1/`, laid over the text by `content/psalms.ts`.
 2. Books II to V, one movement per pass.
 3. The book capstone, theme entries, image prompts (a hero and five banners), and publication.
 
