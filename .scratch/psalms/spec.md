@@ -59,15 +59,31 @@ One reading per psalm, `ps-<n>`, with three exceptions:
 
 ### Depth: two tiers
 
-**Sittings (about 50).** Written in full, at the depth of a Genesis sitting: thread, ground,
-meaning, lenses, the turn, an ask, a prayer, and a misreading or tensions where the psalm earns
-them. Proposed, to be confirmed by the owner:
+**Sittings (45 psalms, 48 readings).** Written in full, at the depth of a Genesis sitting:
+thread, ground, meaning, lenses, the turn, an ask, a prayer, and a misreading or tensions where
+the psalm earns them. Chosen by the owner's brief, as C.S. Lewis and J.R.R. Tolkien would likely
+choose (decided 2026-11-25):
 
-- Book I: 1, 2, 8, 13, 15, 19, 22, 23, 24, 27, 29, 32, 39
-- Book II: 42–43, 46, 49, 51, 62, 63, 72
-- Book III: 73, 74, 78, 82, 84, 88, 89
-- Book IV: 90, 91, 95, 96, 100, 103, 104
-- Book V: 107, 110, 114, 119 (all four), 121, 126, 127, 130, 131, 137, 139, 150
+- Book I: 1, 2, 8, 13, 19, 22, 23, 27, 29, 30, 32, 39
+- Book II: 42–43, 45, 46, 49, 51, 63, 65, 72
+- Book III: 73, 74, 82, 84, 88, 89
+- Book IV: 90, 91, 93, 96, 100, 103, 104
+- Book V: 107, 109, 110, 119 (all four), 121, 126, 130, 137, 139, 148, 150
+
+Lewis left a guide: *Reflections on the Psalms* (1958), whose chapters name what he thought the
+Psalter makes a reader face, and he served on the commission that revised the Prayer Book
+psalter. Its themes drive most of the list: the cursing psalms, which he refused to skip (109,
+137); death, which most psalmists expected to end everything (30, 39, 88, 49); the longing for
+God's presence he called "the fair beauty of the Lord" (27, 42–43, 63, 84); delight in the law
+(19, which he held the greatest poem in the Psalter, and 119); nature and praise (8, 29, 65, 104,
+148, 150); and the royal psalms that Christians later reread as being about Christ (2, 45, 110),
+which STRATA grounds in what they meant to their first hearers before saying how they were reread.
+
+Tolkien wrote nothing substantial on the Psalms that we know of, so nothing is attributed to him.
+The list follows his known preoccupations instead: the sudden turn from grief to joy that he
+called eucatastrophe (22, 30, 126), faithfulness through a defeat that does not lift (74, 88, 89),
+mortality (39, 90), the sea and the deep (93, 104, 107), and exile and the longing for home (137,
+121, 84).
 
 Every sitting needs a `READING_THEMES` entry, since the find index is how most readers will reach
 a psalm.
