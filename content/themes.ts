@@ -454,11 +454,6 @@ export const READING_THEMES: Record<string, ReadingThemes> = {
     speaksTo:
       "For when the person you love most is at risk, and you have no good answer to give.",
   },
-  "ps-13": {
-    themes: ["god-feels-absent", "doubt", "grief"],
-    speaksTo:
-      "For the worst days, when God feels hidden and you need words that let you complain to him and still pray.",
-  },
   "lev-19": {
     themes: ["injustice", "the-outsider"],
     speaksTo:

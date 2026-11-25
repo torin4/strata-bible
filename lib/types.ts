@@ -119,6 +119,8 @@ export interface Passage {
   ask?: string;
   prayer?: Prayer;                   // a meditation, mantra, or prayer to close the turn
 
+  superscription?: string;           // a psalm's heading ("A Psalm of David."), which the flat BSB
+                                     // holds as the start of verse 1; verse 1 then carries the rest
   inTextTurn?: number;               // verse where the text itself turns (Ps 13:5)
   label?: string;                    // narrative scene label: "One", "Two"
   figures?: Figure[];                // illustrations tied to a word in an authored note

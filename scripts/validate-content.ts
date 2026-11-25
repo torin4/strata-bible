@@ -149,7 +149,11 @@ for (const book of BOOKS) {
 // ---------------------------------------------------------------------------------------
 
 // Whitespace-insensitive comparison text: line breaks and runs of spaces become single spaces.
-const flatten = (s: string) => s.replace(/\s+/g, " ").trim();
+// A line break straight after an em dash stands for no character, since the BSB has no space
+// there (Psalm 136's refrain, "the great lights—His loving devotion"); it is removed, not read as
+// a space. scripts/build-psalms-text.ts applies the identical rule.
+const flatten = (s: string) =>
+  s.replace(/—\n/g, "—").replace(/\s+/g, " ").trim();
 
 const abridged: string[] = [];
 const unverifiable: string[] = [];
@@ -182,7 +186,13 @@ for (const book of BOOKS) {
           continue;
         }
         const want = flatten(official);
-        const got = flatten(verse.text);
+        // A psalm heading is authored apart from verse 1 but is the start of the BSB's verse 1,
+        // so the two are proven together, as one string, and must match exactly.
+        const heading =
+          verse.n === 1 && passage.superscription
+            ? `${passage.superscription} `
+            : "";
+        const got = flatten(heading + verse.text);
         if (want === got) continue;
         if (want.includes(got)) {
           abridged.push(`${reading.id} · ${passage.ref} v${verse.n}`);
