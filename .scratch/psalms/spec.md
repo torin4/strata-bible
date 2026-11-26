@@ -133,7 +133,8 @@ commentary should be plainer here, not more lyrical, and let the psalm be the po
    `content/psalms-notes/book-4/` and `book-5/`, from `.scratch/psalms/book-4-5-brief.md`; every
    passage, grounded ones included, at or under the 1.8x gate. All 151 readings are now authored.
 3. The book capstone, theme entries, image prompts (a hero and five banners), and publication.
-   The images and every sitting's theme entry are done; the book capstone and publication remain.
+   The images, every sitting's theme entry and the book capstone (`PSALMS_CAPSTONE`) are done;
+   publication remains, and waits on the owner.
 
 Each pass: parallel workers of about eight psalms each, briefed with the voice rules; a sweep for
 agency slips, fragments and em dashes; the validator, tests and lint; one commit per movement.

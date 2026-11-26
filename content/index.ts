@@ -34,7 +34,12 @@ import {
   THE_TEMPLE_MOVEMENT,
   THE_WAY_MOVEMENT,
 } from "./mark";
-import { PSALMS, PSALMS_INTRO, PSALMS_MOVEMENTS } from "./psalms";
+import {
+  PSALMS,
+  PSALMS_CAPSTONE,
+  PSALMS_INTRO,
+  PSALMS_MOVEMENTS,
+} from "./psalms";
 import {
   EMPTY_MOVEMENT,
   RUTH,
@@ -209,9 +214,9 @@ export const BOOKS: BookEntry[] = [
     capstone: ECCLESIASTES_CAPSTONE,
     published: true,
   },
-  // Psalms, book six, in progress and unpublished: all 150 psalms read at the plain tier from
-  // the generated, lineated BSB text while the five movements are written. Its Psalm 13 replaces
-  // the old genre fixture of the same id. See .scratch/psalms/spec.md.
+  // Psalms, book six, written and unpublished: all 151 readings authored over the generated,
+  // lineated BSB text, across the Psalter's own five books. Its Psalm 13 replaces the old genre
+  // fixture of the same id. Unpublished until the owner releases it; see .scratch/psalms/spec.md.
   {
     id: "psalms",
     title: "Psalms",
@@ -219,6 +224,7 @@ export const BOOKS: BookEntry[] = [
     readings: PSALMS,
     movements: PSALMS_MOVEMENTS,
     composition: PSALMS_INTRO,
+    capstone: PSALMS_CAPSTONE,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

@@ -9,11 +9,11 @@
 // here. Until a psalm is authored it reads at the plain tier: the lineated text and nothing more,
 // under the BSB's own section title as a working title. See .scratch/psalms/spec.md.
 //
-// The book is unpublished until all five movements are written, exactly as every book before it
+// All five movements are written. The book stays unpublished until the owner releases it, as every book before it
 // was: reachable by direct URL, absent from the landing page and the find index.
 import { PSALM_NOTES } from "@/content/psalms-notes";
 import { PSALMS_TEXT, PSALM_119_LETTERS } from "@/content/psalms-text";
-import type { Movement, Panel, Passage, Reading } from "@/lib/types";
+import type { Capstone, Movement, Panel, Passage, Reading } from "@/lib/types";
 
 // One psalm as a single poem passage, authored whole (ADR 0001).
 function psalmPassage(
@@ -415,6 +415,28 @@ export const PSALMS_INTRO: Panel = {
     },
   ],
   sources: "Gunkel · Wilson · Childs · Alter · Mays",
+};
+
+// The book-level look-back over the whole Psalter.
+export const PSALMS_CAPSTONE: Capstone = {
+  kicker: "The whole book · Psalms 1–150",
+  title: "Everything said to God",
+  paragraphs: [
+    "The editors of the Psalter gathered prayers that Israel’s poets had written over several hundred years, and they did not make them agree. The poet of Psalm 1 promises that the man who delights in God’s law will prosper, and the poet of Psalm 73 says that he nearly stumbled watching the wicked prosper instead. The singers of Psalm 46 say that God is within Zion and that she will not be moved, and the poets of Psalms 74 and 79 describe her sanctuary burned and her temple defiled. The poet of Psalm 89 holds God to his oath to David and asks where it has gone, and the poet of Psalm 88 ends in darkness without any turn at all. The editors kept every one of these, side by side, and they left the reader to live with the argument rather than settling it for him.",
+    "The scholar Claus Westermann observed that most of the laments stand in the first half of the book and most of the hymns in the second, so that the Psalter as a whole moves from complaint toward praise. The editors did not reach the praise by leaving the complaints out. They opened with a man who meditates on God’s law day and night, they passed through the cries of the sick, the accused, the guilty and the exiled, and they closed with five psalms that call on everything that has breath to praise the LORD. Whatever praise the book reaches, its poets reached it with their griefs still on record.",
+    "What the poets share is that they said all of it to God. They brought him their rage against their enemies in Psalms 109 and 137, their guilt in Psalms 51 and 130, their fear of death in Psalms 39 and 90, and their joy in Psalms 126 and 148, and they rarely tidied any of it first. Jews and Christians have prayed these words ever since, and the gospel writers record that Jesus prayed them on the cross, crying out the opening of Psalm 22 and committing his spirit to God in the words of Psalm 31. The book does not teach its readers about prayer so much as give them the words, and it assumes that there is nothing a person may feel that cannot be said to God.",
+  ],
+  tensions: [
+    {
+      claim:
+        "The poet of Psalm 145 says that the LORD is good to all, and that his compassion rests on all he has made.",
+      counter:
+        "The poet of Psalm 137 blesses whoever repays Babylon as she has done, and whoever dashes her infants against the rocks. The editors set his psalm a few pages before the other, and they kept both as prayers.",
+      where: "Psalm 145:9 · Psalm 137:8–9",
+    },
+  ],
+  sources: "Westermann · Brueggemann · Wilson · Mays · Childs",
+  ask: "Which psalm says something you have not yet been able to say to God, and will you pray it as it stands?",
 };
 
 export const PSALMS_MOVEMENTS: Movement[] = [
