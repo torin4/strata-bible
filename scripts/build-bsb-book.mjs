@@ -5,8 +5,11 @@
 // Source is the same authoritative file the scripture migration used: bereanbible.com/bsb.txt
 // ("Book C:V\ttext", one verse per line).
 //
-// Usage:  node scripts/build-bsb-book.mjs <Book> <expectedVerses> [path/to/bsb.txt]
+// Usage:  node scripts/build-bsb-book.mjs <Book> <expectedVerses> [path/to/bsb.txt] [slug]
 //   e.g.  node scripts/build-bsb-book.mjs Genesis 1533
+//         node scripts/build-bsb-book.mjs Psalm 2461 /tmp/bsb.txt psalms
+//   The source names Psalms in the singular ("Psalm 23:1"), so the optional slug sets the
+//   output name where the source's book name is not the one the app uses.
 //         node scripts/build-bsb-book.mjs Exodus 1213
 //   Download first if needed:  curl -s -o /tmp/bsb.txt https://bereanbible.com/bsb.txt
 //
@@ -15,7 +18,7 @@
 // does not match refuses to emit.
 import { readFileSync, writeFileSync } from "node:fs";
 
-const [book, expectedRaw, srcArg] = process.argv.slice(2);
+const [book, expectedRaw, srcArg, slugArg] = process.argv.slice(2);
 const SRC = srcArg ?? "/tmp/bsb.txt";
 
 if (!book || !expectedRaw) {
@@ -65,7 +68,7 @@ if (verses.length !== expected) {
 verses.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
 
 // "Song of Solomon" -> bsb-song-of-solomon.ts / BSB_SONG_OF_SOLOMON.
-const slug = book
+const slug = (slugArg ?? book)
   .toLowerCase()
   .replace(/[^a-z0-9]+/g, "-")
   .replace(/^-|-$/g, "");

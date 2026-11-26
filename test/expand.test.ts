@@ -82,9 +82,9 @@ describe("expandReading", () => {
   });
 
   it("leaves a book with no registered BSB lookup untouched", () => {
-    const psalm = getReading("psalms", "ps-13");
-    if (!psalm) throw new Error("no ps-13");
-    expect(expandReading(psalm)).toBe(psalm);
+    const law = getReading("leviticus", "lev-19");
+    if (!law) throw new Error("no lev-19");
+    expect(expandReading(law)).toBe(law);
   });
 
   it("fills from the book's own lookup, not Genesis's", () => {

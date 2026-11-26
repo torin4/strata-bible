@@ -34,6 +34,7 @@ import {
   THE_TEMPLE_MOVEMENT,
   THE_WAY_MOVEMENT,
 } from "./mark";
+import { PSALMS, PSALMS_INTRO, PSALMS_MOVEMENTS } from "./psalms";
 import {
   EMPTY_MOVEMENT,
   RUTH,
@@ -75,7 +76,6 @@ export const COMING_SOON: ComingSoon[] = [];
 // Genesis ships first as the real book. The seed fixtures are one reading per genre,
 // grouped by their own bookId, purely to prove the kind-aware renderer end to end.
 const SEED_TITLES: Record<string, string> = {
-  psalms: "Psalms",
   leviticus: "Leviticus",
   romans: "Romans",
   proverbs: "Proverbs",
@@ -208,6 +208,16 @@ export const BOOKS: BookEntry[] = [
     composition: ECCLESIASTES_INTRO,
     capstone: ECCLESIASTES_CAPSTONE,
     published: true,
+  },
+  // Psalms, book six, in progress and unpublished: all 150 psalms read at the plain tier from
+  // the generated, lineated BSB text while the five movements are written. Its Psalm 13 replaces
+  // the old genre fixture of the same id. See .scratch/psalms/spec.md.
+  {
+    id: "psalms",
+    title: "Psalms",
+    readings: PSALMS,
+    movements: PSALMS_MOVEMENTS,
+    composition: PSALMS_INTRO,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.

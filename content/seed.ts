@@ -2,7 +2,6 @@ import type { Movement, Reading } from "@/lib/types";
 
 // Genre fixtures for the NON-Genesis genres, to validate the kind-aware renderer.
 // Genesis content lives in genesis.ts; do not duplicate it here.
-// ps-13   sitting   poem        (one passage, no historical ground, pray-mode address)
 // lev-19  sitting   law         (statute-cluster, per-statute address modes, misreading)
 // rom-7   sitting   argument    (span crosses the chapter line, misreading)
 // prov-10 sitting   wisdom      (saying-cluster, tensions / canon arguing back)
@@ -10,36 +9,6 @@ import type { Movement, Reading } from "@/lib/types";
 // job-1   sitting   composite   (mixed-kind passages; thesis lives in JOB_MOVEMENT capstone)
 
 export const SEED: Reading[] = [
-  {
-    id: 'ps-13', bookId: 'psalms', tier: 'sitting',
-    span: 'Psalm 13', chapterIndex: 13,
-    title: 'How long',
-    thread: 'A lament with no story behind it. What grounds it is the form: four times “how long,” then a turn.',
-    closeEnd: 'The complaint is kept in the prayer book, teeth and all. That is the point.',
-    passages: [
-      {
-        ref: 'Psalm 13', kind: 'poem', form: 'poetry', title: 'How long', inTextTurn: 5,
-        verses: [
-          { n: 1, text: 'How long, O LORD? Will You forget me forever? How long will You hide Your face from me?' },
-          { n: 2, text: 'How long must I wrestle in my soul, with sorrow in my heart each day? How long will my enemy dominate me?' },
-          { n: 3, text: 'Consider me and respond, O LORD my God. Give light to my eyes, lest I sleep in death,' },
-          { n: 4, text: 'lest my enemy say, “I have overcome him,” and my foes rejoice when I fall.' },
-          { n: 5, text: 'But I have trusted in Your loving devotion; my heart will rejoice in Your salvation.' },
-          { n: 6, text: 'I will sing to the LORD, for He has been good to me.' },
-        ],
-        ground: { kind: 'genre', src: 'Westermann · Alter', text: 'A lament, the most common kind of psalm. It has no story behind it. The heading tying it to David was added later and tells us nothing about a setting. What grounds it is the form itself: four times “how long,” then a turn. Israel kept these as scripts for the worst days, and the striking thing is that a prayer this accusing was not edited out. The complaint is holy too.' },
-        meaning: 'The psalm does the thing religion usually forbids. It accuses God to his face, four times, and calls it prayer. Then in verse 5 it turns, not because anything changed, the enemy is still there, the face is still hidden, but because the one praying decides to trust anyway. Lament is not the opposite of faith. It is faith with its teeth bared.',
-        lenses: {
-          theo: 'You are allowed to say this. The Bible hands you the words to accuse God and keeps them in the prayer book. Trust here is not a feeling that the trouble lifted. It is a decision made inside the trouble, with the face still hidden.',
-          arch: 'The cry into a silence that will not answer is among the oldest human sounds, carved into the laments of every people. To name the silence and keep speaking into it anyway, refusing both the lie that all is well and the despair that no one hears, is how a person holds together when nothing outside confirms them. (The lament, the oldest prayer there is.)',
-        },
-        addr: { mode: 'pray', text: 'When you are in the worst of it, these are words you can take on your own lips. You do not have to pretend you are fine to pray it.' },
-        ask: 'What would you say to God if you were allowed to accuse, and could you still get to verse 5?',
-        prayer: { mode: 'pray', text: 'How long, O Lord. I will not put on a brave face to come to you. Stay with me in the dark, and bring me, in your own time, to the turn.' },
-      },
-    ],
-  },
-
   {
     id: 'lev-19', bookId: 'leviticus', tier: 'sitting',
     span: 'Leviticus 19:9–19', chapterIndex: 19,

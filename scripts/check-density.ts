@@ -39,6 +39,7 @@ const HELD_BOOKS = new Set([
   "ruth",
   "mark",
   "ecclesiastes",
+  "psalms",
 ]);
 const UPDATE = process.argv.includes("--update-baseline");
 const BASELINE_PATH = fileURLToPath(

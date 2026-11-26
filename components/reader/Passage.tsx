@@ -95,6 +95,12 @@ export function Passage({
         </div>
       ) : null}
 
+      {passage.superscription ? (
+        <p className="mb-[10px] mt-[4px] font-scripture text-[15.5px] italic leading-[1.5] text-mist">
+          {passage.superscription}
+        </p>
+      ) : null}
+
       {passage.form === "poetry" ? (
         <Scripture
           form="poetry"

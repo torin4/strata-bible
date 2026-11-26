@@ -75,7 +75,14 @@ export function Scripture({
                         // biome-ignore lint/suspicious/noArrayIndexKey: static list of lines within a verse
                         <Fragment key={li}>
                           {li > 0 ? <br /> : null}
-                          {line}
+                          {line === "Selah" ? (
+                            // A liturgical or musical direction, not part of the sung line.
+                            <span className="font-ui text-[10px] uppercase tracking-[.2em] text-mist-2">
+                              Selah
+                            </span>
+                          ) : (
+                            line
+                          )}
                         </Fragment>
                       ))}
                     </HighlightableVerse>
