@@ -215,6 +215,7 @@ export const BOOKS: BookEntry[] = [
   {
     id: "psalms",
     title: "Psalms",
+    heroImage: "/images/psalms-intro.webp",
     readings: PSALMS,
     movements: PSALMS_MOVEMENTS,
     composition: PSALMS_INTRO,
