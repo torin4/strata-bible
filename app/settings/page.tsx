@@ -126,7 +126,7 @@ export default function SettingsPage() {
           </div>
           <fieldset
             aria-label="Text size"
-            className="m-0 flex min-w-0 gap-2 border-0 p-0"
+            className="m-0 grid min-w-0 grid-cols-2 gap-2 border-0 p-0 sm:grid-cols-4"
           >
             {READER_SCALES.map((scale, i) => {
               const active = readerScale === scale;
@@ -136,7 +136,7 @@ export default function SettingsPage() {
                   type="button"
                   aria-pressed={active}
                   onClick={() => setReaderScale(scale)}
-                  className={`flex-1 rounded-[10px] border px-2 py-2.5 font-ui text-[11px] uppercase tracking-[.1em] transition-colors ${
+                  className={`min-w-0 rounded-[10px] border px-2 py-2.5 font-ui text-[11px] uppercase tracking-[.1em] transition-colors ${
                     active
                       ? "border-gold/60 bg-gold-soft text-gold-bright"
                       : "border-line text-mist hover:border-gold/40 hover:text-parchment"
