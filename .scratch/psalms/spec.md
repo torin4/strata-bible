@@ -129,8 +129,11 @@ commentary should be plainer here, not more lyrical, and let the psalm be the po
    every sitting passage held to 1.6x or under (1.33x to 1.57x). The brief the writers worked
    from is `.scratch/psalms/book-2-brief.md`; reuse it for Books III to V with the ranges, budgets
    and per-psalm notes changed. **Book III done**: `content/psalms-notes/book-3/`, sittings at
-   0.91x to 1.57x, from `.scratch/psalms/book-3-brief.md`, the brief to adapt for Books IV and V.
+   0.91x to 1.57x, from `.scratch/psalms/book-3-brief.md`. **Books IV and V done**:
+   `content/psalms-notes/book-4/` and `book-5/`, from `.scratch/psalms/book-4-5-brief.md`; every
+   passage, grounded ones included, at or under the 1.8x gate. All 151 readings are now authored.
 3. The book capstone, theme entries, image prompts (a hero and five banners), and publication.
+   The images and every sitting's theme entry are done; the book capstone and publication remain.
 
 Each pass: parallel workers of about eight psalms each, briefed with the voice rules; a sweep for
 agency slips, fragments and em dashes; the validator, tests and lint; one commit per movement.

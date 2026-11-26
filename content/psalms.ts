@@ -303,17 +303,39 @@ export const PSALMS_BOOK_IV_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ps-moses.webp",
     paragraphs: [
-      "The fourth book runs from Psalm 90 to Psalm 106. Scholars such as Gerald Wilson have argued that the editors placed it deliberately after the crisis of Psalm 89, answering the failure of David’s line by looking back to Moses and to the kingship of God himself.",
+      "The fourth book runs from Psalm 90 to Psalm 106. It opens with the only psalm headed as Moses’s, a prayer that sets the shortness of a human life beside the God who was there before the mountains were born. Most of its other psalms have no heading at all, and only two, Psalms 101 and 103, are headed as David’s.",
+      "At its center stands a run of psalms that scholars call the enthronement psalms, Psalm 93 and Psalms 95 to 99. Several of them open with the words “The LORD reigns,” and their poets call on the sea, the fields and the trees to rejoice because the LORD comes to judge the earth. The scholar Sigmund Mowinckel proposed that Israel celebrated the LORD’s enthronement at a festival every autumn. Many scholars doubt that such a festival existed, but most agree that these poets were proclaiming God himself as king.",
+      "The scholar Gerald Wilson argued that the editors placed this book deliberately after Psalm 89. On his reading, they answered the fall of David’s line by reaching back to Moses, who led Israel before it had any king, and by declaring that the LORD had been Israel’s king all along. The book ends with two long psalms that retell Israel’s history, the first as a record of God’s faithfulness and the second as a record of the people’s rebellion, and with a prayer that God would gather his people from the nations.",
     ],
-    sources: "Wilson",
+    sources: "Wilson · Mowinckel · Tate · Allen",
   },
   doorway: {
     kicker: "The fifth book",
     title: "Book V",
     paragraphs: [
-      "The fourth book closes at Psalm 106 with a blessing and the call for all the people to say “Amen.”",
+      "The fourth book closes at Psalm 106 with the editors’ blessing, “Blessed be the LORD, the God of Israel, from everlasting to everlasting,” and with their call for all the people to say “Amen!”",
+      "The fifth book is the longest of the five. Its first poet says that the LORD has gathered the redeemed from the lands, from east and west, as though answering the prayer that closed the fourth book. It holds the songs that pilgrims sang on the way up to Jerusalem, the long alphabet poem of Psalm 119, and the five psalms of praise that close the Psalter.",
     ],
     nextMovementId: "psalms-book-5",
+  },
+  capstone: {
+    kicker: "The fourth book · Psalms 90–106",
+    title: "The LORD reigns",
+    paragraphs: [
+      "The fourth book begins with a man looking at the length of his own life. The poet of Psalm 90, whom the editors headed as Moses, says that in God’s sight a thousand years are but a day that passes, while a human life lasts seventy years, or eighty for the strong, and then quickly passes. He does not ask God to make his life longer. He asks God to teach him to number his days, and to establish the work of his hands.",
+      "The poets of the psalms that follow answer the crisis of the third book in a way that the poet of Psalm 89 did not. He had asked where God’s promise to David had gone, and the poets of Psalms 93 and 95 to 99 hardly mention David at all. They declare that the LORD reigns, that his throne was established long ago, and that he is mightier than the seas that lift up their pounding waves. The king they celebrate could not be carried into exile, because his rule never depended on a king in Jerusalem.",
+      "The book ends with an honest look back. The poet of Psalm 105 retells the story from Abraham to the exodus as a record of God’s faithfulness, and the poet of Psalm 106 retells much of the same story as a record of Israel’s rebellion, from the golden calf to the worship of the gods of Canaan. He ends by asking God to gather his people from the nations, and the editors set his prayer at the close of the book, when many of those who prayed it were still scattered.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 90 says that the days of a human life quickly pass and fly away, and he asks God only to teach him to number them.",
+        counter:
+          "The poet of Psalm 91, which the editors set directly after it, promises in God’s voice that the one who dwells in the shelter of the Most High will be satisfied with long life.",
+        where: "Psalm 90:10–12 · Psalm 91:16",
+      },
+    ],
+    sources: "Wilson · Tate · Mays · Brueggemann",
   },
 };
 
@@ -331,8 +353,31 @@ export const PSALMS_BOOK_V_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ps-ascents.webp",
     paragraphs: [
-      "The fifth book runs from Psalm 107 to Psalm 150. It includes the fifteen Songs of Ascents (120–134), and its last five psalms each begin and end with the Hebrew call “Hallelujah,” which means “praise the LORD.”",
+      "The fifth book runs from Psalm 107 to Psalm 150, and with forty-four psalms it is the longest of the five. Most of its psalms have no heading. The editors headed three psalms near its beginning as David’s, four of the Songs of Ascents, and a last run of eight psalms, Psalms 138 to 145.",
+      "The editors built the book from collections that readers can still see. Psalms 113 to 118, which Jewish families later sang at Passover, are called the Egyptian Hallel, from the Hebrew word for praise. The fifteen Songs of Ascents, Psalms 120 to 134, are short poems that most scholars think pilgrims sang on their way up to Jerusalem for the festivals. Between those two groups the editors set Psalm 119, the longest psalm in the book, an alphabet poem in twenty-two stanzas on the love of God’s teaching.",
+      "Most scholars think that many of these psalms were written after the exile. The poet of Psalm 107 speaks of the redeemed whom the LORD has gathered from the lands, and the poet of Psalm 137 remembers sitting by the rivers of Babylon and weeping for Zion. Among the Dead Sea Scrolls, scribes copied the psalms of this part of the book in a different order and with other poems among them, and many scholars take that as a sign that its arrangement was settled later than that of the earlier books.",
+      "The book, and the Psalter with it, ends with five psalms that each begin and end with “Hallelujah,” the Hebrew call that means “Praise the LORD.” The editors added no blessing to the last of them, Psalm 150, because the whole psalm already does the work of one.",
     ],
+    sources: "Allen · Wilson · Hossfeld and Zenger · Mays",
+  },
+  capstone: {
+    kicker: "The fifth book · Psalms 107–150",
+    title: "Everything that has breath",
+    paragraphs: [
+      "The fifth book opens with people coming home. The poet of Psalm 107 describes four kinds of people in trouble, wanderers in the desert, prisoners in darkness, the sick and sailors caught in a storm, and he says the same thing of each, that they cried out to the LORD in their trouble and he delivered them. Most scholars think that the poets of this book were writing after the return from Babylon, when the temple had been rebuilt but no king of David’s line sat on a throne.",
+      "The poets of this book keep the whole range of the earlier books. The poet of Psalm 119 meditates on God’s teaching for 176 verses, and he ends by saying that he has strayed like a lost sheep. The pilgrims of the Songs of Ascents sing on the road to Jerusalem, the exiles of Psalm 137 refuse to sing in Babylon and curse their captors, and the poet of Psalm 139 says that he could not escape God’s presence even if he settled by the farthest sea. The editors did not leave out the anger or the grief in order to reach the praise more quickly.",
+      "Yet they did end with praise. The poets of the last five psalms call on the angels, the sun and the moon, the creatures of the sea, the kings of the earth, and at last everything that has breath to praise the LORD. The Psalter began with a man meditating on God’s law day and night, and it passed through every kind of trouble that its poets knew, and the editors closed it with a call to praise that has no complaint left in it.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 150 calls on everything that has breath to praise the LORD.",
+        counter:
+          "The poet of Psalm 88 asks whether the departed spirits rise up to praise God, expecting that they do not, and ends his prayer in darkness. The editors kept both poems in the same book.",
+        where: "Psalm 150:6 · Psalm 88:10–12",
+      },
+    ],
+    sources: "Allen · Wilson · Brueggemann · Mays",
   },
 };
 
