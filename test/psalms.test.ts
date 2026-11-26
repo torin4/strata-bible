@@ -105,6 +105,24 @@ describe("Psalms", () => {
     }
   });
 
+  it("authors all of Book III, with the spec's six sittings", () => {
+    const bookThree = PSALMS.filter(
+      (r) => r.chapterIndex >= 73 && r.chapterIndex <= 89,
+    );
+    expect(bookThree).toHaveLength(17);
+    expect(bookThree.filter((r) => r.tier === "plain")).toEqual([]);
+    expect(
+      bookThree.filter((r) => r.tier === "sitting").map((r) => r.chapterIndex),
+    ).toEqual([73, 74, 82, 84, 88, 89]);
+    for (const r of bookThree) {
+      expect(
+        r.passages.every((p) => p.ground?.text),
+        r.id,
+      ).toBe(true);
+      expect(r.title, r.id).not.toBe(PSALMS_TEXT[r.chapterIndex].title);
+    }
+  });
+
   it("places every reading in one of the Psalter's five books", () => {
     expect(PSALMS[0].id).toBe("ps-1");
     expect(PSALMS[PSALMS.length - 1].id).toBe("ps-150");

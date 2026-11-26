@@ -252,16 +252,40 @@ export const PSALMS_BOOK_III_MOVEMENT: Movement = {
     title: "The situation",
     image: "/images/ps-asaph.webp",
     paragraphs: [
-      "The third book runs from Psalm 73 to Psalm 89. Eleven of its psalms are headed as Asaph’s, after a guild of temple musicians, and it ends with Psalm 89, in which the singer asks why God has renounced the covenant he made with David.",
+      "The third book runs from Psalm 73 to Psalm 89, and with seventeen psalms it is the shortest of the five. The editors opened it with eleven psalms headed as Asaph’s, the name of a guild of temple singers whom the writer of Chronicles traces to a Levite that David appointed to lead the music before the ark. After them come four psalms headed as belonging to the sons of Korah, one headed as David’s, and a last psalm headed as the work of Ethan the Ezrahite, whom the writer of 1 Kings names among the wise men of Solomon’s day.",
+      "Psalm 83 is the last psalm of the older collection that most scholars trace from Psalm 42, whose poets mostly call God by the ordinary Hebrew word for God. From Psalm 84 on the poets again call him by his name, which the BSB prints as “the LORD.”",
+      "Several poets in this book look on ruins. The poets of Psalms 74 and 79 describe enemies who have burned the sanctuary, defiled the temple and left Jerusalem in rubble, and most scholars connect both psalms with the Babylonian army that destroyed the city in 586 BCE. Some psalms in the book are probably older than that, but the editors gathered them where those laments would color the whole.",
+      "The poets of this book also argue with God more openly than the poets before them. The poet of Psalm 73 confesses that he nearly stumbled when he saw the wicked prosper, the poet of Psalm 77 asks whether God’s loving devotion has ceased forever, and the poet of Psalm 88 ends in darkness without a word of hope. Yet the poets of Psalms 84 and 87 still sing of Zion with love, and the editors set that longing for the city beside the grief for it.",
     ],
+    sources: "Tate · Hossfeld and Zenger · Wilson · Brueggemann",
   },
   doorway: {
     kicker: "The fourth book",
     title: "Book IV",
     paragraphs: [
-      "The third book closes at Psalm 89 with a blessing, directly after the singer’s question of how long God will hide himself.",
+      "The third book closes at Psalm 89 with a blessing that the editors added, “Blessed be the LORD forever! Amen and amen,” directly after the poet has asked where God’s loving devotion of old has gone.",
+      "The fourth book opens with the only psalm headed as Moses’s, a prayer from the time before Israel had any king, and soon turns to a run of psalms that declare that the LORD reigns. Many scholars read that order as the editors’ answer to the loss that the poet of Psalm 89 mourns.",
     ],
     nextMovementId: "psalms-book-4",
+  },
+  capstone: {
+    kicker: "The third book · Psalms 73–89",
+    title: "The ruins and the covenant",
+    paragraphs: [
+      "The third book opens and closes with a poet who will not pretend. The poet of Psalm 73 begins by saying that God is good to Israel, and then he admits that his feet had almost stumbled when he saw the prosperity of the wicked. He found no answer by thinking it through, and he says that he understood only when he entered God’s sanctuary and saw their end. The poet of Psalm 89 begins by promising to sing of the LORD’s loving devotion forever, and he ends by asking where it has gone.",
+      "Between them, the poets of this book face the loss of nearly everything that the second book celebrated. The singers of Psalms 46 and 48 had said that God was within Zion and that it would not be moved, and the poets of Psalms 74 and 79 describe its sanctuary burned to the ground. The poet of Psalm 72 had prayed that the king’s name would endure as long as the sun, and the poet of Psalm 89 says that God has sullied the king’s crown in the dust. The poet of Psalm 88 does not turn to hope at all, and the editors placed his psalm just before the last psalm of the book.",
+      "The scholar Gerald Wilson argued that the editors meant this book to end in crisis, so that the first three books follow David’s covenant from its making to its failure and the last two answer that failure by proclaiming that the LORD himself is king. Whether or not the editors planned it so closely, they did not resolve the complaint of Psalm 89. They added a blessing to it, and so they closed the book by praising God for a covenant that the poet could no longer see him keeping.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 46 says that God is within his city and that she will not be moved.",
+        counter:
+          "The poet of Psalm 74 says that enemies have burned God’s sanctuary to the ground and defiled the dwelling place of his Name. The editors kept both songs, and they did not explain how the first could be true after the second was written.",
+        where: "Psalm 46:5 · Psalm 74:3–8",
+      },
+    ],
+    sources: "Wilson · Brueggemann · Tate · Mays",
   },
 };
 
