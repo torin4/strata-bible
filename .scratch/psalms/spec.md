@@ -125,8 +125,16 @@ commentary should be plainer here, not more lyrical, and let the psalm be the po
 1. Book I: ground notes and titles for all 40 readings, the 12 sittings, the situation, capstone
    and doorway, and the book-level introduction. The largest movement and the proof of the method.
    **Done**: commentary in `content/psalms-notes/book-1/`, laid over the text by `content/psalms.ts`.
-2. Books II to V, one movement per pass.
+2. Books II to V, one movement per pass. **Book II done**: `content/psalms-notes/book-2/`, with
+   every sitting passage held to 1.6x or under (1.33x to 1.57x). The brief the writers worked
+   from is `.scratch/psalms/book-2-brief.md`; reuse it for Books III to V with the ranges, budgets
+   and per-psalm notes changed. **Book III done**: `content/psalms-notes/book-3/`, sittings at
+   0.91x to 1.57x, from `.scratch/psalms/book-3-brief.md`. **Books IV and V done**:
+   `content/psalms-notes/book-4/` and `book-5/`, from `.scratch/psalms/book-4-5-brief.md`; every
+   passage, grounded ones included, at or under the 1.8x gate. All 151 readings are now authored.
 3. The book capstone, theme entries, image prompts (a hero and five banners), and publication.
+   The images, every sitting's theme entry and the book capstone (`PSALMS_CAPSTONE`) are done;
+   publication remains, and waits on the owner.
 
 Each pass: parallel workers of about eight psalms each, briefed with the voice rules; a sweep for
 agency slips, fragments and em dashes; the validator, tests and lint; one commit per movement.

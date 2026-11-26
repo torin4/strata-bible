@@ -87,6 +87,72 @@ describe("Psalms", () => {
     }
   });
 
+  it("authors all of Book II, with the spec's eight sittings", () => {
+    const bookTwo = PSALMS.filter(
+      (r) => r.chapterIndex >= 42 && r.chapterIndex <= 72,
+    );
+    expect(bookTwo).toHaveLength(30);
+    expect(bookTwo.filter((r) => r.tier === "plain")).toEqual([]);
+    expect(
+      bookTwo.filter((r) => r.tier === "sitting").map((r) => r.chapterIndex),
+    ).toEqual([42, 45, 46, 49, 51, 63, 65, 72]);
+    for (const r of bookTwo) {
+      expect(
+        r.passages.every((p) => p.ground?.text),
+        r.id,
+      ).toBe(true);
+      expect(r.title, r.id).not.toBe(PSALMS_TEXT[r.chapterIndex].title);
+    }
+  });
+
+  it("authors all of Book III, with the spec's six sittings", () => {
+    const bookThree = PSALMS.filter(
+      (r) => r.chapterIndex >= 73 && r.chapterIndex <= 89,
+    );
+    expect(bookThree).toHaveLength(17);
+    expect(bookThree.filter((r) => r.tier === "plain")).toEqual([]);
+    expect(
+      bookThree.filter((r) => r.tier === "sitting").map((r) => r.chapterIndex),
+    ).toEqual([73, 74, 82, 84, 88, 89]);
+    for (const r of bookThree) {
+      expect(
+        r.passages.every((p) => p.ground?.text),
+        r.id,
+      ).toBe(true);
+      expect(r.title, r.id).not.toBe(PSALMS_TEXT[r.chapterIndex].title);
+    }
+  });
+
+  it.each([
+    ["IV", 90, 106, 17, [90, 91, 93, 96, 100, 103, 104]],
+    [
+      "V",
+      107,
+      150,
+      47,
+      [107, 109, 110, 119, 119, 119, 119, 121, 126, 130, 137, 139, 148, 150],
+    ],
+  ] as const)(
+    "authors all of Book %s, with the spec's sittings",
+    (_, lo, hi, count, sittings) => {
+      const book = PSALMS.filter(
+        (r) => r.chapterIndex >= lo && r.chapterIndex <= hi,
+      );
+      expect(book).toHaveLength(count);
+      expect(book.filter((r) => r.tier === "plain")).toEqual([]);
+      expect(
+        book.filter((r) => r.tier === "sitting").map((r) => r.chapterIndex),
+      ).toEqual(sittings);
+      for (const r of book) {
+        expect(
+          r.passages.every((p) => p.ground?.text),
+          r.id,
+        ).toBe(true);
+        expect(r.title, r.id).not.toBe(PSALMS_TEXT[r.chapterIndex].title);
+      }
+    },
+  );
+
   it("places every reading in one of the Psalter's five books", () => {
     expect(PSALMS[0].id).toBe("ps-1");
     expect(PSALMS[PSALMS.length - 1].id).toBe("ps-150");

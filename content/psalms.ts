@@ -9,11 +9,11 @@
 // here. Until a psalm is authored it reads at the plain tier: the lineated text and nothing more,
 // under the BSB's own section title as a working title. See .scratch/psalms/spec.md.
 //
-// The book is unpublished until all five movements are written, exactly as every book before it
+// All five movements are written. The book stays unpublished until the owner releases it, as every book before it
 // was: reachable by direct URL, absent from the landing page and the find index.
 import { PSALM_NOTES } from "@/content/psalms-notes";
 import { PSALMS_TEXT, PSALM_119_LETTERS } from "@/content/psalms-text";
-import type { Movement, Panel, Passage, Reading } from "@/lib/types";
+import type { Capstone, Movement, Panel, Passage, Reading } from "@/lib/types";
 
 // One psalm as a single poem passage, authored whole (ADR 0001).
 function psalmPassage(
@@ -147,6 +147,7 @@ export const PSALMS_BOOK_I_MOVEMENT: Movement = {
   situation: {
     kicker: "Book one of five",
     title: "The situation",
+    image: "/images/ps-david.webp",
     paragraphs: [
       "The editors who arranged the Psalter divided it into five books, and the first runs from Psalm 1 to Psalm 41. Psalms 1 and 2 have no headings, and most scholars think the editors set them at the front as an introduction to the whole collection. Almost every psalm after them is headed as David’s.",
       "The Hebrew phrase behind “of David” can mean that David wrote the psalm, that someone wrote it for him, or that it belonged to a collection kept under his name. Israel remembered David as a musician and a poet from early on, and some of these poems may well go back to him, but scholars cannot show it for any single psalm. A few headings go further and name a moment in his life, and most scholars think that later editors added those as a way of reading the psalms beside his story.",
@@ -198,17 +199,42 @@ export const PSALMS_BOOK_II_MOVEMENT: Movement = {
   situation: {
     kicker: "Book two of five",
     title: "The situation",
+    image: "/images/ps-korah.webp",
     paragraphs: [
-      "The second book runs from Psalm 42 to Psalm 72. In these psalms the writers mostly call God by the general Hebrew word for God rather than by the divine name, and the book ends at 72:20 with an editor’s note: “Thus conclude the prayers of David son of Jesse.”",
+      "The second book runs from Psalm 42 to Psalm 72. The editors opened it with seven psalms headed as belonging to the sons of Korah, a family of singers at the temple in Jerusalem, and followed them with one headed as Asaph’s, the name of another guild of singers. After those come a long run of psalms headed as David’s, and the book closes with a prayer for the king headed as Solomon’s.",
+      "Most of the poets in this book call God by the ordinary Hebrew word for God, elohim, where the poets of the first book usually call him by his name, which the BSB prints as “the LORD.” Scholars can watch this happen in one poem that appears twice. Psalm 53 is Psalm 14 again, and wherever the poet of Psalm 14 says “the LORD,” the poet of Psalm 53 says “God.” Most scholars think that an editor made this change throughout an older collection running from Psalm 42 to Psalm 83, although no one knows why he did it.",
+      "Thirteen psalms in the whole Psalter carry a heading that sets them at a moment in David’s life, and eight of them are in this book. The editors placed Psalm 51 after the prophet Nathan accused David of adultery with Bathsheba, and they placed others in the years when David was hiding from King Saul. As in the first book, most scholars think that editors added these headings later, so that readers could pray the psalms alongside David’s story, and the poets themselves rarely mention the events.",
+      "The book ends at Psalm 72 with a blessing and a note from the editors: “Thus conclude the prayers of David son of Jesse.” More psalms headed as David’s come later in the Psalter, and so most scholars take the note as a sign that the first two books once made up a collection of their own, which later editors extended.",
     ],
+    sources: "Tate · Hossfeld and Zenger · Wilson · Mays",
   },
   doorway: {
     kicker: "The third book",
     title: "Book III",
     paragraphs: [
-      "The second book closes at Psalm 72 with a blessing and with the note that the prayers of David are concluded.",
+      "The second book closes at Psalm 72 with a blessing that the editors added, “Blessed be the LORD God, the God of Israel, who alone does marvelous deeds,” and with their note that the prayers of David are concluded.",
+      "The third book is shorter and darker. Most of its psalms are headed as Asaph’s, after the guild of singers, and several of them mourn the temple burned and Jerusalem laid waste. It opens with a poet who admits that he nearly stopped believing in God’s goodness when he saw the wicked prosper, which is the opposite of what the poet of Psalm 1 had promised.",
     ],
     nextMovementId: "psalms-book-3",
+  },
+  capstone: {
+    kicker: "The second book · Psalms 42–72",
+    title: "The city and the king",
+    paragraphs: [
+      "The second book begins far from Jerusalem. The poet of Psalms 42 and 43 is somewhere in the north, near the sources of the Jordan, and he remembers leading the festive procession to the house of God. Three times he asks why his soul is downcast, and three times he tells himself to hope in God. Most of the poets in this book look toward the two things that he misses: the temple on Mount Zion, where Israel believed God was present, and the king from David’s line who ruled from the city around it.",
+      "The singers of the Korah psalms speak of Zion with great confidence. The poet of Psalm 46 says that God is within the city and that it will not be moved, even if the mountains topple into the sea, and the poet of Psalm 48 tells his hearers to march around Zion and count her towers. The Babylonians broke down those walls and burned the city in 586 BCE, and the poets of the third book will mourn it, yet the editors kept these songs of confidence beside the laments.",
+      "The editors also set two very different pictures of the king in this book. They headed Psalm 51 as David’s prayer after the prophet Nathan accused him of taking Bathsheba and having her husband killed, and in it the poet asks God to create a clean heart in him. In Psalm 72, which closes the book, the poet prays that the king will defend the afflicted, save the needy and rule from sea to sea. The editors put a king’s confession and the people’s hope for a just king in the same book, and they ended it on the hope.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 72 prays that the king will vindicate the afflicted and crush the oppressor.",
+        counter:
+          "The editors headed Psalm 51 as David’s prayer after Nathan accused him, and Nathan made the accusation by telling of a rich man who took a poor man’s only lamb. The king that the poet prays for and the king that Nathan confronted belong to the same line.",
+        where: "Psalm 72:1–4 · Psalm 51 · 2 Samuel 12:1–7",
+      },
+    ],
+    sources: "Mays · Tate · Hossfeld and Zenger · Wilson",
   },
 };
 
@@ -224,17 +250,42 @@ export const PSALMS_BOOK_III_MOVEMENT: Movement = {
   situation: {
     kicker: "Book three of five",
     title: "The situation",
+    image: "/images/ps-asaph.webp",
     paragraphs: [
-      "The third book runs from Psalm 73 to Psalm 89. Eleven of its psalms are headed as Asaph’s, after a guild of temple musicians, and it ends with Psalm 89, in which the singer asks why God has renounced the covenant he made with David.",
+      "The third book runs from Psalm 73 to Psalm 89, and with seventeen psalms it is the shortest of the five. The editors opened it with eleven psalms headed as Asaph’s, the name of a guild of temple singers whom the writer of Chronicles traces to a Levite that David appointed to lead the music before the ark. After them come four psalms headed as belonging to the sons of Korah, one headed as David’s, and a last psalm headed as the work of Ethan the Ezrahite, whom the writer of 1 Kings names among the wise men of Solomon’s day.",
+      "Psalm 83 is the last psalm of the older collection that most scholars trace from Psalm 42, whose poets mostly call God by the ordinary Hebrew word for God. From Psalm 84 on the poets again call him by his name, which the BSB prints as “the LORD.”",
+      "Several poets in this book look on ruins. The poets of Psalms 74 and 79 describe enemies who have burned the sanctuary, defiled the temple and left Jerusalem in rubble, and most scholars connect both psalms with the Babylonian army that destroyed the city in 586 BCE. Some psalms in the book are probably older than that, but the editors gathered them where those laments would color the whole.",
+      "The poets of this book also argue with God more openly than the poets before them. The poet of Psalm 73 confesses that he nearly stumbled when he saw the wicked prosper, the poet of Psalm 77 asks whether God’s loving devotion has ceased forever, and the poet of Psalm 88 ends in darkness without a word of hope. Yet the poets of Psalms 84 and 87 still sing of Zion with love, and the editors set that longing for the city beside the grief for it.",
     ],
+    sources: "Tate · Hossfeld and Zenger · Wilson · Brueggemann",
   },
   doorway: {
     kicker: "The fourth book",
     title: "Book IV",
     paragraphs: [
-      "The third book closes at Psalm 89 with a blessing, directly after the singer’s question of how long God will hide himself.",
+      "The third book closes at Psalm 89 with a blessing that the editors added, “Blessed be the LORD forever! Amen and amen,” directly after the poet has asked where God’s loving devotion of old has gone.",
+      "The fourth book opens with the only psalm headed as Moses’s, a prayer from the time before Israel had any king, and soon turns to a run of psalms that declare that the LORD reigns. Many scholars read that order as the editors’ answer to the loss that the poet of Psalm 89 mourns.",
     ],
     nextMovementId: "psalms-book-4",
+  },
+  capstone: {
+    kicker: "The third book · Psalms 73–89",
+    title: "The ruins and the covenant",
+    paragraphs: [
+      "The third book opens and closes with a poet who will not pretend. The poet of Psalm 73 begins by saying that God is good to Israel, and then he admits that his feet had almost stumbled when he saw the prosperity of the wicked. He found no answer by thinking it through, and he says that he understood only when he entered God’s sanctuary and saw their end. The poet of Psalm 89 begins by promising to sing of the LORD’s loving devotion forever, and he ends by asking where it has gone.",
+      "Between them, the poets of this book face the loss of nearly everything that the second book celebrated. The singers of Psalms 46 and 48 had said that God was within Zion and that it would not be moved, and the poets of Psalms 74 and 79 describe its sanctuary burned to the ground. The poet of Psalm 72 had prayed that the king’s name would endure as long as the sun, and the poet of Psalm 89 says that God has sullied the king’s crown in the dust. The poet of Psalm 88 does not turn to hope at all, and the editors placed his psalm just before the last psalm of the book.",
+      "The scholar Gerald Wilson argued that the editors meant this book to end in crisis, so that the first three books follow David’s covenant from its making to its failure and the last two answer that failure by proclaiming that the LORD himself is king. Whether or not the editors planned it so closely, they did not resolve the complaint of Psalm 89. They added a blessing to it, and so they closed the book by praising God for a covenant that the poet could no longer see him keeping.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 46 says that God is within his city and that she will not be moved.",
+        counter:
+          "The poet of Psalm 74 says that enemies have burned God’s sanctuary to the ground and defiled the dwelling place of his Name. The editors kept both songs, and they did not explain how the first could be true after the second was written.",
+        where: "Psalm 46:5 · Psalm 74:3–8",
+      },
+    ],
+    sources: "Wilson · Brueggemann · Tate · Mays",
   },
 };
 
@@ -250,18 +301,41 @@ export const PSALMS_BOOK_IV_MOVEMENT: Movement = {
   situation: {
     kicker: "Book four of five",
     title: "The situation",
+    image: "/images/ps-moses.webp",
     paragraphs: [
-      "The fourth book runs from Psalm 90 to Psalm 106. Scholars such as Gerald Wilson have argued that the editors placed it deliberately after the crisis of Psalm 89, answering the failure of David’s line by looking back to Moses and to the kingship of God himself.",
+      "The fourth book runs from Psalm 90 to Psalm 106. It opens with the only psalm headed as Moses’s, a prayer that sets the shortness of a human life beside the God who was there before the mountains were born. Most of its other psalms have no heading at all, and only two, Psalms 101 and 103, are headed as David’s.",
+      "At its center stands a run of psalms that scholars call the enthronement psalms, Psalm 93 and Psalms 95 to 99. Several of them open with the words “The LORD reigns,” and their poets call on the sea, the fields and the trees to rejoice because the LORD comes to judge the earth. The scholar Sigmund Mowinckel proposed that Israel celebrated the LORD’s enthronement at a festival every autumn. Many scholars doubt that such a festival existed, but most agree that these poets were proclaiming God himself as king.",
+      "The scholar Gerald Wilson argued that the editors placed this book deliberately after Psalm 89. On his reading, they answered the fall of David’s line by reaching back to Moses, who led Israel before it had any king, and by declaring that the LORD had been Israel’s king all along. The book ends with two long psalms that retell Israel’s history, the first as a record of God’s faithfulness and the second as a record of the people’s rebellion, and with a prayer that God would gather his people from the nations.",
     ],
-    sources: "Wilson",
+    sources: "Wilson · Mowinckel · Tate · Allen",
   },
   doorway: {
     kicker: "The fifth book",
     title: "Book V",
     paragraphs: [
-      "The fourth book closes at Psalm 106 with a blessing and the call for all the people to say “Amen.”",
+      "The fourth book closes at Psalm 106 with the editors’ blessing, “Blessed be the LORD, the God of Israel, from everlasting to everlasting,” and with their call for all the people to say “Amen!”",
+      "The fifth book is the longest of the five. Its first poet says that the LORD has gathered the redeemed from the lands, from east and west, as though answering the prayer that closed the fourth book. It holds the songs that pilgrims sang on the way up to Jerusalem, the long alphabet poem of Psalm 119, and the five psalms of praise that close the Psalter.",
     ],
     nextMovementId: "psalms-book-5",
+  },
+  capstone: {
+    kicker: "The fourth book · Psalms 90–106",
+    title: "The LORD reigns",
+    paragraphs: [
+      "The fourth book begins with a man looking at the length of his own life. The poet of Psalm 90, whom the editors headed as Moses, says that in God’s sight a thousand years are but a day that passes, while a human life lasts seventy years, or eighty for the strong, and then quickly passes. He does not ask God to make his life longer. He asks God to teach him to number his days, and to establish the work of his hands.",
+      "The poets of the psalms that follow answer the crisis of the third book in a way that the poet of Psalm 89 did not. He had asked where God’s promise to David had gone, and the poets of Psalms 93 and 95 to 99 hardly mention David at all. They declare that the LORD reigns, that his throne was established long ago, and that he is mightier than the seas that lift up their pounding waves. The king they celebrate could not be carried into exile, because his rule never depended on a king in Jerusalem.",
+      "The book ends with an honest look back. The poet of Psalm 105 retells the story from Abraham to the exodus as a record of God’s faithfulness, and the poet of Psalm 106 retells much of the same story as a record of Israel’s rebellion, from the golden calf to the worship of the gods of Canaan. He ends by asking God to gather his people from the nations, and the editors set his prayer at the close of the book, when many of those who prayed it were still scattered.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 90 says that the days of a human life quickly pass and fly away, and he asks God only to teach him to number them.",
+        counter:
+          "The poet of Psalm 91, which the editors set directly after it, promises in God’s voice that the one who dwells in the shelter of the Most High will be satisfied with long life.",
+        where: "Psalm 90:10–12 · Psalm 91:16",
+      },
+    ],
+    sources: "Wilson · Tate · Mays · Brueggemann",
   },
 };
 
@@ -277,9 +351,33 @@ export const PSALMS_BOOK_V_MOVEMENT: Movement = {
   situation: {
     kicker: "Book five of five",
     title: "The situation",
+    image: "/images/ps-ascents.webp",
     paragraphs: [
-      "The fifth book runs from Psalm 107 to Psalm 150. It includes the fifteen Songs of Ascents (120–134), and its last five psalms each begin and end with the Hebrew call “Hallelujah,” which means “praise the LORD.”",
+      "The fifth book runs from Psalm 107 to Psalm 150, and with forty-four psalms it is the longest of the five. Most of its psalms have no heading. The editors headed three psalms near its beginning as David’s, four of the Songs of Ascents, and a last run of eight psalms, Psalms 138 to 145.",
+      "The editors built the book from collections that readers can still see. Psalms 113 to 118, which Jewish families later sang at Passover, are called the Egyptian Hallel, from the Hebrew word for praise. The fifteen Songs of Ascents, Psalms 120 to 134, are short poems that most scholars think pilgrims sang on their way up to Jerusalem for the festivals. Between those two groups the editors set Psalm 119, the longest psalm in the book, an alphabet poem in twenty-two stanzas on the love of God’s teaching.",
+      "Most scholars think that many of these psalms were written after the exile. The poet of Psalm 107 speaks of the redeemed whom the LORD has gathered from the lands, and the poet of Psalm 137 remembers sitting by the rivers of Babylon and weeping for Zion. Among the Dead Sea Scrolls, scribes copied the psalms of this part of the book in a different order and with other poems among them, and many scholars take that as a sign that its arrangement was settled later than that of the earlier books.",
+      "The book, and the Psalter with it, ends with five psalms that each begin and end with “Hallelujah,” the Hebrew call that means “Praise the LORD.” The editors added no blessing to the last of them, Psalm 150, because the whole psalm already does the work of one.",
     ],
+    sources: "Allen · Wilson · Hossfeld and Zenger · Mays",
+  },
+  capstone: {
+    kicker: "The fifth book · Psalms 107–150",
+    title: "Everything that has breath",
+    paragraphs: [
+      "The fifth book opens with people coming home. The poet of Psalm 107 describes four kinds of people in trouble, wanderers in the desert, prisoners in darkness, the sick and sailors caught in a storm, and he says the same thing of each, that they cried out to the LORD in their trouble and he delivered them. Most scholars think that the poets of this book were writing after the return from Babylon, when the temple had been rebuilt but no king of David’s line sat on a throne.",
+      "The poets of this book keep the whole range of the earlier books. The poet of Psalm 119 meditates on God’s teaching for 176 verses, and he ends by saying that he has strayed like a lost sheep. The pilgrims of the Songs of Ascents sing on the road to Jerusalem, the exiles of Psalm 137 refuse to sing in Babylon and curse their captors, and the poet of Psalm 139 says that he could not escape God’s presence even if he settled by the farthest sea. The editors did not leave out the anger or the grief in order to reach the praise more quickly.",
+      "Yet they did end with praise. The poets of the last five psalms call on the angels, the sun and the moon, the creatures of the sea, the kings of the earth, and at last everything that has breath to praise the LORD. The Psalter began with a man meditating on God’s law day and night, and it passed through every kind of trouble that its poets knew, and the editors closed it with a call to praise that has no complaint left in it.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 150 calls on everything that has breath to praise the LORD.",
+        counter:
+          "The poet of Psalm 88 asks whether the departed spirits rise up to praise God, expecting that they do not, and ends his prayer in darkness. The editors kept both poems in the same book.",
+        where: "Psalm 150:6 · Psalm 88:10–12",
+      },
+    ],
+    sources: "Allen · Wilson · Brueggemann · Mays",
   },
 };
 
@@ -317,6 +415,28 @@ export const PSALMS_INTRO: Panel = {
     },
   ],
   sources: "Gunkel · Wilson · Childs · Alter · Mays",
+};
+
+// The book-level look-back over the whole Psalter.
+export const PSALMS_CAPSTONE: Capstone = {
+  kicker: "The whole book · Psalms 1–150",
+  title: "Everything said to God",
+  paragraphs: [
+    "The editors of the Psalter gathered prayers that Israel’s poets had written over several hundred years, and they did not make them agree. The poet of Psalm 1 promises that the man who delights in God’s law will prosper, and the poet of Psalm 73 says that he nearly stumbled watching the wicked prosper instead. The singers of Psalm 46 say that God is within Zion and that she will not be moved, and the poets of Psalms 74 and 79 describe her sanctuary burned and her temple defiled. The poet of Psalm 89 holds God to his oath to David and asks where it has gone, and the poet of Psalm 88 ends in darkness without any turn at all. The editors kept every one of these, side by side, and they left the reader to live with the argument rather than settling it for him.",
+    "The scholar Claus Westermann observed that most of the laments stand in the first half of the book and most of the hymns in the second, so that the Psalter as a whole moves from complaint toward praise. The editors did not reach the praise by leaving the complaints out. They opened with a man who meditates on God’s law day and night, they passed through the cries of the sick, the accused, the guilty and the exiled, and they closed with five psalms that call on everything that has breath to praise the LORD. Whatever praise the book reaches, its poets reached it with their griefs still on record.",
+    "What the poets share is that they said all of it to God. They brought him their rage against their enemies in Psalms 109 and 137, their guilt in Psalms 51 and 130, their fear of death in Psalms 39 and 90, and their joy in Psalms 126 and 148, and they rarely tidied any of it first. Jews and Christians have prayed these words ever since, and the gospel writers record that Jesus prayed them on the cross, crying out the opening of Psalm 22 and committing his spirit to God in the words of Psalm 31. The book does not teach its readers about prayer so much as give them the words, and it assumes that there is nothing a person may feel that cannot be said to God.",
+  ],
+  tensions: [
+    {
+      claim:
+        "The poet of Psalm 145 says that the LORD is good to all, and that his compassion rests on all he has made.",
+      counter:
+        "The poet of Psalm 137 blesses whoever repays Babylon as she has done, and whoever dashes her infants against the rocks. The editors set his psalm a few pages before the other, and they kept both as prayers.",
+      where: "Psalm 145:9 · Psalm 137:8–9",
+    },
+  ],
+  sources: "Westermann · Brueggemann · Wilson · Mays · Childs",
+  ask: "Which psalm says something you have not yet been able to say to God, and will you pray it as it stands?",
 };
 
 export const PSALMS_MOVEMENTS: Movement[] = [
