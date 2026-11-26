@@ -58,12 +58,10 @@ export const BOOK_OFFERS: Record<string, BookOffer> = {
     tier: "standard",
     priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_ECCLESIASTES ?? "",
   },
-  // Psalms is still being written. Remove `unreleased` when the book is published.
   psalms: {
     title: "Psalms",
     tier: "major",
     priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_PSALMS ?? "",
-    unreleased: true,
   },
 };
 

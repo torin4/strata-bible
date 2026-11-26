@@ -139,5 +139,5 @@ commentary should be plainer here, not more lyrical, and let the psalm be the po
 Each pass: parallel workers of about eight psalms each, briefed with the voice rules; a sweep for
 agency slips, fragments and em dashes; the validator, tests and lint; one commit per movement.
 
-The book stays unpublished, absent from the landing page and the find index, until all five
-movements are done.
+The book stayed unpublished, absent from the landing page and the find index, until all five
+movements were done. It was published on 2026-11-26.

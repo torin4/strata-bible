@@ -203,11 +203,12 @@ describe("content lib", () => {
     expect(tension?.where).toContain("Exodus 34:6");
   });
 
-  it("the shelf is Genesis, Exodus, Ruth, Mark and Ecclesiastes, and nothing unfinished is on it", () => {
+  it("the shelf is Genesis, Exodus, Ruth, Mark, Ecclesiastes and Psalms, and nothing unfinished is on it", () => {
     expect(getBook("exodus")?.capstone).toBeDefined();
     expect(getBook("ruth")?.capstone).toBeDefined();
     expect(getBook("mark")?.capstone).toBeDefined();
     expect(getBook("ecclesiastes")?.capstone).toBeDefined();
+    expect(getBook("psalms")?.capstone).toBeDefined();
     // Order matters: the landing numbers the books by their position here.
     expect(PUBLISHED_BOOKS.map((b) => b.id)).toEqual([
       "genesis",
@@ -215,6 +216,7 @@ describe("content lib", () => {
       "ruth",
       "mark",
       "ecclesiastes",
+      "psalms",
     ]);
     // A book goes public only when it is finished: every reading a sitting, every movement with a
     // panel, a banner and a capstone, and a book capstone. That rule held for Exodus, Ruth and
