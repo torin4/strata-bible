@@ -24,6 +24,11 @@ export interface BookOffer {
   title: string;
   tier: BookTier;
   priceId: string;
+  // Set while the book is still being written. An unreleased book is never offered for sale,
+  // whether or not its price is configured. test/pricing.test.ts holds this in step with the
+  // book's `published` flag in content/index.ts, which is not imported here because this
+  // module ships to the browser and the catalog is large.
+  unreleased?: boolean;
 }
 
 // Add a book by creating its one-time Stripe price and setting the env var here.
@@ -53,12 +58,12 @@ export const BOOK_OFFERS: Record<string, BookOffer> = {
     tier: "standard",
     priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_ECCLESIASTES ?? "",
   },
-  // Psalms is sold from the moment its price is set, so leave the env var empty until the
-  // book is published: an unpublished book would otherwise appear on the pricing page.
+  // Psalms is still being written. Remove `unreleased` when the book is published.
   psalms: {
     title: "Psalms",
     tier: "major",
     priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_PSALMS ?? "",
+    unreleased: true,
   },
 };
 
@@ -69,7 +74,7 @@ export function purchasableBooks(): {
   price: string;
 }[] {
   return Object.entries(BOOK_OFFERS)
-    .filter(([, offer]) => offer.priceId)
+    .filter(([, offer]) => offer.priceId && !offer.unreleased)
     .map(([bookId, offer]) => ({
       bookId,
       title: offer.title,
@@ -77,10 +82,11 @@ export function purchasableBooks(): {
     }));
 }
 
-// The offer for a book, or null if it is not sold individually (no configured price).
+// The offer for a book, or null if it is not sold individually (no configured price, or the
+// book is not released yet).
 export function bookOffer(bookId: string): BookOffer | null {
   const offer = BOOK_OFFERS[bookId];
-  return offer?.priceId ? offer : null;
+  return offer?.priceId && !offer.unreleased ? offer : null;
 }
 
 export function bookPrice(bookId: string): string | null {
