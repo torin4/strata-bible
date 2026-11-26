@@ -6,6 +6,10 @@ import { PS_009_017 } from "./book-1/ps-009-017";
 import { PS_018_024 } from "./book-1/ps-018-024";
 import { PS_025_032 } from "./book-1/ps-025-032";
 import { PS_033_041 } from "./book-1/ps-033-041";
+import { PS_042_048 } from "./book-2/ps-042-048";
+import { PS_049_056 } from "./book-2/ps-049-056";
+import { PS_057_064 } from "./book-2/ps-057-064";
+import { PS_065_072 } from "./book-2/ps-065-072";
 import type { PsalmNotesMap } from "./types";
 
 export const PSALM_NOTES: PsalmNotesMap = {
@@ -14,6 +18,10 @@ export const PSALM_NOTES: PsalmNotesMap = {
   ...PS_018_024,
   ...PS_025_032,
   ...PS_033_041,
+  ...PS_042_048,
+  ...PS_049_056,
+  ...PS_057_064,
+  ...PS_065_072,
 };
 
 // The find-index entries of the psalm sittings, spread into READING_THEMES by content/themes.ts

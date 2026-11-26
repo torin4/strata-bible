@@ -87,6 +87,24 @@ describe("Psalms", () => {
     }
   });
 
+  it("authors all of Book II, with the spec's eight sittings", () => {
+    const bookTwo = PSALMS.filter(
+      (r) => r.chapterIndex >= 42 && r.chapterIndex <= 72,
+    );
+    expect(bookTwo).toHaveLength(30);
+    expect(bookTwo.filter((r) => r.tier === "plain")).toEqual([]);
+    expect(
+      bookTwo.filter((r) => r.tier === "sitting").map((r) => r.chapterIndex),
+    ).toEqual([42, 45, 46, 49, 51, 63, 65, 72]);
+    for (const r of bookTwo) {
+      expect(
+        r.passages.every((p) => p.ground?.text),
+        r.id,
+      ).toBe(true);
+      expect(r.title, r.id).not.toBe(PSALMS_TEXT[r.chapterIndex].title);
+    }
+  });
+
   it("places every reading in one of the Psalter's five books", () => {
     expect(PSALMS[0].id).toBe("ps-1");
     expect(PSALMS[PSALMS.length - 1].id).toBe("ps-150");

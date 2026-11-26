@@ -147,6 +147,7 @@ export const PSALMS_BOOK_I_MOVEMENT: Movement = {
   situation: {
     kicker: "Book one of five",
     title: "The situation",
+    image: "/images/ps-david.webp",
     paragraphs: [
       "The editors who arranged the Psalter divided it into five books, and the first runs from Psalm 1 to Psalm 41. Psalms 1 and 2 have no headings, and most scholars think the editors set them at the front as an introduction to the whole collection. Almost every psalm after them is headed as David’s.",
       "The Hebrew phrase behind “of David” can mean that David wrote the psalm, that someone wrote it for him, or that it belonged to a collection kept under his name. Israel remembered David as a musician and a poet from early on, and some of these poems may well go back to him, but scholars cannot show it for any single psalm. A few headings go further and name a moment in his life, and most scholars think that later editors added those as a way of reading the psalms beside his story.",
@@ -198,17 +199,42 @@ export const PSALMS_BOOK_II_MOVEMENT: Movement = {
   situation: {
     kicker: "Book two of five",
     title: "The situation",
+    image: "/images/ps-korah.webp",
     paragraphs: [
-      "The second book runs from Psalm 42 to Psalm 72. In these psalms the writers mostly call God by the general Hebrew word for God rather than by the divine name, and the book ends at 72:20 with an editor’s note: “Thus conclude the prayers of David son of Jesse.”",
+      "The second book runs from Psalm 42 to Psalm 72. The editors opened it with seven psalms headed as belonging to the sons of Korah, a family of singers at the temple in Jerusalem, and followed them with one headed as Asaph’s, the name of another guild of singers. After those come a long run of psalms headed as David’s, and the book closes with a prayer for the king headed as Solomon’s.",
+      "Most of the poets in this book call God by the ordinary Hebrew word for God, elohim, where the poets of the first book usually call him by his name, which the BSB prints as “the LORD.” Scholars can watch this happen in one poem that appears twice. Psalm 53 is Psalm 14 again, and wherever the poet of Psalm 14 says “the LORD,” the poet of Psalm 53 says “God.” Most scholars think that an editor made this change throughout an older collection running from Psalm 42 to Psalm 83, although no one knows why he did it.",
+      "Thirteen psalms in the whole Psalter carry a heading that sets them at a moment in David’s life, and eight of them are in this book. The editors placed Psalm 51 after the prophet Nathan accused David of adultery with Bathsheba, and they placed others in the years when David was hiding from King Saul. As in the first book, most scholars think that editors added these headings later, so that readers could pray the psalms alongside David’s story, and the poets themselves rarely mention the events.",
+      "The book ends at Psalm 72 with a blessing and a note from the editors: “Thus conclude the prayers of David son of Jesse.” More psalms headed as David’s come later in the Psalter, and so most scholars take the note as a sign that the first two books once made up a collection of their own, which later editors extended.",
     ],
+    sources: "Tate · Hossfeld and Zenger · Wilson · Mays",
   },
   doorway: {
     kicker: "The third book",
     title: "Book III",
     paragraphs: [
-      "The second book closes at Psalm 72 with a blessing and with the note that the prayers of David are concluded.",
+      "The second book closes at Psalm 72 with a blessing that the editors added, “Blessed be the LORD God, the God of Israel, who alone does marvelous deeds,” and with their note that the prayers of David are concluded.",
+      "The third book is shorter and darker. Most of its psalms are headed as Asaph’s, after the guild of singers, and several of them mourn the temple burned and Jerusalem laid waste. It opens with a poet who admits that he nearly stopped believing in God’s goodness when he saw the wicked prosper, which is the opposite of what the poet of Psalm 1 had promised.",
     ],
     nextMovementId: "psalms-book-3",
+  },
+  capstone: {
+    kicker: "The second book · Psalms 42–72",
+    title: "The city and the king",
+    paragraphs: [
+      "The second book begins far from Jerusalem. The poet of Psalms 42 and 43 is somewhere in the north, near the sources of the Jordan, and he remembers leading the festive procession to the house of God. Three times he asks why his soul is downcast, and three times he tells himself to hope in God. Most of the poets in this book look toward the two things that he misses: the temple on Mount Zion, where Israel believed God was present, and the king from David’s line who ruled from the city around it.",
+      "The singers of the Korah psalms speak of Zion with great confidence. The poet of Psalm 46 says that God is within the city and that it will not be moved, even if the mountains topple into the sea, and the poet of Psalm 48 tells his hearers to march around Zion and count her towers. The Babylonians broke down those walls and burned the city in 586 BCE, and the poets of the third book will mourn it, yet the editors kept these songs of confidence beside the laments.",
+      "The editors also set two very different pictures of the king in this book. They headed Psalm 51 as David’s prayer after the prophet Nathan accused him of taking Bathsheba and having her husband killed, and in it the poet asks God to create a clean heart in him. In Psalm 72, which closes the book, the poet prays that the king will defend the afflicted, save the needy and rule from sea to sea. The editors put a king’s confession and the people’s hope for a just king in the same book, and they ended it on the hope.",
+    ],
+    tensions: [
+      {
+        claim:
+          "The poet of Psalm 72 prays that the king will vindicate the afflicted and crush the oppressor.",
+        counter:
+          "The editors headed Psalm 51 as David’s prayer after Nathan accused him, and Nathan made the accusation by telling of a rich man who took a poor man’s only lamb. The king that the poet prays for and the king that Nathan confronted belong to the same line.",
+        where: "Psalm 72:1–4 · Psalm 51 · 2 Samuel 12:1–7",
+      },
+    ],
+    sources: "Mays · Tate · Hossfeld and Zenger · Wilson",
   },
 };
 
@@ -224,6 +250,7 @@ export const PSALMS_BOOK_III_MOVEMENT: Movement = {
   situation: {
     kicker: "Book three of five",
     title: "The situation",
+    image: "/images/ps-asaph.webp",
     paragraphs: [
       "The third book runs from Psalm 73 to Psalm 89. Eleven of its psalms are headed as Asaph’s, after a guild of temple musicians, and it ends with Psalm 89, in which the singer asks why God has renounced the covenant he made with David.",
     ],
@@ -250,6 +277,7 @@ export const PSALMS_BOOK_IV_MOVEMENT: Movement = {
   situation: {
     kicker: "Book four of five",
     title: "The situation",
+    image: "/images/ps-moses.webp",
     paragraphs: [
       "The fourth book runs from Psalm 90 to Psalm 106. Scholars such as Gerald Wilson have argued that the editors placed it deliberately after the crisis of Psalm 89, answering the failure of David’s line by looking back to Moses and to the kingship of God himself.",
     ],
@@ -277,6 +305,7 @@ export const PSALMS_BOOK_V_MOVEMENT: Movement = {
   situation: {
     kicker: "Book five of five",
     title: "The situation",
+    image: "/images/ps-ascents.webp",
     paragraphs: [
       "The fifth book runs from Psalm 107 to Psalm 150. It includes the fifteen Songs of Ascents (120–134), and its last five psalms each begin and end with the Hebrew call “Hallelujah,” which means “praise the LORD.”",
     ],

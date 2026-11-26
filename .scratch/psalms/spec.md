@@ -125,7 +125,10 @@ commentary should be plainer here, not more lyrical, and let the psalm be the po
 1. Book I: ground notes and titles for all 40 readings, the 12 sittings, the situation, capstone
    and doorway, and the book-level introduction. The largest movement and the proof of the method.
    **Done**: commentary in `content/psalms-notes/book-1/`, laid over the text by `content/psalms.ts`.
-2. Books II to V, one movement per pass.
+2. Books II to V, one movement per pass. **Book II done**: `content/psalms-notes/book-2/`, with
+   every sitting passage held to 1.6x or under (1.33x to 1.57x). The brief the writers worked
+   from is `.scratch/psalms/book-2-brief.md`; reuse it for Books III to V with the ranges, budgets
+   and per-psalm notes changed.
 3. The book capstone, theme entries, image prompts (a hero and five banners), and publication.
 
 Each pass: parallel workers of about eight psalms each, briefed with the voice rules; a sweep for
