@@ -33,6 +33,33 @@ export const BOOK_OFFERS: Record<string, BookOffer> = {
     tier: "major",
     priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_GENESIS ?? "",
   },
+  exodus: {
+    title: "Exodus",
+    tier: "major",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_EXODUS ?? "",
+  },
+  ruth: {
+    title: "Ruth",
+    tier: "short",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_RUTH ?? "",
+  },
+  mark: {
+    title: "Mark",
+    tier: "major",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_MARK ?? "",
+  },
+  ecclesiastes: {
+    title: "Ecclesiastes",
+    tier: "standard",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_ECCLESIASTES ?? "",
+  },
+  // Psalms is sold from the moment its price is set, so leave the env var empty until the
+  // book is published: an unpublished book would otherwise appear on the pricing page.
+  psalms: {
+    title: "Psalms",
+    tier: "major",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_BOOK_PSALMS ?? "",
+  },
 };
 
 // The books currently sold individually, for the storefront.
