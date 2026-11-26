@@ -214,17 +214,21 @@ export const BOOKS: BookEntry[] = [
     capstone: ECCLESIASTES_CAPSTONE,
     published: true,
   },
-  // Psalms, book six, written and unpublished: all 151 readings authored over the generated,
+  // Psalms, book six, complete and published: all 151 readings authored over the generated,
   // lineated BSB text, across the Psalter's own five books. Its Psalm 13 replaces the old genre
-  // fixture of the same id. Unpublished until the owner releases it; see .scratch/psalms/spec.md.
+  // fixture of the same id. See .scratch/psalms/spec.md.
   {
     id: "psalms",
     title: "Psalms",
+    subtitle:
+      "Five books: the promise, the city, the ruins, the reign, the praise.",
+    blurb: "A hundred and fifty prayers, and nothing kept back from God.",
     heroImage: "/images/psalms-intro.webp",
     readings: PSALMS,
     movements: PSALMS_MOVEMENTS,
     composition: PSALMS_INTRO,
     capstone: PSALMS_CAPSTONE,
+    published: true,
   },
   // The genre fixtures stay in the catalog (their routes still prove the kind-aware
   // renderer) but are unpublished, so they do not surface on the landing or in /find.
